@@ -1,0 +1,13 @@
+.tablet-visible {
+    display: none;
+
+    @media (max-width: 1200px) {
+        display: block;
+    }
+}
+
+.tablet-hidden {
+    @media (max-width: 1200px) {
+        display: none;
+    }
+}

@@ -3,6 +3,7 @@
 
 // == normalize ==
 @import "config";
+@import "helpers";
 
 // == typography ==
 @import "blocks/typography/text";
@@ -31,7 +32,9 @@
 
 // == header ==
 @import "blocks/header/header";
-@import "blocks/header/burger-btn";
+@import "blocks/header/site-header";
+@import "blocks/header/burger";
+@import "blocks/header/actions-btns";
 @import "blocks/header/main-menu";
 @import "blocks/header/city-wrapper";
 @import "blocks/header/city";

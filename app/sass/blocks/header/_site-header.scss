@@ -1,0 +1,232 @@
+/*------------------------------------*\
+  #Основные стили хедера
+\*------------------------------------*/
+
+.site-header {
+    position: relative;
+    padding: 16px 0px 16px;
+    background: #fff;
+    border-bottom: 1px solid #e7e7e7;
+    font-size: 18px;
+    z-index: 10;
+
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+
+        @media (max-width:$tablet) {
+            display: block;
+        }
+    }
+
+    &__logo {
+        display: inline-block;
+        width: 106px;
+        height: 32px;
+        margin-right: 50px;
+        background: url(../images/dist/logo-short.svg) no-repeat center;
+        background-size: cover;
+
+        &--tablet {
+            display: none;
+
+            @media (max-width:$tablet) {
+                display: inline-block;
+            }
+        }
+
+        &--desk {
+            @media (max-width:$tablet) {
+                display: none;
+            }
+        }
+    }
+
+    &__user-info {
+    }
+
+    &__city {
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-right: 40px;
+        color: $gray2;
+        z-index: 6;
+
+        @media (max-width:1500px) {
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        @media (max-width:$tablet) {
+            margin-bottom: 30px;
+        }
+
+        &.active {
+
+            .city-wrapper {
+                visibility: visible;
+                opacity: 1;
+
+                @media (max-width: $tablet) {
+                    left: 0;
+                }
+            }
+        }
+    }
+
+    &__city-btn {
+        position: relative;
+        margin-left: 25px;
+        font-size: 18px;
+        background: transparent;
+        padding: 2px 0;
+        border: none;
+        color: $textcolor;
+        border-bottom: 1px dashed #000000;
+        line-height: 1;
+
+
+        &::before {
+            font-family: 'If';
+            content: '\e945';
+            position: absolute;
+            left: -20px;
+            font-size: 20px;
+            font-weight: 600;
+            color: $accent;
+        }
+    }
+
+    &__reg-btn {
+        border: none;
+        background-color: #fff;
+        padding: 0;
+        display: flex;
+        align-items: center;
+
+        @media (max-width:1500px) {
+            font-size: 16px;
+        }
+
+        &::after {
+            content: "\e900";
+            font-family: if;
+            font-size: 24px;
+            width: 24px;
+            height: 24px;
+            margin-left: 6px;
+            line-height: 1;
+        }
+    }
+
+    &__regis-link {
+        white-space: nowrap;
+
+        @media (max-width:$tablet) {
+            display: none;
+        }
+    }
+
+    &__btn-menu-close {
+        display: none;
+
+        @media (max-width: $tablet) {
+            display: block;
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            top: 20px;
+            right: 20px;
+            background: transparent;
+            font-size: 15px;
+            padding: 0;
+            border: none;
+            line-height: normal;
+            z-index: 10;
+        }
+
+        &::before {
+
+            @media (max-width: $tablet) {
+                display: block;
+            }
+        }
+    }
+}
+
+
+.mobil-header-wrapper {
+
+    @media (max-width: $tablet) {
+        position: fixed;
+        top: 0;
+        height: 100vh;
+        width: 100vw;
+        max-width: 100%;
+        z-index: 10;
+        background: #fff;
+        left: -150%;
+        transition: 0.3s;
+        padding: 64px 20px 35px;
+        overflow-y: auto;
+        display: block;
+    }
+
+    &.active {
+        @media (max-width: $tablet) {
+            left: 0;
+        }
+    }
+}
+
+.header-mobil {
+
+    @media (max-width: 1200px) {
+        display: block;
+        width: 100%;
+        padding-top: 24px;
+    }
+
+
+    &__contact {
+        display: block;
+        margin-bottom: 22px;
+        font-size: 16px;
+    }
+
+    .icon::before {
+        font-size: 20px;
+        color: $accent;
+        margin-right: 14px;
+    }
+
+    .i-phone::before {
+        font-weight: 600;
+    }
+
+    &__link {
+        margin-bottom: 14px;
+        font-size: 14px;
+        text-decoration: underline;
+    }
+
+    &__logo {
+        width: 138px;
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+}
