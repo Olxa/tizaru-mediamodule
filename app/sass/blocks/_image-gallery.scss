@@ -1,0 +1,116 @@
+.image-gallery {
+
+    &__search-wrap {
+        max-width: 735px;
+        margin-bottom: 35px;
+
+        @media (max-width: 1200px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__back-link {
+        @media (max-width: 1200px) {
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__tag-wrap {
+        margin-bottom: 10px;
+
+        .tag {
+            display: inline-block;
+            margin-right: 8px;
+            margin-bottom: 5px;
+            color: $textcolor;
+        }
+    }
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        width: 20%;
+        position: relative;
+        padding-right: 15px;
+        margin-bottom: 15px;
+        transition: all .3s linear;
+        cursor: pointer;
+
+        @media (max-width: 1200px) {
+            width: 25%;
+        }
+
+        @media (max-width: 992px) {
+            width: 33.333%;
+        }
+        @media (max-width: 767px) {
+            width: 50%;
+        }
+        
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover {
+            transform: scale(1.2);
+            z-index: 2;
+
+            .image-gallery__item-bottom {
+                display: block;
+            }
+
+            .image-gallery__item-img {
+                border-radius: $border-radius $border-radius 0 0;
+            }
+        }
+    }
+
+    &__item-img {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+
+        @media (max-width: 992px) {
+            height: 150px;
+        }
+    }
+
+    &__item-bottom {
+        position: absolute;
+        display: none;
+        padding: 5px 13px 13px;
+        background-color: #ffffff;
+        width: calc(100% - 15px);
+        border-radius: 0 0 $border-radius $border-radius;
+        overflow: hidden;
+    }
+
+    &__item-link {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 19px;
+        color: $textcolor;
+        text-decoration: underline;
+    }
+
+    &__item-descr {
+        margin: 0;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19px;
+        color: $gray;
+    }
+
+    &__more-btn {
+        text-align: center;
+        padding: 30px 0 60px;
+
+        .btn {
+            min-width: 285px;
+        }
+    }
+}

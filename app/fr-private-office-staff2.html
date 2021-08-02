@@ -1,0 +1,64 @@
+<!--#set var="title" value="Личный кабинет | Информация" -->
+<!--#include virtual="/parts/header-login.html" -->
+
+<div class="page-content">
+    <div class="full-container private-office__wrap">
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb--private-office">
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Главная</a></li>
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="fr-private-office-staff.html">Сотрудники</a></li>
+                <li class="breadcrumb__item active" aria-current="page">Права доступа</li>
+            </ol>
+        </nav>
+
+        <div class="private-office">
+            <div class="private-office__sidebar">
+                <!--#include virtual="/parts/user-nav-page-fr.html" -->
+            </div>
+
+            <div class="private-office__content">
+
+                <div class="private-office__header">
+                    <h1 class="page-title page-title__margin-b">Петров Дмитрий</h1>
+                </div>
+                <ul class="private-office__tab">
+                    <li class="private-office__tab-item">
+                        <a class="private-office__tab-link" href="fr-private-office-staff1.html">Личная информация</a>
+                                            </li>
+                    <li class="private-office__tab-item">
+                        <div class="private-office__tab-link active">Права доступа</div>
+                    </li>
+                </ul>
+
+                <div class="private-office__tab-content page-staff">
+                    <form class="form" action="/" method="post">
+                        <div class="input-wrap">
+                            <div class="checkbox">
+                                <input class="checkbox__field" id="role1" type="checkbox">
+                                <label class="checkbox__value" for="role1">Администратор</label>
+                            </div>
+                        </div>
+                        <div class="input-wrap">
+                            <div class="checkbox">
+                                <input class="checkbox__field" id="role2" type="checkbox">
+                                <label class="checkbox__value" for="role2">Модерация карточек</label>
+                            </div>
+                        </div>
+                        <div class="input-wrap">
+                            <div class="checkbox">
+                                <input class="checkbox__field" id="role3" type="checkbox">
+                                <label class="checkbox__value" for="role3">Редактирование сотрудников</label>
+                            </div>
+                        </div> 
+                        <button class="btn btn-accent btn--md" type="submit">Сохранить</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--#include virtual="/parts/footer.html" -->

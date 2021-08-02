@@ -1,0 +1,67 @@
+/*------------------------------------*\
+  #Выпадающий список - время
+\*------------------------------------*/
+
+.dropdown--time {
+    max-width: 120px;
+
+    .dropdown__value {
+
+        &::after {
+            content: '\e906';
+            font-size: 15px;
+        }
+    }
+}
+
+.dropdown--time.active {
+    .dropdown__value {
+
+        &::after {
+            transform: none;
+            color: $accent;
+        }
+    }
+}
+
+.dropdown {
+
+    &__time-list-wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__time-list {
+        max-height: 80px;
+        padding: 10px 5px;
+        overflow: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+
+        @media (max-width: 576px) {
+            max-height: 150px;
+        }
+
+        &::-webkit-scrollbar {
+            width: 0;
+        }
+    }
+
+    &__time-item {
+        display: block;
+        padding: 2px 10px;
+        margin-bottom: 3px;
+        font-size: 14px;
+        border: none;
+        background-color: transparent;
+
+        &:hover {
+            color: $accent;
+        }
+
+        &.active {
+            border: 1px solid $accent;
+            border-radius: 3px;
+        }
+    }
+}

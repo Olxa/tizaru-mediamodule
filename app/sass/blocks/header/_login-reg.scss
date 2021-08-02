@@ -1,0 +1,125 @@
+/*------------------------------------*\
+  #¬ход и регистраци¤
+\*------------------------------------*/
+
+.login-reg {
+    background: #fff;
+    border-radius: 5px;
+    padding: 20px 20px 30px;
+    box-shadow: 3px 4px 17px rgba(186, 186, 186, 0.45);
+    z-index: 6;
+    line-height: normal;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    visibility: collapse;
+    opacity: 0;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    margin-top: 5px;
+    font-size: 14px;
+    width: 315px;
+
+    @media (max-width: 767px) {
+        position: fixed;
+        top: 35px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0;
+        overflow-y: auto;
+        max-height: calc(100% - 35px );
+        padding-top: 30px;
+    }
+
+    .btn {
+        margin-bottom: 20px;
+
+        @media (max-width: 767px) {
+            margin-bottom: 15px;
+        }
+    }
+
+    .input-wrap {
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+        justify-content: space-between;
+        margin-right: -10px;
+
+        .checkbox__value {
+            font-size: 14px;
+            padding-left: 30px;
+            line-height: 2;
+        }
+    }
+
+    &__checkbox-accept {
+        line-height: 1.4 !important;
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: center;
+        padding-top: 15px;
+        border-top: 1px solid $gray;
+    }
+
+    &__btn {
+        font-size: 18px;
+        line-height: 1.5;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid $accent;
+        margin: 0 auto;
+        padding: 0;
+
+        @media (max-width: 767px) {
+            font-size: 16px;
+        }
+    }
+}
+
+
+@media (max-width: 767px) {
+    .login-reg__close {
+        position: absolute;
+        z-index: 5;
+        width: 14px;
+        height: 14px;
+        font-size: 0;
+        top: 20px;
+        right: 20px;
+        background: transparent;
+        border: none;
+        padding: 0;
+        display: block;
+
+        &::before {
+            font-size: 15px;
+        }
+    }
+
+    .login-reg-popup .login-reg {
+        transform: none;
+        height: auto;
+
+        .login-reg__close {
+            display: none;
+        }
+    }
+
+    .login-reg-popup .login-reg {
+        min-height: initial;
+    }
+}

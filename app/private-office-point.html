@@ -1,0 +1,105 @@
+<!--#set var="title" value="Личный кабинет | Информация" -->
+<!--#include virtual="/parts/header-login.html" -->
+
+<div class="page-content">
+    <div class="full-container private-office__wrap">
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb--private-office">
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Главная</a></li>
+                <li class="breadcrumb__item active" aria-current="page">Баллы</li>
+            </ol>
+        </nav>
+
+        <div class="private-office">
+            <div class="private-office__sidebar">
+                <!--#include virtual="/parts/user-nav-page.html" -->
+            </div>
+
+            <div class="private-office__content">
+
+                <div class="private-office__status">
+                    ID 3500560, статус
+                    <div class="private-office__status-val private-office__status-val--one">
+                        <div class="private-office__status-popup">
+                            <p class="private-office__status-popup-txt">За все время вы набрали 2000 баллов</p>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="private-office__tab">
+                    <li class="private-office__tab-item">
+                        <div class="private-office__tab-link active">История зачислений</div>
+                    </li>
+                    <li class="private-office__tab-item">
+                        <a class="private-office__tab-link" href="private-office-point2.html">Как получить</a>
+                    </li>
+                </ul>
+
+                <div class="private-office__tab-content point-page">
+                    <div class="point-page__header">
+                        <div class="page-title page-title__margin-r">У вас 1534 балла</div>
+                        <div class="point-page__status">
+                            <div class="point-page__status-txt one">Ваш статус:</div>
+                            <!--two, three-->
+                            <div class="tooltip">
+                                <div class="tooltip__btn">
+                                    <span class="tooltip__icon i-info"></span>
+                                </div>
+                                <div class="tooltip__popup">
+                                    <p class="tooltip__popup-txt">
+                                        Статус зависит от количества баллов.
+                                    </p>
+                                    <p class="tooltip__popup-txt">
+                                        Золотой: от 1000 баллов <br />
+                                        Серебрянный: от 500 баллов <br />
+                                        Бронзовый: от 100 баллов
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table__responsive">
+                        <table class="table table-striped text-center table-md">
+                            <tr class="table__tr">
+                                <th class="table__th">№</th>
+                                <th class="table__th table__th-sorting">
+                                    Дата/время
+                                    <div class="sorting">
+                                        <button class="sorting__btn sorting__btn--disabled i-arrow-bottom" type="button"></button>
+                                        <button class="sorting__btn i-arrow-top" type="button"></button>
+                                    </div>
+                                </th>
+                                <th class="table__th">Количество</th>
+                                <th class="table__th">Действие</th>
+                            </tr>
+                            <tr class="table__tr">
+                                <td class="table__td">1</td>
+                                <td class="table__td table__td--nowrap">12.02.2021 21:21:22</td>
+                                <td class="table__td table__td--nowrap">100</td>
+                                <td class="table__td">Регистрация</td>
+                            </tr>
+                            <tr class="table__tr">
+                                <td class="table__td">2</td>
+                                <td class="table__td table__td--nowrap">01.02.2021 21:21:22</td>
+                                <td class="table__td table__td--nowrap">5</td>
+                                <td class="table__td">Голосование</td>
+                            </tr>
+                            <tr class="table__tr">
+                                <td class="table__td">3</td>
+                                <td class="table__td table__td--nowrap">12.12.2020 21:21:22</td>
+                                <td class="table__td table__td--nowrap">300</td>
+                                <td class="table__td">Публикация карточки</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--#include virtual="/parts/footer.html" -->

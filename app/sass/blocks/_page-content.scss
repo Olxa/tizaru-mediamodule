@@ -1,0 +1,15 @@
+/*------------------------------------*\
+  #Страница контекста (ЛК)
+\*------------------------------------*/
+
+.page-content {
+    padding: 25px 0 60px;
+
+    @media (max-width: 992px) {
+        padding: 20px 0 40px;
+    }
+
+    .full-container {
+        display: block;
+    }
+}

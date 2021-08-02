@@ -1,0 +1,43 @@
+.graph-sircle {
+    width: 100%;
+    max-width: 360px;
+    justify-content: space-around;
+
+    &__circular-chart {
+        display: block;
+        margin: 0 auto;
+        padding: 5%;
+        max-width: 80%;
+        max-height: 360px;
+        overflow: visible;
+    }
+
+    &__circle-bg {
+        fill: none;
+        stroke: #700000;
+        stroke-width: 5;
+    }
+
+    &__circle {
+        fill: none;
+        stroke-width: 5;
+        stroke-linecap: round;
+        animation: progress 1s ease-out forwards;
+        /*stroke: $accent;*/
+    }
+
+    &__percentage {
+        font-family: $userfont-bold;
+        font-weight: 700;
+        fill: $textcolor;
+        font-family: sans-serif;
+        font-size: 7px;
+        text-anchor: middle;
+    }
+}
+
+@keyframes progress {
+    0% {
+        stroke-dasharray: 0 100;
+    }
+}

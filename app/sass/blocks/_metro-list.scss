@@ -1,0 +1,33 @@
+.metro-list {
+    line-height: normal;
+    cursor: default;
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        display: block;
+        list-style: none;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 10px;
+
+
+        &::before {
+            color: $accent;
+            font-size: 24px;
+            margin-right: 5px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,155 @@
+/*------------------------------------*\
+  #умный поиск - мобильный
+\*------------------------------------*/
+
+@media (max-width: 992px) {
+    .mobil-bar {
+        display: flex;
+        margin-bottom: 30px;
+        position: relative;
+
+        &:focus, &:hover {
+            z-index: 20;
+        }
+    }
+
+    .mobil-bar__search {
+        flex-grow: 1;
+        height: 45px;
+        position: relative;
+        font-size: 14px;
+
+        &::before {
+            position: absolute;
+            z-index: 2;
+            font-size: 18px;
+            width: 18px;
+            height: 18px;
+            line-height: normal;
+            display: block;
+            color: $gray;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .input {
+            width: calc(100% + 45px);
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 0;
+            background: #fff;
+            border: 1px solid $accent;
+            padding: 0 55px 0 45px;
+
+            &:focus {
+                padding-left: 10px;
+                z-index: 3;
+
+                & ~ .mobil-bar-search__close, & ~ .mobil-bar-search__submit, & ~ .mobil-bar-search__modal {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+
+    .mobil-bar-search__close {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        padding: 0;
+        background: #F5F5F5;
+        border-radius: 50%;
+        right: -30px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 4;
+        opacity: 0;
+        visibility: collapse;
+        border: none;
+        font-size: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 3px;
+        padding-left: 1px;
+
+        &::before {
+            font-size: 8px;
+            color: $gray;
+        }
+    }
+
+    .mobil-bar-search__modal {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: calc(100% + 45px);
+        z-index: 2;
+        transition: 0.2s;
+        opacity: 0;
+        visibility: collapse;
+
+        &::before {
+            content: "";
+            display: block;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            opacity: 0.22;
+            z-index: 0;
+        }
+    }
+
+    .mobil-bar-search__list {
+        position: relative;
+        background: #fff;
+        padding: 25px 15px 28px;
+        z-index: 2;
+        font-size: 16px;
+        border-radius: 0 0 5px 5px;
+        border: 1px solid $gray;
+        margin-top: -1px;
+    }
+
+    .mobil-bar-search__submit {
+        position: absolute;
+        width: 21px;
+        height: 21px;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: $textcolor;
+        font-size: 0;
+        background: transparent;
+        border: none;
+        padding: 0;
+        background: url(../images/dist/icon/arrow-s.svg) no-repeat center;
+        background-size: 100% auto;
+        opacity: 0;
+        visibility: collapse;
+        z-index: 4;
+    }
+
+    .mobil-bar__btn {
+        width: 45px;
+        height: 45px;
+        min-width: 45px;
+        border-radius: 0 5px 5px 0;
+        background-color: $accent;
+        font-size: 0;
+        background-image: url(../images/dist/icon/filter.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 0;
+        border: none;
+        position: relative;
+        z-index: 2;
+    }
+}

@@ -1,0 +1,63 @@
+<!--#set var="title" value="Личный кабинет | Информация" -->
+<!--#include virtual="/parts/header-login.html" -->
+
+<div class="page-content">
+    <div class="full-container private-office__wrap">
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb--private-office">
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Главная</a></li>
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="private-office-vote.html">Голосование</a></li>
+                <li class="breadcrumb__item active" aria-current="page">История результатов голосования</li>
+            </ol>
+        </nav>
+
+        <div class="private-office">
+            <div class="private-office__sidebar">
+                <!--#include virtual="/parts/user-nav-page.html" -->
+            </div>
+
+            <div class="private-office__content">
+
+                <div class="private-office__status">
+                    ID 3500560, статус
+                    <div class="private-office__status-val private-office__status-val--one">
+                        <div class="private-office__status-popup">
+                            <p class="private-office__status-popup-txt">За все время вы набрали 2000 баллов</p>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="private-office__tab">
+                    <li class="private-office__tab-item">
+                        <a class="private-office__tab-link" href="private-office-vote.html">Голосование за проекты</a>
+                    </li>
+                    <li class="private-office__tab-item">
+                        <div class="private-office__tab-link active">История результатов голосования</div>
+                    </li>
+                </ul>
+
+                <div class="private-office__tab-content">
+
+                    <div class="page-vote">
+
+                        <div class="note-panel">
+                            <p>
+                                Вы можете проголосовать <b>раз в месяц</b> за определенное предложение
+                            </p>
+                            <p>
+                                Это влияет на проект.  И принесет вам +10 баллов  (накопление баллов в личном кабинете увеличивает ваш статус в проекте и делает карточку вашей организации более заметной)
+                            </p>
+                        </div>
+                        <div class="page-vote__not-vote">Вы пока не голосовали ни за один проект</div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--#include virtual="/parts/footer.html" -->

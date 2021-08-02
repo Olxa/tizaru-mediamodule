@@ -1,0 +1,9 @@
+.file-txt {
+    color: $accent;
+    text-decoration: underline;
+    cursor: pointer;
+
+    &__input {
+        display: none;
+    }
+}

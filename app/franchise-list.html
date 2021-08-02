@@ -1,0 +1,321 @@
+<!--#set var="title" value="Список франшиз | Tizaru" -->
+<!--#include virtual="/parts/header.html" -->
+
+<div class="company-page">
+    <div class="container">
+        <div class="page-filter company-page__filter">
+            <!--#include virtual="/parts/category-bar.html" -->
+            <!--#include virtual="/parts/mobil-bar.html" -->
+        </div>
+        <div class="company-page__header">
+            <nav aria-label="breadcrumb company-page__breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Главная</a></li>
+                    <li class="breadcrumb__item active" aria-current="page">Список франшиз</li>
+                </ol>
+            </nav>
+            <h1 class="page-title">Список франшиз</h1>
+            <p class="company-page__desc">На данной странице вы можете изучить наличие франшиз как на карте, так и в таблице </p>
+        </div>
+    </div>
+    <div class="franchise-list__map">
+        <iframe class="franchise-list__map-inner" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8981.372711912045!2d37.61291999827557!3d55.75254050046795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a50b315e573%3A0xa886bf5a3d9b2e68!2z0JzQvtGB0LrQvtCy0YHQutC40Lkg0JrRgNC10LzQu9GM!5e0!3m2!1sru!2sru!4v1618339743898!5m2!1sru!2sru" height="485" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="container">
+        <div class="franchise-list__tools">
+            <div class="franchise-list__tools-block">
+                <button class="franchise-list__tools-item link link-accent link--border" type="button">Показать свободные города списком</button>
+                <button class="franchise-list__tools-item link link-accent link--border" type="button">Показать приоритетные заявки</button>
+                <button class="franchise-list__tools-item link link-accent link--border" type="button">Показать проданные фрашизы</button>
+                <div class="franchise-list__tools-item">
+                    <div class="smart-filter franchise-list__filter">
+                        <div class="smart-filter__title franchise-list__filter-title js-smart-filter">Фильтр по странам</div>
+                        <div class="smart-filter__popup">
+                            <button class="smart-filter__close" type="button"></button>
+                            <div class="smart-filter__popup-title">Выберите страны</div>
+                            <input class="smart-filter__popup-input input" type="text" placeholder="Начните вводить..." />
+                            <div class="smart-filter__list scroll-gray">
+                                <div class="smart-filter__list-item">
+                                    <div class="checkbox"><input class="checkbox__field" id="country1" type="checkbox"><label class="checkbox__value" for="country1">Россия</label></div>
+                                </div>
+                                <div class="smart-filter__list-item">
+                                    <div class="checkbox"><input class="checkbox__field" id="country2" type="checkbox"><label class="checkbox__value" for="country2">Беларусь</label></div>
+                                </div>
+                                <div class="smart-filter__list-item">
+                                    <div class="checkbox"><input class="checkbox__field" id="country3" type="checkbox"><label class="checkbox__value" for="country3">Вьетнам</label></div>
+                                </div>
+                                <div class="smart-filter__list-item">
+                                    <div class="checkbox"><input class="checkbox__field" id="country4" type="checkbox"><label class="checkbox__value" for="country4">Голландия</label></div>
+                                </div>
+                                <div class="smart-filter__list-item">
+                                    <div class="checkbox"><input class="checkbox__field" id="country5" type="checkbox"><label class="checkbox__value" for="country5">Дания</label></div>
+                                </div>
+                                <div class="smart-filter__list-item">
+                                    <div class="checkbox"><input class="checkbox__field" id="country6" type="checkbox"><label class="checkbox__value" for="country6">Израиль</label></div>
+                                </div>
+                                <div class="smart-filter__list-item">
+                                    <div class="checkbox"><input class="checkbox__field" id="country7" type="checkbox"><label class="checkbox__value" for="country7">Монголия</label></div>
+                                </div>
+                                <div class="smart-filter__list-item">
+                                    <div class="checkbox"><input class="checkbox__field" id="country8" type="checkbox"><label class="checkbox__value" for="country8">Португалия</label></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="smart-filter franchise-list__filter">
+                        <div class="smart-filter__title franchise-list__filter-title js-smart-filter">Фильтр по валюте</div>
+                        <div class="smart-filter__popup smart-filter__popup--currency">
+                            <button class="smart-filter__close" type="button"></button>
+                            <div class="smart-filter__popup-title">Выберите нужную валюту</div>
+
+                            <div class="smart-filter__list scroll-gray">
+                                <div class="smart-filter__list-item">
+                                    <div class="radio"><input class="radio__field" id="currency1" type="radio" name="currency"><label class="radio__value" for="currency1">Российский рубль (₽)</label></div>
+                                </div>
+                                <div class="smart-filter__list-item">
+                                    <div class="radio"><input class="radio__field" id="currency2" type="radio" name="currency"><label class="radio__value" for="currency2">Доллар США ($)</label></div>
+                                </div>
+                                <div class="smart-filter__list-item">
+                                    <div class="radio"><input class="radio__field" id="currency3" type="radio" name="currency"><label class="radio__value" for="currency3">Евро (€)</label></div>
+                                </div>
+                                <div class="smart-filter__list-item">
+                                    <div class="radio"><input class="radio__field" id="currency4" type="radio" name="currency"><label class="radio__value" for="currency4">Китайские юани (¥)</label></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="franchise-list__table-container">
+        <div class="franchise-list__table table__leave">
+            <!--Когда таблица закончится добавить класс .table__leave--visible (уберет побление в конце)-->
+            <div class="table__responsive table-border">
+                <table class="table table-striped--even">
+                    <tr class="table__tr">
+                        <th class="table__th table__td--w200">
+                            <button class="sorting__btn js-sorting" type="button">Город<span class="icon-sorting i-down"></span></button>
+                        </th>
+                        <th class="table__th">
+                            <button class="sorting__btn js-sorting" type="button">Численность<span class="icon-sorting i-down"></span></button>
+                        </th>
+                        <th class="table__th text-center">
+                            Страна
+                        </th>
+                        <th class="table__th">
+                            <button class="sorting__btn js-sorting" type="button">Стоимость <br />франшизы<span class="icon-sorting i-down"></span></button>
+                        </th>
+                        <th class="table__th text-center">
+                            ID
+                        </th>
+                        <th class="table__th text-center">
+                            Дата <br />регистрации
+                        </th>
+                        <th class="table__th">
+                            <button class="sorting__btn js-sorting" type="button">Продана<span class="icon-sorting i-down"></span></button>
+                        </th>
+                        <th class="table__th">
+                            <button class="sorting__btn js-sorting" type="button">Подана <br />заявка<span class="icon-sorting i-down"></span></button>
+                        </th>
+                        <th class="table__th">
+                            <button class="sorting__btn js-sorting" type="button">Свободна<span class="icon-sorting i-down"></span></button>
+                        </th>
+                    </tr>
+                    <tr class="table__tr">
+                        <td class="table__td">Санкт-Петербург</td>
+                        <td class="table__td">1 500 000</td>
+                        <td class="table__td text-center">RUS</td>
+                        <td class="table__td">1 500 000 ₽</td>
+                        <td class="table__td">150000</td>
+                        <td class="table__td text-center">21.05.2020</td>
+                        <td class="table__td text-center text-succes">Да</td>
+                        <td class="table__td text-center text-succes">Да</td>
+                        <td class="table__td text-center text-succes">Да</td>
+                    </tr>
+                    <tr class="table__tr">
+                        <td class="table__td">Старокозьмодемьяновское</td>
+                        <td class="table__td">350000</td>
+                        <td class="table__td text-center">RUS</td>
+                        <td class="table__td">250 000 ₽</td>
+                        <td class="table__td">350000</td>
+                        <td class="table__td text-center">21.05.2020</td>
+                        <td class="table__td text-center text-error">Нет</td>
+                        <td class="table__td text-center text-succes">Да</td>
+                        <td class="table__td text-center text-succes">Да</td>
+                    </tr>
+                    <tr class="table__tr">
+                        <td class="table__td">Волгоград</td>
+                        <td class="table__td">1 500 000</td>
+                        <td class="table__td text-center">RUS</td>
+                        <td class="table__td">1 500 000 ₽</td>
+                        <td class="table__td">150000</td>
+                        <td class="table__td text-center">21.05.2020</td>
+                        <td class="table__td text-center text-succes">Да</td>
+                        <td class="table__td text-center text-succes">Да</td>
+                        <td class="table__td text-center text-succes">Да</td>
+                    </tr>
+                    <tr class="table__tr">
+                        <td class="table__td">Волгодонск</td>
+                        <td class="table__td">350000</td>
+                        <td class="table__td text-center">RUS</td>
+                        <td class="table__td">250 000 ₽</td>
+                        <td class="table__td">350000</td>
+                        <td class="table__td text-center">21.05.2020</td>
+                        <td class="table__td text-center text-error">Нет</td>
+                        <td class="table__td text-center text-succes">Да</td>
+                        <td class="table__td text-center text-succes">Да</td>
+                    </tr>
+                    <tr class="table__tr">
+                        <td class="table__td">Волгоград</td>
+                        <td class="table__td">1 500 000</td>
+                        <td class="table__td text-center">RUS</td>
+                        <td class="table__td">1 500 000 ₽</td>
+                        <td class="table__td">150000</td>
+                        <td class="table__td text-center">21.05.2020</td>
+                        <td class="table__td text-center text-succes">Да</td>
+                        <td class="table__td text-center text-succes">Да</td>
+                        <td class="table__td text-center text-succes">Да</td>
+                    </tr>
+                    <tr class="table__tr">
+                        <td class="table__td">Волгодонск</td>
+                        <td class="table__td">350000</td>
+                        <td class="table__td text-center">RUS</td>
+                        <td class="table__td">250 000 ₽</td>
+                        <td class="table__td">350000</td>
+                        <td class="table__td text-center">21.05.2020</td>
+                        <td class="table__td text-center text-error">Нет</td>
+                        <td class="table__td text-center text-succes">Да</td>
+                        <td class="table__td text-center text-succes">Да</td>
+                    </tr>
+                    <tr class="table__tr">
+                        <td class="table__td">Волгоград</td>
+                        <td class="table__td">1 500 000</td>
+                        <td class="table__td text-center">RUS</td>
+                        <td class="table__td">1 500 000 ₽</td>
+                        <td class="table__td">150000</td>
+                        <td class="table__td text-center">21.05.2020</td>
+                        <td class="table__td text-center text-succes">Да</td>
+                        <td class="table__td text-center text-succes">Да</td>
+                        <td class="table__td text-center text-succes">Да</td>
+                    </tr>
+                    <tr class="table__tr">
+                        <td class="table__td">Волгодонск</td>
+                        <td class="table__td">350000</td>
+                        <td class="table__td text-center">RUS</td>
+                        <td class="table__td">250 000 ₽</td>
+                        <td class="table__td">350000</td>
+                        <td class="table__td text-center">21.05.2020</td>
+                        <td class="table__td text-center text-error">Нет</td>
+                        <td class="table__td text-center text-succes">Да</td>
+                        <td class="table__td text-center text-succes">Да</td>
+                    </tr>
+                    <tr class="table__tr">
+                        <td class="table__td">Волгоград</td>
+                        <td class="table__td">1 500 000</td>
+                        <td class="table__td text-center">RUS</td>
+                        <td class="table__td">1 500 000 ₽</td>
+                        <td class="table__td">150000</td>
+                        <td class="table__td text-center">21.05.2020</td>
+                        <td class="table__td text-center text-succes">Да</td>
+                        <td class="table__td text-center text-succes">Да</td>
+                        <td class="table__td text-center text-succes">Да</td>
+                    </tr>
+                    <tr class="table__tr">
+                        <td class="table__td">Волгодонск</td>
+                        <td class="table__td">350000</td>
+                        <td class="table__td text-center">RUS</td>
+                        <td class="table__td">250 000 ₽</td>
+                        <td class="table__td">350000</td>
+                        <td class="table__td text-center">21.05.2020</td>
+                        <td class="table__td text-center text-error">Нет</td>
+                        <td class="table__td text-center text-succes">Да</td>
+                        <td class="table__td text-center text-succes">Да</td>
+                    </tr>
+                    <tr class="table__tr">
+                        <td class="table__td">Волгоград</td>
+                        <td class="table__td">1 500 000</td>
+                        <td class="table__td text-center">RUS</td>
+                        <td class="table__td">1 500 000 ₽</td>
+                        <td class="table__td">150000</td>
+                        <td class="table__td text-center">21.05.2020</td>
+                        <td class="table__td text-center text-succes">Да</td>
+                        <td class="table__td text-center text-succes">Да</td>
+                        <td class="table__td text-center text-succes">Да</td>
+                    </tr>
+                    <tr class="table__tr">
+                        <td class="table__td">Волгодонск</td>
+                        <td class="table__td">350000</td>
+                        <td class="table__td text-center">RUS</td>
+                        <td class="table__td">250 000 ₽</td>
+                        <td class="table__td">350000</td>
+                        <td class="table__td text-center">21.05.2020</td>
+                        <td class="table__td text-center text-error">Нет</td>
+                        <td class="table__td text-center text-succes">Да</td>
+                        <td class="table__td text-center text-succes">Да</td>
+                    </tr>
+                    <tr class="table__tr">
+                        <td class="table__td">Волгоград</td>
+                        <td class="table__td">1 500 000</td>
+                        <td class="table__td text-center">RUS</td>
+                        <td class="table__td">1 500 000 ₽</td>
+                        <td class="table__td">150000</td>
+                        <td class="table__td text-center">21.05.2020</td>
+                        <td class="table__td text-center text-succes">Да</td>
+                        <td class="table__td text-center text-succes">Да</td>
+                        <td class="table__td text-center text-succes">Да</td>
+                    </tr>
+                    <tr class="table__tr">
+                        <td class="table__td">Волгодонск</td>
+                        <td class="table__td">350000</td>
+                        <td class="table__td text-center">RUS</td>
+                        <td class="table__td">250 000 ₽</td>
+                        <td class="table__td">350000</td>
+                        <td class="table__td text-center">21.05.2020</td>
+                        <td class="table__td text-center text-error">Нет</td>
+                        <td class="table__td text-center text-succes">Да</td>
+                        <td class="table__td text-center text-succes">Да</td>
+                    </tr>
+                    <tr class="table__tr">
+                        <td class="table__td">Волгодонск</td>
+                        <td class="table__td">350000</td>
+                        <td class="table__td text-center">RUS</td>
+                        <td class="table__td">250 000 ₽</td>
+                        <td class="table__td">350000</td>
+                        <td class="table__td text-center">21.05.2020</td>
+                        <td class="table__td text-center text-error">Нет</td>
+                        <td class="table__td text-center text-succes">Да</td>
+                        <td class="table__td text-center text-succes">Да</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="table__leave-more">
+            <button class="link link-accent link--border" type="button">Показать ещё</button>
+        </div>        
+    </div>
+    <div class="container">
+        <div class="franchise-list__footer">
+            <div class="franchise-list__regist">
+                <a class="btn btn-conture popup-link" href="#regist-fr">Зарегистрироваться как франчайзи</a>
+            </div>
+            <div class="share-block share-block--company-page">
+                <div class="share-block__title">Расскажите о Tuzaru!</div>
+                <div class="share-block__content">
+                    <p class="share-block__text">Мы будем очень благодарны, если вы поделитесь этой страницей в соцсетях. Чем больше людей узнает о нашем проекте, тем больше возможностей для развития будет у нас с вами.</p>
+                    <div class="share-block__action">
+                        <a class="btn btn-accent i-share share-block__action-btn js-share-btn" href="#">Поделиться</a>
+                        <span class="share-block__action-count">1868 поделилось</span>
+                        <!--#include virtual="/parts/share-block.html" -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="regist-fr" class="popup login-reg-popup mfp-hide">
+    <!--#include virtual="/parts/login-reg-fr.html" -->
+</div>
+<!--#include virtual="/parts/footer.html" -->

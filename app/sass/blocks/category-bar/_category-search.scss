@@ -1,0 +1,22 @@
+.category-search {
+    display: flex;
+    flex-grow: 1;
+
+    .btn {
+        width: 180px;
+        border-radius: 0 5px 5px 0;
+    }
+
+    &__input {
+        &:focus {
+            & ~ .smart-search__modal {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            & ~ .clear {
+                opacity: 1;
+            }
+        }
+    }
+}

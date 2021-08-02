@@ -1,0 +1,7 @@
+.page {
+    padding-bottom: 60px;
+
+    @media (max-width: 767px) {
+        padding-bottom: 50px;
+    }
+}

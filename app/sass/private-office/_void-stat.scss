@@ -1,0 +1,103 @@
+.void-stat {
+    display: flex;
+
+    @media (max-width: 1200px) {
+        flex-wrap: wrap;
+    }
+
+    &__card {
+        position: relative;
+        width: 45%;
+        max-width: 555px;
+        border: 1px solid $gray;
+        border-radius: $border-radius;
+        margin-right: 5%;
+
+        @media (max-width: 1200px) {
+            width: 100%;
+            max-width: 100%;
+            margin-right: 0;
+            margin-bottom: 30px;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__table-wrap {
+        padding: 0 30px;
+        max-height: 100%;
+        overflow-y: auto;
+
+        @media (max-width: 1200px) {
+            padding: 0;
+        }
+    }
+
+    &__table-inner {
+        max-height: 390px;
+        overflow-y: auto;
+
+        @media (max-width: 1200px) {
+            max-height: 100%;
+        }
+    }
+
+    &__card-header {
+        padding: 30px 24px 20px;
+
+        @media (max-width: 1365px) {
+            padding: 15px;
+        }
+    }
+
+    &__indicators {
+        display: flex;
+        padding: 0 24px 20px;
+
+        @media (max-width: 1365px) {
+            padding: 0 15px 10px;
+        }
+    }
+
+    &__indicators-col {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__indicators-title,
+    &__indicators-val {
+        margin-bottom: 13px;
+    }
+
+    &__indicators-val {
+        margin-left: 40px;
+    }
+
+    .graph {
+        @media (max-width: 1365px) {
+            padding: 0 15px;
+        }
+    }
+
+    .group-tab {
+        @media (max-width: 1365px) {
+            padding-bottom: 60px;
+        }
+    }
+
+    .slick-prev {
+        @media (max-width: 1365px) {
+            right: auto;
+            left: 15px;
+        }
+    }
+
+    .slick-next {
+        @media (max-width: 1365px) {
+            right: auto;
+            left: 70px;
+        }
+    }
+}

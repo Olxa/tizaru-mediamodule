@@ -1,0 +1,142 @@
+<!--#set var="title" value="Личный кабинет | Информация" -->
+<!--#include virtual="/parts/header-login.html" -->
+
+<div class="page-content">
+    <div class="full-container private-office__wrap">
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb--private-office">
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Главная</a></li>
+                <li class="breadcrumb__item active" aria-current="page">Голосование</li>
+            </ol>
+        </nav>
+
+        <div class="private-office">
+            <div class="private-office__sidebar">
+                <!--#include virtual="/parts/user-nav-page-fr.html" -->
+            </div>
+
+            <div class="private-office__content franchise-void franchise-void__limited-width">
+
+                <div class="private-office__tab-content">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <form class="form" action="/" method="post">
+                                <div class="row form-horizont">
+                                    <div class="col-md-6">
+                                        <div class="input-wrap">
+                                            <label class="input-wrap__label">Статусы</label>
+                                            <div class="dropdown dropdown--input js-dropdown-toogle">
+                                                <button class="dropdown__value" type="button">
+                                                    <span class="dropdown__value-inner">
+                                                    </span>
+                                                </button>
+                                                <div class="dropdown__list scroll-gray">
+                                                    <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Значение 1</a></div>
+                                                    <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Значение 2</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <button class="btn btn-accent btn--md btn-search--sm icon i-search" type="submit">
+                                            <span class="btn-search__mob-txt">Найти</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-6 franchise-void__btn-new-void">
+                            <a class="btn btn-conture btn--md" href="fr-private-office-void1.html">Создать опрос</a>
+                        </div>
+                    </div>                    
+                    <div class="table__responsive">
+                        <table class="table table-striped">
+                            <tr class="table__tr">
+                                <th class="table__th">Дата/время</th>
+                                <th class="table__th text-center">Вопрос</th>
+                                <th class="table__th text-center">Статус</th>
+                                <th class="table__th text-center">Стастистика</th>
+                                <th class="table__th"></th>
+                            </tr>
+                            <tr class="table__tr">
+                                <td class="table__td table__td--nowrap">22.01.2021. 22:20</td>
+                                <td class="table__td"><a class="table__td-link" href="fr-private-office-void1.html" title="Редактировать опрос">Название опроса</a></td>
+                                <td class="table__td table__td--nowrap">Не опубликовано</td>
+                                <td class="table__td text-center table__td--nowrap">
+                                    <span class="icon i-bar-graph franchise-void__icon-statistic"></span>
+                                    <a class="table__td-link" href="fr-private-office-void2.html" title="Смотреть статистику">1039 | 1:20, 2:19, 3:1000</a>
+                                </td>
+                                <td class="table__td">
+                                    <div class="options">
+                                        <button class="options__btn" type="button"></button>
+                                        <div class="options__popup">
+                                            <ul class="options__list">
+                                                <li class="options__item"><a class="options__link" href="fr-private-office-void1.html">Изменить</a></li>
+                                                <li class="options__item"><a class="options__link" href="fr-private-office-void2.html">Смотреть статистику</a></li>
+                                                <li class="options__item"><a class="options__link" href="#">Опубликовать</a></li>
+                                                <li class="options__item"><a class="options__link" href="#">Снять с публикации</a></li>
+                                                <li class="options__item"><a class="options__link  options__link-del" href="#">Удалить</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="table__tr">
+                                <td class="table__td table__td--nowrap">22.01.2021. 22:20</td>
+                                <td class="table__td"><a class="table__td-link" href="fr-private-office-void1.html" title="Редактировать опрос">Длинное название очень важного опроса</a></td>
+                                <td class="table__td table__td--nowrap">Опубликовано</td>
+                                <td class="table__td text-center table__td--nowrap">
+                                    <span class="icon i-bar-graph franchise-void__icon-statistic"></span>
+                                    <a class="table__td-link" href="fr-private-office-void2.html" title="Смотреть статистику">1039 | 1:20, 2:19, 3:1000</a>
+                                </td>
+                                <td class="table__td">
+                                    <div class="options">
+                                        <button class="options__btn" type="button"></button>
+                                        <div class="options__popup">
+                                            <ul class="options__list">
+                                                <li class="options__item"><a class="options__link" href="fr-private-office-void1.html">Изменить</a></li>
+                                                <li class="options__item"><a class="options__link" href="fr-private-office-void2.html">Смотреть статистику</a></li>
+                                                <li class="options__item"><a class="options__link" href="#">Опубликовать</a></li>
+                                                <li class="options__item"><a class="options__link" href="#">Снять с публикации</a></li>
+                                                <li class="options__item"><a class="options__link  options__link-del" href="#">Удалить</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="table__tr">
+                                <td class="table__td table__td--nowrap">22.01.2021. 22:20</td>
+                                <td class="table__td"><a class="table__td-link" href="fr-private-office-void1.html" title="Редактировать опрос">Название опроса</a></td>
+                                <td class="table__td table__td--nowrap">Закрыто</td>
+                                <td class="table__td text-center table__td--nowrap">
+                                    <span class="icon i-bar-graph franchise-void__icon-statistic"></span>
+                                    <a class="table__td-link" href="fr-private-office-void2.html" title="Смотреть статистику">1039 | 1:20, 2:19, 3:1000</a>
+                                </td>
+                                <td class="table__td">
+                                    <div class="options">
+                                        <button class="options__btn" type="button"></button>
+                                        <div class="options__popup">
+                                            <ul class="options__list">
+                                                <li class="options__item"><a class="options__link" href="fr-private-office-void1.html">Изменить</a></li>
+                                                <li class="options__item"><a class="options__link" href="fr-private-office-void2.html">Смотреть статистику</a></li>
+                                                <li class="options__item"><a class="options__link" href="#">Опубликовать</a></li>
+                                                <li class="options__item"><a class="options__link" href="#">Снять с публикации</a></li>
+                                                <li class="options__item"><a class="options__link  options__link-del" href="#">Удалить</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!--#include virtual="/parts/pagination-count.html" -->
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--#include virtual="/parts/footer.html" -->

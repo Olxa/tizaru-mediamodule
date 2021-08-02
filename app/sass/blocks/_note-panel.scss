@@ -1,0 +1,14 @@
+/*------------------------------------*\
+  #Панель с подсказкой
+\*------------------------------------*/
+
+.note-panel {
+    padding: 20px;
+    box-shadow: $shadow1;
+    border-radius: $border-radius;
+    background: #ffffff;
+
+    p {
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,634 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Контакты | Tizaru</title>
+    <meta name="description" content="<!--#echo var=' title' -->">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="full-container">
+            <button type="button" class="header__btn-menu">
+                <span class="burger-btn">
+                    <span class="burger-btn__item"></span>
+                    <span class="burger-btn__item"></span>
+                    <span class="burger-btn__item"></span>
+                </span>
+                Меню
+            </button>
+
+            <div class="header-logo mobil-vis"><img class="header-logo__image" src="images/dist/logo-mobil.svg" alt="Tizaru"></div>
+            <div class="mobil-header-wrapper">
+                <button class="header__btn-menu-close mobil-vis i-close"></button>
+                <div class="header__row">
+
+                    <div class="header__city">
+                        <span class="header__city-mobil-none">Ваше местоположение:</span> 
+                        <button class="header__city-btn" type="button">Москва</button>
+                        <div class="city-wrapper tabs">
+                            <button class="city-wrapper__back mobil-vis i-arrow"></button>
+                            <div class="city__tasd-nav tabs-nav">
+                                <button class="city__babs-btn tabs-btn" type="button">Карта</button>
+                                <button class="city__babs-btn tabs-btn active" type="button">Город</button>
+                            </div>
+                            <div class="city-wrapper__search input-search">
+                                <input class="input input-search__val" type="text" placeholder="Поиск">
+                                <button class="input-search__btn i-search" type="submit">Поиск</button>
+                            </div>
+                            <div class="tabs-content">
+                                <div class="city-wrapper__map">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8981.372711912045!2d37.61291999827557!3d55.75254050046795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a50b315e573%3A0xa886bf5a3d9b2e68!2z0JzQvtGB0LrQvtCy0YHQutC40Lkg0JrRgNC10LzQu9GM!5e0!3m2!1sru!2sru!4v1618339743898!5m2!1sru!2sru" height="485" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                </div>
+                                <div class="city-wrapper__map-info map-bar">
+                                    <div class="map-bar__text">Вам будут показаны объявления, а также новости для выбранного населенного пункта.</div>
+                                    <div class="map-bar__btns">
+                                        <span class="map-bar__label">Радиус</span>
+                                        <button class="map-bar__btn map-bar__btn-first" type="button">1 км</button>
+                                        <button class="map-bar__btn" type="button">5 км</button>
+                                        <button class="map-bar__btn" type="button">10 км</button>
+                                        <button class="map-bar__btn" type="button">25 км</button>
+                                        <button class="map-bar__btn" type="button">50 км</button>
+                                        <button class="map-bar__btn map-bar__btn-last" type="button">Более 50 км</button>
+                                    </div>
+                                </div>
+
+                                <div class="city-wrapper__btns">
+                                    <button class="btn btn-conture btn--full" type="button">Отмена</button>
+                                    <button class="btn btn-accent btn--full" type="button">Сохранить</button>
+                                </div>
+                            </div>
+                            <div class="tabs-content active">
+
+                                <div class="city__auto">
+                                    Москва
+                                    <small class="city__small">Определен автоматически</small>
+                                </div>
+                                <div class="city-wrapper__lists">
+                                    <ul class="city-wrapper__list">
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Москва</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Санкт-Петербург</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Краснодар</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Новосибирск</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Красноярск</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Челябинск</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Тюмень</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Ростов-на-Дону</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Уфа</a></li>
+                                    </ul>
+                                    <ul class="city-wrapper__list">
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Казань</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Пермь</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Нижний Новгород</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Самара</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Омск</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Саратов</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Хабаровск</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Томск</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Воронеж</a></li>
+                                    </ul>
+                                    <ul class="city-wrapper__list">
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Балашиха</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Иркутск</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Сочи</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Ярославль</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Сургур</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Подольск</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Мытыщи</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Владивосток</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Пятигорск</a></li>
+                                    </ul>
+                                </div>
+                                <div class="city-wrapper__btns">
+                                    <button class="btn btn-conture btn--full" type="button">Отмена</button>
+                                    <button class="btn btn-accent btn--full" type="button">Сохранить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="header__languages">
+                        <button type="button" class="header__btn-languages btn-languages"><span class="btn-languages__flag"><img src="images/dist/flag/ru.svg" alt="ru"></span>Россия, все регионы</button>
+                        <div class="header__languages-list languages-list">
+                            <div class="languages-list__title">Смена языка</div>
+                            <a class="languages-list__link" href="#"><span class="languages-list__flag"><img src="images/dist/flag/ru.svg" alt="Россия"></span>Россия, все регионы</a>
+                            <a class="languages-list__link" href="#"><span class="languages-list__flag"><img src="images/dist/flag/de.svg" alt="Deutsch"></span>Deutsch, alle Regionen</a>
+                            <a class="languages-list__link" href="#"><span class="languages-list__flag"><img src="images/dist/flag/en.svg" alt="English"></span>English, all regions</a>
+                            <a class="languages-list__link" href="#"><span class="languages-list__flag"><img src="images/dist/flag/es.svg" alt="Español"></span>Español, todas las regiones</a>
+                            <a class="languages-list__link" href="#"><span class="languages-list__flag"><img src="images/dist/flag/cn.svg" alt="中文"></span>中文，所有地区</a>
+                            <a class="languages-list__link" href="#"><span class="languages-list__flag"><img src="images/dist/flag/fr.svg" alt="Français"></span>Français, toutes les régions</a>
+                            <a class="languages-list__link" href="#"><span class="languages-list__flag"><img src="images/dist/flag/oa.svg" alt="الإمارات العربية المتحدة"></span>الإمارات العربية المتحدة</a>
+                            <a class="languages-list__link" href="#"><span class="languages-list__flag"><img src="images/dist/flag/tr.svg" alt="Türk"></span>Türk, tüm bölgeler</a>
+                            <a class="languages-list__link" href="#"><span class="languages-list__flag"><img src="images/dist/flag/pt.svg" alt="Portugueses"></span>Portugueses, todas as regiões</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-menu">
+                    <div class="full-container">
+                        <div class="main-menu__search input-search">
+                            <input class="input input-search__val" type="text" placeholder="Поиск">
+                            <button class="input-search__btn i-search" type="submit">Поиск</button>
+                        </div>
+                        <div class="main-menu__tabs-nav">
+                            <button class="main-menu__tabs-btn active" type="button" data-btn="articles">Статьи</button>
+                            <button class="main-menu__tabs-btn mobil-vis" type="button" data-btn="sections">Разделы сайта</button>
+                        </div>
+                        <nav class="main-menu__wrapper">
+                            <div class="main-menu__col main-menu__col-left active" data-col="articles">
+                                <ul class="main-menu__list">
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">Все разделы</a></li>
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">Бизнес</a></li>
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">Технологии</a></li>
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">Финансы и инвестиции</a></li>
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">Экспертное мнение</a></li>
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">Персоны</a></li>
+                                </ul>
+                                <ul class="main-menu__list">
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">Видео</a></li>
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">Карьера и свой бизнес</a></li>
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">Общество</a></li>
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">Культура</a></li>
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">Спорт</a></li>
+                                </ul>
+                            </div>
+                            <div class="main-menu__col main-menu__col-right" data-col="sections">
+                                <ul class="main-menu__list">
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">Команда проекта</a></li>
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">Наша миссия</a></li>
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">Помощь проекту</a></li>
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">Станьте частью команды проекта</a></li>
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">Пользовательское <br /> соглашение</a></li>
+                                </ul>
+                                <ul class="main-menu__list">
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">Станьте совладельцем проекта</a></li>
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">О проекте</a></li>
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">Открытие франшизы</a></li>
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">Список франшиз</a></li>
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">Общий реестр</a></li>
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">Блог</a></li>
+                                </ul>
+                                <ul class="main-menu__list">
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">Сертификат TIZARU</a></li>
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">Получение баллов</a></li>
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">Реклама</a></li>
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">Контакты</a></li>
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">О компании</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="header__btn-wrap">
+                    <a class="btn btn-conture btn-flex i-user-p" href="#">Стать акционером</a>
+                    <a class="btn btn-conture btn-flex i-plus" href="#">Добавить организацию</a>
+                </div>
+
+                <div class="header-mobil mobil-vis">
+                    <div class="header-mobil__contact icon i-wt-fl">Cвязаться по <a class="link link-accent link--border" href="https://wa.me/71111111111" target="_blank">WhatsApp</a></div>
+                    <a class="header-mobil__contact  icon i-phone" href="tel:+74993401044">+7 (499) 340-10-44</a>
+                    <a class="header-mobil__link link link-default" href="#" target="_blank">Политика конфиденциальности</a> <br>
+                    <a class="header-mobil__link link link-default" href="#" target="_blank">Соглашение на обработку <br>персональных данных</a>
+                    <div class="header-mobil__logo"><img src="images/dist/logo-m-f.png" alt="Tizaru"></div>
+                </div>
+            </div>
+
+            <div class="header__right-btns login-wrapper">
+                <button class="header__reg-btn" type="button"><span class="header__regis-link">Регистрация /</span> Вход</button>
+                <div class="login-reg">
+                    <button class="login-reg__close mobil-vis i-min-close" type="button"></button>
+                    <div class="login active">
+                        <div class="login-user active">
+                            <form action="/" method="post">
+                                <div class="login-reg__title">Войдите в свой аккаунт</div>
+                                <div class="input-wrap">
+                                    <label class="input-wrap__label">
+                                        E-mail
+                                        <input class="input" type="email">
+                                    </label>
+                                </div>
+                                <div class="input-wrap">
+                                    <label class="input-wrap__label" for="password3">Пароль</label>
+                                    <div class="input-password">
+                                        <input class="input input-password__val" id="password3" type="password">
+                                        <button class="input-password__eye icon i-eye"></button>
+                                    </div>
+                                </div>
+                                <div class="login-reg__row">
+                                    <div class="checkbox">
+                                        <input class="checkbox__field" id="remember" type="checkbox">
+                                        <label class="checkbox__value" for="remember">Запомнить меня</label>
+                                    </div>
+                                    <div class="recovery-link">Забыли пароль?</div>
+                                </div>
+                                <div class="captcha">
+                                    <img src="images/dist/capc.jpg" alt="Гугл капча">
+                                </div>
+                                <button class="btn btn-accent btn--full" type="submit">Войти</button>
+                            </form>
+                            
+                            <span class="login-user__or-txt">Или используйте социальную сеть</span>                            
+                            <div class="soc-login">
+                                <a class="soc-login__link gg" href="#"></a>
+                                <a class="soc-login__link vk" href="#"></a>
+                                <a class="soc-login__link fb" href="#"></a>
+                            </div>
+                            <button type="button" class="btn btn-conture btn--full btn-login-franchisees">Вход франчайзи</button>
+                        </div>
+
+                        <div class="login-franchisees">
+                            <form action="/" method="post">
+                                <div class="login-reg__title">Вход франчайзи</div>
+                                <div class="input-wrap">
+                                    <label class="input-wrap__label">
+                                        E-mail
+                                        <input class="input" type="email">
+                                    </label>
+                                </div>
+                                <div class="input-wrap">
+                                    <label class="input-wrap__label" for="password">Пароль</label>
+                                    <div class="input-password">
+                                        <input class="input input-password__val" id="password" type="password">
+                                        <button class="input-password__eye icon i-eye"></button>
+                                    </div>
+                                </div>
+                                <div class="login-reg__row">
+                                    <div class="checkbox">
+                                        <input class="checkbox__field" id="remember-f" type="checkbox">
+                                        <label class="checkbox__value" for="remember-f">Запомнить меня</label>
+                                    </div>
+                                    <div class="recovery-link">Забыли пароль?</div>
+                                </div>
+                                <div class="captcha">
+                                    <img src="images/dist/capc.jpg" alt="Гугл капча">
+                                </div>
+                                <button type="submit" class="btn btn-accent btn--full">Войти</button>
+                            </form>
+                            <button type="button" class="btn btn-conture btn--full btn-login-user">Вход пользователя</button>
+                        </div>
+
+                        <div class="login-reg__footer">
+                            <button type="button" class="login-reg__btn login__btn">Регистрация</button>
+                        </div>
+
+                    </div>
+                    <div class="registrations">
+
+                        <div class="registrations-user active">
+                            <form action="/" method="post">
+                                <div class="login-reg__title">Регистрация</div>
+                                <div class="input-wrap">
+                                    <label class="input-wrap__label">
+                                        E-mail
+                                        <input class="input" type="email">
+                                    </label>
+                                </div>
+                                <div class="input-wrap">
+                                    <label class="input-wrap__label" for="password1">Пароль</label>
+                                    <div class="input-password">
+                                        <input class="input input-password__val" id="password1" type="password">
+                                        <button class="input-password__eye icon i-eye"></button>
+                                    </div>
+                                </div>
+                                <div class="login-reg__row">
+                                    <div class="checkbox">
+                                        <input class="checkbox__field" id="consent" type="checkbox">
+                                        <label class="checkbox__value login-reg__checkbox-accept" for="consent">Согласен(-на) на обработку данных и с <a href="terms-of-use.html">пользовательским соглашением</a></label>
+                                    </div>
+                                </div>
+                                <div class="captcha">
+                                    <img src="images/dist/capc.jpg" alt="Гугл капча">
+                                </div>
+                                <button type="submit" class="btn btn-accent btn--full">Зарегистрироваться</button>
+                            </form>
+
+                            <span class="login-user__or-txt">Или используйте социальную сеть</span>
+                            <div class="soc-login">
+                                <a class="soc-login__link gg" href="#"></a>
+                                <a class="soc-login__link vk" href="#"></a>
+                                <a class="soc-login__link fb" href="#"></a>
+                            </div>
+                            <button type="button" class="btn btn-conture btn--full btn-registrations-franchisees">Регистрация франчайзи</button>
+                        </div>
+
+                        <div class="registrations-franchisees">
+                            <form action="/" method="post">
+                                <div class="login-reg__title">Регистрация франчайзи</div>
+                                <div class="input-wrap">
+                                    <label class="input-wrap__label">
+                                        E-mail
+                                        <input class="input" type="email">
+                                    </label>
+                                </div>
+                                <div class="input-wrap">
+                                    <label class="input-wrap__label" for="password2">Пароль</label>
+                                    <div class="input-password">
+                                        <input class="input input-password__val" id="password2" type="password">
+                                        <button class="input-password__eye icon i-eye"></button>
+                                    </div>
+                                </div>
+                                <div class="input-wrap">
+                                    <label class="input-wrap__label">
+                                        Страна
+                                        <input class="input" type="text">
+                                    </label>
+                                </div>
+                                <div class="input-wrap">
+                                    <label class="input-wrap__label">
+                                        Город
+                                        <input class="input" type="text">
+                                    </label>
+                                </div>
+                                <div class="login-reg__row">
+                                    <div class="checkbox">
+                                        <input class="checkbox__field" id="consent-f" type="checkbox">
+                                        <label class="checkbox__value login-reg__checkbox-accept" for="consent-f">Согласен(-на) на обработку данных и с <a href="terms-of-use.html">пользовательским соглашением</a></label>
+                                    </div>
+                                </div>
+                                <div class="captcha">
+                                    <img src="images/dist/capc.jpg" alt="гугл капча">
+                                </div>
+                                <button type="submit" class="btn btn-accent btn--full">Зарегистрироваться</button>
+                            </form>
+                            <button type="button" class="btn btn-conture btn--full btn-registrations-user">Регистрация пользователя</button>
+                        </div>
+
+                        <div class="login-reg__footer">
+                            <button type="button" class="login-reg__btn registrations__btn">Вход</button>
+                        </div>
+
+                    </div>
+
+                    <div class="recovery">
+
+                        <div class="recovery-form active">
+                            <form action="/" method="post">
+                                <div class="login-reg__title">Восстановление пароля</div>
+                                <div class="input-wrap">
+                                    <label class="input-wrap__label">
+                                        E-mail
+                                        <input class="input" type="email">
+                                    </label>
+                                </div>
+                                <div class="captcha">
+                                    <img src="images/dist/capc.jpg" alt="Гугл капча">
+                                </div>
+                                <div class="login-reg__footer">
+                                    <button type="button" class="btn btn-accent btn--full btn-recovery-send">Восстановить пароль</button>
+                                </div>
+                            </form>
+                            <button type="button" class="btn btn-conture btn--full btn-registrations-user">Зарегистрироваться</button>
+                        </div>
+
+                        <div class="recovery-send">
+                            <div class="recovery-send__image"></div>
+                            <div class="recovery-send__txt">
+                                Инструкции по восстановлению пароля отправлены на ваш email
+                            </div>
+                        </div>
+
+                        <div class="login-reg__footer">
+                            <button type="button" class="login-reg__btn registrations__btn">Вход</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+<div class="company-page contacts">
+    <div class="container">
+        <div class="company-page__header">
+            <a class="company-page__logo" href="/">
+                <img class="company-page__logo-image" src="images/dist/logo-mobil.svg" alt="Tizaru">
+            </a>
+            <nav aria-label="breadcrumb company-page__breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Главная</a></li>
+                    <li class="breadcrumb__item active" aria-current="page">Контакты</li>
+                </ol>
+            </nav>
+        </div>
+
+        <div class="row">
+            <div class="col-xl-8">
+                <h1 class="page-title">Контакты</h1>
+                <div class="contacts__table">
+                    <div class="contacts__row">
+                        <div class="contacts__item">
+                            <span class="icon">
+                                <svg width="22" height="31" viewBox="0 0 22 31" fill="none">
+                                    <path d="M11.2114 1C5.57448 1.00644 1.00644 5.57448 1 11.2114C1 16.6853 10.4252 28.9793 10.8263 29.4996L11.2114 30L11.5966 29.4996C11.9977 28.9793 21.4229 16.6853 21.4229 11.2114C21.4164 5.57448 16.8484 1.00644 11.2114 1ZM11.2114 28.3963C9.41666 25.9937 1.97252 15.7599 1.97252 11.2114C1.97252 6.10894 6.10894 1.97252 11.2114 1.97252C16.3139 1.97252 20.4504 6.10894 20.4504 11.2114C20.4504 15.7589 13.0062 25.9937 11.2114 28.3963Z" fill="currentColor" stroke="currentColor" stroke-width="0.5" />
+                                    <path d="M11.2124 7.80762C9.33253 7.80762 7.80859 9.33155 7.80859 11.2114C7.80859 13.0913 9.33253 14.6152 11.2124 14.6152C13.0923 14.6152 14.6162 13.0913 14.6162 11.2114C14.6141 9.33246 13.0914 7.80974 11.2124 7.80762ZM11.2124 13.6427C9.86966 13.6427 8.78111 12.5542 8.78111 11.2114C8.78111 9.86869 9.86966 8.78014 11.2124 8.78014C12.5552 8.78014 13.6437 9.86869 13.6437 11.2114C13.6421 12.5535 12.5545 13.6411 11.2124 13.6427Z" fill="currentColor" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.55859 11.2114C7.55859 9.19348 9.19446 7.55762 11.2124 7.55762H11.2127C13.2295 7.5599 14.8639 9.19433 14.8662 11.2111V11.2114C14.8662 13.2294 13.2304 14.8652 11.2124 14.8652C9.19446 14.8652 7.55859 13.2294 7.55859 11.2114ZM11.2123 8.05762C9.47053 8.05769 8.05859 9.46967 8.05859 11.2114C8.05859 12.9532 9.4706 14.3652 11.2124 14.3652C12.9541 14.3652 14.3661 12.9534 14.3662 11.2117C14.3642 9.47065 12.9533 8.05967 11.2123 8.05762ZM11.2124 9.03014C10.0077 9.03014 9.03111 10.0068 9.03111 11.2114C9.03111 12.416 10.0076 13.3926 11.2121 13.3927C12.4163 13.3913 13.3923 12.4154 13.3937 11.2111C13.3935 10.0066 12.417 9.03014 11.2124 9.03014ZM8.53111 11.2114C8.53111 9.73062 9.73159 8.53014 11.2124 8.53014C12.6932 8.53014 13.8937 9.73062 13.8937 11.2114V11.2117C13.892 12.6916 12.6926 13.891 11.2127 13.8927H11.2124C9.73159 13.8927 8.53111 12.6922 8.53111 11.2114Z" fill="currentColor" />
+                                </svg>
+                            </span>
+                            г.Москва ул. Самуила Маршака д.22 оф.277
+                        </div>
+                    </div>
+                    <div class="contacts__row">
+                        <div class="contacts__item-group">
+                            <div class="contacts__item">
+                                <div class="contacts__item-val">
+                                    <span class="icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <g clip-path="url(#clip0)">
+                                                <path d="M16.603 11.85L14.122 5.59L12.03 9.25L9.93801 5.59L7.45701 11.852H6.74001V12.793H10.476V11.852H9.92301L10.461 10.297L12.03 12.867L13.599 10.297L14.137 11.852H13.584V12.793H17.335V11.852L16.603 11.85ZM21.938 9.938C21.9387 8.63274 21.6821 7.34015 21.1829 6.13412C20.6837 4.92809 19.9517 3.83227 19.0287 2.90931C18.1057 1.98635 17.0099 1.25435 15.8039 0.755148C14.5979 0.255949 13.3053 -0.000655939 12 1.25918e-06C6.51601 1.25918e-06 2.06201 4.453 2.06201 9.938C2.06201 12.688 3.18301 15.168 4.97601 16.961C5.08829 17.0743 5.23172 17.1516 5.38805 17.1831C5.54439 17.2146 5.70658 17.199 5.85398 17.1381C6.00138 17.0772 6.12735 16.9738 6.21585 16.8412C6.30436 16.7085 6.35141 16.5525 6.35101 16.393C6.35135 16.175 6.26543 15.9658 6.11201 15.811C4.55879 14.2515 3.68835 12.139 3.69201 9.938C3.69201 5.35 7.41201 1.614 12 1.614C16.588 1.614 20.324 5.35 20.324 9.938C20.3265 11.0316 20.1125 12.1149 19.6944 13.1254C19.2763 14.136 18.6624 15.0538 17.888 15.826L10.864 22.849L12 24L19.039 16.961C19.9613 16.0393 20.6922 14.9442 21.1897 13.739C21.6873 12.5337 21.9416 11.2419 21.938 9.938Z" fill="currentColor" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0">
+                                                    <rect width="24" height="24" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </span>
+                                    Рассказовка
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts__row">
+                        <div class="contacts__item">
+                            <span class="icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M22.4227 17.971L17.9698 15.0015C17.4047 14.6277 16.6473 14.7507 16.2295 15.2841L14.9324 16.9518C14.7657 17.1716 14.4627 17.2354 14.2216 17.1014L13.9748 16.9654C13.1569 16.5196 12.1392 15.9646 10.0888 13.9134C8.0383 11.8622 7.48215 10.8437 7.03633 10.0273L6.90104 9.78057C6.76524 9.53946 6.82779 9.23516 7.04767 9.06713L8.71427 7.77044C9.24752 7.35263 9.37069 6.59538 8.9973 6.03012L6.02774 1.57724C5.64508 1.00164 4.87734 0.82884 4.28493 1.18496L2.4229 2.30348C1.83784 2.64744 1.4086 3.20449 1.2252 3.8579C0.554681 6.301 1.0591 10.5174 7.27026 16.7293C12.2111 21.6698 15.8893 22.9984 18.4175 22.9984C18.9993 23.0009 19.5789 22.9252 20.1406 22.7733C20.7941 22.5901 21.3513 22.1608 21.695 21.5756L22.8146 19.7147C23.1713 19.1221 22.9986 18.3539 22.4227 17.971ZM22.1829 19.3385L21.0659 21.2005C20.819 21.6229 20.4183 21.9335 19.9477 22.0672C17.6923 22.6864 13.7519 22.1735 7.78899 16.2106C1.82602 10.2476 1.31318 6.30762 1.9324 4.05188C2.06627 3.58067 2.37723 3.17944 2.80015 2.93224L4.66218 1.81517C4.91923 1.66051 5.25244 1.73548 5.41849 1.98526L7.0316 4.40709L8.38552 6.43775C8.54766 6.68294 8.49439 7.01156 8.26308 7.19299L6.59609 8.48968C6.08879 8.87758 5.94392 9.57946 6.25626 10.1365L6.38863 10.377C6.85718 11.2363 7.4397 12.3054 9.56643 14.4318C11.6931 16.5581 12.7618 17.1407 13.6208 17.6092L13.8616 17.7419C14.4186 18.0542 15.1206 17.9093 15.5085 17.4021L16.8052 15.7351C16.9866 15.5039 17.3151 15.4507 17.5604 15.6126L22.0129 18.5822C22.2628 18.7481 22.3378 19.0815 22.1829 19.3385Z" fill="currentColor" stroke="currentColor" stroke-width="0.5" />
+                                </svg>
+                            </span>
+                            <a class="contacts__item-link" href="tel:+74993401044">+7 (499) 340-10-44</a>
+                        </div>
+                    </div>
+                    <div class="contacts__row">
+                        <div class="contacts__item">
+                            <span class="icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 1C5.93471 1 1 5.93471 1 12C1 18.0653 5.93471 23 12 23C18.0653 23 23 18.0653 23 12C23 5.93471 18.0653 1 12 1ZM12 22.0435C6.46172 22.0435 1.95651 17.5382 1.95651 12C1.95651 6.46172 6.46172 1.95651 12 1.95651C17.5382 1.95651 22.0435 6.46172 22.0435 12C22.0435 17.5382 17.5382 22.0435 12 22.0435Z" fill="currentColor" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 12C0.75 5.79664 5.79664 0.75 12 0.75C18.2034 0.75 23.25 5.79664 23.25 12C23.25 18.2033 18.2033 23.25 12 23.25C5.79664 23.25 0.75 18.2033 0.75 12ZM12 1.25C6.07278 1.25 1.25 6.07278 1.25 12C1.25 17.9272 6.07278 22.75 12 22.75C17.9272 22.75 22.75 17.9272 22.75 12C22.75 6.07278 17.9272 1.25 12 1.25ZM12 2.20651C6.59979 2.20651 2.20651 6.59979 2.20651 12C2.20651 17.4002 6.59979 21.7935 12 21.7935C17.4002 21.7935 21.7935 17.4002 21.7935 12C21.7935 6.59979 17.4002 2.20651 12 2.20651ZM1.70651 12C1.70651 6.32365 6.32365 1.70651 12 1.70651C17.6763 1.70651 22.2935 6.32365 22.2935 12C22.2935 17.6763 17.6763 22.2935 12 22.2935C6.32365 22.2935 1.70651 17.6763 1.70651 12Z" fill="currentColor" />
+                                    <path d="M16.6447 15.9668L12.48 11.802V4.3479C12.48 4.0839 12.2657 3.86963 12.0017 3.86963C11.7377 3.86963 11.5234 4.0839 11.5234 4.3479V12.0001C11.5234 12.1273 11.5741 12.2488 11.6631 12.3387L15.9674 16.643C16.0612 16.7358 16.1836 16.7827 16.3061 16.7827C16.4285 16.7827 16.5509 16.7358 16.6447 16.643C16.8312 16.4565 16.8312 16.1533 16.6447 15.9668Z" fill="currentColor" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5234 12.0001C11.5234 12.1273 11.5741 12.2488 11.6631 12.3387L15.9674 16.643C15.9673 16.6429 15.9676 16.6432 15.9674 16.643C16.0611 16.7355 16.1838 16.7827 16.3061 16.7827C16.4285 16.7827 16.5509 16.7358 16.6447 16.643C16.8312 16.4565 16.8312 16.1533 16.6447 15.9668L12.48 11.802V4.3479C12.48 4.0839 12.2657 3.86963 12.0017 3.86963C11.7377 3.86963 11.5234 4.0839 11.5234 4.3479V12.0001Z" fill="currentColor" />
+                                </svg>
+                            </span>
+                            Мы работаем ежедневно с 10:00 до 21:00
+                        </div>
+                    </div>
+                    <div class="contacts__row">
+                        <div class="contacts__mail-group">
+                            <span class="icon">
+                                <svg width="22" height="16" viewBox="0 0 22 16" fill="none">
+                                    <path d="M20.8718 0.666504H1.12823C0.507676 0.666504 0 1.17418 0 1.79469V14.205C0 14.8254 0.507676 15.3332 1.12823 15.3332H20.8718C21.4923 15.3332 22 14.8255 22 14.205V1.79469C22 1.17418 21.4923 0.666504 20.8718 0.666504ZM20.4484 1.5126L11.649 8.11269C11.4908 8.23309 11.2479 8.30841 11 8.30729C10.752 8.30841 10.5092 8.23309 10.351 8.11269L1.55156 1.5126H20.4484ZM15.748 8.54817L20.5429 14.4713C20.5477 14.4772 20.5536 14.4817 20.5587 14.4871H1.44126C1.44633 14.4815 1.45226 14.4772 1.45707 14.4713L6.25195 8.54817C6.39886 8.36655 6.37102 8.10027 6.18905 7.95302C6.00742 7.80611 5.74114 7.83395 5.59419 8.01562L0.846141 13.8809V2.04146L9.84354 8.78953C10.1817 9.04141 10.5932 9.15227 10.9999 9.15339C11.4061 9.15253 11.8179 9.04167 12.1563 8.78953L21.1537 2.04146V13.8808L16.4058 8.01562C16.2588 7.83399 15.9923 7.80606 15.8109 7.95302C15.629 8.09993 15.6011 8.36655 15.748 8.54817Z" fill="currentColor" stroke="currentColor" stroke-width="0.5" />
+                                </svg>
+                            </span>
+                            <div class="contacts__mail-group-inner">
+                                <div class="contacts__mail-item">
+                                    <div class="contacts__mail-col">
+                                        <div class="contacts__item-val">Секретарь:</div>
+                                        <div class="contacts__item-val"><a class="contacts__item-link" href="mailto:info@tizaru.com" target="_blank">info@tizaru.com</a></div>
+                                    </div>
+                                    <div class="contacts__mail-col">
+                                        <div class="contacts__item-val">Для партнеров::</div>
+                                        <div class="contacts__item-val"><a class="contacts__item-link" href="mailto:info@tizaru.com" target="_blank">partner@tizaru.com</a></div>
+                                    </div>
+                                </div>
+                                <div class="contacts__mail-col">
+                                    <div class="contacts__item-val">Отдел клиентского сервиса (реклама):</div>
+                                    <div class="contacts__item-val"><a class="contacts__item-link" href="mailto:client@tizaru.com" target="_blank">client@tizaru.com</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts__row">
+                        <div class="contacts__item">
+                            <span class="icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.403 5.63303C17.5714 4.79591 16.5819 4.13214 15.4919 3.68018C14.4019 3.22821 13.233 2.99703 12.053 3.00003C7.105 3.00003 3.077 7.02703 3.075 11.977C3.075 13.559 3.488 15.103 4.273 16.465L3 21.116L7.759 19.867C9.07539 20.5836 10.5502 20.9594 12.049 20.96H12.053C17 20.96 21.028 16.933 21.03 11.983C21.0334 10.8035 20.803 9.63502 20.3521 8.54509C19.9012 7.45516 19.2387 6.4654 18.403 5.63303ZM12.053 19.445H12.05C10.7135 19.4452 9.40163 19.0856 8.252 18.404L7.98 18.242L5.156 18.983L5.909 16.23L5.732 15.948C4.98479 14.7585 4.58923 13.3818 4.591 11.977C4.593 7.86303 7.94 4.51603 12.056 4.51603C13.0363 4.51385 14.0072 4.70611 14.9127 5.08168C15.8181 5.45725 16.6401 6.00867 17.331 6.70403C18.0256 7.39607 18.5762 8.21892 18.9509 9.12503C19.3256 10.0311 19.517 11.0025 19.514 11.983C19.512 16.097 16.165 19.445 12.053 19.445ZM16.146 13.856C15.921 13.743 14.819 13.201 14.613 13.126C14.408 13.051 14.259 13.014 14.109 13.238C13.959 13.462 13.529 13.967 13.398 14.117C13.267 14.267 13.136 14.285 12.912 14.173C12.688 14.061 11.965 13.824 11.108 13.06C10.441 12.465 9.991 11.731 9.86 11.506C9.729 11.281 9.846 11.16 9.959 11.048C10.06 10.948 10.183 10.786 10.295 10.655C10.407 10.524 10.444 10.431 10.519 10.281C10.594 10.131 10.557 10 10.5 9.88803C10.444 9.77503 9.995 8.67103 9.808 8.22203C9.627 7.78703 9.442 7.84503 9.304 7.83903C9.16108 7.83318 9.01804 7.83052 8.875 7.83103C8.76126 7.83393 8.64934 7.86029 8.54626 7.90848C8.44318 7.95666 8.35117 8.02562 8.276 8.11103C8.07 8.33603 7.491 8.87803 7.491 9.98203C7.491 11.086 8.295 12.153 8.407 12.303C8.519 12.453 9.989 14.718 12.239 15.69C12.775 15.921 13.193 16.059 13.518 16.163C14.055 16.334 14.544 16.309 14.931 16.252C15.362 16.188 16.258 15.71 16.445 15.186C16.632 14.662 16.632 14.213 16.576 14.119C16.52 14.025 16.369 13.968 16.146 13.856Z" fill="currentColor" />
+                                </svg>
+                            </span>
+                            Cвязаться по <a class="contacts__item-link contacts__item-link--color" href="https://wa.me/71111111111" target="_blank"> WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 contacts__form-wrap">
+                <h2 class="form__title contacts__form-title">Есть вопросы? Задайте их нам и мы свяжемся с вами в течение 10 минут</h2>
+                <form class="form contacts__form" action="/" method="post">
+                    <div class="input-wrap">
+                        <label class="input-wrap__label">Ваше имя<input class="input" type="text"></label>
+                    </div>
+                    <div class="input-wrap">
+                        <label class="input-wrap__label">E-mail<input class="input" type="email"></label>
+                    </div>
+                    <div class="input-wrap">
+                        <span class="input-wrap__label">Текст сообщения<textarea class="textarea"></textarea></span>
+                    </div>
+                    <div class="checkbox">
+                        <input class="checkbox__field" id="agree-info" type="checkbox">
+                        <label class="checkbox__value" for="agree-info">Хочу получать полезную информацию</label>
+                    </div>
+                    <div class="checkbox">
+                        <input class="checkbox__field" id="consent" type="checkbox">
+                        <label class="checkbox__value login-reg__checkbox-accept" for="consent">Согласен(-на) на обработку данных и с <a href="terms-of-use.html">пользовательским соглашением</a></label>
+                    </div>
+                    <div class="contacts__captcha">
+                        <img src="images/dist/capc.jpg" alt="Гугл капча">
+                    </div>
+                    <div class="btn btn-accent btn--full">Отправить</div>
+                </form>
+            </div>
+            <div class="col-12">
+                <div class="contacts__map-title">Как добраться:</div>
+                <div class="contacts__map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8981.372711912045!2d37.61291999827557!3d55.75254050046795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a50b315e573%3A0xa886bf5a3d9b2e68!2z0JzQvtGB0LrQvtCy0YHQutC40Lkg0JrRgNC10LzQu9GM!5e0!3m2!1sru!2sru!4v1618339743898!5m2!1sru!2sru" height="485" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="contacts__map-buttons">
+                    <button class="btn btn-accent">Пешком</button>
+                    <button class="btn btn-conture">На машине</button>
+                </div>
+                <div class="contacts__map-descr">
+                    Ближайшая станция метро Пролетарская и Крестьянская застава. Со ст.м. пролетарская последний вагон из центра налево, на ул.Воронцовская, Динамовская. Далее по ул. Воронцовской, до первого светофора переходим улицу. Со стороны по Воронцовской, номер здание 41, заходим во второй подъезд от дороги со стеклянной крышей
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+	<footer class="footer">
+		<div class="full-container">
+			<div class="footer__item footer__item_1">
+				<a class="footer__logo" href="/"><img src="images/dist/logo-full.svg" alt="Tizaru"></a>
+				<a class="footer__phone i-phone" href="tel:+74993401044">+7 (499) 340-10-44</a>
+				<div class="footer__whatsapp i-wha">Cвязаться по <a class="footer__whatsapp-link" href="https://wa.me/71111111111" target="_blank">WhatsApp</a></div>
+				<a class="link link-default" href="#" target="_blank">Политика конфиденциальности</a> <br>
+				<a class="link link-default" href="#" target="_blank">Соглашение на обработку <br>персональных данных</a>
+			</div>
+			<div class="footer__item footer__item_2">
+                <ul class="footer__menu footer-menu list-unstylling">
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Команда проекта</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Наша миссия</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Помощь проекту</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Станьте частью команды проекта</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Станьте совладельцем проекта</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Контакты</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">О компании</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Блог</a></li>
+                </ul>
+                <ul class="footer__menu footer-menu list-unstylling">
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">О проекте</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Открытие франшизы</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Список франшиз</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Общий реестр</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Получение баллов</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Сертификат TIZARU</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Реклама</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Пользовательское соглашение</a></li>
+                </ul>
+			</div>
+			<div class="footer__item footer__item_3">
+				<div class="footer__mobil-wrap">
+					<div class="footer__sub">Статьи:</div>
+					<ul class="footer__sub-menu footer-submenu list-unstylling">
+                        <li class="footer-submenu__item"><a class="footer-submenu__link" href="#">Все категории</a></li>
+                        <li class="footer-submenu__item"><a class="footer-submenu__link" href="#">Бизнес</a></li>
+                        <li class="footer-submenu__item"><a class="footer-submenu__link" href="#">Технологии</a></li>
+                        <li class="footer-submenu__item"><a class="footer-submenu__link" href="#">Финансы и инвестиции</a></li>
+                        <li class="footer-submenu__item"><a class="footer-submenu__link" href="#">Экспертное мнение</a></li>
+                        <li class="footer-submenu__item"><a class="footer-submenu__link" href="#">Персоны</a></li>
+                        <li class="footer-submenu__item"><a class="footer-submenu__link" href="#">Видео</a></li>
+                        <li class="footer-submenu__item"><a class="footer-submenu__link" href="#">Карьера и свой бизнес</a></li>
+                        <li class="footer-submenu__item"><a class="footer-submenu__link" href="#">Общество</a></li>
+                        <li class="footer-submenu__item"><a class="footer-submenu__link" href="#">Культура</a></li>
+                        <li class="footer-submenu__item"><a class="footer-submenu__link" href="#">Спорт</a></li>
+					</ul>
+				</div>
+				<div class="footer__mobil-wrap">
+					<div class="footer__sub">Категории бизнеса:</div>
+					<ul class="footer__sub-menu footer-submenu list-unstylling">
+                        <li class="footer-submenu__item"><a class="footer-submenu__link" href="#">Транспорт</a></li>
+                        <li class="footer-submenu__item"><a class="footer-submenu__link" href="#">Недвижимость</a></li>
+                        <li class="footer-submenu__item"><a class="footer-submenu__link" href="#">Работа</a></li>
+                        <li class="footer-submenu__item"><a class="footer-submenu__link" href="#">Услуги</a></li>
+                        <li class="footer-submenu__item"><a class="footer-submenu__link" href="#">Личные вещи</a></li>
+                        <li class="footer-submenu__item"><a class="footer-submenu__link" href="#">Для дома и дачи</a></li>
+                        <li class="footer-submenu__item"><a class="footer-submenu__link" href="#">Бытовая электроника</a></li>
+                        <li class="footer-submenu__item"><a class="footer-submenu__link" href="#">Хобби и отдых</a></li>
+                        <li class="footer-submenu__item"><a class="footer-submenu__link" href="#">Животные</a></li>
+                        <li class="footer-submenu__item"><a class="footer-submenu__link" href="#">Готовый бизнес и оборудование</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<script src="js/app.min.js"></script>
+	<script src="js/functions.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+.block-title {
+    font-family: $userfont-bold;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: normal;
+    margin-bottom: 50px;
+
+    @media (max-width: 767px) {
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+}

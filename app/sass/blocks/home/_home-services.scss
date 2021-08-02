@@ -1,0 +1,87 @@
+/*------------------------------------*\
+  #Полоса с логтипами сервисов
+\*------------------------------------*/
+
+.home-services-wrap {
+    position: relative;
+}
+
+.home-services {
+    padding-bottom: 15px;
+    position: relative;
+
+    @media (max-width: 1200px) {
+        padding-top: 12px;
+    }
+
+    @media (max-width: 992px) {
+        padding-bottom: 20px;
+        overflow-y: auto;
+
+        &::-webkit-scrollbar {
+            width: 0px;
+            background: transparent;
+        }
+    }
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        margin-left: -8px;
+        margin-right: -8px;
+
+        @media (max-width: 992px) {
+            width: 100%;
+            overflow-x: auto;
+        }
+    }
+}
+
+.services-all {
+    border: none;
+    background: transparent;
+}
+
+.home-services__modal {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: $shadow2;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 40px 15px 5px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    visibility: collapse;
+    opacity: 0;
+    transition: 0.2s;
+
+    &.active {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .services-item {
+        margin-bottom: 20px;
+    }
+}
+
+.home-services__close {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: transparent;
+    border: none;
+    font-size: 0;
+    padding: 0;
+    top: 18px;
+    right: 24px;
+
+    &::before {
+        font-size: 18px;
+    }
+}

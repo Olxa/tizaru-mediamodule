@@ -1,0 +1,12 @@
+.content-slider {
+
+    .slick-arrow {
+        top: 50%;
+        margin-top: -31px;
+
+        @media (max-width: 767px) {
+            top: initial;
+            bottom: -15px;
+        }
+    }
+}

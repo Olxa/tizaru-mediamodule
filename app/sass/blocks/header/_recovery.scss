@@ -1,0 +1,41 @@
+/*------------------------------------*\
+  #Восстановление пароля
+\*------------------------------------*/
+
+.recovery-link {
+    border-bottom: 1px solid;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+        color: $accent;
+    }
+}
+
+.recovery-send {
+    &__image {
+        width: 44px;
+        height: 28px;
+        margin: 10px auto 25px;
+        background-image: url(../images/dist/icon/mail-red.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    &__txt {
+        margin-bottom: 50px;
+        font-size: $fontsize;
+        font-family: $userfont-sbold;
+        font-weight: 600;
+        text-align: center;
+    }
+}
+
+.recovery {
+    .btn {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+}

@@ -1,0 +1,101 @@
+.persons {
+    padding: 60px 0 20px;
+
+    @media (max-width: 767px) {
+        padding: 50px 0 25px;
+    }
+
+    .persons-slider {
+        margin-left: -15px;
+        margin-right: -15px;
+        margin-bottom: 40px;
+
+        @media (max-width: 767px) {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .slick-arrow {
+            top: 142px;
+            margin-top: -31px;
+        }
+    }
+
+    .block-title {
+        margin-bottom: 65px;
+    }
+
+    .slick-dots {
+        display: flex;
+        margin-left: 15px;
+        margin-right: 15px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background: #E0E0E0;
+        border-radius: 2px;
+        overflow: hidden;
+
+        li {
+            padding: 0;
+            margin: 0;
+            flex-grow: 1;
+            max-width: 285px;
+        }
+
+        button {
+            display: block;
+            font-size: 0;
+            padding: 0;
+            border: none;
+            width: 100%;
+            height: 4px;
+            border-radius: 2px;
+            background: transparent;
+        }
+    }
+
+    .slick-active {
+        button {
+            background: $accent;
+        }
+    }
+}
+
+.person {
+    padding: 0 15px 10px;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.2;
+
+    @media (max-width: 767px) {
+        font-size: 16px;
+    }
+
+    &__img {
+        overflow: hidden;
+        border-radius: 50%;
+        margin-bottom: 30px;
+
+        @media (max-width: 767px) {
+            width: 158px;
+            height: 158px;
+            margin-bottom: 15px;
+        }
+    }
+
+    &__name {
+        font-family: $userfont-bold;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    &__text {
+        @media (max-width: 767px) {
+            font-size: 14px;
+        }
+    }
+}

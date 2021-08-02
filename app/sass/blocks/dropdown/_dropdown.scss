@@ -1,0 +1,178 @@
+/*------------------------------------*\
+  #Выпадающий список
+\*------------------------------------*/
+
+.dropdown {
+    position: relative;
+    display: flex;
+    padding: 0 20px 0 0;
+    align-items: center;
+    line-height: 1;
+
+    &__value {
+        position: relative;
+        background: 0 0;
+        border: none;
+
+        &::after {
+            content: "\e910";
+            font-family: if;
+            color: #6b6b6b;
+            transition: .2s;
+            width: 13px;
+            height: 7px;
+            line-height: 7px;
+            font-size: 13px;
+            position: absolute;
+            right: -20px;
+            top: 50%;
+            margin-top: -3.5px;
+        }
+    }
+
+    &__value-inner {
+        display: inline-block;
+        max-width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    &--icon .icon {
+        margin-right: 5px;
+    }
+
+    &__value--bold {
+        font-family: $userfont-sbold;
+        font-weight: 600;
+    }
+
+    &__list {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        max-height: $drop-height;
+        visibility: hidden;
+        overflow: hidden;
+        margin-top: 5px;
+        background: #fff;
+        opacity: 0;
+        transition: .2s;
+        border-radius: 5px;
+        box-shadow: $shadow2;
+        overflow-y: auto;
+        z-index: 6;
+
+        @media (max-width: 576px) {
+            width: 100%;
+        }
+    }
+
+    &__list-item {
+        /*white-space: nowrap;*/
+    }
+
+    &__list-val {
+        display: inline-block;
+        width: 100%;
+        font-size: 16px;
+        padding: 10px 20px;
+
+        &:hover {
+            color: $textcolor;
+            background: $light-gray;
+        }
+    }
+
+    .icon {
+        font-size: 15px;
+
+        &.i-fb {
+            color: #4C6DB6;
+        }
+
+        &.i-vk {
+            color: #6695BD;
+            font-size: 12px;
+        }
+
+        &.i-tl {
+            color: #2AA1DA;
+            font-size: 13px;
+        }
+
+        &.i-instagram {
+            color: #C13584;
+            font-size: 18px;
+        }
+
+        &.i-tw {
+            color: #1BAEEB;
+        }
+
+        &.i-in {
+            color: #0E76A8;
+        }
+
+        &.i-ok {
+            color: #FC9005;
+        }
+    }
+}
+
+.dropdown.active {
+
+    .dropdown__value::after {
+        transform: rotate( -180deg );
+    }
+
+    .dropdown__list {        
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+
+
+/*------------------------------------*\
+  #Выпадающий список - стиль инпута
+\*------------------------------------*/
+
+.dropdown--input {
+    display: flex !important;
+    width: 100%;
+    padding: 5px 12px;
+    height: $input-height;
+    border-radius: $input-border-radius;
+    border: 1px solid $input-border-color;
+
+    .dropdown__value {
+        width: calc(100% - 20px);
+        /*height: $input-height;
+        line-height: $input-height - 1;*/
+        text-align: left;
+    }
+
+    .dropdown__list {
+        width: 100%;
+    }
+}
+
+
+
+
+
+/*------------------------------------*\
+  #Выпадающий список - с рамками
+\*------------------------------------*/
+
+.dropdown--warning {
+    border-color: $color-warning;
+
+    .dropdown__value-inner {
+        color: $color-warning;
+    }
+
+    .dropdown__value::after {
+        color: $color-warning;
+    }
+}

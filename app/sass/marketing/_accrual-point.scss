@@ -1,0 +1,150 @@
+.accrual-point {
+    &__desc {
+        max-width: 725px;
+        margin-bottom: 16px;
+
+        @media (max-width: 1200px) {
+            max-width: 100%;
+        }
+    }
+
+    &__image {
+        @media (max-width: 1200px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__image-intro {
+        position: relative;
+        
+        width: 100%;
+        height: 100%;
+        background-image: url(../images/dist/accrual-point.svg);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: contain;
+
+        @media (max-width: 1200px) {
+            min-height: 350px;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 767px) {
+            min-height: 210px;
+        }
+
+        .freepik-link__wrap {
+            position: absolute !important;
+            width: 100%;
+            bottom: 0;
+            
+
+            @media (max-width: 1200px) {
+                bottom: 38%;
+            }
+
+            @media (max-width: 1199px) {
+                bottom: 10px;
+            }
+        }
+    }
+
+    &__point-row {
+        display: flex;
+        align-items: center;
+        margin: 50px 0 65px;
+
+        @media (max-width: 1200px) {
+            margin: 30px 0 50px;
+        }
+
+        @media (max-width: 767px) {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__point-item {
+        display: flex;
+        align-items: center;
+        margin-right: 10%;
+
+        @media (max-width: 1200px) {
+            margin-right: 5%;
+        }
+
+        @media (max-width: 767px) {
+            margin-bottom: 20px;
+            margin-right: 0;
+        }
+    }
+
+    &__point-icon {
+        width: 100px;
+        height: 100px;
+        margin-right: 36px;
+
+        @media (max-width: 1200px) {
+            width: 60px;
+            height: 60px;
+        }
+
+        @media (max-width: 767px) {
+            width: 40px;
+            height: 40px;
+        }
+
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+
+        &.one::before {
+            background-image: url(../images/dist/icon/status-one.svg);
+        }
+
+        &.two::before {
+            background-image: url(../images/dist/icon/status-two.svg);
+        }
+
+        &.three::before {
+            background-image: url(../images/dist/icon/status-tree.svg);
+        }
+    }
+
+    &__point-val {
+        font-size: 18px;
+
+        @media (max-width: 1200px) {
+            font-size: 14px;
+        }
+    }
+
+    &__table {
+        margin: 60px 0 25px;
+
+        @media (max-width: 1200px) {
+            margin: 0 0 25px;
+        }
+    }
+
+    &__table-message {
+        margin-bottom: 85px;
+
+        @media (max-width: 992px) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__mob-last {
+        @media (max-width: 1200px) {
+            order: 99;
+        }
+    }
+}

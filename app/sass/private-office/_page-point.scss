@@ -1,0 +1,93 @@
+.point-page {
+
+    &__header {
+        display: flex;
+        align-items: baseline;
+        margin-bottom: 25px;
+
+        @media (max-width: 767px) {
+            flex-wrap: wrap;
+        }
+
+        .page-title {
+            @media (max-width: 767px) {
+                width: 100%;
+                margin-bottom: 0;
+            }
+        }
+
+        .tooltip {
+            margin-left: 55px;
+
+            @media (max-width: 767px) {
+                margin-left: 40px;
+            }
+        }
+    }
+
+    &__status {
+        display: flex;
+    }
+
+    &__status--sm {
+        margin-left: 10px;
+
+        .point-page__status-txt::after {
+            top: 0;
+            width: 29px;
+            height: 29px;
+        }
+    }
+
+    &__status-txt {
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            display: inline-block;
+            margin-left: 6px;
+            width: 41px;
+            height: 41px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+
+            @media (max-width: 767px) {
+                top: 0;
+                left: 95px;
+                width: 25px;
+                height: 25px;
+            }
+        }
+
+        &.one::after {
+            background-image: url(../images/dist/icon/status-one.svg);
+        }
+
+        &.two::after {
+            background-image: url(../images/dist/icon/status-two.svg);
+        }
+
+        &.three::after {
+            background-image: url(../images/dist/icon/status-tree.svg);
+        }
+    }
+
+    .table-md {
+        max-width: 660px;
+    }
+
+    .table-big {
+        max-width: 850px;
+    }
+
+    &__alert-txt {
+        margin: 0;
+    }
+
+    &__fr {
+        max-width: 660px;
+    }
+}

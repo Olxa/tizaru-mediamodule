@@ -1,0 +1,64 @@
+<div class="mobil-bar mobil-vis">
+    <form class="mobil-bar__search mobil-bar-search i-search">
+        <input class="input" type="text" placeholder="Поиск в Москве">
+        <button class="mobil-bar-search__close i-min-close" type="button">Закрыть</button>
+        <!--<button type="submit" class="mobil-bar-search__submit">Поиск</button>-->
+        <div class="mobil-bar-search__modal">
+            <ul class="mobil-bar-search__list">
+                <li class="modal-list__item"><a class="modal-list__item-val" href="#"><b>Люстра</b></a></li>
+                <li class="modal-list__item"><a class="modal-list__item-val" href="#"><b>Люстра</b> бу</a></li>
+                <li class="modal-list__item"><a class="modal-list__item-val" href="#"><b>Люстра</b> хрустальная</a></li>
+                <li class="modal-list__item"><a class="modal-list__item-val" href="#"><b>Люстра</b> потолочная</a></li>
+                <li class="modal-list__item"><a class="modal-list__item-val" href="#"><b>Люстра</b> СССР</a></li>
+                <li class="modal-list__item"><a class="modal-list__item-val" href="#"><b>Люстра</b>ция</a></li>
+            </ul>
+        </div>
+    </form>
+	<button class="mobil-bar__btn" type="button">Фильтр</button>
+</div>
+
+<div class="mobil-filter mobil-vis">
+	<button type="button" class="mobil-filter__close i-min-close">Закрыть</button>
+	<div class="mobil-filter__btn mobil-filter__btn-category i-down">Категория</div>
+	<div class="mobil-filter__btn mobil-filter__btn-country i-down">Страна</div>
+	<div class="mobil-filter__btn mobil-filter__btn-region i-down">Город или регион <b>Россия</b></div>
+	<button type="submit" class="btn btn-accent btn--full">Показать 2 тыс. карточек</button>
+
+	<!--#include virtual="/parts/category-modal-mobil.html" -->
+
+	<div class="mobil-filter__wrapper mobil-filter__country">
+		<button class="mobil-filter__back">Назад</button>
+        <div class="input-search">
+            <input class="input input-search__val" type="text" placeholder="Поиск">
+            <button class="input-search__btn i-search" type="submit">Поиск</button>
+        </div>
+		<ul class="city-slroller__list list-unstylling">
+			<li class="city-slroller__list-item"><a class="city-slroller__list-link" href="#"><img src="images/dist/flag2/ru.svg" alt="Россия">Россия</a></li>
+            <li class="city-slroller__list-item"><a class="city-slroller__list-link" href="#"><img src="images/dist/flag2/fr.svg" alt="Франция">Франция</a></li>
+            <li class="city-slroller__list-item"><a class="city-slroller__list-link" href="#"><img src="images/dist/flag2/us.svg" alt="США">США</a></li>
+            <li class="city-slroller__list-item"><a class="city-slroller__list-link" href="#"><img src="images/dist/flag2/by.svg" alt="Беларусь">Беларусь</a></li>
+            <li class="city-slroller__list-item"><a class="city-slroller__list-link" href="#"><img src="images/dist/flag2/ua.svg" alt="Украина">Украина</a></li>
+            <li class="city-slroller__list-item"><a class="city-slroller__list-link" href="#"><img src="images/dist/flag2/de.svg" alt="Германия">Германия</a></li>
+            <li class="city-slroller__list-item"><a class="city-slroller__list-link" href="#"><img src="images/dist/flag2/id.svg" alt="Польша">Польша</a></li>
+            <li class="city-slroller__list-item"><a class="city-slroller__list-link" href="#"><img src="images/dist/flag2/tr.svg" alt="Турция">Турция</a></li>
+            <li class="city-slroller__list-item"><a class="city-slroller__list-link" href="#"><img src="images/dist/flag2/vn.svg" alt="Вьетнам">Вьетнам</a></li>
+            <li class="city-slroller__list-item"><a class="city-slroller__list-link" href="#"><img src="images/dist/flag2/es.svg" alt="Испания">Испания</a></li>
+		</ul>
+	</div>
+
+    <div class="mobil-filter__wrapper mobil-filter__region mobil-filter-region">
+        <button class="mobil-filter__back">Назад</button>
+        <div class="input-search">
+            <input class="input input-search__val" type="text" placeholder="Поиск">
+            <button class="input-search__btn i-search" type="submit">Поиск</button>
+        </div>
+        <div class="mobil-filter-region__active i-clock-back">Россия</div>
+        <ul class="mobil-filter-region__list list-unstylling">
+            <li class="mobil-filter-region__list-item"><a class="mobil-filter-region__list-link" href="#">Москва</a></li>
+            <li class="mobil-filter-region__list-item"><a class="mobil-filter-region__list-link" href="#">Пятигорск</a></li>
+            <li class="mobil-filter-region__list-item"><a class="mobil-filter-region__list-link" href="#">Санкт-Петербург</a></li>
+            <li class="mobil-filter-region__list-item"><a class="mobil-filter-region__list-link" href="#">Свердловская область</a></li>
+            <li class="mobil-filter-region__list-item"><a class="mobil-filter-region__list-link" href="#">Ростовская область</a></li>
+        </ul>
+    </div>
+</div>

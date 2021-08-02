@@ -1,0 +1,47 @@
+/*------------------------------------*\
+  #Подменю футера
+\*------------------------------------*/
+
+.footer-submenu {
+    margin: 0;
+    line-height: normal;
+
+    @media (max-width: 1200px) {
+        display: none;
+        padding-bottom: 15px
+    }
+
+    &__item {
+        margin-bottom: 10px;
+
+        @media (max-width: 1200px) {
+            width: 50%;
+            margin-bottom: 15px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+
+            @media (max-width: 1200px) {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        line-height: normal;
+        display: block;
+        position: relative;
+
+        @media (max-width: 1200px) {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        &:hover,
+        &:focus {
+            color: $accent;
+        }
+    }
+}

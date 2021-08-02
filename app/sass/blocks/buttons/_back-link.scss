@@ -1,0 +1,26 @@
+.back-link {
+    font-size: 14px;
+    border: none;
+    line-height: normal;
+    display: inline-block;
+    margin-top: 35px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    border-bottom: none !important;
+
+    &:hover {
+        color: $accent-dark;
+    }
+
+    &::before {
+        font-size: 8px;
+        margin-right: 13px;
+        vertical-align: middle;
+    }
+
+    &--go {
+        .icon{
+            margin-left: 10px;
+        }
+    }
+}

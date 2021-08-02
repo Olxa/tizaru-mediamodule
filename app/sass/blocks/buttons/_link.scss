@@ -1,0 +1,194 @@
+/*------------------------------------*\
+  ссылки
+\*------------------------------------*/
+
+.link {
+    display: inline-block;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+
+    &:hover {
+        color: $accent;
+    }
+}
+
+.link--border {
+    padding-bottom: 1px;
+    border-bottom: 1px solid;
+}
+
+
+.link--bold {
+    font-family: $userfont-sbold;
+    font-weight: 600;
+}
+
+
+.link--underline {
+    text-decoration: underline;
+}
+
+
+/*------------------------------------*\
+  #акцентная ссылка
+\*------------------------------------*/
+
+.link-accent {
+    color: $accent;
+
+    &:hover,
+    &:focus {
+        color: $accent-dark;
+    }
+}
+
+
+
+
+/*------------------------------------*\
+  #вторичная ссылка
+\*------------------------------------*/
+
+.link-second {
+    color: $color-second;
+
+    &:hover,
+    &:focus {
+        color: lighten($color-second, 15%);
+    }
+}
+
+
+
+
+/*------------------------------------*\
+  #третичная ссылка
+\*------------------------------------*/
+
+.link-tertiary {
+    color: $color-tertiary;
+
+    &:hover,
+    &:focus {
+        color: lighten($color-tertiary, 10%);
+    }
+}
+
+
+
+
+/*------------------------------------*\
+  #дефолнтая ссылка (серая)
+\*------------------------------------*/
+
+.link-default {
+    display: inline-block;
+    color: #777777;
+
+    &:hover,
+    &:focus {
+        color: lighten(#777777, 15%);
+    }
+}
+
+
+
+
+
+/*------------------------------------*\
+  #ссылки с иконками
+\*------------------------------------*/
+
+.link-i-left .icon::before {
+    padding-right: 6px;
+}
+
+.link-i-right .icon::before {
+    padding-left: 6px;
+}
+
+
+
+
+
+
+/*------------------------------------*\
+  Старый код
+\*------------------------------------*/
+/*.link {
+    &.hide {
+        display: none;
+    }
+}
+
+.link-more {
+    color: $accent;
+    text-decoration: none;
+    border-bottom: 1px solid $accent;
+
+    &:hover {
+        color: #D70000;
+        border-color: #D70000;
+    }
+}
+
+.red-link {
+    padding: 0;
+    background: transparent;
+    color: $accent;
+    border: none;
+    border-bottom: 1px solid $accent;
+}
+
+.red-link_user {
+    border: none;
+    display: flex;
+    align-items: center;
+
+    &::after {
+        content: "\e900";
+        font-family: if;
+        font-size: 24px;
+        margin-left: 10px;
+    }
+}
+
+.blue-link {
+    color: $color-second;
+}
+
+.blue-link_border {
+    span {
+        border-bottom: 1px solid $color-second;
+    }
+
+    &.i-icon {
+        display: flex;
+        align-items: center;
+    }
+
+    &.i-instagram::before {
+        font-size: 20px;
+        margin-right: 4px;
+        transform: translateY(1px);
+    }
+
+    &.i-vk::before {
+        font-size: 13px;
+        margin-right: 4px;
+        transform: translateY(1px);
+    }
+
+    &.i-fb::before {
+        font-size: 17px;
+        margin-right: 4px;
+        transform: translateY(1px);
+    }
+
+    &.icon-tl::before {
+        font-size: 15px;
+        margin-right: 4px;
+        transform: translateY(1px);
+    }
+}*/

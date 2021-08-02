@@ -1,0 +1,55 @@
+/*------------------------------------*\
+  # Кнопка бургер
+\*------------------------------------*/
+
+.burger-btn {
+    width: 35px;
+    height: 23px;
+    display: block;
+    margin-right: 16px;
+
+    @media (max-width:1200px) {
+        margin: 0;
+        height: auto;
+    }
+
+    &__item {
+        display: block;
+        word-wrap: 100%;
+        height: 3px;
+        margin-top: 7px;
+        border-radius: 2px;
+        background: $textcolor;
+        transition: 0.2s;
+        position: relative;
+
+        @media (max-width:1200px) {
+            height: 2px;
+            margin-top: 4px;
+        }
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    &.active {
+
+        .burger-btn__item {
+
+            &:nth-child(1) {
+                transform: rotate(45deg);
+                top: 10px;
+            }
+
+            &:nth-child(2) {
+                opacity: 0;
+            }
+
+            &:nth-child(3) {
+                transform: rotate(-45deg);
+                bottom: 10px;
+            }
+        }
+    }
+}

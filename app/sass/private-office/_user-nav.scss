@@ -1,0 +1,79 @@
+/*------------------------------------*\
+  #Меню пользователя (хедер)
+\*------------------------------------*/
+
+.user-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    &__item {
+        font-size: 14px;
+
+        &:first-child .user-nav__link {
+            padding-top: 0;
+        }
+
+        &:last-child .user-nav__link {
+            padding-bottom: 0;
+        }
+    }
+
+    &__item--delet {
+        border-top: 1px solid $gray;
+        border-bottom: 1px solid $gray;
+    }
+
+    &__link {
+        display: inline-block;
+        width: 100%;
+        font-size: 16px;
+        padding: 13px 0;
+
+        &:hover,
+        &.active {
+            color: $accent;
+        }
+    }
+
+    &__count {
+        padding: 2px 5px;
+        margin-left: 16px;
+        font-size: 13px;
+        color: $gray;
+        border: 1px solid;
+        border-radius: $border-radius;
+    }
+
+    &__count-message {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        line-height: 23px;
+        text-align: center;
+        color: $color-tertiary;
+    }
+}
+
+.user-nav--page {   
+
+    .user-nav__link {
+        position: relative;
+        padding-right: 10px;   
+        
+        &::after {
+            content: '';
+            position: absolute;
+            right: -1px;
+            display: inline-block;
+            width: 2px;
+            height: 30px;
+            background-color: transparent;
+        }
+
+        &.active::after {
+            background-color: $accent;
+        }
+    }
+}

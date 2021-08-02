@@ -1,0 +1,33 @@
+.adv-page {
+
+    &__link-group {
+        margin-bottom: 35px;
+    }
+
+    &__link {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    &__bottom {
+        border-top: 1px solid $gray;
+        padding-top: 30px;
+    }
+
+    &__bottom-txt {
+        font-size: 18px;
+        line-height: 36px;
+        cursor: default;
+    }
+
+    &__bottom-txt--accent {
+        font-family: $userfont-bold;
+        font-weight: 700;        
+    }
+}
+
+a.adv-page__bottom-txt--accent {
+    &:hover {
+        color: $accent;
+    }
+}

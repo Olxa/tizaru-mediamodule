@@ -1,0 +1,90 @@
+/*------------------------------------*\
+  #Сервисы на  главной
+\*------------------------------------*/
+
+.services-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    &.mob-hide {
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+
+    &:hover {
+        color: $accent;
+    }
+
+
+    &__servise-name {
+        display: inline;
+        font-family: $userfont-sbold;
+        font-size: 14px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    &__servise-image {
+        display: flex;
+        width: 100%;
+        flex-grow: 1;
+        align-items: center;
+        justify-content: center;
+
+        @media (max-width: 992px) {
+            min-height: 18px;
+
+            img {
+                max-height: 100%;
+            }
+        }
+    }
+
+    &_min {
+        font-family: $userfont-sbold;
+        min-width: 81px;
+        height: 81px;
+        padding: 5px 8px 11px;
+        color: $textcolor;
+        text-decoration: none;
+        border-radius: 5px;
+
+        @media (max-width: 992px) {
+            height: 40px;
+            min-width: auto;
+            padding: 0;
+            margin: 0 8px;
+
+            &.mobil-active {
+                display: flex;
+            }
+        }
+
+
+        &:hover {
+            color: $accent;
+            box-shadow: $shadow1;
+        }
+    }
+
+    &_big {
+        width: 16.666%;
+        padding: 10px 5px;
+
+        @media (max-width: 767px) {
+            width: 20%;
+        }
+
+        @media (max-width: 576px) {
+            width: 33.333%;
+            text-align: center;
+        }
+
+        .services-item__servise-name {
+            margin-bottom: 5px;
+        }
+    }
+}

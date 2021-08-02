@@ -1,0 +1,253 @@
+<!--#set var="title" value="Личный кабинет | Информация" -->
+<!--#include virtual="/parts/header-login.html" -->
+
+<div class="page-content">
+    <div class="full-container private-office__wrap">
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb--private-office">
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Главная</a></li>
+                <li class="breadcrumb__item active" aria-current="page">Организации</li>
+            </ol>
+        </nav>
+
+        <div class="private-office">
+            <div class="private-office__sidebar">
+                <!--#include virtual="/parts/user-nav-page-fr.html" -->
+            </div>
+
+            <div class="private-office__content private-office__content--full-width">
+
+                <div class="private-office__header">
+                    <h1 class="page-title page-title__margin-b">Список организаций</h1>
+                </div>
+
+                <div class="private-office__tab-content">
+                    <form class="form company-list__form-desk" action="/" method="post">
+                        <div class="row form-horizont">
+                            <div class="col-lg-2">
+                                <div class="input-wrap">
+                                    <label class="input-wrap__label">Название<input class="input" type="text"></label>
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="input-wrap">
+                                    <label class="input-wrap__label">Регион</label>
+                                    <div class="dropdown dropdown--input js-dropdown-toogle">
+                                        <button class="dropdown__value" type="button">
+                                            <span class="dropdown__value-inner">
+                                            </span>
+                                        </button>
+                                        <div class="dropdown__list scroll-gray">
+                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Значение 1</a></div>
+                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Значение 2</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="input-wrap">
+                                    <label class="input-wrap__label">Город</label>
+                                    <div class="dropdown dropdown--input js-dropdown-toogle">
+                                        <button class="dropdown__value" type="button">
+                                            <span class="dropdown__value-inner">
+                                            </span>
+                                        </button>
+                                        <div class="dropdown__list scroll-gray">
+                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Значение 1</a></div>
+                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Значение 2</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="input-wrap">
+                                    <label class="input-wrap__label">Пользователь<input class="input" type="text"></label>
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="input-wrap">
+                                    <label class="input-wrap__label">Статусы</label>
+                                    <div class="dropdown dropdown--input js-dropdown-toogle">
+                                        <button class="dropdown__value" type="button">
+                                            <span class="dropdown__value-inner">
+                                            </span>
+                                        </button>
+                                        <div class="dropdown__list scroll-gray">
+                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Значение 1</a></div>
+                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Значение 2</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <button class="btn btn-accent btn--md btn-search--sm icon i-search" type="submit">
+                                    <span class="btn-search__mob-txt">Найти</span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <a class="btn btn-accent btn--md company-list__btn-mob popup-link" href="#search-company">Искать организацию <span class="icon i-search"></span></a>
+                    <div class="table__responsive">
+                        <table class="table table-striped">
+                            <tr class="table__tr">
+                                <th class="table__th">Регистрация</th>
+                                <th class="table__th">Компания</th>
+                                <th class="table__th text-center">Регион</th>
+                                <th class="table__th">Пользователь</th>
+                                <th class="table__th text-center">Статус</th>
+                                <th class="table__th text-center">Кол-во просмотров</th>
+                                <th class="table__th text-center">Закреп</th>
+                                <th class="table__th"></th>
+                            </tr>
+                            <tr class="table__tr">
+                                <td class="table__td table__td--nowrap">22.01.2021 22:20</td>
+                                <td class="table__td"><a class="table__td-link" href="fr-private-office-user-company-detail.html" title="Редактировать компанию">Моя компания</a></td>
+                                <td class="table__td">Россия, Рязань</td>
+                                <td class="table__td"><a class="table__td-link" href="fr-private-office-user.html" title="Редактировать пользователя">Иванов Иван</a></td>
+                                <td class="table__td">Опубликовано</td>
+                                <td class="table__td text-center">1 000</td>
+                                <td class="table__td text-center">12.02.2020</td>
+                                <td class="table__td">
+                                    <div class="options">
+                                        <button class="options__btn" type="button"></button>
+                                        <div class="options__popup">
+                                            <ul class="options__list">
+                                                <li class="options__item"><a class="options__link" href="fr-private-office-user-company-detail.html">Изменить</a></li>
+                                                <li class="options__item"><a class="options__link" href="#">Опубликовать</a></li>
+                                                <li class="options__item"><a class="options__link" href="#">Снять с публикации</a></li>
+                                                <li class="options__item"><a class="options__link  options__link-del" href="#">Удалить</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="table__tr">
+                                <td class="table__td table__td--nowrap">22.01.2021 22:20</td>
+                                <td class="table__td"><a class="table__td-link" href="fr-private-office-user-company-detail.html" title="Редактировать компанию">ООО Ромашка</a></td>
+                                <td class="table__td">Россия, Москва</td>
+                                <td class="table__td"><a class="table__td-link" href="fr-private-office-user.html" title="Редактировать пользователя">Дементьев Андрей</a></td>
+                                <td class="table__td">Ожидает модерации</td>
+                                <td class="table__td text-center">300</td>
+                                <td class="table__td text-center">12.02.2020</td>
+                                <td class="table__td">
+                                    <div class="options">
+                                        <button class="options__btn" type="button"></button>
+                                        <div class="options__popup">
+                                            <ul class="options__list">
+                                                <li class="options__item"><a class="options__link" href="fr-private-office-user-company-detail.html">Изменить</a></li>
+                                                <li class="options__item"><a class="options__link" href="#">Опубликовать</a></li>
+                                                <li class="options__item"><a class="options__link" href="#">Снять с публикации</a></li>
+                                                <li class="options__item"><a class="options__link  options__link-del" href="#">Удалить</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="table__tr">
+                                <td class="table__td table__td--nowrap">22.01.2021 22:20</td>
+                                <td class="table__td"><a class="table__td-link" href="fr-private-office-user-company-detail.html" title="Редактировать компанию">ИП Восход</a></td>
+                                <td class="table__td">Париж, Франция</td>
+                                <td class="table__td"><a class="table__td-link" href="fr-private-office-user.html" title="Редактировать пользователя">Петров Дмитрий</a></td>
+                                <td class="table__td">Ожидает подтверждение по телефону</td>
+                                <td class="table__td text-center">28</td>
+                                <td class="table__td text-center">12.02.2020</td>
+                                <td class="table__td">
+                                    <div class="options">
+                                        <button class="options__btn" type="button"></button>
+                                        <div class="options__popup">
+                                            <ul class="options__list">
+                                                <li class="options__item"><a class="options__link" href="fr-private-office-user-company-detail.html">Изменить</a></li>
+                                                <li class="options__item"><a class="options__link" href="#">Опубликовать</a></li>
+                                                <li class="options__item"><a class="options__link" href="#">Снять с публикации</a></li>
+                                                <li class="options__item"><a class="options__link  options__link-del" href="#">Удалить</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="table__tr">
+                                <td class="table__td table__td--nowrap">22.01.2021 22:20</td>
+                                <td class="table__td"><a class="table__td-link" href="fr-private-office-user-company-detail.html" title="Редактировать компанию">ОАО Инженерные технологии</a></td>
+                                <td class="table__td">Амстердам, Нидерланды</td>
+                                <td class="table__td table__td--nowrap"><a class="table__td-link" href="fr-private-office-user.html" title="Редактировать пользователя">Сидоров Сергей</a></td>
+                                <td class="table__td">Подтверждено</td>
+                                <td class="table__td text-center">19</td>
+                                <td class="table__td text-center">12.02.2020</td>
+                                <td class="table__td">
+                                    <div class="options">
+                                        <button class="options__btn" type="button"></button>
+                                        <div class="options__popup">
+                                            <ul class="options__list">
+                                                <li class="options__item"><a class="options__link" href="fr-private-office-user-company-detail.html">Изменить</a></li>
+                                                <li class="options__item"><a class="options__link" href="#">Опубликовать</a></li>
+                                                <li class="options__item"><a class="options__link" href="#">Снять с публикации</a></li>
+                                                <li class="options__item"><a class="options__link  options__link-del" href="#">Удалить</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!--#include virtual="/parts/pagination-count.html" -->
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="search-company" class="popup mfp-hide">
+    <form class="form company-list__form-mob" action="/" method="post">
+        <div class="input-wrap">
+            <label class="input-wrap__label">Название<input class="input" type="text"></label>
+        </div>
+        <div class="input-wrap">
+            <label class="input-wrap__label">Регион</label>
+            <div class="dropdown dropdown--input js-dropdown-toogle">
+                <button class="dropdown__value" type="button">
+                    <span class="dropdown__value-inner">
+                    </span>
+                </button>
+                <div class="dropdown__list scroll-gray">
+                    <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Значение 1</a></div>
+                    <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Значение 2</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="input-wrap">
+            <label class="input-wrap__label">Город</label>
+            <div class="dropdown dropdown--input js-dropdown-toogle">
+                <button class="dropdown__value" type="button">
+                    <span class="dropdown__value-inner">
+                    </span>
+                </button>
+                <div class="dropdown__list scroll-gray">
+                    <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Значение 1</a></div>
+                    <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Значение 2</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="input-wrap">
+            <label class="input-wrap__label">Пользователь<input class="input" type="text"></label>
+        </div>
+        <div class="input-wrap">
+            <label class="input-wrap__label">Статусы</label>
+            <div class="dropdown dropdown--input js-dropdown-toogle">
+                <button class="dropdown__value" type="button">
+                    <span class="dropdown__value-inner">
+                    </span>
+                </button>
+                <div class="dropdown__list scroll-gray">
+                    <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Значение 1</a></div>
+                    <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Значение 2</a></div>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-accent" type="submit">Найти</button>
+    </form>
+</div>
+
+<!--#include virtual="/parts/footer.html" -->

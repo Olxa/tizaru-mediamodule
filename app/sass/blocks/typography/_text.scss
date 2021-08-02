@@ -1,0 +1,139 @@
+/*------------------------------------*\
+  #Цвета текста
+\*------------------------------------*/
+
+.text-gray {
+    color: $gray;
+}
+
+.text-accent {
+    color: $accent;
+}
+
+.text-second {
+    color: $color-second;
+}
+
+.text-tertiary {
+    color: $color-tertiary;
+}
+
+.text-error {
+    color: $color-warning;
+}
+
+.text-succes {
+    color: $color-succes;
+}
+
+
+
+
+
+/*------------------------------------*\
+  #Маркеры
+\*------------------------------------*/
+.mark-accent {
+    color: #ffffff;
+    background-color: $accent;
+}
+
+.mark-second {
+    color: #ffffff;
+    background-color: $color-second;
+}
+
+.mark-tertiary {
+    color: #ffffff;
+    background-color: $color-tertiary;
+}
+
+
+
+
+
+/*------------------------------------*\
+  #Виды текста
+\*------------------------------------*/
+
+.muted-text {
+    font-size: 14px;
+    line-height: 16px;
+    color: $gray;
+    margin: 0;
+
+    + .muted-text {
+        margin-top: 8px;
+        margin-bottom: 0;
+    }
+}
+
+
+
+
+/*------------------------------------*\
+  #Выравнивание
+\*------------------------------------*/
+
+.text-center {
+    text-align: center;
+}
+
+
+
+
+
+/*------------------------------------*\
+  #Текст и иконками состояний
+\*------------------------------------*/
+
+.state-text {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-size: 14px;
+    cursor: default;
+
+    .icon {
+        margin-left: 10px;
+    }
+
+    &--succes {
+        color: $color-succes;
+    }
+}
+
+
+
+
+
+
+/*------------------------------------*\
+  #ссылка на автора
+\*------------------------------------*/
+
+.freepik-link {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: center;
+    color: $gray;
+    z-index: 2;
+
+
+    @media (max-width: 767px) {
+        font-size: 12px;
+    }
+
+    &:hover {
+        color: $gray;
+    }
+
+    &__wrap {
+        position: relative;
+    }
+}
+

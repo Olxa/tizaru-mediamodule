@@ -1,0 +1,172 @@
+/*------------------------------------*\
+  #Горизонтальная столбчатая диаграмма
+\*------------------------------------*/
+
+.graph {
+    text-align: center;
+    color: gray;
+    font-size: .9rem;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 1rem;
+
+    @media (max-width: 1201px) {
+        display: flex;
+    }
+
+    @media (min-width: 45em) {
+        font-size: 1.1rem;
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+
+        @media (max-width: 991px) {
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+        }
+
+        .btn {
+            @media (max-width: 991px) {
+                margin-top: 24px;
+                width: 100%;
+            }
+        }
+    }
+
+    &__title-text {
+        font-family: $userfont-bold;
+        font-weight: 700;
+        margin-right: 33px;
+        font-size: 20px;
+        white-space: nowrap;
+
+        @media (max-width: 768px) {
+            font-size: 16px;
+            margin-right: 20px;
+        }
+
+        @media (max-width: 567px) {
+            font-size: 14px;
+            margin-right: 20px;
+        }
+    }
+
+    &__footer {
+        border-top: 1px solid $gray;
+
+        @media (max-width: 1201px) {
+            border: none;
+        }
+    }
+
+    &__footer-row {
+        @media (max-width: 1201px) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__footer-item {
+        padding: .4rem 0;
+        vertical-align: top;
+        line-height: 1.3em;
+        font-size: 14px;
+        color: $textcolor;
+
+        @media (max-width: 1201px) {
+            height: 36px;
+            padding: 7px 0;
+        }
+    }
+
+    &__body {
+        @media (max-width: 1201px) {
+            width: 100%;
+        }
+    }
+
+    &__cell {
+        height: 300px;
+        vertical-align: bottom;
+        padding-bottom: 0;
+        overflow: hidden;
+
+        @media (max-width: 1201px) {
+            height: auto !important;
+            width: 100%;
+            padding: 7px 0;
+            text-align: left;
+        }
+    }
+
+    &__data-wrap {
+        background: repeating-linear-gradient( to top, #ffffff, #ffffff 30px, $white 30px, $white 70px );
+
+        @media (max-width: 1201px) {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+            background: transparent;
+        }
+    }
+
+    &__data {
+        position: relative;
+        height: 2px;
+        display: block;
+        margin: 0 25%;
+        background: $accent-dark2;
+        border-radius: $border-radius $border-radius 0 0;
+        position: relative;
+        transition: all 1s ease-out;
+        transition-delay: 1s;
+
+        @media (max-width: 1201px) {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            height: 22px;
+            width: 2px;
+            border-radius: $border-radius;
+            margin: 0 0 0 20px;
+            background: rgba($accent-dark2, .6);
+        }
+    }
+
+    &__data-val {
+        position: absolute;
+        top: -30px;
+        left: 0;
+        width: 100%;
+        font-size: .9rem;
+        line-height: 30px;
+        color: $textcolor;
+
+        @media (max-width: 1201px) {
+            position: initial;
+            padding-left: 5px;
+            font-family: $userfont-sbold;
+            font-weight: 600;
+        }
+    }
+}
+
+.graph--sm {
+    border-bottom: 0;
+
+    .graph__cell {
+        height: 200px;
+    }
+
+    .graph__data-val {
+        font-size: 11px;
+    }
+
+    .graph__footer-item {
+        font-size: 11px;
+    }
+}

@@ -1,0 +1,119 @@
+/*------------------------------------*\
+  #Чат
+\*------------------------------------*/
+
+.chat {
+
+    &__window {
+        display: flex;
+        flex-direction: column;
+        max-height: 500px;
+        padding: 0 30px 0 0;
+        overflow-y: auto;
+        overflow-x: hidden;
+        cursor: default;
+    }
+
+    &__massage-item {
+        width: 49%;
+        margin-bottom: 20px;
+        clear: both;
+
+        @media (max-width: 767px) {
+            width: 90%;
+        }
+    }
+
+    &__massage-title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    &__massage-name {
+        margin-right: 30px;
+        font-family: $userfont-bold;
+        font-weight: 700;
+        font-size: 18px;
+
+        @media (max-width: 767px) {
+            font-size: 18px;
+        }
+    }
+
+    &__massage-time {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    &__massage-txt {
+        position: relative;
+        padding: 15px;
+        word-break: break-word;
+        border-radius: $border-radius;
+
+        @media (max-width: 767px) {
+            font-size: 14px;
+            line-height: 22px;
+        }
+
+        &::after {
+            bottom: 100%;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            border-width: 8px;
+            margin-left: -2px;
+        }
+    }
+
+    &__message-enter {
+        margin: 50px 0 25px;
+    }
+
+    &__btn {
+        min-width: 200px;
+
+        @media (max-width: 560px) {
+            width: 100%;
+        }
+    }
+}
+
+.chat__massage-item--them {
+    .chat__massage-txt {
+        background: #CDF0FF;
+        float: left;
+
+        &::after {
+            left: 7%;
+            border-bottom-color: #CDF0FF;
+        }
+    }
+}
+
+.chat__massage-item--me {
+    align-self: flex-end;
+
+    .chat__massage-txt {
+        background: #F2F2F2;
+        float: right;
+
+        &::after {
+            right: 7%;
+            border-bottom-color: #F2F2F2;
+        }
+    }
+
+    .chat__massage-title {
+        justify-content: flex-end;
+    }
+
+    .chat__massage-name {
+        margin-right: 0;
+        margin-left: 30px;
+    }
+}

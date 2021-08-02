@@ -1,0 +1,118 @@
+<!--#set var="title" value="Личный кабинет | Информация" -->
+<!--#include virtual="/parts/header-login.html" -->
+
+<div class="page-content">
+    <div class="full-container private-office__wrap">
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb--private-office">
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Главная</a></li>
+                <li class="breadcrumb__item active" aria-current="page">История начислений баллов</li>
+            </ol>
+        </nav>
+
+        <div class="private-office">
+            <div class="private-office__sidebar">
+                <!--#include virtual="/parts/user-nav-page-fr.html" -->
+            </div>
+
+            <div class="private-office__content">
+
+                <div class="private-office__header">
+                    <div class="page-title page-title__margin-b">История начислений баллов</div>
+                </div>
+
+                <div class="private-office__tab-content page-profit">
+                    <div class="table__responsive">
+                        <table class="table table-striped">
+                            <tbody>
+                                <tr class="table__tr">
+                                    <th class="table__th">№</th>
+                                    <th class="table__th table__th-sorting">
+                                        Дата/время
+                                        <div class="sorting">
+                                            <button class="sorting__btn sorting__btn--disabled i-arrow-bottom" type="button"></button>
+                                            <button class="sorting__btn i-arrow-top" type="button"></button>
+                                        </div>
+                                    </th>
+                                    <th class="table__th">Пользователь</th>
+                                    <th class="table__th text-center">Колличество</th>
+                                    <th class="table__th text-center">Действие</th>
+                                </tr>
+                                <tr class="table__tr">
+                                    <td class="table__td">1</td>
+                                    <td class="table__td table__td--nowrap">12.02.2021 21:21:22</td>
+                                    <td class="table__td table__td--nowrap">Иванов Иван</td>
+                                    <td class="table__td table__td--nowrap">100</td>
+                                    <td class="table__td">За регистрацию</td>
+                                </tr>
+                                <tr class="table__tr">
+                                    <td class="table__td">2</td>
+                                    <td class="table__td table__td--nowrap">01.02.2021 21:21:22</td>
+                                    <td class="table__td table__td--nowrap">Дементьев Андрей</td>
+                                    <td class="table__td table__td--nowrap">5</td>
+                                    <td class="table__td">За голосование</td>
+                                </tr>
+                                <tr class="table__tr">
+                                    <td class="table__td">3</td>
+                                    <td class="table__td table__td--nowrap table__message--disabled">12.12.2020 21:21:22</td>
+                                    <td class="table__td table__td--nowrap table__message--disabled">Сергеев Алексей</td>
+                                    <td class="table__td table__td--nowrap table__message--disabled">300</td>
+                                    <td class="table__td table__message--disabled status-cancel__wrap">Публикация карточки <span class="status-cancel">Отменена</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--#include virtual="/parts/pagination-count.html" -->
+
+                    <form class="form page-profit__form" action="/" method="post">
+                        <div class="row form-horizont">
+                            <div class="col-md-3">
+                                <div class="input-wrap">
+                                    <label class="input-wrap__label">Количество<input class="input" type="text"></label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="input-wrap">
+                                    <label class="input-wrap__label">Выберите пользователя</label>
+                                    <div class="dropdown dropdown--input js-dropdown-toogle">
+                                        <button class="dropdown__value" type="button">
+                                            <span class="dropdown__value-inner">
+                                            </span>
+                                        </button>
+                                        <div class="dropdown__list scroll-gray">
+                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Значение 1</a></div>
+                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Значение 2</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="input-wrap">
+                                    <label class="input-wrap__label">Выберите причину</label>
+                                    <div class="dropdown dropdown--input js-dropdown-toogle">
+                                        <button class="dropdown__value" type="button">
+                                            <span class="dropdown__value-inner">
+                                            </span>
+                                        </button>
+                                        <div class="dropdown__list scroll-gray">
+                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Значение 1</a></div>
+                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Значение 2</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 btn--mob-center">
+                                <a class="btn btn-accent btn--md" href="#">Пополнить</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--#include virtual="/parts/footer.html" -->

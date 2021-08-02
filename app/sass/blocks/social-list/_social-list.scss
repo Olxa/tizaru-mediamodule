@@ -1,0 +1,55 @@
+/*------------------------------------*\
+  #Cоциальные кноки
+\*------------------------------------*/
+
+.social-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    &__item {
+        margin-right: 14px;
+    }
+
+    &__link {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+
+        &:hover {
+            opacity: .7;
+        }
+
+        &.vk {
+            background-image: url(../images/dist/icon/vk-color.svg);
+        }
+
+        &.tl {
+            background-image: url(../images/dist/icon/telegram.svg);
+        }
+
+        &.inst {
+            background-image: url(../images/dist/icon/instagram-color.svg);
+        }
+
+        &.fb {
+            background-image: url(../images/dist/icon/fb-color.svg);
+        }
+
+        &.tw {
+            background-image: url(../images/dist/icon/tw-color.svg);
+        }
+
+        &.in {
+            background-image: url(../images/dist/icon/in-color.svg);
+        }
+
+        &.ok {
+            background-image: url(../images/dist/icon/ok-color.svg);
+        }
+    }
+}

@@ -1,0 +1,120 @@
+/*------------------------------------*\
+  #Фильтр категрии/страны/регионы - мобильный
+\*------------------------------------*/
+
+@media (max-width: 992px) {
+    .mobil-filter {
+        display: block;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        height: 100vh;
+        overflow-y: auto;
+        background: #fff;
+        z-index: 30;
+        padding: 70px 20px 20px;
+        left: -100%;
+        transition: 0.2s;
+
+        &.active {
+            left: 0;
+        }
+
+        .btn {
+            width: 100%;
+            margin-top: 4px;
+        }
+
+        &__title {
+            font-family: $userfont-sbold;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 1.2;
+            margin-bottom: 34px;
+        }
+    }
+
+    .mobil-filter__close {
+        width: 14px;
+        height: 14px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        padding: 0;
+        border: none;
+        background: transparent;
+        font-size: 0;
+
+        &::before {
+            font-size: 15px;
+        }
+    }
+
+    .mobil-filter__btn {
+        border: none;
+        background: $white;
+        font-size: 14px;
+        border-radius: 5px;
+        padding: 10px 6px;
+        position: relative;
+        cursor: pointer;
+        margin-bottom: 12px;
+        color: $gray;
+
+        &::before {
+            position: absolute;
+            right: 14.5px;
+            font-size: 13px;
+            top: 14px;
+        }
+
+        b {
+            padding-top: 5px;
+            padding-bottom: 2px;
+            color: $textcolor;
+            font-weight: 600;
+            font-size: 16px;
+            display: block;
+        }
+    }
+
+    .mobil-filter__wrapper {
+        position: fixed;
+        z-index: 35;
+        width: 100%;
+        height: 100vh;
+        overflow-y: auto;
+        background: #fff;
+        top: 0;
+        left: -100%;
+        transition: 0.2s;
+        padding: 30px 20px;
+        opacity: 1;
+        visibility: visible;
+
+        @media (max-width: 360px) {
+            .category-modal__sub {
+                width: auto;
+                font-size: 14px;
+            }
+        }
+
+        &.active {
+            left: 0;
+        }
+
+        .input-search {
+            margin-bottom: 25px;
+        }
+    }
+
+    .mobil-filter__back {
+        border: none;
+        width: 27px;
+        height: 8px;
+        font-size: 0;
+        background: url(../images/dist/icon/arrow-s.svg) no-repeat center;
+        background-size: 100% auto;
+        margin-bottom: 25px;
+    }
+}

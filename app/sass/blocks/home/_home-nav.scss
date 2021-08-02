@@ -1,0 +1,15 @@
+.home-nav {
+
+    &__logo {
+        margin: 0 auto;
+        max-width: 135px;
+        padding-top: 10px;
+        padding-bottom: 50px;
+        display: flex;
+        justify-content: center;
+
+        @media (max-width: 1200px) {
+            display: none;
+        }
+    }
+}

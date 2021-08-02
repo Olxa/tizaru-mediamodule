@@ -1,0 +1,28 @@
+.void-result {
+
+
+    &__item {
+        position: relative;
+        height: $input-height +3;
+        margin-top: 6px;
+        margin-bottom: 20px;
+        border: 1px solid $input-border-color;
+        border-radius: $input-border-radius;
+        padding: 10px 24px;
+    }
+
+    &__text {
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    &__bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba($gray, .5);
+        border-radius: 5px;
+        z-index: -1;
+    }
+}

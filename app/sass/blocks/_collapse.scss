@@ -1,0 +1,30 @@
+.collapse {
+    font-size: 18px;
+    line-height: normal;
+    margin-bottom: 10px;
+
+    &--sm {
+        font-size: 14px;
+    }
+
+    .link.hide {
+        display: none;
+    }
+}
+
+.collapse-content {
+    display: none;
+    padding-top: 5px;
+
+    &.visible {
+        display: block;
+    }
+}
+
+.collapse-link-close {
+    display: none;
+
+    &.visible {
+        display: inline-block;
+    }
+}

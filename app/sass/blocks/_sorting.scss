@@ -1,0 +1,52 @@
+/*------------------------------------*\
+  #Сортировка
+\*------------------------------------*/
+
+.sorting {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        border: none;
+        background-color: transparent;
+        font-family: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+        cursor: pointer;
+
+        &:hover,
+        &:focus {
+            color: $accent;
+        }
+    }
+
+    &__btn--disabled {
+        color: $gray;
+        cursor: default !important;
+
+        &:hover,
+        &:focus {
+            color: $gray;
+        }
+    }
+}
+
+.icon-sorting {
+    position: relative;
+    color: $textcolor;
+
+    &::before {
+        position: absolute;
+        left: 5px;
+        bottom: calc(50% - 6px);
+        font-size: 12px;
+        transition: all .3s linear;
+    }
+
+    &.active::before {
+        transform: rotate( -180deg );
+    }
+}

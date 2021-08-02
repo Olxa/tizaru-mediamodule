@@ -1,0 +1,14 @@
+.persone-page__preslider {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+    margin-top: -10px;
+
+    > * {
+        margin-right: 25px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

@@ -1,0 +1,81 @@
+<!--#set var="title" value="Личный кабинет | Информация" -->
+<!--#include virtual="/parts/header-login.html" -->
+
+<div class="page-content">
+    <div class="full-container private-office__wrap">
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb--private-office">
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Главная</a></li>
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="private-office">Личный кабинет</a></li>
+                <li class="breadcrumb__item active" aria-current="page">Фото профиля</li>
+            </ol>
+        </nav>
+
+        <div class="private-office">
+            <div class="private-office__sidebar">
+                <!--#include virtual="/parts/user-nav-page.html" -->
+            </div>
+
+            <div class="private-office__content">
+
+                <div class="private-office__status">
+                    ID 3500560, статус
+                    <div class="private-office__status-val private-office__status-val--one">
+                        <div class="private-office__status-popup">
+                            <p class="private-office__status-popup-txt">За все время вы набрали 2000 баллов</p>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="private-office__tab">
+                    <li class="private-office__tab-item">
+                        <a class="private-office__tab-link" href="private-office.html">Личная информация</a>
+                    </li>
+                    <li class="private-office__tab-item">
+                        <a class="private-office__tab-link" href="private-office-change-password.html">Смена пароля</a>
+                    </li>
+                    <li class="private-office__tab-item">
+                        <a class="private-office__tab-link" href="private-office-balance.html">Баланс</a>
+                    </li>
+                    <li class="private-office__tab-item">
+                        <div class="private-office__tab-link active">Фото профиля</div>
+                    </li>
+                </ul>
+
+                <div class="private-office__tab-content">
+
+                    <div class="add-avatar">
+                        <div class="add-avatar__image-wrap">
+                            <a class="input__file-button add-avatar__image popup-link" href="#add-image">
+                                <span class="file-photo__file-button file-photo__file-button--circle i-camera"></span>
+                            </a>
+                            <a class="add-avatar__add-link link link-accent link--border popup-link" href="#add-image">Загрузить фото</a>
+                        </div>
+
+                        <div class="add-avatar__help">
+                            <p class="add-avatar__help-text">
+                                Если не хотите загружать свою фотографию, вы можете
+                            </p>
+                            <button class="link link-accent link--underline" type="button">Использовать в качестве фото профиля логотип TIZARU</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-6 offset-lg-3 offset-xl-0">
+                            <button class="btn btn-accent btn--full form-private__btn" type="submit">Сохранить</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="add-image" class="popup add-avatar__popup mfp-hide">
+    <!--#include virtual="/parts/add-avatar-popup.html" -->
+</div>
+
+<!--#include virtual="/parts/footer.html" -->

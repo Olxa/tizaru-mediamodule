@@ -1,0 +1,104 @@
+<!--#set var="title" value="Личный кабинет | Информация" -->
+<!--#include virtual="/parts/header-login.html" -->
+
+<div class="page-content">
+    <div class="full-container private-office__wrap">
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb--private-office">
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Главная</a></li>
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="fr-private-office-staff.html">Сотрудники</a></li>
+                <li class="breadcrumb__item active" aria-current="page">Личная информация</li>
+            </ol>
+        </nav>
+
+        <div class="private-office">
+            <div class="private-office__sidebar">
+                <!--#include virtual="/parts/user-nav-page-fr.html" -->
+            </div>
+
+            <div class="private-office__content">
+
+                <div class="private-office__header">
+                    <h1 class="page-title page-title__margin-b">Петров Дмитрий</h1>
+                </div>
+                <ul class="private-office__tab">
+                    <li class="private-office__tab-item">
+                        <div class="private-office__tab-link active">Личная информация</div>
+                    </li>
+                    <li class="private-office__tab-item">
+                        <a class="private-office__tab-link" href="fr-private-office-staff2.html">Права доступа</a>
+                    </li>
+                </ul>
+
+                <div class="private-office__tab-content page-staff">
+                    <form class="form" action="/" method="post">
+                        <div class="form__subgroup">
+                            <div class="row row-margin-big">
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="input-wrap">
+                                        <span class="input-wrap__label">Регион</span>
+                                        <div class="dropdown dropdown--input js-dropdown-toogle">
+                                            <button class="dropdown__value" type="button"><span class="dropdown__value-inner">Центральный</span></button>
+                                            <div class="dropdown__list scroll-gray">
+                                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Центральный</a></div>
+                                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Дальневосточный</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="input-wrap">
+                                        <span class="input-wrap__label">Город</span>
+                                        <div class="dropdown dropdown--input js-dropdown-toogle">
+                                            <button class="dropdown__value" type="button"><span class="dropdown__value-inner">Москва</span></button>
+                                            <div class="dropdown__list scroll-gray">
+                                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Москва</a></div>
+                                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Подольск</a></div>
+                                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Чехов</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__subgroup">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="input-wrap"><label class="input-wrap__label">Фамилия<input class="input" type="text" value="Петров"></label></div>
+                                    <div class="input-wrap"><label class="input-wrap__label">Имя<input class="input" type="text" value="Дмитрий"></label></div>
+                                    <div class="input-wrap"><label class="input-wrap__label">Отчество<input class="input" type="text" value="Геннадьевич"></label></div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="input-wrap"><label class="input-wrap__label">Телефон<input class="input" type="tel" value="+7 123 456 78 99"></label></div>
+                                    <div class="input-wrap"><label class="input-wrap__label">E-mail<input class="input" type="email" value="petrov@mail.ru"></label></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__subgroup">
+                            <div class="row align-items-end">
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="input-wrap"><label class="input-wrap__label">Новый пароль<input class="input" type="password"></label></div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="input-wrap">
+                                        <button class="btn btn-conture btn--md" type="submit">Сменить пароль</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6">
+                                    <button class="btn btn-accent btn--full btn--md" type="submit">Сохранить</button>
+                                </div>
+                            </div>
+                        </div>                      
+                    </form>                   
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--#include virtual="/parts/footer.html" -->

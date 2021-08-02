@@ -1,0 +1,37 @@
+/*------------------------------------*\
+  #кнопки авторизации через соц. сети
+\*------------------------------------*/
+
+.soc-login {
+    padding-top: 18px;
+    padding-bottom: 15px;
+    display: flex;
+
+    &__link {
+        width: 80px;
+        height: 50px;
+        border-radius: 5px;
+        box-shadow: $shadow1;
+        margin-right: 18px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover {
+            box-shadow: $shadow2;
+        }
+    }
+}
+
+.gg {
+    background: url(../images/dist/google.png) no-repeat center;
+}
+
+.vk {
+    background: url(../images/dist/vk.png) no-repeat center;
+}
+
+.fb {
+    background: url(../images/dist/fb.png) no-repeat center;
+}

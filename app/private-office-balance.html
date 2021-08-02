@@ -1,0 +1,138 @@
+<!--#set var="title" value="Личный кабинет | Информация" -->
+<!--#include virtual="/parts/header-login.html" -->
+
+<div class="page-content">
+    <div class="full-container private-office__wrap">
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb--private-office">
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Главная</a></li>
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="private-office">Личный кабинет</a></li>
+                <li class="breadcrumb__item active" aria-current="page">Баланс</li>
+            </ol>
+        </nav>
+
+        <div class="private-office">
+            <div class="private-office__sidebar">
+                <!--#include virtual="/parts/user-nav-page.html" -->
+            </div>
+
+            <div class="private-office__content page-balance">
+
+                <div class="private-office__status">
+                    ID 3500560, статус
+                    <div class="private-office__status-val private-office__status-val--one">
+                        <div class="private-office__status-popup">
+                            <p class="private-office__status-popup-txt">За все время вы набрали 2000 баллов</p>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="private-office__tab">
+                    <li class="private-office__tab-item">
+                        <a class="private-office__tab-link" href="private-office.html">Личная информация</a>
+                    </li>
+                    <li class="private-office__tab-item">
+                        <a class="private-office__tab-link" href="private-office-change-password.html">Смена пароля</a>
+                    </li>
+                    <li class="private-office__tab-item">
+                        <div class="private-office__tab-link active">Баланс</div>
+                    </li>
+                    <li class="private-office__tab-item">
+                        <a class="private-office__tab-link" href="private-office-profile-photo.html">Фото профиля</a>
+                    </li>
+                </ul>
+
+                <div class="private-office__tab-content">
+                    <div class="row">
+                        <div class="col-xl-6 page-balance__table-balance">
+                                <div class="page-title-wrap balance__page-title-wrap">
+                                    <div class="page-title page-title__margin-r">На балансе 15 000 ₽</div>
+                                    <a class="btn btn-accent btn--md page-balance__donat" href="#">Пополнить</a>
+                                </div>
+
+                                <div class="table__responsive">
+                                    <table class="table table-striped">
+                                        <tr class="table__tr">
+                                            <th class="table__th">№</th>
+                                            <th class="table__th table__th-sorting">
+                                                Дата/время
+                                                <div class="sorting">
+                                                    <button class="sorting__btn sorting__btn--disabled i-arrow-bottom" type="button"></button>
+                                                    <button class="sorting__btn i-arrow-top" type="button"></button>
+                                                </div>
+                                            </th>
+                                            <th class="table__th text-center">Сумма</th>
+                                            <th class="table__th text-center">Операция</th>
+                                        </tr>
+                                        <tr class="table__tr">
+                                            <td class="table__td">1</td>
+                                            <td class="table__td table__td--nowrap">12.02.2021 21:21:22</td>
+                                            <td class="table__td table__td--nowrap">+ 1000 ₽</td>
+                                            <td class="table__td">Пополнение через PayPal</td>
+                                        </tr>
+                                        <tr class="table__tr">
+                                            <td class="table__td">2</td>
+                                            <td class="table__td table__td--nowrap">01.02.2021 21:21:22</td>
+                                            <td class="table__td table__td--nowrap">- 100 ₽</td>
+                                            <td class="table__td">Продвижение карточки «Моя организация»</td>
+                                        </tr>
+                                        <tr class="table__tr">
+                                            <td class="table__td">3</td>
+                                            <td class="table__td table__td--nowrap">12.12.2020 21:21:22</td>
+                                            <td class="table__td table__td--nowrap">- 200 ₽</td>
+                                            <td class="table__td">Оплата рекламной компании</td>
+                                        </tr>
+                                    </table>
+                                </div>                       
+                        </div>
+                        <div class="col-xl-6 page-balance__table-ball">
+                                <div class="page-title-wrap balance__page-title-wrap">
+                                    <div class="page-title page-title__margin-r">У вас 1534 балла</div>
+                                </div>
+                                <div class="table__responsive">
+                                    <table class="table table-striped">
+                                        <tr class="table__tr">
+                                            <th class="table__th">№</th>
+                                            <th class="table__th table__th-sorting">
+                                                Дата/время
+                                                <div class="sorting">
+                                                    <button class="sorting__btn sorting__btn--disabled i-arrow-bottom" type="button"></button>
+                                                    <button class="sorting__btn i-arrow-top" type="button"></button>
+                                                </div>
+                                            </th>
+                                            <th class="table__th text-center">Кол-во</th>
+                                            <th class="table__th text-center">Операция</th>
+                                        </tr>
+                                        <tr class="table__tr">
+                                            <td class="table__td">1</td>
+                                            <td class="table__td table__td--nowrap">12.02.2021 21:21:22</td>
+                                            <td class="table__td table__td--nowrap">+ 100</td>
+                                            <td class="table__td">Регистрация</td>
+                                        </tr>
+                                        <tr class="table__tr">
+                                            <td class="table__td">2</td>
+                                            <td class="table__td table__td--nowrap">01.02.2021 21:21:22</td>
+                                            <td class="table__td table__td--nowrap">+ 5</td>
+                                            <td class="table__td">Голосование</td>
+                                        </tr>
+                                        <tr class="table__tr">
+                                            <td class="table__td">3</td>
+                                            <td class="table__td table__td--nowrap">12.12.2020 21:21:22</td>
+                                            <td class="table__td table__td--nowrap">- 200</td>
+                                            <td class="table__td">Оплата рекламной компании</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <a class="btn btn-accent btn--md btn--full private-office__balance-add--mob" href="#">Пополнить</a>                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--#include virtual="/parts/footer.html" -->

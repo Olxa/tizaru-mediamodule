@@ -1,0 +1,91 @@
+/*------------------------------------*\
+  #Цвета
+\*------------------------------------*/
+
+$accent:                                #FF1E1E;
+$accent-dark:                           #D70000;
+$accent-dark2:                          #AD0000;
+$gray:                                  #ACA9A9;
+$gray2:                                 #6B6B6B;
+$light-gray:                            #F4F4F5;
+$border-ligth:                          #EFEDED;
+$white:                                 #F5F5F5;
+
+$color-second:                          #000080;                                                    //Синий
+$color-tertiary:                        #008A00;                                                    //Зеленый
+
+$color-succes:                          $color-tertiary;                                               
+$color-warning:                         $accent;
+$color-alert:                           #FFD146;
+
+                        
+
+
+/*------------------------------------*\
+  #Тени
+\*------------------------------------*/
+
+$shadow1:                               3px 4px 17px rgba(186, 186, 186, 0.25);
+$shadow2:                               3px 4px 17px rgba(186, 186, 186, 0.45);
+
+
+
+
+
+/*------------------------------------*\
+  #Типографика
+\*------------------------------------*/
+
+$fontsize:                              16px;
+$textcolor:                             #111111;
+$lineheight:                            1.5;
+
+$userfont:                              'OpenSans','Arial', sans-serif;
+$userfont-sbold:                        'OpenSans-SemiBold','Arial', sans-serif;                      //600
+$userfont-bold:                         'OpenSans-Bold','Arial', sans-serif;                          //700
+$userfont-extbold:                      'OpenSans-ExtraBold','Arial', sans-serif;                     //900
+$systemfont:                            -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+
+
+
+
+/*------------------------------------*\
+  #Части
+\*------------------------------------*/
+
+$border-radius: 5px;
+
+$zindex-loader: 995;
+$zindex-note: 9999;
+
+
+
+
+
+/*------------------------------------*\
+  #Форма
+\*------------------------------------*/
+
+$input-height:                          45px;
+$input-border-color:                    $gray;
+$input-border-radius:                   $border-radius;
+
+
+
+
+
+/*------------------------------------*\
+  #Попапы
+\*------------------------------------*/
+$drop-height:                           400px;
+
+
+
+
+
+/*------------------------------------*\
+  #Сетки
+\*------------------------------------*/
+
+$grid-gutter-width:                     30px;
+$gutter:                                $grid-gutter-width;

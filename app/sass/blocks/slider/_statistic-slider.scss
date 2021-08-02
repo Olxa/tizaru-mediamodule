@@ -1,0 +1,38 @@
+.statistic-slider {
+    margin-left: 0;
+    margin-right: 0;
+
+    &__item-date {
+        display: inline-block;
+        padding-left: 24px;
+        margin-bottom: 10px;
+        font-family: $userfont-bold;
+        font-weight: 700;
+        font-size: 14px;
+
+        @media (max-width: 1200px) {
+            padding-left: 15px;
+        }
+    }
+
+    .slick-arrow {
+        top: -65px;
+        width: 45px;
+        height: 45px;
+        color: $accent;
+        border: 1px solid $accent;
+        border-radius: $border-radius;
+        opacity: 1;
+        box-shadow: none;
+        transform: none;
+    }
+
+    .slick-prev {
+        right: 80px;
+        left: auto;
+    }
+
+    .slick-next {
+        right: 24px;
+    }
+}

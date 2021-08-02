@@ -1,0 +1,148 @@
+<!--#set var="title" value="Личный кабинет | Информация" -->
+<!--#include virtual="/parts/header-login.html" -->
+
+<div class="page-content">
+    <div class="full-container private-office__wrap">
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb--private-office">
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Главная</a></li>
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="fr-private-office-franchise.html">Список франшиз</a></li>
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="fr-private-office-franchise2.html">ИП. Васильева И. А.</a></li>
+                <li class="breadcrumb__item active" aria-current="page">Вопросы</li>
+            </ol>
+        </nav>
+
+        <div class="private-office">
+            <div class="private-office__sidebar">
+                <!--#include virtual="/parts/user-nav-page-fr.html" -->
+            </div>
+
+            <div class="private-office__content">
+                <div class="private-office__header">
+                    <h1 class="page-title page-title__margin-b">Новосибирск, Россия — ИП. Васильева И. А.</h1>
+                </div>
+
+                <ul class="private-office__tab">
+                    <li class="private-office__tab-item">
+                        <a class="private-office__tab-link" href="fr-private-office-franchise2.html">Общая информация</a>
+                    </li>
+                    <li class="private-office__tab-item">                        
+                        <a class="private-office__tab-link" href="fr-private-office-franchise3.html">Пользователи</a>
+                    </li>
+                    <li class="private-office__tab-item">
+                        <a class="private-office__tab-link" href="fr-private-office-franchise4.html">Статистика</a>
+                    </li>
+                    <li class="private-office__tab-item">
+                        <div class="private-office__tab-link active">Вопросы</div>                        
+                    </li>
+                </ul>
+
+                <div class="private-office__tab-content franchise-quest">
+                    <form class="form userlist" action="/" method="post">
+                        <div class="row form-horizont userlist__search-form">                            
+                            <div class="col-md-4">
+                                <div class="input-wrap">
+                                    <label class="input-wrap__label">Статусы</label>
+                                    <div class="dropdown dropdown--input js-dropdown-toogle">
+                                        <button class="dropdown__value" type="button">
+                                            <span class="dropdown__value-inner">
+                                            </span>
+                                        </button>
+                                        <div class="dropdown__list scroll-gray">
+                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Значение 1</a></div>
+                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Значение 2</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <button class="btn btn-accent btn--md btn-search--sm icon i-search" type="submit">
+                                    <span class="btn-search__mob-txt">Найти</span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="table__responsive">
+                        <table class="table table-striped">
+                            <tr class="table__tr">
+                                <th class="table__th">Дата/время</th>
+                                <th class="table__th">Пользователь</th>
+                                <th class="table__th">Последнее сообщение</th>
+                                <th class="table__th"></th>
+                            </tr>
+                            <tr class="table__tr">
+                                <td class="table__td table__td--nowrap">12.02.2021 21:21:22</td>
+                                <td class="table__td table__td--nowrap"><a class="table__td-link" href="fr-private-office-user.html" title="Редактировать пользователя">Дементьев Андрей</a></td>
+                                <td class="table__td">
+                                    <a class="table__td-link" href="fr-private-office-feedback1.html" title="Читать">
+                                        Франшиза: <br />
+                                        У нас есть очень сложный вопрос
+                                    </a>
+                                </td>
+                                <td class="table__td">
+                                    <div class="options">
+                                        <button class="options__btn" type="button"></button>
+                                        <div class="options__popup">
+                                            <ul class="options__list">
+                                                <li class="options__item"><a class="options__link" href="fr-private-office-feedback1.html">Изменить</a></li>
+                                                <li class="options__item"><a class="options__link  options__link-del" href="#">Удалить</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="table__tr">
+                                <td class="table__td table__td--nowrap">12.02.2021 21:21:22</td>
+                                <td class="table__td table__td--nowrap"><a class="table__td-link" href="fr-private-office-user.html" title="Редактировать пользователя">Иванов Иван</a></td>
+                                <td class="table__td">
+                                    <a class="table__td-link" href="fr-private-office-feedback1.html"  title="Читать">
+                                        Оператор: <br />
+                                        Ответ на вопрос заключается в ответе на вопрос
+                                    </a>
+                                </td>
+                                <td class="table__td">
+                                    <div class="options">
+                                        <button class="options__btn" type="button"></button>
+                                        <div class="options__popup">
+                                            <ul class="options__list">
+                                                <li class="options__item"><a class="options__link" href="fr-private-office-feedback1.html">Изменить</a></li>
+                                                <li class="options__item"><a class="options__link  options__link-del" href="#">Удалить</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="table__tr">
+                                <td class="table__td table__td--nowrap">12.02.2021 21:21:22</td>
+                                <td class="table__td table__td--nowrap"><a class="table__td-link" href="fr-private-office-user.html" title="Редактировать пользователя">Петр Сидоров</a></td>
+                                <td class="table__td">
+                                    <a class="table__td-link" href="fr-private-office-feedback1.html"  title="Читать">
+                                        Франшиза: <br />
+                                        У нас есть очень сложный вопрос
+                                    </a>
+                                </td>
+                                <td class="table__td">
+                                    <div class="options">
+                                        <button class="options__btn" type="button"></button>
+                                        <div class="options__popup">
+                                            <ul class="options__list">
+                                                <li class="options__item"><a class="options__link" href="fr-private-office-feedback1.html">Изменить</a></li>
+                                                <li class="options__item"><a class="options__link  options__link-del" href="#">Удалить</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>                  
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--#include virtual="/parts/footer.html" -->

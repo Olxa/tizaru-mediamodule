@@ -1,0 +1,93 @@
+<!--#set var="title" value="Личный кабинет | Информация" -->
+<!--#include virtual="/parts/header-login.html" -->
+
+<div class="page-content">
+    <div class="full-container private-office__wrap">
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb--private-office">
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Главная</a></li>
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="private-office-sertivicat.html">Сертификат</a></li>
+                <li class="breadcrumb__item active" aria-current="page">Купить ещё сертификаты</li>
+            </ol>
+        </nav>
+
+        <div class="private-office">
+            <div class="private-office__sidebar">
+                <!--#include virtual="/parts/user-nav-page.html" -->
+            </div>
+
+            <div class="private-office__content">
+
+                <div class="private-office__status">
+                    ID 3500560, статус
+                    <div class="private-office__status-val private-office__status-val--one">
+                        <div class="private-office__status-popup">
+                            <p class="private-office__status-popup-txt">За все время вы набрали 2000 баллов</p>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="private-office__tab">
+                    <li class="private-office__tab-item">
+                        <a class="private-office__tab-link" href="private-office-sertivicat.html">Как получить</a>
+                    </li>
+                    <li class="private-office__tab-item">
+                        <div class="private-office__tab-link active">Купить ещё сертификаты</div>
+                    </li>
+                    <li class="private-office__tab-item">
+                        <a class="private-office__tab-link" href="private-office-sertivicat2.html">Мои сертификаты</a>
+                    </li>
+                </ul>
+
+                <div class="private-office__tab-content page-sertificat">
+
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <div class="page-title">
+                                На балансе:
+                                <ul class="page-sertificat__balace-list">
+                                    <li class="page-sertificat__balace-list-item">1270 рублей</li>
+                                    <li class="page-sertificat__balace-list-item">10 баллов</li>
+                                </ul>
+                            </div>
+                            <form class="form page-sertificat__pay-form" action="/" method="post">
+                                <div class="form__subgroup">
+                                    <div class="radio">
+                                        <input class="radio__field" id="pay1" type="radio" name="pay" checked>
+                                        <label class="radio__value" for="pay1">
+                                            Списать 200 рублей с баланса
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <input class="radio__field" id="pay2" type="radio" name="pay" disabled>
+                                        <label class="radio__value" for="pay2">
+                                            Списать 200 баллов с баланса <span class="page-sertificat__warnig-txt">Недостаточно баллов</span>
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <input class="radio__field" id="pay3" type="radio" name="pay">
+                                        <label class="radio__value" for="pay3">
+                                            Оплатить с карты 200 рублей
+                                        </label>
+                                    </div>
+                                </div>                                
+                                <a class="btn btn-accent" href="private-office-sertivicat5.html">Оплатить</a>
+                            </form>
+                        </div>
+                        <div class="col-sm-5">
+                            <div class="page-sertificat__my">
+                                <img class="page-sertificat__my-image" src="/images/dist/sertificat-full-big-ru.jpg" alt="Сертификарт Андрея Петровича" />
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--#include virtual="/parts/footer.html" -->

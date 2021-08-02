@@ -1,0 +1,21 @@
+.create-void {
+
+    &__title-option {
+        margin-bottom: 28px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 27px;
+
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+
+    &__title-count {
+        margin-bottom: 28px;
+        font-family: $userfont-sbold;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 27px;
+    }
+}

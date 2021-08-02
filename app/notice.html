@@ -1,0 +1,108 @@
+<!--#set var="title" value="Личный кабинет | Информация" -->
+<!--#include virtual="/parts/header-login.html" -->
+
+<div class="notice notice--succes">
+    <div class="notice__message">Компания обновлена</div>
+</div>
+<div class="notice notice--warning" style="top: 170px;">
+    <div class="notice__message">Предупреждение</div>
+</div>
+<div class="notice notice--error" style="top: 240px;">
+    <div class="notice__message">Ошибка</div>
+</div>
+
+<div class="page-content">
+    <div class="full-container private-office__wrap">
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb--private-office">
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Главная</a></li>
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="private-office-my-company.html">Мои компании</a></li>
+                <li class="breadcrumb__item active" aria-current="page">Моя компания</li>
+            </ol>
+        </nav>
+
+        <div class="private-office">
+            <div class="private-office__sidebar">
+                <!--#include virtual="/parts/user-nav-page.html" -->
+            </div>
+
+            <div class="private-office__content">
+
+                <ul class="private-office__tab">
+                    <li class="private-office__tab-item">
+                        <div class="private-office__tab-link active">Редактирование</div>
+                    </li>
+                    <li class="private-office__tab-item">
+                        <a class="private-office__tab-link" href="private-office-my-company-detail-promo.html">Промокоды</a>
+                    </li>
+                    <li class="private-office__tab-item">
+                        <a class="private-office__tab-link" href="private-office-my-company-detail-statistic.html">Статистика</a>
+                    </li>
+                    <li class="private-office__tab-item">
+                        <a class="private-office__tab-link" href="private-office-my-company-detail-advert.html">Реклама объявления</a>
+                    </li>
+                </ul>
+
+                <div class="edit-company private-office__tab-content">
+
+                    <div class="edit-company__header">
+                        <div class="row edit-company__header-row">
+                            <div class="col-xl-7 edit-company__title">
+                                <div class="edit-company__title">
+                                    <div class="page-title-wrap">
+                                        <h1 class="page-title page-title__margin-r">ООО "Моя компания"</h1>
+                                        <div class="alert-wrap">ожидает модерации<span class="alert i-alert"></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-5 edit-company__tools">
+                                <a class="link link-accent link--underline edit-company__tools-item" href="page-organization.html" target="_blank" title="Откроется окно в новой вкладке">Предпросмотр карточки</a>
+                                <button class="btn btn-conture edit-company__tools-item" type="button">Сохранить</button>
+                            </div>
+                        </div>
+                        <a href="private-office-my-company.html" class="link link-accent link--border back-link i-arrow">Вернуться к профилю</a>
+                    </div>
+
+                    <div class="edit-company__message">
+                        <div class="edit-company__message-title"> Комментарий от модератора</div>
+                        <div class="edit-company__message-txt">Требуется добавить фотографии</div>
+                    </div>
+
+                    <form class="form" action="/" method="post">
+                        <!--#include virtual="/parts/edit-company.html" -->
+                        <div class="row edit-company__bottom-tools">
+                            <div class="col-xl-3">
+                                <a class="link link-accent link--border back-link i-arrow" href="private-office-my-company.html">Вернуться к профилю</a>
+                            </div>
+                            <div class="col-xl-3 col-md-6 offset-xl-3 preview-link">
+                                <a class="link link-accent link--underline" href="page-organization.html" target="_blank" title="Откроется окно в новой вкладке">Предпросмотр карточки</a>
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <button class="btn btn-accent btn--full" type="submit">Сохранить</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="del-photo" class="popup delete-popup mfp-hide">
+    <div class="delete-popup__title">Удалить фото?</div>
+    <div class="delete-popup__btn-group">
+        <div class="btn btn-conture btn--md add-avatar__popup-btn-close mfp-btn-close">Отмена</div>
+        <button class="btn btn-accent btn--md popup-link" type="button" data-mfp-src="#del-confirmed">Удалить</button>
+    </div>
+</div>
+
+
+<div id="del-confirmed" class="popup delete-popup mfp-hide">
+    <div class="delete-popup__title">Фото удалено</div>
+</div>
+
+<!--#include virtual="/parts/footer.html" -->

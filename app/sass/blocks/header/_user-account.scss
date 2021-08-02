@@ -1,0 +1,152 @@
+/*------------------------------------*\
+  #Юзер - ссылки
+\*------------------------------------*/
+
+.user-account {
+    position: relative;
+
+    &__dropdown {
+        width: 315px;
+        position: absolute;
+        right: 0;
+        top: 100%;
+        margin-top: 5px;
+        line-height: normal;
+        display: none;
+        opacity: 0;
+        transition: 0.2s;
+        box-shadow: 3px 4px 17px rgba(186, 186, 186, 0.45);
+        z-index: 6;
+
+        @media (max-width: 576px) {
+            position: fixed;
+            top: 83px;
+            left: 50%;
+            transform: translateX(-50%);
+            margin: 0;
+            overflow-y: auto;
+            max-height: calc(100% - 35px );
+        }
+
+        &.active {
+            opacity: 1;
+            display: block;
+        }
+    }
+
+    &__btn-open {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        border: none;
+        background-color: #fff;
+
+        @media (max-width: 1200px) {
+            padding-right: 20px;
+        }
+
+        &::after {
+            content: "\e910";
+            position: absolute;
+            right: -20px;
+            top: 50%;
+            width: 13px;
+            height: 7px;
+            margin-top: -3.5px;
+            font-family: if;
+            color: #6b6b6b;
+            transition: .2s;
+            line-height: 7px;
+            font-size: 13px;
+
+            @media (max-width: 1200px) {
+                right: 0;
+            }
+        }
+
+        &.active::after {
+            transform: rotate( -180deg );
+        }
+    }
+
+    &__dropdown-close {
+        cursor: pointer;
+        display: none;
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        top: 20px;
+        right: 20px;
+        background: 0 0;
+        font-size: 15px;
+        padding: 0;
+        border: none;
+        line-height: normal;
+        z-index: 3;
+
+        @media (max-width: 767px) {
+            display: block;
+        }
+
+        &::before {
+            display: block;
+        }
+    }
+
+    &__user-name {
+        display: inline-block;
+        text-align: left;
+        font-size: 14px;
+        line-height: 16px;
+
+        @media (max-width: 1200px) {
+            display: none;
+        }
+    }
+
+    &__user-avatar {
+        position: relative;
+        display: inline-block;
+        margin-left: 8px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 2px;
+            bottom: 0;
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: $color-tertiary;
+
+            @media (max-width: 1500px) {
+                width: 10px;
+                height: 10px;
+            }
+
+            @media (max-width: 767px) {
+                display: none;
+            }
+        }
+
+        img {
+            object-fit: cover;
+            object-position: top;
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+
+            @media (max-width: 1500px) {
+                width: 40px;
+                height: 40px;
+            }
+
+            @media (max-width: 767px) {
+                width: 35px;
+                height: 35px;
+            }
+        }
+    }
+}

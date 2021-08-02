@@ -1,0 +1,85 @@
+/*------------------------------------*\
+  #Заголовок страницы
+\*------------------------------------*/
+
+.page-title-wrap {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 767px) {
+        display: block;
+    }
+}
+
+.page-title {
+    /*margin-right: 43px;*/
+    font-family: $userfont-bold;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 38px;
+
+    @media (max-width: 1366px) {
+        font-size: 25px;
+        line-height: 28px;
+    }
+
+    &--big {
+        font-size: 50px;
+        line-height: 60px;
+        margin-bottom: 24px;
+
+        @media (max-width: 1366px) {
+            font-size: 25px;
+            line-height: 28px;
+            margin-bottom: 15px;
+        }
+    }
+
+    &__sub {
+        font-family: $userfont-bold;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 27px;
+    }
+
+
+    &__margin-r {
+        margin-right: 43px;
+
+        @media (max-width: 768px) {
+            margin-right: 0;
+        }
+    }
+
+    &__margin-b {
+        margin-bottom: 35px;
+    }
+
+    &--desk-center {
+        text-align: center;
+
+        @media (max-width: 992px) {
+            text-align: left;
+        }
+    }
+}
+
+.alert-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 14px;
+    line-height: 19px;
+    white-space: nowrap;
+    cursor: default;
+
+    @media (max-width: 767px) {
+        margin-top: 10px;
+    }
+}
+
+
+.alert::before {
+    color: $accent;
+    margin-left: 4px;
+}

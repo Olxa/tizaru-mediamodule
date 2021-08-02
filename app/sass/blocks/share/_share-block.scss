@@ -1,0 +1,110 @@
+.share-block {
+    position: relative;
+    padding: 45px 70px;
+    border: 1px solid $accent;
+
+    @media (max-width: 992px) {
+        padding: 30px 0 0;
+        border: none;
+        border-top: 1px solid $gray;
+    }
+
+    &__title {
+        margin-bottom: 25px;
+        font-family: $userfont-bold;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 41px;
+        text-transform: uppercase;
+
+        @media (max-width: 992px) {
+            font-size: 20px;
+            line-height: 27px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 992px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__text {
+        width: 65%;
+        padding-right: 10%;
+        font-size: 18px;
+        line-height: 25px;
+
+        @media (max-width: 992px) {
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 14px;
+            line-height: 19px;
+        }
+    }
+
+    &__action {
+        width: 35%;
+        text-align: center;
+
+        @media (max-width: 992px) {
+            width: 100%;
+        }
+    }
+
+    &__action--inline {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+
+        .share-block__action-count {
+            width: auto;
+            margin: 0 0 20px 20px;
+
+            @media (max-width: 992px) {
+                margin-left: 0;
+            }
+        }
+    }
+
+    &__action-btn {
+        min-width: 280px;
+        margin-bottom: 20px;
+
+        @media (max-width: 992px) {
+            display: none;
+        }
+
+        &::before {
+            margin-right: 15px;
+        }
+    }
+
+    &__action-count {
+        display: block;
+        width: 100%;
+        font-size: 14px;
+        line-height: 19px;
+        text-align: center;
+
+        @media (max-width: 992px) {
+            display: none;
+        }
+    }
+
+    &__action-count--mob-vis {
+        display: none;
+        margin-top: 15px;
+        text-align: left;
+
+        @media (max-width: 992px) {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,79 @@
+.smart-filter {
+    position: relative;
+    display: inline;
+
+    &__title {
+        display: inline-block;       
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    &__popup {
+        position: absolute;
+        right: 0;
+        display: none;
+        padding: 35px 15px 25px 25px;
+        background-color: #ffffff;
+        border-radius: $border-radius;
+        box-shadow: $shadow2;
+        z-index: 2;
+
+        @media (max-width: 1200px) {
+            right: initial;
+            left: 0;
+        }
+
+        &.active {
+            display: block;
+        }
+    }
+
+    &__close {
+        position: absolute;
+        border: none;
+        background-color: transparent;
+        top: 10px;
+        right: 15px;
+        color: #333;
+        cursor: pointer;
+
+        &::before {
+            display: block;
+            content: "\e913";
+            font-size: 12px;
+            font-family: if;
+        }
+    }
+
+    &__popup-title {
+        margin-bottom: 20px;
+        font-family: $userfont-sbold;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 16px;
+    }
+
+    &__popup-input {
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+
+    &__list {
+        padding-right: 25px;
+        max-height: 270px;
+        overflow-y: auto;
+    }
+
+    &__list-item {
+        margin-bottom: 16px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__popup--currency {
+        min-width: 280px;
+    }
+}

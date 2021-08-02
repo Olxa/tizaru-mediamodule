@@ -1,0 +1,156 @@
+/*------------------------------------*\
+  #Редактирование компании
+\*------------------------------------*/
+
+.edit-company {
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__header-row {
+        @media (max-width: 1199px) {
+            order: 2;
+        }
+    }
+
+    .back-link {
+        margin-top: 10px;
+
+        @media (max-width: 1199px) {
+            order: 1;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__title {
+        @media (max-width: 1199px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__tools {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        @media (max-width: 1199px) {
+            justify-content: flex-start;
+        }
+    }
+
+    &__tools-item {
+
+        &:first-child {
+            margin-right: 35px;
+        }
+
+        &.link {
+            font-size: 14px;
+
+            @media (max-width: 1199px) {
+                margin-bottom: 30px;
+            }
+        }
+
+        &.btn {
+            @media (max-width: 1199px) {
+                display: none
+            }
+        }
+    }
+
+    &__message-title {
+        font-family: $userfont-bold;
+        font-weight: 700;
+        font-size: 20px;
+        margin-bottom: 20px;
+
+        @media (max-width: 1199px) {
+            font-size: 16px;
+        }
+    }
+
+    &__message-txt {
+        padding: 20px;
+        margin-bottom: 50px;
+        font-size: 18px;
+        line-height: 24px;
+        border: 1px solid $gray;
+        border-radius: $border-radius;
+        cursor: default;
+    }
+
+    &__col-title {
+        display: flex;
+        align-items: baseline;
+
+        @media (max-width: 991px) {
+            margin-top: 20px;
+        }
+
+        > * {
+            margin-right: 10px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    &__social {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 767px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__social-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    &__social-txt {
+        margin: 0;
+
+        @media (max-width: 767px) {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__social-item {
+        width: 20%;
+        margin-left: 30px;
+
+        @media (max-width: 767px) {
+            width: 50%;
+            margin-left: 0;
+            padding-right: 40px;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__bottom-tools {
+        align-items: center;
+
+        .back-link {
+            margin: 0;
+
+            @media (max-width: 1199px) {
+                display: none;
+            }
+        }
+
+        .preview-link {
+            @media (max-width: 767px) {
+                margin-bottom: 25px;
+            }
+        }
+    }
+}

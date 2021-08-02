@@ -1,0 +1,218 @@
+.help {
+    &__title-bg {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        &::before {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            bottom: -6%;
+            width: 100%;
+            height: 100%;
+            min-height: 500px;
+            background: url(../images/dist/help-title-bg.svg) no-repeat center;
+            background-size: contain;
+
+            @media (max-width: 991px) {
+                position: initial;
+                min-height: 340px;
+            }
+
+            @media (max-width: 768px) {
+                min-height: 300px;
+            }
+        }
+
+        .freepik-link {
+            bottom: 6%;
+
+            @media (max-width: 1299px) {
+                bottom: 8%;
+            }
+
+            @media (max-width: 1199px) {
+                bottom: 15%;
+            }
+
+            @media (max-width: 991px) {
+               left: 0;
+                bottom: 5%;
+            }
+        }
+    }
+
+    &__share {
+        padding: 30px 0;
+    }
+
+    &__share-title {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 40px;
+        font-family: $userfont-bold;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+
+        &::after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            left: 110%;
+            width: 41px;
+            height: 24px;
+            background: url(../images/dist/arrow-sircle-down.svg) no-repeat top left;
+            background-size: contain;
+        }
+    }
+
+    &__share-block {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 1199px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__share-count {
+        margin-left: 16px;
+        font-size: 20px;
+        line-height: 27px;
+
+        @media (max-width: 1199px) {
+            width: 100%;
+            margin: 14px 0 0 0;
+        }
+
+        @media (max-width: 992px) {
+            font-size: 14px;
+            margin: 0;
+        }
+    }
+
+    &__descr-block {
+        padding: 100px 0 40px;
+
+        @media (max-width: 1199px) {
+            padding: 30px 0 50px;
+        }
+    }
+
+    &__descr-title {
+        font-family: $userfont-bold;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 27px;
+    }
+
+    &__descr {
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    &__descr-bolder {
+        font-family: $userfont-bold;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 27px;
+    }
+
+    &__subscribe-bg {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        &::before {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            width: 100%;
+            height: 110%;
+            background: url(../images/dist/help-subscribe-bg.svg) no-repeat center;
+            background-size: contain;
+        }
+
+        @media (max-width: 1199px) {
+            display: none;
+        }
+
+        .freepik-link__wrap {
+            position: absolute !important;
+            width: 100%;
+            bottom: 0;
+        }
+    }
+
+    &__count {
+        padding: 50px 0 100px;
+
+        @media (max-width: 1199px) {
+            padding: 0 0 100px;
+        }
+    }
+
+    &__progress {
+        margin-bottom: 120px;
+
+        @media (max-width: 768px) {
+            margin-bottom: 20px;
+        }
+
+        .graph-sircle {
+            @media (max-width: 768px) {
+                order: 1;
+            }
+        }
+    }
+
+    &__progress-title {
+        display: block;
+        margin-bottom: 30px;
+        font-family: $userfont-bold;
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+
+        @media (max-width: 991px) {
+            font-size: 24px;
+            line-height: 32px;
+        }
+
+        @media (max-width: 460px) {
+            text-align: left;
+        }
+    }
+
+    &__progress-inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (max-width: 768px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__progress-count {
+        font-size: 20px;
+        text-align: center;
+
+        @media (max-width: 991px) {
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            order: 2;
+            width: 50%;
+        }
+    }
+
+    &__progress-count-bold {
+        font-family: $userfont-bold;
+        font-weight: 700;
+    }
+}

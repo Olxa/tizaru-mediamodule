@@ -1,0 +1,173 @@
+/*------------------------------------*\
+  #Форма
+\*------------------------------------*/
+
+.form {
+    &__group {
+        margin-bottom: 70px;
+
+        @media (max-width: 991px) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__title {
+        font-family: $userfont-bold;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 27px;
+    }
+
+    &__group-title {
+        margin-bottom: 16px;
+        font-family: $userfont-bold;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 27px;
+    }
+
+    &__group-description {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 20px;
+
+        @media (max-width: 991px) {
+            font-size: 14px;
+            line-height: 19px;
+            margin-bottom: 13px;
+        }
+    }
+
+    &__subgroup {
+        margin-bottom: 40px;
+
+        @media (max-width: 991px) {
+            margin: 10px 0 40px;
+        }
+    }
+
+    &__subgroup-title {
+        margin-bottom: 40px;
+        margin-bottom: 13px;
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .input-wrap {
+        margin-bottom: 20px;
+    }
+
+    &__subgroup-add {
+        margin-right: 46px;
+        color: $accent;
+        text-decoration: underline;
+        border: none;
+        background-color: transparent;
+
+        @media (max-width: 767px) {
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 425px) {
+            font-size: 14px;
+        }
+
+        &:hover {
+            &:hover,
+            &:focus {
+                color: $accent-dark;
+            }
+        }
+
+        &:last-child {
+            margin-right: 0;
+
+            @media (max-width: 767px) {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__mute-text {
+        display: inline-block;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19px;
+        color: $gray;
+
+        a {
+            color: $textcolor;
+            white-space: nowrap;
+            text-decoration: underline;
+        }
+    }
+
+    &__field-has-del {
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &__btn-del {
+        position: absolute;
+        right: -30px;
+        top: 50%;
+        margin-top: -14px;
+        font-size: 20px;
+        color: $gray;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+
+        @media (max-width: 1300px) {
+            right: -23px;
+        }
+
+        @media (max-width: 992px) {
+            position: initial;
+            margin: 0 0 23px 10px;
+        }
+    }
+
+    &__btn-del--only-input {
+        margin-top: -20px;
+    }
+
+    .dropdown,
+    .dropdown__list-val {
+        /*font-size: 14px*/
+    }
+
+    .state-text {
+        padding-bottom: 13px;
+
+        @media (max-width: 1199px) {
+            display: none;
+        }
+    }
+
+    &__dropdown-status {
+        max-width: 250px;
+
+        @media (max-width: 1199px) {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+/*------------------------------------*\
+  #Горизонтальная форма
+\*------------------------------------*/
+
+.form-horizont {
+    align-items: center;
+
+    .btn-search--sm {
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+    }
+}

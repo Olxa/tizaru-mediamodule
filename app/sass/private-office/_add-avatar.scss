@@ -1,0 +1,57 @@
+/*------------------------------------*\
+  #Добавить фото
+\*------------------------------------*/
+
+.add-avatar {
+    $image-size: 142px;
+
+    display: flex;
+
+    @media (max-width: 1199px) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__image-wrap {
+        width: $image-size;
+        text-align: center;
+        margin-right: 70px;
+
+        @media (max-width: 1199px) {
+            margin-right: 0;
+        }
+    }
+
+    &__image {
+        display: block;
+        margin-bottom: 30px;
+
+        .file-photo__file-button {
+            width: $image-size;
+            height: $image-size;
+        }
+    }
+
+    &__add-link {
+        @media (max-width: 1199px) {
+            display: none;
+        }
+    }
+
+    &__help {
+        margin-top: $image-size/3;
+
+        @media (max-width: 1199px) {
+            margin-top: 30px;
+            text-align: left;
+
+            .link {
+                text-align: left;
+            }
+        }
+    }
+
+    &__help-text {
+        margin-bottom: 10px;
+    }
+}

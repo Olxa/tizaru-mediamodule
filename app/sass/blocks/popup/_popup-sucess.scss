@@ -1,0 +1,45 @@
+/*------------------------------------*\
+  #Попа -  успешное действие
+\*------------------------------------*/
+
+.popup-sucess {
+    padding-bottom: 70px;
+    text-align: center;
+
+    &__icon {
+        margin: 0 auto 20px;
+        width: 60px;
+        height: 60px;
+        background-image: url(../images/dist/icon/sucess-sircle.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+
+        @media (max-width: 767px) {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    &__title {
+        display: block;
+        margin-bottom: 50px;
+        font-family: $userfont-sbold;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+
+        @media (max-width: 767px) {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__btn {
+        width: 270px;
+
+        @media (max-width: 767px) {
+            width: auto;
+        }
+    }
+}

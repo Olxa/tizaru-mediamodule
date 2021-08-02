@@ -1,0 +1,62 @@
+.notice {
+    position: fixed;
+    top: 100px;
+    right: 10px;
+    padding: 15px 25px;
+    max-width: 300px;
+    border-radius: $border-radius;
+    box-shadow: $shadow2;
+    background: #ffffff;
+    border: 1px solid;
+    cursor: default;
+    z-index: $zindex-note;
+
+    @media (max-width: 1200px) {
+        top: 80px;
+    }
+
+    @media (max-width: 992px) {
+        top: 10px;
+    }
+
+    &__message {
+        font-size: 14px;
+        color: $textcolor;
+
+        &::before {
+            display: inline-block;
+            font-family: "if";
+            width: 20px;
+            height: 20px;
+            margin-right: 6px;
+        }
+    }   
+}
+
+.notice--succes {
+    border-color: $color-succes;
+
+    .notice__message::before {
+        content: '\e944';
+        color: $color-succes;
+        //font-weight: bold;
+    }
+}
+
+.notice--warning {
+    border-color: $color-alert;
+
+    .notice__message::before {
+        content: '\e938';
+        color: $color-alert;
+    }
+}
+
+.notice--error {
+    border-color: $color-warning;
+
+    .notice__message::before {
+        content: '\e93b';
+        color: $color-warning;
+    }
+}

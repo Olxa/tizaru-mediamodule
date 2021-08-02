@@ -1,0 +1,39 @@
+.content-carusel {
+    .slick-track {
+        display: flex;
+    }
+}
+
+.content-carusel__item {
+    padding: 0 15px;
+    display: flex !important;
+    padding-bottom: 20px;
+    height: initial !important;
+
+    @media (max-width: 767px) {
+        padding-bottom: 25px;
+    }
+
+    .preview {
+        margin-bottom: 0;
+    }
+}
+
+.content-carusel {
+
+    .slick-arrow {
+        top: 50%;
+        margin-top: -60px;
+
+        @media (max-width: 767px) {
+            top: initial;
+            bottom: -15px;
+        }
+    }
+
+    &--thin {
+        .slick-arrow {
+            margin-top: -31px;
+        }
+    }
+}

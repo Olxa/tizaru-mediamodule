@@ -1,0 +1,26 @@
+.user-info {
+    &__license {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__license-item {
+        display: inline-block;
+        padding: 8px;
+        font-size: 18px;
+        border: 1px solid;
+        border-radius: $border-radius;
+        margin-bottom: 14px;
+
+        @media (max-width: 992px) {
+            font-family: $userfont-sbold;
+            font-weight: 600;
+            font-size: 14px;
+        }
+    }
+
+    &__license-item--disabled {
+        color: $gray;
+    }
+}

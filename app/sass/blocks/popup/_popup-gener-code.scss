@@ -1,0 +1,30 @@
+.popup-gener-code {
+    padding-top: 60px;
+    padding-bottom: 90px !important;
+
+    @media (max-width: 767px) {
+        padding-bottom: 60px;
+    }
+
+    .popup__wrapper {
+        max-width: 330px;
+        margin: 0 auto;
+    }
+
+    .input {
+        margin-bottom: 25px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .alert-ok {
+        width: 330px;
+        position: absolute;
+        max-width: 330px;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 20px;
+        cursor: default;
+    }
+}

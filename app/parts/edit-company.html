@@ -1,0 +1,875 @@
+﻿<fieldset class="form__group">
+    <legend class="form__group-title visually-hidden">Основная информация</legend>
+    <div class="row">
+        <div class="col-xl-3 col-lg-6">
+            <div class="input-wrap">
+                <span class="input-wrap__label">Выберите Категорию</span>
+                <div class="dropdown dropdown--input js-dropdown-toogle">
+                    <button class="dropdown__value" type="button"><span class="dropdown__value-inner"></span></button>
+                    <div class="dropdown__list scroll-gray">
+                        <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Категория 1</a></div>
+                        <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Категория 2</a></div>
+                        <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Категория 3</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-6">
+            <div class="input-wrap">
+                <span class="input-wrap__label">Выберите подкатегорию</span>
+                <div class="dropdown dropdown--input js-dropdown-toogle">
+                    <button class="dropdown__value" type="button"><span class="dropdown__value-inner"></span></button>
+                    <div class="dropdown__list scroll-gray">
+                        <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Подкатегория 1</a></div>
+                        <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Подкатегория 2</a></div>
+                        <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Подкатегория 3</a></div>
+                        <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Подкатегория 4</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-6 form-private__mob-last">
+            <div class="radio checkbox--tooltip">
+                <input class="radio__field" id="ip" type="radio" name="radio">
+                <label class="radio__value" for="ip">
+                    ИП/самозанятый
+                </label>
+            </div>
+            <div class="radio checkbox--tooltip">
+                <input class="radio__field" id="ooo" type="radio" name="radio">
+                <label class="radio__value" for="ooo">
+                    Компания/организация
+                </label>
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-6 form-private__mob-last">
+            <div class="checkbox checkbox--sm checkbox--tooltip">
+                <input class="checkbox__field" id="promocode" type="checkbox"><label class="checkbox__value" for="promocode">Включить промокод</label>
+                <div class="tooltip">
+                    <div class="tooltip__btn">
+                        <span class="tooltip__icon i-info"></span>
+                    </div>
+                    <div class="tooltip__popup">
+                        <p class="tooltip__popup-txt">
+                            При включении промокода вам на общую почту будут приходить письма с сформированным кодом от клиентов, которые увидели информацию о вашей компании в каталоге и заинтересовались вашими услугами и товарами.
+                            Вы можете предоставить скидку в соответсвии с вашими тарифами. Отключение промокода говорит о том, что кнопка «промокод» не будет видна в вашей карточке, что сделает карточку в выдаче менее заметной
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-6">
+            <div class="input-wrap">
+                <span class="input-wrap__label">Выберите страну</span>
+                <div class="dropdown dropdown--input js-dropdown-toogle">
+                    <button class="dropdown__value" type="button"><span class="dropdown__value-inner"></span></button>
+                    <div class="dropdown__list scroll-gray">
+                        <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Россия</a></div>
+                        <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Англия</a></div>
+                        <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Франция</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-6">
+            <div class="input-wrap">
+                <span class="input-wrap__label">Выберите регион</span>
+                <div class="dropdown dropdown--input js-dropdown-toogle">
+                    <button class="dropdown__value" type="button"><span class="dropdown__value-inner"></span></button>
+                    <div class="dropdown__list scroll-gray">
+                        <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Москва</a></div>
+                        <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Подольск</a></div>
+                        <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Чехов</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-6">
+            <div class="input-wrap">
+                <span class="input-wrap__label">Выберите город</span>
+                <div class="dropdown dropdown--input js-dropdown-toogle">
+                    <button class="dropdown__value" type="button"><span class="dropdown__value-inner"></span></button>
+                    <div class="dropdown__list scroll-gray">
+                        <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Москва</a></div>
+                        <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Подольск</a></div>
+                        <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Чехов</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</fieldset>
+
+<fieldset class="form__group">
+    <legend class="form__group-title">Информация</legend>
+    <div class="row">
+        <div class="col-xl-3 col-lg-6">
+            <div class="input-wrap">
+                <label class="input-wrap__label">
+                    Название
+                    <input class="input" type="text">
+                </label>
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-6">
+            <div class="input-wrap">
+                <label class="input-wrap__label">
+                    Адрес сайта
+                    <input class="input" type="text">
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="input-wrap">
+                <span class="input-wrap__label">
+                    Описание
+                    <textarea class="textarea"></textarea>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <fieldset class="form__subgroup">
+        <legend class="form__subgroup-title">Адрес компании</legend>
+        <div class="row">
+            <div class="col-xl-3 col-lg-6">
+                <div class="input-wrap">
+                    <label class="input-wrap__label">
+                        Улица
+                        <input class="input" type="text">
+                    </label>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-6">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="input-wrap">
+                            <label class="input-wrap__label">
+                                Дом
+                                <input class="input" type="text">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="input-wrap">
+                            <label class="input-wrap__label">
+                                Офис
+                                <input class="input" type="text">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-3 col-lg-6">
+                <div class="input-wrap">
+                    <label class="input-wrap__label">
+                        Ближайщая станция метро
+                        <input class="input" type="text">
+                    </label>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-6">
+                <div class="input-wrap">
+                    <label class="input-wrap__label">
+                        Ветка метро
+                        <input class="input" type="text">
+                    </label>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+
+    <fieldset class="form__subgroup">
+        <legend class="form__subgroup-title">График работы</legend>
+        <div class="row  time-col__wrap">
+            <div class="col-xl-6 col-md-8">
+                <div class="row schedule__row">
+                    <div class="col-3 time-col offset-3">
+                        <span class="input-wrap__label form-private__time-label">Начало работы</span>
+                    </div>
+                    <div class="col-3 time-col">
+                        <span class="input-wrap__label form-private__time-label">Конец работы</span>
+                    </div>
+                    <div class="col-3 time-col">
+                        <span class="input-wrap__label form-private__time-label form-private__time-label--hidden">Выходной</span>
+                    </div>
+                </div>
+                <div class="row schedule__row align-items-center">
+                    <div class="col-3 time-col">
+                        <label class="form-private__label-group">Понедельник</label>
+                    </div>
+                    <div class="col-3 time-col">
+                        <!--#include virtual="/parts/dropdown--time.html" -->
+                    </div>
+                    <div class="col-3 time-col">
+                        <div class="dropdown dropdown--input dropdown--time js-dropdown-toogle">
+                            <!--Если не получится сделать скрол поминутный, можно просто интервалы сделать в списке-->
+                            <button class="dropdown__value" type="button">9:00</button>
+                            <div class="dropdown__list scroll-gray">
+                                <div class="dropdown__list-item">
+                                    <a href="#" class="dropdown__list-val">9:00</a>
+                                </div>
+                                <div class="dropdown__list-item">
+                                    <a href="#" class="dropdown__list-val">9:30</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 time-col">
+                        <div class="checkbox">
+                            <input class="checkbox__field" id="chek-time1" type="checkbox">
+                            <label class="checkbox__value" for="chek-time1">
+                                <span class="form-private__desk-vis">Выходной</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center schedule__row">
+                    <div class="col-3 time-col">
+                        <label class="form-private__label-group">Вторник</label>
+                    </div>
+                    <div class="col-3 time-col">
+                        <!--#include virtual="/parts/dropdown--time.html" -->
+                    </div>
+                    <div class="col-3 time-col">
+                        <!--#include virtual="/parts/dropdown--time.html" -->
+                    </div>
+                    <div class="col-3 time-col">
+                        <div class="checkbox">
+                            <input class="checkbox__field" id="chek-time2" type="checkbox">
+                            <label class="checkbox__value" for="chek-time2">
+                                <span class="form-private__desk-vis">Выходной</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center schedule__row">
+                    <div class="col-3 time-col">
+                        <label class="form-private__label-group">Среда</label>
+                    </div>
+                    <div class="col-3 time-col">
+                        <!--#include virtual="/parts/dropdown--time.html" -->
+                    </div>
+                    <div class="col-3 time-col">
+                        <!--#include virtual="/parts/dropdown--time.html" -->
+                    </div>
+                    <div class="col-3 time-col">
+                        <div class="checkbox">
+                            <input class="checkbox__field" id="chek-time3" type="checkbox">
+                            <label class="checkbox__value" for="chek-time3">
+                                <span class="form-private__desk-vis">Выходной</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center schedule__row">
+                    <div class="col-3 time-col">
+                        <label class="form-private__label-group">Четверг</label>
+                    </div>
+                    <div class="col-3 time-col">
+                        <!--#include virtual="/parts/dropdown--time.html" -->
+                    </div>
+                    <div class="col-3 time-col">
+                        <!--#include virtual="/parts/dropdown--time.html" -->
+                    </div>
+                    <div class="col-3 time-col">
+                        <div class="checkbox">
+                            <input class="checkbox__field" id="chek-time4" type="checkbox">
+                            <label class="checkbox__value" for="chek-time4">
+                                <span class="form-private__desk-vis">Выходной</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center schedule__row">
+                    <div class="col-3 time-col">
+                        <label class="form-private__label-group">Пятница</label>
+                    </div>
+                    <div class="col-3 time-col">
+                        <!--#include virtual="/parts/dropdown--time.html" -->
+                    </div>
+                    <div class="col-3 time-col">
+                        <!--#include virtual="/parts/dropdown--time.html" -->
+                    </div>
+                    <div class="col-3 time-col">
+                        <div class="checkbox">
+                            <input class="checkbox__field" id="chek-time5" type="checkbox">
+                            <label class="checkbox__value" for="chek-time5">
+                                <span class="form-private__desk-vis">Выходной</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center schedule__row">
+                    <div class="col-3 time-col">
+                        <label class="form-private__label-group">Суббота</label>
+                    </div>
+                    <div class="col-3 time-col">
+                        <input class="input dropdown--time" type="text" disabled>
+                    </div>
+                    <div class="col-3 time-col">
+                        <input class="input dropdown--time" type="text" disabled>
+                    </div>
+                    <div class="col-3 time-col">
+                        <div class="checkbox">
+                            <input class="checkbox__field" id="chek-time6" type="checkbox" checked>
+                            <label class="checkbox__value" for="chek-time6">
+                                <span class="form-private__desk-vis">Выходной</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center schedule__row">
+                    <div class="col-3 time-col">
+                        <label class="form-private__label-group">Воскресенье</label>
+                    </div>
+                    <div class="col-3 time-col">
+                        <!--#include virtual="/parts/dropdown--time.html" -->
+                    </div>
+                    <div class="col-3 time-col">
+                        <!--#include virtual="/parts/dropdown--time.html" -->
+                    </div>
+                    <div class="col-3 time-col">
+                        <div class="checkbox">
+                            <input class="checkbox__field" id="chek-time7" type="checkbox">
+                            <label class="checkbox__value" for="chek-time7">
+                                <span class="form-private__desk-vis">Выходной</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center schedule__row">
+                    <div class="col-3 time-col">
+                        <label class="form-private__label-group">Перерыв</label>
+                    </div>
+                    <div class="col-3 time-col">
+                        <!--#include virtual="/parts/dropdown--time.html" -->
+                    </div>
+                    <div class="col-3 time-col">
+                        <!--#include virtual="/parts/dropdown--time.html" -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="form__subgroup-add" type="button">+ Добавить перерыв</button>
+        <button class="form__subgroup-add" type="button">Применить одно время ко всем дням</button>
+    </fieldset>
+
+    <fieldset class="form__subgroup">
+        <legend class="form__subgroup-title">Услуги/товары и цены</legend>
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="input-wrap">
+                    <label class="input-wrap__label">Услуга/товар<input class="input" type="text"></label>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="input-wrap">
+                    <label class="input-wrap__label">Стоимость<input class="input" type="text"></label>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="input-wrap">
+                    <span class="input-wrap__label">Валюта</span>
+                    <div class="dropdown dropdown--input js-dropdown-toogle">
+                        <button class="dropdown__value" type="button"><span class="dropdown__value-inner"></span></button>
+                        <div class="dropdown__list scroll-gray">
+                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">₽</a></div>
+                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">$</a></div>
+                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">€</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-private__has-del-group">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="input-wrap form-private__fields-has-del">
+                        <label class="input-wrap__label">Услуга/товар<input class="input" type="text"></label>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="input-wrap form-private__fields-has-del">
+                        <label class="input-wrap__label">Стоимость<input class="input" type="text"></label>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="form__field-has-del form-private__fields-has-del">
+                        <div class="input-wrap">
+                            <span class="input-wrap__label">Валюта</span>
+                            <div class="dropdown dropdown--input js-dropdown-toogle">
+                                <button class="dropdown__value" type="button"><span class="dropdown__value-inner"></span></button>
+                                <div class="dropdown__list scroll-gray">
+                                    <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">₽</a></div>
+                                    <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">$</a></div>
+                                    <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">€</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="form__btn-del i-clear" type="button"></button>
+                    </div>
+                </div>
+            </div>
+            <button class="form-private__del-group i-clear" type="button"></button>
+        </div>
+        <div class="form-private__has-del-group">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="input-wrap form-private__fields-has-del">
+                        <label class="input-wrap__label">Услуга/товар<input class="input" type="text"></label>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="input-wrap form-private__fields-has-del">
+                        <label class="input-wrap__label">Стоимость<input class="input" type="text"></label>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="form__field-has-del form-private__fields-has-del">
+                        <div class="input-wrap">
+                            <span class="input-wrap__label">Валюта</span>
+                            <div class="dropdown dropdown--input js-dropdown-toogle">
+                                <button class="dropdown__value" type="button"><span class="dropdown__value-inner"></span></button>
+                                <div class="dropdown__list scroll-gray">
+                                    <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">₽</a></div>
+                                    <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">$</a></div>
+                                    <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">€</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="form__btn-del i-clear" type="button"></button>
+                    </div>
+                </div>
+            </div>
+            <button class="form-private__del-group i-clear" type="button"></button>
+        </div>
+        <button class="form__subgroup-add" type="button">+ Добавить услугу/товар</button>
+    </fieldset>
+</fieldset>
+
+<fieldset class="form__group">
+    <legend class="form__group-title">Изображение</legend>
+    <p class="form__group-description">Услуги, товары, фото офиса, склада, производства, здания организации</p>
+
+    <fieldset class="form__subgroup">
+        <legend class="form__subgroup-title visually-hidden">Добавление фото</legend>
+        <div class="file-photo__group">
+            <div class="file-photo file-photo__file-button">
+                <a class="file-photo__preview-btn i-see popup-image" href="images/dist/decor.png" title="Увеличить"></a>
+                <img src="images/dist/or2.jpg" alt="название фото">
+                <div class="file-photo__delet-wrap">
+                    <button class="file-photo__delet-btn popup-link i-clear" type="button" data-mfp-src="#del-photo" title="Удалить фото"></button>
+                </div>
+            </div>
+            <div class="file-photo">
+                <label class="input__file-button">
+                    <input name="file" type="file" class="input-file" multiple="">
+                    <span class="file-photo__file-button i-camera"></span>
+                </label>
+            </div>
+            <div class="file-photo">
+                <label class="input__file-button">
+                    <input name="file" type="file" class="input-file" multiple="">
+                    <span class="file-photo__file-button i-camera"></span>
+                </label>
+            </div>
+            <div class="file-photo">
+                <label class="input__file-button">
+                    <input name="file" type="file" class="input-file" multiple="">
+                    <span class="file-photo__file-button i-camera"></span>
+                </label>
+            </div>
+            <div class="file-photo">
+                <label class="input__file-button">
+                    <input name="file" type="file" class="input-file" multiple="">
+                    <span class="file-photo__file-button i-camera"></span>
+                </label>
+            </div>
+            <div class="file-photo">
+                <label class="input__file-button">
+                    <input name="file" type="file" class="input-file" multiple="">
+                    <span class="file-photo__file-button i-camera"></span>
+                </label>
+            </div>
+            <span class="form__mute-text">Рекомендуемый размер 1200x1200 px</span>
+            <label class="form__subgroup-add file-txt">
+                + Добавить фото
+                <input name="file" type="file" class="file-txt__input" multiple="">
+            </label>
+        </div>
+    </fieldset>
+
+    <fieldset class="form__subgroup">
+        <legend class="form__subgroup-title visually-hidden">Добавление логотипа компании</legend>
+
+        <div class="form__group-description">
+            Иконка в поисковой выдаче/логотип компании/фото предпринимателя
+            <div class="tooltip">
+                <div class="tooltip__btn">
+                    <span class="tooltip__icon i-info"></span>
+                </div>
+                <div class="tooltip__popup">
+                    <p class="tooltip__popup-txt">Если вы не загрузите фотографию, на вашей карточке автоматически будет отображаться логотип TIZARU</p>
+                </div>
+            </div>
+        </div>
+        <div class="file-photo file-photo__file-button">
+            <a class="file-photo__preview-btn i-see popup-image" href="images/dist/logo-c.jpg" title="Увеличить"></a>
+            <img src="images/dist/logo-c.jpg" alt="название фото">
+            <div class="file-photo__delet-wrap">
+                <button class="file-photo__delet-btn popup-link i-clear" type="button" data-mfp-src="#del-photo" title="Удалить фото"></button>
+            </div>
+        </div>
+        <span class="form__mute-text">Рекомендуемый размер 50x50 px</span>
+        <label class="form__subgroup-add file-txt">
+            + Изменить фото
+            <input name="file" type="file" class="file-txt__input" multiple="">
+        </label>
+    </fieldset>
+</fieldset>
+
+<fieldset class="form__group">
+    <legend class="form__group-title">Контакты</legend>
+    <div class="row">
+        <div class="col-lg-3 col-md-6">
+            <div class="input-wrap">
+                <label class="input-wrap__label">
+                    Телефон 1
+                    <input class="input" type="tel">
+                </label>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 offset-lg-1">
+            <div class="input-wrap">
+                <label class="input-wrap__label">
+                    E-mail 1
+                    <input class="input" type="email">
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3 col-md-6">
+            <div class="form__field-has-del">
+                <div class="input-wrap">
+                    <label class="input-wrap__label">
+                        Телефон 2
+                        <input class="input" type="tel">
+                    </label>
+                </div>
+                <button class="form__btn-del i-clear" type="button"></button>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 offset-lg-1">
+            <div class="form__field-has-del">
+                <div class="input-wrap">
+                    <label class="input-wrap__label">
+                        E-mail 2
+                        <input class="input" type="email">
+                    </label>
+                </div>
+                <button class="form__btn-del i-clear" type="button"></button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-6">
+            <button class="form__subgroup-add" type="button">+ Добавить телефон</button>
+        </div>
+        <div class="col-lg-3 col-md-6 col-6 offset-lg-1">
+            <button class="form__subgroup-add" type="button">+ Добавить E-mail</button>
+        </div>
+    </div>
+</fieldset>
+
+<fieldset class="form__group">
+    <legend class="form__group-title">Ссылки</legend>
+    <fieldset class="form__subgroup">
+        <legend class="form__subgroup-title visually-hidden">Добавление Социальных сетей</legend>
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="form__field-has-del">
+                    <div class="input-wrap">
+                        <span class="input-wrap__label">Выберите соц.сеть</span>
+                        <div class="dropdown dropdown--input dropdown--icon js-dropdown-toogle">
+                            <button class="dropdown__value dropdown__value--icon" type="button">
+                                <span class="icon i-fb"></span>
+                                Facebook
+                            </button>
+                            <div class="dropdown__list scroll-gray">
+                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val"><span class="icon i-fb"></span>Facebook</a></div>
+                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val"><span class="icon i-vk"></span>VK</a></div>
+                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val"><span class="icon i-tl"></span>Telegram</a></div>
+                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val"><span class="icon i-instagram"></span>Instagram</a></div>
+                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val"><span class="icon i-tw"></span>Twitter</a></div>
+                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val"><span class="icon i-in"></span>LinkedIn</a></div>
+                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val"><span class="icon i-ok"></span>Одноклассники</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="form__btn-del i-clear" type="button"></button>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 offset-lg-1">
+                <div class="form__field-has-del">
+                    <div class="input-wrap">
+                        <label class="input-wrap__label">
+                            Facebook
+                            <input class="input" type="email">
+                        </label>
+                    </div>
+                    <button class="form__btn-del i-clear" type="button"></button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="form__field-has-del">
+                    <div class="input-wrap">
+                        <span class="input-wrap__label">Выберите соц.сеть</span>
+                        <div class="dropdown dropdown--input dropdown--icon js-dropdown-toogle">
+                            <button class="dropdown__value dropdown__value--icon" type="button">
+                                <span class="icon i-tl"></span>
+                                Telegram
+                            </button>
+                            <div class="dropdown__list scroll-gray">
+                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val"><span class="icon i-fb"></span>Facebook</a></div>
+                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val"><span class="icon i-vk"></span>VK</a></div>
+                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val"><span class="icon i-tl"></span>Telegram</a></div>
+                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val"><span class="icon i-instagram"></span>Instagram</a></div>
+                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val"><span class="icon i-tw"></span>Twitter</a></div>
+                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val"><span class="icon i-in"></span>LinkedIn</a></div>
+                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val"><span class="icon i-ok"></span>Одноклассники</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="form__btn-del i-clear" type="button"></button>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 offset-lg-1">
+                <div class="form__field-has-del">
+                    <div class="input-wrap">
+                        <label class="input-wrap__label">
+                            Telegram
+                            <input class="input" type="email">
+                        </label>
+                    </div>
+                    <button class="form__btn-del i-clear" type="button"></button>
+                </div>
+            </div>
+        </div> 
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="form__field-has-del">
+                    <div class="input-wrap">
+                        <span class="input-wrap__label">Выберите соц.сеть</span>
+                        <div class="dropdown dropdown--input dropdown--icon js-dropdown-toogle">
+                            <button class="dropdown__value dropdown__value--icon" type="button">
+                                <span class="icon i-vk"></span>
+                                VK
+                            </button>
+                            <div class="dropdown__list scroll-gray">
+                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val"><span class="icon i-fb"></span>Facebook</a></div>
+                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val"><span class="icon i-vk"></span>VK</a></div>
+                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val"><span class="icon i-tl"></span>Telegram</a></div>
+                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val"><span class="icon i-instagram"></span>Instagram</a></div>
+                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val"><span class="icon i-tw"></span>Twitter</a></div>
+                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val"><span class="icon i-in"></span>LinkedIn</a></div>
+                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val"><span class="icon i-ok"></span>Одноклассники</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="form__btn-del i-clear" type="button"></button>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 offset-lg-1">
+                <div class="form__field-has-del">
+                    <div class="input-wrap">
+                        <label class="input-wrap__label">
+                            VK
+                            <input class="input" type="email">
+                        </label>
+                    </div>
+                    <button class="form__btn-del i-clear" type="button"></button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="form__field-has-del">
+                    <div class="input-wrap">
+                        <span class="input-wrap__label">Выберите соц.сеть</span>
+                        <div class="dropdown dropdown--input dropdown--icon js-dropdown-toogle">
+                            <button class="dropdown__value dropdown__value--icon" type="button">
+                                <span class="icon"></span>
+                                Выбрать из списка
+                            </button>
+                            <div class="dropdown__list scroll-gray">
+                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val"><span class="icon i-fb"></span>Facebook</a></div>
+                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val"><span class="icon i-vk"></span>VK</a></div>
+                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val"><span class="icon i-tl"></span>Telegram</a></div>
+                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val"><span class="icon i-instagram"></span>Instagram</a></div>
+                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val"><span class="icon i-tw"></span>Twitter</a></div>
+                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val"><span class="icon i-in"></span>LinkedIn</a></div>
+                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val"><span class="icon i-ok"></span>Одноклассники</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="form__btn-del i-clear" type="button"></button>
+                </div>
+            </div>
+        </div>
+        <button class="form__subgroup-add" type="button">+ Добавить социальную сеть</button>
+    </fieldset>
+    <fieldset class="form__subgroup">
+        <legend class="form__subgroup-title visually-hidden">Выберите соц. сеть для отображения в карточке</legend>
+        <div class="edit-company__social">
+            <p class="edit-company__social-txt">Показывать в карточке поисковой выдачи:</p>
+            <div class="edit-company__social-list">
+                <div class="edit-company__social-item">
+                    <div class="radio">
+                        <input class="radio__field" id="vk" type="radio" name="social">
+                        <label class="radio__value" for="vk">
+                            VK
+                        </label>
+                    </div>
+                </div>
+                <div class="edit-company__social-item">
+                    <div class="radio">
+                        <input class="radio__field" id="fb" type="radio" name="social">
+                        <label class="radio__value" for="fb">
+                            Facebook
+                        </label>
+                    </div>
+                </div>
+                <div class="edit-company__social-item">
+                    <div class="radio">
+                        <input class="radio__field" id="tl" type="radio" name="social">
+                        <label class="radio__value" for="tl">
+                            Telegram
+                        </label>
+                    </div>
+                </div>
+                <div class="edit-company__social-item">
+                    <div class="radio">
+                        <input class="radio__field" id="inst" type="radio" name="social">
+                        <label class="radio__value" for="inst">
+                            Instagram
+                        </label>
+                    </div>
+                </div>
+                <div class="edit-company__social-item">
+                    <div class="radio">
+                        <input class="radio__field" id="tw" type="radio" name="social">
+                        <label class="radio__value" for="tw">
+                            Twitter
+                        </label>
+                    </div>
+                </div>
+                <div class="edit-company__social-item">
+                    <div class="radio">
+                        <input class="radio__field" id="in" type="radio" name="social">
+                        <label class="radio__value" for="in">
+                            LinkedIn
+                        </label>
+                    </div>
+                </div>
+                <div class="edit-company__social-item">
+                    <div class="radio">
+                        <input class="radio__field" id="ok" type="radio" name="social">
+                        <label class="radio__value" for="ok">
+                            Одноклассники
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+    <fieldset class="form__subgroup">
+        <legend class="form__subgroup-title visually-hidden">Добавьте быстрые ссылки в карточку</legend>
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="form__field-has-del">
+                    <div class="input-wrap">
+                        <label class="input-wrap__label">
+                            Название страницы сайта 1
+                            <input class="input" type="text">
+                        </label>
+                    </div>
+                    <button class="form__btn-del i-clear" type="button"></button>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 offset-lg-1">
+                <div class="form__field-has-del">
+                    <div class="input-wrap">
+                        <label class="input-wrap__label">
+                            Ссылка на страницу 1
+                            <input class="input" type="text">
+                        </label>
+                    </div>
+                    <button class="form__btn-del i-clear" type="button"></button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="form__field-has-del">
+                    <div class="input-wrap">
+                        <label class="input-wrap__label">
+                            Название страницы сайта 2
+                            <input class="input" type="text">
+                        </label>
+                    </div>
+                    <button class="form__btn-del i-clear" type="button"></button>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 offset-lg-1">
+                <div class="form__field-has-del">
+                    <div class="input-wrap">
+                        <label class="input-wrap__label">
+                            Ссылка на страницу 2
+                            <input class="input" type="text">
+                        </label>
+                    </div>
+                    <button class="form__btn-del i-clear" type="button"></button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="form__field-has-del">
+                    <div class="input-wrap">
+                        <label class="input-wrap__label">
+                            Название страницы сайта 3
+                            <input class="input" type="text">
+                        </label>
+                    </div>
+                    <button class="form__btn-del i-clear" type="button"></button>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 offset-lg-1">
+                <div class="form__field-has-del">
+                    <div class="input-wrap">
+                        <label class="input-wrap__label">
+                            Ссылка на страницу 3
+                            <input class="input" type="text">
+                        </label>
+                    </div>
+                    <button class="form__btn-del i-clear" type="button"></button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5">
+                <span class="form__mute-text">
+                    Примечание: данные ссылки отображаются в карточке товара, как быстрые ссылки на конкретные страницы на вашем сайте. <a href="#">См. пример</a>
+                </span>
+            </div>
+        </div>
+    </fieldset>
+</fieldset>

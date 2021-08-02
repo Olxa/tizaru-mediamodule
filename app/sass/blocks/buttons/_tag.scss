@@ -1,0 +1,148 @@
+/*------------------------------------*\
+  #Теги
+\*------------------------------------*/
+
+.tag {
+    display: inline-block;
+    padding: 0 5px 0 4px;
+    color: $gray;
+    font-size: 14px;
+    line-height: normal;
+    background-color: transparent;
+    border: 1px solid $gray;
+    border-radius: 5px;
+    cursor: default;
+}
+
+
+
+
+/*------------------------------------*\
+  #Кликабельный тег
+\*------------------------------------*/
+
+.tag--link {
+    cursor: pointer;
+
+    &.tag--link:hover {
+        color: #ffffff;
+        background-color: $gray;
+    }
+}
+
+
+
+
+/*------------------------------------*\
+  #Темно серый тег
+\*------------------------------------*/
+
+.tag-dark {
+    color: #5A5A5A;
+
+    &.tag--link:hover {
+        color: #ffffff;
+        background-color: #5A5A5A;
+    }
+}
+
+
+
+
+/*------------------------------------*\
+  #Акцентный тег
+\*------------------------------------*/
+
+.tag-accent {
+    color: $accent;
+    border-color: $accent;
+
+    &.tag--link:hover {
+        color: #ffffff;
+        background-color: $accent;
+    }
+}
+
+
+
+
+/*------------------------------------*\
+  #Вторичный тег
+\*------------------------------------*/
+
+.tag-second {
+    color: $color-second;
+    border-color: $color-second;
+
+    &.tag--link:hover {
+        color: #ffffff;
+        background-color: $color-second;
+    }
+}
+
+
+
+
+/*------------------------------------*\
+  #Третичный тег
+\*------------------------------------*/
+
+.tag-tertiary {
+    color: $color-tertiary;
+    border-color: $color-tertiary;
+
+    &.tag--link:hover {
+        color: #ffffff;
+        background-color: $color-tertiary;
+    }
+}
+
+
+
+
+/*------------------------------------*\
+  #теги с иконками
+\*------------------------------------*/
+
+.tag-i-left .icon::before {
+    padding-right: 4px;
+}
+
+.tag-i-right .icon::before {
+    padding-left: 4px;
+}
+
+
+
+
+
+
+/*------------------------------------*\
+  #старые стили
+\*------------------------------------*/
+
+/*.tag_green {
+    border-color: $color-tertiary;
+    color: $color-tertiary;
+
+    &:hover {
+        background: $color-tertiary;
+        color: #fff;
+    }
+}
+
+.tag_green--conture {
+    border-color: $color-tertiary;
+    color: $color-tertiary;
+    cursor: default;
+}
+
+.tag_blue {
+    border-color: $color-second;
+    color: $color-second;
+
+    &:hover {
+        background: $color-second;
+        color: #fff;
+    }
+}*/

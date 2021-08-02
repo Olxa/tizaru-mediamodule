@@ -1,0 +1,124 @@
+<!--#set var="title" value="Личный кабинет | Информация" -->
+<!--#include virtual="/parts/header-login.html" -->
+
+<div class="page-content">
+    <div class="full-container private-office__wrap">
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb--private-office">
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Главная</a></li>
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="fr-private-office-franchise.html">Список франшиз</a></li>
+                <li class="breadcrumb__item active" aria-current="page">ИП. Васильева И. А.</li>
+            </ol>
+        </nav>
+
+        <div class="private-office">
+            <div class="private-office__sidebar">
+                <!--#include virtual="/parts/user-nav-page-fr.html" -->
+            </div>
+
+            <div class="private-office__content">
+                <div class="private-office__header">
+                    <h1 class="page-title page-title__margin-b">Новосибирск, Россия — ИП. Васильева И. А.</h1>
+                </div>
+
+                <ul class="private-office__tab">
+                    <li class="private-office__tab-item">
+                        <div class="private-office__tab-link active">Общая информация</div>
+                    </li>
+                    <li class="private-office__tab-item">
+                        <a class="private-office__tab-link" href="fr-private-office-franchise3.html">Пользователи</a>
+                    </li>
+                    <li class="private-office__tab-item">
+                        <a class="private-office__tab-link" href="fr-private-office-franchise4.html">Статистика</a>
+                    </li>
+                    <li class="private-office__tab-item">
+                        <a class="private-office__tab-link" href="fr-private-office-franchise5.html">Вопросы</a>
+                    </li>
+                </ul>
+
+                <div class="private-office__tab-content">
+
+                    <form class="form form-private" action="/" method="post">
+                        <div class="row row-margin-big">
+                            <div class="col-xl-3 col-lg-6">
+                                <div class="input-wrap">
+                                    <div class="dropdown dropdown--input dropdown--warning js-dropdown-toogle form__dropdown-status">
+                                        <button class="dropdown__value" type="button"><span class="dropdown__value-inner">Ожидает модерации</span></button>
+                                        <div class="dropdown__list scroll-gray">
+                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Опубликовано</a></div>
+                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Ожидает подтверждение по телефону</a></div>
+                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Подтверждено</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-6">
+                                <div class="input-wrap">
+                                    <span class="input-wrap__label">Регион</span>
+                                    <div class="dropdown dropdown--input js-dropdown-toogle">
+                                        <button class="dropdown__value" type="button"><span class="dropdown__value-inner">Центральный</span></button>
+                                        <div class="dropdown__list scroll-gray">
+                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Центральный</a></div>
+                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Дальневосточный</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6">
+                                <div class="input-wrap">
+                                    <span class="input-wrap__label">Город</span>
+                                    <div class="dropdown dropdown--input js-dropdown-toogle">
+                                        <button class="dropdown__value" type="button"><span class="dropdown__value-inner">Москва</span></button>
+                                        <div class="dropdown__list scroll-gray">
+                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Москва</a></div>
+                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Подольск</a></div>
+                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Чехов</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-6">
+                                <div class="input-wrap"><label class="input-wrap__label">Компания<input class="input" type="text" value="ИП Васильева И. А."></label></div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6">
+                                <div class="input-wrap"><label class="input-wrap__label">E-mail<input class="input" type="email" value="mymail@yandex.ru"></label></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-6">
+                                <div class="input-wrap"><label class="input-wrap__label">% суммы от объявлений<input class="input" type="text" value="67"></label></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="input-wrap">
+                                    <span class="input-wrap__label">
+                                        Комментарий
+                                        <textarea class="textarea">
+Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                                        </textarea>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-6 offset-lg-3 offset-xl-0">
+                                <button class="btn btn-accent btn--full" type="submit">Сохранить</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--#include virtual="/parts/footer.html" -->

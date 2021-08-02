@@ -1,0 +1,54 @@
+/*------------------------------------*\
+  #Меню футера
+\*------------------------------------*/
+
+.footer-menu {
+    margin: 0;
+    line-height: 1.2;
+    font-weight: 600;
+
+    @media (max-width: 1200px) {
+        margin: 0;
+        width: 100%;
+        border-bottom: 0.5px solid #E0E0E0;
+        margin-bottom: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 11px;
+    }
+
+    &__item {
+        margin-bottom: 30px;
+
+        @media (max-width: 1200px) {
+            width: 50%;
+            margin-bottom: 15px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+
+            @media (max-width: 1200px) {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__link {
+        font-family: $userfont-sbold;
+        font-weight: 600;
+        text-decoration: none;
+        line-height: 1.2;
+        display: block;
+        position: relative;
+
+        @media (max-width: 1200px) {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        &:hover, &:focus {
+            color: $accent;
+        }
+    }
+}

@@ -1,0 +1,61 @@
+.page-vote {
+    max-width: 930px;
+
+    .note-panel {
+        max-width: 700px;
+        margin-bottom: 30px;
+    }
+
+    .pagination {
+        margin: 0 auto;
+    }
+
+    &__message {
+        max-width: 1050px;
+        padding-top: 100px;
+        display: flex;
+
+        @media (max-width: 1199px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__message-form {
+        margin-right: 30px;
+        width: 50%;
+
+        @media (max-width: 1199px) {
+            width: 100%;
+            order: 2;
+            margin-right: 0;
+        }
+    }
+
+    &__message-field {
+        margin-bottom: 25px;
+    }
+
+    &__message-btn {
+        display: block;
+        margin-top: 30px;
+    }
+
+    &__message-descr {
+        width: 50%;
+        margin-top: 42px;
+
+        @media (max-width: 1199px) {
+            width: 100%;
+            order: 1;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__not-vote {
+        font-family: $userfont-bold;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 27px;
+    }
+}

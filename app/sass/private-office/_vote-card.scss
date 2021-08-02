@@ -1,0 +1,151 @@
+/*------------------------------------*\
+  #Карточка с голосованием
+\*------------------------------------*/
+
+
+.vote-card__wrap {
+    column-count: 2;
+    column-gap: 30px;
+    margin-bottom: 40px;
+    orphans: 1; 
+    widows: 1;
+
+    @media (max-width: 767px) {
+        column-count: 1;
+    }
+}
+
+.vote-card {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding: 25px 30px;
+    margin-bottom: 30px;
+    word-wrap: break-word;
+    border-radius: 8px;
+    break-inside: avoid;
+    background: #ffffff;
+    border: 1px solid $gray;
+    border-radius: $border-radius;
+    overflow: hidden;
+
+    @media (max-width: 767px) {
+        padding: 25px 10px;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &__header {
+        display: flex;
+        align-items: baseline;
+        margin-bottom: 20px;
+
+        @media (max-width: 992px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__title {
+        font-family: $userfont-bold;
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 0;
+        margin-right: 14px;
+
+        @media (max-width: 992px) {
+            text-align: center;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__date {
+        font-size: 14px;
+    }
+
+    &__description {
+        font-size: 16px;
+    }
+
+    &__description-more {
+        width: 100%;
+    }
+
+    &__option {
+        padding-top: 25px;
+    }
+
+    &__option-item {
+        margin-bottom: 20px;
+    }
+
+    &__result {
+        position: relative;
+        display: inline-block;
+        height: 55px;
+        padding: 5px 30px;
+        line-height: 45px;
+        width: 100%;
+        font-family: $userfont-sbold;
+        font-weight: 600;
+        font-size: 16px;
+        text-align: center;
+        border: 1px solid $gray;
+        border-radius: $border-radius;
+    }
+
+    &__result-title {
+    }
+
+    &__result-percent {
+        position: absolute;
+        right: 13px;
+
+        &.current {
+            &::before {
+                content: '\e90c';
+                font-family: if;
+                display: inline-block;
+                color: $color-succes;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    &__result-bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba($gray, .5);
+        border-radius: $border-radius;
+    }
+
+    &__point {
+        position: absolute;
+        top: 60px;
+        left: 50%;
+        margin-left: -125px;
+        padding: 20px 30px;
+        border: 1px solid $color-succes;
+        border-radius: $border-radius;
+        background-color: #ffffff;
+        box-shadow: $shadow2;
+        line-height: 27px;
+        z-index: 1;
+    }
+
+    &__point-val {
+        display: inline-block;
+        color: $color-succes;
+        margin-bottom: 3px;
+        font-family: $userfont-sbold;
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    &__point-txt {
+    }
+}

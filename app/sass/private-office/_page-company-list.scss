@@ -1,0 +1,29 @@
+.company-list {
+
+    &__form-desk {
+        @media (max-width: 1200px) {
+            display: none;
+        }
+    }
+
+    &__form-mob {
+
+        .btn {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    &__btn-mob {
+        display: none;
+        margin-bottom: 30px;
+
+        @media (max-width: 1200px) {
+            display: inline-block;
+        }
+
+        .icon {
+            margin-left: 10px;
+        }
+    }
+}

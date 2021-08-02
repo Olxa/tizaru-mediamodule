@@ -1,0 +1,260 @@
+.join {
+    &__header {
+        position: relative;
+        margin-bottom: 50px;
+
+        @media (max-width: 1299px) {
+            margin-bottom: 20px;
+        }
+
+        &::after {
+            content: '';
+            display: inline-block;
+            margin-top: 15px;
+            width: 100%;
+            height: 460px;
+            background: url(../images/dist/join-team.png) no-repeat center;
+            background-size: contain;
+
+            @media (max-width: 1199px) {
+                height: 300px;
+            }
+
+            @media (max-width: 767px) {
+                height: 200px;
+            }
+
+            @media (max-width: 480px) {
+                height: 150px;
+            }
+        }
+
+        .freepik-link {
+            bottom: -5px;
+        }
+    }
+
+    &__title {
+        max-width: 770px;
+        margin: 0 auto;
+
+        .company-page__desc {
+            max-width: 730px;
+        }
+    }
+
+    &__form-title {
+        display: block;
+        margin-bottom: 45px;
+        font-family: $userfont-bold;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0.01em;
+
+        @media (max-width: 991px) {
+            text-align: left;
+            font-size: 16px;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 14px;
+            line-height: 19px;
+            margin-bottom: 28px;
+        }
+    }
+
+
+    &__form-row {
+        margin-bottom: 50px;
+
+        @media (max-width: 991px) {
+            margin-bottom: 40px;
+        }
+
+        @media (max-width: 767px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__form-item {
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+
+        @media (max-width: 991px) {
+            margin-bottom: 0 !important;
+        }
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            @media (max-width: 991px) {
+                display: none;
+            }
+        }
+    }
+
+    &__form-item--one {
+
+
+
+        &::after {
+            right: -220px;
+            top: 14px;
+            width: 290px;
+            height: 220px;
+            background-image: url(../images/dist/join-ar1.svg);
+
+            @media (max-width: 1299px) {
+                right: -300px;
+            }
+        }
+    }
+
+    &__form-item--two {
+        margin-bottom: 120px;
+
+        @media (max-width: 1199px) {
+            margin-bottom: 60px;
+        }
+
+        &::before {
+            left: -400px;
+            top: 40px;
+            width: 360px;
+            height: 170px;
+            background-image: url(../images/dist/join-ar2.svg);
+
+            @media (max-width: 1199px) {
+                width: 300px;
+                left: -307px;
+                top: 48px;
+            }
+        }
+    }
+
+    &__form-item--three {
+        margin-bottom: 100px;
+
+        &::after {
+            right: -160px;
+            width: 290px;
+            height: 320px;
+            background-image: url(../images/dist/join-ar3.svg);
+
+            @media (max-width: 1199px) {
+                right: -252px;
+            }
+        }
+    }
+
+
+    &__form-val {
+        padding-left: 30px;
+
+        @media (max-width: 1299px) {
+            padding-left: 15px;
+        }
+    }
+
+    &__form-num {
+        position: relative;
+        top: -40px;
+        min-width: 104px;
+        min-height: 104px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+
+        @media (max-width: 1299px) {
+            min-width: 80px;
+            min-height: 80px;
+            top: -10px;
+        }
+
+        @media (max-width: 991px) {
+            min-width: 60px;
+            min-height: 60px;
+        }
+
+        @media (max-width: 767px) {
+            min-width: 37px;
+            min-height: 37px;
+            top: 0;
+        }
+    }
+
+    &__form-num--one {
+        background-image: url(../images/dist/num1.svg);
+    }
+
+    &__form-num--two {
+        background-image: url(../images/dist/num2.svg);
+    }
+
+    &__form-num--three {
+        background-image: url(../images/dist/num3.svg);
+    }
+
+    &__form-num--four {
+        background-image: url(../images/dist/num4.svg);
+    }
+
+    &__form-item-title {
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.01em;
+
+        @media (max-width: 991px) {
+            font-size: 16px;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 14px;
+            line-height: 21px;
+        }
+    }
+
+    &__form-inputs {
+        max-width: 285px;
+    }
+
+    &__form-checkboxs {
+
+        @media (max-width: 991px) {
+            text-align: left;
+        }
+
+        .checkbox {
+            margin-right: 25px;
+            margin-bottom: 15px;
+
+            @media (max-width: 767px) {
+                display: block;
+                margin-right: 0;
+            }
+        }
+    }
+
+
+    &__form-footer {
+        text-align: center;
+    }
+
+    &__form-submit {
+        margin: 25px auto 110px;
+        max-width: 600px;
+
+        @media (max-width: 991px) {
+            margin-bottom: 50px;
+        }
+    }
+}

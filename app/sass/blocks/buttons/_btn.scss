@@ -1,0 +1,176 @@
+/*------------------------------------*\
+  #Кнопки
+\*------------------------------------*/
+
+.btn {
+    display: inline-block;
+    height: 55px;
+    padding: 5px 30px;
+    font-size: 16px;
+    line-height: 45px;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    white-space: nowrap;
+    border-radius: 5px;
+    text-decoration: none;
+    touch-action: manipulation;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: none;
+        outline: none;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &:active,
+    &.active {
+        outline: 0;
+        background-image: none;
+    }
+
+    &.disabled,
+    &[disabled] {
+        background-color: $gray;
+        color: #ffffff;
+        pointer-events: none;
+        cursor: default;
+    }
+}
+
+.btn--md {
+    height: 45px;
+    line-height: 33px;
+}
+
+.btn--sm {
+    height: 33px;
+    line-height: 22px;
+    padding: 5px 10px;
+}
+
+.btn--full {
+    width: 100%;
+}
+
+.btn-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn--mob-center {
+
+    @media (max-width:767px) {
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+/*------------------------------------*\
+  #акцентные кнопки (базовый цвет)
+\*------------------------------------*/
+.btn-accent {
+    background: $accent;
+    color: #ffffff;
+    border: none;
+
+    &:hover,
+    &:focus {
+        color: #fff;
+        background: $accent-dark;
+    }
+}
+
+
+
+
+
+/*------------------------------------*\
+  #акцентные кнопки (контурная кнопка)
+\*------------------------------------*/
+
+.btn-conture {
+    color: $accent;
+    background-color: transparent;
+    border: 1px solid $accent;
+
+    &:hover,
+    &:focus {
+        color: $accent;
+        box-shadow: 0px 0px 17px rgba(255, 30, 30, 0.25);
+    }
+
+    &.disabled,
+    &[disabled] {
+        background-color: transparent;
+        color: $gray;
+        border-color: $gray;
+        pointer-events: none;
+        cursor: default;
+    }
+}
+
+
+
+
+/*------------------------------------*\
+  #кнопки с иконками
+\*------------------------------------*/
+
+.btn-i-left .icon::before {
+    padding-right: 10px;
+}
+
+.btn-i-right .icon::before {
+    padding-left: 10px;
+}
+
+
+
+/*------------------------------------*\
+  Кнопки поиска
+\*------------------------------------*/
+
+.btn-search {
+
+    &__mob-txt {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+
+        @media (max-width: 767px) {
+            position: initial;
+            width: auto;
+            height: auto;
+            margin: 0;
+            white-space: normal;
+            clip-path: initial;
+            clip: auto;
+        }
+    }
+}
+
+.btn-search--sm {
+
+    &.icon::before {
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+}

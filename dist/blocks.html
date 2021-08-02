@@ -1,0 +1,1702 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Используемые блоки</title>
+    <meta name="description" content="<!--#echo var=' title' -->">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="full-container">
+            <button type="button" class="header__btn-menu">
+                <span class="burger-btn">
+                    <span class="burger-btn__item"></span>
+                    <span class="burger-btn__item"></span>
+                    <span class="burger-btn__item"></span>
+                </span>
+                Меню
+            </button>
+
+            <div class="header-logo mobil-vis"><img class="header-logo__image" src="images/dist/logo-mobil.svg" alt="Tizaru"></div>
+            <div class="mobil-header-wrapper">
+                <button class="header__btn-menu-close mobil-vis i-close"></button>
+                <div class="header__row">
+
+                    <div class="header__city">
+                        <span class="header__city-mobil-none">Ваше местоположение:</span> 
+                        <button class="header__city-btn" type="button">Москва</button>
+                        <div class="city-wrapper tabs">
+                            <button class="city-wrapper__back mobil-vis i-arrow"></button>
+                            <div class="city__tasd-nav tabs-nav">
+                                <button class="city__babs-btn tabs-btn" type="button">Карта</button>
+                                <button class="city__babs-btn tabs-btn active" type="button">Город</button>
+                            </div>
+                            <div class="city-wrapper__search input-search">
+                                <input class="input input-search__val" type="text" placeholder="Поиск">
+                                <button class="input-search__btn i-search" type="submit">Поиск</button>
+                            </div>
+                            <div class="tabs-content">
+                                <div class="city-wrapper__map">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8981.372711912045!2d37.61291999827557!3d55.75254050046795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a50b315e573%3A0xa886bf5a3d9b2e68!2z0JzQvtGB0LrQvtCy0YHQutC40Lkg0JrRgNC10LzQu9GM!5e0!3m2!1sru!2sru!4v1618339743898!5m2!1sru!2sru" height="485" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                </div>
+                                <div class="city-wrapper__map-info map-bar">
+                                    <div class="map-bar__text">Вам будут показаны объявления, а также новости для выбранного населенного пункта.</div>
+                                    <div class="map-bar__btns">
+                                        <span class="map-bar__label">Радиус</span>
+                                        <button class="map-bar__btn map-bar__btn-first" type="button">1 км</button>
+                                        <button class="map-bar__btn" type="button">5 км</button>
+                                        <button class="map-bar__btn" type="button">10 км</button>
+                                        <button class="map-bar__btn" type="button">25 км</button>
+                                        <button class="map-bar__btn" type="button">50 км</button>
+                                        <button class="map-bar__btn map-bar__btn-last" type="button">Более 50 км</button>
+                                    </div>
+                                </div>
+
+                                <div class="city-wrapper__btns">
+                                    <button class="btn btn-conture btn--full" type="button">Отмена</button>
+                                    <button class="btn btn-accent btn--full" type="button">Сохранить</button>
+                                </div>
+                            </div>
+                            <div class="tabs-content active">
+
+                                <div class="city__auto">
+                                    Москва
+                                    <small class="city__small">Определен автоматически</small>
+                                </div>
+                                <div class="city-wrapper__lists">
+                                    <ul class="city-wrapper__list">
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Москва</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Санкт-Петербург</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Краснодар</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Новосибирск</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Красноярск</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Челябинск</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Тюмень</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Ростов-на-Дону</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Уфа</a></li>
+                                    </ul>
+                                    <ul class="city-wrapper__list">
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Казань</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Пермь</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Нижний Новгород</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Самара</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Омск</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Саратов</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Хабаровск</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Томск</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Воронеж</a></li>
+                                    </ul>
+                                    <ul class="city-wrapper__list">
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Балашиха</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Иркутск</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Сочи</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Ярославль</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Сургур</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Подольск</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Мытыщи</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Владивосток</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Пятигорск</a></li>
+                                    </ul>
+                                </div>
+                                <div class="city-wrapper__btns">
+                                    <button class="btn btn-conture btn--full" type="button">Отмена</button>
+                                    <button class="btn btn-accent btn--full" type="button">Сохранить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="header__languages">
+                        <button type="button" class="header__btn-languages btn-languages"><span class="btn-languages__flag"><img src="images/dist/flag/ru.svg" alt="ru"></span>Россия, все регионы</button>
+                        <div class="header__languages-list languages-list">
+                            <div class="languages-list__title">Смена языка</div>
+                            <a class="languages-list__link" href="#"><span class="languages-list__flag"><img src="images/dist/flag/ru.svg" alt="Россия"></span>Россия, все регионы</a>
+                            <a class="languages-list__link" href="#"><span class="languages-list__flag"><img src="images/dist/flag/de.svg" alt="Deutsch"></span>Deutsch, alle Regionen</a>
+                            <a class="languages-list__link" href="#"><span class="languages-list__flag"><img src="images/dist/flag/en.svg" alt="English"></span>English, all regions</a>
+                            <a class="languages-list__link" href="#"><span class="languages-list__flag"><img src="images/dist/flag/es.svg" alt="Español"></span>Español, todas las regiones</a>
+                            <a class="languages-list__link" href="#"><span class="languages-list__flag"><img src="images/dist/flag/cn.svg" alt="中文"></span>中文，所有地区</a>
+                            <a class="languages-list__link" href="#"><span class="languages-list__flag"><img src="images/dist/flag/fr.svg" alt="Français"></span>Français, toutes les régions</a>
+                            <a class="languages-list__link" href="#"><span class="languages-list__flag"><img src="images/dist/flag/oa.svg" alt="الإمارات العربية المتحدة"></span>الإمارات العربية المتحدة</a>
+                            <a class="languages-list__link" href="#"><span class="languages-list__flag"><img src="images/dist/flag/tr.svg" alt="Türk"></span>Türk, tüm bölgeler</a>
+                            <a class="languages-list__link" href="#"><span class="languages-list__flag"><img src="images/dist/flag/pt.svg" alt="Portugueses"></span>Portugueses, todas as regiões</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-menu">
+                    <div class="full-container">
+                        <div class="main-menu__search input-search">
+                            <input class="input input-search__val" type="text" placeholder="Поиск">
+                            <button class="input-search__btn i-search" type="submit">Поиск</button>
+                        </div>
+                        <div class="main-menu__tabs-nav">
+                            <button class="main-menu__tabs-btn active" type="button" data-btn="articles">Статьи</button>
+                            <button class="main-menu__tabs-btn mobil-vis" type="button" data-btn="sections">Разделы сайта</button>
+                        </div>
+                        <nav class="main-menu__wrapper">
+                            <div class="main-menu__col main-menu__col-left active" data-col="articles">
+                                <ul class="main-menu__list">
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">Все разделы</a></li>
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">Бизнес</a></li>
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">Технологии</a></li>
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">Финансы и инвестиции</a></li>
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">Экспертное мнение</a></li>
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">Персоны</a></li>
+                                </ul>
+                                <ul class="main-menu__list">
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">Видео</a></li>
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">Карьера и свой бизнес</a></li>
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">Общество</a></li>
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">Культура</a></li>
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">Спорт</a></li>
+                                </ul>
+                            </div>
+                            <div class="main-menu__col main-menu__col-right" data-col="sections">
+                                <ul class="main-menu__list">
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">Команда проекта</a></li>
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">Наша миссия</a></li>
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">Помощь проекту</a></li>
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">Станьте частью команды проекта</a></li>
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">Пользовательское <br /> соглашение</a></li>
+                                </ul>
+                                <ul class="main-menu__list">
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">Станьте совладельцем проекта</a></li>
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">О проекте</a></li>
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">Открытие франшизы</a></li>
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">Список франшиз</a></li>
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">Общий реестр</a></li>
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">Блог</a></li>
+                                </ul>
+                                <ul class="main-menu__list">
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">Сертификат TIZARU</a></li>
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">Получение баллов</a></li>
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">Реклама</a></li>
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">Контакты</a></li>
+                                    <li class="main-menu__li"><a class="main-menu__link" href="#">О компании</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="header__btn-wrap">
+                    <a class="btn btn-conture btn-flex i-user-p" href="#">Стать акционером</a>
+                    <a class="btn btn-conture btn-flex i-plus" href="#">Добавить организацию</a>
+                </div>
+
+                <div class="header-mobil mobil-vis">
+                    <div class="header-mobil__contact icon i-wt-fl">Cвязаться по <a class="link link-accent link--border" href="https://wa.me/71111111111" target="_blank">WhatsApp</a></div>
+                    <a class="header-mobil__contact  icon i-phone" href="tel:+74993401044">+7 (499) 340-10-44</a>
+                    <a class="header-mobil__link link link-default" href="#" target="_blank">Политика конфиденциальности</a> <br>
+                    <a class="header-mobil__link link link-default" href="#" target="_blank">Соглашение на обработку <br>персональных данных</a>
+                    <div class="header-mobil__logo"><img src="images/dist/logo-m-f.png" alt="Tizaru"></div>
+                </div>
+            </div>
+
+            <div class="header__right-btns login-wrapper">
+                <button class="header__reg-btn" type="button"><span class="header__regis-link">Регистрация /</span> Вход</button>
+                <div class="login-reg">
+                    <button class="login-reg__close mobil-vis i-min-close" type="button"></button>
+                    <div class="login active">
+                        <div class="login-user active">
+                            <form action="/" method="post">
+                                <div class="login-reg__title">Войдите в свой аккаунт</div>
+                                <div class="input-wrap">
+                                    <label class="input-wrap__label">
+                                        E-mail
+                                        <input class="input" type="email">
+                                    </label>
+                                </div>
+                                <div class="input-wrap">
+                                    <label class="input-wrap__label" for="password3">Пароль</label>
+                                    <div class="input-password">
+                                        <input class="input input-password__val" id="password3" type="password">
+                                        <button class="input-password__eye icon i-eye"></button>
+                                    </div>
+                                </div>
+                                <div class="login-reg__row">
+                                    <div class="checkbox">
+                                        <input class="checkbox__field" id="remember" type="checkbox">
+                                        <label class="checkbox__value" for="remember">Запомнить меня</label>
+                                    </div>
+                                    <div class="recovery-link">Забыли пароль?</div>
+                                </div>
+                                <div class="captcha">
+                                    <img src="images/dist/capc.jpg" alt="Гугл капча">
+                                </div>
+                                <button class="btn btn-accent btn--full" type="submit">Войти</button>
+                            </form>
+                            
+                            <span class="login-user__or-txt">Или используйте социальную сеть</span>                            
+                            <div class="soc-login">
+                                <a class="soc-login__link gg" href="#"></a>
+                                <a class="soc-login__link vk" href="#"></a>
+                                <a class="soc-login__link fb" href="#"></a>
+                            </div>
+                            <button type="button" class="btn btn-conture btn--full btn-login-franchisees">Вход франчайзи</button>
+                        </div>
+
+                        <div class="login-franchisees">
+                            <form action="/" method="post">
+                                <div class="login-reg__title">Вход франчайзи</div>
+                                <div class="input-wrap">
+                                    <label class="input-wrap__label">
+                                        E-mail
+                                        <input class="input" type="email">
+                                    </label>
+                                </div>
+                                <div class="input-wrap">
+                                    <label class="input-wrap__label" for="password">Пароль</label>
+                                    <div class="input-password">
+                                        <input class="input input-password__val" id="password" type="password">
+                                        <button class="input-password__eye icon i-eye"></button>
+                                    </div>
+                                </div>
+                                <div class="login-reg__row">
+                                    <div class="checkbox">
+                                        <input class="checkbox__field" id="remember-f" type="checkbox">
+                                        <label class="checkbox__value" for="remember-f">Запомнить меня</label>
+                                    </div>
+                                    <div class="recovery-link">Забыли пароль?</div>
+                                </div>
+                                <div class="captcha">
+                                    <img src="images/dist/capc.jpg" alt="Гугл капча">
+                                </div>
+                                <button type="submit" class="btn btn-accent btn--full">Войти</button>
+                            </form>
+                            <button type="button" class="btn btn-conture btn--full btn-login-user">Вход пользователя</button>
+                        </div>
+
+                        <div class="login-reg__footer">
+                            <button type="button" class="login-reg__btn login__btn">Регистрация</button>
+                        </div>
+
+                    </div>
+                    <div class="registrations">
+
+                        <div class="registrations-user active">
+                            <form action="/" method="post">
+                                <div class="login-reg__title">Регистрация</div>
+                                <div class="input-wrap">
+                                    <label class="input-wrap__label">
+                                        E-mail
+                                        <input class="input" type="email">
+                                    </label>
+                                </div>
+                                <div class="input-wrap">
+                                    <label class="input-wrap__label" for="password1">Пароль</label>
+                                    <div class="input-password">
+                                        <input class="input input-password__val" id="password1" type="password">
+                                        <button class="input-password__eye icon i-eye"></button>
+                                    </div>
+                                </div>
+                                <div class="login-reg__row">
+                                    <div class="checkbox">
+                                        <input class="checkbox__field" id="consent" type="checkbox">
+                                        <label class="checkbox__value login-reg__checkbox-accept" for="consent">Согласен(-на) на обработку данных и с <a href="terms-of-use.html">пользовательским соглашением</a></label>
+                                    </div>
+                                </div>
+                                <div class="captcha">
+                                    <img src="images/dist/capc.jpg" alt="Гугл капча">
+                                </div>
+                                <button type="submit" class="btn btn-accent btn--full">Зарегистрироваться</button>
+                            </form>
+
+                            <span class="login-user__or-txt">Или используйте социальную сеть</span>
+                            <div class="soc-login">
+                                <a class="soc-login__link gg" href="#"></a>
+                                <a class="soc-login__link vk" href="#"></a>
+                                <a class="soc-login__link fb" href="#"></a>
+                            </div>
+                            <button type="button" class="btn btn-conture btn--full btn-registrations-franchisees">Регистрация франчайзи</button>
+                        </div>
+
+                        <div class="registrations-franchisees">
+                            <form action="/" method="post">
+                                <div class="login-reg__title">Регистрация франчайзи</div>
+                                <div class="input-wrap">
+                                    <label class="input-wrap__label">
+                                        E-mail
+                                        <input class="input" type="email">
+                                    </label>
+                                </div>
+                                <div class="input-wrap">
+                                    <label class="input-wrap__label" for="password2">Пароль</label>
+                                    <div class="input-password">
+                                        <input class="input input-password__val" id="password2" type="password">
+                                        <button class="input-password__eye icon i-eye"></button>
+                                    </div>
+                                </div>
+                                <div class="input-wrap">
+                                    <label class="input-wrap__label">
+                                        Страна
+                                        <input class="input" type="text">
+                                    </label>
+                                </div>
+                                <div class="input-wrap">
+                                    <label class="input-wrap__label">
+                                        Город
+                                        <input class="input" type="text">
+                                    </label>
+                                </div>
+                                <div class="login-reg__row">
+                                    <div class="checkbox">
+                                        <input class="checkbox__field" id="consent-f" type="checkbox">
+                                        <label class="checkbox__value login-reg__checkbox-accept" for="consent-f">Согласен(-на) на обработку данных и с <a href="terms-of-use.html">пользовательским соглашением</a></label>
+                                    </div>
+                                </div>
+                                <div class="captcha">
+                                    <img src="images/dist/capc.jpg" alt="гугл капча">
+                                </div>
+                                <button type="submit" class="btn btn-accent btn--full">Зарегистрироваться</button>
+                            </form>
+                            <button type="button" class="btn btn-conture btn--full btn-registrations-user">Регистрация пользователя</button>
+                        </div>
+
+                        <div class="login-reg__footer">
+                            <button type="button" class="login-reg__btn registrations__btn">Вход</button>
+                        </div>
+
+                    </div>
+
+                    <div class="recovery">
+
+                        <div class="recovery-form active">
+                            <form action="/" method="post">
+                                <div class="login-reg__title">Восстановление пароля</div>
+                                <div class="input-wrap">
+                                    <label class="input-wrap__label">
+                                        E-mail
+                                        <input class="input" type="email">
+                                    </label>
+                                </div>
+                                <div class="captcha">
+                                    <img src="images/dist/capc.jpg" alt="Гугл капча">
+                                </div>
+                                <div class="login-reg__footer">
+                                    <button type="button" class="btn btn-accent btn--full btn-recovery-send">Восстановить пароль</button>
+                                </div>
+                            </form>
+                            <button type="button" class="btn btn-conture btn--full btn-registrations-user">Зарегистрироваться</button>
+                        </div>
+
+                        <div class="recovery-send">
+                            <div class="recovery-send__image"></div>
+                            <div class="recovery-send__txt">
+                                Инструкции по восстановлению пароля отправлены на ваш email
+                            </div>
+                        </div>
+
+                        <div class="login-reg__footer">
+                            <button type="button" class="login-reg__btn registrations__btn">Вход</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+<div class="ui-wrap">
+    <div class="ui-nav">
+        <ul class="ui-nav__list">
+            <li class="ui-nav__item"><a href="#text" class="ui-nav__link">Типографика</a></li>
+            <li class="ui-nav__item"><a href="#button" class="ui-nav__link">Кнопки</a></li>
+            <li class="ui-nav__item"><a href="#link" class="ui-nav__link">Ссылки</a></li>
+            <li class="ui-nav__item"><a href="#form" class="ui-nav__link">Форма</a></li>
+            <li class="ui-nav__item"><a href="#popup" class="ui-nav__link">Попапы</a></li>
+        </ul>
+    </div>
+    <div class="ui-view">      
+
+        <h2 id="text">Типографика</h2>
+
+        <div class="ui-group">
+            <div class="ui-group__item">
+                <h1>Заголовок первого уровня</h1>
+                <h2>Заголовок второго уровня</h2>
+                <h3>Заголовок третьего уровня</h3>
+                <h4>Заголовок четвертого уровня</h4>
+                <h5>Заголовок пятого уровня</h5>
+                <h6>Заголовок шестого уровня</h6>
+
+                брекпоинты: <br />
+                @media (max-width: 1680px) <br />
+                @media (max-width: 1500px) <br />
+                @media (max-width: 1300px) <br />
+                @media (max-width: 1200px) <br />
+                @media (max-width: 992px) <br />
+                @media (max-width: 767px) <br />
+                @media (max-width: 576px) <br />
+                @media (max-width: 375px) <br />
+                @media (max-width: 360px) <br />
+            </div>
+            <div class="ui-group__item">
+                <p>
+                    Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, <br />
+                    iaculis eu lacus nunc mi elit, vehicula ut laoreet ac,<b>aliquam</b> sit <b><i>amet</i></b> justo nunc tempor, metus vel.
+                </p>
+                <p>
+                    Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, <br />
+                    <span class="text-gray">класс text-accent</span> <br />
+                    <span class="text-accent">класс text-accent</span> <br />
+                    <span class="text-second">класс text-second</span> <br />
+                    <span class="text-tertiary">класс text-tertiary</span> <br />
+                    <mark>стандартный маркер</mark>,
+                    <mark class="mark-accent">акцент: mark-accent</mark>,
+                    <mark class="mark-second">вторичный: mark-second</mark>,
+                    <mark class="mark-tertiary">третичный: mark-tertiary</mark>
+                </p>
+
+                <p class="muted-text">Справочный текст</p>
+                <p class="muted-text">Справочный текст+Справочный текст=отступ с верху</p>
+            </div>
+            <div class="ui-group__item">
+                <ul class="list-mark">
+                    <li class="list-mark__item">Элемент маркированного списка классы: <b>list-mark</b> и <b>list-mark__item</b></li>
+                    <li class="list-mark__item">
+                        Элемент маркированного списка
+                        <ul class="list-mark">
+                            <li class="list-mark__item">
+                                Вложенный элемент маркированного списка
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list-mark__item">Элемент маркированного списка</li>
+                    <li class="list-mark__item">Элемент маркированного списка</li>
+                </ul>
+                <hr />
+
+                <ol class="list-ol">
+                    <li class="list-ol__item">
+                        Классы <br />
+                        <b>list-ol</b> и <b>list-ol__item</b>
+                    </li>
+                    <li class="list-ol__item">
+                        Элемент нумерованного списка
+                        <ol class="list-ol">
+                            <li class="list-ol__item">
+                                Вложенный  элемент нумерованного списка
+                            </li>
+                        </ol>
+                    </li>
+                    <li class="list-ol__item">
+                        Элемент нумерованного списка
+                        <ol class="list-ol">
+                            <li class="list-ol__item">
+                                Вложенный  элемент нумерованного списка
+                            </li>
+                        </ol>
+                    </li>
+                    <li class="list-ol__item">Элемент нумерованного списка</li>
+                </ol>
+
+                <hr />
+
+                <ul class="list-unstylling">
+                    <li class="list-unstylling__item">
+                        Список без стилей
+                    </li>
+                    <li class="list-unstylling__item">
+                        Список без стилей
+                    </li>
+                    <li class="list-unstylling__item">
+                        Класс <b>list-unstylling</b>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <h2 id="button">Кнопки</h2>
+
+        <div class="ui-group">
+
+            <div class="ui-group__item">
+                <a class="btn" href="#">Ссылка</a>
+                <button class="btn" type="button">Кнопка</button>
+                <button class="btn" type="button" disabled>disabled</button>
+
+                <a class="btn btn--sm" href="#">Ссылка small</a>
+                <button class="btn btn--sm" type="button">Кнопка small</button>
+                <br />
+
+                <a class="btn btn-accent" href="#">Ссылка</a>
+                <button class="btn btn-accent" type="button">Кнопка</button>
+                <button class="btn btn-accent" type="button" disabled>disabled</button> <br />
+
+                <a class="btn btn-accent btn--md" href="#">Ссылка md</a>
+                <button class="btn btn-accent btn--md" type="button">Кнопка md</button>
+
+                <a class="btn btn-accent btn--sm" href="#">Ссылка sm</a>
+                <button class="btn btn-accent btn--sm" type="button">Кнопка sm</button>
+
+                <a class="btn btn-conture btn--md" href="#">Ссылка md</a>
+                <button class="btn btn-conture btn--md" type="button">Кнопка md</button>
+
+                <a class="btn btn-conture btn--sm" href="#">Ссылка sm</a>
+                <button class="btn btn-conture btn--sm" type="button">Кнопка sm</button>
+            </div>
+
+            <div class="ui-group__item">
+                <a class="btn btn-accent btn--full" href="#">На всю ширину ссылка</a>
+                <button class="btn btn-accent btn--full" type="button">На всю ширину кнопка</button>
+
+                <a class="btn btn-accent btn--full btn-i-left" href="#">
+                    <span class="icon i-tl"></span>
+                    На всю ширину ссылка
+                </a>
+                <button class="btn btn-accent btn--full btn-i-left" type="button">
+                    <span class="icon i-tl"></span>
+                    На всю ширину кнопка
+                </button>
+
+                <a class="btn btn-accent btn--full btn-i-right" href="#">
+                    На всю ширину ссылка
+                    <span class="icon i-tl"></span>
+                </a>
+                <button class="btn btn-accent btn--full btn-i-right" type="button">
+                    На всю ширину кнопка
+                    <span class="icon i-tl"></span>
+                </button>
+
+                <a class="btn btn-accent btn-i-left" href="#">
+                    <span class="icon i-tl"></span> Ссылка
+                </a>
+                <button class="btn btn-accent btn-i-left" type="button">
+                    <span class="icon i-tl"></span> Кнопка
+                </button>
+                <br />
+
+                <a class="btn btn-accent btn-i-right" href="#">
+                    Ссылка
+                    <span class="icon i-tl"></span>
+                </a>
+                <button class="btn btn-accent btn-i-right" type="button">
+                    Кнопка
+                    <span class="icon i-tl"></span>
+                </button>
+                <br />
+
+                <a class="btn btn-accent btn--md btn-i-left" href="#">
+                    Ссылка md
+                    <span class="icon i-tl"></span>
+                </a>
+                <button class="btn btn-accent btn--md btn-i-left" type="button">
+                    Кнопка md
+                    <span class="icon i-tl"></span>
+                </button>
+                <br />
+
+                <a class="btn btn-accent btn--md btn-i-left" href="#">
+                    <span class="icon i-tl"></span>
+                    Ссылка md
+                </a>
+                <button class="btn btn-accent btn--md btn-i-left" type="button">
+                    <span class="icon i-tl"></span>
+                    Кнопка md
+                </button>
+                <br />
+
+                <a class="btn btn-accent btn--sm btn-i-left" href="#">
+                    Ссылка sm
+                    <span class="icon i-tl"></span>
+                </a>
+                <button class="btn btn-accent btn--sm btn-i-left" type="button">
+                    Кнопка sm
+                    <span class="icon i-tl"></span>
+                </button>
+                <br />
+
+                <a class="btn btn-accent btn--sm btn-i-left" href="#">
+                    <span class="icon i-tl"></span>
+                    Ссылка sm
+                </a>
+                <button class="btn btn-accent btn--sm btn-i-left" type="button">
+                    <span class="icon i-tl"></span>
+                    Кнопка sm
+                </button>
+                <br />
+
+            </div>
+
+            <div class="ui-group__item">
+
+                <a class="btn btn-conture btn--full" href="#">На всю ширину ссылка</a>
+                <button class="btn btn-conture btn--full" type="button">На всю ширину кнопка</button>
+
+                <a class="btn btn-conture btn--full btn-i-left" href="#">
+                    <span class="icon i-tl"></span>
+                    На всю ширину ссылка
+                </a>
+                <button class="btn btn-conture btn--full btn-i-left" type="button">
+                    <span class="icon i-tl"></span>
+                    На всю ширину кнопка
+                </button>
+
+                <a class="btn btn-conture btn--full btn-i-right" href="#">
+                    На всю ширину ссылка
+                    <span class="icon i-tl"></span>
+                </a>
+                <button class="btn btn-conture btn--full btn-i-right" type="button">
+                    На всю ширину кнопка
+                    <span class="icon i-tl"></span>
+                </button>
+
+                <a class="btn btn-conture btn-i-left" href="#">
+                    <span class="icon i-tl"></span> Ссылка
+                </a>
+                <button class="btn btn-conture btn-i-left" type="button">
+                    <span class="icon i-tl"></span> Кнопка
+                </button>
+                <br />
+
+                <a class="btn btn-conture btn-i-right" href="#">
+                    Ссылка
+                    <span class="icon i-tl"></span>
+                </a>
+                <button class="btn btn-conture btn-i-right" type="button">
+                    Кнопка
+                    <span class="icon i-tl"></span>
+                </button>
+                <br />
+
+                <a class="btn btn-conture btn--md btn-i-left" href="#">
+                    Ссылка md
+                    <span class="icon i-tl"></span>
+                </a>
+                <button class="btn btn-conture btn--md btn-i-left" type="button">
+                    Кнопка md
+                    <span class="icon i-tl"></span>
+                </button>
+                <br />
+
+                <a class="btn btn-conture btn--md btn-i-left" href="#">
+                    <span class="icon i-tl"></span>
+                    Ссылка md
+                </a>
+                <button class="btn btn-conture btn--md btn-i-left" type="button">
+                    <span class="icon i-tl"></span>
+                    Кнопка md
+                </button>
+                <br />
+
+                <a class="btn btn-conture btn--sm btn-i-left" href="#">
+                    Ссылка sm
+                    <span class="icon i-tl"></span>
+                </a>
+                <button class="btn btn-conture btn--sm btn-i-left" type="button">
+                    Кнопка sm
+                    <span class="icon i-tl"></span>
+                </button>
+                <br />
+
+                <a class="btn btn-conture btn--sm btn-i-left" href="#">
+                    <span class="icon i-tl"></span>
+                    Ссылка sm
+                </a>
+                <button class="btn btn-conture btn--sm btn-i-left" type="button">
+                    <span class="icon i-tl"></span>
+                    Кнопка sm
+                </button>
+                <br />
+            </div>
+
+        </div>
+
+        <h2 id="link">Ссылки</h2>
+
+        <div class="ui-group">
+            <div class="ui-group__item">
+                <a class="link" href="#">Ссылка</a>
+                <button class="link" type="button">Кнопка</button> <br>
+
+                <a class="link link--border" href="#">Ссылка</a>
+                <button class="link link--border" type="button">Кнопка</button> <br>
+
+                <a class="link link--bold" href="#">Ссылка</a>
+                <button class="link link--bold" type="button">Кнопка</button> <br>
+
+                <a class="link link--underline" href="#">Ссылка</a>
+                <button class="link link--underline" type="button">Кнопка</button> <br>
+
+                <a class="link link--border link--bold" href="#">Ссылка</a>
+                <button class="link link--border link--bold" type="button">Кнопка</button>
+            </div>
+            <div class="ui-group__item">
+                <a class="link link-default" href="#">Ссылка</a>
+                <button class="link link-default" type="button">Кнопка</button>
+                <a class="link link-default link--border" href="#">Ссылка</a>
+                <button class="link link-default link--border" type="button">Кнопка</button> <br />
+
+
+                <a class="link link-accent" href="#">Ссылка</a>
+                <button class="link link-accent" type="button">Кнопка</button>
+                <a class="link link-accent link--border" href="#">Ссылка</a>
+                <button class="link link-accent link--border" type="button">Кнопка</button> <br />
+
+                <a class="link link-second" href="#">Ссылка</a>
+                <button class="link link-second" type="button">Кнопка</button>
+                <a class="link link-second link--border" href="#">Ссылка</a>
+                <button class="link link-second link--border" type="button">Кнопка</button> <br />
+
+                <a class="link link-tertiary" href="#">Ссылка</a>
+                <button class="link link-tertiary" type="button">Кнопка</button>
+                <a class="link link-tertiary link--border" href="#">Ссылка</a>
+                <button class="link link-tertiary link--border" type="button">Кнопка</button> <br />
+
+                <a class="link link-default link-i-right" href="#">
+                    Ссылка
+                    <span class="icon i-tl"></span>
+                </a>
+                <button class="link link-default link-i-right" type="button">
+                    Кнопка
+                    <span class="icon i-tl"></span>
+                </button>
+
+                <a class="link link-default link--border link-i-right" href="#">
+                    Ссылка
+                    <span class="icon i-tl"></span>
+                </a>
+                <button class="link link-default link--border link-i-right" type="button">
+                    Кнопка
+                    <span class="icon i-tl"></span>
+                </button>
+
+                <a class="link link-default link-i-left" href="#">
+                    <span class="icon i-tl"></span>
+                    Ссылка
+                </a>
+                <button class="link link-default link-i-left" type="button">
+                    <span class="icon i-tl"></span>
+                    Кнопка
+                </button>
+                <a class="link link-default link--border link-i-left" href="#">
+                    <span class="icon i-tl"></span>
+                    Ссылка
+                </a>
+                <button class="link link-default link--border link-i-left" type="button">
+                    <span class="icon i-tl"></span>
+                    Кнопка
+                </button>
+                <br />
+
+
+
+                <a class="link link-accent link-i-right" href="#">
+                    Ссылка
+                    <span class="icon i-tl"></span>
+                </a>
+                <button class="link link-accent link-i-right" type="button">
+                    Кнопка
+                    <span class="icon i-tl"></span>
+                </button>
+                <a class="link link-accent link--border link-i-right" href="#">
+                    Ссылка
+                    <span class="icon i-tl"></span>
+                </a>
+                <button class="link link-accent link--border link-i-right" type="button">
+                    Кнопка
+                    <span class="icon i-tl"></span>
+                </button>
+                <br />
+
+                <a class="link link-accent link-i-left" href="#">
+                    <span class="icon i-tl"></span>
+                    Ссылка
+                </a>
+                <button class="link link-accent link-i-left" type="button">
+                    <span class="icon i-tl"></span>
+                    Кнопка
+                </button>
+                <a class="link link-accent link--border link-i-left" href="#">
+                    <span class="icon i-tl"></span>
+                    Ссылка
+                </a>
+                <button class="link link-accent link--border link-i-left" type="button">
+                    <span class="icon i-tl"></span>
+                    Кнопка
+                </button>
+                <br />
+
+
+
+                <a class="link link-second link-i-right" href="#">
+                    Ссылка
+                    <span class="icon i-tl"></span>
+                </a>
+                <button class="link link-second link-i-right" type="button">
+                    Кнопка
+                    <span class="icon i-tl"></span>
+                </button>
+                <a class="link link-second link--border link-i-right" href="#">
+                    Ссылка
+                    <span class="icon i-tl"></span>
+                </a>
+                <button class="link link-second link--border link-i-right" type="button">
+                    Кнопка
+                    <span class="icon i-tl"></span>
+                </button>
+                <br />
+
+                <a class="link link-second link-i-left" href="#">
+                    <span class="icon i-tl"></span>
+                    Ссылка
+                </a>
+                <button class="link link-second link-i-left" type="button">
+                    <span class="icon i-tl"></span>
+                    Кнопка
+                </button>
+                <a class="link link-second link--border link-i-left" href="#">
+                    <span class="icon i-tl"></span>
+                    Ссылка
+                </a>
+                <button class="link link-second link--border link-i-left" type="button">
+                    <span class="icon i-tl"></span>
+                    Кнопка
+                </button>
+                <br />
+
+
+
+                <a class="link link-tertiary link-i-right" href="#">
+                    Ссылка
+                    <span class="icon i-tl"></span>
+                </a>
+                <button class="link link-tertiary link-i-right" type="button">
+                    Кнопка
+                    <span class="icon i-tl"></span>
+                </button>
+                <a class="link link-tertiary link--border link-i-right" href="#">
+                    Ссылка
+                    <span class="icon i-tl"></span>
+                </a>
+                <button class="link link-tertiary link--border link-i-right" type="button">
+                    Кнопка
+                    <span class="icon i-tl"></span>
+                </button>
+                <br />
+
+                <a class="link link-tertiary link-i-left" href="#">
+                    <span class="icon i-tl"></span>
+                    Ссылка
+                </a>
+                <button class="link link-tertiary link-i-left" type="button">
+                    <span class="icon i-tl"></span>
+                    Кнопка
+                </button>
+                <a class="link link-tertiary link--border link-i-left" href="#">
+                    <span class="icon i-tl"></span>
+                    Ссылка
+                </a>
+                <button class="link link-tertiary link--border link-i-left" type="button">
+                    <span class="icon i-tl"></span>
+                    Кнопка
+                </button>
+                <br />
+
+            </div>
+            <div class="ui-group__item">
+                <a class="tag tag--link" href="#">ссылка</a>
+                <button class="tag tag--link" type="button">кнопка</button>
+                <div class="tag">div</div>
+                <span class="tag">span</span>
+                <br />
+
+                <a class="tag tag--link tag-dark" href="#">ссылка</a>
+                <button class="tag tag--link tag-dark" type="button">кнопка</button>
+                <div class="tag tag-dark">div</div>
+                <span class="tag tag-dark">span</span>
+                <br />
+
+                <a class="tag tag--link tag-accent" href="#">ссылка</a>
+                <button class="tag tag--link tag-accent" type="button">кнопка</button>
+                <div class="tag tag-accent">div</div>
+                <span class="tag tag-accent">span</span>
+                <br />
+
+                <a class="tag tag--link tag-second" href="#">ссылка</a>
+                <button class="tag tag--link tag-second" type="button">кнопка</button>
+                <div class="tag tag-second">div</div>
+                <span class="tag tag-second">span</span>
+                <br />
+
+                <a class="tag tag--link tag-tertiary" href="#">ссылка</a>
+                <button class="tag tag--link tag-tertiary" type="button">кнопка</button>
+                <div class="tag tag-tertiary">div</div>
+                <span class="tag tag-tertiary">span</span>
+                <br />
+
+                <a class="tag tag--link tag-i-left" href="#">
+                    <span class="icon i-tl"></span>
+                    ссылка
+                </a>
+                <button class="tag tag--link tag-i-left" type="button">
+                    <span class="icon i-tl"></span>
+                    кнопка
+                </button>
+                <div class="tag tag-i-left">
+                    <span class="icon i-tl"></span>
+                    div
+                </div>
+                <span class="tag tag-i-left">
+                    <span class="icon i-tl"></span>
+                    span
+                </span>
+                <br />
+
+                <a class="tag tag--link tag-i-right" href="#">
+                    ссылка
+                    <span class="icon i-tl"></span>
+                </a>
+                <button class="tag tag--link tag-i-right" type="button">
+                    кнопка
+                    <span class="icon i-tl"></span>
+                </button>
+                <div class="tag tag-i-right">
+                    div
+                    <span class="icon i-tl"></span>
+                </div>
+                <span class="tag tag-i-right">
+                    span
+                    <span class="icon i-tl"></span>
+                </span>
+                <br />
+
+                <a class="tag tag--link tag-dark tag-i-left" href="#">
+                    <span class="icon i-tl"></span>
+                    ссылка
+                </a>
+                <button class="tag tag--link tag-dark tag-i-left" type="button">
+                    <span class="icon i-tl"></span>
+                    кнопка
+                </button>
+                <div class="tag tag-i-left tag-dark">
+                    <span class="icon i-tl"></span>
+                    div
+                </div>
+                <span class="tag tag-i-left tag-dark">
+                    <span class="icon i-tl"></span>
+                    span
+                </span>
+                <br />
+
+                <a class="tag tag--link tag-dark tag-i-right" href="#">
+                    ссылка
+                    <span class="icon i-tl"></span>
+                </a>
+                <button class="tag tag--link tag-dark tag-i-right" type="button">
+                    кнопка
+                    <span class="icon i-tl"></span>
+                </button>
+                <div class="tag tag-i-right tag-dark">
+                    div
+                    <span class="icon i-tl"></span>
+                </div>
+                <span class="tag tag-i-right tag-dark">
+                    span
+                    <span class="icon i-tl"></span>
+                </span>
+                <br />
+
+
+
+                <a class="tag tag-accent tag--link tag-i-left" href="#">
+                    <span class="icon i-tl"></span>
+                    ссылка
+                </a>
+                <button class="tag tag-accent tag--link tag-i-left" type="button">
+                    <span class="icon i-tl"></span>
+                    кнопка
+                </button>
+                <div class="tag tag-accent tag-i-left">
+                    <span class="icon i-tl"></span>
+                    div
+                </div>
+                <span class="tag tag-accent tag-i-left">
+                    <span class="icon i-tl"></span>
+                    span
+                </span>
+                <br />
+
+                <a class="tag tag-accent tag--link tag-i-right" href="#">
+                    ссылка
+                    <span class="icon i-tl"></span>
+                </a>
+                <button class="tag tag-accent tag--link tag-i-right" type="button">
+                    кнопка
+                    <span class="icon i-tl"></span>
+                </button>
+                <div class="tag tag-accent tag-i-right">
+                    div
+                    <span class="icon i-tl"></span>
+                </div>
+                <span class="tag tag-accent tag-i-right">
+                    span
+                    <span class="icon i-tl"></span>
+                </span>
+                <br />
+
+
+
+
+                <a class="tag tag-second tag--link tag-i-left" href="#">
+                    <span class="icon i-tl"></span>
+                    ссылка
+                </a>
+                <button class="tag tag-second tag--link tag-i-left" type="button">
+                    <span class="icon i-tl"></span>
+                    кнопка
+                </button>
+                <div class="tag tag-second tag-i-left">
+                    <span class="icon i-tl"></span>
+                    div
+                </div>
+                <span class="tag tag-second tag-i-left">
+                    <span class="icon i-tl"></span>
+                    span
+                </span>
+                <br />
+
+                <a class="tag tag-second tag--link tag-i-right" href="#">
+                    ссылка
+                    <span class="icon i-tl"></span>
+                </a>
+                <button class="tag tag-second tag--link tag-i-right" type="button">
+                    кнопка
+                    <span class="icon i-tl"></span>
+                </button>
+                <div class="tag tag-second tag-i-right">
+                    div
+                    <span class="icon i-tl"></span>
+                </div>
+                <span class="tag tag-second tag-i-right">
+                    span
+                    <span class="icon i-tl"></span>
+                </span>
+                <br />
+
+
+
+                <a class="tag tag-tertiary tag--link tag-i-left" href="#">
+                    <span class="icon i-tl"></span>
+                    ссылка
+                </a>
+                <button class="tag tag-tertiary tag--link tag-i-left" type="button">
+                    <span class="icon i-tl"></span>
+                    кнопка
+                </button>
+                <div class="tag tag-tertiary tag-i-left">
+                    <span class="icon i-tl"></span>
+                    div
+                </div>
+                <span class="tag tag-tertiary tag-i-left">
+                    <span class="icon i-tl"></span>
+                    span
+                </span>
+                <br />
+
+                <a class="tag tag-tertiary tag--link tag-i-right" href="#">
+                    ссылка
+                    <span class="icon i-tl"></span>
+                </a>
+                <button class="tag tag-tertiary tag--link tag-i-right" type="button">
+                    кнопка
+                    <span class="icon i-tl"></span>
+                </button>
+                <div class="tag tag-tertiary tag-i-right">
+                    div
+                    <span class="icon i-tl"></span>
+                </div>
+                <span class="tag tag-tertiary tag-i-right">
+                    span
+                    <span class="icon i-tl"></span>
+                </span>
+                <br />
+            </div>
+        </div>
+
+        <h2 id="form">Форма</h2>
+
+        <div class="ui-group">
+            <div class="ui-group__item">
+
+                <div class="input-search">
+                    <input class="input input-search__val" type="text" placeholder="Поиск">
+                    <button class="input-search__btn i-search" type="submit">Поиск</button>
+                </div>
+                <br />
+                <input class="input" type="text" value="Одиночный инпут" />
+                <br /><br />
+                <input class="input input--bold" type="text" placeholder="Одиночный инпут - жирный текст" />
+                <br /><br />
+                <input class="input input--bold" type="text" value="Одиночный инпут - жирный текст" />
+                <br /><br />
+                <input class="input input-required" type="text" value="Поле обязательно к заполнению" />
+                <br /><br />
+                <input class="input" type="text" value="disabled" disabled />
+                <br /><br />
+
+                <div class="input-wrap">
+                    <label class="input-wrap__label">
+                        Ваше имя
+                        <input class="input" type="text">
+                    </label>
+                </div>
+
+                <br />
+
+                <div class="input-wrap">
+                    <label class="input-wrap__label">
+                        Город
+                        <input class="input" type="text">
+                    </label>
+                    <span class="input-wrap__message input-wrap__message--warning">Город обязателен к публикации</span>
+                </div>
+
+                <br />
+
+                <div class="input-wrap">
+                    <label class="input-wrap__label">
+                        Город
+                        <input class="input" type="text">
+                    </label>
+                    <span class="input-wrap__message input-wrap__message--success">Успешный успех!!</span>
+                </div>
+
+                <br />
+                <form class="form" action="/" method="post">
+                    <fieldset class="form__group">
+                        <legend class="form__group-title">Заголовок группы</legend>
+                        <p class="form__group-description">Описание группы</p>
+                        <div class="input-wrap">
+                            <label class="input-wrap__label">
+                                Услуга/товар
+                                <input class="input" type="text">
+                            </label>
+                            <span class="form__mute-text">Рекомендуемый размер 1200x1200 px</span>
+                        </div>
+
+                        <fieldset class="form__subgroup">
+                            <legend class="form__subgroup-title">Заголовок Подгруппы</legend>
+                            <div class="form__field-has-del">
+                                <div class="input-wrap">
+                                    <label class="input-wrap__label">
+                                        Услуга/товар
+                                        <input class="input" type="text">
+                                    </label>
+                                </div>
+                                <button class="form__btn-del i-clear" type="button"></button>
+                            </div>
+
+                            <div class="input-wrap">
+                                <label class="input-wrap__label">
+                                    Услуга/товар
+                                    <input class="input" type="text">
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="form__subgroup">
+                            <legend class="form__subgroup-title">Заголовок Подгруппы</legend>
+
+                            <div class="input-wrap">
+                                <label class="input-wrap__label">
+                                    Услуга/товар
+                                    <input class="input" type="text">
+                                </label>
+                            </div>
+
+                            <div class="input-wrap">
+                                <label class="input-wrap__label">
+                                    Услуга/товар
+                                    <input class="input" type="text">
+                                </label>
+                            </div>
+
+                            <button class="form__subgroup-add" type="button">+ Добавить подгруппу</button>
+                            <button class="form__subgroup-add" type="button">+ Добавить подгруппу</button>
+                        </fieldset>
+                    </fieldset>
+                </form>
+
+
+            </div>
+            <div class="ui-group__item">
+                <div class="dropdown dropdown--input js-dropdown-toogle">
+                    <button class="dropdown__value" type="button"><span class="dropdown__value-inner">Выпадающий список (вид инпута) с переполнением</span></button>
+                    <div class="dropdown__list scroll-gray">
+                        <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Значение 1</a></div>
+                        <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Значение 2</a></div>
+                    </div>
+                </div>
+
+                <br />
+
+                <div class="dropdown js-dropdown-toogle">
+                    <button class="dropdown__value dropdown__value--bold" type="button">Выпадающий список</button>
+                    <div class="dropdown__list scroll-gray">
+                        <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">По дате</a></div>
+                        <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">По релевантности</a></div>
+                    </div>
+                </div>
+                <br />
+                <div class="dropdown dropdown--input js-dropdown-toogle">
+                    <button class="dropdown__value" type="button"><span class="dropdown__value-inner"></span></button>
+                    <div class="dropdown__list scroll-gray">
+                        <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Значение 1</a></div>
+                        <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Значение 2</a></div>
+                    </div>
+                </div>
+
+                <br />
+
+                <div class="dropdown dropdown--input js-dropdown-toogle">
+                    <button class="dropdown__value" type="button">Выпадающий список (вид инпута)</button>
+                    <div class="dropdown__list scroll-gray">
+                        <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Значение 1</a></div>
+                        <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Значение 2</a></div>
+                    </div>
+                </div>
+
+                <br />
+
+                <div class="dropdown dropdown--input dropdown--icon js-dropdown-toogle">
+                    <button class="dropdown__value" type="button">
+                        <span class="icon i-tl"></span>
+                        Выпадающий список c иконкой
+                    </button>
+                    <div class="dropdown__list scroll-gray">
+                        <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Значение 1</a></div>
+                        <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Значение 2</a></div>
+                    </div>
+                </div>
+
+                <br />
+
+                <div class="dropdown dropdown--input dropdown--icon js-dropdown-toogle">
+                    <button class="dropdown__value dropdown__value--icon" type="button">
+                        <span class="icon i-tl"></span>
+                        Выпадающий список иконки у значений
+                    </button>
+                    <div class="dropdown__list scroll-gray">
+                        <div class="dropdown__list-item">
+                            <a href="#" class="dropdown__list-val">
+                                <span class="icon i-tl"></span>
+                                Значение 1
+                            </a>
+                        </div>
+                        <div class="dropdown__list-item">
+                            <a href="#" class="dropdown__list-val">
+                                <span class="icon i-tl"></span>
+                                Значение 1
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <br />
+
+                <div class="smart-search">
+                    <input class="input input--big category-search__input input--bold" type="text" placeholder="Поиск в Москве" required>
+                    <button class="clear i-close" type="button"></button>
+                    <div class="smart-search__modal">
+                        <ul class="smart-search__modal-list modal-list scroll-gray">
+                            <li class="modal-list__item">
+                                <a class="modal-list__item-val" href="#"><b>Люстра</b></a>
+                            </li>
+                            <li class="modal-list__item">
+                                <a class="modal-list__item-val" href="#"><b>Люстра</b> бу</a>
+                            </li>
+                            <li class="modal-list__item">
+                                <a class="modal-list__item-val" href="#"><b>Люстра</b> хрустальная</a>
+                            </li>
+                            <li class="modal-list__item">
+                                <a class="modal-list__item-val" href="#"><b>Люстра</b> потолочная</a>
+                            </li>
+                            <li class="modal-list__item">
+                                <a class="modal-list__item-val" href="#"><b>Люстра</b> СССР</a>
+                            </li>
+                            <li class="modal-list__item">
+                                <a class="modal-list__item-val" href="#"><b>Люстра</b>ция</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <br />
+
+                <div class="smart-search">
+                    <input class="input input--big category-search__input input--bold" type="text" placeholder="Поиск в Москве" value="список с иконками" required>
+                    <button class="clear i-close" type="button"></button>
+                    <div class="smart-search__modal">
+                        <ul class="smart-search__modal-list modal-list scroll-gray">
+                            <li class="modal-list__item">
+                                <span class="icon i-tl"></span>
+                                <a class="modal-list__item-val" href="#"><b>Люстра</b></a>
+                            </li>
+                            <li class="modal-list__item">
+                                <span class="icon i-tl"></span>
+                                <a class="modal-list__item-val" href="#"><b>Люстра</b> бу</a>
+                            </li>
+                            <li class="modal-list__item">
+                                <span class="icon i-tl"></span>
+                                <a class="modal-list__item-val" href="#"><b>Люстра</b> хрустальная</a>
+                            </li>
+                            <li class="modal-list__item">
+                                <span class="icon i-tl"></span>
+                                <a class="modal-list__item-val" href="#"><b>Люстра</b> потолочная</a>
+                            </li>
+                            <li class="modal-list__item">
+                                <span class="icon i-tl"></span>
+                                <a class="modal-list__item-val" href="#"><b>Люстра</b> СССР</a>
+                            </li>
+                            <li class="modal-list__item">
+                                <span class="icon i-tl"></span>
+                                <a class="modal-list__item-val" href="#"><b>Люстра</b>ция</a>
+                            </li>
+                            <li class="modal-list__item">
+                                <span class="icon i-tl"></span>
+                                <a class="modal-list__item-val" href="#"><b>Люстра</b> бушная</a>
+                            </li>
+                            <li class="modal-list__item">
+                                <span class="icon i-tl"></span>
+                                <a class="modal-list__item-val" href="#"><b>Люстра</b> бу</a>
+                            </li>
+                            <li class="modal-list__item">
+                                <span class="icon i-tl"></span>
+                                <a class="modal-list__item-val" href="#"><b>Люстра</b> хрустальная</a>
+                            </li>
+                            <li class="modal-list__item">
+                                <span class="icon i-tl"></span>
+                                <a class="modal-list__item-val" href="#"><b>Люстра</b> потолочная</a>
+                            </li>
+                            <li class="modal-list__item">
+                                <span class="icon i-tl"></span>
+                                <a class="modal-list__item-val" href="#"><b>Люстра</b> СССР</a>
+                            </li>
+                            <li class="modal-list__item">
+                                <span class="icon i-tl"></span>
+                                <a class="modal-list__item-val" href="#"><b>Люстра</b>ция</a>
+                            </li>
+                            <li class="modal-list__item">
+                                <span class="icon i-tl"></span>
+                                <a class="modal-list__item-val" href="#"><b>Люстра</b> бушная</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <br />
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="checkbox">
+                            <input class="checkbox__field" id="chek" type="checkbox">
+                            <label class="checkbox__value" for="chek">
+                                Чекбокс
+                            </label>
+                        </div>
+
+                        <div class="checkbox">
+                            <input class="checkbox__field" id="chek1" type="checkbox" checked>
+                            <label class="checkbox__value" for="chek1">
+                                Чекбокс
+                            </label>
+                        </div>
+
+                        <div class="checkbox">
+                            <input class="checkbox__field" id="chek2" type="checkbox" disabled>
+                            <label class="checkbox__value" for="chek2">
+                                Чекбокс
+                            </label>
+                        </div>
+
+                        <div class="checkbox">
+                            <input class="checkbox__field" id="chek3" type="checkbox" checked disabled>
+                            <label class="checkbox__value" for="chek3">
+                                Чекбокс
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="radio">
+                            <input class="radio__field" id="radio" type="radio" name="radio">
+                            <label class="radio__value" for="radio">
+                                Радио
+                            </label>
+                        </div>
+
+                        <div class="radio">
+                            <input class="radio__field" id="radio1" type="radio" name="radio" checked>
+                            <label class="radio__value" for="radio1">
+                                Радио выбрано
+                            </label>
+                        </div>
+
+                        <div class="radio">
+                            <input class="radio__field" id="radio2" type="radio" name="radio2" disabled>
+                            <label class="radio__value" for="radio2">
+                                Радио не активно
+                            </label>
+                        </div>
+
+                        <div class="radio">
+                            <input class="radio__field" id="radio3" type="radio" name="radio2" disabled checked>
+                            <label class="radio__value" for="radio3">
+                                Радио не активно-чекнуто
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="checkbox checkbox--sm checkbox--muted checkbox--tooltip">
+                    <input class="checkbox__field" id="mailing-vote" type="checkbox"><label class="checkbox__value" for="mailing-vote">Получать уведомление о новых голосованиях</label>
+                    <div class="tooltip">
+                        <div class="tooltip__btn">
+                            <span class="tooltip__icon i-info"></span>
+                        </div>
+                        <div class="tooltip__popup">
+                            <p class="tooltip__popup-txt">Несколько раз в месяц на сервисе происходит опрос зарегистрированных пользователей поставив галочку «уведомлять» вы первыми узнаете об этом и выразите свое мнение, <b>дополнительно получите баллы</b></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="file-photo">
+                    <label class="input__file-button">
+                        <input name="file" type="file" class="input-file" multiple>
+                        <span class="file-photo__file-button i-camera"></span>
+                    </label>
+                    <div class="file-photo__text">
+                        Добавьте фотографию визитки или вывески с названиями и временем работы
+                        <div class="text-gray file-photo__description">Размер файла не должен превышать 10 мб</div>
+                    </div>
+                </div>
+
+                <div class="file-photo__group">
+                    <div class="file-photo">
+                        <label class="input__file-button">
+                            <input name="file" type="file" class="input-file" multiple="">
+                            <span class="file-photo__file-button i-camera"></span>
+                        </label>
+                    </div>
+                    <div class="file-photo">
+                        <label class="input__file-button">
+                            <input name="file" type="file" class="input-file" multiple="">
+                            <span class="file-photo__file-button i-camera"></span>
+                        </label>
+                    </div>
+                    <label class="input__file-button">
+                        <input name="file" type="file" class="input-file" multiple>
+                        <span class="file-photo__file-button file-photo__file-button--circle i-camera"></span>
+                    </label>
+                </div>
+                <label class="file-txt">
+                    Загрузите файл с компьютера
+                    <input name="file" type="file" class="file-txt__input" multiple>
+                </label>
+            </div>
+            <div class="ui-group__item">
+                <form class="form" action="/" method="post">
+                    <h3>Форма с группами инпутов</h3>
+                    <fieldset class="form__fieldset">
+                        <legend class="form__legend">Заголовок группы </legend>
+
+                        <div class="input-wrap">
+                            <label class="input-wrap__label">
+                                Логин
+                                <input class="input" type="text">
+                            </label>
+                        </div>
+                        <div class="input-wrap">
+                            <label class="input-wrap__label">
+                                E-mail
+                                <input class="input" type="email">
+                            </label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form__fieldset">
+                        <legend class="form__legend">Заголовок группы </legend>
+
+                        <div class="input-wrap">
+                            <label class="input-wrap__label" for="password">Пароль</label>
+                            <div class="input-password">
+                                <input class="input input-password__val" id="password" type="password">
+                                <button class="input-password__eye icon i-eye"></button>
+                            </div>
+                        </div>
+
+                        <div class="input-wrap">
+                            <label class="input-wrap__label" for="password">Повторите пароль</label>
+                            <div class="input-password">
+                                <input class="input input-password__val" id="password" type="password">
+                                <button class="input-password__eye input-password__eye--open icon i-eye"></button>
+                            </div>
+                        </div>
+
+                        <div class="input-wrap">
+                            <span class="input-wrap__label">
+                                Опишите неточность
+                                <textarea class="textarea"></textarea>
+                            </span>
+                        </div>
+
+                    </fieldset>
+                </form>               
+            </div>
+        </div>
+
+        <h2 id="popup">Попапы</h2>
+
+        <div class="ui-group">
+            <div class="ui-group__item">
+                <div class="tooltip">
+                    <div class="tooltip__btn">
+                        <span class="tooltip__icon i-info"></span>
+                    </div>
+                    <div class="tooltip__popup">
+                        <p class="tooltip__popup-txt">
+                            Несколько раз в месяц на сервисе происходит опрос зарегистрированных пользователей поставив галочку «уведомлять» вы первыми узнаете об этом и выразите свое мнение, <b>дополнительно получите баллы</b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="ui-group__item">
+
+            </div>
+            <div class="ui-group__item">
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<style>
+    .ui-wrap {
+        display: flex;
+    }
+
+    .ui-nav {
+        position: relative;
+        width: 400px;
+        padding: 20px 20px 20px 0;
+    }
+
+    .ui-nav__list {
+        position: fixed;
+    }
+
+    .ui-nav__item {
+    }
+
+    .ui-view {
+        padding: 20px 0 20px 20px;
+    }
+
+        .ui-view > h2 {
+            background-color: aliceblue;
+            padding-left: 20px;
+            margin-bottom: 40px;
+        }
+
+    .ui-group {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .ui-group__item {
+        padding: 10px 5px;
+        width: 33.333%;
+    }
+
+    .ui-wrap .btn {
+        margin-bottom: 10px;
+    }
+
+    .ui-wrap .link {
+        margin-right: 5px;
+    }
+</style>
+	<footer class="footer">
+		<div class="full-container">
+			<div class="footer__item footer__item_1">
+				<a class="footer__logo" href="/"><img src="images/dist/logo-full.svg" alt="Tizaru"></a>
+				<a class="footer__phone i-phone" href="tel:+74993401044">+7 (499) 340-10-44</a>
+				<div class="footer__whatsapp i-wha">Cвязаться по <a class="footer__whatsapp-link" href="https://wa.me/71111111111" target="_blank">WhatsApp</a></div>
+				<a class="link link-default" href="#" target="_blank">Политика конфиденциальности</a> <br>
+				<a class="link link-default" href="#" target="_blank">Соглашение на обработку <br>персональных данных</a>
+			</div>
+			<div class="footer__item footer__item_2">
+                <ul class="footer__menu footer-menu list-unstylling">
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Команда проекта</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Наша миссия</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Помощь проекту</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Станьте частью команды проекта</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Станьте совладельцем проекта</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Контакты</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">О компании</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Блог</a></li>
+                </ul>
+                <ul class="footer__menu footer-menu list-unstylling">
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">О проекте</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Открытие франшизы</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Список франшиз</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Общий реестр</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Получение баллов</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Сертификат TIZARU</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Реклама</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Пользовательское соглашение</a></li>
+                </ul>
+			</div>
+			<div class="footer__item footer__item_3">
+				<div class="footer__mobil-wrap">
+					<div class="footer__sub">Статьи:</div>
+					<ul class="footer__sub-menu footer-submenu list-unstylling">
+                        <li class="footer-submenu__item"><a class="footer-submenu__link" href="#">Все категории</a></li>
+                        <li class="footer-submenu__item"><a class="footer-submenu__link" href="#">Бизнес</a></li>
+                        <li class="footer-submenu__item"><a class="footer-submenu__link" href="#">Технологии</a></li>
+                        <li class="footer-submenu__item"><a class="footer-submenu__link" href="#">Финансы и инвестиции</a></li>
+                        <li class="footer-submenu__item"><a class="footer-submenu__link" href="#">Экспертное мнение</a></li>
+                        <li class="footer-submenu__item"><a class="footer-submenu__link" href="#">Персоны</a></li>
+                        <li class="footer-submenu__item"><a class="footer-submenu__link" href="#">Видео</a></li>
+                        <li class="footer-submenu__item"><a class="footer-submenu__link" href="#">Карьера и свой бизнес</a></li>
+                        <li class="footer-submenu__item"><a class="footer-submenu__link" href="#">Общество</a></li>
+                        <li class="footer-submenu__item"><a class="footer-submenu__link" href="#">Культура</a></li>
+                        <li class="footer-submenu__item"><a class="footer-submenu__link" href="#">Спорт</a></li>
+					</ul>
+				</div>
+				<div class="footer__mobil-wrap">
+					<div class="footer__sub">Категории бизнеса:</div>
+					<ul class="footer__sub-menu footer-submenu list-unstylling">
+                        <li class="footer-submenu__item"><a class="footer-submenu__link" href="#">Транспорт</a></li>
+                        <li class="footer-submenu__item"><a class="footer-submenu__link" href="#">Недвижимость</a></li>
+                        <li class="footer-submenu__item"><a class="footer-submenu__link" href="#">Работа</a></li>
+                        <li class="footer-submenu__item"><a class="footer-submenu__link" href="#">Услуги</a></li>
+                        <li class="footer-submenu__item"><a class="footer-submenu__link" href="#">Личные вещи</a></li>
+                        <li class="footer-submenu__item"><a class="footer-submenu__link" href="#">Для дома и дачи</a></li>
+                        <li class="footer-submenu__item"><a class="footer-submenu__link" href="#">Бытовая электроника</a></li>
+                        <li class="footer-submenu__item"><a class="footer-submenu__link" href="#">Хобби и отдых</a></li>
+                        <li class="footer-submenu__item"><a class="footer-submenu__link" href="#">Животные</a></li>
+                        <li class="footer-submenu__item"><a class="footer-submenu__link" href="#">Готовый бизнес и оборудование</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<script src="js/app.min.js"></script>
+	<script src="js/functions.js"></script>
+
+</body>
+</html>

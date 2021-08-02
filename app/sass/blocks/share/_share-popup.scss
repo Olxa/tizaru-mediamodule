@@ -1,0 +1,88 @@
+/*------------------------------------*\
+  #Попап "Поделиться в соц сетях"
+\*------------------------------------*/
+
+.share-popup {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    max-width: 600px;
+    padding: 20px 50px 20px;
+    background: #fff;
+    box-shadow: $shadow2;
+    border-radius: 5px;
+    z-index: 10;
+
+    @media (max-width: 576px) {
+        padding: 35px 10px 10px;
+    }
+
+    &.active {
+        display: block;
+    }
+
+    &__close {
+        position: absolute;
+        border: none;
+        background-color: transparent;
+        top: 15px;
+        right: 30px;
+        color: #333333;
+        cursor: pointer;
+
+        &::before {
+            display: block;
+            content: "\e913";
+            font-size: 15px;
+            font-family: if;
+        }
+    }
+
+    &__title {
+        margin-bottom: 30px;
+        font-family: $userfont-extbold;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 27px;
+        text-align: left;
+        text-transform: uppercase;
+
+        @media (max-width: 576px) {
+            margin-bottom: 15px;
+        }
+
+        &.mobil-visible {
+            display: none;
+
+            @media (max-width: 576px) {
+                display: block;
+            }
+        }
+    }
+}
+
+
+.share-block--company-page {
+
+    .share-popup {
+        @media (max-width: 992px) {
+            display: block !important;
+            position: initial;
+            padding: 0;
+            box-shadow: none;
+        }
+    }
+
+    .share-popup__close {
+        @media (max-width: 992px) {
+            display: none;
+        }
+    }
+
+    .share-popup__title {
+        @media (max-width: 992px) {
+            display: none;
+        }
+    }
+}

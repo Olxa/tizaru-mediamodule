@@ -1,0 +1,130 @@
+<!--#set var="title" value="Личный кабинет | Информация" -->
+<!--#include virtual="/parts/header-login.html" -->
+
+<div class="page-content">
+    <div class="full-container private-office__wrap">
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb--private-office">
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Главная</a></li>
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="fr-private-office.html">Список пользователей</a></li>
+                <li class="breadcrumb__item active" aria-current="page">Личная информация</li>
+            </ol>
+        </nav>
+
+        <div class="private-office">
+            <div class="private-office__sidebar">
+                <!--#include virtual="/parts/user-nav-page-fr.html" -->
+            </div>
+
+            <div class="private-office__content">
+                <div class="private-office__header">
+                    <div class="page-title page-title__margin-b">Иванов Иван Иванович</div>
+                </div>                
+
+                <ul class="private-office__tab">
+                    <li class="private-office__tab-item">
+                        <div class="private-office__tab-link active">Личная информация</div>
+                    </li>
+                    <li class="private-office__tab-item">
+                        <a class="private-office__tab-link" href="fr-private-office-user-company.html">Организации</a>
+                    </li>
+                    <li class="private-office__tab-item">
+                        <a class="private-office__tab-link" href="fr-private-office-user-balance.html">Баланс</a>
+                    </li>
+                    <li class="private-office__tab-item">
+                        <a class="private-office__tab-link" href="fr-private-office-user-point.html">Баллы</a>
+                    </li>
+                </ul>
+                <div class="private-office__tab-content">
+                    <form class="form form-private" action="/" method="post">
+
+                        <div class="row row-margin-big align-items-end">
+                            <div class="col-xl-3 col-lg-6 form-private__mob-last">
+                                <div class="input-wrap">
+                                    <span class="input-wrap__label">Регион</span>
+                                    <div class="dropdown dropdown--input js-dropdown-toogle">
+                                        <button class="dropdown__value" type="button"><span class="dropdown__value-inner">Центральный</span></button>
+                                        <div class="dropdown__list scroll-gray">
+                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Центральный</a></div>
+                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Дальневосточный</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 form-private__mob-last">
+                                <div class="input-wrap">
+                                    <span class="input-wrap__label">Город</span>
+                                    <div class="dropdown dropdown--input js-dropdown-toogle">
+                                        <button class="dropdown__value" type="button"><span class="dropdown__value-inner">Москва</span></button>
+                                        <div class="dropdown__list scroll-gray">
+                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Москва</a></div>
+                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Подольск</a></div>
+                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Чехов</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3">
+                                <div class="input-wrap">
+                                    <div class="dropdown dropdown--input dropdown--warning js-dropdown-toogle form__dropdown-status">
+                                        <button class="dropdown__value" type="button"><span class="dropdown__value-inner">Изменить статус</span></button>
+                                        <div class="dropdown__list scroll-gray">
+                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Заблокировать</a></div>
+                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Разблокировать</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 form-private__mob-hidden">
+                                <div class="input-wrap">
+                                    <button class="btn btn-conture btn--md btn--full" type="submit">Сохранить</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-6">
+                                <div class="input-wrap"><label class="input-wrap__label">Фамилия<input class="input" type="text" value="Иванов"></label></div>
+                                <div class="input-wrap"><label class="input-wrap__label">Имя<input class="input" type="text" value="Иван"></label></div>
+                                <div class="input-wrap"><label class="input-wrap__label">Отчество<input class="input" type="text" value="Иванович"></label></div>
+                            </div>
+                            <div class="col-xl-9 col-lg-6">
+                                <div class="row">
+                                    <div class="col-xl-4">
+                                        <div class="input-wrap"><label class="input-wrap__label">Телефон<input class="input" type="tel" value="+7 903 123 45 67"></label></div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-end">
+                                    <div class="col-xl-4">
+                                        <div class="input-wrap"><label class="input-wrap__label">E-mail<input class="input" type="email" value="mymail@yandex.ru"></label></div>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <div class="input-wrap">
+                                            <p class="state-text state-text--succes">Подтверждено<span class="icon i-check"></span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="user-info__license private-office__user-license">
+                            <div class="user-info__license-item">Дано согласие на получение по E-mail</div>
+                            <div class="user-info__license-item">Отправление информации по сертификату</div>
+                            <div class="user-info__license-item user-info__license-item--disabled">Сертификат не оформлен</div>
+                        </div>
+
+                        <div class="row form-private__mob-visible">
+                            <div class="col-md-4 offset-md-4">
+                                <button class="btn btn--full btn-accent" type="submit">Сохранить</button>
+                            </div>
+                        </div>
+                    </form>                    
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--#include virtual="/parts/footer.html" -->

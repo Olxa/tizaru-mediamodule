@@ -1,0 +1,61 @@
+.terms-page {
+    &__page-title {
+        margin-bottom: 50px;
+
+        @media (max-width: 1200px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__list {
+        margin-bottom: 60px;
+    }
+
+    &__list-title {
+        margin-bottom: 20px;
+        font-family: $userfont-bold;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 27px;
+    }
+
+    &__intro {
+        margin-bottom: 40px;
+        font-family: $userfont-sbold;
+        font-weight: 600;
+        line-height: 26px;
+    }
+
+    &__title {
+        font-family: $userfont-sbold;
+        font-weight: 600;
+
+        > * {
+            font-family: $userfont;
+            font-weight: 400;
+        }
+
+        ul {
+            list-style: disc;
+            margin-top: 20px;
+        }
+    }
+
+    &__list {
+
+        p {
+            margin-bottom: 20px;
+
+            &:first-child {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    &__sublist {
+    }
+
+    &__list-item {
+        margin-bottom: 40px;
+    }
+}

@@ -1,0 +1,121 @@
+.mfp-bg {
+    background: rgba(196, 196, 196, 0.01);
+    backdrop-filter: blur(7px);
+    opacity: 1;
+}
+
+@-moz-document url-prefix() {
+    .mfp-bg {
+        background: rgba(0, 0, 0, 0.5);
+    }
+}
+
+.mfp-close {
+    width: 15px;
+    height: 15px;
+    font-size: 0;
+    opacity: 1;
+    top: 25px !important;
+    right: 75px;
+    padding: 0;
+    color: $textcolor;
+    line-height: 1;
+
+    @media (max-width: 767px) {
+        right: 25px;
+    }
+
+    &::before {
+        display: block;
+        content: "\e913";
+        font-size: 15px;
+        font-family: if;
+    }
+}
+
+.mfp-title {
+    display: none;
+}
+
+.mfp-figure {
+
+    .mfp-close {
+        padding: 0;
+        top: -12px !important;
+        width: 44px;
+        height: 44px;
+        background: #ffffff;
+        border-radius: 50%;
+        text-align: center;
+        color: $textcolor;
+        box-shadow: $shadow1;
+    }
+}
+
+.popup__text {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    text-align: center;
+
+    @media (max-width: 767px) {
+        font-size: 16px;
+    }
+}
+
+.popup {
+    max-width: 600px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: $shadow2;
+    margin: 0 auto;
+    position: relative;
+    padding: 60px 30px 30px;
+
+    @media (max-width: 767px) {
+        .textarea {
+            min-height: 100px;
+        }
+    }
+}
+
+.alert-ok {
+    border: 1px solid $color-tertiary;
+    border-radius: 5px;
+    box-shadow: $shadow2;
+    font-size: 14px;
+    padding: 17px;
+    text-align: center;
+    background: #fff;
+    z-index: 2;
+
+    &.none {
+        display: none;
+    }
+}
+
+.popup__title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+
+    @media (max-width: 767px) {
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+}
+
+.login-reg-popup {
+    max-width: 390px;
+    padding: 10px 0;
+    background: #fff;
+
+    .login-reg {
+        margin: 0 auto;
+        position: initial;
+        opacity: 1;
+        visibility: visible;
+        box-shadow: none;
+    }
+}

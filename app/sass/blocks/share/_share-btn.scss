@@ -1,0 +1,138 @@
+/*------------------------------------*\
+  #Кнопки соц. сетей
+\*------------------------------------*/
+.share-btn {
+
+    @media (max-width: 374px) {
+        display: flex;
+    }
+
+    &__list {
+        display: flex;
+        margin: 0 0 5px 0;
+        padding: 0;
+        list-style: none;
+
+        @media (max-width: 767px) {
+            margin-bottom: 8px;
+        }
+
+        @media (max-width: 374px) {
+            flex-direction: column;
+        }
+    }
+
+    &__item {
+        width: 65px;
+        height: 45px;
+        margin-right: 5px;
+
+        @media (max-width: 767px) {
+            width: 60px;
+            height: 46px;
+            margin-right: 8px;
+        }
+
+        @media (max-width: 374px) {
+            margin-bottom: 8px;
+        }
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .icon {
+        color: #ffffff;
+
+        @media (max-width: 767px) {
+            border-radius: 5px !important;
+        }
+
+        &:hover {
+            opacity: .8;
+        }
+    }
+
+    .i-tw-fl {
+        background: #1BAEEB;
+        font-size: 15px;
+    }
+
+    .i-fb-fl {
+        background: #4C6DB6;
+        font-size: 20px;
+    }
+
+    .i-vk-fl {
+        background: #6695BD;
+        font-size: 13px;
+    }
+
+    .i-ln-fl {
+        background: #0E76A8;
+        font-size: 15px;
+    }
+
+    .i-ok-fl {
+        background: #FC9005;
+        font-size: 18px;
+    }
+
+    .i-wt-fl {
+        background: #46C152;
+        font-size: 20px;
+    }
+
+    .i-vb-fl {
+        background: #655BAA;
+        font-size: 20px;
+    }
+
+    .i-sk-fl {
+        background: #00A7E5;
+        font-size: 20px;
+    }
+
+    .i-tl-fl {
+        background: #2AA1DA;
+        font-size: 17px;
+    }
+
+    .i-copy {
+        color: #ACA9A9;
+        background: #FCFFFC;
+        border: 1px solid #ACA9A9;
+        font-size: 20px;
+    }
+}
+
+.share-btn__list:first-child {
+
+    .share-btn__item:first-child .icon {
+        border-radius: 5px 0 0 0;
+        overflow: hidden;
+    }
+
+    .share-btn__item:last-child .icon {
+        border-radius: 0 5px 0 0;
+        overflow: hidden;
+    }
+}
+
+.share-btn__list:last-child {
+
+    .share-btn__item:first-child .icon {
+        border-radius: 0 0 0 5px;
+        overflow: hidden;
+    }
+
+    .last-icon {
+        border-radius: 0 0 5px 0;
+        overflow: hidden;
+    }
+}

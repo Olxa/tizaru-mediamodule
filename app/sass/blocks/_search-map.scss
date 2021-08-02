@@ -1,0 +1,11 @@
+.search-map {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid $gray;
+    max-width: 735px;
+
+    @media (max-width: 767px) {
+        display: none;
+    }
+}

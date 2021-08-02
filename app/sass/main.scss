@@ -1,0 +1,237 @@
+// == SASS Mixins & Variables ==
+@import "variables";
+
+// == normalize ==
+@import "config";
+
+// == typography ==
+@import "blocks/typography/text";
+@import "blocks/typography/ul";
+
+// == blocks ==
+@import "blocks/if";
+@import "blocks/notice";
+@import "blocks/loader";
+
+// == button ==
+@import "blocks/buttons/btn";
+@import "blocks/buttons/link";
+@import "blocks/buttons/back-link";
+@import "blocks/buttons/tag";
+
+// == input ==
+@import "blocks/input/input-wrap";
+@import "blocks/input/input";
+@import "blocks/input/input-required";
+@import "blocks/input/input-search";
+@import "blocks/input/input-password";
+@import "blocks/input/checkbox";
+@import "blocks/input/radio";
+@import "blocks/input/textarea";
+
+// == header ==
+@import "blocks/header/header";
+@import "blocks/header/burger-btn";
+@import "blocks/header/main-menu";
+@import "blocks/header/city-wrapper";
+@import "blocks/header/city";
+@import "blocks/header/map-bar";
+@import "blocks/header/btn-languages";
+@import "blocks/header/languages-list";
+@import "blocks/header/login-wrapper";
+@import "blocks/header/login-reg";
+@import "blocks/header/recovery";
+@import "blocks/header/soc-login";
+@import "blocks/header/header-logo";
+@import "blocks/header/user-account";
+@import "blocks/header/account-menu";
+@import "blocks/header/header-lend";
+
+// == footer ==
+@import "blocks/footer/footer";
+@import "blocks/footer/footer-menu";
+@import "blocks/footer/footer-submenu";
+
+// == home ==
+@import "blocks/home/home-nav";
+@import "blocks/home/home-category";
+@import "blocks/home/home-services";
+@import "blocks/home/services-item";
+
+// == form ==
+@import "blocks/form/form";
+@import "blocks/form/form-private";
+
+// == dropdown ==
+@import "blocks/dropdown/dropdown";
+@import "blocks/dropdown/dropdown--time";
+
+// == search ==
+@import "blocks/search/smart-search";
+
+// == tabs ==
+@import "blocks/tabs/tabs";
+@import "blocks/tabs/group-tab";
+
+// == category-bar ==
+@import "blocks/category-bar/category-bar";
+@import "blocks/category-bar/category-search";
+@import "blocks/category-bar/category-modal";
+@import "blocks/category-bar/mobil-bar";
+@import "blocks/category-bar/mobil-filter";
+@import "blocks/category-bar/city-slroller";
+@import "blocks/category-bar/mobil-filter-region";
+
+// == page-filter ==
+@import "blocks/page-filter/page-filter";
+
+// == title ==
+@import "blocks/title/block-title";
+@import "blocks/title/page-title";
+
+// == slider ==
+@import "blocks/slider/slider";
+@import "blocks/slider/content-slider";
+@import "blocks/slider/statistic-slider";
+
+// == content-carusel ==
+@import "blocks/content-carusel/content-carusel";
+
+// == preview ==
+@import "blocks/preview/preview";
+
+// == persons ==
+@import "blocks/persons/persons";
+
+// == SINGLE blocks ==
+@import "blocks/more-wrapper";
+@import "blocks/dividing-block";
+@import "blocks/expert-opinion";
+@import "blocks/collapse";
+@import "blocks/search-map";
+@import "blocks/search-images";
+@import "blocks/page";
+@import "blocks/breadcrumb";
+@import "blocks/rating";
+@import "blocks/metro-list";
+@import "blocks/write-message";
+@import "blocks/change-password";
+@import "blocks/scroll-gray";
+@import "blocks/page-content";
+@import "blocks/sorting";
+@import "blocks/note-panel";
+@import "blocks/chat";
+@import "blocks/userlist";
+@import "blocks/image-gallery";
+@import "blocks/smart-filter";
+@import "blocks/video";
+
+// == search-results ==
+@import "blocks/search-results/search-results";
+@import "blocks/search-results/search-b-item";
+
+// == pagination ==
+@import "blocks/pagination/pagination";
+
+// == advertising-banner ==
+@import "blocks/advertising-banner/advertising-banner";
+
+// == popup ==
+@import "blocks/popup/popup";
+@import "blocks/popup/change-popup";
+@import "blocks/popup/message-popup";
+@import "blocks/popup/popup-gener-code";
+@import "blocks/popup/popup-sucess";
+@import "blocks/popup/delete-popup";
+@import "blocks/popup/note-popover";
+@import "blocks/popup/open-franchise";
+@import "blocks/popup/popup-img";
+
+// == share ==
+@import "blocks/share/share-block";
+@import "blocks/share/share-popup";
+@import "blocks/share/share-btn";
+
+// == social-list ==
+@import "blocks/social-list/social-list";
+
+// == card-page ==
+@import "blocks/card-page/card-page";
+@import "blocks/card-page/card-link-row";
+@import "blocks/card-page/card-page-info";
+@import "blocks/card-page/persone-page";
+
+// == tooltip ==
+@import "blocks/tooltip/tooltip";
+
+// == table ==
+@import "blocks/table/table";
+
+// == add-file ==
+@import "blocks/add-file/file-photo";
+@import "blocks/add-file/file-txt";
+
+// == team ==
+@import "blocks/team/team";
+@import "blocks/team/team-card";
+
+// == private-office ==
+@import "private-office/private-office";
+@import "private-office/user-nav";
+@import "private-office/add-avatar";
+@import "private-office/add-avatar__popup";
+@import "private-office/edit-company";
+@import "private-office/page-promo";
+@import "private-office/page-notice";
+@import "private-office/page-point";
+@import "private-office/page-statistic";
+@import "private-office/page-vote";
+@import "private-office/vote-card";
+@import "private-office/page-sertificat";
+@import "private-office/page-support";
+@import "private-office/user-info";
+@import "private-office/page-balance";
+@import "private-office/page-profit";
+@import "private-office/page-company-list";
+@import "private-office/page-staff";
+@import "private-office/page-franchise-user";
+@import "private-office/page-franchise-quest";
+@import "private-office/page-franchise-void";
+@import "private-office/create-void";
+@import "private-office/void-result";
+@import "private-office/void-stat";
+
+// == options ==
+@import "blocks/options/options";
+
+// == graph ==
+@import "blocks/graph/graph-vertical";
+@import "blocks/graph/graph-horizontal";
+@import "blocks/graph/graph-sircle";
+
+// == marketing ==
+@import "marketing/company-page";
+@import "marketing/adv-page";
+@import "marketing/terms-page";
+@import "marketing/404";
+@import "marketing/contacts";
+@import "marketing/info-page";
+@import "marketing/mission-block";
+@import "marketing/franchise-list";
+@import "marketing/general-register";
+@import "marketing/accrual-point";
+@import "marketing/help";
+@import "marketing/certificate";
+@import "marketing/join";
+@import "marketing/about";
+
+// == sections ==
+@import "sections/section";
+
+// == article ==
+@import "articles/articles-page";
+@import "articles/article";
+@import "articles/articles-group";
+@import "articles/articles-nav";
+@import "articles/sorting-article";
+@import "articles/search-article";

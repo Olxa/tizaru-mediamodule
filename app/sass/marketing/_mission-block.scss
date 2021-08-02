@@ -1,0 +1,107 @@
+.mission-block {
+    &__title {
+        margin: 30px 0 15px;
+        font-family: $userfont-bold;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 27px;
+
+        @media (max-width: 992px) {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+    }
+
+    &__company-title {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        color: $gray;
+
+        @media (max-width: 992px) {
+            justify-content: space-between;
+        }
+    }
+
+    &__company-capital {
+        display: inline-block;
+        width: 40%;
+        font-size: 20px;
+
+        @media (max-width: 992px) {
+            width: auto;
+            font-size: 14px;
+        }
+    }
+
+    &__company-source {
+        display: inline-block;
+        font-size: 16px;
+
+        @media (max-width: 992px) {
+            font-size: 14px;
+        }
+    }
+
+    &__company {
+        padding: 20px 0 0 10px;
+        max-width: 940px;
+        margin-bottom: 100px;
+
+        @media (max-width: 992px) {
+            padding-left: 0;
+            margin-bottom: 50px;
+        }
+    }
+
+    &__company-row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    &__company-logo {
+        width: 65px;
+        margin-right: 50px;
+
+        @media (max-width: 992px) {
+            width: 45px;
+            margin-right: 10px;
+        }
+
+        @media (max-width: 768px) {
+            width: 30px;
+        }
+    }
+
+    &__company-line {
+        display: block;
+        width: 100%;
+        height: 35px;
+        background-color: #D2D2D2;
+        border-radius: $border-radius;
+
+        @media (max-width: 992px) {
+            height: 23px;
+        }
+    }
+
+    &__company-progress {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+        padding: 5px 20px 5px 10px;
+        background-color: $accent-dark2;
+        font-family: $userfont-sbold;
+        text-align: left;
+        font-weight: 600;
+        color: #ffffff;
+        border-radius: $border-radius;
+
+        @media (max-width: 992px) {
+            font-size: 11px;
+            padding: 4px 5px;
+        }
+    }
+}
