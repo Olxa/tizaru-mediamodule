@@ -32,9 +32,10 @@
     display: block;
     margin-right: 16px;
 
-    @media (max-width:1200px) {
+    @media (max-width: 1200px) {
         margin: 0;
         height: auto;
+        width: 22px;
     }
 
     &__item {

@@ -39,7 +39,7 @@
         height: 32px;
         margin-right: 50px;
         background: url(../images/dist/logo-short.svg) no-repeat center;
-        background-size: cover;
+        background-size: contain;
 
         @media (max-width: $tablet) {
             margin-right: 0;

@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title><!--#echo var="title" --></title>
+    <meta name="description" content="<!--#echo var=' title' -->">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+    <header class="header-company">
+        <div class="full-container header-company__wrap">
+            <a class="header-company__logo" href="/"></a>
+
+            <button class="burger__btn-menu header-company__burger" type="button">
+                <span class="burger-btn">
+                    <span class="burger-btn__item"></span>
+                    <span class="burger-btn__item"></span>
+                    <span class="burger-btn__item"></span>
+                </span>
+                Меню
+            </button>
+            <div class="header-company__mobil-vis mobil-header-wrapper">
+                <button class="site-header__btn-menu-close i-close"></button>
+                <div class="site-header__info">
+                    <a class="site-header__logo site-header__logo--desk" href="/"></a>
+                    <!--#include virtual="/parts/header-city.html" -->
+                    <!--#include virtual="/parts/header-burger.html" -->
+                </div>
+                <!--#include virtual="/parts/actions-btns.html" -->
+                <!--#include virtual="/parts/header-mobil.html" -->
+            </div>
+            <a class="site-header__logo site-header__logo--tablet" href="/"></a>
+            <div class="container header-company__content">
+                <div class="header-company__content-top">
+                    <!--#include virtual="/parts/header-city.html" -->
+                    <!--#include virtual="/parts/actions-btns.html" -->
+                </div>
+                <div class="header-company__content-bottom">
+                    <!--#include virtual="/parts/header-company-list.html" -->
+                </div>
+            </div>
+            <div class="site-header__user-info user-account">
+                <a class="user-account__status user-account__status--pro" href="#" title="подробнее о про">pro</a>
+                <button class="user-account__btn-open" type="button">
+                    <span class="user-account__user-name">Евгения</span>
+                    <span class="user-account__user-avatar user-account__user-avatar--pro">
+                        <img src="images/dist/or2.jpg" alt="Длиннофамильцева Евгения" />
+                    </span>
+                </button>
+                <!--#include virtual="/parts/header-account-menu.html" -->
+            </div>
+        </div>
+    </header>
