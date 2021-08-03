@@ -275,7 +275,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     $(".js-action-btn").on('click', function () {
-        $(".actions-btns__list").toggleClass('active');
+        $(this).children(".actions-btns__list").toggleClass('active');
     });
 
     $(".user-account__btn-open").on('click', function () {
@@ -496,6 +496,11 @@ if (document.documentElement.clientWidth < 1200) {
 
     $(".footer__mobil-wrap .footer__sub").click(function () {
         $(this).toggleClass('active').siblings('.footer__mobil-wrap .footer__sub-menu').slideToggle();
+        return false;
+    });
+
+    $(".company-menu .company-menu__title").click(function () {
+        $(this).toggleClass('active').siblings('.company-menu__content').slideToggle();
         return false;
     });
 };

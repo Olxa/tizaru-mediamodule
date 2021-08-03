@@ -1,0 +1,68 @@
+.company-menu {
+    &__block {
+    }
+
+    &__title {
+        position: relative;
+        padding: 15px 0;
+        font-family: $userfont-sbold;
+        font-weight: 600;
+        font-size: 14px;
+        border-bottom: 1px solid $border-ligth;
+
+        &::before {
+            content: "\e90f";
+            font-family: if;
+            font-size: 16px;
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            display: block;
+            line-height: 1;
+            margin-top: -8px;
+            transform: rotate( 180deg );
+        }
+
+        &.active::before {
+            transform: rotate(0);
+        }
+    }
+
+    &__content {
+        display: none;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        margin: 0;
+        padding: 20px 10px;
+
+        @media (max-width: 374px) {
+            padding: 20px 0;
+        }
+
+        &--gray {
+            background-color: $white;
+        }
+    }
+
+
+    &__item {
+        width: 33.333%;
+        font-size: 14px;
+        margin-bottom: 15px;
+
+        @media (max-width: $mobile) {
+            width: 50%;
+        }
+    }
+
+    &__link {
+
+        &:hover {
+            color: $accent;
+        }
+    }
+}

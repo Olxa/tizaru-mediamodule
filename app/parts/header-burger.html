@@ -1,55 +1,205 @@
 <div class="main-menu">
     <div class="full-container">
-        <div class="main-menu__search input-search">
-            <input class="input input-search__val" type="text" placeholder="Поиск">
-            <button class="input-search__btn i-search" type="submit">Поиск</button>
+        <div class="row">
+            <div class="col-xl-7 offset-xl-5 main-menu__search input-search">
+                <input class="input input-search__val" type="text" placeholder="Поиск">
+                <button class="input-search__btn i-search" type="submit">Поиск</button>
+            </div>
         </div>
         <div class="main-menu__tabs-nav">
-            <button class="main-menu__tabs-btn active" type="button" data-btn="world">Tizaru WORLD</button>
+            <button class="main-menu__tabs-btn mobil-vis active" type="button" data-btn="world">Tizaru WORLD</button>
             <button class="main-menu__tabs-btn mobil-vis" type="button" data-btn="about">О Tizaru</button>
         </div>
-        <nav class="main-menu__wrapper">
-            <div class="main-menu__col main-menu__col-left active" data-col="world">
-                <ul class="main-menu__list">
-                    <li class="main-menu__li"><a class="main-menu__link" href="#">Все разделы</a></li>
-                    <li class="main-menu__li"><a class="main-menu__link" href="#">Бизнес</a></li>
-                    <li class="main-menu__li"><a class="main-menu__link" href="#">Технологии</a></li>
-                    <li class="main-menu__li"><a class="main-menu__link" href="#">Финансы и инвестиции</a></li>
-                    <li class="main-menu__li"><a class="main-menu__link" href="#">Экспертное мнение</a></li>
-                    <li class="main-menu__li"><a class="main-menu__link" href="#">Персоны</a></li>
-                </ul>
-                <ul class="main-menu__list">
-                    <li class="main-menu__li"><a class="main-menu__link" href="#">Видео</a></li>
-                    <li class="main-menu__li"><a class="main-menu__link" href="#">Карьера и свой бизнес</a></li>
-                    <li class="main-menu__li"><a class="main-menu__link" href="#">Общество</a></li>
-                    <li class="main-menu__li"><a class="main-menu__link" href="#">Культура</a></li>
-                    <li class="main-menu__li"><a class="main-menu__link" href="#">Спорт</a></li>
-                </ul>
+        <nav class="row main-menu__wrapper">
+            <div class="col-xl-5 main-menu__col active" data-col="world">
+                <div class="row">
+                    <div class="col-xl-6 main-menu__col-inner">
+                        <div class="main-menu__col-title">Tizaru WORLD</div>
+                    </div>
+                    <div class="col-xl-6  main-menu__col-inner">
+                        <div class="actions-btns__btn actions-btns__btn--border main-menu__add-post js-action-btn">
+                            <span class="actions-btns__value">Новая запись</span>
+                            <ul class="actions-btns__list">
+                                <li class="actions-btns__item"><a class="actions-btns__link" href="#">Создать статью</a></li>
+                                <li class="actions-btns__item"><a class="actions-btns__link" href="#">Создать галлерею</a></li>
+                                <li class="actions-btns__item"><a class="actions-btns__link" href="#">Создать видео</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6  main-menu__col-inner">
+                        <ul class="main-menu__list">
+                            <li class="main-menu__li"><a class="main-menu__link" href="#">Свежее <span class="main-menu__li-count">1534</span></a></li>
+                            <li class="main-menu__li"><a class="main-menu__link" href="#">Популярное</a></li>
+                            <li class="main-menu__li"><a class="main-menu__link" href="#">Новости</a></li>
+                            <li class="main-menu__li"><a class="main-menu__link" href="#">Компании</a></li>
+                            <li class="main-menu__li mobil-vis"><a class="main-menu__link" href="#"><span class="text-accent">PRO</span> аккаунт</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6  main-menu__col-inner">
+                        <div class="main-menu__chek">
+                            <div class="main-menu__chek-header">
+                                <span class="main-menu__chek-title">Сообщества</span>
+                                <a class="main-menu__chek-link" href="#">Все</a>
+                            </div>
+                            <ul class="main-menu__chek-list scroll-gray">
+                                <li class="main-menu__chek-item">
+                                    <div class="checkbox"><input class="checkbox__field" id="community1" type="checkbox"><label class="checkbox__value" for="community1">Бизнес</label></div>
+                                </li>
+                                <li class="main-menu__chek-item">
+                                    <div class="checkbox"><input class="checkbox__field" id="community2" type="checkbox"><label class="checkbox__value" for="community2">Технологии</label></div>
+                                </li>
+                                <li class="main-menu__chek-item">
+                                    <div class="checkbox"><input class="checkbox__field" id="community3" type="checkbox"><label class="checkbox__value" for="community3">Финансы и инвестиции</label></div>
+                                </li>
+                                <li class="main-menu__chek-item">
+                                    <div class="checkbox"><input class="checkbox__field" id="community4" type="checkbox"><label class="checkbox__value" for="community4">Видео</label></div>
+                                </li>
+                                <li class="main-menu__chek-item">
+                                    <div class="checkbox"><input class="checkbox__field" id="community5" type="checkbox"><label class="checkbox__value" for="community5">Общество</label></div>
+                                </li>
+                                <li class="main-menu__chek-item">
+                                    <div class="checkbox"><input class="checkbox__field" id="community6" type="checkbox"><label class="checkbox__value" for="community6">Культура</label></div>
+                                </li>
+                                <li class="main-menu__chek-item">
+                                    <div class="checkbox"><input class="checkbox__field" id="community7" type="checkbox"><label class="checkbox__value" for="community7">Наука и техника</label></div>
+                                </li>
+                                <li class="main-menu__chek-item">
+                                    <div class="checkbox"><input class="checkbox__field" id="community8" type="checkbox"><label class="checkbox__value" for="community8">Про искусство</label></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="main-menu__col main-menu__col-right" data-col="about">
-                <ul class="main-menu__list">
-                    <li class="main-menu__li"><a class="main-menu__link" href="#">Команда проекта</a></li>
-                    <li class="main-menu__li"><a class="main-menu__link" href="#">Наша миссия</a></li>
-                    <li class="main-menu__li"><a class="main-menu__link" href="#">Помощь проекту</a></li>
-                    <li class="main-menu__li"><a class="main-menu__link" href="#">Станьте частью команды проекта</a></li>
-                    <li class="main-menu__li"><a class="main-menu__link" href="#">Пользовательское <br /> соглашение</a></li>
-                </ul>
-                <ul class="main-menu__list">
-                    <li class="main-menu__li"><a class="main-menu__link" href="#">Станьте совладельцем проекта</a></li>
-                    <li class="main-menu__li"><a class="main-menu__link" href="#">О проекте</a></li>
-                    <li class="main-menu__li"><a class="main-menu__link" href="#">Открытие франшизы</a></li>
-                    <li class="main-menu__li"><a class="main-menu__link" href="#">Список франшиз</a></li>
-                    <li class="main-menu__li"><a class="main-menu__link" href="#">Общий реестр</a></li>
-                    <li class="main-menu__li"><a class="main-menu__link" href="#">Блог</a></li>
-                </ul>
-                <ul class="main-menu__list">
-                    <li class="main-menu__li"><a class="main-menu__link" href="#">Сертификат TIZARU</a></li>
-                    <li class="main-menu__li"><a class="main-menu__link" href="#">Получение баллов</a></li>
-                    <li class="main-menu__li"><a class="main-menu__link" href="#">Реклама</a></li>
-                    <li class="main-menu__li"><a class="main-menu__link" href="#">Контакты</a></li>
-                    <li class="main-menu__li"><a class="main-menu__link" href="#">О компании</a></li>
-                </ul>
+            <div class="col-xl-7 main-menu__col" data-col="about">
+                <div class="main-menu__col-title">О Tizaru</div>
+                <div class="row main-menu__col-desk">
+                    <div class="col-xl-4">
+                        <ul class="main-menu__list">
+                            <li class="main-menu__li"><a class="main-menu__link" href="#">О компании</a></li>
+                            <li class="main-menu__li"><a class="main-menu__link" href="#">О проекте</a></li>
+                            <li class="main-menu__li"><a class="main-menu__link" href="#">Презентация</a></li>
+                            <li class="main-menu__li"><a class="main-menu__link" href="#">Франшиза</a></li>
+                            <li class="main-menu__li"><a class="main-menu__link" href="#">Блог</a></li>
+                            <li class="main-menu__li"><a class="main-menu__link" href="#">Общий реестр</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-4">
+                        <ul class="main-menu__list">
+                            <li class="main-menu__li"><a class="main-menu__link" href="#">Медиа модуль Tizaru World</a></li>
+                            <li class="main-menu__li"><a class="main-menu__link" href="#">Стартапам</a></li>
+                            <li class="main-menu__li"><a class="main-menu__link" href="#">Работающим интернет сервисам</a></li>
+                            <li class="main-menu__li"><a class="main-menu__link" href="#">Интернет изданиям</a></li>
+                            <li class="main-menu__li"><a class="main-menu__link" href="#">Блогерам</a></li>
+                            <li class="main-menu__li"><a class="main-menu__link" href="#">Реклама в подарок!</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-4">
+                        <ul class="main-menu__list">
+                            <li class="main-menu__li"><a class="main-menu__link" href="#">Начисление баллов</a></li>
+                            <li class="main-menu__li"><a class="main-menu__link" href="#">Присоединится к команде</a></li>
+                            <li class="main-menu__li"><a class="main-menu__link" href="#">Ассоциация совместного развития </a></li>
+                            <li class="main-menu__li"><a class="main-menu__link" href="#"><span class="text-accent">PRO</span> аккаунт</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main-menu__col-mob company-menu">
+                    <div class="company-menu__block">
+                        <div class="company-menu__title">Компания</div>
+                        <div class="company-menu__content">
+                            <ul class="company-menu__list company-menu__list--gray">
+                                <li class="company-menu__item"><a class="company-menu__link" href="#">О компании</a></li>
+                                <li class="company-menu__item"><a class="company-menu__link" href="#">Стратегия</a></li>
+                                <li class="company-menu__item"><a class="company-menu__link" href="#">Команда</a></li>
+                                <li class="company-menu__item"><a class="company-menu__link" href="#">Презентация</a></li>
+                                <li class="company-menu__item"><a class="company-menu__link" href="#">История</a></li>
+                                <li class="company-menu__item"><a class="company-menu__link" href="#">Блог</a></li>
+                                <li class="company-menu__item"><a class="company-menu__link" href="#">Социальная ответстенность</a></li>
+                            </ul>
+                        </div>                        
+                    </div>
+                    <div class="company-menu__block">
+                        <div class="company-menu__title">О проекте</div>
+                        <div class="company-menu__content">
+                            <ul class="company-menu__list company-menu__list--gray">
+                                <li class="company-menu__item"><a class="company-menu__link" href="#">О Tizaru</a></li>
+                                <li class="company-menu__item"><a class="company-menu__link" href="#">Дорожная карта</a></li>
+                                <li class="company-menu__item"><a class="company-menu__link" href="#">Общий реестр</a></li>
+                                <li class="company-menu__item"><a class="company-menu__link" href="#">Становитесь частью команды</a></li>
+                                <li class="company-menu__item"><a class="company-menu__link" href="#">Получение баллов</a></li>
+                                <li class="company-menu__item"><a class="company-menu__link" href="#">Помощь проекту</a></li>
+                                <li class="company-menu__item"><a class="company-menu__link" href="#">Присоединяйтесь к команде</a></li>
+                                <li class="company-menu__item"><a class="company-menu__link" href="#">Пользовательское соглашение</a></li>
+                            </ul>
+                        </div>                        
+                    </div>
+                    <div class="company-menu__block">
+                        <div class="company-menu__title">Продукты</div>
+                        <div class="company-menu__content">
+                            <ul class="company-menu__list company-menu__list--gray">
+                                <li class="company-menu__item"><a class="company-menu__link" href="#">Международный электронный каталог</a></li>
+                                <li class="company-menu__item"><a class="company-menu__link" href="#">Медиа модуль Tizaru World</a></li>
+                                <li class="company-menu__item"><a class="company-menu__link" href="#">Технологии</a></li>
+                            </ul>
+                        </div>                        
+                    </div>
+                    <div class="company-menu__block">
+                        <div class="company-menu__title">Карьера</div>
+                        <div class="company-menu__content">
+                            <ul class="company-menu__list company-menu__list--gray">
+                                <li class="company-menu__item"><a class="company-menu__link" href="#">Вакансии</a></li>
+                            </ul>
+                        </div>                       
+                    </div>
+                    <div class="company-menu__block">
+                        <div class="company-menu__title">Франшиза</div>
+                        <div class="company-menu__content">
+                            <ul class="company-menu__list company-menu__list--gray">
+                                <li class="company-menu__item"><a class="company-menu__link" href="#">О франшизе</a></li>
+                                <li class="company-menu__item"><a class="company-menu__link" href="#">Список франшиз</a></li>
+                                <li class="company-menu__item"><a class="company-menu__link" href="#">Открытие франшизы</a></li>
+                            </ul>
+                        </div>                       
+                    </div>
+                    <div class="company-menu__block">
+                        <div class="company-menu__title">Для прессы</div>
+                        <div class="company-menu__content">
+                            <ul class="company-menu__list company-menu__list--gray">
+                                <li class="company-menu__item"><a class="company-menu__link" href="#">Новости</a></li>
+                                <li class="company-menu__item"><a class="company-menu__link" href="#">Исследования</a></li>
+                                <li class="company-menu__item"><a class="company-menu__link" href="#">Визуальный стиль</a></li>
+                                <li class="company-menu__item"><a class="company-menu__link" href="#">Контакты пресс-службы</a></li>
+                            </ul>
+                        </div>                        
+                    </div>
+                    <div class="company-menu__block">
+                        <div class="company-menu__title">Партнёрам</div>
+                        <div class="company-menu__content">
+                            <ul class="company-menu__list company-menu__list--gray">
+                                <li class="company-menu__item"><a class="company-menu__link" href="#">Ассоциация совместного развития </a></li>
+                                <li class="company-menu__item"><a class="company-menu__link" href="#">Стартапам</a></li>
+                                <li class="company-menu__item"><a class="company-menu__link" href="#">Работающим интернет сервисам</a></li>
+                                <li class="company-menu__item"><a class="company-menu__link" href="#">Интернет изданиям</a></li>
+                                <li class="company-menu__item"><a class="company-menu__link" href="#">Блогерам</a></li>
+                            </ul>
+                        </div>                       
+                    </div>
+                    <div class="company-menu__block">
+                        <div class="company-menu__title">Рекламодателям</div>
+                        <div class="company-menu__content">
+                            <ul class="company-menu__list company-menu__list--gray">
+                                <li class="company-menu__item"><a class="company-menu__link" href="#">Контекстная реклама</a></li>
+                                <li class="company-menu__item"><a class="company-menu__link" href="#">Нативная реклама и статьи на правах рекламы</a></li>
+                                <li class="company-menu__item"><a class="company-menu__link" href="#">Банерная реклама</a></li>
+                                <li class="company-menu__item"><a class="company-menu__link" href="#">Представительства</a></li>
+                                <li class="company-menu__item"><a class="company-menu__link" href="#">Реклама в подарок!</a></li>
+                            </ul>
+                        </div>                        
+                    </div>
+                </div>
             </div>
-        </nav>        
+        </nav>
     </div>
 </div>
