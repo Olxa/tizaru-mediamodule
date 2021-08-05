@@ -6,23 +6,32 @@
     margin: 0;
     line-height: normal;
 
-    @media (max-width: 1200px) {
+    @media (max-width: $tablet) {
         display: none;
-        padding-bottom: 15px
+        padding: 10px 20px 15px;
+        background-color: #ffffff;
+    }
+
+    &__list {
+        @media (max-width: $tablet) {
+            display: flex;
+            flex-wrap: wrap;
+        }
     }
 
     &__item {
         margin-bottom: 10px;
 
-        @media (max-width: 1200px) {
+        @media (max-width: $tablet) {
             width: 50%;
+            padding-right: 10px;
             margin-bottom: 15px;
         }
 
         &:last-child {
             margin-bottom: 0;
 
-            @media (max-width: 1200px) {
+            @media (max-width: $tablet) {
                 margin-bottom: 0;
             }
         }
@@ -34,9 +43,8 @@
         display: block;
         position: relative;
 
-        @media (max-width: 1200px) {
+        @media (max-width: $laptop) {
             font-size: 14px;
-            font-weight: 600;
         }
 
         &:hover,

@@ -7,7 +7,7 @@
     line-height: 1.2;
     font-weight: 600;
 
-    @media (max-width: 1200px) {
+    @media (max-width: $tablet) {
         margin: 0;
         width: 100%;
         border-bottom: 0.5px solid #E0E0E0;
@@ -20,7 +20,7 @@
     &__item {
         margin-bottom: 30px;
 
-        @media (max-width: 1200px) {
+        @media (max-width: $tablet) {
             width: 50%;
             margin-bottom: 15px;
         }
@@ -28,7 +28,7 @@
         &:last-child {
             margin-bottom: 0;
 
-            @media (max-width: 1200px) {
+            @media (max-width: $tablet) {
                 margin-bottom: 0;
             }
         }
@@ -42,7 +42,7 @@
         display: block;
         position: relative;
 
-        @media (max-width: 1200px) {
+        @media (max-width: $tablet) {
             font-size: 14px;
             font-weight: 600;
         }
