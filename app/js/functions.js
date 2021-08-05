@@ -378,6 +378,22 @@ document.addEventListener("DOMContentLoaded", function () {
     $(".mobil-filter__btn-region").on('click', function () {
         $(".mobil-filter__region").addClass('active');
     });
+
+    //Табы
+    $('.tabgroup > .tabgroup__item').hide();
+    $('.tabgroup > .tabgroup__item:first-of-type').show();
+    $('.tabs .tabs__nav-link').click(function (e) {
+        e.preventDefault();
+        var $this = $(this),
+            tabgroup = '#' + $this.parents('.tabs').data('tabgroup'),
+            others = $this.closest('.tabs__nav').siblings().children('.tabs__nav-link'),
+            target = $this.attr('href');
+        others.removeClass('active');
+        $this.addClass('active');
+        $(tabgroup).children('.tabgroup__item').hide();
+        $(target).show();
+
+    })
 });
 
 $(document).on('mouseup', function (e) {

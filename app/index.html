@@ -1,776 +1,849 @@
 <!--#set var="title" value="Главная" -->
 <!--#include virtual="/parts/header.html" -->
-
-	<div class="home-nav">
-        <div class="container">
-            <div class="home-nav__logo"><img class="home-nav__logo-image" src="images/dist/logo-full.svg" alt="Tizaru"></div>
-            <!--#include virtual="/parts/home-services.html" -->
-            <!--#include virtual="/parts/category-bar.html" -->
-            <!--#include virtual="/parts/mobil-bar.html" -->
+<div class="home-nav">
+    <div class="container">
+        <div class="home-nav__logo"><img class="home-nav__logo-image" src="images/dist/logo-full.svg" alt="Tizaru"></div>
+        <!--#include virtual="/parts/home-services.html" -->
+        <!--#include virtual="/parts/category-bar.html" -->
+        <!--#include virtual="/parts/mobil-bar.html" -->
+    </div>
+</div>
+<div class="container media__container">
+    <div class="media__header media-feed">
+        <div class="media-feed__tabs">
+            <a class="media-feed__lent-link" href="/feed.html">World</a>
+            <ul class="tabs tabs__nav-list tabs--feed" data-tabgroup="feed-content">
+                <li class="tabs__nav"><a class="tabs__nav-link active" href="#feeds">Ваша лента</a></li>
+                <li class="tabs__nav"><a class="tabs__nav-link" href="#chanels">Все каналы</a></li>
+            </ul>
         </div>
-	</div>
-
-	<div class="home-category preview-block"> 
-		<div class="container">
-			<h2 class="block-title text-center">Бизнес</h2>
-			<div class="slider content-slider mobil-none">
-				<div class="content-slider__item">
-					<div class="row">
-						<div class="col-md-8">
-                            <div class="preview">
-                                <div class="preview__inner">
-                                    <a href="#" class="preview__img"><img src="images/dist/n1.jpg" alt=""></a>
-                                    <div class="preview__text">
-                                        <a href="#" class="preview__title">Нанимателям разрешили отпускать работников в отпуска для самоизоляции. Как это должно работать</a>
-                                        <div class="preview__footer">
-                                            <div class="preview__data">10.01.2021</div>
-                                            <div class="preview__views i-eye">120</div>
+        <div class="media-feed__tools">
+            <ul class="media-feed__tools-list">
+                <li class="media-feed__tools-item">
+                    поиск
+                </li>
+                <li class="media-feed__tools-item">
+                    нью
+                </li>
+                <li class="media-feed__tools-item">
+                    топ
+                </li>
+                <li class="media-feed__tools-item">
+                    опции
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="feed-content" class="tabgroup">
+        <div class="tabgroup__item media-feed__content" id="feeds">
+            <p class="media-feed__agree">Используя world, вы принимаете <a class="media-feed__agree-link" href="#">условия использования</a></p>
+            <div class="media-feed__posts">
+                <div class="row">
+                    <div class="col-xl-4">
+                        <div class="post-card">
+                            <div class="post-card__header">
+                                <div class="post-card__info">
+                                    <a class="post-card__chanel-link" href="chanel-detail.html"><img class="post-card__chanel-logo" src="images/dist/chanel.jpg" alt="Название канала" /></a>
+                                    <div class="post-card__chanel-info-wrap">
+                                        <div class="post-card__chanel-info">
+                                            <a class="post-card__chanel-name" href="#">Название канала</a>
+                                            <button class="post-card__btn-sub post-card__btn-sub--signed" title="отписаться">вы подписаны</button>
                                         </div>
+                                        <a class="post-card__community tag tag--link" href="#">Название собщества</a>
                                     </div>
-                                </div>                               
-                            </div>
-						</div>
-						<div class="col-md-4">
-                            <div class="preview">
-                                <div class="preview__inner">
-                                    <a href="#" class="preview__img"><img src="images/dist/n2.jpg" alt=""></a>
-                                    <div class="preview__text">
-                                        <a href="#" class="preview__title">Правительство снизило ставки по льготным кредитам для бизнеса</a>
-                                        <div class="preview__footer">
-                                            <div class="preview__data">10.01.2021</div>
-                                            <div class="preview__views i-eye">120</div>
-                                        </div>
-                                    </div>
-                                </div>                              
-                            </div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-4">
-                            <div class="preview">
-                                <div class="preview__inner">
-                                    <a href="#" class="preview__img"><img src="images/dist/n3.jpg" alt=""></a>
-                                    <div class="preview__text">
-                                        <a href="#" class="preview__title">Мишустин уверен в быстром восстановлении экономики России</a>
-                                        <div class="preview__footer">
-                                            <div class="preview__data">10.01.2021</div>
-                                            <div class="preview__views i-eye">120</div>
-                                        </div>
-                                    </div>
-                                </div>                                
-                            </div>
-						</div>
-						<div class="col-md-4">
-                            <div class="preview">
-                                <div class="preview__inner">
-                                    <a href="#" class="preview__img"><img src="images/dist/n4.jpg" alt=""></a>
-                                    <div class="preview__text">
-                                        <a href="#" class="preview__title">«Слабые должны уйти»: в какой поддержке нуждается бизнес</a>
-                                        <div class="preview__footer">
-                                            <div class="preview__data">10.01.2021</div>
-                                            <div class="preview__views i-eye">120</div>
-                                        </div>
-                                    </div>
-                                </div>                               
-                            </div>
-						</div>
-						<div class="col-md-4">
-                            <div class="preview">
-                                <div class="preview__inner">
-                                    <a href="#" class="preview__img"><img src="images/dist/n5.jpg" alt=""></a>
-                                    <div class="preview__text">
-                                        <a href="#" class="preview__title">«Бесполезная работа»: банки не хотят объяснять отказ в кредитовании</a>
-                                        <div class="preview__footer">
-                                            <div class="preview__data">10.01.2021</div>
-                                            <div class="preview__views i-eye">120</div>
-                                        </div>
-                                    </div>
-                                </div>                               
-                            </div>
-						</div>
-					</div>
-				</div>
-				<div class="content-slider__item">
-					<div class="row">
-						<div class="col-md-8">
-                            <div class="preview">
-                                <div class="preview__inner">
-                                    <a href="#" class="preview__img"><img src="images/dist/n1.jpg" alt=""></a>
-                                    <div class="preview__text">
-                                        <a href="#" class="preview__title">Нанимателям разрешили отпускать работников в отпуска для самоизоляции. Как это должно работать</a>
-                                        <div class="preview__footer">
-                                            <div class="preview__data">10.01.2021</div>
-                                            <div class="preview__views i-eye">120</div>
-                                        </div>
-                                    </div>
-                                </div>                               
-                            </div>
-						</div>
-						<div class="col-md-4">
-                            <div class="preview">
-                                <div class="preview__inner">
-                                    <a href="#" class="preview__img"><img src="images/dist/n2.jpg" alt=""></a>
-                                    <div class="preview__text">
-                                        <a href="#" class="preview__title">Правительство снизило ставки по льготным кредитам для бизнеса</a>
-                                        <div class="preview__footer">
-                                            <div class="preview__data">10.01.2021</div>
-                                            <div class="preview__views i-eye">120</div>
-                                        </div>
-                                    </div>
-                                </div>                                
-                            </div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-4">
-                            <div class="preview">
-                                <div class="preview__inner">
-                                    <a href="#" class="preview__img"><img src="images/dist/n3.jpg" alt=""></a>
-                                    <div class="preview__text">
-                                        <a href="#" class="preview__title">Мишустин уверен в быстром восстановлении экономики России</a>
-                                        <div class="preview__footer">
-                                            <div class="preview__data">10.01.2021</div>
-                                            <div class="preview__views i-eye">120</div>
-                                        </div>
-                                    </div>
-                                </div>                               
-                            </div>
-						</div>
-						<div class="col-md-4">
-                            <div class="preview">
-                                <div class="preview__inner">
-                                    <a href="#" class="preview__img"><img src="images/dist/n4.jpg" alt=""></a>
-                                    <div class="preview__text">
-                                        <a href="#" class="preview__title">«Слабые должны уйти»: в какой поддержке нуждается бизнес</a>
-                                        <div class="preview__footer">
-                                            <div class="preview__data">10.01.2021</div>
-                                            <div class="preview__views i-eye">120</div>
-                                        </div>
-                                    </div>
-                                </div>                               
-                            </div>
-						</div>
-						<div class="col-md-4">
-                            <div class="preview">
-                                <div class="preview__inner">
-                                    <a href="#" class="preview__img"><img src="images/dist/n5.jpg" alt=""></a>
-                                    <div class="preview__text">
-                                        <a href="#" class="preview__title">«Бесполезная работа»: банки не хотят объяснять отказ в кредитовании</a>
-                                        <div class="preview__footer">
-                                            <div class="preview__data">10.01.2021</div>
-                                            <div class="preview__views i-eye">120</div>
-                                        </div>
-                                    </div>
-                                </div>                               
-                            </div>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			<div class="slider content-carusel content-carusel-3 mobil-vis">
-				<div class="content-carusel__item">
-                    <div class="preview preview_min">
-                        <div class="preview__inner">
-                            <a href="#" class="preview__img"><img src="images/dist/n9.jpg" alt=""></a>
-                            <div class="preview__text">
-                                <a href="#" class="preview__title">Контроль операций с денежными средствами и имуществом: нововведения января</a>
-                                <div class="preview__footer">
-                                    <div class="preview__data">10.01.2021</div>
-                                    <div class="preview__views i-eye">120</div>
+                                </div>
+                                <div class="post-card__tools">
+                                    <button class="post-card__tools-btn i-option"></button>
                                 </div>
                             </div>
-                        </div>                       
-                    </div>
-				</div>
-				<div class="content-carusel__item">
-					<div class="preview preview_min">
-
-						<a href="#" class="preview__img"><img src="images/dist/n10.jpg" alt=""></a>
-						<div class="preview__text">
-							<a href="#" class="preview__title">Прогрессивная ставка НДФЛ и другие новшества Федерального закона № 372-ФЗ</a>
-							<div class="preview__footer">
-								<div class="preview__data">10.01.2021</div>
-								<div class="preview__views i-eye">120</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="content-carusel__item">
-					<div class="preview preview_min">
-						<a href="#" class="preview__img"><img src="images/dist/n11.jpg" alt=""></a>
-						<div class="preview__text">
-							<a href="#" class="preview__title">Безналоговая передача имущества в бизнесе: какой инструмент выбрать?</a>
-							<div class="preview__footer">
-								<div class="preview__data">10.01.2021</div>
-								<div class="preview__views i-eye">120</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="content-carusel__item">
-					<div class="preview preview_min">
-						<a href="#" class="preview__img"><img src="images/dist/n9.jpg" alt=""></a>
-						<div class="preview__text">
-							<a href="#" class="preview__title">Управляющая компания для бизнеса: возможности, варианты и риски</a>
-							<div class="preview__footer">
-								<div class="preview__data">10.01.2021</div>
-								<div class="preview__views i-eye">120</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="content-carusel__item">
-					<div class="preview preview_min">
-						<a href="#" class="preview__img"><img src="images/dist/n11.jpg" alt=""></a>
-						<div class="preview__text">
-							<a href="#" class="preview__title">Безналоговая передача имущества в бизнесе: какой инструмент выбрать?</a>
-							<div class="preview__footer">
-								<div class="preview__data">10.01.2021</div>
-								<div class="preview__views i-eye">120</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="more-wrapper">
-				<a class="link link-accent link--border" href="#">Читать все статьи</a>
-			</div>
-		</div>
-	</div>
-
-	<!--#include virtual="/parts/perebivka.html" -->
-
-	<!--#include virtual="/parts/persons.html" -->
-
-	<div class="preview-block">
-		<div class="container">
-			<h2 class="block-title text-center">Технологии</h2>
-			<div class="slider content-carusel content-carusel-3">
-				<div class="content-carusel__item">
-                    <div class="preview">
-                        <div class="preview__inner">
-                            <a href="#" class="preview__img"><img src="images/dist/n6.jpg" alt=""></a>
-                            <div class="preview__text">
-                                <a href="#" class="preview__title">СМИ: Apple начала разработку складного iPhone</a>
-                                <div class="preview__footer">
-                                    <div class="preview__data">10.01.2021</div>
-                                    <div class="preview__views i-eye">120</div>
+                            <div class="post-card__content">
+                                <a class="post-card__image-wrap" href="#"><img class="post-card__image" src="images/dist/chanel.jpg" alt="Название поста" /></a>
+                                <div class="post-card__content-inner">
+                                    <h3 class="post-card__name">Содержательное название поста</h3>
+                                    <p class="post-card__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod gravida dolor sit amet lacus accumn bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...</p>
                                 </div>
                             </div>
-                        </div>                       
-                    </div>
-				</div>
-				<div class="content-carusel__item">
-                    <div class="preview">
-                        <div class="preview__inner">
-                            <a href="#" class="preview__img"><img src="images/dist/n7.jpg" alt=""></a>
-                            <div class="preview__text">
-                                <a href="#" class="preview__title">Самые странные (или гениальные?) гаджеты с CES 2021</a>
-                                <div class="preview__footer">
-                                    <div class="preview__data">10.01.2021</div>
-                                    <div class="preview__views i-eye">120</div>
-                                </div>
-                            </div>
-                        </div>                       
-                    </div>
-				</div>
-				<div class="content-carusel__item">
-                    <div class="preview">
-                        <div class="preview__inner">
-                            <a href="#" class="preview__img"><img src="images/dist/n8.jpg" alt=""></a>
-                            <div class="preview__text">
-                                <a href="#" class="preview__title">Почему Waymo отказалась называть свои автомобили «самоуправляемыми»</a>
-                                <div class="preview__footer">
-                                    <div class="preview__data">10.01.2021</div>
-                                    <div class="preview__views i-eye">120</div>
-                                </div>
-                            </div>
-                        </div>                        
-                    </div>
-				</div>
-				<div class="content-carusel__item">
-                    <div class="preview">
-                        <div class="preview__inner">
-                            <a href="#" class="preview__img"><img src="images/dist/n7.jpg" alt=""></a>
-                            <div class="preview__text">
-                                <a href="#" class="preview__title">Самые странные (или гениальные?) гаджеты с CES 2021</a>
-                                <div class="preview__footer">
-                                    <div class="preview__data">10.01.2021</div>
-                                    <div class="preview__views i-eye">120</div>
+                            <div class="post-card__bottom">
+                                <div class="post-card__country"><img class="post-card__country-flag" src="images/dist/flag/ru-reg.svg" alt="Россия" /></div>
+                                <div class="post-card__control">
+                                    <div class="post-card__control-share"></div>
+                                    <div class="post-card__control-likes like">
+                                        <button class="like__item i-like-b"></button>
+                                        <button class="like__item i-like"></button>
+                                        <button class="like__item i-dislike-b"></button>
+                                        <button class="like__item i-dislike"></button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                       
                     </div>
-				</div>
-			</div>
-			<div class="more-wrapper">
-				<a class="link link-accent link--border" href="#">Читать все статьи</a>
-			</div>
-		</div>
-	</div>
+                    <div class="col-xl-4">
 
-	<div class="preview-block">
-		<div class="container">
-			<h2 class="block-title text-center">Финансы и инвестиции</h2>
-			<div class="slider content-carusel content-carusel-4">
-				<div class="content-carusel__item">
-                    <div class="preview preview_min">
-                        <div class="preview__inner">
-                            <a href="#" class="preview__img"><img src="images/dist/n9.jpg" alt=""></a>
-                            <div class="preview__text">
-                                <a href="#" class="preview__title">Контроль операций с денежными средствами и имуществом: нововведения января</a>
-                                <div class="preview__footer">
-                                    <div class="preview__data">10.01.2021</div>
-                                    <div class="preview__views i-eye">120</div>
-                                </div>
-                            </div>
-                        </div>                       
                     </div>
-				</div>
-				<div class="content-carusel__item">
-                    <div class="preview preview_min">
-                        <div class="preview__inner">
-                            <a href="#" class="preview__img"><img src="images/dist/n10.jpg" alt=""></a>
-                            <div class="preview__text">
-                                <a href="#" class="preview__title">Прогрессивная ставка НДФЛ и другие новшества Федерального закона № 372-ФЗ</a>
-                                <div class="preview__footer">
-                                    <div class="preview__data">10.01.2021</div>
-                                    <div class="preview__views i-eye">120</div>
-                                </div>
-                            </div>
-                        </div>                       
-                    </div>
-				</div>
-				<div class="content-carusel__item">
-                    <div class="preview preview_min">
-                        <div class="preview__inner">
-                            <a href="#" class="preview__img"><img src="images/dist/n11.jpg" alt=""></a>
-                            <div class="preview__text">
-                                <a href="#" class="preview__title">Безналоговая передача имущества в бизнесе: какой инструмент выбрать?</a>
-                                <div class="preview__footer">
-                                    <div class="preview__data">10.01.2021</div>
-                                    <div class="preview__views i-eye">120</div>
-                                </div>
-                            </div>
-                        </div>                       
-                    </div>
-				</div>
-				<div class="content-carusel__item">
-                    <div class="preview preview_min">
-                        <div class="preview__inner">
-                            <a href="#" class="preview__img"><img src="images/dist/n9.jpg" alt=""></a>
-                            <div class="preview__text">
-                                <a href="#" class="preview__title">Управляющая компания для бизнеса: возможности, варианты и риски</a>
-                                <div class="preview__footer">
-                                    <div class="preview__data">10.01.2021</div>
-                                    <div class="preview__views i-eye">120</div>
-                                </div>
-                            </div>
-                        </div>                        
-                    </div>
-				</div>
-				<div class="content-carusel__item">
-                    <div class="preview preview_min">
-                        <div class="preview__inner">
-                            <a href="#" class="preview__img"><img src="images/dist/n11.jpg" alt=""></a>
-                            <div class="preview__text">
-                                <a href="#" class="preview__title">Безналоговая передача имущества в бизнесе: какой инструмент выбрать?</a>
-                                <div class="preview__footer">
-                                    <div class="preview__data">10.01.2021</div>
-                                    <div class="preview__views i-eye">120</div>
-                                </div>
-                            </div>
-                        </div>                       
-                    </div>
-				</div>
-			</div>
-			<div class="more-wrapper">
-				<a class="link link-accent link--border" href="#">Читать все статьи</a>
-			</div>
-		</div>
-	</div>
+                    <div class="col-xl-4">
 
-	<!--#include virtual="/parts/expert-opinion.html" -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tabgroup__item media-feed__content" id="chanels">
+            <p class="media-feed__agree">Используя world, вы принимаете <a class="media-feed__agree-link" href="#">условия использования</a></p>
+            <div class="">
+                22
+            </div>
+        </div>
+    </div>
+</div>
 
-	<!--#include virtual="/parts/perebivka2.html" -->
+<div class="home-category preview-block">
+    <div class="container">
+        <h2 class="block-title text-center">Бизнес</h2>
+        <div class="slider content-slider mobil-none">
+            <div class="content-slider__item">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="preview">
+                            <div class="preview__inner">
+                                <a href="#" class="preview__img"><img src="images/dist/n1.jpg" alt=""></a>
+                                <div class="preview__text">
+                                    <a href="#" class="preview__title">Нанимателям разрешили отпускать работников в отпуска для самоизоляции. Как это должно работать</a>
+                                    <div class="preview__footer">
+                                        <div class="preview__data">10.01.2021</div>
+                                        <div class="preview__views i-eye">120</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="preview">
+                            <div class="preview__inner">
+                                <a href="#" class="preview__img"><img src="images/dist/n2.jpg" alt=""></a>
+                                <div class="preview__text">
+                                    <a href="#" class="preview__title">Правительство снизило ставки по льготным кредитам для бизнеса</a>
+                                    <div class="preview__footer">
+                                        <div class="preview__data">10.01.2021</div>
+                                        <div class="preview__views i-eye">120</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="preview">
+                            <div class="preview__inner">
+                                <a href="#" class="preview__img"><img src="images/dist/n3.jpg" alt=""></a>
+                                <div class="preview__text">
+                                    <a href="#" class="preview__title">Мишустин уверен в быстром восстановлении экономики России</a>
+                                    <div class="preview__footer">
+                                        <div class="preview__data">10.01.2021</div>
+                                        <div class="preview__views i-eye">120</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="preview">
+                            <div class="preview__inner">
+                                <a href="#" class="preview__img"><img src="images/dist/n4.jpg" alt=""></a>
+                                <div class="preview__text">
+                                    <a href="#" class="preview__title">«Слабые должны уйти»: в какой поддержке нуждается бизнес</a>
+                                    <div class="preview__footer">
+                                        <div class="preview__data">10.01.2021</div>
+                                        <div class="preview__views i-eye">120</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="preview">
+                            <div class="preview__inner">
+                                <a href="#" class="preview__img"><img src="images/dist/n5.jpg" alt=""></a>
+                                <div class="preview__text">
+                                    <a href="#" class="preview__title">«Бесполезная работа»: банки не хотят объяснять отказ в кредитовании</a>
+                                    <div class="preview__footer">
+                                        <div class="preview__data">10.01.2021</div>
+                                        <div class="preview__views i-eye">120</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-slider__item">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="preview">
+                            <div class="preview__inner">
+                                <a href="#" class="preview__img"><img src="images/dist/n1.jpg" alt=""></a>
+                                <div class="preview__text">
+                                    <a href="#" class="preview__title">Нанимателям разрешили отпускать работников в отпуска для самоизоляции. Как это должно работать</a>
+                                    <div class="preview__footer">
+                                        <div class="preview__data">10.01.2021</div>
+                                        <div class="preview__views i-eye">120</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="preview">
+                            <div class="preview__inner">
+                                <a href="#" class="preview__img"><img src="images/dist/n2.jpg" alt=""></a>
+                                <div class="preview__text">
+                                    <a href="#" class="preview__title">Правительство снизило ставки по льготным кредитам для бизнеса</a>
+                                    <div class="preview__footer">
+                                        <div class="preview__data">10.01.2021</div>
+                                        <div class="preview__views i-eye">120</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="preview">
+                            <div class="preview__inner">
+                                <a href="#" class="preview__img"><img src="images/dist/n3.jpg" alt=""></a>
+                                <div class="preview__text">
+                                    <a href="#" class="preview__title">Мишустин уверен в быстром восстановлении экономики России</a>
+                                    <div class="preview__footer">
+                                        <div class="preview__data">10.01.2021</div>
+                                        <div class="preview__views i-eye">120</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="preview">
+                            <div class="preview__inner">
+                                <a href="#" class="preview__img"><img src="images/dist/n4.jpg" alt=""></a>
+                                <div class="preview__text">
+                                    <a href="#" class="preview__title">«Слабые должны уйти»: в какой поддержке нуждается бизнес</a>
+                                    <div class="preview__footer">
+                                        <div class="preview__data">10.01.2021</div>
+                                        <div class="preview__views i-eye">120</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="preview">
+                            <div class="preview__inner">
+                                <a href="#" class="preview__img"><img src="images/dist/n5.jpg" alt=""></a>
+                                <div class="preview__text">
+                                    <a href="#" class="preview__title">«Бесполезная работа»: банки не хотят объяснять отказ в кредитовании</a>
+                                    <div class="preview__footer">
+                                        <div class="preview__data">10.01.2021</div>
+                                        <div class="preview__views i-eye">120</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-	<div class="preview-block">
-		<div class="container">
-			<h2 class="block-title text-center">Карьера и свой бизнес</h2>
-			<div class="slider content-carusel content-carusel-4">
-				<div class="content-carusel__item">
-                    <div class="preview preview_min">
-                        <div class="preview__inner">
-                            <a href="#" class="preview__img"><img src="images/dist/n9.jpg" alt=""></a>
-                            <div class="preview__text">
-                                <a href="#" class="preview__title">Контроль операций с денежными средствами и имуществом: нововведения января</a>
-                                <div class="preview__footer">
-                                    <div class="preview__data">10.01.2021</div>
-                                    <div class="preview__views i-eye">120</div>
-                                </div>
+        <div class="slider content-carusel content-carusel-3 mobil-vis">
+            <div class="content-carusel__item">
+                <div class="preview preview_min">
+                    <div class="preview__inner">
+                        <a href="#" class="preview__img"><img src="images/dist/n9.jpg" alt=""></a>
+                        <div class="preview__text">
+                            <a href="#" class="preview__title">Контроль операций с денежными средствами и имуществом: нововведения января</a>
+                            <div class="preview__footer">
+                                <div class="preview__data">10.01.2021</div>
+                                <div class="preview__views i-eye">120</div>
                             </div>
-                        </div>                       
+                        </div>
                     </div>
-				</div>
-				<div class="content-carusel__item">
-                    <div class="preview preview_min">
-                        <div class="preview__inner">
-                            <a href="#" class="preview__img"><img src="images/dist/n10.jpg" alt=""></a>
-                            <div class="preview__text">
-                                <a href="#" class="preview__title">Прогрессивная ставка НДФЛ и другие новшества Федерального закона № 372-ФЗ</a>
-                                <div class="preview__footer">
-                                    <div class="preview__data">10.01.2021</div>
-                                    <div class="preview__views i-eye">120</div>
-                                </div>
+                </div>
+            </div>
+            <div class="content-carusel__item">
+                <div class="preview preview_min">
+                    <a href="#" class="preview__img"><img src="images/dist/n10.jpg" alt=""></a>
+                    <div class="preview__text">
+                        <a href="#" class="preview__title">Прогрессивная ставка НДФЛ и другие новшества Федерального закона № 372-ФЗ</a>
+                        <div class="preview__footer">
+                            <div class="preview__data">10.01.2021</div>
+                            <div class="preview__views i-eye">120</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-carusel__item">
+                <div class="preview preview_min">
+                    <a href="#" class="preview__img"><img src="images/dist/n11.jpg" alt=""></a>
+                    <div class="preview__text">
+                        <a href="#" class="preview__title">Безналоговая передача имущества в бизнесе: какой инструмент выбрать?</a>
+                        <div class="preview__footer">
+                            <div class="preview__data">10.01.2021</div>
+                            <div class="preview__views i-eye">120</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-carusel__item">
+                <div class="preview preview_min">
+                    <a href="#" class="preview__img"><img src="images/dist/n9.jpg" alt=""></a>
+                    <div class="preview__text">
+                        <a href="#" class="preview__title">Управляющая компания для бизнеса: возможности, варианты и риски</a>
+                        <div class="preview__footer">
+                            <div class="preview__data">10.01.2021</div>
+                            <div class="preview__views i-eye">120</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-carusel__item">
+                <div class="preview preview_min">
+                    <a href="#" class="preview__img"><img src="images/dist/n11.jpg" alt=""></a>
+                    <div class="preview__text">
+                        <a href="#" class="preview__title">Безналоговая передача имущества в бизнесе: какой инструмент выбрать?</a>
+                        <div class="preview__footer">
+                            <div class="preview__data">10.01.2021</div>
+                            <div class="preview__views i-eye">120</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="more-wrapper">
+            <a class="link link-accent link--border" href="#">Читать все статьи</a>
+        </div>
+    </div>
+</div>
+<!--#include virtual="/parts/perebivka.html" -->
+<!--#include virtual="/parts/persons.html" -->
+<div class="preview-block">
+    <div class="container">
+        <h2 class="block-title text-center">Технологии</h2>
+        <div class="slider content-carusel content-carusel-3">
+            <div class="content-carusel__item">
+                <div class="preview">
+                    <div class="preview__inner">
+                        <a href="#" class="preview__img"><img src="images/dist/n6.jpg" alt=""></a>
+                        <div class="preview__text">
+                            <a href="#" class="preview__title">СМИ: Apple начала разработку складного iPhone</a>
+                            <div class="preview__footer">
+                                <div class="preview__data">10.01.2021</div>
+                                <div class="preview__views i-eye">120</div>
                             </div>
-                        </div>                       
+                        </div>
                     </div>
-				</div>
-				<div class="content-carusel__item">
-                    <div class="preview preview_min">
-                        <div class="preview__inner">
-                            <a href="#" class="preview__img"><img src="images/dist/n11.jpg" alt=""></a>
-                            <div class="preview__text">
-                                <a href="#" class="preview__title">Безналоговая передача имущества в бизнесе: какой инструмент выбрать?</a>
-                                <div class="preview__footer">
-                                    <div class="preview__data">10.01.2021</div>
-                                    <div class="preview__views i-eye">120</div>
-                                </div>
+                </div>
+            </div>
+            <div class="content-carusel__item">
+                <div class="preview">
+                    <div class="preview__inner">
+                        <a href="#" class="preview__img"><img src="images/dist/n7.jpg" alt=""></a>
+                        <div class="preview__text">
+                            <a href="#" class="preview__title">Самые странные (или гениальные?) гаджеты с CES 2021</a>
+                            <div class="preview__footer">
+                                <div class="preview__data">10.01.2021</div>
+                                <div class="preview__views i-eye">120</div>
                             </div>
-                        </div>                       
+                        </div>
                     </div>
-				</div>
-				<div class="content-carusel__item">
-                    <div class="preview preview_min">
-                        <div class="preview__inner">
-                            <a href="#" class="preview__img"><img src="images/dist/n9.jpg" alt=""></a>
-                            <div class="preview__text">
-                                <a href="#" class="preview__title">Управляющая компания для бизнеса: возможности, варианты и риски</a>
-                                <div class="preview__footer">
-                                    <div class="preview__data">10.01.2021</div>
-                                    <div class="preview__views i-eye">120</div>
-                                </div>
+                </div>
+            </div>
+            <div class="content-carusel__item">
+                <div class="preview">
+                    <div class="preview__inner">
+                        <a href="#" class="preview__img"><img src="images/dist/n8.jpg" alt=""></a>
+                        <div class="preview__text">
+                            <a href="#" class="preview__title">Почему Waymo отказалась называть свои автомобили «самоуправляемыми»</a>
+                            <div class="preview__footer">
+                                <div class="preview__data">10.01.2021</div>
+                                <div class="preview__views i-eye">120</div>
                             </div>
-                        </div>                        
+                        </div>
                     </div>
-				</div>
-				<div class="content-carusel__item">
-                    <div class="preview preview_min">
-                        <div class="preview__inner">
-                            <a href="#" class="preview__img"><img src="images/dist/n11.jpg" alt=""></a>
-                            <div class="preview__text">
-                                <a href="#" class="preview__title">Безналоговая передача имущества в бизнесе: какой инструмент выбрать?</a>
-                                <div class="preview__footer">
-                                    <div class="preview__data">10.01.2021</div>
-                                    <div class="preview__views i-eye">120</div>
-                                </div>
+                </div>
+            </div>
+            <div class="content-carusel__item">
+                <div class="preview">
+                    <div class="preview__inner">
+                        <a href="#" class="preview__img"><img src="images/dist/n7.jpg" alt=""></a>
+                        <div class="preview__text">
+                            <a href="#" class="preview__title">Самые странные (или гениальные?) гаджеты с CES 2021</a>
+                            <div class="preview__footer">
+                                <div class="preview__data">10.01.2021</div>
+                                <div class="preview__views i-eye">120</div>
                             </div>
-                        </div>                       
+                        </div>
                     </div>
-				</div>
-			</div>
-			<div class="more-wrapper">
-				<a class="link link-accent link--border" href="#">Читать все статьи</a>
-			</div>
-		</div>
-	</div>
 
-	<div class="preview-block">
-		<div class="container">
-			<h2 class="block-title text-center">Видео</h2>
-			<div class="slider content-carusel content-carusel-3">
-				<div class="content-carusel__item">
-                    <div class="preview">
-                        <div class="preview__inner">
-                            <a href="#" class="preview__img preview__img_video"><img src="images/dist/vi1.jpg" alt=""></a>
-                            <div class="preview__text">
-                                <a href="#" class="preview__title">Выставка работом в Японии: самые крутые роботы 2020</a>
-                                <div class="preview__footer">
-                                    <div class="preview__data">10.01.2021</div>
-                                    <div class="preview__views i-eye">120</div>
-                                </div>
+                </div>
+            </div>
+        </div>
+        <div class="more-wrapper">
+            <a class="link link-accent link--border" href="#">Читать все статьи</a>
+        </div>
+    </div>
+</div>
+<div class="preview-block">
+    <div class="container">
+        <h2 class="block-title text-center">Финансы и инвестиции</h2>
+        <div class="slider content-carusel content-carusel-4">
+            <div class="content-carusel__item">
+                <div class="preview preview_min">
+                    <div class="preview__inner">
+                        <a href="#" class="preview__img"><img src="images/dist/n9.jpg" alt=""></a>
+                        <div class="preview__text">
+                            <a href="#" class="preview__title">Контроль операций с денежными средствами и имуществом: нововведения января</a>
+                            <div class="preview__footer">
+                                <div class="preview__data">10.01.2021</div>
+                                <div class="preview__views i-eye">120</div>
                             </div>
-                        </div>                      
+                        </div>
                     </div>
-				</div>
-				<div class="content-carusel__item">
-                    <div class="preview">
-                        <div class="preview__inner">
-                            <a href="#" class="preview__img preview__img_video"><img src="images/dist/vi2.jpg" alt=""></a>
-                            <div class="preview__text">
-                                <a href="#" class="preview__title">Новейшие роботы и технологии будущего: все новости технологий за декабрь в одном выпуске!</a>
-                                <div class="preview__footer">
-                                    <div class="preview__data">10.01.2021</div>
-                                    <div class="preview__views i-eye">120</div>
-                                </div>
+                </div>
+            </div>
+            <div class="content-carusel__item">
+                <div class="preview preview_min">
+                    <div class="preview__inner">
+                        <a href="#" class="preview__img"><img src="images/dist/n10.jpg" alt=""></a>
+                        <div class="preview__text">
+                            <a href="#" class="preview__title">Прогрессивная ставка НДФЛ и другие новшества Федерального закона № 372-ФЗ</a>
+                            <div class="preview__footer">
+                                <div class="preview__data">10.01.2021</div>
+                                <div class="preview__views i-eye">120</div>
                             </div>
-                        </div>                       
+                        </div>
                     </div>
-				</div>
-				<div class="content-carusel__item">
-                    <div class="preview">
-                        <div class="preview__inner">
-                            <a href="#" class="preview__img preview__img_video"><img src="images/dist/vi3.jpg" alt=""></a>
-                            <div class="preview__text">
-                                <a href="#" class="preview__title">Самые передовые технологии Китая</a>
-                                <div class="preview__footer">
-                                    <div class="preview__data">10.01.2021</div>
-                                    <div class="preview__views i-eye">120</div>
-                                </div>
+                </div>
+            </div>
+            <div class="content-carusel__item">
+                <div class="preview preview_min">
+                    <div class="preview__inner">
+                        <a href="#" class="preview__img"><img src="images/dist/n11.jpg" alt=""></a>
+                        <div class="preview__text">
+                            <a href="#" class="preview__title">Безналоговая передача имущества в бизнесе: какой инструмент выбрать?</a>
+                            <div class="preview__footer">
+                                <div class="preview__data">10.01.2021</div>
+                                <div class="preview__views i-eye">120</div>
                             </div>
-                        </div>                        
+                        </div>
                     </div>
-				</div>
-				<div class="content-carusel__item">
-                    <div class="preview">
-                        <div class="preview__inner">
-                            <a href="#" class="preview__img preview__img_video"><img src="images/dist/vi2.jpg" alt=""></a>
-                            <div class="preview__text">
-                                <a href="#" class="preview__title">Управляющая компания для бизнеса: возможности, варианты и риски</a>
-                                <div class="preview__footer">
-                                    <div class="preview__data">10.01.2021</div>
-                                    <div class="preview__views i-eye">120</div>
-                                </div>
+                </div>
+            </div>
+            <div class="content-carusel__item">
+                <div class="preview preview_min">
+                    <div class="preview__inner">
+                        <a href="#" class="preview__img"><img src="images/dist/n9.jpg" alt=""></a>
+                        <div class="preview__text">
+                            <a href="#" class="preview__title">Управляющая компания для бизнеса: возможности, варианты и риски</a>
+                            <div class="preview__footer">
+                                <div class="preview__data">10.01.2021</div>
+                                <div class="preview__views i-eye">120</div>
                             </div>
-                        </div>                       
+                        </div>
                     </div>
-				</div>
-			</div>
-			<div class="more-wrapper">
-                <a class="link link-accent link--border" href="#">Читать все статьи</a>
-			</div>
-		</div>
-	</div>
-
-	<div class="preview-block">
-		<div class="container">
-			<h2 class="block-title text-center">Общество</h2>
-			<div class="slider content-carusel content-carusel-4">
-				<div class="content-carusel__item">
-                    <div class="preview preview_min">
-                        <div class="preview__inner">
-                            <a href="#" class="preview__img"><img src="images/dist/n9.jpg" alt=""></a>
-                            <div class="preview__text">
-                                <a href="#" class="preview__title">Контроль операций с денежными средствами и имуществом: нововведения января</a>
-                                <div class="preview__footer">
-                                    <div class="preview__data">10.01.2021</div>
-                                    <div class="preview__views i-eye">120</div>
-                                </div>
+                </div>
+            </div>
+            <div class="content-carusel__item">
+                <div class="preview preview_min">
+                    <div class="preview__inner">
+                        <a href="#" class="preview__img"><img src="images/dist/n11.jpg" alt=""></a>
+                        <div class="preview__text">
+                            <a href="#" class="preview__title">Безналоговая передача имущества в бизнесе: какой инструмент выбрать?</a>
+                            <div class="preview__footer">
+                                <div class="preview__data">10.01.2021</div>
+                                <div class="preview__views i-eye">120</div>
                             </div>
-                        </div>                       
+                        </div>
                     </div>
-				</div>
-				<div class="content-carusel__item">
-                    <div class="preview preview_min">
-                        <div class="preview__inner">
-                            <a href="#" class="preview__img"><img src="images/dist/n10.jpg" alt=""></a>
-                            <div class="preview__text">
-                                <a href="#" class="preview__title">Прогрессивная ставка НДФЛ и другие новшества Федерального закона № 372-ФЗ</a>
-                                <div class="preview__footer">
-                                    <div class="preview__data">10.01.2021</div>
-                                    <div class="preview__views i-eye">120</div>
-                                </div>
+                </div>
+            </div>
+        </div>
+        <div class="more-wrapper">
+            <a class="link link-accent link--border" href="#">Читать все статьи</a>
+        </div>
+    </div>
+</div>
+<!--#include virtual="/parts/expert-opinion.html" -->
+<!--#include virtual="/parts/perebivka2.html" -->
+<div class="preview-block">
+    <div class="container">
+        <h2 class="block-title text-center">Карьера и свой бизнес</h2>
+        <div class="slider content-carusel content-carusel-4">
+            <div class="content-carusel__item">
+                <div class="preview preview_min">
+                    <div class="preview__inner">
+                        <a href="#" class="preview__img"><img src="images/dist/n9.jpg" alt=""></a>
+                        <div class="preview__text">
+                            <a href="#" class="preview__title">Контроль операций с денежными средствами и имуществом: нововведения января</a>
+                            <div class="preview__footer">
+                                <div class="preview__data">10.01.2021</div>
+                                <div class="preview__views i-eye">120</div>
                             </div>
-                        </div>                        
+                        </div>
                     </div>
-				</div>
-				<div class="content-carusel__item">
-                    <div class="preview preview_min">
-                        <div class="preview__inner">
-                            <a href="#" class="preview__img"><img src="images/dist/n11.jpg" alt=""></a>
-                            <div class="preview__text">
-                                <a href="#" class="preview__title">Безналоговая передача имущества в бизнесе: какой инструмент выбрать?</a>
-                                <div class="preview__footer">
-                                    <div class="preview__data">10.01.2021</div>
-                                    <div class="preview__views i-eye">120</div>
-                                </div>
+                </div>
+            </div>
+            <div class="content-carusel__item">
+                <div class="preview preview_min">
+                    <div class="preview__inner">
+                        <a href="#" class="preview__img"><img src="images/dist/n10.jpg" alt=""></a>
+                        <div class="preview__text">
+                            <a href="#" class="preview__title">Прогрессивная ставка НДФЛ и другие новшества Федерального закона № 372-ФЗ</a>
+                            <div class="preview__footer">
+                                <div class="preview__data">10.01.2021</div>
+                                <div class="preview__views i-eye">120</div>
                             </div>
-                        </div>                        
+                        </div>
                     </div>
-				</div>
-				<div class="content-carusel__item">
-                    <div class="preview preview_min">
-                        <div class="preview__inner">
-                            <a href="#" class="preview__img"><img src="images/dist/n9.jpg" alt=""></a>
-                            <div class="preview__text">
-                                <a href="#" class="preview__title">Управляющая компания для бизнеса: возможности, варианты и риски</a>
-                                <div class="preview__footer">
-                                    <div class="preview__data">10.01.2021</div>
-                                    <div class="preview__views i-eye">120</div>
-                                </div>
+                </div>
+            </div>
+            <div class="content-carusel__item">
+                <div class="preview preview_min">
+                    <div class="preview__inner">
+                        <a href="#" class="preview__img"><img src="images/dist/n11.jpg" alt=""></a>
+                        <div class="preview__text">
+                            <a href="#" class="preview__title">Безналоговая передача имущества в бизнесе: какой инструмент выбрать?</a>
+                            <div class="preview__footer">
+                                <div class="preview__data">10.01.2021</div>
+                                <div class="preview__views i-eye">120</div>
                             </div>
-                        </div>                        
+                        </div>
                     </div>
-				</div>
-				<div class="content-carusel__item">
-                    <div class="preview preview_min">
-                        <div class="preview__inner">
-                            <a href="#" class="preview__img"><img src="images/dist/n11.jpg" alt=""></a>
-                            <div class="preview__text">
-                                <a href="#" class="preview__title">Безналоговая передача имущества в бизнесе: какой инструмент выбрать?</a>
-                                <div class="preview__footer">
-                                    <div class="preview__data">10.01.2021</div>
-                                    <div class="preview__views i-eye">120</div>
-                                </div>
+                </div>
+            </div>
+            <div class="content-carusel__item">
+                <div class="preview preview_min">
+                    <div class="preview__inner">
+                        <a href="#" class="preview__img"><img src="images/dist/n9.jpg" alt=""></a>
+                        <div class="preview__text">
+                            <a href="#" class="preview__title">Управляющая компания для бизнеса: возможности, варианты и риски</a>
+                            <div class="preview__footer">
+                                <div class="preview__data">10.01.2021</div>
+                                <div class="preview__views i-eye">120</div>
                             </div>
-                        </div>                        
+                        </div>
                     </div>
-				</div>
-			</div>
-			<div class="more-wrapper">
-                <a class="link link-accent link--border" href="#">Читать все статьи</a>
-			</div>
-		</div>
-	</div>
-
-	<div class="preview-block">
-		<div class="container">
-			<h2 class="block-title text-center">Культура</h2>
-			<div class="slider content-carusel content-carusel-3">
-				<div class="content-carusel__item">
-                    <div class="preview">
-                        <div class="preview__inner">
-                            <a href="#" class="preview__img"><img src="images/dist/k1.jpg" alt=""></a>
-                            <div class="preview__text">
-                                <a href="#" class="preview__title">Выставка работом в Японии: самые крутые роботы 2020</a>
-                                <div class="preview__footer">
-                                    <div class="preview__data">10.01.2021</div>
-                                    <div class="preview__views i-eye">120</div>
-                                </div>
+                </div>
+            </div>
+            <div class="content-carusel__item">
+                <div class="preview preview_min">
+                    <div class="preview__inner">
+                        <a href="#" class="preview__img"><img src="images/dist/n11.jpg" alt=""></a>
+                        <div class="preview__text">
+                            <a href="#" class="preview__title">Безналоговая передача имущества в бизнесе: какой инструмент выбрать?</a>
+                            <div class="preview__footer">
+                                <div class="preview__data">10.01.2021</div>
+                                <div class="preview__views i-eye">120</div>
                             </div>
-                        </div>                      
+                        </div>
                     </div>
-				</div>
-				<div class="content-carusel__item">
-                    <div class="preview">
-                        <div class="preview__inner">
-                            <a href="#" class="preview__img"><img src="images/dist/k2.jpg" alt=""></a>
-                            <div class="preview__text">
-                                <a href="#" class="preview__title">Новейшие роботы и технологии будущего: все новости технологий за декабрь в одном выпуске!</a>
-                                <div class="preview__footer">
-                                    <div class="preview__data">10.01.2021</div>
-                                    <div class="preview__views i-eye">120</div>
-                                </div>
+                </div>
+            </div>
+        </div>
+        <div class="more-wrapper">
+            <a class="link link-accent link--border" href="#">Читать все статьи</a>
+        </div>
+    </div>
+</div>
+<div class="preview-block">
+    <div class="container">
+        <h2 class="block-title text-center">Видео</h2>
+        <div class="slider content-carusel content-carusel-3">
+            <div class="content-carusel__item">
+                <div class="preview">
+                    <div class="preview__inner">
+                        <a href="#" class="preview__img preview__img_video"><img src="images/dist/vi1.jpg" alt=""></a>
+                        <div class="preview__text">
+                            <a href="#" class="preview__title">Выставка работом в Японии: самые крутые роботы 2020</a>
+                            <div class="preview__footer">
+                                <div class="preview__data">10.01.2021</div>
+                                <div class="preview__views i-eye">120</div>
                             </div>
-                        </div>                        
+                        </div>
                     </div>
-				</div>
-				<div class="content-carusel__item">
-                    <div class="preview">
-                        <div class="preview__inner">
-                            <a href="#" class="preview__img"><img src="images/dist/k3.jpg" alt=""></a>
-                            <div class="preview__text">
-                                <a href="#" class="preview__title">Самые передовые технологии Китая</a>
-                                <div class="preview__footer">
-                                    <div class="preview__data">10.01.2021</div>
-                                    <div class="preview__views i-eye">120</div>
-                                </div>
+                </div>
+            </div>
+            <div class="content-carusel__item">
+                <div class="preview">
+                    <div class="preview__inner">
+                        <a href="#" class="preview__img preview__img_video"><img src="images/dist/vi2.jpg" alt=""></a>
+                        <div class="preview__text">
+                            <a href="#" class="preview__title">Новейшие роботы и технологии будущего: все новости технологий за декабрь в одном выпуске!</a>
+                            <div class="preview__footer">
+                                <div class="preview__data">10.01.2021</div>
+                                <div class="preview__views i-eye">120</div>
                             </div>
-                        </div>                       
+                        </div>
                     </div>
-				</div>
-				<div class="content-carusel__item">
-                    <div class="preview">
-                        <div class="preview__inner">
-                            <a href="#" class="preview__img"><img src="images/dist/k2.jpg" alt=""></a>
-                            <div class="preview__text">
-                                <a href="#" class="preview__title">Управляющая компания для бизнеса: возможности, варианты и риски</a>
-                                <div class="preview__footer">
-                                    <div class="preview__data">10.01.2021</div>
-                                    <div class="preview__views i-eye">120</div>
-                                </div>
+                </div>
+            </div>
+            <div class="content-carusel__item">
+                <div class="preview">
+                    <div class="preview__inner">
+                        <a href="#" class="preview__img preview__img_video"><img src="images/dist/vi3.jpg" alt=""></a>
+                        <div class="preview__text">
+                            <a href="#" class="preview__title">Самые передовые технологии Китая</a>
+                            <div class="preview__footer">
+                                <div class="preview__data">10.01.2021</div>
+                                <div class="preview__views i-eye">120</div>
                             </div>
-                        </div>                      
+                        </div>
                     </div>
-				</div>
-			</div>
-			<div class="more-wrapper">
-                <a class="link link-accent link--border" href="#">Читать все статьи</a>
-			</div>
-		</div>
-	</div>
-
-	<div class="preview-block">
-		<div class="container">
-			<h2 class="block-title text-center">Спорт</h2>
-			<div class="slider content-carusel content-carusel-4">
-				<div class="content-carusel__item">
-                    <div class="preview preview_min">
-                        <div class="preview__inner">
-                            <a href="#" class="preview__img"><img src="images/dist/n9.jpg" alt=""></a>
-                            <div class="preview__text">
-                                <a href="#" class="preview__title">Контроль операций с денежными средствами и имуществом: нововведения января</a>
-                                <div class="preview__footer">
-                                    <div class="preview__data">10.01.2021</div>
-                                    <div class="preview__views i-eye">120</div>
-                                </div>
+                </div>
+            </div>
+            <div class="content-carusel__item">
+                <div class="preview">
+                    <div class="preview__inner">
+                        <a href="#" class="preview__img preview__img_video"><img src="images/dist/vi2.jpg" alt=""></a>
+                        <div class="preview__text">
+                            <a href="#" class="preview__title">Управляющая компания для бизнеса: возможности, варианты и риски</a>
+                            <div class="preview__footer">
+                                <div class="preview__data">10.01.2021</div>
+                                <div class="preview__views i-eye">120</div>
                             </div>
-                        </div>                       
+                        </div>
                     </div>
-				</div>
-				<div class="content-carusel__item">
-                    <div class="preview preview_min">
-                        <div class="preview__inner">
-                            <a href="#" class="preview__img"><img src="images/dist/n10.jpg" alt=""></a>
-                            <div class="preview__text">
-                                <a href="#" class="preview__title">Прогрессивная ставка НДФЛ и другие новшества Федерального закона № 372-ФЗ</a>
-                                <div class="preview__footer">
-                                    <div class="preview__data">10.01.2021</div>
-                                    <div class="preview__views i-eye">120</div>
-                                </div>
+                </div>
+            </div>
+        </div>
+        <div class="more-wrapper">
+            <a class="link link-accent link--border" href="#">Читать все статьи</a>
+        </div>
+    </div>
+</div>
+<div class="preview-block">
+    <div class="container">
+        <h2 class="block-title text-center">Общество</h2>
+        <div class="slider content-carusel content-carusel-4">
+            <div class="content-carusel__item">
+                <div class="preview preview_min">
+                    <div class="preview__inner">
+                        <a href="#" class="preview__img"><img src="images/dist/n9.jpg" alt=""></a>
+                        <div class="preview__text">
+                            <a href="#" class="preview__title">Контроль операций с денежными средствами и имуществом: нововведения января</a>
+                            <div class="preview__footer">
+                                <div class="preview__data">10.01.2021</div>
+                                <div class="preview__views i-eye">120</div>
                             </div>
-                        </div>                        
+                        </div>
                     </div>
-				</div>
-				<div class="content-carusel__item">
-                    <div class="preview preview_min">
-                        <div class="preview__inner">
-                            <a href="#" class="preview__img"><img src="images/dist/n11.jpg" alt=""></a>
-                            <div class="preview__text">
-                                <a href="#" class="preview__title">Безналоговая передача имущества в бизнесе: какой инструмент выбрать?</a>
-                                <div class="preview__footer">
-                                    <div class="preview__data">10.01.2021</div>
-                                    <div class="preview__views i-eye">120</div>
-                                </div>
+                </div>
+            </div>
+            <div class="content-carusel__item">
+                <div class="preview preview_min">
+                    <div class="preview__inner">
+                        <a href="#" class="preview__img"><img src="images/dist/n10.jpg" alt=""></a>
+                        <div class="preview__text">
+                            <a href="#" class="preview__title">Прогрессивная ставка НДФЛ и другие новшества Федерального закона № 372-ФЗ</a>
+                            <div class="preview__footer">
+                                <div class="preview__data">10.01.2021</div>
+                                <div class="preview__views i-eye">120</div>
                             </div>
-                        </div>                       
+                        </div>
                     </div>
-				</div>
-				<div class="content-carusel__item">
-                    <div class="preview preview_min">
-                        <div class="preview__inner">
-                            <a href="#" class="preview__img"><img src="images/dist/n9.jpg" alt=""></a>
-                            <div class="preview__text">
-                                <a href="#" class="preview__title">Управляющая компания для бизнеса: возможности, варианты и риски</a>
-                                <div class="preview__footer">
-                                    <div class="preview__data">10.01.2021</div>
-                                    <div class="preview__views i-eye">120</div>
-                                </div>
+                </div>
+            </div>
+            <div class="content-carusel__item">
+                <div class="preview preview_min">
+                    <div class="preview__inner">
+                        <a href="#" class="preview__img"><img src="images/dist/n11.jpg" alt=""></a>
+                        <div class="preview__text">
+                            <a href="#" class="preview__title">Безналоговая передача имущества в бизнесе: какой инструмент выбрать?</a>
+                            <div class="preview__footer">
+                                <div class="preview__data">10.01.2021</div>
+                                <div class="preview__views i-eye">120</div>
                             </div>
-                        </div>                       
+                        </div>
                     </div>
-				</div>
-				<div class="content-carusel__item">
-                    <div class="preview preview_min">
-                        <div class="preview__inner">
-                            <a href="#" class="preview__img"><img src="images/dist/n11.jpg" alt=""></a>
-                            <div class="preview__text">
-                                <a href="#" class="preview__title">Безналоговая передача имущества в бизнесе: какой инструмент выбрать?</a>
-                                <div class="preview__footer">
-                                    <div class="preview__data">10.01.2021</div>
-                                    <div class="preview__views i-eye">120</div>
-                                </div>
+                </div>
+            </div>
+            <div class="content-carusel__item">
+                <div class="preview preview_min">
+                    <div class="preview__inner">
+                        <a href="#" class="preview__img"><img src="images/dist/n9.jpg" alt=""></a>
+                        <div class="preview__text">
+                            <a href="#" class="preview__title">Управляющая компания для бизнеса: возможности, варианты и риски</a>
+                            <div class="preview__footer">
+                                <div class="preview__data">10.01.2021</div>
+                                <div class="preview__views i-eye">120</div>
                             </div>
-                        </div>                       
+                        </div>
                     </div>
-				</div>
-			</div>
-			<div class="more-wrapper">
-                <a class="link link-accent link--border" href="#">Читать все статьи</a>
-			</div>
-		</div>
-	</div>
+                </div>
+            </div>
+            <div class="content-carusel__item">
+                <div class="preview preview_min">
+                    <div class="preview__inner">
+                        <a href="#" class="preview__img"><img src="images/dist/n11.jpg" alt=""></a>
+                        <div class="preview__text">
+                            <a href="#" class="preview__title">Безналоговая передача имущества в бизнесе: какой инструмент выбрать?</a>
+                            <div class="preview__footer">
+                                <div class="preview__data">10.01.2021</div>
+                                <div class="preview__views i-eye">120</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="more-wrapper">
+            <a class="link link-accent link--border" href="#">Читать все статьи</a>
+        </div>
+    </div>
+</div>
+<div class="preview-block">
+    <div class="container">
+        <h2 class="block-title text-center">Культура</h2>
+        <div class="slider content-carusel content-carusel-3">
+            <div class="content-carusel__item">
+                <div class="preview">
+                    <div class="preview__inner">
+                        <a href="#" class="preview__img"><img src="images/dist/k1.jpg" alt=""></a>
+                        <div class="preview__text">
+                            <a href="#" class="preview__title">Выставка работом в Японии: самые крутые роботы 2020</a>
+                            <div class="preview__footer">
+                                <div class="preview__data">10.01.2021</div>
+                                <div class="preview__views i-eye">120</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-carusel__item">
+                <div class="preview">
+                    <div class="preview__inner">
+                        <a href="#" class="preview__img"><img src="images/dist/k2.jpg" alt=""></a>
+                        <div class="preview__text">
+                            <a href="#" class="preview__title">Новейшие роботы и технологии будущего: все новости технологий за декабрь в одном выпуске!</a>
+                            <div class="preview__footer">
+                                <div class="preview__data">10.01.2021</div>
+                                <div class="preview__views i-eye">120</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-carusel__item">
+                <div class="preview">
+                    <div class="preview__inner">
+                        <a href="#" class="preview__img"><img src="images/dist/k3.jpg" alt=""></a>
+                        <div class="preview__text">
+                            <a href="#" class="preview__title">Самые передовые технологии Китая</a>
+                            <div class="preview__footer">
+                                <div class="preview__data">10.01.2021</div>
+                                <div class="preview__views i-eye">120</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-carusel__item">
+                <div class="preview">
+                    <div class="preview__inner">
+                        <a href="#" class="preview__img"><img src="images/dist/k2.jpg" alt=""></a>
+                        <div class="preview__text">
+                            <a href="#" class="preview__title">Управляющая компания для бизнеса: возможности, варианты и риски</a>
+                            <div class="preview__footer">
+                                <div class="preview__data">10.01.2021</div>
+                                <div class="preview__views i-eye">120</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="more-wrapper">
+            <a class="link link-accent link--border" href="#">Читать все статьи</a>
+        </div>
+    </div>
+</div>
+<div class="preview-block">
+    <div class="container">
+        <h2 class="block-title text-center">Спорт</h2>
+        <div class="slider content-carusel content-carusel-4">
+            <div class="content-carusel__item">
+                <div class="preview preview_min">
+                    <div class="preview__inner">
+                        <a href="#" class="preview__img"><img src="images/dist/n9.jpg" alt=""></a>
+                        <div class="preview__text">
+                            <a href="#" class="preview__title">Контроль операций с денежными средствами и имуществом: нововведения января</a>
+                            <div class="preview__footer">
+                                <div class="preview__data">10.01.2021</div>
+                                <div class="preview__views i-eye">120</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-carusel__item">
+                <div class="preview preview_min">
+                    <div class="preview__inner">
+                        <a href="#" class="preview__img"><img src="images/dist/n10.jpg" alt=""></a>
+                        <div class="preview__text">
+                            <a href="#" class="preview__title">Прогрессивная ставка НДФЛ и другие новшества Федерального закона № 372-ФЗ</a>
+                            <div class="preview__footer">
+                                <div class="preview__data">10.01.2021</div>
+                                <div class="preview__views i-eye">120</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-carusel__item">
+                <div class="preview preview_min">
+                    <div class="preview__inner">
+                        <a href="#" class="preview__img"><img src="images/dist/n11.jpg" alt=""></a>
+                        <div class="preview__text">
+                            <a href="#" class="preview__title">Безналоговая передача имущества в бизнесе: какой инструмент выбрать?</a>
+                            <div class="preview__footer">
+                                <div class="preview__data">10.01.2021</div>
+                                <div class="preview__views i-eye">120</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-carusel__item">
+                <div class="preview preview_min">
+                    <div class="preview__inner">
+                        <a href="#" class="preview__img"><img src="images/dist/n9.jpg" alt=""></a>
+                        <div class="preview__text">
+                            <a href="#" class="preview__title">Управляющая компания для бизнеса: возможности, варианты и риски</a>
+                            <div class="preview__footer">
+                                <div class="preview__data">10.01.2021</div>
+                                <div class="preview__views i-eye">120</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-carusel__item">
+                <div class="preview preview_min">
+                    <div class="preview__inner">
+                        <a href="#" class="preview__img"><img src="images/dist/n11.jpg" alt=""></a>
+                        <div class="preview__text">
+                            <a href="#" class="preview__title">Безналоговая передача имущества в бизнесе: какой инструмент выбрать?</a>
+                            <div class="preview__footer">
+                                <div class="preview__data">10.01.2021</div>
+                                <div class="preview__views i-eye">120</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="more-wrapper">
+            <a class="link link-accent link--border" href="#">Читать все статьи</a>
+        </div>
+    </div>
+</div>
 
 <!--#include virtual="/parts/footer.html" -->

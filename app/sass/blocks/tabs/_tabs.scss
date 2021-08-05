@@ -2,6 +2,71 @@
   #Табы
 \*------------------------------------*/
 
+.tabs {
+    &__nav-list {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__nav {
+        margin-right: 35px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__nav-link {
+        position: relative;
+        margin-bottom: 6px;
+        font-family: $userfont-sbold;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 25px;
+        letter-spacing: 0.12em;
+        text-transform: lowercase;
+
+        &::before {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            bottom: -3px;
+            width: 0;
+            height: 1px;
+            background-color: $accent;
+            transition: all .3s linear;
+        }
+
+        &.active {
+            &::before {
+                width: 100%
+            }
+        }
+
+        &:hover {
+            color: $accent;
+
+            &::before {
+                width: 100%
+            }
+        }
+    }
+
+    &--feed {
+        .tabs__nav-link::before {
+            bottom: -7px;
+        }
+    }
+}
+
+.tabgroup {
+    &__item {
+    }
+}
+
 .tabs-content {
     display: none;
 
