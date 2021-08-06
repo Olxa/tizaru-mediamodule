@@ -18,9 +18,13 @@
     font-size: 30px;
     line-height: 38px;
 
-    @media (max-width: 1366px) {
+    @media (max-width: $laptop) {
         font-size: 25px;
         line-height: 28px;
+    }
+
+    @media (max-width: $tablet) {
+        font-size: 20px;
     }
 
     &--big {
