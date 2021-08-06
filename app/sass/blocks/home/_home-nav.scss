@@ -1,15 +1,120 @@
 .home-nav {
+    position: relative;
 
     &__logo {
         margin: 0 auto;
         max-width: 135px;
-        padding-top: 10px;
+        padding-top: 15px;
         padding-bottom: 50px;
         display: flex;
         justify-content: center;
 
         @media (max-width: 1200px) {
             display: none;
+        }
+    }
+
+    &__person {
+        position: absolute;
+        top: 20px;
+
+        @media (max-width: 1200px) {
+            position: initial;
+            padding-top: 18px;
+        }
+
+        @media (max-width: 992px) {
+            padding-top: 0;
+        }
+    }
+
+    &__person-inner {
+        position: relative;
+        display: inline-block;
+
+        @media (max-width: 1200px) {
+            display: flex;
+            align-items: center;
+            padding: 3px 10px;
+            max-width: 400px;
+            border: 1px solid $white;
+            border-radius: $border-radius;
+        }
+
+        @media (max-width: 992px) {
+            max-width: 100%;
+        }
+    }
+
+    &__person-photo {
+        display: inline-block;
+        width: 100px;
+        min-width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+
+        @media (max-width: 1200px) {
+            width: 35px;
+            min-width: 35px;
+            height: 35px;
+        }
+
+        &:hover {
+            + .home-nav__person-desr {
+                display: block;
+            }
+        }
+    }
+
+    &__person-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top center;
+    }
+
+    &__person-desr {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 120px;
+        padding: 12px;
+        width: 400px;
+        border-radius: $border-radius;
+        background-color: #ffffff;
+        box-shadow: $shadow2;
+        z-index: 5;
+
+        @media (max-width: 1200px) {
+            position: initial;
+            display: block;
+            box-shadow: none;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: -10px;
+            top: calc(50% - 10px);
+            display: block;
+            border-left: 0;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-right: 10px solid #ffffff;
+
+            @media (max-width: 1200px) {
+                display: none;
+            }
+        }
+    }
+
+    &__person-txt {
+        margin: 0;
+        color: $textcolor;
+
+        @media (max-width: 1200px) {
+            font-size: 14px;
         }
     }
 }
