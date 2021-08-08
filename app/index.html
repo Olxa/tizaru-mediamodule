@@ -60,8 +60,14 @@
                                         <a class="post-card__community tag tag--link" href="#">Название собщества</a>
                                     </div>
                                 </div>
-                                <div class="post-card__tools">
-                                    <button class="post-card__tools-btn i-option"></button>
+                                <div class="post-card__tools tools-popup">
+                                    <button class="post-card__tools-btn tools-popup__btn js-tools-popup i-option"></button>
+                                    <div class="tools-popup__panel">
+                                        <ul class="tools-popup__list">
+                                            <li class="tools-popup__item">Пожаловаться</li>
+                                            <li class="tools-popup__item">Заблокировать</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                             <div class="post-card__content">
@@ -74,7 +80,14 @@
                             <div class="post-card__bottom">
                                 <div class="post-card__country"><img class="post-card__country-flag" src="images/dist/flag/ru-reg.svg" alt="Россия" /></div>
                                 <div class="post-card__control">
-                                    <div class="post-card__control-share"></div>
+                                    <button class="post-card__control-share i-share-big js-share-btn" type="button"></button>
+                                    <div class="share-block__popup share-popup post-card__share-popup">
+                                        <button class="share-popup__close" type="button"></button>
+                                        <div class="share-popup__subtitle">Поделиться в соц сетях</div>
+                                        <div class="share-popup__btn share-btn">
+                                            <!--#include virtual="/parts/share-links.html" -->
+                                        </div>
+                                    </div>
                                     <div class="post-card__control-likes like">
                                         <button class="like__item i-like-b"></button>
                                         <button class="like__item i-like"></button>

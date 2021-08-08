@@ -149,6 +149,10 @@ document.addEventListener("DOMContentLoaded", function () {
         $(".share-popup").removeClass('active');
     });
 
+    $(".js-tools-popup").on('click', function () {
+        $(".tools-popup__panel").toggleClass('active');
+    });
+
     $(".registrations__btn").on('click', function () {
         $(".registrations").removeClass('active');
         $(".recovery").removeClass('active');

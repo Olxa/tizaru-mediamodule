@@ -60,6 +60,13 @@
             }
         }
     }
+
+    &__subtitle {
+        font-family: $userfont-bold;
+        font-weight: 700;
+        color: $textcolor;
+        margin-bottom: 10px;
+    }
 }
 
 

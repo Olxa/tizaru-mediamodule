@@ -16,6 +16,7 @@
     }
 
     &__bottom {
+        position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -106,7 +107,7 @@
     }
 
     &__content-inner {
-        padding: 10px 20px 30px;
+        padding: 10px 20px 25px;
     }
 
     &__name {
@@ -117,8 +118,11 @@
     }
 
     &__descr {
+        min-height: 84px;
         font-size: 14px;
         color: $gray;
+        margin-bottom: 0;
+        cursor: default;
     }
 
     &__country {
@@ -132,12 +136,33 @@
     }
 
     &__control {
+        display: flex;
+        align-items: center;
     }
 
     &__control-share {
+        background-color: transparent;
+        border: none;
+        outline: none;
     }
 
     &__control-likes {
+        .like__item {
+            margin-left: 16px;
+        }
+    }
 
+    &__share-popup {
+        max-width: 100%;
+        left: 7px;
+        right: 7px;
+        bottom: 7px;
+        top: initial;
+        padding: 25px 20px 16px 16px;
+
+        .share-popup__close {
+            right: 10px;
+            top: 10px;
+        }
     }
 }
