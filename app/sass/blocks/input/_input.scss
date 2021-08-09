@@ -64,3 +64,14 @@
         font-weight: normal;
     }
 }
+
+.input--empty {
+    border-radius: 0;
+    border: none;
+    min-height: 30px;
+
+    &:focus,
+    &:hover {
+        background-color: transparent;
+    }
+}

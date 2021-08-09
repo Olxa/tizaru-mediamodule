@@ -1,0 +1,126 @@
+.tools-feed {
+    position: relative;
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        cursor: pointer;
+
+        &:hover {
+            opacity: .7;
+        }
+    }
+
+    &__dropdown {
+        display: none;
+        position: absolute;
+        right: 0;
+        width: 300px;
+        padding: 20px 30px;
+        background-color: #ffffff;
+        border-radius: $border-radius;
+        box-shadow: $shadow2;
+        z-index: 5;
+
+        &.active {
+            display: block;
+        }
+    }
+
+    &__dropdown-header {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        border-bottom: 1px solid $border-color;
+    }
+
+    &__dropdown-title {
+    }
+
+    &__list {
+        list-style: none;
+        padding: 10px 0 0;
+        margin: 10px 0 20px;
+        max-height: 225px;
+        overflow-y: auto;
+    }
+
+    &__item {
+
+        &--border {
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid $border-color;
+        }
+    }
+
+    &__btn-wrap {
+        text-align: center;
+    }
+
+    &__lang {
+    }
+
+    &__lang-selected {
+        cursor: pointer;
+
+        &:hover {
+            color: $accent;
+        }
+
+        &:after {
+            font-family: 'If';
+            content: '\e910';
+            display: inline-block;
+            margin-left: 10px;
+            font-size: 10px;
+        }
+    }
+
+    &__lang-dropdown {
+        position: absolute;
+        right: 10px;
+        display: none;
+        width: 280px;
+        padding: 20px 10px 10px 20px;
+        background-color: #ffffff;
+        border-radius: $border-radius;
+        box-shadow: $shadow2;
+        z-index: 6;
+
+        &.active {
+            display: block;
+        }
+    }
+
+    &__lang-list {
+        height: 325px;
+        padding: 0;
+        list-style: none;
+        overflow-y: auto;
+    }
+
+    &__lang-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 17px;
+    }
+
+    &__lang-link {
+        display: inline-block;
+    }
+
+    &__lang-flag {
+        width: 23px;
+        min-width: 23px;
+        height: 23px;
+        margin-right: 10px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: top left;
+    }
+}

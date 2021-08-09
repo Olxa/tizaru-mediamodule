@@ -1,19 +1,11 @@
 <!--#set var="title" value="Главная" -->
-<!--#include virtual="/parts/header.html" -->
+<!--#include virtual="/parts/header-login.html" -->
 <div class="home-nav">
     <div class="container">
         <div class="home-nav__logo"><img class="home-nav__logo-image" src="images/dist/logo-full.svg" alt="Tizaru"></div>
         <!--#include virtual="/parts/home-services.html" -->
         <!--#include virtual="/parts/category-bar.html" -->
-        <!--#include virtual="/parts/mobil-bar.html" -->
-        <div class="home-nav__person">
-            <a class="home-nav__person-inner" href="person.html">
-                <div class="home-nav__person-photo" ><img class="home-nav__person-img" src="images/dist/person.jpg" alt="Иия Фамилия" /></div>
-                <div class="home-nav__person-desr">
-                    <div class="home-nav__person-txt">Иван Молотов - дворник дворянский кровей</div>
-                </div>
-            </a>            
-        </div>
+        <!--#include virtual="/parts/mobil-bar.html" -->        
     </div>
 </div>
 <div class="container media__container">
@@ -25,7 +17,15 @@
                 <li class="tabs__nav"><a class="tabs__nav-link" href="#chanels">Все каналы</a></li>
             </ul>
         </div>
-        <div class="media-feed__tools">
+        <div class="media-feed__tools media-feed__tools--login">
+            <ul class="media-feed__tools-list">
+                <li class="media-feed__tools-item">
+                    <button class="media-feed__sort active">подписки</button>
+                </li>
+                <li class="media-feed__tools-item">
+                    <button class="media-feed__sort">рекомендации</button>
+                </li>
+            </ul>
             <ul class="media-feed__tools-list">
                 <li class="media-feed__tools-item">
                     <div class="seach">

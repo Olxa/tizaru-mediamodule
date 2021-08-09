@@ -74,6 +74,7 @@
 
 // == search ==
 @import "blocks/search/smart-search";
+@import "blocks/search/search";
 
 // == tabs ==
 @import "blocks/tabs/tabs";
@@ -132,7 +133,10 @@
 @import "blocks/smart-filter";
 @import "blocks/video";
 @import "blocks/person";
-@import "blocks/tools-popup";
+
+// == tools ==
+@import "blocks/tools/tools-popup";
+@import "blocks/tools/tools-feed";
 
 // == search-results ==
 @import "blocks/search-results/search-results";
