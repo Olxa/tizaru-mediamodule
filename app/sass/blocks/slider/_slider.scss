@@ -92,3 +92,30 @@
         object-fit:cover;
     }
 }
+
+.slider--sm {
+    .slick-arrow {
+        top: calc(50% - 20px);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        box-shadow: $shadow1;
+        z-index: 2;
+
+        &::before {
+            font-family: if;
+            font-size: 15px;
+            color: $textcolor;
+        }
+    }
+
+    .slick-prev {
+    }
+
+    .slick-next {
+    }
+}

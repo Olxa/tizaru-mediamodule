@@ -12,6 +12,7 @@
         border-radius: $border-radius;
         background-color: #ffffff;
         box-shadow: $shadow2;
+        z-index: 2;
 
         &.active {
             display: block;
@@ -33,5 +34,13 @@
             padding-top: 0;
             border-top: none;
         }
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+
+    &__link {
+
     }
 }

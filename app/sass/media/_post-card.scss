@@ -3,16 +3,21 @@
 \*------------------------------------*/
 
 .post-card {
+    margin-bottom: 30px;
     background-color: #ffffff;
     box-shadow: $shadow1;
+    border-radius: $border-radius;
+
+    &:hover {
+        .post-card__name {
+            color: $accent;
+        }
+    }
 
     &__header {
         display: flex;
         justify-content: space-between;
         padding: 10px;
-    }
-
-    &__content {
     }
 
     &__bottom {
@@ -26,10 +31,6 @@
     &__info {
         display: flex;
         align-items: flex-start;
-        flex-wrap: wrap;
-    }
-
-    &__tools {
     }
 
     &__tools-btn {
@@ -57,9 +58,6 @@
         height: 100%;
         object-fit: cover;
         object-position: top;
-    }
-
-    &__chanel-info-wrap {
     }
 
     &__chanel-info {
@@ -97,6 +95,8 @@
     }
 
     &__image-wrap {
+        position: relative;
+        margin: 0;
     }
 
     &__image {
@@ -106,15 +106,73 @@
         object-position: top center;
     }
 
+    &__gallery {
+        .slick-arrow {
+            opacity: 1;
+            top: 50%;
+            width: auto;
+            height: auto;
+            background-color: transparent;
+            box-shadow: none;
+
+            &::before {
+                color: #ffffff;
+                font-size: 22px;
+                filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
+            }
+
+            &:hover::before {
+                color: $accent;
+            }
+        }
+    }
+
+    &__gallery-item {
+        display: inline-block;
+        width: 100%;
+        height: 200px;
+    }
+
+    &__video {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+
+        &::before {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            top: calc(50% - 17.5px);
+            left: calc(50% - 17.5px);
+            width: 35px;
+            height: 35px;
+            background: url(/images/dist/icon/play-button.svg) no-repeat center;
+            background-size: contain;
+        }
+    }
+
     &__content-inner {
         padding: 10px 20px 25px;
     }
 
     &__name {
+        display: inline-block;
+        margin-bottom: 8px;
         color: $textcolor;
         font-family: $userfont-sbold;
         font-weight: 600;
         font-size: 16px;
+    }
+
+    &__name--link {
+        &::before {
+            content: "\e94d";
+            font-family: 'If';
+            display: inline-block;
+            margin-right: 10px;
+            font-size: 15px;
+        }
     }
 
     &__descr {
