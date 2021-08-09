@@ -313,6 +313,16 @@ document.addEventListener("DOMContentLoaded", function () {
         $(".tools-feed__lang-dropdown").toggleClass('active');
     });
 
+    $('.js-locked').click(function () {
+        //$('.post-card__locked').removeClass('active');
+        $(this).closest(".post-card").find('.post-card__locked').addClass('active');
+        $(".tools-popup__panel").removeClass('active');
+    });
+
+    $(".post-card__locked-cancel").on('click', function () {
+        $(this).closest(".post-card").find('.post-card__locked').removeClass('active');
+    });
+
     //Mobil filter
 
     $(".mobil-bar__btn").on('click', function () {

@@ -4,8 +4,11 @@
 
 .post-card {
     $image-heigth: 200px;
+    $header-heigth: 70px;
 
+    position: relative;
     margin-bottom: 30px;
+    overflow: hidden;
     background-color: #ffffff;
     box-shadow: $shadow1;
     border-radius: $border-radius;
@@ -42,7 +45,7 @@
     &__header {
         display: flex;
         justify-content: space-between;
-        min-height: 70px;
+        min-height: $header-heigth;
         padding: 10px;
     }
 
@@ -259,5 +262,40 @@
             right: 10px;
             top: 10px;
         }
+    }
+
+    &__locked {
+        position: absolute;
+        bottom: -100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: calc(100% - #{$header-heigth});
+        padding: 20px;
+        background: $white;
+
+        &.active {
+            bottom: 0;
+        }
+    }
+
+    &__locked-title {
+        display: inline-block;
+        margin-bottom: 20px;
+        font-family: $userfont;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 22px;
+    }
+
+    &__locked-txt {
+        display: inline-block;
+        margin-bottom: 30px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    &__locked-cancel {
     }
 }

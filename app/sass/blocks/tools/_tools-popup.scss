@@ -1,6 +1,6 @@
 .tools-popup {
     position: relative;
-    
+
     &__panel {
         display: none;
         position: absolute;
@@ -38,6 +38,9 @@
     }
 
     &__link {
+        border: none;
+        background-color: transparent;
+        outline: none;
 
         &:hover {
             color: $accent;
