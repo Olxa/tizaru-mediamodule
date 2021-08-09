@@ -1,76 +1,22 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    $('.persons-slider').slick({
-        infinite: false,
-        slidesToShow: 4,
+    $('.js-post-gallery').slick({
+        infinite: true,
+        slidesToShow: 1,
         slidesToScroll: 1,
-        dots: true,
-        autoplay: false,
-        responsive: [
-            {
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 3,
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 2,
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 1,
-                }
-            }
-        ]
-    });
-
-    $('.content-slider').slick({
-        infinite: false,
         dots: false,
         autoplay: false
     });
 
-    $('.content-carusel-4').slick({
-        infinite: false,
-        slidesToShow: 4,
+    $('.js-post-special').slick({
+        infinite: true,
+        slidesToShow: 2,
         slidesToScroll: 1,
         dots: false,
         autoplay: false,
         responsive: [
             {
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 2,
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 1,
-                }
-            }
-        ]
-    });
-
-    $('.content-carusel-3').slick({
-        infinite: false,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        dots: false,
-        autoplay: false,
-        responsive: [
-            {
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 2,
-                }
-            },
-            {
-                breakpoint: 600,
+                breakpoint: 991,
                 settings: {
                     slidesToShow: 1,
                 }
@@ -138,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     $(".js-share-btn").on('click', function () {
-        $(".share-popup").addClass('active');
+        $(this).siblings(".share-popup").addClass('active');
     });
 
     $(".js-share-btn-bottom").on('click', function () {
@@ -147,6 +93,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     $(".share-popup__close").on('click', function () {
         $(".share-popup").removeClass('active');
+    });
+
+    $(".js-tools-popup").on('click', function () {
+        $(this).siblings(".tools-popup__panel").toggleClass('active');
     });
 
     $(".registrations__btn").on('click', function () {
@@ -343,6 +293,36 @@ document.addEventListener("DOMContentLoaded", function () {
         $('.popup-img__share-block').addClass('visible');
     });
 
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 120) {
+            $('#footer-sm').fadeIn(900)
+        } else {
+            $('#footer-sm').fadeOut(700)
+        }
+    });
+
+    $(".seach__btn").on('click', function () {
+        $(".seach").addClass('active');
+    });
+
+    $(".js-tools-feed").on('click', function () {
+        $(".tools-feed__dropdown").addClass('active');
+    });
+
+    $(".js-lang").on('click', function () {
+        $(".tools-feed__lang-dropdown").toggleClass('active');
+    });
+
+    $('.js-locked').click(function () {
+        //$('.post-card__locked').removeClass('active');
+        $(this).closest(".post-card").find('.post-card__locked').addClass('active');
+        $(".tools-popup__panel").removeClass('active');
+    });
+
+    $(".post-card__locked-cancel").on('click', function () {
+        $(this).closest(".post-card").find('.post-card__locked').removeClass('active');
+    });
+
     //Mobil filter
 
     $(".mobil-bar__btn").on('click', function () {
@@ -447,6 +427,16 @@ $(document).on('mouseup', function (e) {
     if (!hsm.is(e.target) && drop.has(e.target).length === 0) {
         $('.js-services-open').removeClass('active')
         services.removeClass('active');
+    }
+
+    let seach = $('.seach');
+    if (!hsm.is(e.target) && seach.has(e.target).length === 0) {
+        seach.removeClass('active');
+    }
+
+    let tools_feed = $('.tools-feed__dropdown');
+    if (!hsm.is(e.target) && tools_feed.has(e.target).length === 0) {
+        tools_feed.removeClass('active');
     }
 });
 
