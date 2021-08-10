@@ -55,12 +55,12 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     $('.image-gallery__popup').click(function () {
         slick.slick('refresh');
-    });     
+    });
 
     $(document).ready(function () {
-        $("#sections-nav").on("click", "a", function (event) {         
+        $("#sections-nav").on("click", "a", function (event) {
             event.preventDefault();
-            var id = $(this).attr('href'),              
+            var id = $(this).attr('href'),
                 top = $(id).offset().top;
             $('body,html').animate({ scrollTop: top }, 100);
         });
@@ -177,7 +177,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     $(".js-sorting").on('click', function () {
         $(this)
-        .children('.icon-sorting').toggleClass('active');
+            .children('.icon-sorting').toggleClass('active');
     });
 
     $(".collapse .collapse-link").click(function () {
@@ -293,14 +293,6 @@ document.addEventListener("DOMContentLoaded", function () {
         $('.popup-img__share-block').addClass('visible');
     });
 
-    $(window).scroll(function () {
-        if ($(window).scrollTop() > 120) {
-            $('#footer-sm').fadeIn(900)
-        } else {
-            $('#footer-sm').fadeOut(700)
-        }
-    });
-
     $(".seach__btn").on('click', function () {
         $(".seach").addClass('active');
     });
@@ -323,12 +315,23 @@ document.addEventListener("DOMContentLoaded", function () {
         $(this).closest(".post-card").find('.post-card__locked').removeClass('active');
     });
 
+    //панель с фильтром
     $(".js-open-filter").on('click', function () {
         $(".filter-panel__inner").toggleClass('active');
     });
 
+    
     $(".filter-panel__btn-close").on('click', function () {
         $(".filter-panel__inner").removeClass('active');
+    });
+
+    //появление футера
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 120) {
+            $(".footer-sm").addClass('active');
+        } else {
+            $(".footer-sm").removeClass('active');
+        }
     });
 
     //Mobil filter
