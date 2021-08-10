@@ -1,4 +1,38 @@
 .media-feed {
+    &__logo-wrap {
+        margin-bottom: 60px;
+        text-align: center;
+
+        @media (max-width: $tablet) {
+            margin-bottom: 35px;
+        }
+    }
+
+    &__logo {
+        display: inline-block;
+        width: 200px;
+        height: 70px;
+        background: url(/images/dist/logo-world.svg) no-repeat center;
+        background-size: contain;
+
+        @media (max-width: $tablet) {
+            width: 125px;
+            height: 42px;
+        }
+    }
+
+    &__logo-txt {
+        position: relative;
+        top: -15px;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.675em;
+        text-align: center;
+
+        @media (max-width: $tablet) {
+            letter-spacing: 0.17em;
+        }
+    }
 
     &__tabs {
         position: relative;
