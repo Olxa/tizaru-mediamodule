@@ -61,6 +61,7 @@
     }
 
     &__agree {
+        padding-top: 40px;
         margin-bottom: 10px;
         text-align: center;
         font-size: 12px;
@@ -78,10 +79,6 @@
         &:hover {
             color: $accent;
         }
-    }
-
-    &__content {
-        padding-top: 40px;
     }
 
     &__special {
@@ -186,5 +183,18 @@
         &.active {
             border-color: $textcolor;
         }
+    }
+
+    &__pagination-mob {
+        display: none;
+
+        @media (max-width: $mobile) {
+            display: block;
+        }
+    }
+
+    &__posts,
+    &__chanels {
+        padding-bottom: 60px;
     }
 }

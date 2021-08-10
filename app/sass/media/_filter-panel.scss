@@ -1,0 +1,82 @@
+.filter-panel {
+    position: relative;
+
+    @media (max-width: $tablet) {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__btn-open {
+        display: none;
+        border: none;
+        background-color: transparent;
+        outline: none;
+
+        @media (max-width: $tablet) {
+            display: block;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__inner {
+        max-width: 360px;
+        padding: 20px 30px;
+        text-align: center;
+
+        @media (max-width: $tablet) {
+            display: none;
+            position: absolute;
+            right: -100%;
+            min-width: 300px;
+            z-index: 5;
+            transition: all .3s linear;
+        }
+
+        @media (max-width: 425px) {
+            max-width: 100%;
+            width: 100%;
+        }
+
+        &.active {
+            @media (max-width: $tablet) {
+                display: block;
+                right: 0;
+            }
+        }
+    }
+
+    &__title {
+        margin-bottom: 20px;
+        font-family: $userfont;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25px;
+    }
+
+    &__field {
+        margin-bottom: 30px;
+        text-align: left;
+    }
+
+    &__btn-enter {
+        display: none;
+        margin: 20px auto 0;
+
+        @media (max-width: $tablet) {
+            display: block;
+        }
+    }
+
+    &__btn-close {
+        display: none;
+        width: 100%;
+        text-align: right;
+        border: none;
+        background-color: transparent;
+        outline: none;
+
+        @media (max-width: $tablet) {
+            display: inline-block;
+        }
+    }
+}

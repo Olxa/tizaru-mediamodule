@@ -17,84 +17,34 @@
     </div>
 </div>
 <div class="container media__container">
-    <div class="media__header media-feed">
-        <div class="media-feed__tabs">
-            <a class="media-feed__lent-link" href="/feed.html">World</a>
-            <ul class="tabs tabs__nav-list tabs--feed" data-tabgroup="feed-content">
-                <li class="tabs__nav"><a class="tabs__nav-link active" href="#feeds">Ваша лента</a></li>
-                <li class="tabs__nav"><a class="tabs__nav-link" href="#chanels">Все каналы</a></li>
-            </ul>
-        </div>
-        <div class="media-feed__tools">
-            <ul class="media-feed__tools-list">
-                <li class="media-feed__tools-item">
-                    <div class="seach">
-                        <div class="seach__field-wrap">
-                            <input class="input input--empty" type="text" placeholder="Поиск" />
-                        </div>
-                        <div class="seach__btn i-search"></div>
-                    </div>
-                </li>
-                <li class="media-feed__tools-item">
-                    <button class="media-feed__sort active">new</button>
-                </li>
-                <li class="media-feed__tools-item">
-                    <button class="media-feed__sort">top</button>
-                </li>
-                <li class="media-feed__tools-item tools-feed">
-                    <div class="tools-feed__btn i-gear js-tools-feed"></div>
-                    <!--#include virtual="/parts/tools-feed.html" -->
-                </li>
-            </ul>
-        </div>
-    </div>
+    <!--#include virtual="/parts/page-section/media-feed-header.html" -->
     <div id="feed-content" class="tabgroup">
         <div class="tabgroup__item media-feed__content" id="feeds">
-            <p class="media-feed__agree">Используя world, вы принимаете <a class="media-feed__agree-link" href="#">условия использования</a></p>
             <div class="media-feed__posts">
                 <div class="row">
-                    <!--#include virtual="/parts/card-list-3.html" -->
+                    <!--#include virtual="/parts/page-section/card-list-3.html" -->
                 </div>
-                <div class="media-feed__special">
-                    <div class="row">
-                        <div class="col-xl-8 media-feed__special-posts">
-                            <div class="slider slider--sm media-feed__special-posts js-post-special">
-                                <div class="media-feed__special-item">
-                                    <!--#include virtual="/parts/post-card-video.html" -->
-                                </div>
-                                <div class="media-feed__special-item">
-                                    <!--#include virtual="/parts/post-card-link.html" -->
-                                </div>
-                                <div class="media-feed__special-item">
-                                    <!--#include virtual="/parts/post-card.html" -->
-                                </div>
-                                <div class="media-feed__special-item">
-                                    <!--#include virtual="/parts/post-card-gallery.html" -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 media-feed__special-block">
-                            <a class="media-feed__image-wrap" href="chanel-detail.html">
-                                <!--может быть ссылкой на канал, а может просто изображением, тогда тег div-->
-                                <img class="media-feed__image" src="images/dist/or2.jpg" alt="Название канала/изображения" />
-                            </a>
-                            <h2 class="media-feed__special-title">Минимализм в интерьере</h2>
-                            <p class="media-feed__special-descr">
-                                Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod,
-                                iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                <!--#include virtual="/parts/post-card/special-block.html" -->
                 <div class="row">
-                    <!--#include virtual="/parts/card-list-3.html" -->
+                    <!--#include virtual="/parts/page-section/card-list-3.html" -->
                 </div>
+            </div>
+            <div class="media-feed__pagination-mob">
+                <!--#include virtual="/parts/pagination-center.html" -->
             </div>
         </div>
         <div class="tabgroup__item media-feed__content" id="chanels">
-            <p class="media-feed__agree">Используя world, вы принимаете <a class="media-feed__agree-link" href="#">условия использования</a></p>
-            <div class="">
-                22
+            <div class="media-feed__chanels">
+                <div class="row">
+                    <div class="col-xl-4">
+                        <!--#include virtual="/parts/chanel/chanels-filter.html" -->
+                    </div>
+                    <div class="col-xl-8">
+                        <p class="no-resilt">
+                            По Вашему запросу ничего не найдено
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

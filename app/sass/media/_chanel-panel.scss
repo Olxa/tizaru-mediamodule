@@ -1,0 +1,145 @@
+.chanel-panel {
+    position: relative;
+    padding: 30px 20px;
+    margin-bottom: 30px;
+    cursor: default;
+
+    @media (max-width: $mobile) {
+        padding: 20px 15px;
+    }
+
+    &__inner {
+        display: flex;
+        align-items: flex-start;
+
+        @media (max-width: $mobile) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__logo {
+        display: inline-block;
+        width: 80px;
+        min-width: 80px;
+        height: 80px;
+        margin-right: 25px;
+        border-radius: 50%;
+        overflow: hidden;
+
+        @media (max-width: $mobile) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top center;
+    }
+
+
+    &__info {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__info-short {
+        width: 70%;
+
+        @media (max-width: $mobile) {
+            width: 100%;
+        }
+    }
+
+    &__name {
+        display: inline-block;
+        margin-bottom: 10px;
+        font-family: $userfont-bold;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 27px;
+        color: $textcolor;
+
+
+         @media (max-width: $mobile) {
+             font-size: 18px;
+             line-height: 24px;
+         }
+
+        &:hover {
+            color: $color-second;
+        }
+    }
+
+    &__detail {
+        display: flex;
+        align-items: center;
+    }
+
+    &__detail-item {
+        display: inline-block;
+        margin-right: 20px;
+        font-size: 16px;
+        line-height: 22px;
+        color: $gray;
+    }
+
+    &__detail-country {
+        display: flex;
+        align-items: center;
+        width: 30px;
+        min-width: 30px;
+        height: 20px;
+
+        @media (max-width: $mobile) {
+            position: absolute;
+            right: 0;
+            top: 10px;
+            width: 20px;
+            min-width:20px;
+            height: 14px;
+        }
+    }
+
+    &__country-flag {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top center;
+    }
+
+    &__detail-subscribers {
+        &::before {
+            display: inline-block;
+            font-size: 20px;
+            margin-right: 10px;
+        }
+    }
+
+    &__info-subscribe {
+        width: 30%;
+        order: 2;
+
+        @media (max-width: $mobile) {
+            width: 100%;
+            order: 3;
+        }
+
+        &--signed {
+            color: $gray;
+        }
+    }
+
+    &__descr {
+        width: 100%;
+        order: 3;
+        margin-top: 25px;
+
+        @media (max-width: $mobile) {
+            order: 2;
+            margin: 20px 0;
+        }
+    }
+}

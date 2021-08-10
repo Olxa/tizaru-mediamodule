@@ -133,6 +133,8 @@
 @import "blocks/smart-filter";
 @import "blocks/video";
 @import "blocks/person";
+@import "blocks/panel";
+@import "blocks/no-resilt";
 
 // == tools ==
 @import "blocks/tools/tools-popup";
@@ -254,3 +256,5 @@
 @import "media/media-feed";
 @import "media/post-card";
 @import "media/like";
+@import "media/filter-panel";
+@import "media/chanel-panel";

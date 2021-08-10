@@ -323,6 +323,14 @@ document.addEventListener("DOMContentLoaded", function () {
         $(this).closest(".post-card").find('.post-card__locked').removeClass('active');
     });
 
+    $(".js-open-filter").on('click', function () {
+        $(".filter-panel__inner").toggleClass('active');
+    });
+
+    $(".filter-panel__btn-close").on('click', function () {
+        $(".filter-panel__inner").removeClass('active');
+    });
+
     //Mobil filter
 
     $(".mobil-bar__btn").on('click', function () {
