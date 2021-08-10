@@ -1,0 +1,21 @@
+.registration {
+    max-width: 315px;
+    margin: 60px auto 0;
+
+    .input-wrap {
+        margin-bottom: 20px;
+    }
+
+    .captcha {
+        margin: 10px auto 30px;
+    }
+
+    .soc-login {
+        justify-content: center;
+        margin: 60px auto 0;
+    }
+
+    &__submit-wrap {
+        text-align: center;
+    }
+}

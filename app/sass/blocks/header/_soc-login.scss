@@ -14,24 +14,43 @@
         box-shadow: $shadow1;
         margin-right: 18px;
 
+
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            filter: grayscale(1);
+            opacity: .75;
+        }
+
+
         &:last-child {
             margin-right: 0;
         }
 
         &:hover {
             box-shadow: $shadow2;
+
+            &::before {
+                filter: none;
+                opacity: 1;
+            }
         }
     }
 }
 
-.gg {
-    background: url(../images/dist/google.png) no-repeat center;
+.gg::before {
+    background-image: url(../images/dist/icon/google.svg);
+    
 }
 
-.vk {
-    background: url(../images/dist/vk.png) no-repeat center;
+.mail::before {
+    background-image: url(../images/dist/icon/mail-logo.svg);
 }
 
-.fb {
-    background: url(../images/dist/fb.png) no-repeat center;
+.yandex::before {
+    background-image: url(../images/dist/icon/yandex.svg);
 }
