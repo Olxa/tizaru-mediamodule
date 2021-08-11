@@ -24,6 +24,30 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
     });
 
+
+    //Карусель потфолио на странице организации
+    $('.content-carusel-3').slick({
+        infinite: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: false,
+        autoplay: false,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
+    });
+
     $('.statistic-slider').slick({
         infinite: false,
         slidesToShow: 1,
@@ -305,6 +329,7 @@ document.addEventListener("DOMContentLoaded", function () {
         $(".tools-feed__lang-dropdown").toggleClass('active');
     });
 
+    //Блокировка канала
     $('.js-locked').click(function () {
         //$('.post-card__locked').removeClass('active');
         $(this).closest(".post-card").find('.post-card__locked').addClass('active');
@@ -313,6 +338,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     $(".post-card__locked-cancel").on('click', function () {
         $(this).closest(".post-card").find('.post-card__locked').removeClass('active');
+    });
+
+    $(".js-note-locked").on('click', function () {
+        $(".notice").toggleClass('active');
     });
 
     //панель с фильтром
@@ -449,6 +478,16 @@ $(document).on('mouseup', function (e) {
     if (!hsm.is(e.target) && tools_feed.has(e.target).length === 0) {
         tools_feed.removeClass('active');
     }
+
+    let tools_post = $('.tools-popup__panel');
+    if (!hsm.is(e.target) && tools_post.has(e.target).length === 0) {
+        tools_post.removeClass('active');
+    }
+
+
+    //$(".js-tools-popup").on('click', function () {
+    //    $(this).siblings(".tools-popup__panel").toggleClass('active');
+    //});
 });
 
 if (document.documentElement.clientWidth > 1201) {

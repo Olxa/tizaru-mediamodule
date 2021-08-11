@@ -1,0 +1,108 @@
+<!--#set var="title" value="Название поста" -->
+<!--#include virtual="/parts/header.html" -->
+<div class="page page--padding-big">
+    <div class="full-container">
+        <div class="post-detail">
+            <main class="post-detail__article">
+                <div class="post-detail__search">
+                    <div class="input-search">
+                        <input class="input input-search__val" type="text" placeholder="Поиск">
+                        <button class="input-search__btn i-search" type="submit">Найти статью</button>
+                    </div>
+                </div>
+                <!--#include virtual="/parts/post/post-bar-option-subcr.html" -->
+                <article class="post-detail__container">
+                    <h1 class="post-detail__title">Название поста</h1>
+                    <div class="post-detail__info">
+                        <div class="post-detail__community">в сообществе <a class="post-detail__community-link" href="#">Бизнес</a></div>
+                        <span class="post-detail__date">17 апреля 2021</span>
+                    </div>
+                    <div class="post-detail__content">
+                        <img src="images/dist/chanel.jpg" alt="Название изображения" />
+                        <p>
+                            Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod,
+                            iaculis eu lacus nunc mi elit, <a href="#">vehicula ut laoreet</a> ac, aliquam sit amet justo nunc tempor, metus vel.
+                        </p>
+                        <p>
+                            Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod,
+                            sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                        </p>
+                        <ul>
+                            <li>integer</li>
+                            <li>nunc</li>
+                            <li>vehicula</li>
+                            <li>aliquam</li>
+                        </ul>
+                        <p>
+                            Laccumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis
+                            is parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus
+                            mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
+                            Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                            ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.
+                        <p>
+                            Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod,
+                            iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                        </p>
+                        <p>
+                            Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod,
+                            iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                        </p>
+                        <img src="images/dist/bg-p3.jpg" alt="Название изображения" />
+                        <p>
+                            Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod,
+                            sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                        </p>
+                    </div>
+                    <div class="post-detail__bottom">
+                        <div class="btn-wrap text-right">
+                            <a class="btn btn-conture post-detail__rek-link" href="banner-rek.html">Реклама в WORLD</a>
+                        </div>
+
+                        <div class="advertising-banner advertising-banner_full">
+                            <span class="advertising-banner__title">Реклама</span>
+                            <a href="#" class="advertising-banner__wrapper"><img class="advertising-banner__img" src="images/dist/advertising-banner-full.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </article>
+                <!--#include virtual="/parts/post/post-bar-option-subcr.html" -->
+                <div class="post-detail__comments">
+                    Коменты тут
+                </div>
+
+                <h2>Другие публикации канала</h2>
+                <div class="row">
+                    <div class="col-xl-4 col-lg-6">
+                        <!--#include virtual="/parts/post-card/post-card-gallery.html" -->
+                    </div>
+                    <div class="col-xl-4 col-lg-6">
+                        <!--#include virtual="/parts/post-card/post-card-gallery.html" -->
+                    </div>
+                    <div class="col-xl-4 col-lg-6">
+                        <!--#include virtual="/parts/post-card/post-card-gallery.html" -->
+                    </div>                    
+                </div>
+                <h2>Лента</h2>
+                <div class="row">
+                    <!--#include virtual="/parts/page-section/card-list-3.html" -->
+                </div>
+
+                <div class="media-feed__pagination-mob">
+                    <!--#include virtual="/parts/pagination-center.html" -->
+                </div>
+            </main>
+
+            <aside class="post-detail__sidebar">САЙДБАР</aside>
+        </div>
+    </div>
+</div>
+
+<div class="notice notice--hidden notice--succes">
+    <div class="notice__message">Канал заблокирован</div>
+</div>
+<div id="complain" class="popup complain mfp-hide">
+    <!--#include virtual="/parts/complain.html" -->
+</div>
+<!--#include virtual="/parts/footer-sm.html" -->

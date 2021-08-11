@@ -31,10 +31,10 @@
 
     &__subtitle {
         margin-bottom: 15px;
-        font-family: $userfont-bold;
-        font-size: 30px;
+        font-family: $userfont-sbold;
+        font-size: 25px;
         line-height: normal;
-        font-weight: 700;
+        font-weight: 600;
 
         @media (max-width: 767px) {
             font-size: 25px;

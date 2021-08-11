@@ -124,6 +124,25 @@
 
 
 /*------------------------------------*\
+  #Успех
+\*------------------------------------*/
+.btn-succes {
+    background-color: $gray;
+    color: #ffffff;
+    border: 1px solid transparent;
+
+    &:hover,
+    &:focus {
+        color: $gray;
+        background: #ffffff;
+        border-color: $gray;
+    }
+}
+
+
+
+
+/*------------------------------------*\
   #кнопки с иконками
 \*------------------------------------*/
 

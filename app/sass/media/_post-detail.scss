@@ -1,0 +1,119 @@
+.post-detail {
+    display: flex;
+    width: 100%;
+
+    @media (max-width: $tablet) {
+        flex-wrap: wrap;
+    }
+
+    &__article {
+        width: 70%;
+
+        @media (max-width: $tablet) {
+            width: 100%;
+        }
+    }
+
+    &__sidebar {
+        width: 30%;
+        padding-left: 100px;
+
+        @media (max-width: $tablet) {
+            width: 100%;
+        }
+    }
+
+    &__search {
+        margin-bottom: 60px;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        max-width: 960px;
+        margin: 0 auto 100px;
+    }
+
+    &__title {
+        font-family: $userfont-sbold;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 41px;
+        color: $textcolor;
+
+        @media (max-width: $tablet) {
+            order: 2;
+        }
+    }
+
+    &__info {
+        display: flex;
+        font-size: 14px;
+        line-height: 19px;
+        color: $gray;
+
+        @media (max-width: $tablet) {
+            order: 1;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__community-link {
+        display: inline-block;
+        margin-left: 10px;
+        text-decoration: underline;
+    }
+
+    &__date {
+        display: none;
+        margin-left: 20px;
+
+        @media (max-width: $tablet) {
+            display: block;
+        }
+    }
+
+    &__content {
+        padding-top: 60px;
+        padding: 60px 0 100px;
+
+        @media (max-width: $tablet) {
+            order: 3;
+        }
+
+        img {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 20px;
+
+            li {
+                margin-bottom: 10px;
+
+                &::before {
+                    content: '\2022';
+                    color: $accent;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    &__bottom {
+        @media (max-width: $tablet) {
+            order: 4;
+        }
+    }
+
+    &__comments {
+        margin: 100px 0 150px;
+    }
+}

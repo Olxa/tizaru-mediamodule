@@ -1,5 +1,11 @@
 .tools-popup {
-    position: relative;
+    position: relative;    
+
+    &__btn {
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
 
     &__panel {
         display: none;
