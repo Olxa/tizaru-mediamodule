@@ -60,11 +60,7 @@
                         <div class="btn-wrap text-right">
                             <a class="btn btn-conture post-detail__rek-link" href="banner-rek.html">Реклама в WORLD</a>
                         </div>
-
-                        <div class="advertising-banner advertising-banner_full">
-                            <span class="advertising-banner__title">Реклама</span>
-                            <a href="#" class="advertising-banner__wrapper"><img class="advertising-banner__img" src="images/dist/advertising-banner-full.jpg" alt=""></a>
-                        </div>
+                        <!--#include virtual="/parts/banners/full.html" -->
                     </div>
                 </article>
                 <!--#include virtual="/parts/post/post-bar-option-subcr.html" -->
@@ -103,30 +99,40 @@
                         </ul>
                     </div>
                 </div>
-
-                <h2 class="post-detail__subtitle title-block title-block--big">Другие публикации канала</h2>
-                <div class="row post-detail__more-post">
-                    <div class="col-xl-4 col-lg-6">
-                        <!--#include virtual="/parts/post-card/post-card-gallery.html" -->
-                    </div>
-                    <div class="col-xl-4 col-lg-6">
-                        <!--#include virtual="/parts/post-card/post-card-gallery.html" -->
-                    </div>
-                    <div class="col-xl-4 col-lg-6">
-                        <!--#include virtual="/parts/post-card/post-card-gallery.html" -->
-                    </div>
-                </div>
-                <h2 class="post-detail__subtitle title-block title-block--big">Лента</h2>
-                <div class="row">
-                    <!--#include virtual="/parts/page-section/card-list-3.html" -->
-                </div>
-
-                <div class="media-feed__pagination-mob">
-                    <!--#include virtual="/parts/pagination-center.html" -->
-                </div>
             </main>
 
-            <aside class="post-detail__sidebar">САЙДБАР</aside>
+            <aside class="post-detail__sidebar">
+                <div class="commend-feed">
+                    <!--#include virtual="/parts/post/commend-feed.html" -->
+                    <!--#include virtual="/parts/banners/right-half-float.html" -->
+                    <!--#include virtual="/parts/post/commend-feed.html" -->
+                    <!--#include virtual="/parts/post/commend-feed.html" -->
+                </div>
+            </aside>
+        </div>
+    </div>
+    <div class="full-container">
+        <div class="post-detail__feed-bottom">
+            <h2 class="post-detail__subtitle title-block title-block--big">Другие публикации канала</h2>
+            <div class="row post-detail__more-post">
+                <div class="col-lg-4">
+                    <!--#include virtual="/parts/post-card/post-card-gallery.html" -->
+                </div>
+                <div class="col-lg-4">
+                    <!--#include virtual="/parts/post-card/post-card-gallery.html" -->
+                </div>
+                <div class="col-lg-4">
+                    <!--#include virtual="/parts/post-card/post-card-gallery.html" -->
+                </div>
+            </div>
+            <h2 class="post-detail__subtitle title-block title-block--big">Лента</h2>
+            <div class="row">
+                <!--#include virtual="/parts/page-section/card-list-3.html" -->
+            </div>
+
+            <div class="media-feed__pagination-mob">
+                <!--#include virtual="/parts/pagination-center.html" -->
+            </div>
         </div>
     </div>
 </div>

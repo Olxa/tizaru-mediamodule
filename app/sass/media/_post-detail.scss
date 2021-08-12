@@ -20,6 +20,7 @@
 
         @media (max-width: $tablet) {
             width: 100%;
+            padding-left: 0;
         }
     }
 
@@ -120,6 +121,10 @@
     &__comments {
         margin: 100px 0 150px;
 
+        @media (max-width: $tablet) {
+            margin-bottom: 60px;
+        }
+
         @media (max-width: $mobile) {
             margin-top: 60px;
         }
@@ -127,5 +132,13 @@
 
     &__more-post {
         margin-bottom: 60px;
+    }
+
+    &__feed-bottom {
+        width: 70%;
+
+        @media (max-width: 1680px) {
+            width: 100%;
+        }
     }
 }

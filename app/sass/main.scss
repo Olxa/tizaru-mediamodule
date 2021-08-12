@@ -10,9 +10,9 @@
 @import "blocks/typography/ul";
 
 // == blocks ==
-@import "blocks/if";
-@import "blocks/notice";
-@import "blocks/loader";
+@import "blocks/single/if";
+@import "blocks/single/notice";
+@import "blocks/single/loader";
 
 // == button ==
 @import "blocks/buttons/btn";
@@ -111,31 +111,31 @@
 @import "blocks/persons/persons";
 
 // == SINGLE blocks ==
-@import "blocks/more-wrapper";
-@import "blocks/dividing-block";
-@import "blocks/expert-opinion";
-@import "blocks/collapse";
-@import "blocks/search-map";
-@import "blocks/search-images";
-@import "blocks/page";
-@import "blocks/breadcrumb";
-@import "blocks/rating";
-@import "blocks/metro-list";
-@import "blocks/write-message";
-@import "blocks/change-password";
-@import "blocks/scroll-gray";
-@import "blocks/page-content";
-@import "blocks/sorting";
-@import "blocks/note-panel";
-@import "blocks/chat";
-@import "blocks/userlist";
-@import "blocks/image-gallery";
-@import "blocks/smart-filter";
-@import "blocks/video";
-@import "blocks/person";
-@import "blocks/panel";
-@import "blocks/no-resilt";
-@import "blocks/registration";
+@import "blocks/single/more-wrapper";
+@import "blocks/single/dividing-block";
+@import "blocks/single/expert-opinion";
+@import "blocks/single/collapse";
+@import "blocks/single/search-map";
+@import "blocks/single/search-images";
+@import "blocks/single/page";
+@import "blocks/single/breadcrumb";
+@import "blocks/single/rating";
+@import "blocks/single/metro-list";
+@import "blocks/single/write-message";
+@import "blocks/single/change-password";
+@import "blocks/single/scroll-gray";
+@import "blocks/single/page-content";
+@import "blocks/single/sorting";
+@import "blocks/single/note-panel";
+@import "blocks/single/chat";
+@import "blocks/single/userlist";
+@import "blocks/single/image-gallery";
+@import "blocks/single/smart-filter";
+@import "blocks/single/video";
+@import "blocks/single/person";
+@import "blocks/single/panel";
+@import "blocks/single/no-resilt";
+@import "blocks/single/registration";
 
 // == tools ==
 @import "blocks/tools/tools-popup";
@@ -263,3 +263,5 @@
 @import "media/post-detail";
 @import "media/comments";
 @import "media/comment-item";
+@import "media/commend-feed";
+@import "media/commend-card";
