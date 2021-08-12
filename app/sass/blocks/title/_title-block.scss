@@ -1,0 +1,26 @@
+/*------------------------------------*\
+  #Заголовки
+\*------------------------------------*/
+
+.title-block {
+    font-family: $userfont-sbold;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: $textcolor;
+
+    @media (max-width:$mobile) {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    &--big {
+        font-size: 30px;
+        line-height: 45px;
+
+        @media (max-width:$mobile) {
+            font-size: 20px;
+            line-height: 27px;
+        }
+    }
+}

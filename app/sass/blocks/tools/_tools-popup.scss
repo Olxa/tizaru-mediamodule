@@ -1,10 +1,14 @@
 .tools-popup {
-    position: relative;    
+    position: relative;
 
     &__btn {
         background-color: transparent;
         border: none;
         outline: none;
+
+        &--horiz {
+            transform: rotate( 90deg );
+        }
     }
 
     &__panel {

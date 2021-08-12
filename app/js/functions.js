@@ -363,6 +363,20 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
+    //Комментарии
+    $(".js-show-comment").on('click', function () {
+        $(this).closest(".comments__item").find('.comment-item__reply-list').toggleClass('comment-item--hide')
+
+        if ($(this).attr('data-show') === "true") {
+            $(this).text("Показать");
+            $(this).attr('data-show', "false");
+        }
+        else {
+            $(this).text("Свернуть");
+            $(this).attr('data-show', "true");
+        }
+    });
+
     //Mobil filter
 
     $(".mobil-bar__btn").on('click', function () {

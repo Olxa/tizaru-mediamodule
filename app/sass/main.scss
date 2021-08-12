@@ -93,7 +93,7 @@
 @import "blocks/page-filter/page-filter";
 
 // == title ==
-@import "blocks/title/block-title";
+@import "blocks/title/title-block";
 @import "blocks/title/page-title";
 
 // == slider ==
@@ -261,3 +261,5 @@
 @import "media/chanel-panel";
 @import "media/post-bar";
 @import "media/post-detail";
+@import "media/comments";
+@import "media/comment-item";

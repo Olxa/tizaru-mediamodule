@@ -46,6 +46,10 @@
         }
     }
 
+    &__subtitle {
+        margin-bottom: 30px;
+    }
+
     &__info {
         display: flex;
         font-size: 14px;
@@ -115,5 +119,13 @@
 
     &__comments {
         margin: 100px 0 150px;
+
+        @media (max-width: $mobile) {
+            margin-top: 60px;
+        }
+    }
+
+    &__more-post {
+        margin-bottom: 60px;
     }
 }
