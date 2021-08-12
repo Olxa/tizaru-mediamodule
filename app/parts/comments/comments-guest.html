@@ -1,0 +1,30 @@
+<div class="comments">
+    <p class="comments__guest">Только авторизованные пользователи могут оставлять комментарии</p>
+    <div class="comments__header">
+        <p class="comments__count title-block">Комментарии 200</p>
+        <div class="comments__sort">
+            <div class="dropdown js-dropdown-toogle">
+                <button class="dropdown__value" type="button">Сначала популярные</button>
+                <div class="dropdown__list scroll-gray">
+                    <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Сначала новые</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ul class="comments__list">
+        <li class="comments__item">
+            <!--#include virtual="/parts/post/comment.html" -->
+        </li>
+        <li class="comments__item">
+            <!--#include virtual="/parts/post/comment-reply.html" -->
+            <ul class="comments__list comment-item__reply-list comment-item--hide js-comment-reply">
+                <li class="comments__item">
+                    <!--#include virtual="/parts/post/comment3.html" -->
+                </li>
+            </ul>
+        </li>
+        <li class="comments__item">
+            <!--#include virtual="/parts/post/comment.html" -->
+        </li>
+    </ul>
+</div>
