@@ -377,6 +377,11 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
+    //ответить на комментарий
+    $(".js-add-reply-btn").on('click', function () {
+        $(this).closest(".comment-item").find('.js-add-reply').toggleClass('active');
+    });
+
     //Mobil filter
 
     $(".mobil-bar__btn").on('click', function () {
@@ -498,6 +503,10 @@ $(document).on('mouseup', function (e) {
         tools_post.removeClass('active');
     }
 
+    let add_reply = $('.js-add-reply');
+    if (!hsm.is(e.target) && add_reply.has(e.target).length === 0) {
+        add_reply.removeClass('active');
+    }
 
     //$(".js-tools-popup").on('click', function () {
     //    $(this).siblings(".tools-popup__panel").toggleClass('active');

@@ -1,0 +1,36 @@
+.file-icon {
+    position: relative;
+    color: $gray;
+    text-decoration: none;
+    cursor: pointer;
+
+    &::before {
+        font-size: 30px;
+
+        @media (max-width: $mobile-sm) {
+            font-size: 20px;
+        }
+    }
+
+    &:hover {
+        color: $accent;
+    }
+
+    &__input {
+        display: none;
+    }
+
+    &__added {
+        max-width: 50px;
+        max-height: 50px
+    }
+
+    &__del {
+        color: $gray;
+
+        &::before {
+            content: "\e917";
+            font-family: 'If';
+        }
+    }
+}

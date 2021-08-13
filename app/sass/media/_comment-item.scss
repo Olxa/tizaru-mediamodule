@@ -112,6 +112,10 @@
             font-size: 14px;
         }
 
+        @media (max-width: $mobile-sm) {
+            font-size: 13px;
+        }
+
         &--self {
             padding: 0 5px;
             background: lighten($accent, 35%);
@@ -135,14 +139,15 @@
 
         &::before {
             padding-right: 10px;
+
+            @media (max-width: $mobile-sm) {
+               padding-right: 5px;
+            }
         }
     }
 
     &__edited {
         margin-right: 20px;
-    }
-
-    &__date {
     }
 
     &__val {
@@ -262,6 +267,15 @@
             &:first-child {
                 padding-top: 0;
             }
+        }
+    }
+
+    &__add-reply {
+        display: none;
+        padding-top: 30px;
+
+        &.active {
+            display: block;
         }
     }
 }

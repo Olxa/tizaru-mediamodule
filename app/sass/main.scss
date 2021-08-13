@@ -71,6 +71,7 @@
 // == dropdown ==
 @import "blocks/dropdown/dropdown";
 @import "blocks/dropdown/dropdown--time";
+@import "blocks/dropdown/dropditem-group";
 
 // == search ==
 @import "blocks/search/smart-search";
@@ -136,6 +137,7 @@
 @import "blocks/single/panel";
 @import "blocks/single/no-resilt";
 @import "blocks/single/registration";
+@import "blocks/single/image-logo";
 
 // == tools ==
 @import "blocks/tools/tools-popup";
@@ -186,6 +188,7 @@
 // == add-file ==
 @import "blocks/add-file/file-photo";
 @import "blocks/add-file/file-txt";
+@import "blocks/add-file/file-icon";
 
 // == team ==
 @import "blocks/team/team";

@@ -1,8 +1,133 @@
 .comment-add {
-    &__logo {
+    display: flex;
+    align-items: center;
+    padding: 30px 30px 30px 15px;
+    background: $light-gray;
+
+    @media (max-width: $mobile) {
+        position: relative;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
     }
 
-    &__img {
+    &__logo {
+        display: inline-block;
+        width: 100px;
+        min-width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-right: 30px;
+        overflow: hidden;
 
+        @media (max-width: $tablet) {
+            width: 70px;
+            min-width: 70px;
+            height: 70px;
+            margin-right: 20px;
+        }
+
+        @media (max-width: $mobile) {
+            position: absolute;
+            width: 40px;
+            min-width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        @media (max-width: $mobile-sm) {
+            width: 30px;
+            min-width: 30px;
+            height: 30px;
+        }
+    }
+
+    &__content {
+        width: 100%;
+
+        @media (max-width: $mobile) {
+            margin-left: 50px;
+            width: calc(100% - 50px);
+        }
+    }
+
+    &__choice-account {
+
+        @media (max-width: $mobile-sm) {
+            font-size: 12px;
+        }
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+
+        @media (max-width: $tablet) {
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: $mobile) {
+            justify-content: flex-end;
+        }
+    }
+
+    &__meta {
+        display: inline-block;
+        margin-right: 40px;
+        font-size: 18px;
+        color: $gray;
+        line-height: 24px;
+
+        @media (max-width: $tablet) {
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        @media (max-width: $mobile) {
+            font-size: 12px;
+        }
+    }
+
+    &__field-wrap {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: $mobile) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__field {
+        width: 70%;
+
+        @media (max-width: $mobile) {
+            width: 100%;
+        }
+
+        .textarea {
+            min-height: $input-height;
+
+            @media (max-width: $mobile) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    &__add-img {
+        margin: 0 40px 0 15px;
+
+        @media (max-width: $mobile) {
+            margin-left: 0;
+        }
+    }
+
+    &__submit {
+        @media (max-width: $mobile) {
+            margin-left: auto;
+            height: 30px;
+            line-height: 21px;
+            font-size: 14px;
+        }
     }
 }

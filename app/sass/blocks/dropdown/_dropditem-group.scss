@@ -1,0 +1,51 @@
+.dropditem-group {
+    padding: 15px 10px;
+    width: 300px;
+    right: 0;
+    left: initial;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        padding: 4px 10px;
+        border-radius: $border-radius;
+
+        &:hover {
+            background: $white;
+        }
+    }
+
+    &__img {
+        width: 50px;
+        min-width: 50px;
+        height: 50px;
+        margin-right: 20px;
+        object-fit: cover;
+        object-position: top center;
+        border-radius: 50%;
+    }
+
+    &__descr {
+        margin: 0;
+        font-size: 16px;
+        line-height: 21px;
+        color: $textcolor;
+    }
+
+    &__meta {
+        display: inline-block;
+        width: 100%;
+        font-size: 14px;
+        line-height: 19px;
+        color: $gray;
+    }
+
+    &__title {
+        margin: 20px 10px 10px;
+        font-family: $userfont-sbold;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 21px;
+        color: $gray;
+    }
+}
