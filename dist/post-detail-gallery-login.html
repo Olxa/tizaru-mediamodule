@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Ваша лента</title>
+    <title>Название поста</title>
     <meta name="description" content="<!--#echo var=' title' -->">
     <meta name="viewport" content="width=device-width">
     <link rel="icon" href="images/favicon.png">
@@ -400,200 +400,104 @@
             </div>
         </div>
     </header>
-<div class="container media__container">
-    <div class="media__header media-feed">
-    <div class="media-feed__logo-wrap">
-        <div class="media-feed__logo"></div>
-        <div class="media-feed__logo-txt text-gray">ваша <span class="text-accent">лента</span></div>
-    </div>
-    <div class="media-feed__tabs">
-        <ul class="tabs tabs__nav-list tabs--feed" data-tabgroup="feed-content">
-            <li class="tabs__nav"><a class="tabs__nav-link active" href="#feeds">Ваша лента</a></li>
-            <li class="tabs__nav"><a class="tabs__nav-link" href="#chanels">Все каналы</a></li>
-        </ul>
-    </div>
-    <div class="media-feed__tools media-feed__tools--login">
-        <ul class="media-feed__tools-list">
-            <li class="media-feed__tools-item">
-                <button class="media-feed__sort active">подписки</button>
-            </li>
-            <li class="media-feed__tools-item">
-                <button class="media-feed__sort">рекомендации</button>
-            </li>
-        </ul>
-        <ul class="media-feed__tools-list">
-            <li class="media-feed__tools-item">
-                <div class="seach">
-                    <div class="seach__field-wrap">
-                        <input class="input input--empty" type="text" placeholder="Поиск" />
+<div class="page page--padding-big">
+    <div class="full-container">
+        <div class="post-detail">
+            <main class="post-detail__article">
+                <div class="post-detail__search">
+                    <div class="input-search">
+                        <input class="input input-search__val" type="text" placeholder="Найти галерею">
+                        <button class="input-search__btn i-search" type="submit">Найти галерею</button>
                     </div>
-                    <div class="seach__btn i-search"></div>
                 </div>
-            </li>
-            <li class="media-feed__tools-item">
-                <button class="media-feed__sort active">new</button>
-            </li>
-            <li class="media-feed__tools-item">
-                <button class="media-feed__sort">top</button>
-            </li>
-            <li class="media-feed__tools-item tools-feed">
-                <div class="tools-feed__btn i-gear js-tools-feed"></div>
-                <div class="tools-feed__dropdown">
-    <form action="/" method="post">
-        <div class="tools-feed__dropdown-header">
-            <div class="tools-feed__dropdown-title">Смена языка и контента</div>
-            <div class="tools-feed__lang">
-                <div class="tools-feed__lang-selected js-lang">Ru</div>
-                <div class="tools-feed__lang-dropdown">
-                    <ul class="tools-feed__lang-list scroll-gray">
-                        <li class="tools-feed__lang-item">
-                            <a class="tools-feed__lang-link" href="#"><img class="tools-feed__lang-flag" src="images/dist/flag/ru.svg" alt="Русский, русский" />Россия, русский</a>
-                        </li>
-                        <li class="tools-feed__lang-item">
-                            <a class="tools-feed__lang-link" href="#"><img class="tools-feed__lang-flag" src="images/dist/flag/de.svg" alt="Deutschland, deutsch" />Deutschland, deutsch</a>
-                        </li>
-                        <li class="tools-feed__lang-item">
-                            <a class="tools-feed__lang-link" href="#"><img class="tools-feed__lang-flag" src="images/dist/flag/en.svg" alt="UK, English" />UK, English</a>
-                        </li>
-                        <li class="tools-feed__lang-item">
-                            <a class="tools-feed__lang-link" href="#"><img class="tools-feed__lang-flag" src="images/dist/flag/us.svg" alt="US, English" />US, English</a>
-                        </li>
-                        <li class="tools-feed__lang-item">
-                            <a class="tools-feed__lang-link" href="#"><img class="tools-feed__lang-flag" src="images/dist/flag/es.svg" alt="España, español" />España, español</a>
-                        </li>
-                        <li class="tools-feed__lang-item">
-                            <a class="tools-feed__lang-link" href="#"><img class="tools-feed__lang-flag" src="images/dist/flag/cn.svg" alt="中国, 中文" />中国, 中文</a>
-                        </li>
-                        <li class="tools-feed__lang-item">
-                            <a class="tools-feed__lang-link" href="#"><img class="tools-feed__lang-flag" src="images/dist/flag/fr.svg" alt="France, français" />France, français</a>
-                        </li>
-                        <li class="tools-feed__lang-item">
-                            <a class="tools-feed__lang-link" href="#"><img class="tools-feed__lang-flag" src="images/dist/flag/oa.svg" alt="الإمارات العربية المتحدة" />الإمارات العربية المتحدة</a>
-                        </li>
-                        <li class="tools-feed__lang-item">
-                            <a class="tools-feed__lang-link" href="#"><img class="tools-feed__lang-flag" src="images/dist/flag/tr.svg" alt="Türk, tüm bölgeler" />Türk, tüm bölgeler</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="tools-feed__item tools-feed__item--border">
-            <div class="checkbox checkbox--sm">
-                <input class="checkbox__field" id="age" type="checkbox">
-                <label class="checkbox__value" for="age">Показывать публикации 18+</label>
-            </div>
-        </div>
-        <ul class="tools-feed__list scroll-gray">
-            <li class="tools-feed__item">
-                <div class="checkbox checkbox--sm">
-                    <input class="checkbox__field" id="community22" type="checkbox">
-                    <label class="checkbox__value" for="community22">Бизнес</label>
-                </div>
-            </li>
-            <li class="tools-feed__item">
-                <div class="checkbox checkbox--sm">
-                    <input class="checkbox__field" id="community33" type="checkbox">
-                    <label class="checkbox__value" for="community33">Видео</label>
-                </div>
-            </li>
-            <li class="tools-feed__item">
-                <div class="checkbox checkbox--sm">
-                    <input class="checkbox__field" id="community44" type="checkbox">
-                    <label class="checkbox__value" for="community44">Технологии</label>
-                </div>
-            </li>
-            <li class="tools-feed__item">
-                <div class="checkbox checkbox--sm">
-                    <input class="checkbox__field" id="community55" type="checkbox">
-                    <label class="checkbox__value" for="community55">Финансы и инвестиции</label>
-                </div>
-            </li>
-            <li class="tools-feed__item">
-                <div class="checkbox checkbox--sm">
-                    <input class="checkbox__field" id="community66" type="checkbox">
-                    <label class="checkbox__value" for="community66">Экспертное мнение</label>
-                </div>
-            </li>
-            <li class="tools-feed__item">
-                <div class="checkbox checkbox--sm">
-                    <input class="checkbox__field" id="community77" type="checkbox">
-                    <label class="checkbox__value" for="community77">Персоны</label>
-                </div>
-            </li>
-            <li class="tools-feed__item">
-                <div class="checkbox checkbox--sm">
-                    <input class="checkbox__field" id="community88" type="checkbox">
-                    <label class="checkbox__value" for="community88">Карьера и свой бизнес</label>
-                </div>
-            </li>
-            <li class="tools-feed__item">
-                <div class="checkbox checkbox--sm">
-                    <input class="checkbox__field" id="community11" type="checkbox">
-                    <label class="checkbox__value" for="community11">Бизнес</label>
-                </div>
-            </li>
-            <li class="tools-feed__item">
-                <div class="checkbox checkbox--sm">
-                    <input class="checkbox__field" id="community99" type="checkbox">
-                    <label class="checkbox__value" for="community99">Технологии</label>
-                </div>
-            </li>
-            <li class="tools-feed__item">
-                <div class="checkbox checkbox--sm">
-                    <input class="checkbox__field" id="community111" type="checkbox">
-                    <label class="checkbox__value" for="community111">Спорт</label>
-                </div>
-            </li>
-        </ul>
-        <div class="tools-feed__btn-wrap">
-            <button class="btn btn-accent btn--sm" type="button">Сохранить</button>
-        </div>
-    </form>
-</div>
-            </li>
-        </ul>
-    </div>
-    <p class="media-feed__agree">Используя world, вы принимаете <a class="media-feed__agree-link" href="#">условия использования</a></p>
-</div>
-    <div id="feed-content" class="tabgroup">
-        <div class="tabgroup__item media-feed__content" id="feeds">
-            <div class="media-feed__posts">
-                <div class="row">
-                    <div class="col-xl-4 col-lg-6">
-    <div class="post-card">
-    <div class="post-card__panel">
-        <div class="post-card__header">
-            <div class="post-card__info">
-                <a class="post-card__chanel-link" href="chanel-detail.html"><img class="post-card__chanel-logo" src="images/dist/n8.jpg" alt="Название канала" /></a>
-                <div class="post-card__chanel-info-wrap">
-                    <div class="post-card__chanel-info">
-                        <a class="post-card__chanel-name" href="chanel-detail.html">Кот и плед, я домосед</a>
-                        <button class="post-card__btn-sub post-card__btn-sub--signed" title="отписаться">+ подписаться</button>
+                <article class="post-detail__container post-detail__container--media">
+                    <div class="post-detail__gallery post-gallery slider slider--sm js-post-detail-gallery">
+                        <div class="post-gallery__item">
+                            <div class="post-gallery__img-wrap">
+                                <img class="post-gallery__img" src="images/dist/image.jpg" alt="Название изображения" />
+                            </div>
+                            <p class="post-gallery__descr">
+                                Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod,
+                                iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                            </p>
+                        </div>
+                        <div class="post-gallery__item">
+                            <div class="post-gallery__img-wrap">
+                                <img class="post-gallery__img" src="images/dist/n8.jpg" alt="Название изображения" />
+                            </div>
+                            <p class="post-gallery__descr">
+                                Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod,
+                                iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                            </p>
+                        </div>
+                        <div class="post-gallery__item">
+                            <div class="post-gallery__img-wrap">
+                                <img class="post-gallery__img" src="images/dist/video.jpg" alt="Название изображения" />
+                            </div>
+                            <p class="post-gallery__descr">
+                                Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod,
+                                iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                            </p>
+                        </div>
                     </div>
-                    <a class="post-card__community tag tag--link" href="community-detail.html">Животные</a>
-                </div>
-            </div>
-            <div class="post-card__tools tools-popup">
-                <button class="post-card__tools-btn tools-popup__btn js-tools-popup i-option"></button>
+                    <h1 class="post-detail__title post-detail__title--age">Название галереи</h1>
+                    <div class="post-detail__info">
+                        <div class="post-detail__community">в сообществе <a class="post-detail__community-link" href="#">Бизнес</a></div>
+                        <span class="post-detail__date">17 апреля 2021</span>
+                    </div>
+                    <div class="post-detail__descr hide-descr">
+                        <div class="hide-descr__txt">
+                            Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod,
+                            iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                            Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem
+                            nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus
+                            iaculis scelerisque eu ac ante.
+                            Fusce non varius purus aenean nec magna felis fusce vestibulum velit mollis odio
+                            sollicitudin lacinia aliquam posuere, sapien elementum lobortis tincidunt, turpis
+                            dui ornare nisl, sollicitudin interdum turpis nunc eget.
+                        </div>
+                        <button class="hide-descr__btn btn-unstylling js-show-full">Развернуть</button>
+                    </div>
+                    <div class="post-detail__bottom">
+                        <div class="advertising-banner advertising-banner_full">
+    <span class="advertising-banner__title">Реклама</span>
+    <a href="#" class="advertising-banner__wrapper"><img class="advertising-banner__img" src="images/dist/advertising-banner-full.jpg" alt=""></a>
+</div>
+                    </div>
+                </article>
+                <div class="post-bar">
+    <div class="post-bar__chanel-info">
+        <a class="post-bar__chanel-logo" href="chanel-detail.html"><img class="post-bar__chanel-img" src="images/dist/chanel.jpg" alt="Название канала" /></a>
+        <div class="post-bar__chanel-val">
+            <a class="post-bar__chanel-name post-bar__option-top" href="chanel-detail.html">Природа России</a>
+            <div class="post-bar__chanel-tools post-bar__option-top tools-popup">
+                <button class="tools-popup__btn js-tools-popup i-option-empty text-gray"></button>
                 <div class="tools-popup__panel">
                     <ul class="tools-popup__list">
                         <li class="tools-popup__item"><a class="tools-popup__link popup-link" href="#complain">Пожаловаться</a></li>
+                        <li class="tools-popup__item"><button class="tools-popup__link js-note-locked" type="button">Заблокировать</button></li>
                     </ul>
                 </div>
             </div>
-        </div>
-        <div class="post-card__content">
-            <a class="post-card__image-wrap post-card__video" href="post-detail-video.html"><img class="post-card__image" src="images/dist/n5.jpg" alt="Название поста" /></a>
-            <div class="post-card__content-inner">
-                <a class="post-card__name" href="post-detail-video.html">Содержательное название поста с видео</a>
-                <p class="post-card__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod gravida dolor sit amet lacus accumn bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...</p>
+            <div class="post-bar__chanel-subscr">
+                <div class="post-bar__chanel-subscr-count">
+                    <span class="post-bar__chanel-subscr-txt">Подписчиков</span> 1 486
+                </div>
+                <button class="post-bar__subscr btn btn-accent btn--md">Подписаться</button>
             </div>
         </div>
-        <div class="post-card__bottom">
-            <div class="post-card__country"><img class="post-card__country-flag" src="images/dist/flag/ru-reg.svg" alt="Россия" /></div>
-            <div class="post-card__control">
-                <button class="post-card__control-share i-share-big js-share-btn" type="button"></button>
-                <div class="share-block__popup share-popup post-card__share-popup">
+    </div>
+    <button class="post-bar__subscr btn btn-accent btn--md">Подписаться</button>
+    <div class="post-bar__post-option">
+        <ul class="post-bar__option-list post-bar__option-top">
+            <li class="post-bar__option-item">
+                <span class="post-bar__option-val post-bar__view">5</span>
+                <span class="post-bar__view-icon i-eye"></span>
+            </li>
+            <li class="post-bar__option-item">
+                <span class="post-bar__option-val post-bar__share-count">2</span>
+                <button class="post-bar__share-btn i-share-big js-share-btn" type="button"></button>
+                <div class="share-block__popup share-popup post-bar__share-popup">
                     <button class="share-popup__close" type="button"></button>
                     <div class="share-popup__subtitle">Поделиться в соц сетях</div>
                     <div class="share-popup__btn share-btn">
@@ -613,602 +517,927 @@
 </ul>
                     </div>
                 </div>
-                <div class="post-card__control-likes like">
+            </li>
+            <li class="post-bar__option-item">
+                <button class="like__item i-dislike"></button>
+                <span class="post-bar__option-val post-bar__like-count">3</span>
+                <button class="like__item i-like"></button>
+            </li>
+        </ul>
+        <ul class="post-bar__option-list">
+            <li class="post-bar__option-item">
+                <span class="post-bar__option-val post-bar__date">17 апреля 2021</span>
+            </li>
+        </ul>
+    </div>
+</div>
+                <div class="post-detail__comments">
+                    <div class="comments">
+    <div class="comments__add comment-add">
+	<div class="comment-add__logo"><img class="comment-add__img image-logo" src="images/dist/person.jpg" alt="Имя Фамилия" /></div>
+	<div class="comment-add__content">
+		<div class="comment-add__header">
+			<span class="comment-add__meta">Ответить как:</span>
+			<div class="comment-add__choice-account dropdown js-dropdown-toogle">
+    <button class="dropdown__value" type="button">Иван Фёдоров</button>
+    <div class="dropdown__list scroll-gray dropditem-group">
+        <a class="dropdown__list-item dropditem-group__item" href="#">
+            <img class="dropditem-group__img" src="images/dist/person.jpg" alt="Имя Фамилия" />
+            <p class="dropditem-group__descr">Иван Фёдоров <span class="dropditem-group__meta">основной аккаунт</span></p>
+        </a>
+        <div class="dropditem-group__title">
+            Ваши компании
+        </div>
+        <a class="dropdown__list-item dropditem-group__item" href="#">
+            <img class="dropditem-group__img" src="images/dist/logo-c.jpg" alt="Название компании" />
+            <p class="dropditem-group__descr">ООО “Рога и копыта”</p>
+        </a>
+        <a class="dropdown__list-item dropditem-group__item" href="#">
+            <img class="dropditem-group__img" src="images/dist/part-bg.jpg" alt="Название компании" />
+            <p class="dropditem-group__descr">ООО “ЖелДорСпецСтрой Ремонт и разработка супер инструмента”</p>
+        </a>
+        <div class="dropditem-group__title">
+            Ваши каналы
+        </div>
+        <a class="dropdown__list-item dropditem-group__item" href="#">
+            <img class="dropditem-group__img" src="images/dist/n7.jpg" alt="Название канала" />
+            <p class="dropditem-group__descr">Весёлый мир</p>
+        </a>
+        <a class="dropdown__list-item dropditem-group__item" href="#">
+            <img class="dropditem-group__img" src="images/dist/chanel.jpg" alt="Название канала" />
+            <p class="dropditem-group__descr">Грустный мир</p>
+        </a>
+    </div>
+</div>
+		</div>
+		<div class="comment-add__field-wrap">
+			<div class="comment-add__field"><textarea class="textarea" placeholder="Новый комментарий"></textarea></div>
+			<div class="comment-add__add-img">
+				<label class="file-icon i-image" title="Загрузить изображение">
+					<input name="file" type="file" class="file-txt__input" multiple="">
+				</label>
+			</div>
+			<button class="comment-add__submit btn btn-accent btn--md">Отправить</button>
+		</div>
+	</div>
+</div>
+    <div class="comments__header">
+        <p class="comments__count title-block">Комментарии 200</p>
+        <div class="comments__sort">
+            <div class="dropdown js-dropdown-toogle">
+                <button class="dropdown__value" type="button">Сначала популярные</button>
+                <div class="dropdown__list scroll-gray">
+                    <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Сначала новые</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ul class="comments__list">
+        <li class="comments__item">
+            <div class="comment-item">
+    <div class="comment-item__content">
+        <a class="comment-item__logo" href="accaunt-detail.html"><img class="comment-item__img" src="images/dist/or2.jpg" alt="Имя Фамилия" /></a>
+        <div class="comment-item__meta-wrap">
+            <div class="comment-item__meta-left">
+                <a class="comment-item__name title-block" href="accaunt-detail.html">Алевтина Иванченко</a>
+            </div>
+            <div class="comment-item__meta-right">
+                <span class="comment-item__date comment-item__meta">12.01.2020</span>
+            </div>
+        </div>
+        <div class="comment-item__val">
+            Познавательно!
+        </div>
+    </div>
+    <div class="comment-item__option">
+        <button class="comment-item__reply-btn link link-accent link--border js-add-reply-btn">ответить</button>
+        <div class="comment-item__option-inner">
+            <div class="comment-item__control">
+                <div class="comment-item__control-tools tools-popup">
+                    <button class="tools-popup__btn tools-popup__btn--horiz js-tools-popup i-option"></button>
+                    <div class="tools-popup__panel">
+                        <ul class="tools-popup__list">
+                            <li class="tools-popup__item"><a class="tools-popup__link popup-link" href="#complain">Пожаловаться</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="comment-item__like">
                     <button class="like__item i-dislike"></button>
+                    <span class="post-bar__option-val post-bar__like-count">3</span>
+                    <button class="like__item i-like"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="comment-item__add-reply js-add-reply">
+        <div class="comment-add">
+	<div class="comment-add__logo"><img class="comment-add__img image-logo" src="images/dist/person.jpg" alt="Имя Фамилия" /></div>
+	<div class="comment-add__content">
+		<div class="comment-add__header">
+			<span class="comment-add__meta">Ответить как:</span>
+			<div class="comment-add__choice-account dropdown js-dropdown-toogle">
+    <button class="dropdown__value" type="button">Иван Фёдоров</button>
+    <div class="dropdown__list scroll-gray dropditem-group">
+        <a class="dropdown__list-item dropditem-group__item" href="#">
+            <img class="dropditem-group__img" src="images/dist/person.jpg" alt="Имя Фамилия" />
+            <p class="dropditem-group__descr">Иван Фёдоров <span class="dropditem-group__meta">основной аккаунт</span></p>
+        </a>
+        <div class="dropditem-group__title">
+            Ваши компании
+        </div>
+        <a class="dropdown__list-item dropditem-group__item" href="#">
+            <img class="dropditem-group__img" src="images/dist/logo-c.jpg" alt="Название компании" />
+            <p class="dropditem-group__descr">ООО “Рога и копыта”</p>
+        </a>
+        <a class="dropdown__list-item dropditem-group__item" href="#">
+            <img class="dropditem-group__img" src="images/dist/part-bg.jpg" alt="Название компании" />
+            <p class="dropditem-group__descr">ООО “ЖелДорСпецСтрой Ремонт и разработка супер инструмента”</p>
+        </a>
+        <div class="dropditem-group__title">
+            Ваши каналы
+        </div>
+        <a class="dropdown__list-item dropditem-group__item" href="#">
+            <img class="dropditem-group__img" src="images/dist/n7.jpg" alt="Название канала" />
+            <p class="dropditem-group__descr">Весёлый мир</p>
+        </a>
+        <a class="dropdown__list-item dropditem-group__item" href="#">
+            <img class="dropditem-group__img" src="images/dist/chanel.jpg" alt="Название канала" />
+            <p class="dropditem-group__descr">Грустный мир</p>
+        </a>
+    </div>
+</div>
+		</div>
+		<div class="comment-add__field-wrap">
+			<div class="comment-add__field"><textarea class="textarea" placeholder="Новый комментарий"></textarea></div>
+			<div class="comment-add__add-img">
+                <label class="file-icon" title="Загрузить изображение">
+                    <input class="file-icon__input" name="file" type="file" multiple="">
+                    <img class="file-icon__added" src="images/dist/n11.jpg" alt="название изображения" />
+                    <button class="file-icon__del btn-unstylling" title="Удалить изображение"></button>
+                </label>
+			</div>
+			<button class="comment-add__submit btn btn-accent btn--md">Отправить</button>
+		</div>
+	</div>
+</div>
+    </div>
+</div>
+        </li>
+        <li class="comments__item">
+            <div class="comment-item">
+    <div class="comment-item__content">
+        <a class="comment-item__logo" href="accaunt-detail.html"><img class="comment-item__img" src="images/dist/vettargetlog.png" alt="Имя Фамилия" /></a>
+        <div class="comment-item__meta-wrap">
+            <div class="comment-item__meta-left">
+                <a class="comment-item__name title-block" href="accaunt-detail.html">World  business</a>
+            </div>
+            <div class="comment-item__meta-right">
+                <span class="comment-item__date comment-item__meta">час назад</span>
+            </div>
+        </div>
+        <div class="comment-item__val">
+            На самом деле это не так работает!
+        </div>
+    </div>
+    <div class="comment-item__option">
+        <button class="comment-item__reply-btn link link-accent link--border js-add-reply-btn">ответить</button>
+        <div class="comment-item__option-inner">
+            <div class="comment-item__reply-count">2 ответа <button class="comment-item__meta btn-unstylling js-show-comment">показать</button></div>
+            <div class="comment-item__control">
+                <div class="comment-item__control-tools tools-popup">
+                    <button class="tools-popup__btn tools-popup__btn--horiz js-tools-popup i-option"></button>
+                    <div class="tools-popup__panel">
+                        <ul class="tools-popup__list">
+                            <li class="tools-popup__item"><a class="tools-popup__link popup-link" href="#complain">Пожаловаться</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="comment-item__like">
+                    <button class="like__item i-dislike-b"></button>
+                    <span class="post-bar__option-val post-bar__like-count">1</span>
+                    <button class="like__item i-like"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="comment-item__add-reply js-add-reply">
+        <div class="comment-add">
+	<div class="comment-add__logo"><img class="comment-add__img image-logo" src="images/dist/person.jpg" alt="Имя Фамилия" /></div>
+	<div class="comment-add__content">
+		<div class="comment-add__header">
+			<span class="comment-add__meta">Ответить как:</span>
+			<div class="comment-add__choice-account dropdown js-dropdown-toogle">
+    <button class="dropdown__value" type="button">Иван Фёдоров</button>
+    <div class="dropdown__list scroll-gray dropditem-group">
+        <a class="dropdown__list-item dropditem-group__item" href="#">
+            <img class="dropditem-group__img" src="images/dist/person.jpg" alt="Имя Фамилия" />
+            <p class="dropditem-group__descr">Иван Фёдоров <span class="dropditem-group__meta">основной аккаунт</span></p>
+        </a>
+        <div class="dropditem-group__title">
+            Ваши компании
+        </div>
+        <a class="dropdown__list-item dropditem-group__item" href="#">
+            <img class="dropditem-group__img" src="images/dist/logo-c.jpg" alt="Название компании" />
+            <p class="dropditem-group__descr">ООО “Рога и копыта”</p>
+        </a>
+        <a class="dropdown__list-item dropditem-group__item" href="#">
+            <img class="dropditem-group__img" src="images/dist/part-bg.jpg" alt="Название компании" />
+            <p class="dropditem-group__descr">ООО “ЖелДорСпецСтрой Ремонт и разработка супер инструмента”</p>
+        </a>
+        <div class="dropditem-group__title">
+            Ваши каналы
+        </div>
+        <a class="dropdown__list-item dropditem-group__item" href="#">
+            <img class="dropditem-group__img" src="images/dist/n7.jpg" alt="Название канала" />
+            <p class="dropditem-group__descr">Весёлый мир</p>
+        </a>
+        <a class="dropdown__list-item dropditem-group__item" href="#">
+            <img class="dropditem-group__img" src="images/dist/chanel.jpg" alt="Название канала" />
+            <p class="dropditem-group__descr">Грустный мир</p>
+        </a>
+    </div>
+</div>
+		</div>
+		<div class="comment-add__field-wrap">
+			<div class="comment-add__field"><textarea class="textarea" placeholder="Новый комментарий"></textarea></div>
+			<div class="comment-add__add-img">
+                <label class="file-icon" title="Загрузить изображение">
+                    <input class="file-icon__input" name="file" type="file" multiple="">
+                    <img class="file-icon__added" src="images/dist/n11.jpg" alt="название изображения" />
+                    <button class="file-icon__del btn-unstylling" title="Удалить изображение"></button>
+                </label>
+			</div>
+			<button class="comment-add__submit btn btn-accent btn--md">Отправить</button>
+		</div>
+	</div>
+</div>
+    </div>
+</div>
+            <ul class="comments__list comment-item__reply-list comment-item--hide js-comment-reply">
+                <li class="comments__item">
+                    <div class="comment-item">
+    <div class="comment-item__content">
+        <a class="comment-item__logo" href="accaunt-detail.html"><img class="comment-item__img" src="images/dist/person.jpg" alt="Имя Фамилия" /></a>
+        <div class="comment-item__meta-wrap">
+            <div class="comment-item__meta-left">
+                <a class="comment-item__name comment-item__name--self title-block" href="accaunt-detail.html">Иван Фёдоров</a>
+                <span class="comment-item__reply i-reply">World business</span>
+            </div>
+            <div class="comment-item__meta-right">
+                <span class="comment-item__edited comment-item__meta">отредактировано</span>
+                <span class="comment-item__date comment-item__meta">12.01.2020</span>
+            </div>
+        </div>
+        <div class="comment-item__val">
+            А как же на Ваш взгляд это должно работать? Все расписано максимально подробно и приведены ссылки на исследования и научную литературу
+        </div>
+    </div>
+    <div class="comment-item__option">
+        <div class="comment-item__option-inner">
+            <div class="comment-item__reply-count">1 ответ <button class="comment-item__meta btn-unstylling js-show-comment">Показать</button></div>
+            <div class="comment-item__control">
+                <div class="comment-item__control-tools tools-popup">
+                    <button class="tools-popup__btn tools-popup__btn--horiz js-tools-popup i-option"></button>
+                    <div class="tools-popup__panel">
+                        <ul class="tools-popup__list">
+                            <li class="tools-popup__item"><a class="tools-popup__link popup-link" href="#complain">Пожаловаться</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="comment-item__like">
+                    <button class="like__item i-dislike"></button>
+                    <span class="post-bar__option-val post-bar__like-count">10</span>
                     <button class="like__item i-like"></button>
                 </div>
             </div>
         </div>
     </div>
 </div>
-</div>
-<div class="col-xl-4 col-lg-6">
-    <div class="post-card">
-    <div class="post-card__panel">
-        <div class="post-card__header">
-            <div class="post-card__info">
-                <a class="post-card__chanel-link" href="chanel-detail.html"><img class="post-card__chanel-logo" src="images/dist/chanel.jpg" alt="Название канала" /></a>
-                <div class="post-card__chanel-info-wrap">
-                    <div class="post-card__chanel-info">
-                        <a class="post-card__chanel-name" href="chanel-detail.html">Очень длинное назва...</a>
-                        <button class="post-card__btn-sub post-card__btn-sub--signed" title="отписаться">+ подписаться</button>
-                    </div>
-                    <span class="post-card__community tag">Промо</span>
-                </div>
+<ul class="comment-item__reply-list js-comment-reply">
+    <li class="comments__item">
+        <div class="comment-item">
+    <div class="comment-item__content">
+        <a class="comment-item__logo" href="accaunt-detail.html"><img class="comment-item__img" src="images/dist/ps4.jpg" alt="Имя Фамилия" /></a>
+        <div class="comment-item__meta-wrap">
+            <div class="comment-item__meta-left">
+                <a class="comment-item__name title-block" href="accaunt-detail.html">Людмила Фитисова</a>
+                <span class="comment-item__reply i-reply">Иван Фёдоров</span>
             </div>
-            <div class="post-card__tools tools-popup">
-                <button class="post-card__tools-btn tools-popup__btn js-tools-popup i-option"></button>
-                <div class="tools-popup__panel">
-                    <ul class="tools-popup__list">
-                        <li class="tools-popup__item"><a class="tools-popup__link popup-link" href="#complain">Пожаловаться</a></li>
-                    </ul>
-                </div>
+            <div class="comment-item__meta-right">
+                <span class="comment-item__date comment-item__meta">12.01.2020</span>
             </div>
         </div>
-        <div class="post-card__content">
-            <a class="post-card__image-wrap" href="post-detail.html"><img class="post-card__image" src="images/dist/decor.png" alt="Название поста" /></a>
-            <div class="post-card__content-inner">
-                <a class="post-card__name" href="post-detail.html">О том как завоевать мир</a>
-                <p class="post-card__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod gravida dolor sit amet lacus accumn bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...</p>
-            </div>
+        <div class="comment-item__val">
+            Очень подробная информация! Спасибо за проделанную работу!
         </div>
-        <div class="post-card__bottom">
-            <div class="post-card__country"><img class="post-card__country-flag" src="images/dist/flag/ru-reg.svg" alt="Россия" /></div>
-            <div class="post-card__control">
-                <button class="post-card__control-share i-share-big js-share-btn" type="button"></button>
-                <div class="share-block__popup share-popup post-card__share-popup">
-                    <button class="share-popup__close" type="button"></button>
-                    <div class="share-popup__subtitle">Поделиться в соц сетях</div>
-                    <div class="share-popup__btn share-btn">
-                        <ul class="share-btn__list">
-    <li class="share-btn__item"><a class="share-btn__link icon i-tw-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-fb-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-vk-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-ln-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-ok-fl" href="#"></a></li>
-</ul>
-<ul class="share-btn__list">
-    <li class="share-btn__item"><a class="share-btn__link icon i-wt-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-vb-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-sk-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-tl-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-copy last-icon" href="#"></a></li>
-</ul>
+    </div>
+    <div class="comment-item__option">
+        <button class="comment-item__reply-btn link link-accent link--border js-add-reply-btn">ответить</button>
+        <div class="comment-item__option-inner">
+            <div class="comment-item__control">
+                <div class="comment-item__control-tools tools-popup">
+                    <button class="tools-popup__btn tools-popup__btn--horiz js-tools-popup i-option"></button>
+                    <div class="tools-popup__panel">
+                        <ul class="tools-popup__list">
+                            <li class="tools-popup__item"><a class="tools-popup__link popup-link" href="#complain">Пожаловаться</a></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="post-card__control-likes like">
+                <div class="comment-item__like">
                     <button class="like__item i-dislike"></button>
+                    <span class="post-bar__option-val post-bar__like-count">8</span>
                     <button class="like__item i-like-b"></button>
                 </div>
             </div>
         </div>
     </div>
+    <div class="comment-item__add-reply js-add-reply">
+        <div class="comment-add">
+	<div class="comment-add__logo"><img class="comment-add__img image-logo" src="images/dist/person.jpg" alt="Имя Фамилия" /></div>
+	<div class="comment-add__content">
+		<div class="comment-add__header">
+			<span class="comment-add__meta">Ответить как:</span>
+			<div class="comment-add__choice-account dropdown js-dropdown-toogle">
+    <button class="dropdown__value" type="button">Иван Фёдоров</button>
+    <div class="dropdown__list scroll-gray dropditem-group">
+        <a class="dropdown__list-item dropditem-group__item" href="#">
+            <img class="dropditem-group__img" src="images/dist/person.jpg" alt="Имя Фамилия" />
+            <p class="dropditem-group__descr">Иван Фёдоров <span class="dropditem-group__meta">основной аккаунт</span></p>
+        </a>
+        <div class="dropditem-group__title">
+            Ваши компании
+        </div>
+        <a class="dropdown__list-item dropditem-group__item" href="#">
+            <img class="dropditem-group__img" src="images/dist/logo-c.jpg" alt="Название компании" />
+            <p class="dropditem-group__descr">ООО “Рога и копыта”</p>
+        </a>
+        <a class="dropdown__list-item dropditem-group__item" href="#">
+            <img class="dropditem-group__img" src="images/dist/part-bg.jpg" alt="Название компании" />
+            <p class="dropditem-group__descr">ООО “ЖелДорСпецСтрой Ремонт и разработка супер инструмента”</p>
+        </a>
+        <div class="dropditem-group__title">
+            Ваши каналы
+        </div>
+        <a class="dropdown__list-item dropditem-group__item" href="#">
+            <img class="dropditem-group__img" src="images/dist/n7.jpg" alt="Название канала" />
+            <p class="dropditem-group__descr">Весёлый мир</p>
+        </a>
+        <a class="dropdown__list-item dropditem-group__item" href="#">
+            <img class="dropditem-group__img" src="images/dist/chanel.jpg" alt="Название канала" />
+            <p class="dropditem-group__descr">Грустный мир</p>
+        </a>
+    </div>
 </div>
+		</div>
+		<div class="comment-add__field-wrap">
+			<div class="comment-add__field"><textarea class="textarea" placeholder="Новый комментарий"></textarea></div>
+			<div class="comment-add__add-img">
+                <label class="file-icon" title="Загрузить изображение">
+                    <input class="file-icon__input" name="file" type="file" multiple="">
+                    <img class="file-icon__added" src="images/dist/n11.jpg" alt="название изображения" />
+                    <button class="file-icon__del btn-unstylling" title="Удалить изображение"></button>
+                </label>
+			</div>
+			<button class="comment-add__submit btn btn-accent btn--md">Отправить</button>
+		</div>
+	</div>
 </div>
-<div class="col-xl-4 col-lg-6">
-    <div class="post-card">
-    <div class="post-card__panel">
-        <div class="post-card__header">
-            <div class="post-card__info">
-                <a class="post-card__chanel-link" href="chanel-detail.html"><img class="post-card__chanel-logo" src="images/dist/n11.jpg" alt="Название канала" /></a>
-                <div class="post-card__chanel-info-wrap">
-                    <div class="post-card__chanel-info">
-                        <a class="post-card__chanel-name" href="chanel-detail.html">Название канала</a>
-                        <button class="post-card__btn-sub post-card__btn-sub--signed" title="отписаться">вы подписаны</button>
-                    </div>
-                </div>
+    </div>
+</div>
+    </li>
+</ul>
+                </li>
+                <li class="comments__item">
+                    <div class="comment-item">
+    <div class="comment-item__content">
+        <a class="comment-item__logo" href="accaunt-detail.html"><img class="comment-item__img" src="images/dist/persone.jpg" alt="Имя Фамилия" /></a>
+        <div class="comment-item__meta-wrap">
+            <div class="comment-item__meta-left">
+                <a class="comment-item__name title-block" href="accaunt-detail.html">Роман попов</a>
+                <span class="comment-item__reply i-reply">World business</span>
             </div>
-            <div class="post-card__tools tools-popup">
-                <button class="post-card__tools-btn tools-popup__btn js-tools-popup i-option"></button>
-                <div class="tools-popup__panel">
-                    <ul class="tools-popup__list">
-                        <li class="tools-popup__item"><a class="tools-popup__link popup-link" href="#complain">Пожаловаться</a></li>
-                    </ul>
-                </div>
+            <div class="comment-item__meta-right">
+                <span class="comment-item__edited comment-item__meta">отредактировано</span>
+                <span class="comment-item__date comment-item__meta">12.01.2020</span>
             </div>
         </div>
-        <div class="post-card__content">
-            <a class="post-card__image-wrap" href="#" target="_blank"><img class="post-card__image" src="images/dist/n7.jpg" alt="Название поста" /></a>
-            <div class="post-card__content-inner">
-                <a class="post-card__name post-card__name--link" href="#" target="_blank">Криптовалюта или гречка, что выбрать в 21 веке?</a>
-                <p class="post-card__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod gravida dolor sit amet lacus accumn bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...</p>
-            </div>
+        <div class="comment-item__val">
+            Давайте пруфы!
         </div>
-        <div class="post-card__bottom">
-            <div class="post-card__country"><img class="post-card__country-flag" src="images/dist/flag/ru-reg.svg" alt="Россия" /></div>
-            <div class="post-card__control">
-                <button class="post-card__control-share i-share-big js-share-btn" type="button"></button>
-                <div class="share-block__popup share-popup post-card__share-popup">
-                    <button class="share-popup__close" type="button"></button>
-                    <div class="share-popup__subtitle">Поделиться в соц сетях</div>
-                    <div class="share-popup__btn share-btn">
-                        <ul class="share-btn__list">
-    <li class="share-btn__item"><a class="share-btn__link icon i-tw-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-fb-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-vk-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-ln-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-ok-fl" href="#"></a></li>
-</ul>
-<ul class="share-btn__list">
-    <li class="share-btn__item"><a class="share-btn__link icon i-wt-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-vb-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-sk-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-tl-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-copy last-icon" href="#"></a></li>
-</ul>
+    </div>
+    <div class="comment-item__option">
+        <button class="comment-item__reply-btn link link-accent link--border js-add-reply-btn">ответить</button>
+        <div class="comment-item__option-inner">
+            <div class="comment-item__control">
+                <div class="comment-item__control-tools tools-popup">
+                    <button class="tools-popup__btn tools-popup__btn--horiz js-tools-popup i-option"></button>
+                    <div class="tools-popup__panel">
+                        <ul class="tools-popup__list">
+                            <li class="tools-popup__item"><a class="tools-popup__link popup-link" href="#complain">Пожаловаться</a></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="post-card__control-likes like">
+                <div class="comment-item__like">
                     <button class="like__item i-dislike"></button>
-                    <button class="like__item i-like"></button>
+                    <span class="post-bar__option-val post-bar__like-count">2</span>
+                    <button class="like__item i-like-b"></button>
                 </div>
             </div>
         </div>
     </div>
+    <div class="comment-item__add-reply js-add-reply">
+        <div class="comment-add">
+	<div class="comment-add__logo"><img class="comment-add__img image-logo" src="images/dist/person.jpg" alt="Имя Фамилия" /></div>
+	<div class="comment-add__content">
+		<div class="comment-add__header">
+			<span class="comment-add__meta">Ответить как:</span>
+			<div class="comment-add__choice-account dropdown js-dropdown-toogle">
+    <button class="dropdown__value" type="button">Иван Фёдоров</button>
+    <div class="dropdown__list scroll-gray dropditem-group">
+        <a class="dropdown__list-item dropditem-group__item" href="#">
+            <img class="dropditem-group__img" src="images/dist/person.jpg" alt="Имя Фамилия" />
+            <p class="dropditem-group__descr">Иван Фёдоров <span class="dropditem-group__meta">основной аккаунт</span></p>
+        </a>
+        <div class="dropditem-group__title">
+            Ваши компании
+        </div>
+        <a class="dropdown__list-item dropditem-group__item" href="#">
+            <img class="dropditem-group__img" src="images/dist/logo-c.jpg" alt="Название компании" />
+            <p class="dropditem-group__descr">ООО “Рога и копыта”</p>
+        </a>
+        <a class="dropdown__list-item dropditem-group__item" href="#">
+            <img class="dropditem-group__img" src="images/dist/part-bg.jpg" alt="Название компании" />
+            <p class="dropditem-group__descr">ООО “ЖелДорСпецСтрой Ремонт и разработка супер инструмента”</p>
+        </a>
+        <div class="dropditem-group__title">
+            Ваши каналы
+        </div>
+        <a class="dropdown__list-item dropditem-group__item" href="#">
+            <img class="dropditem-group__img" src="images/dist/n7.jpg" alt="Название канала" />
+            <p class="dropditem-group__descr">Весёлый мир</p>
+        </a>
+        <a class="dropdown__list-item dropditem-group__item" href="#">
+            <img class="dropditem-group__img" src="images/dist/chanel.jpg" alt="Название канала" />
+            <p class="dropditem-group__descr">Грустный мир</p>
+        </a>
+    </div>
 </div>
+		</div>
+		<div class="comment-add__field-wrap">
+			<div class="comment-add__field"><textarea class="textarea" placeholder="Новый комментарий"></textarea></div>
+			<div class="comment-add__add-img">
+                <label class="file-icon" title="Загрузить изображение">
+                    <input class="file-icon__input" name="file" type="file" multiple="">
+                    <img class="file-icon__added" src="images/dist/n11.jpg" alt="название изображения" />
+                    <button class="file-icon__del btn-unstylling" title="Удалить изображение"></button>
+                </label>
+			</div>
+			<button class="comment-add__submit btn btn-accent btn--md">Отправить</button>
+		</div>
+	</div>
 </div>
-<div class="col-xl-4 col-lg-6">
-    <div class="post-card">
-    <div class="post-card__panel">
-        <div class="post-card__header">
-            <div class="post-card__info">
-                <a class="post-card__chanel-link" href="chanel-detail.html"><img class="post-card__chanel-logo" src="images/dist/img2.jpg" alt="Название канала" /></a>
-                <div class="post-card__chanel-info-wrap">
-                    <div class="post-card__chanel-info">
-                        <a class="post-card__chanel-name" href="page-organization.html">ООО "ЖелДорЭкспедиц...</a>
-                    </div>
-                    <span class="post-card__community tag">Реклама</span>
-                </div>
+    </div>
+</div>
+                </li>
+            </ul>
+        </li>
+        <li class="comments__item">
+            <div class="comment-item">
+    <div class="comment-item__content">
+        <a class="comment-item__logo" href="accaunt-detail.html"><img class="comment-item__img" src="images/dist/or2.jpg" alt="Имя Фамилия" /></a>
+        <div class="comment-item__meta-wrap">
+            <div class="comment-item__meta-left">
+                <a class="comment-item__name title-block" href="accaunt-detail.html">Алевтина Иванченко</a>
             </div>
-            <div class="post-card__tools">
-                <a class="btn btn-accent btn--sm post-card__more-btn" href="#" target="_blank">Подробнее</a>
+            <div class="comment-item__meta-right">
+                <span class="comment-item__date comment-item__meta">12.01.2020</span>
             </div>
         </div>
-        <div class="post-card__content">
-            <a class="post-card__image-wrap" href="#" target="_blank"><img class="post-card__image" src="images/dist/part-bg.jpg" alt="Название поста" /></a>
-            <div class="post-card__content-inner">
-                <a class="post-card__name" href="#" target="_blank">Содержательное название поста</a>
-                <p class="post-card__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod gravida dolor sit amet lacus accumn bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...</p>
-            </div>
+        <div class="comment-item__val">
+            Познавательно!
         </div>
-        <div class="post-card__bottom">
-            <div class="post-card__country"><img class="post-card__country-flag" src="images/dist/flag/ru-reg.svg" alt="Россия" /></div>
-            <div class="post-card__control">
-                <button class="post-card__control-share i-share-big js-share-btn" type="button"></button>
-                <div class="share-block__popup share-popup post-card__share-popup">
-                    <button class="share-popup__close" type="button"></button>
-                    <div class="share-popup__subtitle">Поделиться в соц сетях</div>
-                    <div class="share-popup__btn share-btn">
-                        <ul class="share-btn__list">
-    <li class="share-btn__item"><a class="share-btn__link icon i-tw-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-fb-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-vk-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-ln-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-ok-fl" href="#"></a></li>
-</ul>
-<ul class="share-btn__list">
-    <li class="share-btn__item"><a class="share-btn__link icon i-wt-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-vb-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-sk-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-tl-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-copy last-icon" href="#"></a></li>
-</ul>
+    </div>
+    <div class="comment-item__option">
+        <button class="comment-item__reply-btn link link-accent link--border js-add-reply-btn">ответить</button>
+        <div class="comment-item__option-inner">
+            <div class="comment-item__control">
+                <div class="comment-item__control-tools tools-popup">
+                    <button class="tools-popup__btn tools-popup__btn--horiz js-tools-popup i-option"></button>
+                    <div class="tools-popup__panel">
+                        <ul class="tools-popup__list">
+                            <li class="tools-popup__item"><a class="tools-popup__link popup-link" href="#complain">Пожаловаться</a></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="post-card__control-likes like">
+                <div class="comment-item__like">
                     <button class="like__item i-dislike"></button>
+                    <span class="post-bar__option-val post-bar__like-count">3</span>
                     <button class="like__item i-like"></button>
                 </div>
             </div>
         </div>
     </div>
-</div>
-</div>
-<div class="col-xl-4 col-lg-6">
-    <div class="post-card post-card--age">
-    <div class="post-card__panel">
-        <div class="post-card__header">
-            <div class="post-card__info">
-                <a class="post-card__chanel-link" href="chanel-detail.html"><img class="post-card__chanel-logo" src="images/dist/vettargetlog.png" alt="Название канала" /></a>
-                <div class="post-card__chanel-info-wrap">
-                    <div class="post-card__chanel-info">
-                        <a class="post-card__chanel-name" href="chanel-detail.html">Название канала</a>
-                        <button class="post-card__btn-sub post-card__btn-sub--signed" title="отписаться">вы подписаны</button>
-                    </div>
-                </div>
-            </div>
-            <div class="post-card__tools tools-popup">
-                <button class="post-card__tools-btn tools-popup__btn js-tools-popup i-option"></button>
-                <div class="tools-popup__panel">
-                    <ul class="tools-popup__list">
-                        <li class="tools-popup__item"><a class="tools-popup__link popup-link" href="#complain">Пожаловаться</a></li>
-                    </ul>
-                </div>
-            </div>
+    <div class="comment-item__add-reply js-add-reply">
+        <div class="comment-add">
+	<div class="comment-add__logo"><img class="comment-add__img image-logo" src="images/dist/person.jpg" alt="Имя Фамилия" /></div>
+	<div class="comment-add__content">
+		<div class="comment-add__header">
+			<span class="comment-add__meta">Ответить как:</span>
+			<div class="comment-add__choice-account dropdown js-dropdown-toogle">
+    <button class="dropdown__value" type="button">Иван Фёдоров</button>
+    <div class="dropdown__list scroll-gray dropditem-group">
+        <a class="dropdown__list-item dropditem-group__item" href="#">
+            <img class="dropditem-group__img" src="images/dist/person.jpg" alt="Имя Фамилия" />
+            <p class="dropditem-group__descr">Иван Фёдоров <span class="dropditem-group__meta">основной аккаунт</span></p>
+        </a>
+        <div class="dropditem-group__title">
+            Ваши компании
         </div>
-        <div class="post-card__content">
-            <a class="post-card__image-wrap" href="post-detail.html"><img class="post-card__image" src="images/dist/vi1.jpg" alt="Название поста" /></a>
-            <div class="post-card__content-inner">
-                <a class="post-card__name" href="post-detail.html">Содержательное название поста</a>
-                <p class="post-card__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod gravida dolor sit amet lacus accumn bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...</p>
-            </div>
+        <a class="dropdown__list-item dropditem-group__item" href="#">
+            <img class="dropditem-group__img" src="images/dist/logo-c.jpg" alt="Название компании" />
+            <p class="dropditem-group__descr">ООО “Рога и копыта”</p>
+        </a>
+        <a class="dropdown__list-item dropditem-group__item" href="#">
+            <img class="dropditem-group__img" src="images/dist/part-bg.jpg" alt="Название компании" />
+            <p class="dropditem-group__descr">ООО “ЖелДорСпецСтрой Ремонт и разработка супер инструмента”</p>
+        </a>
+        <div class="dropditem-group__title">
+            Ваши каналы
         </div>
-        <div class="post-card__bottom">
-            <div class="post-card__country"><img class="post-card__country-flag" src="images/dist/flag/ru-reg.svg" alt="Россия" /></div>
-            <div class="post-card__control">
-                <button class="post-card__control-share i-share-big js-share-btn" type="button"></button>
-                <div class="share-block__popup share-popup post-card__share-popup">
-                    <button class="share-popup__close" type="button"></button>
-                    <div class="share-popup__subtitle">Поделиться в соц сетях</div>
-                    <div class="share-popup__btn share-btn">
-                        <ul class="share-btn__list">
-    <li class="share-btn__item"><a class="share-btn__link icon i-tw-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-fb-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-vk-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-ln-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-ok-fl" href="#"></a></li>
-</ul>
-<ul class="share-btn__list">
-    <li class="share-btn__item"><a class="share-btn__link icon i-wt-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-vb-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-sk-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-tl-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-copy last-icon" href="#"></a></li>
-</ul>
-                    </div>
-                </div>
-                <div class="post-card__control-likes like">
-                    <button class="like__item i-dislike"></button>
-                    <button class="like__item i-like"></button>
-                </div>
-            </div>
-        </div>
+        <a class="dropdown__list-item dropditem-group__item" href="#">
+            <img class="dropditem-group__img" src="images/dist/n7.jpg" alt="Название канала" />
+            <p class="dropditem-group__descr">Весёлый мир</p>
+        </a>
+        <a class="dropdown__list-item dropditem-group__item" href="#">
+            <img class="dropditem-group__img" src="images/dist/chanel.jpg" alt="Название канала" />
+            <p class="dropditem-group__descr">Грустный мир</p>
+        </a>
     </div>
 </div>
+		</div>
+		<div class="comment-add__field-wrap">
+			<div class="comment-add__field"><textarea class="textarea" placeholder="Новый комментарий"></textarea></div>
+			<div class="comment-add__add-img">
+                <label class="file-icon" title="Загрузить изображение">
+                    <input class="file-icon__input" name="file" type="file" multiple="">
+                    <img class="file-icon__added" src="images/dist/n11.jpg" alt="название изображения" />
+                    <button class="file-icon__del btn-unstylling" title="Удалить изображение"></button>
+                </label>
+			</div>
+			<button class="comment-add__submit btn btn-accent btn--md">Отправить</button>
+		</div>
+	</div>
 </div>
-<div class="col-xl-4 col-lg-6">
-    <div class="post-card">
-    <div class="post-card__panel">
-        <div class="post-card__header">
-            <div class="post-card__info">
-                <a class="post-card__chanel-link" href="chanel-detail.html"><img class="post-card__chanel-logo" src="images/dist/chanel.jpg" alt="Название канала" /></a>
-                <div class="post-card__chanel-info-wrap">
-                    <div class="post-card__chanel-info">
-                        <a class="post-card__chanel-name" href="chanel-detail.html">Студия живописи</a>
-                        <button class="post-card__btn-sub post-card__btn-sub--signed" title="отписаться">вы подписаны</button>
-                    </div>
-                    <a class="post-card__community tag tag--link" href="community-detail.html">Название собщества</a>
-                </div>
-            </div>
-            <div class="post-card__tools tools-popup">
-                <button class="post-card__tools-btn tools-popup__btn js-tools-popup i-option"></button>
-                <div class="tools-popup__panel">
-                    <ul class="tools-popup__list">
-                        <li class="tools-popup__item"><a class="tools-popup__link popup-link" href="#complain">Пожаловаться</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="post-card__content">
-            <div class="slider post-card__gallery post-card__image-wrap js-post-gallery">
-                <a class="post-card__gallery-item" href="post-detail-gallery.html"><img class="post-card__image" src="images/dist/chanel.jpg" alt="Название слайда" /></a>
-                <a class="post-card__gallery-item" href="post-detail-gallery.html"><img class="post-card__image" src="images/dist/kot.jpg" alt="Название слайда" /></a>
-                <a class="post-card__gallery-item" href="post-detail-gallery.html"><img class="post-card__image" src="images/dist/chanel.jpg" alt="Название слайда" /></a>
-            </div>
-            <div class="post-card__content-inner">
-                <a class="post-card__name" href="post-detail-gallery.html">Какую палитру выбрать для натюрморта?</a>
-                <p class="post-card__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod gravida dolor sit amet lacus accumn bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...</p>
-            </div>
-        </div>
-        <div class="post-card__bottom">
-            <div class="post-card__country"><img class="post-card__country-flag" src="images/dist/flag/ru-reg.svg" alt="Россия" /></div>
-            <div class="post-card__control">
-                <button class="post-card__control-share i-share-big js-share-btn" type="button"></button>
-                <div class="share-block__popup share-popup post-card__share-popup">
-                    <button class="share-popup__close" type="button"></button>
-                    <div class="share-popup__subtitle">Поделиться в соц сетях</div>
-                    <div class="share-popup__btn share-btn">
-                        <ul class="share-btn__list">
-    <li class="share-btn__item"><a class="share-btn__link icon i-tw-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-fb-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-vk-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-ln-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-ok-fl" href="#"></a></li>
-</ul>
-<ul class="share-btn__list">
-    <li class="share-btn__item"><a class="share-btn__link icon i-wt-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-vb-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-sk-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-tl-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-copy last-icon" href="#"></a></li>
-</ul>
-                    </div>
-                </div>
-                <div class="post-card__control-likes like">
-                    <button class="like__item i-dislike-b"></button>
-                    <button class="like__item i-like"></button>
-                </div>
-            </div>
-        </div>
     </div>
 </div>
+        </li>
+    </ul>
+    <div class="comments__btn-more-wrap">
+        <button class="comments__btn-more link link-accent link--border">Еще 50 комментарие из 150</button>
+    </div>  
 </div>
                 </div>
-                <div class="media-feed__special">
-    <div class="row">
-        <div class="col-xl-8 media-feed__special-posts">
-            <div class="slider slider--sm media-feed__special-posts js-post-special">
-                <div class="media-feed__special-item">
-                    <div class="post-card">
-    <div class="post-card__panel">
-        <div class="post-card__header">
-            <div class="post-card__info">
-                <a class="post-card__chanel-link" href="chanel-detail.html"><img class="post-card__chanel-logo" src="images/dist/n8.jpg" alt="Название канала" /></a>
-                <div class="post-card__chanel-info-wrap">
-                    <div class="post-card__chanel-info">
-                        <a class="post-card__chanel-name" href="chanel-detail.html">Кот и плед, я домосед</a>
-                        <button class="post-card__btn-sub post-card__btn-sub--signed" title="отписаться">+ подписаться</button>
-                    </div>
-                    <a class="post-card__community tag tag--link" href="community-detail.html">Животные</a>
+            </main>
+
+            <aside class="post-detail__sidebar">
+                <div class="commend-feed">
+                    <ul class="commend-feed__list list-unstylling">
+    <li class="commend-feed__item">
+        <div class="commend-feed__card commend-card">
+            <div class="commend-card__image-wrap commend-card__image-wrap--gallery">
+                <div class="slider post-card__gallery post-card__image-wrap js-post-gallery">
+                    <a class="post-card__gallery-item" href="post-detail-gallery-login.html"><img class="post-card__image" src="images/dist/chanel.jpg" alt="Название слайда" /></a>
+                    <a class="post-card__gallery-item" href="post-detail-gallery-login.html"><img class="post-card__image" src="images/dist/kot.jpg" alt="Название слайда" /></a>
+                    <a class="post-card__gallery-item" href="post-detail-gallery-login.html"><img class="post-card__image" src="images/dist/chanel.jpg" alt="Название слайда" /></a>
                 </div>
             </div>
-            <div class="post-card__tools tools-popup">
-                <button class="post-card__tools-btn tools-popup__btn js-tools-popup i-option"></button>
-                <div class="tools-popup__panel">
-                    <ul class="tools-popup__list">
-                        <li class="tools-popup__item"><a class="tools-popup__link popup-link" href="#complain">Пожаловаться</a></li>
-                    </ul>
+            <a class="commend-card__content" href="post-detail-gallery-login.html">
+                <h3 class="commend-card__title">Видео о важном</h3>
+                <div class="commend-card__chanel">Название канала</div>
+                <div class="commend-card__meta">
+                    <span class="commend-card__view i-eye">200 тыс</span>
+                    <span class="commend-card__date">23.01.2021</span>
                 </div>
-            </div>
-        </div>
-        <div class="post-card__content">
-            <a class="post-card__image-wrap post-card__video" href="post-detail-video.html"><img class="post-card__image" src="images/dist/n5.jpg" alt="Название поста" /></a>
-            <div class="post-card__content-inner">
-                <a class="post-card__name" href="post-detail-video.html">Содержательное название поста с видео</a>
-                <p class="post-card__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod gravida dolor sit amet lacus accumn bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...</p>
-            </div>
-        </div>
-        <div class="post-card__bottom">
-            <div class="post-card__country"><img class="post-card__country-flag" src="images/dist/flag/ru-reg.svg" alt="Россия" /></div>
-            <div class="post-card__control">
-                <button class="post-card__control-share i-share-big js-share-btn" type="button"></button>
-                <div class="share-block__popup share-popup post-card__share-popup">
-                    <button class="share-popup__close" type="button"></button>
-                    <div class="share-popup__subtitle">Поделиться в соц сетях</div>
-                    <div class="share-popup__btn share-btn">
-                        <ul class="share-btn__list">
-    <li class="share-btn__item"><a class="share-btn__link icon i-tw-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-fb-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-vk-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-ln-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-ok-fl" href="#"></a></li>
-</ul>
-<ul class="share-btn__list">
-    <li class="share-btn__item"><a class="share-btn__link icon i-wt-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-vb-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-sk-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-tl-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-copy last-icon" href="#"></a></li>
-</ul>
-                    </div>
-                </div>
-                <div class="post-card__control-likes like">
-                    <button class="like__item i-dislike"></button>
-                    <button class="like__item i-like"></button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-                </div>
-                <div class="media-feed__special-item">
-                    <div class="post-card">
-    <div class="post-card__panel">
-        <div class="post-card__header">
-            <div class="post-card__info">
-                <a class="post-card__chanel-link" href="chanel-detail.html"><img class="post-card__chanel-logo" src="images/dist/n11.jpg" alt="Название канала" /></a>
-                <div class="post-card__chanel-info-wrap">
-                    <div class="post-card__chanel-info">
-                        <a class="post-card__chanel-name" href="chanel-detail.html">Название канала</a>
-                        <button class="post-card__btn-sub post-card__btn-sub--signed" title="отписаться">вы подписаны</button>
-                    </div>
-                </div>
-            </div>
-            <div class="post-card__tools tools-popup">
-                <button class="post-card__tools-btn tools-popup__btn js-tools-popup i-option"></button>
-                <div class="tools-popup__panel">
-                    <ul class="tools-popup__list">
-                        <li class="tools-popup__item"><a class="tools-popup__link popup-link" href="#complain">Пожаловаться</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="post-card__content">
-            <a class="post-card__image-wrap" href="#" target="_blank"><img class="post-card__image" src="images/dist/n7.jpg" alt="Название поста" /></a>
-            <div class="post-card__content-inner">
-                <a class="post-card__name post-card__name--link" href="#" target="_blank">Криптовалюта или гречка, что выбрать в 21 веке?</a>
-                <p class="post-card__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod gravida dolor sit amet lacus accumn bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...</p>
-            </div>
-        </div>
-        <div class="post-card__bottom">
-            <div class="post-card__country"><img class="post-card__country-flag" src="images/dist/flag/ru-reg.svg" alt="Россия" /></div>
-            <div class="post-card__control">
-                <button class="post-card__control-share i-share-big js-share-btn" type="button"></button>
-                <div class="share-block__popup share-popup post-card__share-popup">
-                    <button class="share-popup__close" type="button"></button>
-                    <div class="share-popup__subtitle">Поделиться в соц сетях</div>
-                    <div class="share-popup__btn share-btn">
-                        <ul class="share-btn__list">
-    <li class="share-btn__item"><a class="share-btn__link icon i-tw-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-fb-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-vk-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-ln-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-ok-fl" href="#"></a></li>
-</ul>
-<ul class="share-btn__list">
-    <li class="share-btn__item"><a class="share-btn__link icon i-wt-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-vb-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-sk-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-tl-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-copy last-icon" href="#"></a></li>
-</ul>
-                    </div>
-                </div>
-                <div class="post-card__control-likes like">
-                    <button class="like__item i-dislike"></button>
-                    <button class="like__item i-like"></button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-                </div>
-                <div class="media-feed__special-item">
-                    <div class="post-card post-card--age">
-    <div class="post-card__panel">
-        <div class="post-card__header">
-            <div class="post-card__info">
-                <a class="post-card__chanel-link" href="chanel-detail.html"><img class="post-card__chanel-logo" src="images/dist/vettargetlog.png" alt="Название канала" /></a>
-                <div class="post-card__chanel-info-wrap">
-                    <div class="post-card__chanel-info">
-                        <a class="post-card__chanel-name" href="chanel-detail.html">Название канала</a>
-                        <button class="post-card__btn-sub post-card__btn-sub--signed" title="отписаться">вы подписаны</button>
-                    </div>
-                </div>
-            </div>
-            <div class="post-card__tools tools-popup">
-                <button class="post-card__tools-btn tools-popup__btn js-tools-popup i-option"></button>
-                <div class="tools-popup__panel">
-                    <ul class="tools-popup__list">
-                        <li class="tools-popup__item"><a class="tools-popup__link popup-link" href="#complain">Пожаловаться</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="post-card__content">
-            <a class="post-card__image-wrap" href="post-detail.html"><img class="post-card__image" src="images/dist/vi1.jpg" alt="Название поста" /></a>
-            <div class="post-card__content-inner">
-                <a class="post-card__name" href="post-detail.html">Содержательное название поста</a>
-                <p class="post-card__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod gravida dolor sit amet lacus accumn bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...</p>
-            </div>
-        </div>
-        <div class="post-card__bottom">
-            <div class="post-card__country"><img class="post-card__country-flag" src="images/dist/flag/ru-reg.svg" alt="Россия" /></div>
-            <div class="post-card__control">
-                <button class="post-card__control-share i-share-big js-share-btn" type="button"></button>
-                <div class="share-block__popup share-popup post-card__share-popup">
-                    <button class="share-popup__close" type="button"></button>
-                    <div class="share-popup__subtitle">Поделиться в соц сетях</div>
-                    <div class="share-popup__btn share-btn">
-                        <ul class="share-btn__list">
-    <li class="share-btn__item"><a class="share-btn__link icon i-tw-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-fb-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-vk-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-ln-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-ok-fl" href="#"></a></li>
-</ul>
-<ul class="share-btn__list">
-    <li class="share-btn__item"><a class="share-btn__link icon i-wt-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-vb-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-sk-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-tl-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-copy last-icon" href="#"></a></li>
-</ul>
-                    </div>
-                </div>
-                <div class="post-card__control-likes like">
-                    <button class="like__item i-dislike"></button>
-                    <button class="like__item i-like"></button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-                </div>
-                <div class="media-feed__special-item">
-                    <div class="post-card">
-    <div class="post-card__panel">
-        <div class="post-card__header">
-            <div class="post-card__info">
-                <a class="post-card__chanel-link" href="chanel-detail.html"><img class="post-card__chanel-logo" src="images/dist/chanel.jpg" alt="Название канала" /></a>
-                <div class="post-card__chanel-info-wrap">
-                    <div class="post-card__chanel-info">
-                        <a class="post-card__chanel-name" href="chanel-detail.html">Студия живописи</a>
-                        <button class="post-card__btn-sub post-card__btn-sub--signed" title="отписаться">вы подписаны</button>
-                    </div>
-                    <a class="post-card__community tag tag--link" href="community-detail.html">Название собщества</a>
-                </div>
-            </div>
-            <div class="post-card__tools tools-popup">
-                <button class="post-card__tools-btn tools-popup__btn js-tools-popup i-option"></button>
-                <div class="tools-popup__panel">
-                    <ul class="tools-popup__list">
-                        <li class="tools-popup__item"><a class="tools-popup__link popup-link" href="#complain">Пожаловаться</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="post-card__content">
-            <div class="slider post-card__gallery post-card__image-wrap js-post-gallery">
-                <a class="post-card__gallery-item" href="post-detail-gallery.html"><img class="post-card__image" src="images/dist/chanel.jpg" alt="Название слайда" /></a>
-                <a class="post-card__gallery-item" href="post-detail-gallery.html"><img class="post-card__image" src="images/dist/kot.jpg" alt="Название слайда" /></a>
-                <a class="post-card__gallery-item" href="post-detail-gallery.html"><img class="post-card__image" src="images/dist/chanel.jpg" alt="Название слайда" /></a>
-            </div>
-            <div class="post-card__content-inner">
-                <a class="post-card__name" href="post-detail-gallery.html">Какую палитру выбрать для натюрморта?</a>
-                <p class="post-card__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod gravida dolor sit amet lacus accumn bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...</p>
-            </div>
-        </div>
-        <div class="post-card__bottom">
-            <div class="post-card__country"><img class="post-card__country-flag" src="images/dist/flag/ru-reg.svg" alt="Россия" /></div>
-            <div class="post-card__control">
-                <button class="post-card__control-share i-share-big js-share-btn" type="button"></button>
-                <div class="share-block__popup share-popup post-card__share-popup">
-                    <button class="share-popup__close" type="button"></button>
-                    <div class="share-popup__subtitle">Поделиться в соц сетях</div>
-                    <div class="share-popup__btn share-btn">
-                        <ul class="share-btn__list">
-    <li class="share-btn__item"><a class="share-btn__link icon i-tw-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-fb-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-vk-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-ln-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-ok-fl" href="#"></a></li>
-</ul>
-<ul class="share-btn__list">
-    <li class="share-btn__item"><a class="share-btn__link icon i-wt-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-vb-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-sk-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-tl-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-copy last-icon" href="#"></a></li>
-</ul>
-                    </div>
-                </div>
-                <div class="post-card__control-likes like">
-                    <button class="like__item i-dislike-b"></button>
-                    <button class="like__item i-like"></button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-4 media-feed__special-block">
-            <a class="media-feed__image-wrap" href="chanel-detail.html">
-                <!--может быть ссылкой на канал, а может просто изображением, тогда тег div-->
-                <img class="media-feed__image" src="images/dist/or2.jpg" alt="Название канала/изображения" />
             </a>
-            <h2 class="media-feed__special-title">Минимализм в интерьере</h2>
-            <p class="media-feed__special-descr">
-                Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod,
-                iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
-            </p>
+        </div>
+    </li>
+    <li class="commend-feed__item">
+        <div class="commend-feed__card commend-card" href="post-detail-gallery-login.html">
+            <div class="commend-card__image-wrap commend-card__image-wrap--gallery">
+                <div class="slider post-card__gallery post-card__image-wrap js-post-gallery">
+                    <a class="post-card__gallery-item" href="post-detail-gallery-login.html"><img class="post-card__image" src="images/dist/chanel.jpg" alt="Название слайда" /></a>
+                    <a class="post-card__gallery-item" href="post-detail-gallery-login.html"><img class="post-card__image" src="images/dist/kot.jpg" alt="Название слайда" /></a>
+                    <a class="post-card__gallery-item" href="post-detail-gallery-login.html"><img class="post-card__image" src="images/dist/chanel.jpg" alt="Название слайда" /></a>
+                </div>
+            </div>
+            <a class="commend-card__content" href="post-detail-gallery-login.html">
+                <h3 class="commend-card__title">Ребятам о зверятах</h3>
+                <div class="commend-card__chanel">Название канала</div>
+                <div class="commend-card__meta">
+                    <span class="commend-card__view i-eye">200 тыс</span>
+                    <span class="commend-card__date">23.01.2021</span>
+                </div>
+            </a>
+        </div>
+    </li>
+</ul>
+                    <div class="advertising-banner advertising-banner--float">
+    <span class="advertising-banner__title">Реклама</span>
+    <a href="#" class="advertising-banner__wrapper"><img class="advertising-banner__img" src="images/dist/advertising-banner.jpg" alt=""></a>
+</div>
+                    <ul class="commend-feed__list list-unstylling">
+    <li class="commend-feed__item">
+        <div class="commend-feed__card commend-card">
+            <div class="commend-card__image-wrap commend-card__image-wrap--gallery">
+                <div class="slider post-card__gallery post-card__image-wrap js-post-gallery">
+                    <a class="post-card__gallery-item" href="post-detail-gallery-login.html"><img class="post-card__image" src="images/dist/chanel.jpg" alt="Название слайда" /></a>
+                    <a class="post-card__gallery-item" href="post-detail-gallery-login.html"><img class="post-card__image" src="images/dist/kot.jpg" alt="Название слайда" /></a>
+                    <a class="post-card__gallery-item" href="post-detail-gallery-login.html"><img class="post-card__image" src="images/dist/chanel.jpg" alt="Название слайда" /></a>
+                </div>
+            </div>
+            <a class="commend-card__content" href="post-detail-gallery-login.html">
+                <h3 class="commend-card__title">Видео о важном</h3>
+                <div class="commend-card__chanel">Название канала</div>
+                <div class="commend-card__meta">
+                    <span class="commend-card__view i-eye">200 тыс</span>
+                    <span class="commend-card__date">23.01.2021</span>
+                </div>
+            </a>
+        </div>
+    </li>
+    <li class="commend-feed__item">
+        <div class="commend-feed__card commend-card" href="post-detail-gallery-login.html">
+            <div class="commend-card__image-wrap commend-card__image-wrap--gallery">
+                <div class="slider post-card__gallery post-card__image-wrap js-post-gallery">
+                    <a class="post-card__gallery-item" href="post-detail-gallery-login.html"><img class="post-card__image" src="images/dist/chanel.jpg" alt="Название слайда" /></a>
+                    <a class="post-card__gallery-item" href="post-detail-gallery-login.html"><img class="post-card__image" src="images/dist/kot.jpg" alt="Название слайда" /></a>
+                    <a class="post-card__gallery-item" href="post-detail-gallery-login.html"><img class="post-card__image" src="images/dist/chanel.jpg" alt="Название слайда" /></a>
+                </div>
+            </div>
+            <a class="commend-card__content" href="post-detail-gallery-login.html">
+                <h3 class="commend-card__title">Ребятам о зверятах</h3>
+                <div class="commend-card__chanel">Название канала</div>
+                <div class="commend-card__meta">
+                    <span class="commend-card__view i-eye">200 тыс</span>
+                    <span class="commend-card__date">23.01.2021</span>
+                </div>
+            </a>
+        </div>
+    </li>
+</ul>
+                    <ul class="commend-feed__list list-unstylling">
+    <li class="commend-feed__item">
+        <div class="commend-feed__card commend-card">
+            <div class="commend-card__image-wrap commend-card__image-wrap--gallery">
+                <div class="slider post-card__gallery post-card__image-wrap js-post-gallery">
+                    <a class="post-card__gallery-item" href="post-detail-gallery-login.html"><img class="post-card__image" src="images/dist/chanel.jpg" alt="Название слайда" /></a>
+                    <a class="post-card__gallery-item" href="post-detail-gallery-login.html"><img class="post-card__image" src="images/dist/kot.jpg" alt="Название слайда" /></a>
+                    <a class="post-card__gallery-item" href="post-detail-gallery-login.html"><img class="post-card__image" src="images/dist/chanel.jpg" alt="Название слайда" /></a>
+                </div>
+            </div>
+            <a class="commend-card__content" href="post-detail-gallery-login.html">
+                <h3 class="commend-card__title">Видео о важном</h3>
+                <div class="commend-card__chanel">Название канала</div>
+                <div class="commend-card__meta">
+                    <span class="commend-card__view i-eye">200 тыс</span>
+                    <span class="commend-card__date">23.01.2021</span>
+                </div>
+            </a>
+        </div>
+    </li>
+    <li class="commend-feed__item">
+        <div class="commend-feed__card commend-card" href="post-detail-gallery-login.html">
+            <div class="commend-card__image-wrap commend-card__image-wrap--gallery">
+                <div class="slider post-card__gallery post-card__image-wrap js-post-gallery">
+                    <a class="post-card__gallery-item" href="post-detail-gallery-login.html"><img class="post-card__image" src="images/dist/chanel.jpg" alt="Название слайда" /></a>
+                    <a class="post-card__gallery-item" href="post-detail-gallery-login.html"><img class="post-card__image" src="images/dist/kot.jpg" alt="Название слайда" /></a>
+                    <a class="post-card__gallery-item" href="post-detail-gallery-login.html"><img class="post-card__image" src="images/dist/chanel.jpg" alt="Название слайда" /></a>
+                </div>
+            </div>
+            <a class="commend-card__content" href="post-detail-gallery-login.html">
+                <h3 class="commend-card__title">Ребятам о зверятах</h3>
+                <div class="commend-card__chanel">Название канала</div>
+                <div class="commend-card__meta">
+                    <span class="commend-card__view i-eye">200 тыс</span>
+                    <span class="commend-card__date">23.01.2021</span>
+                </div>
+            </a>
+        </div>
+    </li>
+</ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <div class="full-container">
+        <div class="post-detail__feed-bottom">
+            <h2 class="post-detail__subtitle title-block title-block--big">Другие публикации канала</h2>
+            <div class="row post-detail__more-post">
+                <div class="col-lg-4">
+                    <div class="post-card">
+    <div class="post-card__panel">
+        <div class="post-card__header">
+            <div class="post-card__info">
+                <a class="post-card__chanel-link" href="chanel-detail.html"><img class="post-card__chanel-logo" src="images/dist/chanel.jpg" alt="Название канала" /></a>
+                <div class="post-card__chanel-info-wrap">
+                    <div class="post-card__chanel-info">
+                        <a class="post-card__chanel-name" href="chanel-detail.html">Студия живописи</a>
+                        <button class="post-card__btn-sub post-card__btn-sub--signed" title="отписаться">вы подписаны</button>
+                    </div>
+                    <a class="post-card__community tag tag--link" href="community-detail.html">Название собщества</a>
+                </div>
+            </div>
+            <div class="post-card__tools tools-popup">
+                <button class="post-card__tools-btn tools-popup__btn js-tools-popup i-option"></button>
+                <div class="tools-popup__panel">
+                    <ul class="tools-popup__list">
+                        <li class="tools-popup__item"><a class="tools-popup__link popup-link" href="#complain">Пожаловаться</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="post-card__content">
+            <div class="slider post-card__gallery post-card__image-wrap js-post-gallery">
+                <a class="post-card__gallery-item" href="post-detail-gallery.html"><img class="post-card__image" src="images/dist/chanel.jpg" alt="Название слайда" /></a>
+                <a class="post-card__gallery-item" href="post-detail-gallery.html"><img class="post-card__image" src="images/dist/kot.jpg" alt="Название слайда" /></a>
+                <a class="post-card__gallery-item" href="post-detail-gallery.html"><img class="post-card__image" src="images/dist/chanel.jpg" alt="Название слайда" /></a>
+            </div>
+            <div class="post-card__content-inner">
+                <a class="post-card__name" href="post-detail-gallery.html">Какую палитру выбрать для натюрморта?</a>
+                <p class="post-card__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod gravida dolor sit amet lacus accumn bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...</p>
+            </div>
+        </div>
+        <div class="post-card__bottom">
+            <div class="post-card__country"><img class="post-card__country-flag" src="images/dist/flag/ru-reg.svg" alt="Россия" /></div>
+            <div class="post-card__control">
+                <button class="post-card__control-share i-share-big js-share-btn" type="button"></button>
+                <div class="share-block__popup share-popup post-card__share-popup">
+                    <button class="share-popup__close" type="button"></button>
+                    <div class="share-popup__subtitle">Поделиться в соц сетях</div>
+                    <div class="share-popup__btn share-btn">
+                        <ul class="share-btn__list">
+    <li class="share-btn__item"><a class="share-btn__link icon i-tw-fl" href="#"></a></li>
+    <li class="share-btn__item"><a class="share-btn__link icon i-fb-fl" href="#"></a></li>
+    <li class="share-btn__item"><a class="share-btn__link icon i-vk-fl" href="#"></a></li>
+    <li class="share-btn__item"><a class="share-btn__link icon i-ln-fl" href="#"></a></li>
+    <li class="share-btn__item"><a class="share-btn__link icon i-ok-fl" href="#"></a></li>
+</ul>
+<ul class="share-btn__list">
+    <li class="share-btn__item"><a class="share-btn__link icon i-wt-fl" href="#"></a></li>
+    <li class="share-btn__item"><a class="share-btn__link icon i-vb-fl" href="#"></a></li>
+    <li class="share-btn__item"><a class="share-btn__link icon i-sk-fl" href="#"></a></li>
+    <li class="share-btn__item"><a class="share-btn__link icon i-tl-fl" href="#"></a></li>
+    <li class="share-btn__item"><a class="share-btn__link icon i-copy last-icon" href="#"></a></li>
+</ul>
+                    </div>
+                </div>
+                <div class="post-card__control-likes like">
+                    <button class="like__item i-dislike-b"></button>
+                    <button class="like__item i-like"></button>
+                </div>
+            </div>
         </div>
     </div>
 </div>
-                <div class="row">
-                    <div class="col-xl-4 col-lg-6">
+                </div>
+                <div class="col-lg-4">
+                    <div class="post-card">
+    <div class="post-card__panel">
+        <div class="post-card__header">
+            <div class="post-card__info">
+                <a class="post-card__chanel-link" href="chanel-detail.html"><img class="post-card__chanel-logo" src="images/dist/chanel.jpg" alt="Название канала" /></a>
+                <div class="post-card__chanel-info-wrap">
+                    <div class="post-card__chanel-info">
+                        <a class="post-card__chanel-name" href="chanel-detail.html">Студия живописи</a>
+                        <button class="post-card__btn-sub post-card__btn-sub--signed" title="отписаться">вы подписаны</button>
+                    </div>
+                    <a class="post-card__community tag tag--link" href="community-detail.html">Название собщества</a>
+                </div>
+            </div>
+            <div class="post-card__tools tools-popup">
+                <button class="post-card__tools-btn tools-popup__btn js-tools-popup i-option"></button>
+                <div class="tools-popup__panel">
+                    <ul class="tools-popup__list">
+                        <li class="tools-popup__item"><a class="tools-popup__link popup-link" href="#complain">Пожаловаться</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="post-card__content">
+            <div class="slider post-card__gallery post-card__image-wrap js-post-gallery">
+                <a class="post-card__gallery-item" href="post-detail-gallery.html"><img class="post-card__image" src="images/dist/chanel.jpg" alt="Название слайда" /></a>
+                <a class="post-card__gallery-item" href="post-detail-gallery.html"><img class="post-card__image" src="images/dist/kot.jpg" alt="Название слайда" /></a>
+                <a class="post-card__gallery-item" href="post-detail-gallery.html"><img class="post-card__image" src="images/dist/chanel.jpg" alt="Название слайда" /></a>
+            </div>
+            <div class="post-card__content-inner">
+                <a class="post-card__name" href="post-detail-gallery.html">Какую палитру выбрать для натюрморта?</a>
+                <p class="post-card__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod gravida dolor sit amet lacus accumn bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...</p>
+            </div>
+        </div>
+        <div class="post-card__bottom">
+            <div class="post-card__country"><img class="post-card__country-flag" src="images/dist/flag/ru-reg.svg" alt="Россия" /></div>
+            <div class="post-card__control">
+                <button class="post-card__control-share i-share-big js-share-btn" type="button"></button>
+                <div class="share-block__popup share-popup post-card__share-popup">
+                    <button class="share-popup__close" type="button"></button>
+                    <div class="share-popup__subtitle">Поделиться в соц сетях</div>
+                    <div class="share-popup__btn share-btn">
+                        <ul class="share-btn__list">
+    <li class="share-btn__item"><a class="share-btn__link icon i-tw-fl" href="#"></a></li>
+    <li class="share-btn__item"><a class="share-btn__link icon i-fb-fl" href="#"></a></li>
+    <li class="share-btn__item"><a class="share-btn__link icon i-vk-fl" href="#"></a></li>
+    <li class="share-btn__item"><a class="share-btn__link icon i-ln-fl" href="#"></a></li>
+    <li class="share-btn__item"><a class="share-btn__link icon i-ok-fl" href="#"></a></li>
+</ul>
+<ul class="share-btn__list">
+    <li class="share-btn__item"><a class="share-btn__link icon i-wt-fl" href="#"></a></li>
+    <li class="share-btn__item"><a class="share-btn__link icon i-vb-fl" href="#"></a></li>
+    <li class="share-btn__item"><a class="share-btn__link icon i-sk-fl" href="#"></a></li>
+    <li class="share-btn__item"><a class="share-btn__link icon i-tl-fl" href="#"></a></li>
+    <li class="share-btn__item"><a class="share-btn__link icon i-copy last-icon" href="#"></a></li>
+</ul>
+                    </div>
+                </div>
+                <div class="post-card__control-likes like">
+                    <button class="like__item i-dislike-b"></button>
+                    <button class="like__item i-like"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="post-card">
+    <div class="post-card__panel">
+        <div class="post-card__header">
+            <div class="post-card__info">
+                <a class="post-card__chanel-link" href="chanel-detail.html"><img class="post-card__chanel-logo" src="images/dist/chanel.jpg" alt="Название канала" /></a>
+                <div class="post-card__chanel-info-wrap">
+                    <div class="post-card__chanel-info">
+                        <a class="post-card__chanel-name" href="chanel-detail.html">Студия живописи</a>
+                        <button class="post-card__btn-sub post-card__btn-sub--signed" title="отписаться">вы подписаны</button>
+                    </div>
+                    <a class="post-card__community tag tag--link" href="community-detail.html">Название собщества</a>
+                </div>
+            </div>
+            <div class="post-card__tools tools-popup">
+                <button class="post-card__tools-btn tools-popup__btn js-tools-popup i-option"></button>
+                <div class="tools-popup__panel">
+                    <ul class="tools-popup__list">
+                        <li class="tools-popup__item"><a class="tools-popup__link popup-link" href="#complain">Пожаловаться</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="post-card__content">
+            <div class="slider post-card__gallery post-card__image-wrap js-post-gallery">
+                <a class="post-card__gallery-item" href="post-detail-gallery.html"><img class="post-card__image" src="images/dist/chanel.jpg" alt="Название слайда" /></a>
+                <a class="post-card__gallery-item" href="post-detail-gallery.html"><img class="post-card__image" src="images/dist/kot.jpg" alt="Название слайда" /></a>
+                <a class="post-card__gallery-item" href="post-detail-gallery.html"><img class="post-card__image" src="images/dist/chanel.jpg" alt="Название слайда" /></a>
+            </div>
+            <div class="post-card__content-inner">
+                <a class="post-card__name" href="post-detail-gallery.html">Какую палитру выбрать для натюрморта?</a>
+                <p class="post-card__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod gravida dolor sit amet lacus accumn bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...</p>
+            </div>
+        </div>
+        <div class="post-card__bottom">
+            <div class="post-card__country"><img class="post-card__country-flag" src="images/dist/flag/ru-reg.svg" alt="Россия" /></div>
+            <div class="post-card__control">
+                <button class="post-card__control-share i-share-big js-share-btn" type="button"></button>
+                <div class="share-block__popup share-popup post-card__share-popup">
+                    <button class="share-popup__close" type="button"></button>
+                    <div class="share-popup__subtitle">Поделиться в соц сетях</div>
+                    <div class="share-popup__btn share-btn">
+                        <ul class="share-btn__list">
+    <li class="share-btn__item"><a class="share-btn__link icon i-tw-fl" href="#"></a></li>
+    <li class="share-btn__item"><a class="share-btn__link icon i-fb-fl" href="#"></a></li>
+    <li class="share-btn__item"><a class="share-btn__link icon i-vk-fl" href="#"></a></li>
+    <li class="share-btn__item"><a class="share-btn__link icon i-ln-fl" href="#"></a></li>
+    <li class="share-btn__item"><a class="share-btn__link icon i-ok-fl" href="#"></a></li>
+</ul>
+<ul class="share-btn__list">
+    <li class="share-btn__item"><a class="share-btn__link icon i-wt-fl" href="#"></a></li>
+    <li class="share-btn__item"><a class="share-btn__link icon i-vb-fl" href="#"></a></li>
+    <li class="share-btn__item"><a class="share-btn__link icon i-sk-fl" href="#"></a></li>
+    <li class="share-btn__item"><a class="share-btn__link icon i-tl-fl" href="#"></a></li>
+    <li class="share-btn__item"><a class="share-btn__link icon i-copy last-icon" href="#"></a></li>
+</ul>
+                    </div>
+                </div>
+                <div class="post-card__control-likes like">
+                    <button class="like__item i-dislike-b"></button>
+                    <button class="like__item i-like"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+            <h2 class="post-detail__subtitle title-block title-block--big">Лента</h2>
+            <div class="row">
+                <div class="col-xl-4 col-lg-6">
     <div class="post-card">
     <div class="post-card__panel">
         <div class="post-card__header">
@@ -1582,210 +1811,8 @@
     </div>
 </div>
 </div>
-                </div>
             </div>
-            <div class="media-feed__pagination-mob">
-                <div class="pagination__wrap">
-    <div class="pagination pagination--center">
-        <div class="pagination__left-link">
-            <a class="pagination__link pagination__link_first disabled" href="#">В начало</a>
-            <a class="pagination__link pagination__link_first disabled" href="#">Предыдущая</a>
-        </div>
-        <ul class="pagination-list">
-            <li class="pagination-list__item"><a class="pagination-list__link" href="#"><span class="pagination-list__page">1</span></a></li>
-            <li class="pagination-list__item active"><a class="pagination-list__link" href="#"><span class="pagination-list__page">2</span></a></li>
-            <li class="pagination-list__item"><a class="pagination-list__link" href="#"><span class="pagination-list__page">3</span></a></li>
-            <li class="pagination-list__item"><a class="pagination-list__link" href="#"><span class="pagination-list__page">4</span></a></li>
-            <li class="pagination-list__item"><a class="pagination-list__link" href="#"><span class="pagination-list__page">5</span></a></li>
-        </ul>
-        <div class="pagination__right-link">
-            <a class="pagination__link pagination__link_last" href="#">Следующая</a>
-            <a class="pagination__link pagination__link_last" href="#">Последняя</a>
-        </div>
-    </div>
-</div>
-            </div>
-        </div>
-        <div class="tabgroup__item media-feed__content" id="chanels">
-            <div class="media-feed__chanels">
-                <div class="row">
-                    <div class="col-xl-4">
-                        <div class="media-feed__chanels-filter filter-panel">
-    <button class="filter-panel__btn-open i-filter js-open-filter"></button>
-    <div class="filter-panel__inner panel">
-        <button class="filter-panel__btn-close i-close"></button>
-        <h2 class="filter-panel__title">Фильтр каналов</h2>
-        <div class="filter-panel__field">
-            <div class="input-search">
-                <input class="input input-search__val" type="text" placeholder="Поиск">
-                <button class="input-search__btn i-search" type="submit">Поиск</button>
-            </div>
-        </div>
-        <div class="filter-panel__field">
-            <label class="input-wrap__label">Страна</label>
-            <div class="dropdown dropdown--input js-dropdown-toogle">
-                <button class="dropdown__value" type="button"><span class="dropdown__value-inner"></span></button>
-                <div class="dropdown__list scroll-gray">
-                    <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Россия</a></div>
-                    <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Франция</a></div>
-                </div>
-            </div>
-        </div>
-        <div class="filter-panel__field">
-            <label class="input-wrap__label">Язык</label>
-            <div class="dropdown dropdown--input js-dropdown-toogle">
-                <button class="dropdown__value" type="button"><span class="dropdown__value-inner"></span></button>
-                <div class="dropdown__list scroll-gray">
-                    <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Русский</a></div>
-                    <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Французский</a></div>
-                </div>
-            </div>
-        </div>
-        <div class="filter-panel__field">
-            <label class="input-wrap__label">Тематика</label>
-            <div class="dropdown dropdown--input js-dropdown-toogle">
-                <button class="dropdown__value" type="button"><span class="dropdown__value-inner"></span></button>
-                <div class="dropdown__list scroll-gray">
-                    <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Спорт</a></div>
-                    <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Искусство</a></div>
-                </div>
-            </div>
-        </div>
-        <button class="filter-panel__btn-drop link link-accent link--border">Сбросить фильтр</button>
-        <button class="filter-panel__btn-enter btn btn-accent btn--md">Применить</button>
-    </div>
-</div>
-                    </div>
-                    <div class="col-xl-8">
-                        <div class="panel chanel-panel">
-    <div class="chanel-panel__inner">
-        <a class="chanel-panel__logo" href="chanel-detail.html"><img class="chanel-panel__img" src="images/dist/chanel.jpg" alt="Название канала" /></a>
-        <div class="chanel-panel__info">
-            <div class="chanel-panel__info-short">
-                <a class="chanel-panel__name" href="chanel-detail.html">Название канала</a>
-                <div class="chanel-panel__detail">
-                    <div class="chanel-panel__detail-item chanel-panel__detail-country"><img class="chanel-panel__country-flag" src="images/dist/flag/ru-reg.svg" alt="Россия" /></div>
-                    <div class="chanel-panel__detail-item chanel-panel__detail-community">Спорт</div>
-                    <div class="chanel-panel__detail-item chanel-panel__detail-subscribers i-user">432 439</div>
-                </div>
-            </div>
-            <div class="chanel-panel__info-subscribe chanel-panel__info-subscribe--signed btn btn--md">Вы подписаны</div>
-            <div class="chanel-panel__descr">
-                Laccumsan et viverra justo commodo. Proin sodales pulvinar tempor.
-                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien.
-            </div>
-        </div>
-    </div>
-</div>
-                        <div class="panel chanel-panel">
-    <div class="chanel-panel__inner">
-        <a class="chanel-panel__logo" href="chanel-detail.html"><img class="chanel-panel__img" src="images/dist/chanel.jpg" alt="Название канала" /></a>
-        <div class="chanel-panel__info">
-            <div class="chanel-panel__info-short">
-                <a class="chanel-panel__name" href="chanel-detail.html">Название канала</a>
-                <div class="chanel-panel__detail">
-                    <div class="chanel-panel__detail-item chanel-panel__detail-country"><img class="chanel-panel__country-flag" src="images/dist/flag/ru-reg.svg" alt="Россия" /></div>
-                    <div class="chanel-panel__detail-item chanel-panel__detail-community">Спорт</div>
-                    <div class="chanel-panel__detail-item chanel-panel__detail-subscribers i-user">432 439</div>
-                </div>
-            </div>
-            <div class="chanel-panel__info-subscribe chanel-panel__info-subscribe--signed btn btn--md">Вы подписаны</div>
-            <div class="chanel-panel__descr">
-                Laccumsan et viverra justo commodo. Proin sodales pulvinar tempor.
-                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien.
-            </div>
-        </div>
-    </div>
-</div>
-                        <div class="panel chanel-panel">
-    <div class="chanel-panel__inner">
-        <a class="chanel-panel__logo" href="chanel-detail.html"><img class="chanel-panel__img" src="images/dist/chanel.jpg" alt="Название канала" /></a>
-        <div class="chanel-panel__info">
-            <div class="chanel-panel__info-short">
-                <a class="chanel-panel__name" href="chanel-detail.html">Название канала</a>
-                <div class="chanel-panel__detail">
-                    <div class="chanel-panel__detail-item chanel-panel__detail-country"><img class="chanel-panel__country-flag" src="images/dist/flag/ru-reg.svg" alt="Россия" /></div>
-                    <div class="chanel-panel__detail-item chanel-panel__detail-community">Спорт</div>
-                    <div class="chanel-panel__detail-item chanel-panel__detail-subscribers i-user">432 439</div>
-                </div>
-            </div>
-            <div class="chanel-panel__info-subscribe chanel-panel__info-subscribe--signed btn btn--md">Вы подписаны</div>
-            <div class="chanel-panel__descr">
-                Laccumsan et viverra justo commodo. Proin sodales pulvinar tempor.
-                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien.
-            </div>
-        </div>
-    </div>
-</div>
-                        <div class="panel chanel-panel">
-    <div class="chanel-panel__inner">
-        <a class="chanel-panel__logo" href="chanel-detail.html"><img class="chanel-panel__img" src="images/dist/chanel.jpg" alt="Название канала" /></a>
-        <div class="chanel-panel__info">
-            <div class="chanel-panel__info-short">
-                <a class="chanel-panel__name" href="chanel-detail.html">Название канала</a>
-                <div class="chanel-panel__detail">
-                    <div class="chanel-panel__detail-item chanel-panel__detail-country"><img class="chanel-panel__country-flag" src="images/dist/flag/ru-reg.svg" alt="Россия" /></div>
-                    <div class="chanel-panel__detail-item chanel-panel__detail-community">Спорт</div>
-                    <div class="chanel-panel__detail-item chanel-panel__detail-subscribers i-user">432 439</div>
-                </div>
-            </div>
-            <div class="chanel-panel__info-subscribe chanel-panel__info-subscribe--signed btn btn--md">Вы подписаны</div>
-            <div class="chanel-panel__descr">
-                Laccumsan et viverra justo commodo. Proin sodales pulvinar tempor.
-                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien.
-            </div>
-        </div>
-    </div>
-</div>
-                        <div class="panel chanel-panel">
-    <div class="chanel-panel__inner">
-        <a class="chanel-panel__logo" href="chanel-detail.html"><img class="chanel-panel__img" src="images/dist/chanel.jpg" alt="Название канала" /></a>
-        <div class="chanel-panel__info">
-            <div class="chanel-panel__info-short">
-                <a class="chanel-panel__name" href="chanel-detail.html">Название канала</a>
-                <div class="chanel-panel__detail">
-                    <div class="chanel-panel__detail-item chanel-panel__detail-country"><img class="chanel-panel__country-flag" src="images/dist/flag/ru-reg.svg" alt="Россия" /></div>
-                    <div class="chanel-panel__detail-item chanel-panel__detail-community">Спорт</div>
-                    <div class="chanel-panel__detail-item chanel-panel__detail-subscribers i-user">432 439</div>
-                </div>
-            </div>
-            <div class="chanel-panel__info-subscribe chanel-panel__info-subscribe--signed btn btn--md">Вы подписаны</div>
-            <div class="chanel-panel__descr">
-                Laccumsan et viverra justo commodo. Proin sodales pulvinar tempor.
-                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien.
-            </div>
-        </div>
-    </div>
-</div>
-                        <div class="panel chanel-panel">
-    <div class="chanel-panel__inner">
-        <a class="chanel-panel__logo" href="chanel-detail.html"><img class="chanel-panel__img" src="images/dist/chanel.jpg" alt="Название канала" /></a>
-        <div class="chanel-panel__info">
-            <div class="chanel-panel__info-short">
-                <a class="chanel-panel__name" href="chanel-detail.html">Название канала</a>
-                <div class="chanel-panel__detail">
-                    <div class="chanel-panel__detail-item chanel-panel__detail-country"><img class="chanel-panel__country-flag" src="images/dist/flag/ru-reg.svg" alt="Россия" /></div>
-                    <div class="chanel-panel__detail-item chanel-panel__detail-community">Спорт</div>
-                    <div class="chanel-panel__detail-item chanel-panel__detail-subscribers i-user">432 439</div>
-                </div>
-            </div>
-            <div class="chanel-panel__info-subscribe chanel-panel__info-subscribe--signed btn btn--md">Вы подписаны</div>
-            <div class="chanel-panel__descr">
-                Laccumsan et viverra justo commodo. Proin sodales pulvinar tempor.
-                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien.
-            </div>
-        </div>
-    </div>
-</div>
-                    </div>
-                </div>
-            </div>
+
             <div class="media-feed__pagination-mob">
                 <div class="pagination__wrap">
     <div class="pagination pagination--center">
@@ -1811,6 +1838,9 @@
     </div>
 </div>
 
+<div class="notice notice--hidden notice--succes">
+    <div class="notice__message">Канал заблокирован</div>
+</div>
 <div id="complain" class="popup complain mfp-hide">
     <div class="complain">
     <button title="Close (Esc)" type="button" class="mfp-close">×</button>

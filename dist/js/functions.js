@@ -1,10 +1,20 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+    //галерея в карточке поста
     $('.js-post-gallery').slick({
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: false,
+        autoplay: false
+    });
+
+    //галерея на детальной странице поста
+    $('.js-post-detail-gallery').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
         autoplay: false
     });
 
@@ -17,6 +27,30 @@ document.addEventListener("DOMContentLoaded", function () {
         responsive: [
             {
                 breakpoint: 991,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
+    });
+
+
+    //Карусель потфолио на странице организации
+    $('.content-carusel-3').slick({
+        infinite: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: false,
+        autoplay: false,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 600,
                 settings: {
                     slidesToShow: 1,
                 }
@@ -305,6 +339,7 @@ document.addEventListener("DOMContentLoaded", function () {
         $(".tools-feed__lang-dropdown").toggleClass('active');
     });
 
+    //Блокировка канала
     $('.js-locked').click(function () {
         //$('.post-card__locked').removeClass('active');
         $(this).closest(".post-card").find('.post-card__locked').addClass('active');
@@ -313,6 +348,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     $(".post-card__locked-cancel").on('click', function () {
         $(this).closest(".post-card").find('.post-card__locked').removeClass('active');
+    });
+
+    $(".js-note-locked").on('click', function () {
+        $(".notice").toggleClass('active');
     });
 
     //панель с фильтром
@@ -331,6 +370,40 @@ document.addEventListener("DOMContentLoaded", function () {
             $(".footer-sm").addClass('active');
         } else {
             $(".footer-sm").removeClass('active');
+        }
+    });
+
+    //Комментарии
+    $(".js-show-comment").on('click', function () {
+        $(this).closest(".comments__item").find('.comment-item__reply-list').toggleClass('comment-item--hide')
+
+        if ($(this).attr('data-show') === "true") {
+            $(this).text("Показать");
+            $(this).attr('data-show', "false");
+        }
+        else {
+            $(this).text("Свернуть");
+            $(this).attr('data-show', "true");
+        }
+    });
+
+    //ответить на комментарий
+    $(".js-add-reply-btn").on('click', function () {
+        $(this).closest(".comment-item").find('.js-add-reply').toggleClass('active');
+    });
+
+    //Показать полный текст
+    $(".js-show-full").on('click', function () {
+        $(this).toggleClass('active');
+        $(".hide-descr__txt").toggleClass('visible')
+
+        if ($(this).attr('data-show') === "true") {
+            $(this).text("Развернуть");
+            $(this).attr('data-show', "false");
+        }
+        else {
+            $(this).text("Свернуть");
+            $(this).attr('data-show', "true");
         }
     });
 
@@ -449,6 +522,20 @@ $(document).on('mouseup', function (e) {
     if (!hsm.is(e.target) && tools_feed.has(e.target).length === 0) {
         tools_feed.removeClass('active');
     }
+
+    let tools_post = $('.tools-popup__panel');
+    if (!hsm.is(e.target) && tools_post.has(e.target).length === 0) {
+        tools_post.removeClass('active');
+    }
+
+    let add_reply = $('.js-add-reply');
+    if (!hsm.is(e.target) && add_reply.has(e.target).length === 0) {
+        add_reply.removeClass('active');
+    }
+
+    //$(".js-tools-popup").on('click', function () {
+    //    $(this).siblings(".tools-popup__panel").toggleClass('active');
+    //});
 });
 
 if (document.documentElement.clientWidth > 1201) {

@@ -1,9 +1,10 @@
 .post-gallery {
     .slick-arrow {
-            top: calc(250px - 10px);
+        top: calc(250px - 10px);
+
+        @media (max-width: $mobile) {
+            top: calc(150px - 10px);
         }
-    &__item {
-        
     }
 
     &__item-inner {
@@ -16,6 +17,10 @@
     &__img-wrap {
         height: 500px;
         margin-bottom: 15px;
+
+        @media (max-width: $mobile) {
+            height: 300px;
+        }
     }
 
     &__img {
