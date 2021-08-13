@@ -382,6 +382,21 @@ document.addEventListener("DOMContentLoaded", function () {
         $(this).closest(".comment-item").find('.js-add-reply').toggleClass('active');
     });
 
+    //Показать полный текст
+    $(".js-show-full").on('click', function () {
+        $(this).toggleClass('active');
+        $(".hide-descr__txt").toggleClass('visible')
+
+        if ($(this).attr('data-show') === "true") {
+            $(this).text("Развернуть");
+            $(this).attr('data-show', "false");
+        }
+        else {
+            $(this).text("Свернуть");
+            $(this).attr('data-show', "true");
+        }
+    });
+
     //Mobil filter
 
     $(".mobil-bar__btn").on('click', function () {
