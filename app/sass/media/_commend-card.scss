@@ -25,6 +25,10 @@
                 display: none;
             }
         }
+
+        &--gallery {
+            padding-bottom: 0;           
+        }
     }
 
     &__image {
@@ -39,11 +43,13 @@
         bottom: 0;
     }
 
-
-
     &__content {
         color: $gray;
         font-size: 14px;
+
+        &:hover {
+            color: $gray;
+        }
     }
 
     &__title {
@@ -70,8 +76,5 @@
         &::before {
             margin-right: 10px;
         }
-    }
-
-    &__date {
     }
 }

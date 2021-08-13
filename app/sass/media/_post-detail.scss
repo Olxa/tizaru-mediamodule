@@ -42,7 +42,8 @@
     }
 
     &__container--media {
-        .post-detail__video {
+        .post-detail__video,
+        .post-detail__gallery {
             order: 1;
         }
 
@@ -74,6 +75,26 @@
             order: 2;
             font-size: 20px;
             line-height: 27px;
+        }
+    }
+
+    &__title--age {
+        display: flex;
+        align-items: center;
+
+        &::after {
+            content: '18+';
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            margin-left: 20px;
+            border-radius: 50%;
+            background-color: rgba(0,0,0,.4);
+            color: #fff;
+            font-size: 9px;
+            z-index: 2;
         }
     }
 
@@ -190,7 +211,15 @@
         }
     }
 
-    &__video {
+    &__video,
+    &__gallery {
         margin-bottom: 30px;
+    }
+
+    &__gallery {
+        @media (max-width: $laptop) {
+            margin-left: 0;
+            margin-right: 0;
+        }
     }
 }

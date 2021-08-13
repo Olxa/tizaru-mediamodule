@@ -1,10 +1,20 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+    //галерея в карточке поста
     $('.js-post-gallery').slick({
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: false,
+        autoplay: false
+    });
+
+    //галерея на детальной странице поста
+    $('.js-post-detail-gallery').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
         autoplay: false
     });
 

@@ -1,0 +1,113 @@
+<!--#set var="title" value="Название поста" -->
+<!--#include virtual="/parts/header-login.html" -->
+<div class="page page--padding-big">
+    <div class="full-container">
+        <div class="post-detail">
+            <main class="post-detail__article">
+                <div class="post-detail__search">
+                    <div class="input-search">
+                        <input class="input input-search__val" type="text" placeholder="Найти галерею">
+                        <button class="input-search__btn i-search" type="submit">Найти галерею</button>
+                    </div>
+                </div>
+                <article class="post-detail__container post-detail__container--media">
+                    <div class="post-detail__gallery post-gallery slider slider--sm js-post-detail-gallery">
+                        <div class="post-gallery__item">
+                            <div class="post-gallery__img-wrap">
+                                <img class="post-gallery__img" src="images/dist/image.jpg" alt="Название изображения" />
+                            </div>
+                            <p class="post-gallery__descr">
+                                Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod,
+                                iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                            </p>
+                        </div>
+                        <div class="post-gallery__item">
+                            <div class="post-gallery__img-wrap">
+                                <img class="post-gallery__img" src="images/dist/n8.jpg" alt="Название изображения" />
+                            </div>
+                            <p class="post-gallery__descr">
+                                Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod,
+                                iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                            </p>
+                        </div>
+                        <div class="post-gallery__item">
+                            <div class="post-gallery__img-wrap">
+                                <img class="post-gallery__img" src="images/dist/video.jpg" alt="Название изображения" />
+                            </div>
+                            <p class="post-gallery__descr">
+                                Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod,
+                                iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                            </p>
+                        </div>
+                    </div>
+                    <h1 class="post-detail__title post-detail__title--age">Название галереи</h1>
+                    <div class="post-detail__info">
+                        <div class="post-detail__community">в сообществе <a class="post-detail__community-link" href="#">Бизнес</a></div>
+                        <span class="post-detail__date">17 апреля 2021</span>
+                    </div>
+                    <div class="post-detail__descr hide-descr">
+                        <div class="hide-descr__txt">
+                            Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod,
+                            iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                            Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem
+                            nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus
+                            iaculis scelerisque eu ac ante.
+                            Fusce non varius purus aenean nec magna felis fusce vestibulum velit mollis odio
+                            sollicitudin lacinia aliquam posuere, sapien elementum lobortis tincidunt, turpis
+                            dui ornare nisl, sollicitudin interdum turpis nunc eget.
+                        </div>
+                        <button class="hide-descr__btn btn-unstylling js-show-full">Развернуть</button>
+                    </div>
+                    <div class="post-detail__bottom">
+                        <!--#include virtual="/parts/banners/full.html" -->
+                    </div>
+                </article>
+                <!--#include virtual="/parts/post/post-bar-option.html" -->
+                <div class="post-detail__comments">
+                    <!--#include virtual="/parts/comments/comments.html" -->
+                </div>
+            </main>
+
+            <aside class="post-detail__sidebar">
+                <div class="commend-feed">
+                    <!--#include virtual="/parts/post/commend-feed-gallery.html" -->
+                    <!--#include virtual="/parts/banners/right-big-float.html" -->
+                    <!--#include virtual="/parts/post/commend-feed-gallery.html" -->
+                    <!--#include virtual="/parts/post/commend-feed-gallery.html" -->
+                </div>
+            </aside>
+        </div>
+    </div>
+    <div class="full-container">
+        <div class="post-detail__feed-bottom">
+            <h2 class="post-detail__subtitle title-block title-block--big">Другие публикации канала</h2>
+            <div class="row post-detail__more-post">
+                <div class="col-lg-4">
+                    <!--#include virtual="/parts/post-card/post-card-gallery.html" -->
+                </div>
+                <div class="col-lg-4">
+                    <!--#include virtual="/parts/post-card/post-card-gallery.html" -->
+                </div>
+                <div class="col-lg-4">
+                    <!--#include virtual="/parts/post-card/post-card-gallery.html" -->
+                </div>
+            </div>
+            <h2 class="post-detail__subtitle title-block title-block--big">Лента</h2>
+            <div class="row">
+                <!--#include virtual="/parts/page-section/card-list-3.html" -->
+            </div>
+
+            <div class="media-feed__pagination-mob">
+                <!--#include virtual="/parts/pagination-center.html" -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="notice notice--hidden notice--succes">
+    <div class="notice__message">Канал заблокирован</div>
+</div>
+<div id="complain" class="popup complain mfp-hide">
+    <!--#include virtual="/parts/complain.html" -->
+</div>
+<!--#include virtual="/parts/footer-sm.html" -->
