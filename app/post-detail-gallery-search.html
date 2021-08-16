@@ -1,0 +1,37 @@
+<!--#set var="title" value="Результаты поиска" -->
+<!--#include virtual="/parts/header.html" -->
+<div class="page page--padding-big">
+    <div class="full-container post-search">
+        <aside class="post-search__filter search-filter">
+            <button class="filter-panel__btn-open i-filter js-open-filter"></button>
+            <div class="search-filter__panel filter-panel__inner">
+                <div class="search-filter__title">Фильтр</div>
+                <!--#include virtual="/parts/tools-feed/tools-feed-form-reset.html" -->
+            </div>
+        </aside>
+        <div class="post-search__result search-result">
+            <div class="search-result__search input-search">
+                <input class="input input-search__val" type="text" placeholder="Поиск">
+                <button class="input-search__btn i-search" type="submit">Поиск</button>
+            </div>
+            <div class="search-result__tags search-tags">
+                <a class="tag tag--link" href="#">Популярное</a>
+                <a class="tag tag--link" href="#">Последние</a>
+                <a class="tag tag--link" href="#">Просмотрено</a>
+                <a class="tag tag--link" href="#">Все</a>
+            </div>            
+        </div>
+        <div class="post-search__result-list search-result__list">
+            <h1 class="page-title">Результаты по запросу: Наука и техника</h1>
+            <div class="post-list">
+                <!--#include virtual="/parts/post-card/post-card-gallery.html" -->
+                <!--#include virtual="/parts/post-card/post-card-gallery-promo.html" -->
+                <!--#include virtual="/parts/post-card/post-card-gallery.html" -->
+                <!--#include virtual="/parts/post-card/post-card-gallery.html" -->
+                <!--#include virtual="/parts/post-card/post-card-gallery.html" -->
+                <!--#include virtual="/parts/post-card/post-card-gallery.html" -->
+            </div>
+        </div>
+    </div>
+</div>
+<!--#include virtual="/parts/footer-sm.html" -->
