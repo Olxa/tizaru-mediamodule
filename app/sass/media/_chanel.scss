@@ -1,0 +1,17 @@
+.chanel {
+    &__cover {
+        width: 100%;
+        height: 360px;
+    }
+
+    &__cover-img {
+    }
+    &__top {
+        position: relative;
+    }
+
+    &__card {
+        position: absolute;
+        bottom: -30%;
+    }
+}

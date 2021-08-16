@@ -1,0 +1,50 @@
+<!--#set var="title" value="Название канала" -->
+<!--#include virtual="/parts/header-login.html" -->
+<div class="page page--padding-big">
+    <div class="full-container">
+        <div class="chanel__cover"><img class="chanel__cover-img image-logo" src="images/dist/chanel-bg.jpg" alt="" /></div>
+    </div>    
+    <div class="chanel">
+        <div class="container">
+            <div class="chanel__top">
+                <div class="world-search"></div>
+                <div class="chanel__card chanel-card">
+                    <div class="chanel-card__logo"><img class="chanel-card__img image-logo" src="images/dist/chanel-bg.jpg" alt="Название канала" /></div>
+                    <div class="chanel-card__info">
+                        <h1 class="chanel-card__name">Название канала</h1>
+                        <div class="chanel-card__meta-wrap">
+                            <div class="chanel-card__country"><img class="chanel-card__country-flag" src="images/dist/flag/ru-reg.svg" alt="Россия"></div>
+                            <div class="chanel-card__meta">Технологии</div>
+                            <button class="chanel-card__meta chanel-card__users btn-unstylling i-user">123 598</button>
+                            <div class="chanel-card__meta chanel-card__share i-share-big"></div>
+                            <div class="chanel-card__control-tools tools-popup">
+                                <button class="tools-popup__btn tools-popup__btn--horiz js-tools-popup i-option"></button>
+                                <div class="tools-popup__panel active">
+                                    <ul class="tools-popup__list">
+                                        <li class="tools-popup__item"><a class="tools-popup__link popup-link" href="#complain">Пожаловаться</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="chanel-card__short-descr">
+                            Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, 
+                            iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                        </p>
+                    </div>
+                    <div class="chanel-card__subscr">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="notice notice--hidden notice--succes">
+    <div class="notice__message">Канал заблокирован</div>
+</div>
+<div id="complain" class="popup complain mfp-hide">
+    <!--#include virtual="/parts/complain.html" -->
+</div>
+<!--#include virtual="/parts/footer-sm.html" -->
