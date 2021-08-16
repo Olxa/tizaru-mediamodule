@@ -1,0 +1,44 @@
+.post-search {
+    display: grid;
+    grid: "a b" "a c";
+    grid-template-columns: 30% 70%;
+    grid-template-rows: max-content;    
+
+    @media (max-width: $tablet) {
+        grid: "b b" "c a";
+    }
+
+    &__filter {
+        grid-area: a;
+        align-self: start;
+
+        @media (max-width: $tablet) {
+            width: 100%;
+            order: 2;
+        }
+    }
+
+    &__result {       
+        grid-area: b;
+
+        @media (max-width: $tablet) {
+            width: 100%;
+            order: 1;
+            grid-template-columns: 100%;
+        }
+    }
+
+    &__result-list {
+        grid-area: c;
+        grid-template-columns: 95%;
+    }
+
+    .page-title {
+        margin-bottom: 20px;
+
+        @media (max-width: $tablet) {
+            padding-right: 25px;
+            grid-template-columns: 5%;
+        }
+    }
+}

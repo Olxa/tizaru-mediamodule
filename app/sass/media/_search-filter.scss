@@ -1,0 +1,17 @@
+.search-filter {
+    &__panel {
+        width: 300px;
+        padding: 20px;
+        border-radius: $border-radius;
+        box-shadow: $shadow1;
+        background: #ffffff;
+        text-align: left;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+    }
+}

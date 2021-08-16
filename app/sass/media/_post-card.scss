@@ -8,7 +8,14 @@
 
     position: relative;
     height: 100%;
-    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: $shadow1;
+    border-radius: $border-radius;
 
     &:hover {
         .post-card__name {
@@ -40,14 +47,14 @@
     }
 
     &__panel {
-        display: flex;
+        /*display: flex;
         flex-direction: column;
         justify-content: flex-start;
         height: 100%;
         overflow: hidden;
         background-color: #ffffff;
         box-shadow: $shadow1;
-        border-radius: $border-radius;
+        border-radius: $border-radius;*/
     }
 
     &__header {

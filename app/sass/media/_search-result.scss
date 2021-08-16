@@ -1,0 +1,22 @@
+.search-result {
+    position: relative;
+
+    &__search {
+        margin-bottom: 15px;
+    }
+
+    &__tags {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+
+        @media (max-width: $tablet) {
+            overflow-x: auto;
+            max-width: calc(100vw - 30px);
+        }
+
+        .tag {
+            margin-right: 5px;
+        }
+    }
+}
