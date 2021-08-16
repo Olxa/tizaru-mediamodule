@@ -1,0 +1,75 @@
+.company-smcard {
+    padding: 20px;
+    background: #ffffff;
+    border-radius: $border-radius;
+    box-shadow: $shadow1;
+
+    &__title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    &__logo {
+        width: 50px;
+        min-width: 50px;
+        height: 50px;
+        margin-right: 20px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    &__name {
+        color: $textcolor;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    &__meta {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 30px;
+        color: $gray;
+        font-size: 14px;
+    }
+
+    &__meta-val {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    &__country {
+        display: inline-block;
+        margin-right: 30px;
+    }
+
+    &__flag {
+        width: 29px;
+        height: 16px;
+        margin-right: 15px;
+        object-fit: cover;
+        object-position: top left;
+    }
+
+    &__category {
+    }
+
+    &__social {
+        color: $gray;
+
+        .i-vk-fl {
+            font-size: 14px;
+        }
+
+        .i-fb-fl {
+            font-size: 18px;
+        }
+
+        .social-list__link {
+            &:hover {
+                color: $accent;
+            }
+        }
+    }
+}
