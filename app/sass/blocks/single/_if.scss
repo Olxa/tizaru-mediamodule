@@ -74,8 +74,12 @@
     content: "\e901";
 }
 
+.i-user-check:before {
+    content: "\e900";
+}
+
 .i-phone:before {
-    content: "\e902";
+    content: "\e958";
 }
 
 .i-mail:before {

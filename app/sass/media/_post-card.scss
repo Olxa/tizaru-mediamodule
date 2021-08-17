@@ -1,5 +1,5 @@
 /*------------------------------------*\
-  #Карточка псота
+  #Карточка поста
 \*------------------------------------*/
 
 .post-card {
@@ -120,16 +120,15 @@
         cursor: pointer;
 
         @media (max-width: $mobile) {
-           
+            font-size: 0;
         }
 
         &::before {
-
             @media (max-width: $mobile) {
                 font-family: "If";
                 content: '\e901';
                 display: inline-block;
-                font-size: "12px";
+                font-size: 16px;
             }
         }
 
@@ -144,6 +143,11 @@
                 display: inline-block;
                 font-size: 9px;
                 margin-right: 5px;
+
+                @media (max-width: $mobile) {
+                    content: '\e958';
+                    font-size: 16px;
+                }
             }
         }
     }
