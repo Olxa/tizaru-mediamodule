@@ -136,3 +136,64 @@
         overflow: hidden;
     }
 }
+
+
+
+
+
+/*------------------------------------*\
+  #Серые кнопки
+\*------------------------------------*/
+
+.share-btn__list--gray {
+
+    .share-btn__link {
+        background-color: transparent;
+        color: $gray;
+        border: none;
+    }
+
+    .share-btn__item {
+        width: 40px;
+        border-bottom: 1px solid $gray;
+        margin-right: 15px;
+
+        &:hover {
+            .i-tw-fl {
+                color: #1BAEEB;
+            }
+
+            .i-fb-fl {
+                color: #4C6DB6;
+            }
+
+            .i-vk-fl {
+                color: #6695BD;
+            }
+
+            .i-ln-fl {
+                color: #0E76A8;
+            }
+
+            .i-ok-fl {
+                color: #FC9005;
+            }
+
+            .i-wt-fl {
+                color: #46C152;
+            }
+
+            .i-vb-fl {
+                color: #655BAA;
+            }
+
+            .i-sk-fl {
+                color: #00A7E5;
+            }
+
+            .i-tl-fl {
+                color: #2AA1DA;
+            }
+        }
+    }
+}

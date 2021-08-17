@@ -1,0 +1,14 @@
+.subscribers-logo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(40px,1fr));
+
+    &__item {
+        display: inline-block;
+        width: 40px;
+        min-width: 40px;
+        height: 40px;
+        margin-bottom: 8px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+}

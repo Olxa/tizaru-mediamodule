@@ -77,6 +77,18 @@
             min-height: 100px;
         }
     }
+
+    &--padding-sm {
+        padding: 30px;
+
+        @media (max-width: $tablet) {
+            padding-top: 40px;
+        }
+
+        .mfp-close {
+            right: 24px;
+        }
+    }
 }
 
 .alert-ok {
@@ -100,9 +112,21 @@
     margin-bottom: 30px;
     text-align: center;
 
-    @media (max-width: 767px) {
+    @media (max-width: $mobile) {
         margin-bottom: 30px;
         font-size: 16px;
+    }
+
+    &--big {
+        font-family: $userfont-sbold;
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: 600;
+
+        @media (max-width: $tablet) {            
+            font-size: 20px;
+            line-height: 27px;
+        }
     }
 }
 

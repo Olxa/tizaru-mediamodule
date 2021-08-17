@@ -532,10 +532,11 @@ $(document).on('mouseup', function (e) {
     if (!hsm.is(e.target) && add_reply.has(e.target).length === 0) {
         add_reply.removeClass('active');
     }
-
-    //$(".js-tools-popup").on('click', function () {
-    //    $(this).siblings(".tools-popup__panel").toggleClass('active');
-    //});
+    
+    let share = $('.share-popup');
+    if (!hsm.is(e.target) && share.has(e.target).length === 0) {
+        share.removeClass('active');
+    }
 });
 
 if (document.documentElement.clientWidth > 1201) {

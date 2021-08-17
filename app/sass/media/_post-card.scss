@@ -46,17 +46,6 @@
         }
     }
 
-    &__panel {
-        /*display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        height: 100%;
-        overflow: hidden;
-        background-color: #ffffff;
-        box-shadow: $shadow1;
-        border-radius: $border-radius;*/
-    }
-
     &__header {
         display: flex;
         justify-content: space-between;
@@ -130,11 +119,32 @@
         outline: none;
         cursor: pointer;
 
+        @media (max-width: $mobile) {
+           
+        }
+
+        &::before {
+
+            @media (max-width: $mobile) {
+                font-family: "If";
+                content: '\e901';
+                display: inline-block;
+                font-size: "12px";
+            }
+        }
+
         &:hover {
             color: $accent;
         }
 
         &--signed {
+            &::before {
+                font-family: "If";
+                content: '\e957';
+                display: inline-block;
+                font-size: 9px;
+                margin-right: 5px;
+            }
         }
     }
 

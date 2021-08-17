@@ -1,49 +1,193 @@
 .chanel-card {
+    display: flex;
     width: 100%;
     padding: 40px;
     border-radius: $border-radius;
     background: #ffffff;
     box-shadow: $shadow1;
 
+    @media (max-width: $tablet) {
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    @media (max-width: $mobile) {
+        padding: 40px 20px 20px;
+    }
+
     &__logo {
         width: 140px;
+        min-width: 140px;
         height: 140px;
         margin-right: 30px;
         border-radius: 50%;
         overflow: hidden;
+
+        @media (max-width: $tablet) {
+            position: absolute;
+            width: 70px;
+            min-width: 70px;
+            height: 70px;
+        }
+
+        @media (max-width: $mobile) {
+            width: 40px;
+            min-width: 40px;
+            height: 40px;
+        }
     }
 
     &__info {
+        padding-right: 60px;
+
+        @media (max-width: $tablet) {
+            padding-right: 0;
+        }
     }
 
     &__name {
+        margin-bottom: 20px;
+        font-family: $userfont-bold;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 29px;
+        color: $textcolor;
+
+        @media (max-width: $tablet) {
+            margin-left: 90px;
+            font-size: 20px;
+            line-height: 20px;
+        }
+
+        @media (max-width: $mobile) {
+            margin-left: 50px;
+            margin-bottom: 10px;
+        }
     }
 
     &__meta-wrap {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        cursor: default;
+
+        @media (max-width: $tablet) {
+            margin-left: 90px;
+        }
+
+        @media (max-width: $mobile) {
+            display: flex;
+            flex-wrap: wrap;
+            width: calc(100% - 50px);
+            margin-left: 50px;
+            margin-bottom: 10px;
+        }
     }
 
     &__country {
-    }
+        margin-right: 15px;
 
-    &__country-flag {
+        @media (max-width: $mobile) {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            margin-right: 0;
+        }
     }
 
     &__meta {
         color: $gray;
+        margin-right: 20px;
+
+        @media (max-width: $mobile) {
+            font-size: 14px;
+        }
+    }
+
+    &__focus {
+        @media (max-width: $mobile) {
+            width: 100%;
+        }
     }
 
     &__users {
+
+        @media (max-width: $mobile) {
+            width: 50%;
+        }
+
+        &::before {
+            font-size: 20px;
+            margin-right: 10px;
+        }
     }
 
     &__share {
+        position: relative;
+
+        @media (max-width: $mobile) {
+            margin-left: auto;
+        }
+
+        .share-popup {
+            top: 30px;
+            right: initial;
+            padding: 20px;
+
+            @media (max-width: $mobile) {
+                right: 0;
+            }
+        }
+
+        .share-popup__close {
+            display: none;
+        }
+    }
+
+    &__share-btn {
+        &::before {
+            font-size: 20px;
+            margin-right: 10px;
+        }
     }
 
     &__control-tools {
+
+        .tools-popup__btn::before {
+            font-size: 25px;
+            color: $gray;
+        }
     }
 
     &__short-descr {
+        font-size: 16px;
+        line-height: 23px;
     }
 
     &__subscr {
+        @media (max-width: $tablet) {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    &__subscr-btn {
+        margin-bottom: 40px;
+
+        @media (max-width: $tablet) {
+            height: 45px;
+            line-height: 33px;
+            margin-bottom: 0;
+        }
+    }
+
+    &__social-links {
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width: $tablet) {
+            display: none;
+
+        }
     }
 }

@@ -4,10 +4,13 @@
             <a class="post-card__chanel-link" href="chanel-detail.html"><img class="post-card__chanel-logo" src="images/dist/n8.jpg" alt="Название канала" /></a>
             <div class="post-card__chanel-info-wrap">
                 <div class="post-card__chanel-info">
-                    <a class="post-card__chanel-name" href="chanel-detail.html">Кот и плед, я домосед</a>
-                    <button class="post-card__btn-sub">+ подписаться</button>
+                    <a class="post-card__chanel-name" href="chanel-detail.html">Студия живописи</a>
+                    <button class="post-card__btn-sub" title="отписаться">+ подписаться</button>
                 </div>
-                <a class="post-card__community tag tag--link" href="community-detail.html">Животные</a>
+                <div class="post-card__chanel-info">
+                    <a class="post-card__community tag tag--link" href="community-detail.html">Название собщества</a>
+                    <button class="post-card__btn-sub post-card__btn-sub--signed">Вы подписаны</button>
+                </div>
             </div>
         </div>
         <div class="post-card__tools tools-popup">
@@ -15,8 +18,10 @@
             <div class="tools-popup__panel">
                 <ul class="tools-popup__list">
                     <li class="tools-popup__item"><a class="tools-popup__link popup-link" href="#complain">Пожаловаться</a></li>
+                    <li class="tools-popup__item"><button class="tools-popup__link js-locked" type="button">Заблокировать</button></li>
                 </ul>
             </div>
+
         </div>
     </div>
     <div class="post-card__content">
@@ -43,4 +48,5 @@
             </div>
         </div>
     </div>
+    <!--#include virtual="/parts/post-card/post-locked.html" -->
 </div>
