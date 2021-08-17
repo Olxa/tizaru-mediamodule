@@ -1,5 +1,6 @@
 .account-detail {
     &__person-card {
+        position: relative;
         display: flex;
         align-items: center;
         padding: 40px 50px;
@@ -7,6 +8,20 @@
         background: #ffffff;
         border-radius: $border-radius;
         box-shadow: $shadow1;
+
+        @media (max-width: $tablet) {
+            align-items: flex-start;
+        }
+
+        @media (max-width: $mobile) {
+            padding: 30px 15px 20px;
+        }
+    }
+
+    &__person-info {
+        @media (max-width: $mobile) {
+            width: 100%;
+        }
     }
 
     &__person-image {
@@ -16,6 +31,21 @@
         margin-right: 30px;
         border-radius: 50%;
         overflow: hidden;
+
+        @media (max-width: $tablet) {
+            width: 70px;
+            min-width: 70px;
+            height: 70px;
+            margin-right: 20px;
+        }
+
+        @media (max-width: $mobile) {
+            position: absolute;
+            width: 40px;
+            min-width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
     }
 
     &__name {
@@ -26,17 +56,48 @@
         font-size: 30px;
         font-weight: 700;
         line-height: 29px;
+
+        @media (max-width: $tablet) {
+            font-size: 20px;
+            line-height: 27px;
+        }
+
+        @media (max-width: $mobile) {
+            margin-left: 50px;
+            margin-top: 10px;
+            font-size: 16px;
+            line-height: 25px;
+        }
+
+        &::after {
+            @media (max-width: $mobile) {
+                position: absolute;
+                right: 0;
+                top: -30px;
+                width: 20px;
+                height: 20px;
+            }
+        }
     }
 
-    &__meta {        
+    &__meta {
         margin-bottom: 20px;
         color: $gray;
         font-size: 14px;
-    }    
+
+        @media (max-width: $mobile) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
 
     &__country {
         display: inline-block;
         margin-right: 30px;
+
+        @media (max-width: $mobile) {
+            order: 2;
+        }
     }
 
     &__flag {
@@ -49,6 +110,11 @@
 
     &__regist {
         display: inline-block;
+
+        @media (max-width: $mobile) {
+            order: 1;
+            margin-bottom: 10px;
+        }
     }
 
     &__activity {
@@ -56,6 +122,16 @@
         color: $textcolor;
         font-size: 20px;
         line-height: 27px;
+
+        @media (max-width: $tablet) {
+            font-size: 16px;
+            line-height: 23px;
+        }
+
+        @media (max-width: $mobile) {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     &__comment {
@@ -75,13 +151,12 @@
         color: $textcolor;
     }
 
-    &__company-list {
+    &__company-list,
+    &__chanel-list {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        //grid-template-columns: repeat(auto-fit, 32.4%);
         grid-gap: 1rem;
         margin-bottom: 60px;
-    }
-
-    &__company-card {
     }
 }

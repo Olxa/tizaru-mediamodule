@@ -1,10 +1,11 @@
-.company-smcard {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    background: #ffffff;
-    border-radius: $border-radius;
-    box-shadow: $shadow1;
+.chanel-smcard {
+
+    &__item {
+        padding: 20px;
+        background: #ffffff;
+        border-radius: $border-radius;
+        box-shadow: $shadow1;
+    }
 
     &__title {
         display: flex;
@@ -53,22 +54,10 @@
         object-fit: cover;
         object-position: top left;
     }
-    &__social {
-        margin-top: auto;
+
+    &__short-descr {
+        font-size: 14px;
+        line-height: 19px;
         color: $gray;
-
-        .i-vk-fl {
-            font-size: 14px;
-        }
-
-        .i-fb-fl {
-            font-size: 18px;
-        }
-
-        .social-list__link {
-            &:hover {
-                color: $accent;
-            }
-        }
     }
 }
