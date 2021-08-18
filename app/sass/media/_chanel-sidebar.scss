@@ -30,9 +30,11 @@
         margin-bottom: 60px;
         border-radius: $border-radius;
         box-shadow: $shadow1;
-    }
 
-    &__info {
+        &--flat {
+            box-shadow: none;
+            border-radius: 0;
+        }
     }
 
     &__info-header {
@@ -57,12 +59,9 @@
 
     &__panel-title {
         color: $textcolor;
-        font-size: 20px;
-        line-height: 27px;
+        font-size: 18px;
+        line-height: 24px;
         cursor: default;
-    }
-
-    &__option-list {
     }
 
     &__option-item {
@@ -103,10 +102,10 @@
     }
 
     &__share-btn {
-        margin-bottom: 20px;
     }
 
     &__mail-btn {
+        margin-top: 20px;
     }
 
     &__panel-count {
@@ -144,5 +143,14 @@
         &:last-child {
             margin-right: 0;
         }
+    }
+
+    &__hide-txt {
+        max-height: 75px;
+    }
+
+    &__btn-more {
+        font-size: 16px;
+        text-align: right;
     }
 }

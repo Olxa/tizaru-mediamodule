@@ -1,0 +1,58 @@
+<!--#set var="title" value="Название Сообщества" -->
+<!--#include virtual="/parts/header-login.html" -->
+<div class="page page--padding-big page--bg">
+    <div class="container">
+        <!--#include virtual="/parts/chanel/world-search-panel.html" -->
+    </div>
+    <div class="full-container chanel__cover-wrap">
+        <div class="chanel__cover"><img class="chanel__cover-img image-logo" src="images/dist/bg-p3.jpg" alt="" /></div>
+    </div>
+    <div class="chanel">
+        <div class="container">
+            <!--#include virtual="/parts/community/community-card-top.html" -->
+            <div class="chanel__content">
+                <aside class="chanel__sidebar chanel-sidebar">
+                    <!--#include virtual="/parts/community/community-sidebar.html" -->
+                </aside>
+                <main class="chanel__posts">
+                    <!--#include virtual="/parts/page-section/media-feed-tools-chanel.html" -->
+                    <div class="chanel__posts-list">
+                        <!--#include virtual="/parts/post-card/post-card.html" -->
+                        <!--#include virtual="/parts/post-card/post-card-promo.html" -->
+                        <!--#include virtual="/parts/post-card/post-card-link.html" -->
+                        <!--#include virtual="/parts/post-card/post-card-rek.html" -->
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--#include virtual="/parts/chanel/chat-window.html" -->
+
+<div id="world-search" class="popup popup--padding-sm world-search__popup mfp-hide">
+    <!--#include virtual="/parts/chanel/world-search-popup.html" -->
+</div>
+
+<div id="all-subscribers" class="popup popup--padding-sm all-subscribers mfp-hide">
+    <!--#include virtual="/parts/chanel/subscribers.html" -->
+</div>
+
+<div id="regulations" class="popup popup--padding-sm all-subscribers mfp-hide">
+    <div class="popup__subtitle">Правила</div>
+    <p>
+        Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod,
+        iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+        Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem
+        nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus
+        iaculis scelerisque eu ac ante.
+        Fusce non varius purus aenean nec magna felis fusce vestibulum velit mollis odio
+        sollicitudin lacinia aliquam posuere, sapien elementum lobortis tincidunt, turpis
+        dui ornare nisl, sollicitudin interdum turpis nunc eget.
+    </p>
+</div>
+
+<div id="complain" class="popup complain mfp-hide">
+    <!--#include virtual="/parts/complain.html" -->
+</div>
+<!--#include virtual="/parts/footer-sm.html" -->
