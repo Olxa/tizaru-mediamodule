@@ -14,6 +14,10 @@
         @media (max-width: $mobile) {
             height: $bg-image - 60px;
         }
+
+        &--empty {
+            height: 260px;
+        }
     }
 
     &__top {
