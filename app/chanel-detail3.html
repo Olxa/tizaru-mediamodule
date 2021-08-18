@@ -1,0 +1,58 @@
+<!--#set var="title" value="Название канала" -->
+<!--#include virtual="/parts/header-login.html" -->
+<div class="page page--padding-big page--bg">
+    <div class="container">
+        <!--#include virtual="/parts/chanel/world-search-panel.html" -->
+    </div>
+    <div class="full-container chanel__cover-wrap">
+        <div class="chanel__cover chanel__cover--nopay">
+            <div class="container">
+                <a class="chanel__cover-message" href="pro-account.html">
+                    <span class="chanel__cover-icon i-castle"></span>
+                    <p class="chanel__cover-txt">Редактирование обложки доступно в <span class="text-accent">PRO</span> аккаунте</p>
+                </a>
+            </div>            
+        </div>
+    </div>
+    <div class="chanel">
+        <div class="container">
+            <!--#include virtual="/parts/chanel/chanel-card-top-subscr.html" -->
+            <div class="chanel__content">
+                <aside class="chanel__sidebar chanel-sidebar">
+                    <!--#include virtual="/parts/chanel/chanel-sidebar.html" -->
+                </aside>
+                <main class="chanel__posts">
+                    <!--#include virtual="/parts/page-section/media-feed-tools-chanel.html" -->
+                    <div class="chanel__posts-list">
+                        <!--#include virtual="/parts/post-card/full/post-card-login-full.html" -->
+                        <!--#include virtual="/parts/post-card/full/post-card-login-gallery-full.html" -->
+                        <!--#include virtual="/parts/post-card/full/post-card-login-link-full.html" -->
+                        <!--#include virtual="/parts/post-card/full/post-card-login-video-full.html" -->
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--#include virtual="/parts/chanel/chat-window.html" -->
+
+<div id="world-search" class="popup popup--padding-sm world-search__popup mfp-hide">
+    <!--#include virtual="/parts/chanel/world-search-popup.html" -->
+</div>
+
+<div id="all-subscribers" class="popup popup--padding-sm all-subscribers mfp-hide">
+    <!--#include virtual="/parts/chanel/subscribers.html" -->
+</div>
+
+<div id="other-chanel" class="popup popup--padding-sm all-chanel mfp-hide">
+    <!--#include virtual="/parts/chanel/all-chanel.html" -->
+</div>
+
+<div class="notice notice--hidden notice--succes">
+    <div class="notice__message">Канал заблокирован</div>
+</div>
+<div id="complain" class="popup complain mfp-hide">
+    <!--#include virtual="/parts/complain.html" -->
+</div>
+<!--#include virtual="/parts/footer-sm.html" -->
