@@ -405,6 +405,15 @@ document.addEventListener("DOMContentLoaded", function () {
             $(this).text("Свернуть");
             $(this).attr('data-show', "true");
         }
+    });    
+
+    // чат на канале
+    $(".js-open-chat").on('click', function () {
+        $(".web-chat").addClass('active');
+    });
+
+    $(".js-close-chat").on('click', function () {
+        $(".web-chat").removeClass('active');
     });
 
     //Mobil filter
@@ -532,10 +541,11 @@ $(document).on('mouseup', function (e) {
     if (!hsm.is(e.target) && add_reply.has(e.target).length === 0) {
         add_reply.removeClass('active');
     }
-
-    //$(".js-tools-popup").on('click', function () {
-    //    $(this).siblings(".tools-popup__panel").toggleClass('active');
-    //});
+    
+    let share = $('.share-popup');
+    if (!hsm.is(e.target) && share.has(e.target).length === 0) {
+        share.removeClass('active');
+    }
 });
 
 if (document.documentElement.clientWidth > 1201) {
@@ -627,6 +637,18 @@ if (document.documentElement.clientWidth < 768) {
         $(".login-wrapper").removeClass("active")
     });
 };
+
+$(function () {
+    if ($(window).width() > 1199) {
+
+        //панель с поиском в World (каналы/сообщества)
+        $(".js-world-search").on('click', function () {
+            $(this).toggleClass('active');
+            $(".world-seach").toggleClass('active');
+        });
+
+    }
+});
 
 document.addEventListener("DOMContentLoaded", function () {
     $('.popup-link').magnificPopup({
