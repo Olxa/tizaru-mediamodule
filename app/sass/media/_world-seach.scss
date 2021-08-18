@@ -1,0 +1,136 @@
+.world-seach {
+    position: relative;
+
+    &.active {
+
+        .world-seach__logo-txt {
+            display: none;
+        }
+
+        .world-seach__fields {
+            display: flex;
+        }
+
+        .world-seach__panel {
+            width: 100%;
+            padding: 20px 12px;
+            left: 0;
+        }
+    }
+
+    &__panel {
+        position: absolute;
+        top: -35px;
+        left: calc(50% - 120px);
+        display: flex;
+        align-items: center;
+        width: 240px;
+        padding: 10px 20px 10px 60px;
+        background: #ffffff;
+        border-radius: $border-radius;
+        box-shadow: $shadow1;
+        transition: all .3s linear;
+
+        @media (max-width: $mobile) {
+            top: 55px
+        }
+    }
+
+    &__link {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 30px;
+    }
+
+    &__logo {
+        display: inline-block;
+        width: 105px;
+        height: 34px;
+        background: url(/images/dist/logo-world.svg) no-repeat center;
+        background-size: contain;
+    }
+
+    &__logo-txt {
+        display: block;
+        position: relative;
+        top: -5px;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: .15em;
+        text-align: center;
+    }
+
+    &__fields {
+        display: none;
+        align-items: center;
+        width: 100%;
+        padding-right: 50px;
+        transition-delay: .3s;
+    }
+
+    &__field {
+        margin-right: 30px;
+
+        .dropdown__value {
+            color: $gray;
+        }
+    }
+
+    &__field-search {
+
+
+        .input {
+            padding-left: 0;
+        }
+    }
+
+    &__btn {
+        margin-left: auto;
+    }
+
+
+    &__btn-open {
+        margin-left: auto;
+        font-size: 30px;
+        color: $gray;
+
+        @media (max-width: $tablet) {
+            display: none;
+        }
+
+        &:hover {
+            color: $accent;
+        }
+
+        &::before {
+            font-family: 'If';
+            content: '\e914';
+        }
+
+        &.active {
+            font-size: 20px;
+
+            &::before {
+                content: '\e913';
+            }
+        }
+    }
+
+    &__btn-open-mob {
+        display: none;
+
+        @media (max-width: $tablet) {
+            display: block;
+        }
+    }
+
+    &__btn-group {
+        text-align: center;
+
+        .btn {
+            display: block;
+            margin: 30px auto 0;
+        }
+    }
+}

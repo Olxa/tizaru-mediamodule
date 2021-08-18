@@ -12,4 +12,10 @@
             padding-top: 30px;
         }
     }
+
+    &--bg {
+        @media (max-width: $mobile) {
+            padding-top: 0;
+        }
+    }
 }

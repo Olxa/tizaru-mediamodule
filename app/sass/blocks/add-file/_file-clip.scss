@@ -1,4 +1,4 @@
-.file-icon {
+.file-clip {
     position: relative;
     display: flex;
     align-items: center;
@@ -7,11 +7,7 @@
     cursor: pointer;
 
     &::before {
-        font-size: 30px;
-
-        @media (max-width: $mobile-sm) {
-            font-size: 20px;
-        }
+        font-size: 20px;
     }
 
     &:hover {
@@ -23,12 +19,14 @@
     }
 
     &__added {
-        max-width: 50px;
-        max-height: 50px
+        font-family: $userfont-sbold;
+        font-weight: 600;
+        color: $textcolor;
     }
 
     &__del {
         color: $gray;
+        margin-right: 10px;
 
         &::before {
             content: "\e917";

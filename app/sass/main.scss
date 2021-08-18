@@ -190,6 +190,7 @@
 @import "blocks/add-file/file-photo";
 @import "blocks/add-file/file-txt";
 @import "blocks/add-file/file-icon";
+@import "blocks/add-file/file-clip";
 
 // == team ==
 @import "blocks/team/team";
@@ -256,6 +257,9 @@
 @import "articles/sorting-article";
 @import "articles/search-article";
 
+// == web-chat ==
+@import "blocks/web-chat/web-chat";
+
 // == media ==
 @import "media/media";
 @import "media/media-feed";
@@ -286,3 +290,4 @@
 @import "media/subscribers";
 @import "media/other-chanel";
 @import "media/all-chanel";
+@import "media/world-seach";

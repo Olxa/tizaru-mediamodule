@@ -1,9 +1,19 @@
 .chanel {
     $bg-image: 360px;
 
+    &__cover-wrap {
+        @media (max-width: $mobile) {
+            padding: 0;
+        }
+    }
+
     &__cover {
         width: 100%;
         height: $bg-image;
+
+        @media (max-width: $mobile) {
+            height: $bg-image - 60px;
+        }
     }
 
     &__top {

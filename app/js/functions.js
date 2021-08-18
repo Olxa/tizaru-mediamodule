@@ -405,6 +405,15 @@ document.addEventListener("DOMContentLoaded", function () {
             $(this).text("Свернуть");
             $(this).attr('data-show', "true");
         }
+    });    
+
+    // чат на канале
+    $(".js-open-chat").on('click', function () {
+        $(".web-chat").addClass('active');
+    });
+
+    $(".js-close-chat").on('click', function () {
+        $(".web-chat").removeClass('active');
     });
 
     //Mobil filter
@@ -628,6 +637,18 @@ if (document.documentElement.clientWidth < 768) {
         $(".login-wrapper").removeClass("active")
     });
 };
+
+$(function () {
+    if ($(window).width() > 1199) {
+
+        //панель с поиском в World (каналы/сообщества)
+        $(".js-world-search").on('click', function () {
+            $(this).toggleClass('active');
+            $(".world-seach").toggleClass('active');
+        });
+
+    }
+});
 
 document.addEventListener("DOMContentLoaded", function () {
     $('.popup-link').magnificPopup({
