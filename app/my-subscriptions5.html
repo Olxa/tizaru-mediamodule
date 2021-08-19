@@ -1,0 +1,98 @@
+<!--#set var="title" value="Личный кабинет | Моя лента" -->
+<!--#set var="моя-лента" value="active" -->
+<!--#include virtual="/parts/header-login.html" -->
+<div class="page-content">
+    <div class="full-container private-office__wrap">
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb--private-office">
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Главная</a></li>
+                <li class="breadcrumb__item active" aria-current="page">Моя лента</li>
+            </ol>
+        </nav>
+        <div class="private-office">
+            <div class="private-office__sidebar">
+                <!--#include virtual="/parts/user-nav-page.html" -->
+            </div>
+            <div class="private-office__content">
+                <ul class="private-office__tab">
+                    <li class="private-office__tab-item">
+                        <a class="private-office__tab-link" href="my-subscriptions.html">Мои подписки</a>
+                    </li>
+                    <li class="private-office__tab-item">
+                        <a class="private-office__tab-link"  href="my-subscriptions3.html">Заблокированные</a>
+                    </li>
+                    <li class="private-office__tab-item">
+                        <div class="private-office__tab-link active">Настройки</div>
+                    </li>
+                </ul>
+                <div class="private-office__tab-content private-office__tab-content--md">
+                    <p class="private-office__tab-subtitle">Показывать в моей ленте публикации из сообществ:</p>
+                    <div class="feed-tools">
+                        <button class="feed-tools__btn-all btn-unstylling">Выделить все</button>
+                        <div class="feed-tools__chek-out">
+                            <div class="checkbox">
+                                <input class="checkbox__field" id="chek1" type="checkbox" checked>
+                                <label class="checkbox__value" for="chek1">Показывать публикации 18+</label>
+                            </div>
+                        </div>
+                        <ul class="feed-tools__chek-list list-unstylling scroll-gray">
+                            <li class="feed-tools__chek-item">
+                                <div class="checkbox">
+                                    <input class="checkbox__field" id="chek2" type="checkbox">
+                                    <label class="checkbox__value" for="chek2">Спорт</label>
+                                </div>
+                            </li>
+                            <li class="feed-tools__chek-item">
+                                <div class="checkbox">
+                                    <input class="checkbox__field" id="chek3" type="checkbox">
+                                    <label class="checkbox__value" for="chek3">Бизнес</label>
+                                </div>
+                            </li>
+                            <li class="feed-tools__chek-item">
+                                <div class="checkbox">
+                                    <input class="checkbox__field" id="chek4" type="checkbox">
+                                    <label class="checkbox__value" for="chek4">Видео</label>
+                                </div>
+                            </li>
+                            <li class="feed-tools__chek-item">
+                                <div class="checkbox">
+                                    <input class="checkbox__field" id="chek5" type="checkbox">
+                                    <label class="checkbox__value" for="chek5">Технологии</label>
+                                </div>
+                            </li>
+                            <li class="feed-tools__chek-item">
+                                <div class="checkbox">
+                                    <input class="checkbox__field" id="chek6" type="checkbox">
+                                    <label class="checkbox__value" for="chek6">Финансы и инвестиции</label>
+                                </div>
+                            </li>
+                            <li class="feed-tools__chek-item">
+                                <div class="checkbox">
+                                    <input class="checkbox__field" id="chek7" type="checkbox">
+                                    <label class="checkbox__value" for="chek7">Эксперное мнение</label>
+                                </div>
+                            </li>
+                            <li class="feed-tools__chek-item">
+                                <div class="checkbox">
+                                    <input class="checkbox__field" id="chek8" type="checkbox">
+                                    <label class="checkbox__value" for="chek8">Карьера и свой бизнес</label>
+                                </div>
+                            </li>
+                            <li class="feed-tools__chek-item">
+                                <div class="checkbox">
+                                    <input class="checkbox__field" id="chek9" type="checkbox">
+                                    <label class="checkbox__value" for="chek9">Культура</label>
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="btn btn-accent btn--sm" type="button">Сохранить</button>
+                    </div>
+                </div>                
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--#include virtual="/parts/footer.html" -->
