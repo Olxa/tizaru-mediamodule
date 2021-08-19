@@ -134,7 +134,7 @@
 
     &__tab {
         display: flex;
-        margin: 0 0 50px;
+        margin: 0 0 30px;
         padding: 0;
         list-style: none;
 
@@ -205,6 +205,17 @@
             padding-left: 15px;
             padding-right: 15px;
         }
+
+        &--md {
+            max-width: 875px;
+        }
+    }
+
+    &__tab-subtitle {
+        display: inline-block;
+        margin-bottom: 30px;
+        color: $textcolor;
+        font-size: 18px;
     }
 
     &__balance-add--desc {
@@ -254,9 +265,20 @@
     &__user-license {
         margin-top: 50px;
 
-        @media (max-width: 1199px) {
+        @media (max-width: $tablet) {
             margin-top: 20px;
             margin-bottom: 40px;
+        }
+    }
+
+    &__tab-info {
+        color: $gray;
+        font-size: 20px;
+        line-height: 27px;
+
+        @media (max-width: $mobile) {
+            font-size: 18px;
+            line-height: 23px;
         }
     }
 }
