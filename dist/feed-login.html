@@ -8,7 +8,7 @@
     <meta name="description" content="<!--#echo var=' title' -->">
     <meta name="viewport" content="width=device-width">
     <link rel="icon" href="images/favicon.png">
-    <link rel="stylesheet" href="css/app.min.css">
+    <link rel="stylesheet" href="css/app.min.css"> 
 </head>
 
 <body>
@@ -337,7 +337,7 @@
                 <div class="site-header__user-info user-account">
                     <a class="user-account__status" href="#" title="подробнее о про">pro</a>
                     <button class="user-account__btn-open" type="button">
-                        <span class="user-account__user-name">ООО "ЖелДорЭкспедиция"</span>
+                        <!--<span class="user-account__user-name">ООО "ЖелДорЭкспедиция"</span>-->
                         <span class="user-account__user-avatar">
                             <img src="images/dist/or2.jpg" alt="Длиннофамильцева Евгения" />
                         </span>
@@ -348,47 +348,44 @@
         <a class="account-menu__data-id" href="private-office-id.html">id 3500560</a>
         <a class="account-menu__data-status account-menu__data-status--one" href="private-office-point.html">1523 баллов</a>
     </div>
-    <div class="user-account__links">
-        <ul class="user-account__nav-list">
+    <div class="user-account__links"> 
+        <ul class="user-account__nav-list"> 
             <li class="user-account__nav-item">
-                <a class="user-account__nav-link active" href="private-office.html">Личный кабинет</a>
-            </li>
-            <li class="user-account__nav-item">
-                <a class="user-account__nav-link" href="#">Мои компании</a>
+                <a class="user-account__nav-link " href="private-office.html">Личный кабинет</a>
             </li>
             <li class="user-account__nav-item">
-                <a class="user-account__nav-link" href="#">Голосование</a>
+                <a class="user-account__nav-link " href="private-office-my-company.html">Мои компании</a>
+            </li>
+            <li class="user-account__nav-item">
+                <a class="user-account__nav-link " href="private-office-vote.html">Голосование</a>
             </li>
             <li class="user-account__nav-item user-account__nav-item--mob-vis">
-                <a class="user-account__nav-link" href="#">Баллы <span class="user-nav__count">23</span></a>
+                <a class="user-account__nav-link " href="private-office-point.html">Баллы <span class="user-nav__count">23</span></a>
             </li>
             <li class="user-account__nav-item user-account__nav-item--mob-vis">
-                <a class="user-account__nav-link" href="#">Обратная связь <span class="user-nav__count user-nav__count-message">+1</span></a>
-            </li>
-            <li class="user-account__nav-item user-account__nav-item--mob-vis">
-                <a class="user-account__nav-link" href="#">ID номер</a>
+                <a class="user-account__nav-link " href="private-office-id.html">ID номер</a>
             </li>
         </ul>
         <div class="user-account__nav-title">Tizaru World</div>
         <ul class="user-account__nav-list">
             <li class="user-account__nav-item">
-                <a class="user-account__nav-link" href="#">Мои публикации</a>
+                <a class="user-account__nav-link " href="my-publication.html">Мои публикации</a>
             </li>
             <li class="user-account__nav-item">
-                <a class="user-account__nav-link" href="#">Моя лента</a>
+                <a class="user-account__nav-link " href="my-subscriptions.html">Моя лента</a>
             </li>
             <li class="user-account__nav-item user-account__nav-item--mob-vis">
-                <a class="user-account__nav-link" href="#">Рекламировать</a>
+                <a class="user-account__nav-link " href="reklam.html">Рекламировать</a>
             </li>
             <li class="user-account__nav-item">
-                <a class="user-account__nav-link" href="#">Чат <span class="user-nav__count user-nav__count-message">+1</span></a>
+                <a class="user-account__nav-link " href="chat-chanel.html">Чат <span class="user-nav__count user-nav__count-message">+1</span></a>
             </li>
         </ul>
     </div>
     <div class="user-account__bottom">
         <ul class="user-account__nav-list user-account__nav-list--gorizont">
             <li class="user-account__nav-item">
-                <a class="user-account__nav-link" href="#">Тех поддержка</a>
+                <a class="user-account__nav-link " href="private-office-chat.html">Тех поддержка</a>
             </li>
             <li class="user-account__nav-item">
                 <a class="user-account__nav-link" href="/">Выход</a>
@@ -405,7 +402,7 @@
     <div class="media-feed__logo-wrap">
         <div class="media-feed__logo"></div>
         <div class="media-feed__logo-txt text-gray">ваша <span class="text-accent">лента</span></div>
-    </div>
+    </div> 
     <div class="media-feed__tabs">
         <ul class="tabs tabs__nav-list tabs--feed" data-tabgroup="feed-content">
             <li class="tabs__nav"><a class="tabs__nav-link active" href="#feeds">Ваша лента</a></li>
@@ -577,8 +574,10 @@
             <div class="tools-popup__panel">
                 <ul class="tools-popup__list">
                     <li class="tools-popup__item"><a class="tools-popup__link popup-link" href="#complain">Пожаловаться</a></li>
+                    <li class="tools-popup__item"><button class="tools-popup__link js-locked" type="button">Заблокировать</button></li>
                 </ul>
             </div>
+
         </div>
     </div>
     <div class="post-card__content">
@@ -618,6 +617,13 @@
             </div>
         </div>
     </div>
+    <div class="post-card__locked">
+    <div class="post-card__locked-title">Публикации источника скрыты</div>
+    <div class="post-card__locked-txt">Вы будете видеть меньше таких публикаций у себя в ленте</div>
+    <div class="post-card__btn-wrap">
+        <button class="post-card__locked-cancel link link-accent link--border" type="button">Отмена</button>
+    </div>
+</div>
 </div>
     <div class="post-card">
     <div class="post-card__header">
@@ -636,6 +642,7 @@
             <div class="tools-popup__panel">
                 <ul class="tools-popup__list">
                     <li class="tools-popup__item"><a class="tools-popup__link popup-link" href="#complain">Пожаловаться</a></li>
+                    <li class="tools-popup__item"><button class="tools-popup__link js-locked" type="button">Заблокировать</button></li>
                 </ul>
             </div>
         </div>
@@ -677,43 +684,51 @@
             </div>
         </div>
     </div>
+    <div class="post-card__locked">
+    <div class="post-card__locked-title">Публикации источника скрыты</div>
+    <div class="post-card__locked-txt">Вы будете видеть меньше таких публикаций у себя в ленте</div>
+    <div class="post-card__btn-wrap">
+        <button class="post-card__locked-cancel link link-accent link--border" type="button">Отмена</button>
+    </div>
 </div>
-    <div class="post-card">    
-        <div class="post-card__header">
-            <div class="post-card__info">
-                <a class="post-card__chanel-link" href="chanel-detail.html"><img class="post-card__chanel-logo" src="images/dist/n11.jpg" alt="Название канала" /></a>
-                <div class="post-card__chanel-info-wrap">
-                    <div class="post-card__chanel-info">
-                        <a class="post-card__chanel-name" href="chanel-detail.html">Название канала</a>
-                        <button class="post-card__btn-sub">+ Подписаться</button>
-                    </div>
-                </div>
-            </div>
-            <div class="post-card__tools tools-popup">
-                <button class="post-card__tools-btn tools-popup__btn js-tools-popup i-option"></button>
-                <div class="tools-popup__panel">
-                    <ul class="tools-popup__list">
-                        <li class="tools-popup__item"><a class="tools-popup__link popup-link" href="#complain">Пожаловаться</a></li>
-                    </ul>
+</div>
+    <div class="post-card">
+    <div class="post-card__header">
+        <div class="post-card__info">
+            <a class="post-card__chanel-link" href="chanel-detail.html"><img class="post-card__chanel-logo" src="images/dist/n11.jpg" alt="Название канала" /></a>
+            <div class="post-card__chanel-info-wrap">
+                <div class="post-card__chanel-info">
+                    <a class="post-card__chanel-name" href="chanel-detail.html">Название канала</a>
+                    <button class="post-card__btn-sub post-card__btn-sub--signed" title="отписаться">вы подписаны</button>
                 </div>
             </div>
         </div>
-        <div class="post-card__content">
-            <a class="post-card__image-wrap" href="#" target="_blank"><img class="post-card__image" src="images/dist/n7.jpg" alt="Название поста" /></a>
-            <div class="post-card__content-inner">
-                <a class="post-card__name post-card__name--link" href="#" target="_blank">Криптовалюта или гречка, что выбрать в 21 веке?</a>
-                <p class="post-card__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod gravida dolor sit amet lacus accumn bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...</p>
+        <div class="post-card__tools tools-popup">
+            <button class="post-card__tools-btn tools-popup__btn js-tools-popup i-option"></button>
+            <div class="tools-popup__panel">
+                <ul class="tools-popup__list">
+                    <li class="tools-popup__item"><a class="tools-popup__link popup-link" href="#complain">Пожаловаться</a></li>
+                    <li class="tools-popup__item"><button class="tools-popup__link js-locked" type="button">Заблокировать</button></li>
+                </ul>
             </div>
         </div>
-        <div class="post-card__bottom">
-            <div class="post-card__country"><img class="post-card__country-flag" src="images/dist/flag/ru-reg.svg" alt="Россия" /></div>
-            <div class="post-card__control">
-                <button class="post-card__control-share i-share-big js-share-btn" type="button"></button>
-                <div class="share-block__popup share-popup post-card__share-popup">
-                    <button class="share-popup__close" type="button"></button>
-                    <div class="share-popup__subtitle">Поделиться в соц сетях</div>
-                    <div class="share-popup__btn share-btn">
-                        <ul class="share-btn__list">
+    </div>
+    <div class="post-card__content">
+        <a class="post-card__image-wrap" href="#" target="_blank"><img class="post-card__image" src="images/dist/n7.jpg" alt="Название поста" /></a>
+        <div class="post-card__content-inner">
+            <a class="post-card__name post-card__name--link" href="#" target="_blank">Криптовалюта или гречка, что выбрать в 21 веке?</a>
+            <p class="post-card__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod gravida dolor sit amet lacus accumn bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...</p>
+        </div>
+    </div>
+    <div class="post-card__bottom">
+        <div class="post-card__country"><img class="post-card__country-flag" src="images/dist/flag/ru-reg.svg" alt="Россия" /></div>
+        <div class="post-card__control">
+            <button class="post-card__control-share i-share-big js-share-btn" type="button"></button>
+            <div class="share-block__popup share-popup post-card__share-popup">
+                <button class="share-popup__close" type="button"></button>
+                <div class="share-popup__subtitle">Поделиться в соц сетях</div>
+                <div class="share-popup__btn share-btn">
+                    <ul class="share-btn__list">
     <li class="share-btn__item"><a class="share-btn__link icon i-tw-fl" href="#"></a></li>
     <li class="share-btn__item"><a class="share-btn__link icon i-fb-fl" href="#"></a></li>
     <li class="share-btn__item"><a class="share-btn__link icon i-vk-fl" href="#"></a></li>
@@ -727,15 +742,22 @@
     <li class="share-btn__item"><a class="share-btn__link icon i-tl-fl" href="#"></a></li>
     <li class="share-btn__item"><a class="share-btn__link icon i-copy last-icon" href="#"></a></li>
 </ul>
-                    </div>
                 </div>
-                <div class="post-card__control-likes like">
-                    <button class="like__item i-dislike"></button>
-                    <button class="like__item i-like"></button>
-                </div>
+            </div>
+            <div class="post-card__control-likes like">
+                <button class="like__item i-dislike"></button>
+                <button class="like__item i-like"></button>
             </div>
         </div>
     </div>
+    <div class="post-card__locked">
+    <div class="post-card__locked-title">Публикации источника скрыты</div>
+    <div class="post-card__locked-txt">Вы будете видеть меньше таких публикаций у себя в ленте</div>
+    <div class="post-card__btn-wrap">
+        <button class="post-card__locked-cancel link link-accent link--border" type="button">Отмена</button>
+    </div>
+</div>
+</div>
     <div class="post-card">
     <div class="post-card__header">
         <div class="post-card__info">
@@ -766,7 +788,55 @@
                 <button class="share-popup__close" type="button"></button>
                 <div class="share-popup__subtitle">Поделиться в соц сетях</div>
                 <div class="share-popup__btn share-btn">
-                    <ul class="share-btn__list">
+
+                </div>
+            </div>
+            <div class="post-card__control-likes like">
+                <button class="like__item i-dislike"></button>
+                <button class="like__item i-like"></button>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="post-card post-card--age">    
+        <div class="post-card__panel">
+            <div class="post-card__header">
+                <div class="post-card__info">
+                    <a class="post-card__chanel-link" href="chanel-detail.html"><img class="post-card__chanel-logo" src="images/dist/vettargetlog.png" alt="Название канала" /></a>
+                    <div class="post-card__chanel-info-wrap">
+                        <div class="post-card__chanel-info">
+                            <a class="post-card__chanel-name" href="chanel-detail.html">Кот и плед, я домосед</a>
+                            <button class="post-card__btn-sub">+ подписаться</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-card__tools tools-popup">
+                    <button class="post-card__tools-btn tools-popup__btn js-tools-popup i-option"></button>
+                    <div class="tools-popup__panel">
+                        <ul class="tools-popup__list">
+                            <li class="tools-popup__item"><a class="tools-popup__link popup-link" href="#complain">Пожаловаться</a></li>
+                            <li class="tools-popup__item"><button class="tools-popup__link js-locked" type="button">Заблокировать</button></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="post-card__content">
+                <a class="post-card__image-wrap" href="post-detail.html"><img class="post-card__image" src="images/dist/vi1.jpg" alt="Название поста" /></a>
+                <div class="post-card__content-inner">
+                    <a class="post-card__name" href="post-detail-video.html">Содержательное название поста</a>
+                    <p class="post-card__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod gravida dolor sit amet lacus accumn bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...</p>
+                </div>
+            </div>
+            <div class="post-card__bottom">
+                <div class="post-card__country"><img class="post-card__country-flag" src="images/dist/flag/ru-reg.svg" alt="Россия" /></div>
+                <div class="post-card__control">
+                    <button class="post-card__control-share i-share-big js-share-btn" type="button"></button>
+                    <div class="share-block__popup share-popup post-card__share-popup">
+                        <button class="share-popup__close" type="button"></button>
+                        <div class="share-popup__subtitle">Поделиться в соц сетях</div>
+                        <div class="share-popup__btn share-btn">
+                            <ul class="share-btn__list">
     <li class="share-btn__item"><a class="share-btn__link icon i-tw-fl" href="#"></a></li>
     <li class="share-btn__item"><a class="share-btn__link icon i-fb-fl" href="#"></a></li>
     <li class="share-btn__item"><a class="share-btn__link icon i-vk-fl" href="#"></a></li>
@@ -780,114 +850,65 @@
     <li class="share-btn__item"><a class="share-btn__link icon i-tl-fl" href="#"></a></li>
     <li class="share-btn__item"><a class="share-btn__link icon i-copy last-icon" href="#"></a></li>
 </ul>
+                        </div>
+                    </div>
+                    <div class="post-card__control-likes like">
+                        <button class="like__item i-dislike"></button>
+                        <button class="like__item i-like"></button>
+                    </div>
                 </div>
             </div>
-            <div class="post-card__control-likes like">
-                <button class="like__item i-dislike"></button>
-                <button class="like__item i-like"></button>
-            </div>
-        </div>
+            <div class="post-card__locked">
+    <div class="post-card__locked-title">Публикации источника скрыты</div>
+    <div class="post-card__locked-txt">Вы будете видеть меньше таких публикаций у себя в ленте</div>
+    <div class="post-card__btn-wrap">
+        <button class="post-card__locked-cancel link link-accent link--border" type="button">Отмена</button>
     </div>
 </div>
-    <div class="post-card post-card--age">
-    <div class="post-card__header">
-        <div class="post-card__info">
-            <a class="post-card__chanel-link" href="chanel-detail.html"><img class="post-card__chanel-logo" src="images/dist/vettargetlog.png" alt="Название канала" /></a>
-            <div class="post-card__chanel-info-wrap">
-                <div class="post-card__chanel-info">
-                    <a class="post-card__chanel-name" href="chanel-detail.html">Название канала</a>
-                    <button class="post-card__btn-sub post-card__btn-sub--signed" title="отписаться">вы подписаны</button>
-                </div>
-            </div>
-        </div>
-        <div class="post-card__tools tools-popup">
-            <button class="post-card__tools-btn tools-popup__btn js-tools-popup i-option"></button>
-            <div class="tools-popup__panel">
-                <ul class="tools-popup__list">
-                    <li class="tools-popup__item"><a class="tools-popup__link popup-link" href="#complain">Пожаловаться</a></li>
-                </ul>
-            </div>
         </div>
     </div>
-    <div class="post-card__content">
-        <a class="post-card__image-wrap" href="post-detail.html"><img class="post-card__image" src="images/dist/vi1.jpg" alt="Название поста" /></a>
-        <div class="post-card__content-inner">
-            <a class="post-card__name" href="post-detail.html">Содержательное название поста</a>
-            <p class="post-card__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod gravida dolor sit amet lacus accumn bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...</p>
-        </div>
-    </div>
-    <div class="post-card__bottom">
-        <div class="post-card__country"><img class="post-card__country-flag" src="images/dist/flag/ru-reg.svg" alt="Россия" /></div>
-        <div class="post-card__control">
-            <button class="post-card__control-share i-share-big js-share-btn" type="button"></button>
-            <div class="share-block__popup share-popup post-card__share-popup">
-                <button class="share-popup__close" type="button"></button>
-                <div class="share-popup__subtitle">Поделиться в соц сетях</div>
-                <div class="share-popup__btn share-btn">
-                    <ul class="share-btn__list">
-    <li class="share-btn__item"><a class="share-btn__link icon i-tw-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-fb-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-vk-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-ln-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-ok-fl" href="#"></a></li>
-</ul>
-<ul class="share-btn__list">
-    <li class="share-btn__item"><a class="share-btn__link icon i-wt-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-vb-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-sk-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-tl-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-copy last-icon" href="#"></a></li>
-</ul>
-                </div>
-            </div>
-            <div class="post-card__control-likes like">
-                <button class="like__item i-dislike"></button>
-                <button class="like__item i-like"></button>
-            </div>
-        </div>
-    </div>
-</div>
     <div class="post-card">
-    <div class="post-card__header">
-        <div class="post-card__info">
-            <a class="post-card__chanel-link" href="chanel-detail.html"><img class="post-card__chanel-logo" src="images/dist/chanel.jpg" alt="Название канала" /></a>
-            <div class="post-card__chanel-info-wrap">
-                <div class="post-card__chanel-info">
-                    <a class="post-card__chanel-name" href="chanel-detail.html">Студия живописи</a>
-                    <button class="post-card__btn-sub post-card__btn-sub--signed" title="отписаться">вы подписаны</button>
+        <div class="post-card__header">
+            <div class="post-card__info">
+                <a class="post-card__chanel-link" href="chanel-detail.html"><img class="post-card__chanel-logo" src="images/dist/chanel.jpg" alt="Название канала" /></a>
+                <div class="post-card__chanel-info-wrap">
+                    <div class="post-card__chanel-info">
+                        <a class="post-card__chanel-name" href="chanel-detail.html">Студия живописи</a>
+                        <button class="post-card__btn-sub post-card__btn-sub--signed" title="отписаться">вы подписаны</button>
+                    </div>
+                    <a class="post-card__community tag tag--link" href="community-detail.html">Название собщества</a>
                 </div>
-                <a class="post-card__community tag tag--link" href="community-detail.html">Название собщества</a>
+            </div>
+            <div class="post-card__tools tools-popup">
+                <button class="post-card__tools-btn tools-popup__btn js-tools-popup i-option"></button>
+                <div class="tools-popup__panel">
+                    <ul class="tools-popup__list">
+                        <li class="tools-popup__item"><a class="tools-popup__link popup-link" href="#complain">Пожаловаться</a></li>
+                        <li class="tools-popup__item"><button class="tools-popup__link js-locked" type="button">Заблокировать</button></li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="post-card__tools tools-popup">
-            <button class="post-card__tools-btn tools-popup__btn js-tools-popup i-option"></button>
-            <div class="tools-popup__panel">
-                <ul class="tools-popup__list">
-                    <li class="tools-popup__item"><a class="tools-popup__link popup-link" href="#complain">Пожаловаться</a></li>
-                </ul>
+        <div class="post-card__content">
+            <div class="slider post-card__gallery post-card__image-wrap js-post-gallery">
+                <a class="post-card__gallery-item" href="post-detail-gallery.html"><img class="post-card__image" src="images/dist/chanel.jpg" alt="Название слайда" /></a>
+                <a class="post-card__gallery-item" href="post-detail-gallery.html"><img class="post-card__image" src="images/dist/kot.jpg" alt="Название слайда" /></a>
+                <a class="post-card__gallery-item" href="post-detail-gallery.html"><img class="post-card__image" src="images/dist/chanel.jpg" alt="Название слайда" /></a>
+            </div>
+            <div class="post-card__content-inner">
+                <a class="post-card__name" href="post-detail-gallery.html">Какую палитру выбрать для натюрморта?</a>
+                <p class="post-card__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod gravida dolor sit amet lacus accumn bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...</p>
             </div>
         </div>
-    </div>
-    <div class="post-card__content">
-        <div class="slider post-card__gallery post-card__image-wrap js-post-gallery">
-            <a class="post-card__gallery-item" href="post-detail-gallery.html"><img class="post-card__image" src="images/dist/chanel.jpg" alt="Название слайда" /></a>
-            <a class="post-card__gallery-item" href="post-detail-gallery.html"><img class="post-card__image" src="images/dist/kot.jpg" alt="Название слайда" /></a>
-            <a class="post-card__gallery-item" href="post-detail-gallery.html"><img class="post-card__image" src="images/dist/chanel.jpg" alt="Название слайда" /></a>
-        </div>
-        <div class="post-card__content-inner">
-            <a class="post-card__name" href="post-detail-gallery.html">Какую палитру выбрать для натюрморта?</a>
-            <p class="post-card__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod gravida dolor sit amet lacus accumn bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...</p>
-        </div>
-    </div>
-    <div class="post-card__bottom">
-        <div class="post-card__country"><img class="post-card__country-flag" src="images/dist/flag/ru-reg.svg" alt="Россия" /></div>
-        <div class="post-card__control">
-            <button class="post-card__control-share i-share-big js-share-btn" type="button"></button>
-            <div class="share-block__popup share-popup post-card__share-popup">
-                <button class="share-popup__close" type="button"></button>
-                <div class="share-popup__subtitle">Поделиться в соц сетях</div>
-                <div class="share-popup__btn share-btn">
-                    <ul class="share-btn__list">
+        <div class="post-card__bottom">
+            <div class="post-card__country"><img class="post-card__country-flag" src="images/dist/flag/ru-reg.svg" alt="Россия" /></div>
+            <div class="post-card__control">
+                <button class="post-card__control-share i-share-big js-share-btn" type="button"></button>
+                <div class="share-block__popup share-popup post-card__share-popup">
+                    <button class="share-popup__close" type="button"></button>
+                    <div class="share-popup__subtitle">Поделиться в соц сетях</div>
+                    <div class="share-popup__btn share-btn">
+                        <ul class="share-btn__list">
     <li class="share-btn__item"><a class="share-btn__link icon i-tw-fl" href="#"></a></li>
     <li class="share-btn__item"><a class="share-btn__link icon i-fb-fl" href="#"></a></li>
     <li class="share-btn__item"><a class="share-btn__link icon i-vk-fl" href="#"></a></li>
@@ -901,15 +922,22 @@
     <li class="share-btn__item"><a class="share-btn__link icon i-tl-fl" href="#"></a></li>
     <li class="share-btn__item"><a class="share-btn__link icon i-copy last-icon" href="#"></a></li>
 </ul>
+                    </div>
+                </div>
+                <div class="post-card__control-likes like">
+                    <button class="like__item i-dislike-b"></button>
+                    <button class="like__item i-like"></button>
                 </div>
             </div>
-            <div class="post-card__control-likes like">
-                <button class="like__item i-dislike-b"></button>
-                <button class="like__item i-like"></button>
-            </div>
         </div>
+        <div class="post-card__locked">
+    <div class="post-card__locked-title">Публикации источника скрыты</div>
+    <div class="post-card__locked-txt">Вы будете видеть меньше таких публикаций у себя в ленте</div>
+    <div class="post-card__btn-wrap">
+        <button class="post-card__locked-cancel link link-accent link--border" type="button">Отмена</button>
     </div>
 </div>
+    </div>
 </div>
                 </div>
                 <div class="media-feed__special">
@@ -1196,8 +1224,10 @@
             <div class="tools-popup__panel">
                 <ul class="tools-popup__list">
                     <li class="tools-popup__item"><a class="tools-popup__link popup-link" href="#complain">Пожаловаться</a></li>
+                    <li class="tools-popup__item"><button class="tools-popup__link js-locked" type="button">Заблокировать</button></li>
                 </ul>
             </div>
+
         </div>
     </div>
     <div class="post-card__content">
@@ -1237,6 +1267,13 @@
             </div>
         </div>
     </div>
+    <div class="post-card__locked">
+    <div class="post-card__locked-title">Публикации источника скрыты</div>
+    <div class="post-card__locked-txt">Вы будете видеть меньше таких публикаций у себя в ленте</div>
+    <div class="post-card__btn-wrap">
+        <button class="post-card__locked-cancel link link-accent link--border" type="button">Отмена</button>
+    </div>
+</div>
 </div>
     <div class="post-card">
     <div class="post-card__header">
@@ -1255,6 +1292,7 @@
             <div class="tools-popup__panel">
                 <ul class="tools-popup__list">
                     <li class="tools-popup__item"><a class="tools-popup__link popup-link" href="#complain">Пожаловаться</a></li>
+                    <li class="tools-popup__item"><button class="tools-popup__link js-locked" type="button">Заблокировать</button></li>
                 </ul>
             </div>
         </div>
@@ -1296,43 +1334,51 @@
             </div>
         </div>
     </div>
+    <div class="post-card__locked">
+    <div class="post-card__locked-title">Публикации источника скрыты</div>
+    <div class="post-card__locked-txt">Вы будете видеть меньше таких публикаций у себя в ленте</div>
+    <div class="post-card__btn-wrap">
+        <button class="post-card__locked-cancel link link-accent link--border" type="button">Отмена</button>
+    </div>
 </div>
-    <div class="post-card">    
-        <div class="post-card__header">
-            <div class="post-card__info">
-                <a class="post-card__chanel-link" href="chanel-detail.html"><img class="post-card__chanel-logo" src="images/dist/n11.jpg" alt="Название канала" /></a>
-                <div class="post-card__chanel-info-wrap">
-                    <div class="post-card__chanel-info">
-                        <a class="post-card__chanel-name" href="chanel-detail.html">Название канала</a>
-                        <button class="post-card__btn-sub">+ Подписаться</button>
-                    </div>
-                </div>
-            </div>
-            <div class="post-card__tools tools-popup">
-                <button class="post-card__tools-btn tools-popup__btn js-tools-popup i-option"></button>
-                <div class="tools-popup__panel">
-                    <ul class="tools-popup__list">
-                        <li class="tools-popup__item"><a class="tools-popup__link popup-link" href="#complain">Пожаловаться</a></li>
-                    </ul>
+</div>
+    <div class="post-card">
+    <div class="post-card__header">
+        <div class="post-card__info">
+            <a class="post-card__chanel-link" href="chanel-detail.html"><img class="post-card__chanel-logo" src="images/dist/n11.jpg" alt="Название канала" /></a>
+            <div class="post-card__chanel-info-wrap">
+                <div class="post-card__chanel-info">
+                    <a class="post-card__chanel-name" href="chanel-detail.html">Название канала</a>
+                    <button class="post-card__btn-sub post-card__btn-sub--signed" title="отписаться">вы подписаны</button>
                 </div>
             </div>
         </div>
-        <div class="post-card__content">
-            <a class="post-card__image-wrap" href="#" target="_blank"><img class="post-card__image" src="images/dist/n7.jpg" alt="Название поста" /></a>
-            <div class="post-card__content-inner">
-                <a class="post-card__name post-card__name--link" href="#" target="_blank">Криптовалюта или гречка, что выбрать в 21 веке?</a>
-                <p class="post-card__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod gravida dolor sit amet lacus accumn bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...</p>
+        <div class="post-card__tools tools-popup">
+            <button class="post-card__tools-btn tools-popup__btn js-tools-popup i-option"></button>
+            <div class="tools-popup__panel">
+                <ul class="tools-popup__list">
+                    <li class="tools-popup__item"><a class="tools-popup__link popup-link" href="#complain">Пожаловаться</a></li>
+                    <li class="tools-popup__item"><button class="tools-popup__link js-locked" type="button">Заблокировать</button></li>
+                </ul>
             </div>
         </div>
-        <div class="post-card__bottom">
-            <div class="post-card__country"><img class="post-card__country-flag" src="images/dist/flag/ru-reg.svg" alt="Россия" /></div>
-            <div class="post-card__control">
-                <button class="post-card__control-share i-share-big js-share-btn" type="button"></button>
-                <div class="share-block__popup share-popup post-card__share-popup">
-                    <button class="share-popup__close" type="button"></button>
-                    <div class="share-popup__subtitle">Поделиться в соц сетях</div>
-                    <div class="share-popup__btn share-btn">
-                        <ul class="share-btn__list">
+    </div>
+    <div class="post-card__content">
+        <a class="post-card__image-wrap" href="#" target="_blank"><img class="post-card__image" src="images/dist/n7.jpg" alt="Название поста" /></a>
+        <div class="post-card__content-inner">
+            <a class="post-card__name post-card__name--link" href="#" target="_blank">Криптовалюта или гречка, что выбрать в 21 веке?</a>
+            <p class="post-card__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod gravida dolor sit amet lacus accumn bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...</p>
+        </div>
+    </div>
+    <div class="post-card__bottom">
+        <div class="post-card__country"><img class="post-card__country-flag" src="images/dist/flag/ru-reg.svg" alt="Россия" /></div>
+        <div class="post-card__control">
+            <button class="post-card__control-share i-share-big js-share-btn" type="button"></button>
+            <div class="share-block__popup share-popup post-card__share-popup">
+                <button class="share-popup__close" type="button"></button>
+                <div class="share-popup__subtitle">Поделиться в соц сетях</div>
+                <div class="share-popup__btn share-btn">
+                    <ul class="share-btn__list">
     <li class="share-btn__item"><a class="share-btn__link icon i-tw-fl" href="#"></a></li>
     <li class="share-btn__item"><a class="share-btn__link icon i-fb-fl" href="#"></a></li>
     <li class="share-btn__item"><a class="share-btn__link icon i-vk-fl" href="#"></a></li>
@@ -1346,15 +1392,22 @@
     <li class="share-btn__item"><a class="share-btn__link icon i-tl-fl" href="#"></a></li>
     <li class="share-btn__item"><a class="share-btn__link icon i-copy last-icon" href="#"></a></li>
 </ul>
-                    </div>
                 </div>
-                <div class="post-card__control-likes like">
-                    <button class="like__item i-dislike"></button>
-                    <button class="like__item i-like"></button>
-                </div>
+            </div>
+            <div class="post-card__control-likes like">
+                <button class="like__item i-dislike"></button>
+                <button class="like__item i-like"></button>
             </div>
         </div>
     </div>
+    <div class="post-card__locked">
+    <div class="post-card__locked-title">Публикации источника скрыты</div>
+    <div class="post-card__locked-txt">Вы будете видеть меньше таких публикаций у себя в ленте</div>
+    <div class="post-card__btn-wrap">
+        <button class="post-card__locked-cancel link link-accent link--border" type="button">Отмена</button>
+    </div>
+</div>
+</div>
     <div class="post-card">
     <div class="post-card__header">
         <div class="post-card__info">
@@ -1385,7 +1438,55 @@
                 <button class="share-popup__close" type="button"></button>
                 <div class="share-popup__subtitle">Поделиться в соц сетях</div>
                 <div class="share-popup__btn share-btn">
-                    <ul class="share-btn__list">
+
+                </div>
+            </div>
+            <div class="post-card__control-likes like">
+                <button class="like__item i-dislike"></button>
+                <button class="like__item i-like"></button>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="post-card post-card--age">    
+        <div class="post-card__panel">
+            <div class="post-card__header">
+                <div class="post-card__info">
+                    <a class="post-card__chanel-link" href="chanel-detail.html"><img class="post-card__chanel-logo" src="images/dist/vettargetlog.png" alt="Название канала" /></a>
+                    <div class="post-card__chanel-info-wrap">
+                        <div class="post-card__chanel-info">
+                            <a class="post-card__chanel-name" href="chanel-detail.html">Кот и плед, я домосед</a>
+                            <button class="post-card__btn-sub">+ подписаться</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-card__tools tools-popup">
+                    <button class="post-card__tools-btn tools-popup__btn js-tools-popup i-option"></button>
+                    <div class="tools-popup__panel">
+                        <ul class="tools-popup__list">
+                            <li class="tools-popup__item"><a class="tools-popup__link popup-link" href="#complain">Пожаловаться</a></li>
+                            <li class="tools-popup__item"><button class="tools-popup__link js-locked" type="button">Заблокировать</button></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="post-card__content">
+                <a class="post-card__image-wrap" href="post-detail.html"><img class="post-card__image" src="images/dist/vi1.jpg" alt="Название поста" /></a>
+                <div class="post-card__content-inner">
+                    <a class="post-card__name" href="post-detail-video.html">Содержательное название поста</a>
+                    <p class="post-card__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod gravida dolor sit amet lacus accumn bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...</p>
+                </div>
+            </div>
+            <div class="post-card__bottom">
+                <div class="post-card__country"><img class="post-card__country-flag" src="images/dist/flag/ru-reg.svg" alt="Россия" /></div>
+                <div class="post-card__control">
+                    <button class="post-card__control-share i-share-big js-share-btn" type="button"></button>
+                    <div class="share-block__popup share-popup post-card__share-popup">
+                        <button class="share-popup__close" type="button"></button>
+                        <div class="share-popup__subtitle">Поделиться в соц сетях</div>
+                        <div class="share-popup__btn share-btn">
+                            <ul class="share-btn__list">
     <li class="share-btn__item"><a class="share-btn__link icon i-tw-fl" href="#"></a></li>
     <li class="share-btn__item"><a class="share-btn__link icon i-fb-fl" href="#"></a></li>
     <li class="share-btn__item"><a class="share-btn__link icon i-vk-fl" href="#"></a></li>
@@ -1399,114 +1500,65 @@
     <li class="share-btn__item"><a class="share-btn__link icon i-tl-fl" href="#"></a></li>
     <li class="share-btn__item"><a class="share-btn__link icon i-copy last-icon" href="#"></a></li>
 </ul>
+                        </div>
+                    </div>
+                    <div class="post-card__control-likes like">
+                        <button class="like__item i-dislike"></button>
+                        <button class="like__item i-like"></button>
+                    </div>
                 </div>
             </div>
-            <div class="post-card__control-likes like">
-                <button class="like__item i-dislike"></button>
-                <button class="like__item i-like"></button>
-            </div>
-        </div>
+            <div class="post-card__locked">
+    <div class="post-card__locked-title">Публикации источника скрыты</div>
+    <div class="post-card__locked-txt">Вы будете видеть меньше таких публикаций у себя в ленте</div>
+    <div class="post-card__btn-wrap">
+        <button class="post-card__locked-cancel link link-accent link--border" type="button">Отмена</button>
     </div>
 </div>
-    <div class="post-card post-card--age">
-    <div class="post-card__header">
-        <div class="post-card__info">
-            <a class="post-card__chanel-link" href="chanel-detail.html"><img class="post-card__chanel-logo" src="images/dist/vettargetlog.png" alt="Название канала" /></a>
-            <div class="post-card__chanel-info-wrap">
-                <div class="post-card__chanel-info">
-                    <a class="post-card__chanel-name" href="chanel-detail.html">Название канала</a>
-                    <button class="post-card__btn-sub post-card__btn-sub--signed" title="отписаться">вы подписаны</button>
-                </div>
-            </div>
-        </div>
-        <div class="post-card__tools tools-popup">
-            <button class="post-card__tools-btn tools-popup__btn js-tools-popup i-option"></button>
-            <div class="tools-popup__panel">
-                <ul class="tools-popup__list">
-                    <li class="tools-popup__item"><a class="tools-popup__link popup-link" href="#complain">Пожаловаться</a></li>
-                </ul>
-            </div>
         </div>
     </div>
-    <div class="post-card__content">
-        <a class="post-card__image-wrap" href="post-detail.html"><img class="post-card__image" src="images/dist/vi1.jpg" alt="Название поста" /></a>
-        <div class="post-card__content-inner">
-            <a class="post-card__name" href="post-detail.html">Содержательное название поста</a>
-            <p class="post-card__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod gravida dolor sit amet lacus accumn bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...</p>
-        </div>
-    </div>
-    <div class="post-card__bottom">
-        <div class="post-card__country"><img class="post-card__country-flag" src="images/dist/flag/ru-reg.svg" alt="Россия" /></div>
-        <div class="post-card__control">
-            <button class="post-card__control-share i-share-big js-share-btn" type="button"></button>
-            <div class="share-block__popup share-popup post-card__share-popup">
-                <button class="share-popup__close" type="button"></button>
-                <div class="share-popup__subtitle">Поделиться в соц сетях</div>
-                <div class="share-popup__btn share-btn">
-                    <ul class="share-btn__list">
-    <li class="share-btn__item"><a class="share-btn__link icon i-tw-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-fb-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-vk-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-ln-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-ok-fl" href="#"></a></li>
-</ul>
-<ul class="share-btn__list">
-    <li class="share-btn__item"><a class="share-btn__link icon i-wt-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-vb-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-sk-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-tl-fl" href="#"></a></li>
-    <li class="share-btn__item"><a class="share-btn__link icon i-copy last-icon" href="#"></a></li>
-</ul>
-                </div>
-            </div>
-            <div class="post-card__control-likes like">
-                <button class="like__item i-dislike"></button>
-                <button class="like__item i-like"></button>
-            </div>
-        </div>
-    </div>
-</div>
     <div class="post-card">
-    <div class="post-card__header">
-        <div class="post-card__info">
-            <a class="post-card__chanel-link" href="chanel-detail.html"><img class="post-card__chanel-logo" src="images/dist/chanel.jpg" alt="Название канала" /></a>
-            <div class="post-card__chanel-info-wrap">
-                <div class="post-card__chanel-info">
-                    <a class="post-card__chanel-name" href="chanel-detail.html">Студия живописи</a>
-                    <button class="post-card__btn-sub post-card__btn-sub--signed" title="отписаться">вы подписаны</button>
+        <div class="post-card__header">
+            <div class="post-card__info">
+                <a class="post-card__chanel-link" href="chanel-detail.html"><img class="post-card__chanel-logo" src="images/dist/chanel.jpg" alt="Название канала" /></a>
+                <div class="post-card__chanel-info-wrap">
+                    <div class="post-card__chanel-info">
+                        <a class="post-card__chanel-name" href="chanel-detail.html">Студия живописи</a>
+                        <button class="post-card__btn-sub post-card__btn-sub--signed" title="отписаться">вы подписаны</button>
+                    </div>
+                    <a class="post-card__community tag tag--link" href="community-detail.html">Название собщества</a>
                 </div>
-                <a class="post-card__community tag tag--link" href="community-detail.html">Название собщества</a>
+            </div>
+            <div class="post-card__tools tools-popup">
+                <button class="post-card__tools-btn tools-popup__btn js-tools-popup i-option"></button>
+                <div class="tools-popup__panel">
+                    <ul class="tools-popup__list">
+                        <li class="tools-popup__item"><a class="tools-popup__link popup-link" href="#complain">Пожаловаться</a></li>
+                        <li class="tools-popup__item"><button class="tools-popup__link js-locked" type="button">Заблокировать</button></li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="post-card__tools tools-popup">
-            <button class="post-card__tools-btn tools-popup__btn js-tools-popup i-option"></button>
-            <div class="tools-popup__panel">
-                <ul class="tools-popup__list">
-                    <li class="tools-popup__item"><a class="tools-popup__link popup-link" href="#complain">Пожаловаться</a></li>
-                </ul>
+        <div class="post-card__content">
+            <div class="slider post-card__gallery post-card__image-wrap js-post-gallery">
+                <a class="post-card__gallery-item" href="post-detail-gallery.html"><img class="post-card__image" src="images/dist/chanel.jpg" alt="Название слайда" /></a>
+                <a class="post-card__gallery-item" href="post-detail-gallery.html"><img class="post-card__image" src="images/dist/kot.jpg" alt="Название слайда" /></a>
+                <a class="post-card__gallery-item" href="post-detail-gallery.html"><img class="post-card__image" src="images/dist/chanel.jpg" alt="Название слайда" /></a>
+            </div>
+            <div class="post-card__content-inner">
+                <a class="post-card__name" href="post-detail-gallery.html">Какую палитру выбрать для натюрморта?</a>
+                <p class="post-card__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod gravida dolor sit amet lacus accumn bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...</p>
             </div>
         </div>
-    </div>
-    <div class="post-card__content">
-        <div class="slider post-card__gallery post-card__image-wrap js-post-gallery">
-            <a class="post-card__gallery-item" href="post-detail-gallery.html"><img class="post-card__image" src="images/dist/chanel.jpg" alt="Название слайда" /></a>
-            <a class="post-card__gallery-item" href="post-detail-gallery.html"><img class="post-card__image" src="images/dist/kot.jpg" alt="Название слайда" /></a>
-            <a class="post-card__gallery-item" href="post-detail-gallery.html"><img class="post-card__image" src="images/dist/chanel.jpg" alt="Название слайда" /></a>
-        </div>
-        <div class="post-card__content-inner">
-            <a class="post-card__name" href="post-detail-gallery.html">Какую палитру выбрать для натюрморта?</a>
-            <p class="post-card__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod gravida dolor sit amet lacus accumn bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...</p>
-        </div>
-    </div>
-    <div class="post-card__bottom">
-        <div class="post-card__country"><img class="post-card__country-flag" src="images/dist/flag/ru-reg.svg" alt="Россия" /></div>
-        <div class="post-card__control">
-            <button class="post-card__control-share i-share-big js-share-btn" type="button"></button>
-            <div class="share-block__popup share-popup post-card__share-popup">
-                <button class="share-popup__close" type="button"></button>
-                <div class="share-popup__subtitle">Поделиться в соц сетях</div>
-                <div class="share-popup__btn share-btn">
-                    <ul class="share-btn__list">
+        <div class="post-card__bottom">
+            <div class="post-card__country"><img class="post-card__country-flag" src="images/dist/flag/ru-reg.svg" alt="Россия" /></div>
+            <div class="post-card__control">
+                <button class="post-card__control-share i-share-big js-share-btn" type="button"></button>
+                <div class="share-block__popup share-popup post-card__share-popup">
+                    <button class="share-popup__close" type="button"></button>
+                    <div class="share-popup__subtitle">Поделиться в соц сетях</div>
+                    <div class="share-popup__btn share-btn">
+                        <ul class="share-btn__list">
     <li class="share-btn__item"><a class="share-btn__link icon i-tw-fl" href="#"></a></li>
     <li class="share-btn__item"><a class="share-btn__link icon i-fb-fl" href="#"></a></li>
     <li class="share-btn__item"><a class="share-btn__link icon i-vk-fl" href="#"></a></li>
@@ -1520,15 +1572,22 @@
     <li class="share-btn__item"><a class="share-btn__link icon i-tl-fl" href="#"></a></li>
     <li class="share-btn__item"><a class="share-btn__link icon i-copy last-icon" href="#"></a></li>
 </ul>
+                    </div>
+                </div>
+                <div class="post-card__control-likes like">
+                    <button class="like__item i-dislike-b"></button>
+                    <button class="like__item i-like"></button>
                 </div>
             </div>
-            <div class="post-card__control-likes like">
-                <button class="like__item i-dislike-b"></button>
-                <button class="like__item i-like"></button>
-            </div>
         </div>
+        <div class="post-card__locked">
+    <div class="post-card__locked-title">Публикации источника скрыты</div>
+    <div class="post-card__locked-txt">Вы будете видеть меньше таких публикаций у себя в ленте</div>
+    <div class="post-card__btn-wrap">
+        <button class="post-card__locked-cancel link link-accent link--border" type="button">Отмена</button>
     </div>
 </div>
+    </div>
 </div>
                 </div>
             </div>

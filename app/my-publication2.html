@@ -1,0 +1,49 @@
+<!--#set var="title" value="Личный кабинет | Мои публикации" -->
+<!--#set var="мои-публикации" value="active" -->
+<!--#include virtual="/parts/header-login.html" -->
+<div class="page-content">
+    <div class="full-container private-office__wrap">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb--private-office">
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Главная</a></li>
+                <li class="breadcrumb__item active" aria-current="page">Мои публикации</li>
+            </ol>
+        </nav>
+        <div class="private-office">
+            <div class="private-office__sidebar">
+                <!--#include virtual="/parts/user-nav-page.html" -->
+            </div>
+            <div class="private-office__content">
+                <!--#include virtual="/parts/lk/publication-panel.html" -->
+                <ul class="private-office__tab">
+                    <li class="private-office__tab-item">
+                        <a class="private-office__tab-link" href="my-publication.html">Мои посты</a>
+                    </li>
+                    <li class="private-office__tab-item">
+                        <div class="private-office__tab-link active">Комментарии</div>
+                    </li>
+                    <li class="private-office__tab-item">
+                        <a class="private-office__tab-link" href="my-publication4.html">Настройки канала</a>
+                    </li>
+                </ul>
+
+                <div class="private-office__tab-content private-office__tab-content--md">
+                    <p class="private-office__tab-subtitle">Комментарии, написанные мной от этого канала</p>
+                    <!--#include virtual="/parts/pagination-only-page.html" -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="delet-chanel" class="popup popup--padding-sm mfp-hide">
+    <div class="popup__title">
+        Вы действительно хотите удалить канал? <br />
+        Отменить действие будет невозможно
+    </div>
+    <div class="popup__btns-horiz">
+        <button class="btn btn-accent btn--md" type="button">Удалить</button>
+        <button class="btn btn-conture btn--md mfp-close close" type="button">Отмена</button>
+    </div>
+</div>
+<!--#include virtual="/parts/footer.html" -->
