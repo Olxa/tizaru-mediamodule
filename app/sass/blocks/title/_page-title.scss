@@ -13,8 +13,8 @@
 
 .page-title {
     /*margin-right: 43px;*/
-    font-family: $userfont-sbold;
-    font-weight: 600;
+    font-family: $userfont-bold;
+    font-weight: 700;
     font-size: 30px;
     line-height: 38px;
 
@@ -46,6 +46,12 @@
         line-height: 27px;
     }
 
+    &__sm-txt {
+        font-family: $userfont;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 27px;
+    }
 
     &__margin-r {
         margin-right: 43px;

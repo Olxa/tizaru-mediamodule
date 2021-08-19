@@ -281,6 +281,13 @@
             line-height: 23px;
         }
     }
+
+    &__content-panel {
+        @media (max-width: 992px) {
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+    }
 }
 
 .balance__page-title-wrap {

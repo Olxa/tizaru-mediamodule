@@ -1,0 +1,84 @@
+<!--#set var="title" value="Личный кабинет | Мои публикации" -->
+<!--#set var="мои-публикации" value="active" -->
+<!--#set var="подписчиков" value="active" -->
+<!--#include virtual="/parts/header-login.html" -->
+<div class="page-content">
+    <div class="full-container private-office__wrap">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb--private-office">
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Главная</a></li>
+                <li class="breadcrumb__item active" aria-current="page">Мои публикации</li>
+            </ol>
+        </nav>
+        <div class="private-office">
+            <div class="private-office__sidebar">
+                <!--#include virtual="/parts/user-nav-page.html" -->
+            </div>
+            <div class="private-office__content">
+                <!--#include virtual="/parts/lk/publication-panel.html" -->
+                <ul class="private-office__tab">
+                    <li class="private-office__tab-item">
+                        <a class="private-office__tab-link" href="my-publication.html">Мои посты</a>
+                    </li>
+                    <li class="private-office__tab-item">
+                        <a class="private-office__tab-link" href="my-publication2.html">Комментарии</a>
+                    </li>
+                    <li class="private-office__tab-item">
+                        <a class="private-office__tab-link" href="my-publication4.html">Настройки канала</a>
+                    </li>
+                </ul>
+
+                <div class="private-office__tab-content private-office__tab-content--md">
+                    <h1 class="page-title">Мои подписчики <span class="page-title__sm-txt">120</span></h1>
+
+                    <div class="my-subscribers my-subscribers--padding-top">
+                        <a class="my-subscribers__item panel" href="accaunt-detail.html">
+                            <img class="my-subscribers__img" src="images/dist/person.jpg" alt="Имя Фамилия" />
+                            <p class="my-subscribers__name">Иванов Иван</p>
+                        </a>
+                        <a class="my-subscribers__item panel" href="accaunt-detail.html">
+                            <img class="my-subscribers__img" src="images/dist/ps1.jpg" alt="Имя Фамилия" />
+                            <p class="my-subscribers__name">Романюк Павел</p>
+                        </a>
+                        <a class="my-subscribers__item panel" href="accaunt-detail.html">
+                            <img class="my-subscribers__img" src="images/dist/or2.jpg" alt="Имя Фамилия" />
+                            <p class="my-subscribers__name">Ливанова Инга</p>
+                        </a>
+                        <a class="my-subscribers__item panel" href="accaunt-detail.html">
+                            <img class="my-subscribers__img" src="images/dist/ps2.jpg" alt="Имя Фамилия" />
+                            <p class="my-subscribers__name">Шарова Анна</p>
+                        </a>
+                        <a class="my-subscribers__item panel" href="accaunt-detail.html">
+                            <img class="my-subscribers__img" src="images/dist/vi2.jpg" alt="Имя Фамилия" />
+                            <p class="my-subscribers__name">Аратюнян Игорь</p>
+                        </a>
+                        <a class="my-subscribers__item panel" href="accaunt-detail.html">
+                            <img class="my-subscribers__img" src="images/dist/vettargetlog.png" alt="Имя Фамилия" />
+                            <p class="my-subscribers__name">Петрова Юля</p>
+                        </a>
+                        <a class="my-subscribers__item panel" href="accaunt-detail.html">
+                            <img class="my-subscribers__img" src="images/dist/persone.jpg" alt="Имя Фамилия" />
+                            <p class="my-subscribers__name">Карпушин Егор</p>
+                        </a>
+                        <a class="my-subscribers__item panel" href="accaunt-detail.html">
+                            <img class="my-subscribers__img" src="images/dist/n8.jpg" alt="Имя Фамилия" />
+                            <p class="my-subscribers__name">Крылов Ден</p>
+                        </a>
+                        <a class="my-subscribers__item panel" href="accaunt-detail.html">
+                            <img class="my-subscribers__img" src="images/dist/n11.jpg" alt="Имя Фамилия" />
+                            <p class="my-subscribers__name">Афанасьев Валентин</p>
+                        </a>
+                        <a class="my-subscribers__item panel" href="accaunt-detail.html">
+                            <img class="my-subscribers__img" src="images/dist/n6.jpg" alt="Имя Фамилия" />
+                            <p class="my-subscribers__name">Ларионова Светлана</p>
+                        </a>
+
+                    </div>
+                    <!--#include virtual="/parts/pagination-only-page.html" -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--#include virtual="/parts/footer.html" -->
