@@ -1,0 +1,153 @@
+<!--#set var="title" value="Личный кабинет | Мои публикации" -->
+<!--#set var="мои-публикации" value="active" -->
+<!--#include virtual="/parts/header-login.html" -->
+<div class="page-content">
+    <div class="full-container private-office__wrap">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb--private-office">
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Главная</a></li>
+                <li class="breadcrumb__item active" aria-current="page">Мои публикации</li>
+            </ol>
+        </nav>
+        <div class="private-office">
+            <div class="private-office__sidebar">
+                <!--#include virtual="/parts/user-nav-page.html" -->
+            </div>
+            <div class="private-office__content">
+                <!--#include virtual="/parts/lk/publication-panel.html" -->
+                <ul class="private-office__tab">
+                    <li class="private-office__tab-item">
+                        <div class="private-office__tab-link active">Мои посты</div>
+                    </li>
+                    <li class="private-office__tab-item">
+                        <a class="private-office__tab-link" href="my-publication2.html">Комментарии</a>
+                    </li>
+                    <li class="private-office__tab-item">
+                        <a class="private-office__tab-link" href="my-publication4.html">Настройки канала</a>
+                    </li>
+                </ul>
+                <div class="private-office__tab-content">
+                    <div class="create-post__sort-wrap">
+                        <div class="create-post__type-selection">
+                            <span class="create-post__type-title">Создать</span>
+                            <a class="create-post__type-btn btn btn-conture btn--md i-plus popup-link" href="#">Статью</a>
+                            <a class="create-post__type-btn btn btn-conture btn--md i-plus popup-link" href="#">Видео</a>
+                            <a class="create-post__type-btn btn btn-conture btn--md i-plus popup-link" href="#">Галерею</a>
+                            <a class="create-post__type-btn btn btn-conture btn--md i-plus popup-link" href="#">Ссылку</a>
+                            <div class="create-post__add-post-mob actions-btns__btn actions-btns__btn--border js-action-btn">
+                                <span class="actions-btns__value i-plus">Создать</span>
+                                <ul class="actions-btns__list">
+                                    <li class="actions-btns__item"><a class="actions-btns__link popup-link" href="#">Статью</a></li>
+                                    <li class="actions-btns__item"><a class="actions-btns__link popup-link" href="#">Видео</a></li>
+                                    <li class="actions-btns__item"><a class="actions-btns__link popup-link" href="#">Галерею</a></li>
+                                    <li class="actions-btns__item"><a class="actions-btns__link popup-link" href="#">Ссылку</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="create-post__sort sort-popup">
+                            <div class="create-post__sort-links">
+                                <button class="create-post__sort-link btn-unstylling">Все</button>
+                                <button class="create-post__sort-link btn-unstylling active">Опубликованные</button>
+                                <button class="create-post__sort-link btn-unstylling">На модерации</button>
+                                <button class="create-post__sort-link btn-unstylling">Черновики</button>
+                            </div>
+                            <div class="create-post__sort-drop dropdown dropdown--input js-dropdown-toogle">
+                                <button class="dropdown__value" type="button"><span class="dropdown__value-inner">Все форматы</span></button>
+                                <div class="dropdown__list scroll-gray">
+                                    <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Статья</a></div>
+                                    <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Видео</a></div>
+                                    <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Галерея</a></div>
+                                    <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Ссылка</a></div>
+                                </div>
+                            </div>
+                            <button class="create-post__sort-btn sort-popup__btn btn-unstylling i-filter js-sort-open"></button>
+                            <div class="sort-popup__panel panel">
+                                <button class="sort-popup__close btn-unstylling i-min-close"></button>
+                                <form action="/" method="post">
+                                    <div class="sort-popup__title">Фильтр постов</div>
+                                    <div class="sort-popup__subtitle">Вывод</div>
+                                    <ul class="sort-popup__list list-unstylling">
+                                        <li class="sort-popup__item">
+                                            <div class="radio">
+                                                <input class="radio__field" id="output1" type="radio" name="output" checked>
+                                                <label class="radio__value" for="output1">Все</label>
+                                            </div>
+                                        </li>
+                                        <li class="sort-popup__item">
+                                            <div class="radio">
+                                                <input class="radio__field" id="output2" type="radio" name="output">
+                                                <label class="radio__value" for="output2">Опубликованные</label>
+                                            </div>
+                                        </li>
+                                        <li class="sort-popup__item">
+                                            <div class="radio">
+                                                <input class="radio__field" id="output3" type="radio" name="output">
+                                                <label class="radio__value" for="output3">На модерации</label>
+                                            </div>
+                                        </li>
+                                        <li class="sort-popup__item">
+                                            <div class="radio">
+                                                <input class="radio__field" id="output4" type="radio" name="output">
+                                                <label class="radio__value" for="output4">Черновики</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="sort-popup__subtitle">Формат</div>
+
+                                    <ul class="sort-popup__list list-unstylling">
+                                        <li class="sort-popup__item">
+                                            <div class="radio">
+                                                <input class="radio__field" id="format1" type="radio" name="format" checked>
+                                                <label class="radio__value" for="format1">Все форматы</label>
+                                            </div>
+                                        </li>
+                                        <li class="sort-popup__item">
+                                            <div class="radio">
+                                                <input class="radio__field" id="format2" type="radio" name="format">
+                                                <label class="radio__value" for="format2">Статья</label>
+                                            </div>
+                                        </li>
+                                        <li class="sort-popup__item">
+                                            <div class="radio">
+                                                <input class="radio__field" id="format3" type="radio" name="format">
+                                                <label class="radio__value" for="format3">Видео</label>
+                                            </div>
+                                        </li>
+                                        <li class="sort-popup__item">
+                                            <div class="radio">
+                                                <input class="radio__field" id="format4" type="radio" name="format">
+                                                <label class="radio__value" for="format4">Галерея</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="sort-popup__btns">
+                                        <button class="sort-popup__reset link link-accent link--border" type="reset">Сбросить фильтр</button>
+                                        <button class="sort-popup__submit btn btn-accent" type="submit">Применить</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="create-post__list">
+                        <!--#include virtual="/parts/post-card/lk/post-card.html" -->
+                        <!--#include virtual="/parts/post-card/lk/post-card-gallery.html" -->
+                        <!--#include virtual="/parts/post-card/lk/post-card-link.html" -->
+                        <!--#include virtual="/parts/post-card/lk/post-card-video.html" -->
+                    </div>
+                    <!--#include virtual="/parts/pagination-only-page.html" -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="delet-post" class="popup popup--padding-sm mfp-hide">
+    <div class="popup__title">
+        Удалить пост?
+    </div>
+    <div class="popup__btns-horiz">
+        <button class="btn btn-accent btn--md" type="button">Удалить</button>
+        <button class="btn btn-conture btn--md mfp-close close" type="button">Отмена</button>
+    </div>
+</div>
+<!--#include virtual="/parts/footer.html" -->

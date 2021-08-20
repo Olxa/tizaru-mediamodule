@@ -1,0 +1,119 @@
+.create-post {
+    &__type-selection {
+        margin-bottom: 60px;
+
+        @media (max-width: $tablet) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__type-title {
+        display: inline-block;
+        margin-right: 30px;
+        font-family: $userfont-sbold;
+        font-weight: 600;
+
+        @media (max-width: $tablet) {
+            display: none;
+        }
+    }
+
+    &__type-btn {
+        display: inline-block;
+        margin-right: 30px;
+        padding: 5px 20px 5px 10px;
+
+        @media (max-width: $tablet) {
+            display: none;
+        }
+
+        &::before {
+            display: inline-block;
+            margin-right: 10px;
+        }
+    }
+
+    &__add-post-mob {
+        display: none;
+        width: 130px;
+        min-width: 130px;
+
+        @media (max-width: $tablet) {
+            display: block;
+        }
+    }
+
+    &__sort-wrap {
+        margin-bottom: 40px;
+
+        @media (max-width: $tablet) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 25px;
+        }
+    }
+
+    &__sort {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        @media (max-width: $tablet) {
+            width: auto;
+        }
+    }
+
+    &__sort-btn {
+        display: none;
+
+        @media (max-width: $tablet) {
+            display: block;
+        }
+    }
+
+    &__sort-links {
+        @media (max-width: $tablet) {
+            display: none;
+        }
+    }
+
+    &__sort-link {
+        display: inline-block;
+        margin-right: 30px;
+        font-size: 16px;
+        color: $textcolor;
+
+        &:hover {
+            color: $accent;
+        }
+
+        &.active {
+            color: $accent;
+            border-bottom: 1px solid $accent;
+        }
+    }
+
+    &__sort-drop {
+        max-width: 240px;
+
+        @media (max-width: $tablet) {
+            display: none !important;
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(300px,32%));
+        grid-gap: 1rem;
+        grid-column-gap: 15px;
+        grid-row-gap: 20px;
+        margin-bottom: 20px;
+
+        @media (max-width: $tablet) {
+            grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+        }
+    }
+}

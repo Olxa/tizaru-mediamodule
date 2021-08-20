@@ -1,0 +1,93 @@
+.sort-popup {
+    position: relative;
+
+    &__btn {
+    }
+
+    &__panel {
+        position: absolute;
+        right: 0;
+        top: 30px;
+        display: none;
+        padding: 25px 50px;
+        z-index: 5;
+
+        &.active {
+            display: block;
+        }
+    }
+
+    &__title {
+        display: inline-block;
+        margin-bottom: 20px;
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+        line-height: 24px;
+        color: $textcolor;
+
+        @media (max-width: $mobile) {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__subtitle {
+        display: inline-block;
+        margin-bottom: 15px;
+        font-family: $userfont-sbold;
+        font-weight: 600;
+        color: $gray;
+
+        @media (max-width: $mobile) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__list {
+        margin-bottom: 25px;
+
+        @media (max-width: $mobile) {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__item {
+        margin-bottom: 10px;
+
+        @media (max-width: $mobile) {
+            margin-bottom: 5px;
+        }
+    }
+
+    &__btns {
+        text-align: center;
+    }
+
+    &__reset {
+        margin-bottom: 30px;
+
+        @media (max-width: $mobile) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__submit {
+        width: 100%;
+
+        @media (max-width: $mobile) {
+            height: 45px;
+            line-height: 33px;
+        }
+    }
+
+    &__close {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        color: $gray;
+
+        &:hover {
+            color: $accent;
+        }
+    }
+}

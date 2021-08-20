@@ -51,6 +51,12 @@
         justify-content: space-between;
         min-height: $header-heigth;
         padding: 10px;
+
+        &--private {
+            min-height: 30px;
+            align-items: center;
+            padding: 15px 20px;
+        }
     }
 
     &__bottom {
@@ -319,6 +325,16 @@
         line-height: 22px;
     }
 
-    &__locked-cancel {
+    &__view {
+        color: $gray;
+        cursor: default;
+    }
+
+    &__del {
+        color: $gray;
+
+        &:hover {
+            color: $accent;
+        }
     }
 }
