@@ -1,0 +1,27 @@
+.upload-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: $gray;
+    text-decoration: none;
+    cursor: pointer;
+
+    &__file {
+        display: none;
+    }
+
+    &__label {
+        height: 33px;
+        line-height: 22px;
+        padding: 5px 10px;
+        font-size: 14px;
+        color: $accent;
+        background-color: transparent;
+        border: 1px solid $accent;
+        border-radius: $border-radius;
+
+        &::before {
+            margin-right: 10px;
+        }
+    }
+}

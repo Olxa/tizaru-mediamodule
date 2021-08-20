@@ -358,10 +358,18 @@ document.addEventListener("DOMContentLoaded", function () {
     $(".js-open-filter").on('click', function () {
         $(".filter-panel__inner").toggleClass('active');
     });
-
     
     $(".filter-panel__btn-close").on('click', function () {
         $(".filter-panel__inner").removeClass('active');
+    });
+
+    //Сортировка в попапе
+    $(".js-sort-open").on('click', function () {
+        $(".sort-popup__panel").toggleClass('active');
+    });
+
+    $(".sort-popup__close").on('click', function () {
+        $(".sort-popup__panel").removeClass('active');
     });
 
     //появление футера

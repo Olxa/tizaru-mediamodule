@@ -192,6 +192,8 @@
 @import "blocks/add-file/file-txt";
 @import "blocks/add-file/file-icon";
 @import "blocks/add-file/file-clip";
+@import "blocks/add-file/thumbnail";
+@import "blocks/add-file/upload-btn";
 
 // == team ==
 @import "blocks/team/team";
@@ -226,6 +228,7 @@
 @import "private-office/my-subscribers";
 @import "private-office/publication-panel";
 @import "private-office/create-post";
+@import "private-office/sidebar-create";
 
 // == options ==
 @import "blocks/options/options";

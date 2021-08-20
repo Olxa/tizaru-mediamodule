@@ -1,0 +1,136 @@
+.sidebar-create {
+    @media (max-width:$tablet) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__panel {
+        padding: 30px;
+        margin-bottom: 30px;
+        border: 1px solid $gray;
+        border-radius: $border-radius;
+
+        @media (max-width:$tablet) {
+            order: 2;
+            padding: 0;
+            border: none;
+        }
+    }
+
+    &__panel-title {
+        display: none;
+
+        @media (max-width:$tablet) {
+            display: inline-block;
+            margin-bottom: 20px;
+            font-family: $userfont-bold;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 22px;
+            color: $textcolor;
+        }
+    }
+
+    &__status {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    &__status-title {
+        font-size: 18px;
+        line-height: 24px;
+        color: $textcolor;
+    }
+
+    &__status-value {
+        display: inline-block;
+
+        &::before {
+            margin-right: 5px;
+        }
+
+        &--moderation {
+
+            &::before {
+                color: $accent;
+            }
+        }
+
+        &--error {
+            color: $accent;
+        }
+
+        &--published {
+            color: $color-tertiary;
+        }
+    }
+
+    &__date {
+        display: inline-block;
+        width: 100%;
+        margin-top: 5px;
+        color: $gray;
+        font-size: 14px;
+    }
+
+    &__mod-comment {
+        background-color: $white;
+        border-radius: $border-radius;
+        padding: 5px 10px;
+        margin-bottom: 35px;
+        font-size: 18px;
+        line-height: 27px;
+        color: $textcolor;
+    }
+
+    &__option {
+        .checkbox {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__option-title {
+        display: inline-block;
+        margin-bottom: 10px;
+        font-family: $userfont-sbold;
+        font-weight: 600;
+    }
+
+    &__option-community {
+        margin-bottom: 30px;
+    }
+
+    &__option-btns {
+        text-align: center;
+    }
+
+    &__btn {
+        width: 100%;
+        max-width: 240px;
+        margin: 0 auto 20px;
+    }
+
+    &__del {
+        width: 100%;
+    }
+
+    &__thumbnail {
+        @media (max-width:$tablet) {
+            order: 1;
+            margin-bottom: 30px;
+            max-width: 340px;
+        }
+    }
+
+    &__thumbnail-title {
+        margin-bottom: 5px;
+
+        @media (max-width:$tablet) {
+            font-family: $userfont-bold;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 22px;
+            color: $textcolor;
+        }
+    }
+}

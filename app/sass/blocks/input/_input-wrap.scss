@@ -26,6 +26,17 @@
     &__label--margin-b {
         margin-bottom: 6px;
     }
+
+    &--limit {
+        margin-bottom: 30px;
+    }
+
+    &__lim {
+        position: absolute;
+        right: 0;
+        font-size: 12px;
+        color: $gray;
+    }
 }
 
 

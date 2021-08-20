@@ -30,17 +30,17 @@
                     <div class="create-post__sort-wrap">
                         <div class="create-post__type-selection">
                             <span class="create-post__type-title">Создать</span>
-                            <a class="create-post__type-btn btn btn-conture btn--md i-plus popup-link" href="#">Статью</a>
-                            <a class="create-post__type-btn btn btn-conture btn--md i-plus popup-link" href="#">Видео</a>
-                            <a class="create-post__type-btn btn btn-conture btn--md i-plus popup-link" href="#">Галерею</a>
-                            <a class="create-post__type-btn btn btn-conture btn--md i-plus popup-link" href="#">Ссылку</a>
+                            <a class="create-post__type-btn btn btn-conture btn--md i-plus popup-link" href="#create-txt-post">Статью</a>
+                            <a class="create-post__type-btn btn btn-conture btn--md i-plus popup-link" href="#create-video-post">Видео</a>
+                            <a class="create-post__type-btn btn btn-conture btn--md i-plus popup-link" href="#create-gallery-post">Галерею</a>
+                            <a class="create-post__type-btn btn btn-conture btn--md i-plus popup-link" href="#create-link-post">Ссылку</a>
                             <div class="create-post__add-post-mob actions-btns__btn actions-btns__btn--border js-action-btn">
                                 <span class="actions-btns__value i-plus">Создать</span>
                                 <ul class="actions-btns__list">
-                                    <li class="actions-btns__item"><a class="actions-btns__link popup-link" href="#">Статью</a></li>
-                                    <li class="actions-btns__item"><a class="actions-btns__link popup-link" href="#">Видео</a></li>
-                                    <li class="actions-btns__item"><a class="actions-btns__link popup-link" href="#">Галерею</a></li>
-                                    <li class="actions-btns__item"><a class="actions-btns__link popup-link" href="#">Ссылку</a></li>
+                                    <li class="actions-btns__item"><a class="actions-btns__link popup-link" href="#create-txt-post">Статью</a></li>
+                                    <li class="actions-btns__item"><a class="actions-btns__link popup-link" href="#create-video-post">Видео</a></li>
+                                    <li class="actions-btns__item"><a class="actions-btns__link popup-link" href="#create-gallery-post">Галерею</a></li>
+                                    <li class="actions-btns__item"><a class="actions-btns__link popup-link" href="#create-link-post">Ссылку</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -138,6 +138,286 @@
                 </div>
             </div>
         </div>
+    </div>
+</div>
+
+<div id="create-txt-post" class="popup create-post__popup mfp-hide">
+    <div class="create-post__inner scroll-gray">
+        <div class="create-post__content">
+            <div class="create-post__title page-title">Создать статью</div>
+            <div class="create-post__field-wrap">
+                <div class="create-post__field_item input-wrap"><label class="input-wrap__label">Название статьи<input class="input" type="text"></label></div>
+            </div>
+            <textarea class="create-post__descr textarea" placeholder="Текст публикации"></textarea>
+        </div>
+        <aside class="create-post__sidebar sidebar-create">
+            <div class="sidebar-create__panel">
+                <div class="sidebar-create__panel-title">Публикация</div>
+                <div class="sidebar-create__status">
+                    <span class="sidebar-create__status-title">Статус:</span>
+                    <span class="sidebar-create__status-value">Черновик</span>
+                </div>
+                <div class="sidebar-create__option">
+                    <div class="sidebar-create__option-title">В сообществе</div>
+                    <div class="sidebar-create__option-community dropdown dropdown--input js-dropdown-toogle">
+                        <button class="dropdown__value" type="button"><span class="dropdown__value-inner">Мой блог</span></button>
+                        <div class="dropdown__list scroll-gray">
+                            <div class="dropdown__list-item"><span class="dropdown__list-val">Спорт</span></div>
+                            <div class="dropdown__list-item"><span class="dropdown__list-val">Бизнес</span></div>
+                        </div>
+                    </div>
+                    <div class="checkbox">
+                        <input class="checkbox__field" id="comment" type="checkbox">
+                        <label class="checkbox__value" for="comment">Отключить комментарии</label>
+                    </div>
+                    <div class="checkbox">
+                        <input class="checkbox__field" id="age" type="checkbox">
+                        <label class="checkbox__value" for="age">18+ Контент для взрослых</label>
+                    </div>
+                    <div class="sidebar-create__option-btns">
+                        <button class="sidebar-create__btn btn btn-accent btn--md" type="button">Опубликовать</button>
+                        <button class="sidebar-create__del link link-accent popup-link" type="button">Удалить статью</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-create__thumbnail">
+                <div class="sidebar-create__thumbnail-title input-wrap__label">Миниатюра</div>
+                <label class="thumbnail">
+                    <input name="file" type="file" class="thumbnail__file" multiple="">
+                    <span class="thumbnail__label i-upload">Загрузить</span>
+                </label>
+            </div>
+        </aside>
+    </div>
+</div>
+
+<div id="create-video-post" class="popup create-post__popup mfp-hide">
+    <div class="create-post__inner scroll-gray">
+        <div class="create-post__content">
+            <div class="create-post__title page-title">Создать видео</div>
+            <div class="create-post__field-wrap">
+                <div class="create-post__field_item input-wrap"><label class="input-wrap__label">Ссылка на видео<input class="input" type="text"></label></div>
+                <div class="create-post__field-upload">
+                    <label class="create-post__field-upload-txt">или</label>
+                    <label class="upload-btn">
+                        <input name="file" type="file" class="upload-btn__file" multiple="">
+                        <span class="upload-btn__label i-upload">Выберите файл</span>
+                    </label>
+                </div>
+            </div>
+            <video class="create-post__video" controls="controls" poster="images/dist/video.jpg">
+                <source src="file.mp4" type="video/mp4" />
+            </video>
+            <div class="input-wrap">
+                <span class="input-wrap__label">
+                    Описание видео
+                    <textarea class="create-post__descr create-post__descr--sm textarea"></textarea>
+                </span>
+            </div>
+        </div>
+        <aside class="create-post__sidebar sidebar-create">
+            <div class="sidebar-create__panel">
+                <div class="sidebar-create__panel-title">Публикация</div>
+                <div class="sidebar-create__status">
+                    <span class="sidebar-create__status-title">Статус:</span>
+                    <span class="sidebar-create__status-value sidebar-create__status-value--error i-alert">Не прошло модерацию</span>
+                </div>
+                <div class="sidebar-create__mod-comment">
+                    Комментарий модератора: Непотребщина! Необходимо откорректировать пост.
+                </div>
+                <div class="sidebar-create__option">
+                    <div class="sidebar-create__option-title">В сообществе</div>
+                    <div class="sidebar-create__option-community dropdown dropdown--input js-dropdown-toogle">
+                        <button class="dropdown__value" type="button"><span class="dropdown__value-inner">Мой блог</span></button>
+                        <div class="dropdown__list scroll-gray">
+                            <div class="dropdown__list-item"><span class="dropdown__list-val">Спорт</span></div>
+                            <div class="dropdown__list-item"><span class="dropdown__list-val">Бизнес</span></div>
+                        </div>
+                    </div>
+                    <div class="checkbox">
+                        <input class="checkbox__field" id="comment" type="checkbox">
+                        <label class="checkbox__value" for="comment">Отключить комментарии</label>
+                    </div>
+                    <div class="checkbox">
+                        <input class="checkbox__field" id="age" type="checkbox">
+                        <label class="checkbox__value" for="age">18+ Контент для взрослых</label>
+                    </div>
+                    <div class="sidebar-create__option-btns">
+                        <button class="sidebar-create__btn btn btn-accent btn--md" type="button">Отправить повторно</button>
+                        <button class="sidebar-create__del link link-accent popup-link" type="button">Удалить статью</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-create__thumbnail">
+                <div class="sidebar-create__thumbnail-title input-wrap__label">Миниатюра</div>
+                <label class="thumbnail">
+                    <input name="file" type="file" class="thumbnail__file" multiple="">
+                    <img class="thumbnail__added-img image-logo" src="images/dist/video.jpg" alt="Название файла" />
+                    <button class="thumbnail__added-del btn-unstylling i-clear"></button>
+                </label>
+            </div>
+        </aside>
+    </div>
+</div>
+
+<div id="create-gallery-post" class="popup create-post__popup mfp-hide">
+    <div class="create-post__inner scroll-gray">
+        <div class="create-post__content">
+            <div class="create-post__title page-title">Создать галерею</div>
+            <div class="create-post__field-wrap">
+                <div class="create-post__field_item input-wrap"><label class="input-wrap__label">Название поста (галереи)<input class="input" type="text"></label></div>
+            </div>
+            <div class="input-wrap">
+                <span class="input-wrap__label">
+                    Краткое описание галереи
+                    <textarea class="create-post__descr create-post__descr--sm textarea"></textarea>
+                </span>
+            </div>
+            <div class="create-post__slide">
+                <div class="create-post__slide-item">
+                    <img class="create-post__slide-img" src="images/dist/chanel.jpg" alt="Название изображения" />
+                    <button class="create-post__slide-del btn-unstylling i-clear"></button>
+                </div>
+                <div class="create-post__slide-descr">
+                    <div class="input-wrap input-wrap--limit">
+                        <span class="input-wrap__label">
+                            Описание конкретного изображения
+                            <textarea class="create-post__descr create-post__descr--sm textarea"></textarea>
+                        </span>
+                        <span class="input-wrap__lim">0/250</span>
+                    </div>
+                </div>
+            </div>
+            <div class="create-post__slide-list">
+                <div class="file-photo__group">
+                    <div class="file-photo file-photo__file-button create-post__slide-active">
+                        <img src="images/dist/chanel.jpg" alt="название фото">
+                        <div class="file-photo__delet-wrap">
+                            <button class="file-photo__delet-btn popup-link i-clear" type="button" data-mfp-src="#del-photo" title="Удалить фото"></button>
+                        </div>
+                    </div>
+                    <div class="file-photo file-photo__file-button">
+                        <img src="images/dist/or2.jpg" alt="название фото">
+                        <div class="file-photo__delet-wrap">
+                            <button class="file-photo__delet-btn popup-link i-clear" type="button" data-mfp-src="#del-photo" title="Удалить фото"></button>
+                        </div>
+                    </div>
+                    <div class="file-photo">
+                        <label class="input__file-button">
+                            <input name="file" type="file" class="input-file" multiple="">
+                            <span class="file-photo__file-button i-camera"></span>
+                        </label>
+                    </div>
+                    <div class="file-photo">
+                        <label class="input__file-button">
+                            <input name="file" type="file" class="input-file" multiple="">
+                            <span class="file-photo__file-button i-camera"></span>
+                        </label>
+                    </div>
+                    <div class="file-photo">
+                        <label class="input__file-button">
+                            <input name="file" type="file" class="input-file" multiple="">
+                            <span class="file-photo__file-button i-camera"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="create-post__slide-more">
+                    <div class="link link-accent link--border">Добавить еще 5 фото </div>
+                </div>
+            </div>
+        </div>
+        <aside class="create-post__sidebar sidebar-create">
+            <div class="sidebar-create__panel">
+                <div class="sidebar-create__panel-title">Публикация</div>
+                <div class="sidebar-create__status">
+                    <span class="sidebar-create__status-title">Статус:</span>
+                    <span class="sidebar-create__status-value sidebar-create__status-value--published i-checked">Одобрено</span>
+                    <span class="sidebar-create__date">Дата публикации: 21.05.2021</span>
+                </div>
+                <div class="sidebar-create__option">
+                    <div class="sidebar-create__option-title">В сообществе</div>
+                    <div class="sidebar-create__option-community dropdown dropdown--input js-dropdown-toogle">
+                        <button class="dropdown__value" type="button"><span class="dropdown__value-inner">Мой блог</span></button>
+                        <div class="dropdown__list scroll-gray">
+                            <div class="dropdown__list-item"><span class="dropdown__list-val">Спорт</span></div>
+                            <div class="dropdown__list-item"><span class="dropdown__list-val">Бизнес</span></div>
+                        </div>
+                    </div>
+                    <div class="checkbox">
+                        <input class="checkbox__field" id="comment" type="checkbox">
+                        <label class="checkbox__value" for="comment">Отключить комментарии</label>
+                    </div>
+                    <div class="checkbox">
+                        <input class="checkbox__field" id="age" type="checkbox">
+                        <label class="checkbox__value" for="age">18+ Контент для взрослых</label>
+                    </div>
+                    <div class="sidebar-create__option-btns">
+                        <button class="sidebar-create__del link link-accent popup-link" type="button">Удалить статью</button>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+</div>
+
+<div id="create-link-post" class="popup create-post__popup mfp-hide">
+    <div class="create-post__inner scroll-gray">
+        <div class="create-post__content">
+            <div class="create-post__title page-title">Создать ссылку</div>
+            <div class="create-post__field-wrap">
+                <div class="create-post__field_item input-wrap"><label class="input-wrap__label">Название<input class="input" type="text"></label></div>
+                <div class="create-post__field_item input-wrap"><label class="input-wrap__label">Ссылка<input class="input" type="text"></label></div>
+            </div>
+            <div class="input-wrap input-wrap--limit">
+                <span class="input-wrap__label">
+                    Краткое описание
+                    <textarea class="textarea"></textarea>
+                </span>
+                <span class="input-wrap__lim">0/180</span>
+            </div>
+        </div>
+        <aside class="create-post__sidebar sidebar-create">
+            <div class="sidebar-create__panel">
+                <div class="sidebar-create__panel-title">Публикация</div>
+                <div class="sidebar-create__status">
+                    <span class="sidebar-create__status-title">Статус:</span>
+                    <span class="sidebar-create__status-value sidebar-create__status-value--moderation i-alert">На модерации</span>
+                </div>
+                <div class="sidebar-create__option">
+                    <div class="sidebar-create__option-title">В сообществе</div>
+                    <div class="sidebar-create__option-community dropdown dropdown--input js-dropdown-toogle">
+                        <button class="dropdown__value" type="button"><span class="dropdown__value-inner">Мой блог</span></button>
+                        <div class="dropdown__list scroll-gray">
+                            <div class="dropdown__list-item"><span class="dropdown__list-val">Спорт</span></div>
+                            <div class="dropdown__list-item"><span class="dropdown__list-val">Бизнес</span></div>
+                        </div>
+                    </div>
+                    <div class="checkbox">
+                        <input class="checkbox__field" id="comment" type="checkbox">
+                        <label class="checkbox__value" for="comment">Отключить комментарии</label>
+                    </div>
+                    <div class="checkbox">
+                        <input class="checkbox__field" id="age" type="checkbox">
+                        <label class="checkbox__value" for="age">18+ Контент для взрослых</label>
+                    </div>
+                    <div class="sidebar-create__option-btns">
+                        <button class="sidebar-create__btn btn btn-accent btn--md" type="button">Отправить повторно</button>
+                        <button class="sidebar-create__del link link-accent popup-link" type="button">Удалить статью</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-create__thumbnail">
+                <div class="sidebar-create__thumbnail-title input-wrap__label">Миниатюра</div>
+                <label class="thumbnail">
+                    <input name="file" type="file" class="thumbnail__file" multiple="">
+                    <img class="thumbnail__added-img image-logo" src="images/dist/video.jpg" alt="Название файла" />
+                    <button class="thumbnail__added-del btn-unstylling i-clear"></button>
+                </label>
+            </div>
+        </aside>
     </div>
 </div>
 
