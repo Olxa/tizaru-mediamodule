@@ -1,0 +1,202 @@
+<!--#set var="title" value="Личный кабинет | Мои публикации" -->
+<!--#set var="мои-публикации" value="active" -->
+<!--#include virtual="/parts/header-login.html" -->
+<div class="page-content">
+    <div class="full-container private-office__wrap">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb--private-office">
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Главная</a></li>
+                <li class="breadcrumb__item active" aria-current="page">Мои публикации</li>
+            </ol>
+        </nav>
+        <div class="private-office">
+            <div class="private-office__sidebar">
+                <!--#include virtual="/parts/user-nav-page.html" -->
+            </div>
+            <div class="private-office__content">
+                <!--#include virtual="/parts/lk/publication-panel.html" -->
+                <ul class="private-office__tab">
+                    <li class="private-office__tab-item">
+                        <a class="private-office__tab-link" href="my-publication.html">Мои посты</a>
+                    </li>
+                    <li class="private-office__tab-item">
+                        <a class="private-office__tab-link" href="my-publication2.html">Комментарии</a>
+                    </li>
+                    <li class="private-office__tab-item">
+                        <div class="private-office__tab-link active">Настройки канала</div>
+                    </li>
+                </ul>
+
+                <div class="private-office__tab-content chanel-setting">
+                    <div class="chanel-setting__company">
+                        <p class="chanel-setting__company-title">Связать канал с моей компанией</p>
+                        <div class="chanel-setting__company-chois dropdown dropdown--input js-dropdown-toogle">
+                            <button class="dropdown__value" type="button"><span class="dropdown__value-inner"></span></button>
+                            <div class="dropdown__list scroll-gray">
+                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Рога и копыта</a></div>
+                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">ЖелДорЭкспедиция</a></div>
+                            </div>
+                        </div>
+                        <a class="chanel-setting__company-create" href="private-office-my-company-detail.html">+ создать компанию</a>
+                        <a class="chanel-setting__company-publishing popup-link i-rss link link-accent" href="">Для интернет издательств</a>
+                    </div>
+
+                    <div class="chanel-setting__title panel">
+                        <div class="chanel-setting__title-logo">
+                            <label class="chanel-setting__title-label meta">Логотип канала</label>
+                            <label class="chanel-setting__upload">
+                                <input name="file" type="file" class="chanel-setting__upload-file" multiple="">
+                                <img class="chanel-setting__title-img" src="images/dist/logo-circle.svg" alt="Название канала" />
+                                <span class="chanel-setting__upload-txt link link-accent i-upload">Загрузить</span>
+                            </label>
+                        </div>
+                        <div class="chanel-setting__title-info">
+                            <input class="chanel-setting__title-name input" type="text" placeholder="Название канала">
+                            <textarea class="chanel-setting__title-descr textarea" placeholder="Описание канал"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="chanel-setting__cover">
+                        <div class="chanel-setting__cover-title chanel-setting__title-block">
+                            Обложка канала
+                            <span class="text-meta">Рекомендуемый размер изображения (1650 x 300)</span>
+                        </div>
+                        <label class="chanel-setting__cover-img thumbnail">
+                            <input name="file" type="file" class="thumbnail__file" multiple="">
+                            <span class="thumbnail__label i-upload">Загрузить</span>
+                        </label>
+                        <!--Обложка загружена-->
+                        <!--<label class="chanel-setting__cover-img thumbnail">
+                            <input name="file" type="file" class="thumbnail__file" multiple="">
+                            <img class="thumbnail__added-img image-logo" src="images/dist/video.jpg" alt="Название канала">
+                            <button class="thumbnail__added-del btn-unstylling i-clear"></button>
+                        </label>-->
+                        <!--Обложка не доступна (не оплачен про аккаунт)-->
+                        <!--<div class="chanel-setting__cover-noaccess">
+                            <div class="chanel-setting__cover-noaccess-inner">
+                                <p class="chanel-setting__cover-txt">
+                                    Обложка канала доступна только для PRO участников
+                                </p>
+                                <a class="chanel-setting__cover-link link link-accent link--border" href="pro-account.html">Подробнее</a>
+                            </div>
+                            <label class="chanel-setting__cover-img thumbnail">
+                                <input name="file" type="file" class="thumbnail__file" multiple="">
+                                <span class="thumbnail__label i-upload">Загрузить</span>
+                            </label>
+                        </div>-->
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-4">
+                            <span class="chanel-setting__lang-title text-meta">Язык канала</span>
+                            <div class="chanel-setting__lang dropdown dropdown--input js-dropdown-toogle">
+                                <button class="dropdown__value" type="button"><span class="dropdown__value-inner">Русский</span></button>
+                                <div class="dropdown__list scroll-gray">
+                                    <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Французский</a></div>
+                                    <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Немецкий</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <div class="chanel-setting__title-block">Регион публикации</div>
+                            <div class="chanel-setting__city city-s-modal">
+                                <div class="input-search">
+                                    <input class="input input-search__val" type="text" placeholder="Поиск">
+                                    <button class="input-search__btn i-search" type="submit">Поиск</button>
+                                </div>
+                                <div class="search-tags">
+                                    <a class="tag tag--link" href="#">Москва</a>
+                                    <a class="tag tag--link" href="#">Санкт-Петербург</a>
+                                    <a class="tag tag--link" href="#">Новосибирск</a>
+                                    <a class="tag tag--link" href="#">Екатеринбург</a>
+                                    <a class="tag tag--link" href="#">Нижний Новгород</a>
+                                </div>
+                                <!--#include virtual="/parts/city-slroller.html" -->
+                            </div>
+
+                            <div class="chanel-setting__city-mob">
+                                <div class="city-slroller__item city-slroller__item_1">
+                                    <div class="city-slroller__title">Страна</div>
+                                    <ul class="city-slroller__list list-unstylling">
+                                        <li class="city-slroller__list-item"><a class="city-slroller__list-link" href="#"><img src="images/dist/flag2/ru.svg" alt="Россия">Россия</a></li>
+                                        <li class="city-slroller__list-item"><a class="city-slroller__list-link" href="#"><img src="images/dist/flag2/fr.svg" alt="Франция">Франция</a></li>
+                                        <li class="city-slroller__list-item"><a class="city-slroller__list-link" href="#"><img src="images/dist/flag2/us.svg" alt="США">США</a></li>
+                                        <li class="city-slroller__list-item"><a class="city-slroller__list-link" href="#"><img src="images/dist/flag2/by.svg" alt="Беларусь">Беларусь</a></li>
+                                        <li class="city-slroller__list-item"><a class="city-slroller__list-link" href="#"><img src="images/dist/flag2/ua.svg" alt="Украина">Украина</a></li>
+                                        <li class="city-slroller__list-item"><a class="city-slroller__list-link" href="#"><img src="images/dist/flag2/de.svg" alt="Германия">Германия</a></li>
+                                        <li class="city-slroller__list-item"><a class="city-slroller__list-link" href="#"><img src="images/dist/flag2/id.svg" alt="Польша">Польша</a></li>
+                                        <li class="city-slroller__list-item"><a class="city-slroller__list-link" href="#"><img src="images/dist/flag2/tr.svg" alt="Турция">Турция</a></li>
+                                        <li class="city-slroller__list-item"><a class="city-slroller__list-link" href="#"><img src="images/dist/flag2/vn.svg" alt="Вьетнам">Вьетнам</a></li>
+                                        <li class="city-slroller__list-item"><a class="city-slroller__list-link" href="#"><img src="images/dist/flag2/es.svg" alt="Испания">Испания</a></li>
+                                    </ul>
+                                </div>
+                            </div> 
+                            <!--<div class="city-wrapper__search input-search">
+                                <input class="input input-search__val" type="text" placeholder="Поиск">
+                                <button class="input-search__btn i-search" type="submit">Поиск</button>
+                            </div>
+                            <div class="tabs-content active">
+                                <div class="city__auto">
+                                    Москва
+                                    <small class="city__small">Определен автоматически</small>
+                                </div>
+                                <div class="city-wrapper__lists">
+                                    <ul class="city-wrapper__list">
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Москва</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Санкт-Петербург</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Краснодар</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Новосибирск</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Красноярск</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Челябинск</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Тюмень</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Ростов-на-Дону</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Уфа</a></li>
+                                    </ul>
+                                    <ul class="city-wrapper__list">
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Казань</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Пермь</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Нижний Новгород</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Самара</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Омск</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Саратов</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Хабаровск</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Томск</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Воронеж</a></li>
+                                    </ul>
+                                    <ul class="city-wrapper__list">
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Балашиха</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Иркутск</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Сочи</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Ярославль</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Сургур</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Подольск</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Мытыщи</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Владивосток</a></li>
+                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Пятигорск</a></li>
+                                    </ul>
+                                </div>
+                                <div class="city-wrapper__btns">
+                                    <button class="btn btn-conture btn--full city-close" type="button">Отмена</button>
+                                    <button class="btn btn-accent btn--full" type="button">Сохранить</button>
+                                </div>
+                            </div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="delet-chanel" class="popup popup--padding-sm mfp-hide">
+    <div class="popup__title">
+        Вы действительно хотите удалить канал? <br />
+        Отменить действие будет невозможно
+    </div>
+    <div class="popup__btns-horiz">
+        <button class="btn btn-accent btn--md" type="button">Удалить</button>
+        <button class="btn btn-conture btn--md mfp-close close" type="button">Отмена</button>
+    </div>
+</div>
+<!--#include virtual="/parts/footer.html" -->
