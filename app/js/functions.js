@@ -424,6 +424,14 @@ document.addEventListener("DOMContentLoaded", function () {
         $(".web-chat").removeClass('active');
     });
 
+    // выбор региона (при создании канала)
+    $(".js-select-city").on('click', function () {
+        $(".city-mobil__panel--nested").addClass('active');
+    });
+    $(".js-back").on('click', function () {
+        $(".city-mobil__panel--nested").removeClass('active');
+    });
+
     //Mobil filter
 
     $(".mobil-bar__btn").on('click', function () {

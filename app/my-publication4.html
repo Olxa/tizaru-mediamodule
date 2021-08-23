@@ -40,7 +40,6 @@
                         <a class="chanel-setting__company-create" href="private-office-my-company-detail.html">+ создать компанию</a>
                         <a class="chanel-setting__company-publishing popup-link i-rss link link-accent" href="">Для интернет издательств</a>
                     </div>
-
                     <div class="chanel-setting__title panel">
                         <div class="chanel-setting__title-logo">
                             <label class="chanel-setting__title-label meta">Логотип канала</label>
@@ -55,8 +54,7 @@
                             <textarea class="chanel-setting__title-descr textarea" placeholder="Описание канал"></textarea>
                         </div>
                     </div>
-
-                    <div class="chanel-setting__cover">
+                    <div class="chanel-setting__cover chanel-setting__section--big">
                         <div class="chanel-setting__cover-title chanel-setting__title-block">
                             Обложка канала
                             <span class="text-meta">Рекомендуемый размер изображения (1650 x 300)</span>
@@ -67,25 +65,25 @@
                         </label>
                         <!--Обложка загружена-->
                         <!--<label class="chanel-setting__cover-img thumbnail">
-                            <input name="file" type="file" class="thumbnail__file" multiple="">
-                            <img class="thumbnail__added-img image-logo" src="images/dist/video.jpg" alt="Название канала">
-                            <button class="thumbnail__added-del btn-unstylling i-clear"></button>
-                        </label>-->
+            <input name="file" type="file" class="thumbnail__file" multiple="">
+            <img class="thumbnail__added-img image-logo" src="images/dist/video.jpg" alt="Название канала">
+            <button class="thumbnail__added-del btn-unstylling i-clear"></button>
+        </label>-->
                         <!--Обложка не доступна (не оплачен про аккаунт)-->
                         <!--<div class="chanel-setting__cover-noaccess">
-                            <div class="chanel-setting__cover-noaccess-inner">
-                                <p class="chanel-setting__cover-txt">
-                                    Обложка канала доступна только для PRO участников
-                                </p>
-                                <a class="chanel-setting__cover-link link link-accent link--border" href="pro-account.html">Подробнее</a>
-                            </div>
-                            <label class="chanel-setting__cover-img thumbnail">
-                                <input name="file" type="file" class="thumbnail__file" multiple="">
-                                <span class="thumbnail__label i-upload">Загрузить</span>
-                            </label>
-                        </div>-->
+            <div class="chanel-setting__cover-noaccess-inner">
+                <p class="chanel-setting__cover-txt">
+                    Обложка канала доступна только для PRO участников
+                </p>
+                <a class="chanel-setting__cover-link link link-accent link--border" href="pro-account.html">Подробнее</a>
+            </div>
+            <label class="chanel-setting__cover-img thumbnail">
+                <input name="file" type="file" class="thumbnail__file" multiple="">
+                <span class="thumbnail__label i-upload">Загрузить</span>
+            </label>
+        </div>-->
                     </div>
-                    <div class="row">
+                    <div class="row chanel-setting__section">
                         <div class="col-xl-4">
                             <span class="chanel-setting__lang-title text-meta">Язык канала</span>
                             <div class="chanel-setting__lang dropdown dropdown--input js-dropdown-toogle">
@@ -97,7 +95,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row chanel-setting__section">
                         <div class="col-xl-6">
                             <div class="chanel-setting__title-block">Регион публикации</div>
                             <div class="chanel-setting__city city-s-modal">
@@ -114,73 +112,242 @@
                                 </div>
                                 <!--#include virtual="/parts/city-slroller.html" -->
                             </div>
-
-                            <div class="chanel-setting__city-mob">
-                                <div class="city-slroller__item city-slroller__item_1">
-                                    <div class="city-slroller__title">Страна</div>
-                                    <ul class="city-slroller__list list-unstylling">
-                                        <li class="city-slroller__list-item"><a class="city-slroller__list-link" href="#"><img src="images/dist/flag2/ru.svg" alt="Россия">Россия</a></li>
-                                        <li class="city-slroller__list-item"><a class="city-slroller__list-link" href="#"><img src="images/dist/flag2/fr.svg" alt="Франция">Франция</a></li>
-                                        <li class="city-slroller__list-item"><a class="city-slroller__list-link" href="#"><img src="images/dist/flag2/us.svg" alt="США">США</a></li>
-                                        <li class="city-slroller__list-item"><a class="city-slroller__list-link" href="#"><img src="images/dist/flag2/by.svg" alt="Беларусь">Беларусь</a></li>
-                                        <li class="city-slroller__list-item"><a class="city-slroller__list-link" href="#"><img src="images/dist/flag2/ua.svg" alt="Украина">Украина</a></li>
-                                        <li class="city-slroller__list-item"><a class="city-slroller__list-link" href="#"><img src="images/dist/flag2/de.svg" alt="Германия">Германия</a></li>
-                                        <li class="city-slroller__list-item"><a class="city-slroller__list-link" href="#"><img src="images/dist/flag2/id.svg" alt="Польша">Польша</a></li>
-                                        <li class="city-slroller__list-item"><a class="city-slroller__list-link" href="#"><img src="images/dist/flag2/tr.svg" alt="Турция">Турция</a></li>
-                                        <li class="city-slroller__list-item"><a class="city-slroller__list-link" href="#"><img src="images/dist/flag2/vn.svg" alt="Вьетнам">Вьетнам</a></li>
-                                        <li class="city-slroller__list-item"><a class="city-slroller__list-link" href="#"><img src="images/dist/flag2/es.svg" alt="Испания">Испания</a></li>
-                                    </ul>
+                            <!--#include virtual="/parts/city-mobil.html" -->
+                        </div>
+                    </div>
+                    <div class="row chanel-setting__section">
+                        <div class="col-xl-4">
+                            <span class="chanel-setting__lang-title text-meta">Тема канала</span>
+                            <div class="chanel-setting__lang dropdown dropdown--input js-dropdown-toogle">
+                                <button class="dropdown__value" type="button"><span class="dropdown__value-inner"></span></button>
+                                <div class="dropdown__list scroll-gray">
+                                    <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Спорт</a></div>
+                                    <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Бизнес</a></div>
                                 </div>
-                            </div> 
-                            <!--<div class="city-wrapper__search input-search">
-                                <input class="input input-search__val" type="text" placeholder="Поиск">
-                                <button class="input-search__btn i-search" type="submit">Поиск</button>
                             </div>
-                            <div class="tabs-content active">
-                                <div class="city__auto">
-                                    Москва
-                                    <small class="city__small">Определен автоматически</small>
+                        </div>
+                    </div>
+                    <div class="checkbox chanel-setting__section--big">
+                        <input class="checkbox__field" id="age" type="checkbox">
+                        <label class="checkbox__value" for="age">Канал содержит контент для взрослых</label>
+                    </div>
+                    <div class="chanel-setting__social">
+                        <div class="chanel-setting__title-block chanel-setting__title-block--strong">Соц сети и подписки</div>
+                        <div class="row chanel-setting__social-row">
+                            <div class="col-md-4 chanel-setting__wrap">
+                                <label class="input-wrap__label">Название соц сети</label>
+                                <div class="dropdown dropdown--input dropdown--icon js-dropdown-toogle">
+                                    <button class="dropdown__value dropdown__value--icon" type="button"><span class="dropdown__value-inner"></span></button>
+                                    <div class="dropdown__list scroll-gray">
+                                        <div class="dropdown__list-item">
+                                            <a href="#" class="dropdown__list-val"><span class="icon text-gray i-tl-fl"></span>Телеграм</a>
+                                        </div>
+                                        <div class="dropdown__list-item">
+                                            <a href="#" class="dropdown__list-val"><span class="icon text-gray i-instagram-b"></span>Инстаграм</a>
+                                        </div>
+                                        <div class="dropdown__list-item">
+                                            <a href="#" class="dropdown__list-val"><span class="icon text-gray i-tw-fl"></span>Твитер</a>
+                                        </div>
+                                        <div class="dropdown__list-item">
+                                            <a href="#" class="dropdown__list-val"><span class="icon text-gray i-vk-fl"></span>Вконтакте</a>
+                                        </div>
+                                        <div class="dropdown__list-item">
+                                            <a href="#" class="dropdown__list-val"><span class="icon text-gray i-tiktok"></span>ТикТок</a>
+                                        </div>
+                                        <div class="dropdown__list-item">
+                                            <a href="#" class="dropdown__list-val"><span class="icon text-gray i-youtube"></span>Ютуб</a>
+                                        </div>
+                                        <div class="dropdown__list-item">
+                                            <a href="#" class="dropdown__list-val"><span class="icon text-gray i-fb-fl"></span>Фейзбук</a>
+                                        </div>
+                                        <div class="dropdown__list-item">
+                                            <a href="#" class="dropdown__list-val"><span class="icon text-gray i-ok-fl"></span>Одноклассники</a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="city-wrapper__lists">
-                                    <ul class="city-wrapper__list">
-                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Москва</a></li>
-                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Санкт-Петербург</a></li>
-                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Краснодар</a></li>
-                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Новосибирск</a></li>
-                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Красноярск</a></li>
-                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Челябинск</a></li>
-                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Тюмень</a></li>
-                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Ростов-на-Дону</a></li>
-                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Уфа</a></li>
-                                    </ul>
-                                    <ul class="city-wrapper__list">
-                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Казань</a></li>
-                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Пермь</a></li>
-                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Нижний Новгород</a></li>
-                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Самара</a></li>
-                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Омск</a></li>
-                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Саратов</a></li>
-                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Хабаровск</a></li>
-                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Томск</a></li>
-                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Воронеж</a></li>
-                                    </ul>
-                                    <ul class="city-wrapper__list">
-                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Балашиха</a></li>
-                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Иркутск</a></li>
-                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Сочи</a></li>
-                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Ярославль</a></li>
-                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Сургур</a></li>
-                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Подольск</a></li>
-                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Мытыщи</a></li>
-                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Владивосток</a></li>
-                                        <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Пятигорск</a></li>
-                                    </ul>
+                            </div>
+                            <div class="col-md-4 chanel-setting__wrap">
+                                <div class="input-wrap">
+                                    <label class="input-wrap__label">Ссылка на соц сеть<input class="input" type="text"></label>
                                 </div>
-                                <div class="city-wrapper__btns">
-                                    <button class="btn btn-conture btn--full city-close" type="button">Отмена</button>
-                                    <button class="btn btn-accent btn--full" type="button">Сохранить</button>
+                            </div>
+                            <div class="col-md-4 chanel-setting__wrap">
+                                <button class="chanel-setting__social-add link link-accent" type="button">+ добавить</button>
+                            </div>
+                        </div>
+                        <div class="row chanel-setting__social-row">
+                            <div class="col-md-4 chanel-setting__wrap">
+                                <label class="input-wrap__label">Название соц сети</label>
+                                <div class="dropdown dropdown--input dropdown--icon js-dropdown-toogle">
+                                    <button class="dropdown__value dropdown__value--icon" type="button"><span class="dropdown__value-inner"><span class="icon text-gray i-tl-fl"></span>Телеграм</span></button>
+                                    <div class="dropdown__list scroll-gray">
+                                        <div class="dropdown__list-item">
+                                            <a href="#" class="dropdown__list-val"><span class="icon text-gray i-tl-fl"></span>Телеграм</a>
+                                        </div>
+                                        <div class="dropdown__list-item">
+                                            <a href="#" class="dropdown__list-val"><span class="icon text-gray i-instagram-b"></span>Инстаграм</a>
+                                        </div>
+                                        <div class="dropdown__list-item">
+                                            <a href="#" class="dropdown__list-val"><span class="icon text-gray i-tw-fl"></span>Твитер</a>
+                                        </div>
+                                        <div class="dropdown__list-item">
+                                            <a href="#" class="dropdown__list-val"><span class="icon text-gray i-vk-fl"></span>Вконтакте</a>
+                                        </div>
+                                        <div class="dropdown__list-item">
+                                            <a href="#" class="dropdown__list-val"><span class="icon text-gray i-tiktok"></span>ТикТок</a>
+                                        </div>
+                                        <div class="dropdown__list-item">
+                                            <a href="#" class="dropdown__list-val"><span class="icon text-gray i-youtube"></span>Ютуб</a>
+                                        </div>
+                                        <div class="dropdown__list-item">
+                                            <a href="#" class="dropdown__list-val"><span class="icon text-gray i-fb-fl"></span>Фейзбук</a>
+                                        </div>
+                                        <div class="dropdown__list-item">
+                                            <a href="#" class="dropdown__list-val"><span class="icon text-gray i-ok-fl"></span>Одноклассники</a>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>-->
+                            </div>
+                            <div class="col-md-4 chanel-setting__wrap">
+                                <div class="input-wrap">
+                                    <label class="input-wrap__label">Ссылка на соц сеть<input class="input" type="text" value="telegram.ru/me"></label>
+                                </div>
+                            </div>
+                            <div class="col-md-4 chanel-setting__wrap">
+                                <button class="chanel-setting__social-add link text-gray i-clear" type="button"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chanel-setting__subscriptions chanel-setting__section--big">
+                        <div class="row chanel-setting__social-row">
+                            <div class="col-md-4 chanel-setting__wrap">
+                                <div class="input-wrap">
+                                    <label class="input-wrap__label">Подписки</label>
+                                    <div class="input-search">
+                                        <input class="input input-search__val" type="text">
+                                        <button class="input-search__btn i-search" type="submit"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 chanel-setting__wrap">
+                                <button class="chanel-setting__social-add link link-accent" type="button">+ добавить</button>
+                            </div>
+                        </div>
+                        <span class="chanel-setting__subscriptions-info">
+                            Будут отображаться в левой колонке на странице канала, вы можете добавить свои каналы или любые другие
+                        </span>
+                        <ul class="chanel-setting__subscriptions-list list-unstylling">
+                            <li class="chanel-setting__subscriptions-item">
+                                <button class="chanel-setting__subscriptions-del text-gray btn-unstylling i-clear"></button>
+                                <img class="chanel-setting__subscriptions-img" src="images/dist/chanel.jpg" alt="Название канала/сообщества" />
+                                <div class="chanel-setting__subscriptions-name">Леса России</div>
+                            </li>
+                            <li class="chanel-setting__subscriptions-item">
+                                <button class="chanel-setting__subscriptions-del text-gray btn-unstylling i-clear"></button>
+                                <img class="chanel-setting__subscriptions-img" src="images/dist/chanel-bg.jpg" alt="Название канала/сообщества" />
+                                <div class="chanel-setting__subscriptions-name">IT</div>
+                            </li>
+                        </ul>
+                    </div>                   
+                    <div class="checkbox chanel-setting__agre">
+                        <input class="checkbox__field" id="agree" type="checkbox">
+                        <label class="checkbox__value" for="agree">С <a class="link link-accent link--border" href="#">правилами</a> ведения канала ознакомлен и принимаю</label>
+                    </div>
+                    <button class="btn btn-accent" type="button">Сохранить изменения</button>
+
+                    <div class="chanel-setting__accesses accesses-chanel">
+                        <div class="chanel-setting__title-block">Доступы к каналу</div>
+                        <span class="accesses-chanel__info">
+                            Список пользователей Tizaru которым разрешёны действия от вашего канала
+                        </span>
+                        <div class="accesses-chanel__add-row">
+                            <div class="row accesses-chanel__add-inner">
+                                <div class="col-xl-4">
+                                    <div class="input-wrap">
+                                        <label class="input-wrap__label">Email от аккаунта пользователя<input class="input" type="text"></label>
+                                    </div>
+                                </div>
+                                <div class="col-xl-8">
+                                    <div class="accesses-chanel__checks">
+                                        <div class="checkbox accesses-chanel__check">
+                                            <input class="checkbox__field" id="public" type="checkbox">
+                                            <label class="checkbox__value" for="public">Публикации</label>
+                                        </div>
+                                        <div class="checkbox accesses-chanel__check">
+                                            <input class="checkbox__field" id="comment" type="checkbox">
+                                            <label class="checkbox__value" for="comment">Комментарии</label>
+                                        </div>
+                                        <div class="checkbox accesses-chanel__check">
+                                            <input class="checkbox__field" id="rek" type="checkbox">
+                                            <label class="checkbox__value" for="rek">Реклама</label>
+                                        </div>
+                                        <div class="checkbox accesses-chanel__check">
+                                            <input class="checkbox__field" id="set" type="checkbox">
+                                            <label class="checkbox__value" for="set">Настройки</label>
+                                        </div>
+                                        <button class="accesses-chanel__add link link-accent" type="button">+ добавить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accesses-chanel__list">
+                            <div class="row accesses-chanel__list-item">
+                                <div class="col-xl-4">
+                                    <div class="accesses-chanel__name">copirate@mail.ru</div>
+                                </div>
+                                <div class="col-xl-8">
+                                    <div class="accesses-chanel__option">
+                                        <div class="accesses-chanel__acces">публикации</div>
+                                        <div class="accesses-chanel__edit-wrap">
+                                            <button class="accesses-chanel__edit btn-unstylling i-pencil"></button>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <div class="row accesses-chanel__list-item">
+                                <div class="col-xl-4">
+                                    <div class="accesses-chanel__name">admin2@mail.ru</div>
+                                </div>
+                                <div class="col-xl-8">
+                                    <div class="accesses-chanel__option">
+                                        <div class="accesses-chanel__acces">публикации, реклама, настройки</div>
+                                        <div class="accesses-chanel__edit-wrap">
+                                            <button class="accesses-chanel__edit btn-unstylling i-pencil"></button>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <div class="row accesses-chanel__list-item">
+                                <div class="col-xl-4">
+                                    <input class="input" type="text" value="admin3@mail.ru">
+                                </div>
+                                <div class="col-xl-8">
+                                    <div class="accesses-chanel__option">
+                                        <div class="checkbox accesses-chanel__check">
+                                            <input class="checkbox__field" id="public1" type="checkbox" checked>
+                                            <label class="checkbox__value" for="public1">Публикации</label>
+                                        </div>
+                                        <div class="checkbox accesses-chanel__check">
+                                            <input class="checkbox__field" id="comment2" type="checkbox" checked>
+                                            <label class="checkbox__value" for="comment2">Комментарии</label>
+                                        </div>
+                                        <div class="checkbox accesses-chanel__check">
+                                            <input class="checkbox__field" id="rek3" type="checkbox">
+                                            <label class="checkbox__value" for="rek3">Реклама</label>
+                                        </div>
+                                        <div class="checkbox accesses-chanel__check">
+                                            <input class="checkbox__field" id="set4" type="checkbox">
+                                            <label class="checkbox__value" for="set4">Настройки</label>
+                                        </div>
+
+                                        <div class="accesses-chanel__edit-wrap">
+                                            <button class="accesses-chanel__del btn-unstylling i-clear"></button>
+                                            <button class="accesses-chanel__save btn-unstylling i-checked"></button>
+                                        </div>
+                                    </div>                                 
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

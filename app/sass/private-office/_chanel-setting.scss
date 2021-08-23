@@ -11,6 +11,14 @@
         }
     }
 
+    &__section {
+        margin-bottom: 30px;
+
+        &--big {
+            margin-bottom: 60px;
+        }
+    }
+
     &__title-block {
         font-size: 18px;
         margin-bottom: 10px;
@@ -19,6 +27,18 @@
             font-family: $userfont-bold;
             font-weight: 700;
             font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        &--strong {
+            font-family: $userfont-bold;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__wrap {
+        @media (max-width: $tablet) {
             margin-bottom: 20px;
         }
     }
@@ -155,10 +175,6 @@
         margin-bottom: 20px;
     }
 
-    &__cover {
-        margin-bottom: 30px;
-    }
-
     &__cover-title {
 
         @media (max-width: $mobile) {
@@ -259,13 +275,6 @@
         }
     }
 
-    &__lang-title {
-    }
-
-    &__lang {
-        margin-bottom: 30px;
-    }
-
     &__city {
         position: initial;
         opacity: 1;
@@ -286,5 +295,64 @@
         @media (max-width: $mobile) {
             display: block;
         }
+    }
+
+    &__social {
+        margin-bottom: 45px;
+    }
+
+    &__social-row {
+        margin-bottom: 15px;
+        align-items: center;
+
+        @media (max-width: $mobile) {
+            border-bottom: 1px solid $border-color;
+        }
+    }
+
+    &__social-add {
+        margin-top: 21px;
+
+        @media (max-width: $mobile) {
+            width: 100%;
+            margin-top: 0;
+            text-align: center;
+        }
+    }
+
+    &__subscriptions-info {
+        display: inline-block;
+        max-width: 430px;
+        margin-bottom: 20px;
+        font-size: 12px;
+        color: $gray;
+    }
+
+    &__subscriptions-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    &__subscriptions-del {
+        margin-right: 15px;
+    }
+
+    &__subscriptions-img {
+        margin-right: 10px;
+        width: 40px;
+        min-width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: top center;
+    }
+
+    &__agre {
+        margin-bottom: 30px;
+    }
+
+    &__accesses {
+        padding-top: 100px;
     }
 }

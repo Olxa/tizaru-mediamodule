@@ -1,0 +1,119 @@
+.accesses-chanel {
+
+    &__info {
+        display: inline-block;
+        max-width: 400px;
+        margin-bottom: 20px;
+        font-size: 12px;
+        color: $gray;
+    }
+
+    &__add-row {
+        padding: 20px 10px;
+        margin-bottom: 60px;
+        border-radius: $border-radius;
+        background: $white;
+    }
+
+    &__add-inner {
+        display: flex;
+        align-items: center;
+    }
+
+    &__checks {
+        display: flex;
+        align-items: center;
+        margin-top: 21px;
+
+        @media (max-width: $tablet) {
+            margin-top: 15px;
+        }
+
+        @media (max-width: $mobile-md) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__check {
+        margin-right: 30px;
+
+        @media (max-width: $laptop) {
+            margin-right: 15px;
+        }
+
+        @media (max-width: $mobile-md) {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .checkbox__value {
+            @media (max-width: $laptop) {
+                font-size: 14px;
+                padding-left: 30px;
+            }
+        }
+
+        .checkbox__value::before {
+            background: #ffffff;
+        }
+    }
+
+    &__add {
+        margin-left: auto;
+
+        @media (max-width: $mobile-md) {
+            margin-left: initial;
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    &__list-item {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid $border-color;
+        font-size: 20px;
+
+        @media (max-width: $laptop) {
+            font-size: 16px;
+        }
+    }
+
+    &__option {
+        display: flex;
+
+        @media (max-width: $tablet) {
+            margin-top: 15px;
+        }
+
+        @media (max-width: $mobile-md) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__edit-wrap {
+        margin-left: auto;
+        font-size: 18px;
+
+        @media (max-width: $mobile-md) {
+            margin-left: initial;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+
+    &__del {
+        color: $gray;
+        margin-right: 20px;
+
+        @media (max-width: $mobile-md) {
+            margin-right: auto;
+        }
+    }
+
+    &__save {
+        font-size: 14px;
+        color: $color-succes;
+    }
+}

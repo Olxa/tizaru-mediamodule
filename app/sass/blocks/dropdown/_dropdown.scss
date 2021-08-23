@@ -39,6 +39,8 @@
 
     &--icon .icon {
         margin-right: 5px;
+        display: inline-block;
+        width: 25px;
     }
 
     &__value--bold {
@@ -80,8 +82,7 @@
         &:hover {
             color: $textcolor;
             background: $light-gray;
-       
-            }
+        }
     }
 
     .icon {
