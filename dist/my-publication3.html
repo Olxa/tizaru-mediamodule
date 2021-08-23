@@ -493,11 +493,12 @@
 
                 <div class="private-office__tab-content my-comment">
                     <div class="my-comment__nav">
-                        <a class="link link-accent link--border" href="my-publication2.html">Оставленные мной</a>
-                        <a class="link link-default" href="my-publication3.html">К моим публикациям</a>
+                        <a class="link link-default" href="my-publication2.html">Оставленные мной</a>
+                        <a class="link link-accent link--border" href="my-publication3.html">К моим публикациям</a>
                     </div>
+
                     <div class="my-comment__header">
-                        <p class="private-office__tab-subtitle">Комментарии, написанные мной от этого канала</p>
+                        <p class="private-office__tab-subtitle">Комментарии, написаннанные другими пользователями к моим постам</p>
                         <div class="dropdown dropdown--input js-dropdown-toogle">
                             <button class="dropdown__value" type="button"><span class="dropdown__value-inner">Сортировать</span></button>
                             <div class="dropdown__list scroll-gray">
@@ -520,14 +521,76 @@
                                 <span class="my-comment__content-meta">отредактировано</span>
                             </div>
                             <div class="my-comment__content-comment">
-                                Текст МОЕГО комментария
-                                consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus....
+                                Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus....
+                            </div>
+                            <div class="comment-item">
+                                <div class="comment-item__option">
+                                    <button class="comment-item__reply-btn link link-accent link--border js-add-reply-btn">ответить</button>
+                                </div>
+                                <div class="comment-item__add-reply js-add-reply">
+                                    <div class="comment-add">
+	<div class="comment-add__logo"><img class="comment-add__img image-logo" src="images/dist/person.jpg" alt="Имя Фамилия" /></div>
+	<div class="comment-add__content">
+		<div class="comment-add__header">
+			<span class="comment-add__meta">Ответить как:</span>
+			<div class="comment-add__choice-account dropdown js-dropdown-toogle">
+    <button class="dropdown__value" type="button">Иван Фёдоров</button>
+    <div class="dropdown__list scroll-gray dropditem-group">
+        <a class="dropdown__list-item dropditem-group__item" href="#">
+            <img class="dropditem-group__img" src="images/dist/person.jpg" alt="Имя Фамилия" />
+            <p class="dropditem-group__descr">Иван Фёдоров <span class="dropditem-group__meta">основной аккаунт</span></p>
+        </a>
+        <div class="dropditem-group__title">
+            Ваши компании
+        </div>
+        <a class="dropdown__list-item dropditem-group__item" href="#">
+            <img class="dropditem-group__img" src="images/dist/logo-c.jpg" alt="Название компании" />
+            <p class="dropditem-group__descr">ООО “Рога и копыта”</p>
+        </a>
+        <a class="dropdown__list-item dropditem-group__item" href="#">
+            <img class="dropditem-group__img" src="images/dist/part-bg.jpg" alt="Название компании" />
+            <p class="dropditem-group__descr">ООО “ЖелДорСпецСтрой Ремонт и разработка супер инструмента”</p>
+        </a>
+        <div class="dropditem-group__title">
+            Ваши каналы
+        </div>
+        <a class="dropdown__list-item dropditem-group__item" href="#">
+            <img class="dropditem-group__img" src="images/dist/n7.jpg" alt="Название канала" />
+            <p class="dropditem-group__descr">Весёлый мир</p>
+        </a>
+        <a class="dropdown__list-item dropditem-group__item" href="#">
+            <img class="dropditem-group__img" src="images/dist/chanel.jpg" alt="Название канала" />
+            <p class="dropditem-group__descr">Грустный мир</p>
+        </a>
+    </div>
+</div>
+		</div>
+		<div class="comment-add__field-wrap">
+			<div class="comment-add__field"><textarea class="textarea" placeholder="Новый комментарий"></textarea></div>
+			<div class="comment-add__add-img">
+                <label class="file-icon" title="Загрузить изображение">
+                    <input class="file-icon__input" name="file" type="file" multiple="">
+                    <img class="file-icon__added" src="images/dist/n11.jpg" alt="название изображения" />
+                    <button class="file-icon__del btn-unstylling" title="Удалить изображение"></button>
+                </label>
+			</div>
+			<button class="comment-add__submit btn btn-accent btn--md">Отправить</button>
+		</div>
+	</div>
+</div>
+                                </div>
                             </div>
                         </div>
                         <div class="my-comment__card-option">
                             <div class="my-comment__option-btn">
-                                <button class="my-comment__option-edit btn-unstylling i-pencil"></button>
-                                <a class="my-comment__option-del i-clear popup-link" href="#delet-comment"></a>
+                                <div class="comment-item__control-tools tools-popup">
+                                    <button class="tools-popup__btn tools-popup__btn--horiz js-tools-popup i-option"></button>
+                                    <div class="tools-popup__panel">
+                                        <ul class="tools-popup__list">
+                                            <li class="tools-popup__item"><a class="tools-popup__link popup-link" href="#complain">Пожаловаться</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                             <div class="my-comment__option-like">
                                 <button class="like__item i-dislike"></button>
@@ -540,25 +603,94 @@
                     <div class="my-comment__card panel">
                         <a class="my-comment__post">
                             <img class="my-comment__post-img" src="images/dist/chanel.jpg" alt="Название поста" />
-                            <div class="my-comment__post-name">Название публикации</div>
+                            <div class="my-comment__post-name">Очень длинное название публикации...</div>
                         </a>
                         <div class="my-comment__content">
                             <div class="my-comment__content-meta-wrap text-meta">
-                                <span class="my-comment__content-meta">21.05.2021</span>
+                                <span class="my-comment__content-meta">4 часа назад</span>
+                                <span class="my-comment__content-meta">отредактировано</span>
                             </div>
-                            <div class="my-comment__content-comment my-comment__content-comment--edited">
-                                Текст МОЕГО комментария
-                                consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus....
+                            <div class="my-comment__content-comment">
+                                Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus....
                             </div>
-                            <div class="my-comment__content-btn">
-                                <button class="my-comment__content-save btn btn-conture btn--sm">Сохранить</button>
-                            </div>                            
+                            <div class="comment-item">
+                                <div class="comment-item__option">
+                                    <button class="comment-item__reply-btn link link-accent link--border js-add-reply-btn">ответить</button>
+                                </div>
+                                <div class="comment-item__add-reply js-add-reply">
+                                    <div class="comment-add">
+	<div class="comment-add__logo"><img class="comment-add__img image-logo" src="images/dist/person.jpg" alt="Имя Фамилия" /></div>
+	<div class="comment-add__content">
+		<div class="comment-add__header">
+			<span class="comment-add__meta">Ответить как:</span>
+			<div class="comment-add__choice-account dropdown js-dropdown-toogle">
+    <button class="dropdown__value" type="button">Иван Фёдоров</button>
+    <div class="dropdown__list scroll-gray dropditem-group">
+        <a class="dropdown__list-item dropditem-group__item" href="#">
+            <img class="dropditem-group__img" src="images/dist/person.jpg" alt="Имя Фамилия" />
+            <p class="dropditem-group__descr">Иван Фёдоров <span class="dropditem-group__meta">основной аккаунт</span></p>
+        </a>
+        <div class="dropditem-group__title">
+            Ваши компании
+        </div>
+        <a class="dropdown__list-item dropditem-group__item" href="#">
+            <img class="dropditem-group__img" src="images/dist/logo-c.jpg" alt="Название компании" />
+            <p class="dropditem-group__descr">ООО “Рога и копыта”</p>
+        </a>
+        <a class="dropdown__list-item dropditem-group__item" href="#">
+            <img class="dropditem-group__img" src="images/dist/part-bg.jpg" alt="Название компании" />
+            <p class="dropditem-group__descr">ООО “ЖелДорСпецСтрой Ремонт и разработка супер инструмента”</p>
+        </a>
+        <div class="dropditem-group__title">
+            Ваши каналы
+        </div>
+        <a class="dropdown__list-item dropditem-group__item" href="#">
+            <img class="dropditem-group__img" src="images/dist/n7.jpg" alt="Название канала" />
+            <p class="dropditem-group__descr">Весёлый мир</p>
+        </a>
+        <a class="dropdown__list-item dropditem-group__item" href="#">
+            <img class="dropditem-group__img" src="images/dist/chanel.jpg" alt="Название канала" />
+            <p class="dropditem-group__descr">Грустный мир</p>
+        </a>
+    </div>
+</div>
+		</div>
+		<div class="comment-add__field-wrap">
+			<div class="comment-add__field"><textarea class="textarea" placeholder="Новый комментарий"></textarea></div>
+			<div class="comment-add__add-img">
+                <label class="file-icon" title="Загрузить изображение">
+                    <input class="file-icon__input" name="file" type="file" multiple="">
+                    <img class="file-icon__added" src="images/dist/n11.jpg" alt="название изображения" />
+                    <button class="file-icon__del btn-unstylling" title="Удалить изображение"></button>
+                </label>
+			</div>
+			<button class="comment-add__submit btn btn-accent btn--md">Отправить</button>
+		</div>
+	</div>
+</div>
+                                </div>
+                            </div>
                         </div>
                         <div class="my-comment__card-option">
-                           
+                            <div class="my-comment__option-btn">
+                                <div class="comment-item__control-tools tools-popup">
+                                    <button class="tools-popup__btn tools-popup__btn--horiz js-tools-popup i-option"></button>
+                                    <div class="tools-popup__panel">
+                                        <ul class="tools-popup__list">
+                                            <li class="tools-popup__item"><a class="tools-popup__link popup-link" href="#complain">Пожаловаться</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="my-comment__option-like">
+                                <button class="like__item i-dislike"></button>
+                                <span class="post-bar__option-val post-bar__like-count">3</span>
+                                <button class="like__item i-like-b"></button>
+                            </div>
                         </div>
                     </div>
-                    <div class="pagination__wrap">
+                </div>
+                <div class="pagination__wrap">
     <div class="pagination pagination--center">
         <ul class="pagination-list">
             <li class="pagination-list__item"><a class="pagination-list__link" href="#"><span class="pagination-list__page">1</span></a></li>
@@ -569,26 +701,42 @@
         </ul>
     </div>
 </div>
-                </div>
             </div>
         </div>
     </div>
 </div>
 
+
+
+<div id="complain" class="popup complain mfp-hide">
+    <div class="complain">
+    <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+    <form action="/" method="post">
+        <div class="popup__subtitle">Причина жалобы</div>
+        <div class="dropdown dropdown--input js-dropdown-toogle complain__list">
+            <button class="dropdown__value" type="button"><span class="dropdown__value-inner">Выбрать причину</span></button>
+            <div class="dropdown__list scroll-gray">
+                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Спам</a></div>
+                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Оскорбление</a></div>
+                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Нарушение закона</a></div>
+                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Порнографический контент</a></div>
+                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Насилие</a></div>
+                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Авторские права</a></div>
+                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Введение в заблуждение</a></div>
+                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Враждебные или оскорбительные высказывания</a></div>
+                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Другое</a></div>
+            </div>
+        </div>
+        <div class="complain__submit-wrap">
+            <button class="btn btn-accent btn--md complain__submit" type="submit">Отправить</button>
+        </div>
+    </form>
+</div>
+</div>
 <div id="delet-chanel" class="popup popup--padding-sm mfp-hide">
     <div class="popup__title">
         Вы действительно хотите удалить канал? <br />
         Отменить действие будет невозможно
-    </div>
-    <div class="popup__btns-horiz">
-        <button class="btn btn-accent btn--md" type="button">Удалить</button>
-        <button class="btn btn-conture btn--md mfp-close close" type="button">Отмена</button>
-    </div>
-</div>
-
-<div id="delet-comment" class="popup popup--padding-sm mfp-hide">
-    <div class="popup__title">
-        Удалить комментарий?
     </div>
     <div class="popup__btns-horiz">
         <button class="btn btn-accent btn--md" type="button">Удалить</button>
