@@ -3,6 +3,7 @@
     align-items: center;
     padding: 30px 30px 30px 15px;
     background: $light-gray;
+    border-radius: $border-radius;
 
     @media (max-width: $mobile) {
         position: relative;

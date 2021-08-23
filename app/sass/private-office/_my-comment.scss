@@ -1,0 +1,164 @@
+.my-comment {
+
+    .private-office__tab-subtitle {
+        font-size: 14px;
+    }
+
+    .comment-add__logo {
+        @media (min-width: 1200px) {
+            width: 60px;
+            min-width: 60px;
+            height: 60px;
+        }
+    }
+
+    .tools-popup__panel {
+        @media (max-width: $tablet) {
+            left: 0;
+            right: initial;
+        }
+    }
+
+    &__nav {
+        margin-bottom: 30px;
+
+        .link {
+            margin-right: 30px;
+        }
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        @media (max-width: $tablet) {
+            flex-direction: column;
+        }
+
+        .dropdown {
+            max-width: 300px;
+            margin-bottom: 30px;
+            margin-left: 20px;
+
+            @media (max-width: $tablet) {
+                max-width: 100%;
+                margin-left: 0;
+            }
+        }
+    }
+
+    &__card {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 30px;
+        margin-bottom: 30px;
+
+        @media (max-width: $tablet) {
+            flex-direction: column;
+        }
+
+        @media (max-width: $mobile-sm) {
+            padding: 15px;
+        }
+    }
+
+    &__post {
+        display: inline-block;
+        padding-right: 30px;
+
+        @media (max-width: $tablet) {
+            display: flex;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__post-img {
+        width: 120px;
+        min-width: 120px;
+        height: 100px;
+        object-fit: cover;
+        object-position: top center;
+
+        @media (max-width: $tablet) {
+            width: 40px;
+            min-width: 40px;
+            height: 30px;
+            margin-right: 10px;
+        }
+    }
+
+    &__post-name {
+        font-size: 14px;
+    }
+
+    &__content {
+        @media (max-width: $tablet) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__content-meta-wrap {
+        margin-bottom: 10px;
+    }
+
+    &__content-meta {
+        margin-right: 20px;
+    }
+
+    &__content-comment {
+        margin-bottom: 15px;
+
+        @media (max-width: $tablet) {
+            font-size: 14px;
+        }
+
+        &--edited {
+            padding: 10px;
+            border: 1px solid $border-color;
+            border-radius: $border-radius;
+        }
+    }
+
+    &__content-btn {
+        text-align: right;
+    }
+
+    &__card-option {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        min-width: 100px;
+        color: $gray;
+
+        @media (max-width: $tablet) {
+            flex-direction: row;
+        }
+    }
+
+    &__option-btn {
+    }
+
+    &__option-edit {
+        margin-right: 20px;
+        color: inherit;
+
+        &:hover {
+            color: $accent;
+        }
+    }
+
+    &__option-del {
+        color: inherit;
+
+        &:hover {
+            color: $accent;
+        }
+    }
+
+    &__option-like {
+        color: inherit;
+    }
+}

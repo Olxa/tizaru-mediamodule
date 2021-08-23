@@ -29,11 +29,12 @@
 
                 <div class="private-office__tab-content my-comment">
                     <div class="my-comment__nav">
-                        <a class="link link-accent link--border" href="my-publication2.html">Оставленные мной</a>
-                        <a class="link link-default" href="my-publication3.html">К моим публикациям</a>
+                        <a class="link link-default" href="my-publication2.html">Оставленные мной</a>
+                        <a class="link link-accent link--border" href="my-publication3.html">К моим публикациям</a>
                     </div>
+
                     <div class="my-comment__header">
-                        <p class="private-office__tab-subtitle">Комментарии, написанные мной от этого канала</p>
+                        <p class="private-office__tab-subtitle">Комментарии, написаннанные другими пользователями к моим постам</p>
                         <div class="dropdown dropdown--input js-dropdown-toogle">
                             <button class="dropdown__value" type="button"><span class="dropdown__value-inner">Сортировать</span></button>
                             <div class="dropdown__list scroll-gray">
@@ -56,14 +57,27 @@
                                 <span class="my-comment__content-meta">отредактировано</span>
                             </div>
                             <div class="my-comment__content-comment">
-                                Текст МОЕГО комментария
-                                consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus....
+                                Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus....
+                            </div>
+                            <div class="comment-item">
+                                <div class="comment-item__option">
+                                    <button class="comment-item__reply-btn link link-accent link--border js-add-reply-btn">ответить</button>
+                                </div>
+                                <div class="comment-item__add-reply js-add-reply">
+                                    <!--#include virtual="/parts/comments/comment-add.html" -->
+                                </div>
                             </div>
                         </div>
                         <div class="my-comment__card-option">
                             <div class="my-comment__option-btn">
-                                <button class="my-comment__option-edit btn-unstylling i-pencil"></button>
-                                <a class="my-comment__option-del i-clear popup-link" href="#delet-comment"></a>
+                                <div class="comment-item__control-tools tools-popup">
+                                    <button class="tools-popup__btn tools-popup__btn--horiz js-tools-popup i-option"></button>
+                                    <div class="tools-popup__panel">
+                                        <ul class="tools-popup__list">
+                                            <li class="tools-popup__item"><a class="tools-popup__link popup-link" href="#complain">Пожаловаться</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                             <div class="my-comment__option-like">
                                 <button class="like__item i-dislike"></button>
@@ -76,45 +90,59 @@
                     <div class="my-comment__card panel">
                         <a class="my-comment__post">
                             <img class="my-comment__post-img" src="images/dist/chanel.jpg" alt="Название поста" />
-                            <div class="my-comment__post-name">Название публикации</div>
+                            <div class="my-comment__post-name">Очень длинное название публикации...</div>
                         </a>
                         <div class="my-comment__content">
                             <div class="my-comment__content-meta-wrap text-meta">
-                                <span class="my-comment__content-meta">21.05.2021</span>
+                                <span class="my-comment__content-meta">4 часа назад</span>
+                                <span class="my-comment__content-meta">отредактировано</span>
                             </div>
-                            <div class="my-comment__content-comment my-comment__content-comment--edited">
-                                Текст МОЕГО комментария
-                                consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus....
+                            <div class="my-comment__content-comment">
+                                Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus....
                             </div>
-                            <div class="my-comment__content-btn">
-                                <button class="my-comment__content-save btn btn-conture btn--sm">Сохранить</button>
-                            </div>                            
+                            <div class="comment-item">
+                                <div class="comment-item__option">
+                                    <button class="comment-item__reply-btn link link-accent link--border js-add-reply-btn">ответить</button>
+                                </div>
+                                <div class="comment-item__add-reply js-add-reply">
+                                    <!--#include virtual="/parts/comments/comment-add.html" -->
+                                </div>
+                            </div>
                         </div>
                         <div class="my-comment__card-option">
-                           
+                            <div class="my-comment__option-btn">
+                                <div class="comment-item__control-tools tools-popup">
+                                    <button class="tools-popup__btn tools-popup__btn--horiz js-tools-popup i-option"></button>
+                                    <div class="tools-popup__panel">
+                                        <ul class="tools-popup__list">
+                                            <li class="tools-popup__item"><a class="tools-popup__link popup-link" href="#complain">Пожаловаться</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="my-comment__option-like">
+                                <button class="like__item i-dislike"></button>
+                                <span class="post-bar__option-val post-bar__like-count">3</span>
+                                <button class="like__item i-like-b"></button>
+                            </div>
                         </div>
                     </div>
-                    <!--#include virtual="/parts/pagination-only-page.html" -->
                 </div>
+                <!--#include virtual="/parts/pagination-only-page.html" -->
             </div>
         </div>
     </div>
 </div>
 
+
+
+<div id="complain" class="popup complain mfp-hide">
+    <!--#include virtual="/parts/complain.html" -->
+</div>
 <div id="delet-chanel" class="popup popup--padding-sm mfp-hide">
     <div class="popup__title">
         Вы действительно хотите удалить канал? <br />
         Отменить действие будет невозможно
-    </div>
-    <div class="popup__btns-horiz">
-        <button class="btn btn-accent btn--md" type="button">Удалить</button>
-        <button class="btn btn-conture btn--md mfp-close close" type="button">Отмена</button>
-    </div>
-</div>
-
-<div id="delet-comment" class="popup popup--padding-sm mfp-hide">
-    <div class="popup__title">
-        Удалить комментарий?
     </div>
     <div class="popup__btns-horiz">
         <button class="btn btn-accent btn--md" type="button">Удалить</button>
