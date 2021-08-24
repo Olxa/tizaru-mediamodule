@@ -1,0 +1,83 @@
+<!--#set var="title" value="Личный кабинет | Чат" -->
+<!--#set var="чат" value="active" -->
+<!--#include virtual="/parts/header-login.html" -->
+<div class="page-content">
+    <div class="full-container private-office__wrap">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb--private-office">
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Главная</a></li>
+                <li class="breadcrumb__item active" aria-current="page">Мои публикации</li>
+            </ol>
+        </nav>
+
+        <div class="private-office">
+            <div class="private-office__sidebar">
+                <!--#include virtual="/parts/user-nav-page.html" -->
+            </div>
+            <div class="private-office__content chat__page-wrap">
+                <div class="chat__sidebar">
+                    <div class="input-search">
+                        <input class="input input-search__val" type="text">
+                        <button class="input-search__btn i-search" type="submit"></button>
+                    </div>
+                    <ul class="chat__open-list list-unstylling scroll-gray">
+                        <li class="chat__open-item active">
+                            <a class="chat__open-item-link popup-link" href="#chat-mob"></a>
+                            <img class="chat__logo" src="images/dist/person.jpg" alt="Имя фамилия" />
+                            <div class="chat__content">
+                                <div class="chat__name">Иванов Иван</div>
+                                <div class="chat__txt">Привет!</div>
+                            </div>
+                            <div class="chat__meta">
+                                <div class="chat__date text-meta">12:30</div>
+                            </div>
+                        </li>
+                        <li class="chat__open-item">
+                            <a class="chat__open-item-link popup-link" href="#chat-mob"></a>
+                            <img class="chat__logo" src="images/dist/ps1.jpg" alt="Имя фамилия" />
+                            <div class="chat__content">
+                                <div class="chat__name">Иванов Иван</div>
+                                <div class="chat__txt">Добрый вечер. Хотел у..</div>
+                            </div>
+                            <div class="chat__meta">
+                                <div class="chat__date text-meta">12:30</div>
+                                <div class="chat__mess">+1</div>
+                            </div>
+                        </li>
+                        <li class="chat__open-item">
+                            <a class="chat__open-item-link popup-link" href="#chat-mob"></a>
+                            <img class="chat__logo" src="images/dist/or2.jpg" alt="Имя фамилия" />
+                            <div class="chat__content">
+                                <div class="chat__name">Анна Мария де Л...</div>
+                                <div class="chat__txt">Привет!</div>
+                            </div>
+                            <div class="chat__meta">
+                                <div class="chat__date text-meta">12:30</div>
+                                <div class="chat__mess">+1</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="chat chat__panel panel">
+                    <!--#include virtual="/parts/chat.html" -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="clear-chat" class="popup popup--padding-sm mfp-hide">
+    <div class="popup__title">
+        Очистить переписку с Иван Иванов?
+    </div>
+    <div class="popup__btns-horiz">
+        <button class="btn btn-accent btn--md" type="button">Очистить</button>
+        <button class="btn btn-conture btn--md mfp-close close" type="button">Отмена</button>
+    </div>
+</div>
+
+<div id="chat-mob" class="popup popup--padding-sm mfp-hide">
+    <div class="chat chat__panel chat__panel--mob panel">
+        <!--#include virtual="/parts/chat.html" -->
+    </div>
+</div>
+<!--#include virtual="/parts/footer.html" -->
