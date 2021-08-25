@@ -83,4 +83,92 @@
             margin-left: 10px;
         }
     }
+
+    &__list-header {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-bottom: 30px;
+
+        @media (max-width: $mobile) {
+            justify-content: space-between;
+        }
+    }
+
+    &__list-sort {
+        position: relative;
+        min-width: 280px;
+        padding-left: 40px;
+
+        @media (max-width: $mobile) {
+            min-width: initial;
+        }
+    }
+
+    &__sort-drop {
+
+        @media (max-width: $mobile) {
+            display: none !important;
+        }
+    }
+
+    &__sort-btn {
+        display: none;
+
+        @media (max-width: $mobile) {
+            display: block;
+        }
+    }
+
+    &__status {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+
+        &::before {
+            font-size: 15px;
+            margin-right: 5px;
+        }
+
+        &--rejected {
+            color: $accent;
+        }
+
+        &--moderation {
+            color: $textcolor;
+
+            &::before {
+                color: $accent;
+            }
+        }
+
+        &--active {
+            color: $color-tertiary;
+
+            &::before {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 16px;
+                height: 16px;
+                background-color: $color-tertiary;
+                color: #ffffff;
+                font-size: 6px;
+                border: 1px solid;
+                border-radius: 50%;
+            }
+        }
+
+        &--queue {
+            color: $textcolor;
+
+            &::before {
+                color: $color-tertiary;
+            }
+        }
+
+        &--close {
+            color: $gray;
+        }
+    }
 }

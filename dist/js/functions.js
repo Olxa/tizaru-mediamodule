@@ -432,6 +432,28 @@ document.addEventListener("DOMContentLoaded", function () {
         $(".city-mobil__panel--nested").removeClass('active');
     });
 
+    //показать/скрыть панель (добавить рекламу)
+    $(".js-show-panel").on('click', function () {
+        $(this).hide();
+        $(".js-panel").addClass('active');
+    });
+
+    $(".js-close-panel").on('click', function () {
+        $(".js-show-panel").show();       
+        $(".js-panel").removeClass('active');
+    });
+
+    //просмотр созданной рекламы
+    $('.js-show-rek').click(function () {
+        $(this).hide()
+        $(this).closest(".reklam-table__item-panel").find('.js-rek').addClass('active');       
+    });
+    $('.js-close-rek').click(function () {       
+        $(this).closest(".reklam-table__item-panel").find('.js-rek').removeClass('active')
+        $(this).closest(".reklam-table__item-panel").find('.js-show-rek').show();
+    });
+
+
     //Mobil filter
 
     $(".mobil-bar__btn").on('click', function () {

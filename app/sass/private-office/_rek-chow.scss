@@ -1,0 +1,48 @@
+.rek-chow {
+    border-radius: $border-radius;
+    border: 1px solid $border-color;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;       
+        padding: 15px 20px;
+    }
+
+    &__info {
+    }
+
+    &__status {
+    }
+
+    &__row {
+        margin-bottom: 15px;
+    }
+
+    &__title {
+        display: inline-block;
+        margin-right: 10px;
+        font-size: 18px;
+        color: $gray;
+    }
+
+    &__val {
+        display: inline-block;
+        font-size: 18px;
+
+        &--link {
+            text-decoration: underline;
+        }
+    }
+
+    &__link {
+        font-size: 18px;
+        color: $color-second;
+        text-decoration: underline;
+    }
+
+    &__bottom {
+        padding: 15px 20px;
+        background: $white;
+        text-align: right;
+    }
+}

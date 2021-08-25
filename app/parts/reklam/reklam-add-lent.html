@@ -1,0 +1,100 @@
+<div class="reklam-add js-panel <!--#echo var="reklam-add" -->">
+    <h1 class="reklam-add__title page-title">Добавить промо пост</h1>
+    <div class="reklam-add__panel">
+        <div class="reklam-add__panel-close i-close js-close-panel"></div>
+        <div class="reklam-add__panel-content">
+            <div class="row">
+                <div class="col-lg-5 col-md-6">
+                    <div class="row">
+                        <div class="col-12 reklam-add__panel-row">
+                            <label class="input-wrap__label">Выберите статью</label>
+                            <div class="dropdown dropdown--input js-dropdown-toogle">
+                                <button class="dropdown__value" type="button"><span class="dropdown__value-inner"></span></button>
+                                <div class="dropdown__list scroll-gray">
+                                    <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Название статьи</a></div>
+                                    <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Название статьи</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-7 reklam-add__panel-row">
+                            <label class="input-wrap__label">Страница</label>
+                            <div class="dropdown dropdown--input js-dropdown-toogle">
+                                <button class="dropdown__value" type="button"><span class="dropdown__value-inner">В сообществе</span></button>
+                                <div class="dropdown__list scroll-gray">
+                                    <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">На главной</a></div>
+                                    <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">В общей ленте</a></div>
+                                    <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">В ленте видео</a></div>
+                                    <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">В ленте галерей</a></div>
+                                    <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">В ленте статей</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-5 reklam-add__panel-row">
+                            <label class="input-wrap__label">Ряд показа</label>
+                            <div class="dropdown dropdown--input js-dropdown-toogle">
+                                <button class="dropdown__value" type="button"><span class="dropdown__value-inner">1</span></button>
+                                <div class="dropdown__list scroll-gray">
+                                    <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">3</a></div>
+                                    <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">5</a></div>
+                                    <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">7</a></div>
+                                    <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">9</a></div>
+                                    <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">11</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="reklam-add__meta text-meta">
+                                *Публикация соответствует сообществу, в которое была помещена при создании
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-lg-2 col-md-6">
+                    <div class="row">
+                        <div class="col-12 reklam-add__panel-row reklam-add__panel-row--magrin">
+                            <a class="reklam-add__select-reg btn btn-conture btn--full btn--md popup-link" href="#region-select">Выбрать регионы показа</a>
+                            <div class="reklam-add__select-reg--mob">
+                                <div class="reklam-add__select-title">Регион показа</div>
+                                <!--#include virtual="/parts/city-mobil.html" -->
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="input-wrap__label">Показывать</label>
+                            <div class="input-date__wrap">
+                                <label class="input-date__label">с</label>
+                                <input class="input input-date" type="date">
+                            </div>
+                        </div>
+                        <div class="col-md-6 reklam-add__panel-row--magrin">
+                            <div class="input-date__wrap">
+                                <label class="input-date__label">по</label>
+                                <input class="input input-date" type="date">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="reklam-add__panel-bottom">
+            <div class="checkbox reklam-add__agree">
+                <input class="checkbox__field" id="chek1" type="checkbox" checked="">
+                <label class="checkbox__value" for="chek1">
+                    Согласен  с условиями <br /><a href="terms-of-use.html">пользовательского соглашения</a>
+                </label>
+            </div>
+            <div class="reklam-add__price">
+                <span class="reklam-add__price-val"><span class="reklam-add__price-title">Стоимость размещения</span>300 &#8381;</span>
+                <a href="pro-account.html" class="reklam-add__price-pro">200 &#8381; с <span class="text-accent">PRO</span></a>
+            </div>
+            <div class="reklam-add__pay">
+                <a class="btn btn-accent btn--sm" href="#">Оплатить</a>
+                <div class="dropdown js-dropdown-toogle">
+                    <button class="dropdown__value" type="button">Деньгами</button>
+                    <div class="dropdown__list scroll-gray">
+                        <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Баллами</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

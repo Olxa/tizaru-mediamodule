@@ -30,19 +30,297 @@
                         <a class="private-office__tab-link" href="reklam10.html">Настройки</a>
                     </li>
                 </ul>
-                <div class="private-office__tab-content">                   
-                        <div class="reklam__add-panel">
-
+                <div class="private-office__tab-content">
+                    <!--#include virtual="/parts/reklam/reklam-add-lent.html" -->
+                    <div class="reklam__list">
+                        <div class="reklam__list-header">
+                            <a class="btn btn-conture btn--md js-show-panel" href="#">+ Добавить промо пост</a>
+                            <div class="reklam__list-sort">
+                                <div class="reklam__sort-drop dropdown dropdown--input js-dropdown-toogle">
+                                    <button class="dropdown__value" type="button"><span class="dropdown__value-inner">Все статусы</span></button>
+                                    <div class="dropdown__list scroll-gray">
+                                        <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Текущие</a></div>
+                                        <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Ожидание</a></div>
+                                        <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Архив</a></div>
+                                    </div>
+                                </div>
+                                <button class="reklam__sort-btn sort-popup__btn btn-unstylling i-filter js-sort-open"></button>
+                                <div class="sort-popup__panel panel">
+                                    <button class="sort-popup__close btn-unstylling i-min-close"></button>
+                                    <form action="/" method="post">
+                                        <div class="sort-popup__title">Фильтр рекламы</div>
+                                        <div class="sort-popup__subtitle">Статус</div>
+                                        <ul class="sort-popup__list list-unstylling">
+                                            <li class="sort-popup__item">
+                                                <div class="radio">
+                                                    <input class="radio__field" id="status" type="radio" name="output" checked>
+                                                    <label class="radio__value" for="status">Все</label>
+                                                </div>
+                                            </li>
+                                            <li class="sort-popup__item">
+                                                <div class="radio">
+                                                    <input class="radio__field" id="status2" type="radio" name="output">
+                                                    <label class="radio__value" for="status2">Текущие</label>
+                                                </div>
+                                            </li>
+                                            <li class="sort-popup__item">
+                                                <div class="radio">
+                                                    <input class="radio__field" id="status3" type="radio" name="output">
+                                                    <label class="radio__value" for="status3">Ожидание</label>
+                                                </div>
+                                            </li>
+                                            <li class="sort-popup__item">
+                                                <div class="radio">
+                                                    <input class="radio__field" id="status4" type="radio" name="output">
+                                                    <label class="radio__value" for="status4">Архив</label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="sort-popup__btns">
+                                            <button class="sort-popup__reset link link-accent link--border" type="reset">Сбросить фильтр</button>
+                                            <button class="sort-popup__submit btn btn-accent" type="submit">Применить</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
-                        <div class="reklam__list">
-                            <div class="reklam__list-header">
-
+                        <div class="reklam__table reklam-table">
+                            <div class="reklam-table__row reklam-table__row--header">
+                                <div class="reklam-table__col reklam-table__col--20">
+                                    <div class="reklam-table__val">
+                                        Наименование
+                                    </div>
+                                </div>
+                                <div class="reklam-table__col reklam-table__col--15">
+                                    <div class="reklam-table__val">
+                                        Местоположение
+                                    </div>
+                                </div>
+                                <div class="reklam-table__col reklam-table__col--5">
+                                    <div class="reklam-table__val">
+                                        Ряд
+                                    </div>
+                                </div>
+                                <div class="reklam-table__col reklam-table__col--10">
+                                    <div class="reklam-table__val">
+                                        Период
+                                    </div>
+                                </div>
+                                <div class="reklam-table__col reklam-table__col--15">
+                                    <div class="reklam-table__val">
+                                        Регион
+                                    </div>
+                                </div>
+                                <div class="reklam-table__col reklam-table__col--5">
+                                    <div class="reklam-table__val">
+                                        Цена
+                                    </div>
+                                </div>
+                                <div class="reklam-table__col reklam-table__col--15">
+                                    <div class="reklam-table__val reklam-table__val--center">
+                                        Просмотры
+                                        <div class="sorting">
+                                            <button class="sorting__btn sorting__btn--disabled i-arrow-bottom" type="button"></button>
+                                            <button class="sorting__btn i-arrow-top" type="button"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reklam-table__col reklam-table__col--15">
+                                    <div class="reklam-table__val">
+                                        Статус
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reklam-table__item-panel">
+                                <div class="reklam-table__row panel js-show-rek">
+                                    <div class="reklam-table__col reklam-table__col--title reklam-table__col--20">
+                                        <div class="reklam-table__mob-title">Наименование</div>
+                                        <div class="reklam-table__val">
+                                            О котиках и людях в городах
+                                        </div>
+                                    </div>
+                                    <div class="reklam-table__col reklam-table__col--15">
+                                        <div class="reklam-table__mob-title">Местоположение</div>
+                                        <div class="reklam-table__val">
+                                            Лента
+                                        </div>
+                                    </div>
+                                    <div class="reklam-table__col reklam-table__col--5">
+                                        <div class="reklam-table__mob-title">Ряд</div>
+                                        <div class="reklam-table__val">
+                                            9
+                                        </div>
+                                    </div>
+                                    <div class="reklam-table__col reklam-table__col--10">
+                                        <div class="reklam-table__mob-title">Период</div>
+                                        <div class="reklam-table__val">
+                                            13.06.2021 -
+                                            18.06.2021
+                                        </div>
+                                    </div>
+                                    <div class="reklam-table__col reklam-table__col--15">
+                                        <div class="reklam-table__mob-title">Регион</div>
+                                        <div class="reklam-table__val">
+                                            Кострома, Бурятия, Колмыкия....
+                                            <a class="reklam-table__more-link popup-link" href="#region-show">ещё 4</a>
+                                        </div>
+                                    </div>
+                                    <div class="reklam-table__col reklam-table__col--no-wrap  reklam-table__col--5">
+                                        <div class="reklam-table__val">
+                                            <div class="reklam-table__mob-title">Цена</div>
+                                            <div class="reklam-table__val">
+                                                1 300 ₽
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="reklam-table__col reklam-table__col--center reklam-table__col--15">
+                                        <div class="reklam-table__val">
+                                            <div class="reklam-table__mob-title">Просмотров</div>
+                                            <div class="reklam-table__val reklam-table__val--center">
+                                                5
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="reklam-table__col reklam-table__col--status reklam-table__col--15">
+                                        <span class="reklam__status reklam__status--active i-checked"> Идет показ</span>
+                                    </div>
+                                </div>
+                                <!--#include virtual="/parts/reklam/reklam-show-lent.html" -->
+                            </div>
+                            <div class="reklam-table__item-panel">
+                                <div class="reklam-table__row panel js-show-rek">
+                                    <div class="reklam-table__col reklam-table__col--title reklam-table__col--20">
+                                        <div class="reklam-table__mob-title">Наименование</div>
+                                        <div class="reklam-table__val">
+                                            О Москве
+                                        </div>
+                                    </div>
+                                    <div class="reklam-table__col reklam-table__col--15">
+                                        <div class="reklam-table__mob-title">Местоположение</div>
+                                        <div class="reklam-table__val">
+                                            Главная, Сообщево “Маг и...
+                                        </div>
+                                    </div>
+                                    <div class="reklam-table__col reklam-table__col--5">
+                                        <div class="reklam-table__mob-title">Ряд</div>
+                                        <div class="reklam-table__val">
+                                            5
+                                        </div>
+                                    </div>
+                                    <div class="reklam-table__col reklam-table__col--10">
+                                        <div class="reklam-table__mob-title">Период</div>
+                                        <div class="reklam-table__val">
+                                            13.06.2021 -
+                                            18.06.2021
+                                        </div>
+                                    </div>
+                                    <div class="reklam-table__col reklam-table__col--15">
+                                        <div class="reklam-table__mob-title">Регион</div>
+                                        <div class="reklam-table__val">
+                                            Москва
+                                        </div>
+                                    </div>
+                                    <div class="reklam-table__col reklam-table__col--no-wrap reklam-table__col--5">
+                                        <div class="reklam-table__mob-title">Цена</div>
+                                        <div class="reklam-table__val">
+                                            200 ₽
+                                        </div>
+                                    </div>
+                                    <div class="reklam-table__col reklam-table__col--center reklam-table__col--15">
+                                        <div class="reklam-table__mob-title">Просмотров</div>
+                                        <div class="reklam-table__val reklam-table__val--center">
+                                            100 000
+                                        </div>
+                                    </div>
+                                    <div class="reklam-table__col reklam-table__col--status reklam-table__col--15">
+                                        <span class="reklam__status reklam__status--queue i-clock"> Ожидание</span>
+                                    </div>
+                                </div>
+                                <!--#include virtual="/parts/reklam/reklam-show-lent.html" -->
+                            </div>
+                            <div class="reklam-table__item-panel">
+                                <div class="reklam-table__row panel js-show-rek">
+                                    <div class="reklam-table__col reklam-table__col--title reklam-table__col--20">
+                                        <div class="reklam-table__mob-title">Наименование</div>
+                                        <div class="reklam-table__val">
+                                            Название статьи
+                                        </div>
+                                    </div>
+                                    <div class="reklam-table__col reklam-table__col--15">
+                                        <div class="reklam-table__mob-title">Местопложение</div>
+                                        <div class="reklam-table__val">
+                                            Сообщество “Все обо мне”
+                                        </div>
+                                    </div>
+                                    <div class="reklam-table__col reklam-table__col--5">
+                                        <div class="reklam-table__mob-title">Ряд</div>
+                                        <div class="reklam-table__val">
+                                            3
+                                        </div>
+                                    </div>
+                                    <div class="reklam-table__col reklam-table__col--10">
+                                        <div class="reklam-table__mob-title">Период</div>
+                                        <div class="reklam-table__val">
+                                            13.06.2021 -
+                                            18.06.2021
+                                        </div>
+                                    </div>
+                                    <div class="reklam-table__col reklam-table__col--15">
+                                        <div class="reklam-table__mob-title">Регион</div>
+                                        <div class="reklam-table__val">
+                                            по всей России
+                                        </div>
+                                    </div>
+                                    <div class="reklam-table__col reklam-table__col--no-wrap reklam-table__col--5">
+                                        <div class="reklam-table__mob-title">Цена</div>
+                                        <div class="reklam-table__val">
+                                            300 ₽
+                                        </div>
+                                    </div>
+                                    <div class="reklam-table__col reklam-table__col--15">
+                                        <div class="reklam-table__val reklam-table__val--center">
+                                            <div class="reklam-table__mob-title">Просмотров</div>
+                                            100 000
+                                        </div>
+                                    </div>
+                                    <div class="reklam-table__col reklam-table__col--status reklam-table__col--15">
+                                        <span class="reklam__status reklam__status--close i-check">Завершено</span>
+                                    </div>
+                                </div>
+                                <!--#include virtual="/parts/reklam/reklam-show-lent.html" -->
                             </div>
                         </div>
                     </div>
+
+                    <!--#include virtual="/parts/pagination-only-page.html" -->
                 </div>
             </div>
         </div>
+    </div>
+</div>
+
+<div id="region-select" class="popup region-select-popup popup--padding-sm mfp-hide">
+    <div class="popup__title">Регионы показа</div>
+    <div class="chanel-setting__city city-s-modal">
+        <div class="input-search">
+            <input class="input input-search__val" type="text" placeholder="Поиск">
+            <button class="input-search__btn i-search" type="submit">Поиск</button>
+        </div>
+        <div class="search-tags">
+            <a class="tag tag--link" href="#">Москва</a>
+            <a class="tag tag--link" href="#">Санкт-Петербург</a>
+            <a class="tag tag--link" href="#">Новосибирск</a>
+            <a class="tag tag--link" href="#">Екатеринбург</a>
+            <a class="tag tag--link" href="#">Нижний Новгород</a>
+        </div>
+        <!--#include virtual="/parts/city-slroller.html" -->
+    </div>
+</div>
+
+<div id="region-show" class="popup region-select-popup popup--padding-sm mfp-hide">
+    <div class="popup__title">Регионы показа</div>
+    <div class="chanel-setting__city city-s-modal">
+        <!--#include virtual="/parts/city-slroller.html" -->
     </div>
 </div>
 
