@@ -13,6 +13,8 @@
         padding: 10px;
         width: 100%;
         min-height: 200px;
+        border: 1px solid $gray;
+        border-radius: $border-radius;
         color: $accent;
         font-size: 20px;
         cursor: pointer;
@@ -31,6 +33,8 @@
 
         &--gray {
             background-color: $white;
+            border-radius: 0;
+            border: none;
         }
     }
 

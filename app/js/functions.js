@@ -453,6 +453,20 @@ document.addEventListener("DOMContentLoaded", function () {
         $(this).closest(".reklam-table__item-panel").find('.js-show-rek').show();
     });
 
+    $('#bottom-static').on('click', function () {
+        if ($(this).prop('checked') === true) {
+            $(".reklam-banner").removeClass('active');
+            $(".js-banner-bottom-static").addClass('active');
+        }
+    })
+
+    $('#bottom-media').on('click', function () {
+        if ($(this).prop('checked') === true) {
+            $(".reklam-banner").removeClass('active');
+            $(".js-banner-bottom-media").addClass('active');
+        }
+    })
+
 
     //Mobil filter
 

@@ -1,0 +1,7 @@
+.reklam-banner {
+    display: none;
+
+    &.active {
+        display: block;
+    }
+}

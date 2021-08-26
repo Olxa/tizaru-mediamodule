@@ -5,6 +5,36 @@
         display: block;
     }
 
+    &__tab {
+        @media (max-width: $mobile) {
+            flex-wrap: wrap;
+            border: 1px solid $border-color;
+            border-radius: $border-radius;
+        }
+
+        .private-office__tab-item {
+
+            @media (max-width: $mobile) {
+                width: 100%;
+                border-bottom: none;
+                margin-bottom: 10px;
+            }
+        }
+
+        .private-office__tab-link.active {
+            @media (max-width: $mobile) {
+                text-decoration: underline;
+            }
+
+
+            &::after {
+                @media (max-width: $mobile) {
+                    display: none;
+                }
+            }
+        }
+    }
+
     &__title {
         margin-bottom: 30px;
     }
@@ -36,8 +66,26 @@
         }
     }
 
+    &__title-group {
+        display: inline-block;
+        margin-bottom: 20px;
+        font-size: 20px;
+        cursor: default;
+    }
+
+    &__meta-group {
+        display: inline-block;
+        font-size: 14px;
+        color: $gray;
+        cursor: default;
+    }
+
     &__panel-content {
         padding: 35px;
+
+        @media (max-width: $mobile) {
+            padding: 45px 12px 12px;
+        }
     }
 
     &__panel-bottom {
@@ -80,11 +128,11 @@
     &__price {
         width: 33.333%;
         text-align: center;
-        margin-bottom: 20px;
 
         @media (max-width: $mobile) {
             order: 1;
             width: 100%;
+            margin-bottom: 20px;
         }
     }
 
@@ -209,6 +257,38 @@
 
         @media (max-width: $mobile) {
             margin-top: 30px;
+        }
+    }
+
+    &__radio-group {
+        display: flex;
+        flex-wrap: wrap;
+
+        .radio,
+        .checkbox {
+            margin-right: 60px;
+        }
+    }
+
+    &__banner {
+        &--bottom {
+            margin-top: 30px;
+
+            .upload-image__label {
+                min-height: 250px;
+            }
+        }
+    }
+
+    &__request {
+        display: inline-block;
+        margin-top: 10px;
+        text-decoration: underline;
+        color: $color-second;
+        font-size: 16px;
+
+        &:hover {
+            opacity: .9;
         }
     }
 }
