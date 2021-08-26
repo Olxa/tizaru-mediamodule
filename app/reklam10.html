@@ -1,0 +1,55 @@
+<!--#set var="title" value="Личный кабинет | Рекламировать" -->
+<!--#set var="рекламировать" value="active" -->
+<!--#include virtual="/parts/header-login.html" -->
+<div class="page-content page-notice">
+    <div class="full-container private-office__wrap">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb--private-office">
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Главна¤</a></li>
+                <li class="breadcrumb__item active" aria-current="page">Рекламировать</li>
+            </ol>
+        </nav>
+        <div class="private-office">
+            <div class="private-office__sidebar">
+                <!--#include virtual="/parts/user-nav-page.html" -->
+            </div>
+            <div class="private-office__content">
+                <!--#include virtual="/parts/reklam/reklam-panel.html" -->
+                <ul class="private-office__tab">
+                    <li class="private-office__tab-item">
+                        <a class="private-office__tab-link" href="reklam.html">В ленте</a>
+                    </li>
+                    <li class="private-office__tab-item">
+                        <a class="private-office__tab-link" href="reklam3.html">Баннерная</a>
+                    </li>
+                    <li class="private-office__tab-item">
+                        <a class="private-office__tab-link" href="reklam9.html">Объявления</a>
+                    </li>
+                    <li class="private-office__tab-item">
+                        <div class="private-office__tab-link active">Настройки</div>
+                    </li>
+                </ul>
+                <div class="private-office__tab-content private-office__tab-content--md">
+                    <h1 class="reklam-add__title page-title">Контакты для связи</h1>
+                    <form class="form">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="input-wrap">
+                                    <label class="input-wrap__label">Телефон<input class="input" type="text"></label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="input-wrap">
+                                    <label class="input-wrap__label">Email<input class="input" type="email"></label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <button class="btn btn-accent btn--md" type="submit">Сохранить</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
