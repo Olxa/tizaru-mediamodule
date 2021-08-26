@@ -22,13 +22,13 @@
 
 // == input ==
 @import "blocks/input/input-wrap";
+@import "blocks/input/textarea";
 @import "blocks/input/input";
 @import "blocks/input/input-required";
 @import "blocks/input/input-search";
 @import "blocks/input/input-password";
 @import "blocks/input/checkbox";
 @import "blocks/input/radio";
-@import "blocks/input/textarea";
 @import "blocks/input/input-date";
 
 // == header ==
@@ -197,6 +197,7 @@
 @import "blocks/add-file/file-clip";
 @import "blocks/add-file/thumbnail";
 @import "blocks/add-file/upload-btn";
+@import "blocks/add-file/upload-image";
 
 // == team ==
 @import "blocks/team/team";
@@ -240,6 +241,7 @@
 @import "private-office/reklam-add";
 @import "private-office/reklam-table";
 @import "private-office/rek-chow";
+@import "private-office/banner-card";
 
 // == options ==
 @import "blocks/options/options";

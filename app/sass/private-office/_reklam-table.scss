@@ -6,14 +6,8 @@
 
     &__item-panel {
         @media (max-width: $tablet) {
-            width: 50%;
-            padding-right: 20px;
-            padding-bottom: 20px;
-        }
-
-        @media (max-width: $mobile) {
-            width: 100%;
-            padding-right: 0;
+         width: 100%;
+         margin-bottom: 20px;
         }
     }
 
@@ -26,7 +20,7 @@
         cursor: pointer;
 
         @media (max-width: $tablet) {
-            flex-direction: column;
+          flex-wrap: wrap;
             padding: 45px 15px 15px;
             height: 100%;
             margin-bottom: 0;
@@ -120,6 +114,28 @@
                 width: 100%;
             }
         }
+
+        &--25 {
+            width: 25%;
+
+            @media (max-width: $tablet) {
+                width: 100%;
+            }
+        }
+
+        &--30 {
+            width: 30%;
+
+            @media (max-width: $tablet) {
+                width: 100%;
+            }
+        }
+
+        &--double {
+            @media (max-width: $tablet) {
+                width: 50%;
+            }
+        }
     }
 
     &__mob-title {
@@ -144,6 +160,14 @@
             flex-direction: column;
             align-items: flex-start;
             font-size: 14px;
+        }
+
+        &::before {
+            margin-right: 5px;
+
+            @media (max-width: $tablet) {
+                display: none;
+            }
         }
 
         &--center {
@@ -172,5 +196,25 @@
         &.active {
             display: block;
         }
+    }
+
+    &__mess {
+        position: relative;
+        padding: 15px 40px 15px 55px;
+        background-color: $white;
+
+        &::before {
+            content: '\e938';
+            font-family: 'If';
+            position: absolute;
+            left: 20px;
+            font-size: 28px;
+            color: $accent;
+        }
+    }
+
+    &__mess-title {
+        font-family: $userfont-sbold;
+        font-weight: 600;
     }
 }

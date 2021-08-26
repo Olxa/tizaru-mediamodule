@@ -152,6 +152,18 @@
         }
     }
 
+    &__select-reg {
+        &--select {
+            color: $color-second;
+            border-color: $color-second;
+
+            &:hover {
+                color: $color-second;
+                box-shadow: 0 0 5px rgba(0, 0, 128, 45);
+            }
+        }
+    }
+
     &__panel-row {
         margin-bottom: 20px;
 
@@ -162,9 +174,6 @@
         &--magrin {
             margin-top: 21px;
         }
-    }
-
-    &__meta {
     }
 
     &__select-reg {
@@ -185,5 +194,21 @@
         display: inline-block;
         font-size: 18px;
         margin-bottom: 20px;
+    }
+
+    &__label-wrap {
+        margin-top: 10px;
+
+        .tag {
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+    }
+
+    &__card-wrap {
+
+        @media (max-width: $mobile) {
+            margin-top: 30px;
+        }
     }
 }

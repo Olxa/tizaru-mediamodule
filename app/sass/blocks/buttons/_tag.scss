@@ -30,6 +30,23 @@
     }
 }
 
+/*------------------------------------*\
+  #Тег с крестиком удалить
+\*------------------------------------*/
+
+.tag--del {
+    &::after {
+        content: '\e92b';
+        font-family: 'If';
+        display: inline-block;
+        margin-left: 5px;
+        font-size: 10px;
+    }
+
+    &:hover::after {
+        color: $accent;
+    }
+}
 
 
 
