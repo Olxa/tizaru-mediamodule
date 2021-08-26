@@ -14,8 +14,18 @@
         font-weight: 700;
         line-height: 34px;
 
-        @media (max-width: 991px) {
+        @media (max-width: $tablet-sm) {
             margin-bottom: 30px;
+            margin-top: 20px;
+            text-align: center;
+        }
+    }
+
+    &__total-select {
+        @media (max-width: $tablet-sm) {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
         }
     }
 

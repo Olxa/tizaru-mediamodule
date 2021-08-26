@@ -95,6 +95,14 @@
         }
     }
 
+    &__header {
+        margin-bottom: 30px;
+
+        @media (max-width: $tablet) {
+            margin-bottom: 10px;
+        }
+    }
+
     &__list-sort {
         position: relative;
         min-width: 280px;
