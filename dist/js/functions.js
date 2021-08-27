@@ -373,13 +373,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     //появление футера
-    $(window).scroll(function () {
-        if ($(window).scrollTop() > 120) {
-            $(".footer-sm").addClass('active');
-        } else {
-            $(".footer-sm").removeClass('active');
-        }
-    });
+    //$(window).scroll(function () {
+    //    if ($(window).scrollTop() > 120) {
+    //        $(".footer-sm").addClass('active');
+    //    } else {
+    //        $(".footer-sm").removeClass('active');
+    //    }
+    //});
 
     //Комментарии
     $(".js-show-comment").on('click', function () {
