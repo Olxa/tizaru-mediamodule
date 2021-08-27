@@ -358,7 +358,7 @@ document.addEventListener("DOMContentLoaded", function () {
     $(".js-open-filter").on('click', function () {
         $(".filter-panel__inner").toggleClass('active');
     });
-    
+
     $(".filter-panel__btn-close").on('click', function () {
         $(".filter-panel__inner").removeClass('active');
     });
@@ -413,7 +413,7 @@ document.addEventListener("DOMContentLoaded", function () {
             $(this).text("Свернуть");
             $(this).attr('data-show', "true");
         }
-    });    
+    });
 
     // чат на канале
     $(".js-open-chat").on('click', function () {
@@ -439,34 +439,112 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     $(".js-close-panel").on('click', function () {
-        $(".js-show-panel").show();       
+        $(".js-show-panel").show();
         $(".js-panel").removeClass('active');
     });
 
     //просмотр созданной рекламы
     $('.js-show-rek').click(function () {
         $(this).hide()
-        $(this).closest(".reklam-table__item-panel").find('.js-rek').addClass('active');       
+        $(this).closest(".reklam-table__item-panel").find('.js-rek').addClass('active');
     });
-    $('.js-close-rek').click(function () {       
+    $('.js-close-rek').click(function () {
         $(this).closest(".reklam-table__item-panel").find('.js-rek').removeClass('active')
         $(this).closest(".reklam-table__item-panel").find('.js-show-rek').show();
     });
 
-    $('#bottom-static').on('click', function () {
-        if ($(this).prop('checked') === true) {
-            $(".reklam-banner").removeClass('active');
-            $(".js-banner-bottom-static").addClass('active');
-        }
-    })
 
-    $('#bottom-media').on('click', function () {
-        if ($(this).prop('checked') === true) {
-            $(".reklam-banner").removeClass('active');
-            $(".js-banner-bottom-media").addClass('active');
-        }
-    })
+    //переключение баннеров   
 
+    //$('input[type=radio]').change(function () {
+    //    if ($('#bottom-static').is(':checked')) {
+    //        $(".reklam-banner").removeClass('active');
+    //        $(".js-banner-bottom-static").addClass('active');
+    //    }
+    //});
+
+    //$('input[type=radio]').change(function () {
+    //    if ($('#bottom-media').is(':checked')) {
+    //        $(".reklam-banner").removeClass('active');
+    //        $(".js-banner-bottom-media").addClass('active');
+    //    }
+    //});
+
+    $('.js-banner-bottom').click(function () {
+        $('input[type=radio]').change(function () {
+            if ($('#bottom-static').is(':checked')) {
+                $(".js-banner-bottom .reklam-banner").removeClass('active');
+                $(".js-banner-bottom-static").addClass('active');
+            }
+            if ($('#bottom-media').is(':checked')) {
+                $(".js-banner-bottom .reklam-banner").removeClass('active');
+                $(".js-banner-bottom-media").addClass('active');
+            }
+        });
+    });
+
+    $('.js-banner-right').click(function () {
+        $('input[type=radio]').change(function () {
+            if ($('#right-static').is(':checked') && $('#right-big').is(':checked')) {
+                $(".js-banner-right .reklam-banner").removeClass('active');
+                $(".js-banner-right-static-big").addClass('active');
+            }
+            if ($('#right-static').is(':checked') && $('#right-sm').is(':checked')) {
+                $(".js-banner-right .reklam-banner").removeClass('active');
+                $(".js-banner-right-static-sm").addClass('active');
+            }
+            if ($('#right-media').is(':checked') && $('#right-big').is(':checked')) {
+                $(".js-banner-right .reklam-banner").removeClass('active');
+                $(".js-banner-right-media-big").addClass('active');
+            }
+            if ($('#right-media').is(':checked') && $('#right-sm').is(':checked')) {
+                $(".js-banner-right .reklam-banner").removeClass('active');
+                $(".js-banner-right-media-sm").addClass('active');
+            }
+        });
+    });
+
+    //$('#bottom-static').on('click', function () {
+    //    if ($(this).prop('checked') === true) {
+    //        $(".reklam-banner").removeClass('active');
+    //        $(".js-banner-bottom-static").addClass('active');
+    //    }
+    //})
+
+    //$('#bottom-media').on('click', function () {
+    //    if ($(this).prop('checked') === true) {
+    //        $(".reklam-banner").removeClass('active');
+    //        $(".js-banner-bottom-media").addClass('active');
+    //    }
+    //})
+
+    //$('input[type=radio]').change(function () {
+    //    if ($('#right-static').is(':checked') && $('#right-big').is(':checked')) {
+    //        $(".reklam-banner").removeClass('active');
+    //        $(".js-banner-right-static-big").addClass('active');
+    //    }
+    //});
+
+    //$('input[type=radio]').change(function () {
+    //    if ($('#right-static').is(':checked') && $('#right-sm').is(':checked')) {
+    //        $(".reklam-banner").removeClass('active');
+    //        $(".js-banner-right-static-sm").addClass('active');
+    //    }
+    //});
+
+    //$('input[type=radio]').change(function () {
+    //    if ($('#right-media').is(':checked') && $('#right-big').is(':checked')) {
+    //        $(".reklam-banner").removeClass('active');
+    //        $(".js-banner-right-media-big").addClass('active');
+    //    }
+    //});
+
+    //$('input[type=radio]').change(function () {
+    //    if ($('#right-media').is(':checked') && $('#right-sm').is(':checked')) {
+    //        $(".reklam-banner").removeClass('active');
+    //        $(".js-banner-right-media-sm").addClass('active');
+    //    }
+    //});
 
     //Mobil filter
 
@@ -593,7 +671,7 @@ $(document).on('mouseup', function (e) {
     if (!hsm.is(e.target) && add_reply.has(e.target).length === 0) {
         add_reply.removeClass('active');
     }
-    
+
     let share = $('.share-popup');
     if (!hsm.is(e.target) && share.has(e.target).length === 0) {
         share.removeClass('active');

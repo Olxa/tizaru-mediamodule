@@ -1,0 +1,357 @@
+<div class="reklam-add js-panel <!--#echo var=" reklam-add" -->
+    ">
+    <h1 class="reklam-add__title page-title">Добавить баннер</h1>
+    <div class="reklam-add__panel">
+        <div class="reklam-add__panel-close i-close js-close-panel"></div>
+        <div class="reklam-add__panel-content">
+            <ul class="tabs tabs__nav-list reklam-add__tab" data-tabgroup="feed-content">
+                <li class="tabs__nav"><a class="tabs__nav-link tabs__nav-link--simple active" href="#lent">В ленте</a></li>
+                <li class="tabs__nav"><a class="tabs__nav-link tabs__nav-link--simple" href="#bottom">В публикациях, каталоге (снизу)</a></li>
+                <li class="tabs__nav"><a class="tabs__nav-link tabs__nav-link--simple" href="#right">В публикациях, каталоге (сбоку)</a></li>
+            </ul>
+            <div id="feed-content" class="tabgroup">
+                <div class="tabgroup__item media-feed__content" id="lent">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-6">
+                            <div class="row">
+                                <div class="col-12 reklam-add__panel-row">
+                                    <div class="input-wrap">
+                                        <label class="input-wrap__label">Название (видно только вам)<input class="input" type="text"></label>
+                                    </div>
+                                </div>
+                                <div class="col-12 reklam-add__panel-row">
+                                    <a class="reklam-add__select-reg btn btn-conture btn--full btn--md popup-link" href="#region-select">Выбрать регионы показа</a>
+                                    <div class="reklam-add__select-reg--mob">
+                                        <div class="reklam-add__select-title">Регион показа</div>
+                                        <!--#include virtual="/parts/city-mobil.html" -->
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-md-7 reklam-add__panel-row">
+                                    <label class="input-wrap__label">Страница</label>
+                                    <div class="dropdown dropdown--input js-dropdown-toogle">
+                                        <button class="dropdown__value" type="button"><span class="dropdown__value-inner">В сообществе</span></button>
+                                        <div class="dropdown__list scroll-gray">
+                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">На главной</a></div>
+                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">В общей ленте</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-5 reklam-add__panel-row">
+                                    <label class="input-wrap__label">Ряд показа</label>
+                                    <div class="dropdown dropdown--input js-dropdown-toogle">
+                                        <button class="dropdown__value" type="button"><span class="dropdown__value-inner">2</span></button>
+                                        <div class="dropdown__list scroll-gray">
+                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">4</a></div>
+                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">6</a></div>
+                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">8</a></div>
+                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">10</a></div>
+                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">12</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 reklam-add__panel-row">
+                                    <label class="input-wrap__label">Сообщество</label>
+                                    <div class="dropdown dropdown--input js-dropdown-toogle">
+                                        <button class="dropdown__value" type="button"><span class="dropdown__value-inner"></span></button>
+                                        <div class="dropdown__list scroll-gray">
+                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Название сообщества</a></div>
+                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Название сообщества</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="reklam-add__label-wrap">
+                                        <button class="tag tag--del" type="button">IT</button>
+                                        <button class="tag tag--del" type="button">Программирование</button>
+                                        <button class="tag tag--del" type="button">Спорт</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 reklam-add__panel-row">
+                                    <label class="input-wrap__label">Показывать</label>
+                                    <div class="input-date__wrap">
+                                        <label class="input-date__label">с</label>
+                                        <input class="input input-date" type="date">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 reklam-add__panel-row reklam-add__panel-row--magrin">
+                                    <div class="input-date__wrap">
+                                        <label class="input-date__label">по</label>
+                                        <input class="input input-date" type="date">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 offset-lg-2 col-md-6 reklam-add__card-wrap">
+                            <div class="row">
+                                <div class="col-12 reklam-add__panel-row">
+                                    <div class="input-wrap">
+                                        <label class="input-wrap__label">Ссылка на ваш сайт<input class="input" type="text"></label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="reklam-add__banner-card banner-card panel">
+                                        <div class="banner-card__header">
+                                            <div class="banner-card__info">
+                                                <label class="input__file-button banner-card__logo">
+                                                    <input name="file" type="file" class="input-file" multiple="">
+                                                    <span class="file-photo__file-button file-photo__file-button--circle i-camera"></span>
+                                                </label>
+                                                <!--<label class="input__file-button banner-card__logo">
+                                                    <input name="file" type="file" class="input-file" multiple="">
+                                                    <span class="file-photo__file-button file-photo__file-button--circle">
+                                                        <img src="images/dist/or2.jpg" alt="название фото">
+                                                    </span>
+                                                </label>-->
+                                                <input class="input input--empty banner-card__name" placeholder="Название компании" type="text">
+                                            </div>
+                                            <div class="btn btn-accent btn--sm">Подробнее</div>
+                                        </div>
+                                        <label class="banner-card__img upload-image">
+                                            <input name="file" type="file" class="upload-image__file" multiple="">
+                                            <span class="upload-image__label upload-image__label--gray i-image-file">Выбрать изображение</span>
+                                        </label>
+                                        <!--<label class="banner-card__img upload-image">
+                                            <input name="file" type="file" class="upload-image__file" multiple="">
+                                            <img class="upload-image__label upload-image__label--img" src="images/dist/chanel.jpg" alt="Название файла" />
+                                            <button class="upload-image__added-del btn-unstylling i-clear" title="удалить"></button>
+                                        </label>-->
+                                        <div class="banner-card__content">
+                                            <input class="input input--empty input--bold" placeholder="Введите заголовок" type="text">
+                                            <textarea class="textarea input--empty" placeholder="Введите описание"></textarea>
+                                        </div>
+                                        <div class="banner-card__bottom">
+                                            <div class="post-card__country"><img class="post-card__country-flag" src="images/dist/flag/ru-reg.svg" alt="Россия"></div>
+                                            <div class="banner-card__btns">
+                                                <span class="banner-card__btn i-share-big"></span>
+                                                <span class="banner-card__btn i-dislike"></span>
+                                                <span class="banner-card__btn i-like"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabgroup__item media-feed__content js-banner-bottom" id="bottom">
+                    <div class="row">
+                        <div class="col-12 reklam-add__panel-row">
+                            <div class="reklam-add__title-group">Тип баннера</div>
+                            <div class="reklam-add__radio-group">
+                                <div class="radio">
+                                    <input class="radio__field" id="bottom-static" type="radio" name="type-banner-bottom" checked>
+                                    <label class="radio__value" for="bottom-static">Статичный</label>
+                                </div>
+                                <div class="radio">
+                                    <input class="radio__field" id="bottom-media" type="radio" name="type-banner-bottom">
+                                    <label class="radio__value" for="bottom-media">Медийный</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-6">
+                            <div class="row">
+                                <div class="col-12 reklam-add__panel-row">
+                                    <div class="input-wrap">
+                                        <label class="input-wrap__label">Название (видно только вам)<input class="input" type="text"></label>
+                                    </div>
+                                </div>
+                                <div class="col-12 reklam-add__panel-row">
+                                    <label class="input-wrap__label">Сообщество</label>
+                                    <div class="dropdown dropdown--input js-dropdown-toogle">
+                                        <button class="dropdown__value" type="button"><span class="dropdown__value-inner"></span></button>
+                                        <div class="dropdown__list scroll-gray">
+                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Название сообщества</a></div>
+                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Название сообщества</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="reklam-add__label-wrap">
+                                        <button class="tag tag--del" type="button">IT</button>
+                                        <button class="tag tag--del" type="button">Программирование</button>
+                                        <button class="tag tag--del" type="button">Спорт</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 offset-lg-2 col-md-6 reklam-add__card-wrap">
+                            <div class="row">
+                                <div class="col-12 reklam-add__panel-row reklam-add__panel-row--magrin">
+                                    <a class="reklam-add__select-reg btn btn-conture btn--full btn--md popup-link" href="#region-select">Выбрать регионы показа</a>
+                                    <div class="reklam-add__select-reg--mob">
+                                        <div class="reklam-add__select-title">Регион показа</div>
+                                        <!--#include virtual="/parts/city-mobil.html" -->
+                                    </div>
+                                </div>
+                                <div class="col-md-6 reklam-add__panel-row">
+                                    <label class="input-wrap__label">Показывать</label>
+                                    <div class="input-date__wrap">
+                                        <label class="input-date__label">с</label>
+                                        <input class="input input-date" type="date">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 reklam-add__panel-row reklam-add__panel-row--magrin">
+                                    <div class="input-date__wrap">
+                                        <label class="input-date__label">по</label>
+                                        <input class="input input-date" type="date">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 reklam-add__banner reklam-add__banner--bottom reklam-banner active js-banner-bottom-static">
+                            <div class="reklam-add__title-group">Изображение <span class="reklam-add__meta-group">(рекомендуемый размер 960 x 250)</span></div>
+                            <label class="banner-card__img banner-card__img--bottom upload-image">
+                                <input name="file" type="file" class="upload-image__file" multiple="">
+                                <span class="upload-image__label i-image-file">Выбрать изображение</span>
+                            </label>
+                            <a class="reklam-add__request" href="banner-request.html" target="_blank">Требования к баннерам</a>
+                        </div>
+                        <div class="col-12 reklam-add__banner reklam-add__banner--bottom reklam-banner js-banner-bottom-media">
+                            <div class="reklam-add__title-group">Загрузите архив с кодом банера  </div>
+                            <label class="banner-card__img banner-card__img--bottom upload-image">
+                                <input name="file" type="file" class="upload-image__file" multiple="">
+                                <span class="upload-image__label i-upload">Выбрать файл</span>
+                            </label>
+                            <!--<label class="banner-card__img banner-card__img--bottom upload-image">
+                                <input name="file" type="file" class="upload-image__file" multiple="">
+                                <img class="upload-image__label upload-image__label--img" src="images/dist/chanel.jpg" alt="Название файла" />
+                                <button class="upload-image__added-del btn-unstylling i-clear" title="удалить"></button>
+                            </label>-->
+                            <a class="reklam-add__request" href="banner-request.html" target="_blank">Требования к баннерам</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabgroup__item media-feed__content js-banner-right" id="right">
+                    <div class="row">
+                        <div class="col-12 reklam-add__panel-row">
+                            <div class="reklam-add__title-group">Тип баннера</div>
+                            <div class="reklam-add__radio-group">
+                                <div class="radio">
+                                    <input class="radio__field" id="right-static" type="radio" name="type-banner" checked>
+                                    <label class="radio__value" for="right-static">Статичный</label>
+                                </div>
+                                <div class="radio">
+                                    <input class="radio__field" id="right-media" type="radio" name="type-banner">
+                                    <label class="radio__value" for="right-media">Медийный</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-6">
+                            <div class="row">
+                                <div class="col-12 reklam-add__panel-row">
+                                    <div class="input-wrap">
+                                        <label class="input-wrap__label">Название (видно только вам)<input class="input" type="text"></label>
+                                    </div>
+                                </div>
+                                <div class="col-12 reklam-add__panel-row">
+                                    <a class="reklam-add__select-reg btn btn-conture btn--full btn--md popup-link" href="#region-select">Выбрать регионы показа</a>
+                                    <div class="reklam-add__select-reg--mob">
+                                        <div class="reklam-add__select-title">Регион показа</div>
+                                        <!--#include virtual="/parts/city-mobil.html" -->
+                                    </div>
+                                </div>
+                                <div class="col-12 reklam-add__panel-row">
+                                    <label class="input-wrap__label">Сообщество</label>
+                                    <div class="dropdown dropdown--input js-dropdown-toogle">
+                                        <button class="dropdown__value" type="button"><span class="dropdown__value-inner"></span></button>
+                                        <div class="dropdown__list scroll-gray">
+                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Название сообщества</a></div>
+                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Название сообщества</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="reklam-add__label-wrap">
+                                        <button class="tag tag--del" type="button">IT</button>
+                                        <button class="tag tag--del" type="button">Программирование</button>
+                                        <button class="tag tag--del" type="button">Спорт</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 reklam-add__panel-row">
+                                    <label class="input-wrap__label">Показывать</label>
+                                    <div class="input-date__wrap">
+                                        <label class="input-date__label">с</label>
+                                        <input class="input input-date" type="date">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 reklam-add__panel-row reklam-add__panel-row--magrin">
+                                    <div class="input-date__wrap">
+                                        <label class="input-date__label">по</label>
+                                        <input class="input input-date" type="date">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="reklam-add__radio-group reklam-add__radio-group--vtrtical">
+                                        <div class="radio">
+                                            <input class="radio__field" id="right-big" type="radio" name="size-banner" checked>
+                                            <label class="radio__value" for="right-big">Большой (занимает 2 места)</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input class="radio__field" id="right-sm" type="radio" name="size-banner">
+                                            <label class="radio__value" for="right-sm">Маленький (занимает 1 место)</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 offset-lg-2 col-md-6 reklam-add__card-wrap">
+                            <div class="reklam-add__banner reklam-add__banner--right-sm reklam-banner js-banner-right-static-sm">
+                                <div class="reklam-add__title-group">Изображение <span class="reklam-add__meta-group">(рекомендуемый размер 300 x 250)</span></div>
+                                <label class="banner-card__img banner-card__img--right-sm upload-image">
+                                    <input name="file" type="file" class="upload-image__file" multiple="">
+                                    <span class="upload-image__label i-image-file">Выбрать изображение</span>
+                                </label>
+                                <a class="reklam-add__request" href="banner-request.html" target="_blank">Требования к баннерам</a>
+                            </div>
+                            <div class="reklam-add__banner reklam-add__banner--right-sm reklam-banner js-banner-right-media-sm">
+                                <div class="reklam-add__title-group">Загрузите архив с кодом банера</div>
+                                <label class="banner-card__img banner-card__img--right-sm upload-image">
+                                    <input name="file" type="file" class="upload-image__file" multiple="">
+                                    <span class="upload-image__label i-upload">Выбрать файл</span>
+                                </label>
+                                <a class="reklam-add__request" href="banner-request.html" target="_blank">Требования к баннерам</a>
+                            </div>
+
+                            <div class="reklam-add__banner reklam-add__banner--right-big reklam-banner active js-banner-right-static-big">
+                                <div class="reklam-add__title-group">Изображение <span class="reklam-add__meta-group">(рекомендуемый размер 300 x 600)</span></div>
+                                <label class="banner-card__img banner-card__img--right-big upload-image">
+                                    <input name="file" type="file" class="upload-image__file" multiple="">
+                                    <span class="upload-image__label i-image-file">Выбрать изображение</span>
+                                </label>
+                                <a class="reklam-add__request" href="banner-request.html" target="_blank">Требования к баннерам</a>
+                            </div>
+                            <div class="reklam-add__banner reklam-add__banner--right-big reklam-banner js-banner-right-media-big">
+                                <div class="reklam-add__title-group">Загрузите архив с кодом банера</div>
+                                <!--<label class="banner-card__img banner-card__img--right-big upload-image">
+                                    <input name="file" type="file" class="upload-image__file" multiple="">
+                                    <span class="upload-image__label i-upload">Выбрать файл</span>
+                                </label>-->
+                                <label class="banner-card__img  banner-card__img--right-big upload-image">
+                                    <input name="file" type="file" class="upload-image__file" multiple="">
+                                    <img class="upload-image__label upload-image__label--img" src="images/dist/banner-right.jpg" alt="Название файла" />
+                                    <button class="upload-image__added-del btn-unstylling i-clear" title="удалить"></button>
+                                </label>
+                                <a class="reklam-add__request" href="banner-request.html" target="_blank">Требования к баннерам</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="reklam-add__panel-bottom">
+            <div class="checkbox reklam-add__agree">
+                <input class="checkbox__field" id="chek1" type="checkbox" checked="">
+                <label class="checkbox__value" for="chek1">
+                    Согласен  с условиями <br /><a href="terms-of-use.html">пользовательского соглашения</a>
+                </label>
+            </div>
+            <div class="reklam-add__price">
+                <span class="reklam-add__price-val"><span class="reklam-add__price-title">Стоимость размещения</span>5 000 &#8381;</span>
+                <a href="pro-account.html" class="reklam-add__price-pro">4 500 &#8381; с <span class="text-accent">PRO</span></a>
+            </div>
+            <div class="reklam-add__pay">
+                <a class="btn btn-accent btn--sm" href="#">Оплатить</a>
+                <div class="dropdown js-dropdown-toogle">
+                    <button class="dropdown__value" type="button">Деньгами</button>
+                    <div class="dropdown__list scroll-gray">
+                        <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Баллами</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

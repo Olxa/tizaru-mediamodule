@@ -2,7 +2,7 @@
     width: 100%;
     max-width: 400px;
     margin: 0 auto;
-    cursor: default;    
+    cursor: default;
 
     &__header {
         display: flex;
@@ -47,6 +47,23 @@
 
         &--bottom {
             max-height: 250px;
+        }
+
+        &--right-sm {
+            max-width: 300px;
+            max-height: 250px;
+        }
+
+        &--right-big {
+            max-width: 300px;
+        }
+
+        max-height: 600px;
+    }
+
+    .upload-image__label {
+        @media (max-width: $mobile) {
+            margin: 0 auto;
         }
     }
 

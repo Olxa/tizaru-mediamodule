@@ -1,6 +1,10 @@
 .reklam-banner {
     display: none;
 
+    @media (max-width: $mobile) {
+        text-align: center;
+    }
+
     &.active {
         display: block;
     }

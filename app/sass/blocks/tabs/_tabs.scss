@@ -43,7 +43,17 @@
             background-color: $accent;
             transition: all .3s linear;
         }
+        &--simple {
+            font-family: $userfont;
+            font-weight: 400;
+            text-transform: initial;
+            letter-spacing: initial;
+            font-size: 16px;
 
+            &.active {
+                color: $accent;
+            }
+        }
         &.active {
             &::before {
                 width: 100%

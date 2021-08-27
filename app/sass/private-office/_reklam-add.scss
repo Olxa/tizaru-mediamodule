@@ -6,31 +6,28 @@
     }
 
     &__tab {
+        margin-bottom: 60px;
+
         @media (max-width: $mobile) {
             flex-wrap: wrap;
             border: 1px solid $border-color;
             border-radius: $border-radius;
+            padding: 10px 5px;
+            margin-bottom: 30px;
         }
 
-        .private-office__tab-item {
+        .tabs__nav {
+            border-bottom: 1px solid $gray;
+            margin-right: 0;
+            padding-right: 35px;
 
             @media (max-width: $mobile) {
                 width: 100%;
                 border-bottom: none;
-                margin-bottom: 10px;
-            }
-        }
-
-        .private-office__tab-link.active {
-            @media (max-width: $mobile) {
-                text-decoration: underline;
             }
 
-
-            &::after {
-                @media (max-width: $mobile) {
-                    display: none;
-                }
+            &:last-child {
+                padding-right: 0;
             }
         }
     }
@@ -68,7 +65,7 @@
 
     &__title-group {
         display: inline-block;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         font-size: 20px;
         cursor: default;
     }
@@ -268,6 +265,10 @@
         .checkbox {
             margin-right: 60px;
         }
+
+        &--vtrtical {
+            flex-direction: column;
+        }
     }
 
     &__banner {
@@ -276,6 +277,25 @@
 
             .upload-image__label {
                 min-height: 250px;
+                max-height: 250px;
+            }
+        }
+
+        &--right-sm {
+
+            .upload-image__label {
+                width: 300px;
+                min-height: 250px;
+                max-height: 250px;
+            }
+        }
+
+        &--right-big {
+
+            .upload-image__label {
+                width: 300px;
+                min-height: 600px;
+                max-height: 600px;
             }
         }
     }

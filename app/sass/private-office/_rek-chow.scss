@@ -6,7 +6,7 @@
     &__content {
         display: flex;
         justify-content: space-between;
-        padding: 15px 20px;
+        padding: 30px 20px;
 
         @media (max-width: $mobile) {
             flex-wrap: wrap;
@@ -47,5 +47,29 @@
         padding: 15px 20px;
         background: $white;
         text-align: right;
+    }
+
+    &__banner-wrap {
+        padding: 0 20px 15px 20px;
+    }
+
+    &__banner {
+        object-fit: cover;
+        object-position: top center;
+
+        &--bottom {
+            width: 100%;
+            height: 250px;
+        }
+
+        &--sm {
+            width: 300px;
+            height: 250px;
+        }
+
+        &--big {
+            width: 300px;
+            height: 600px;
+        }
     }
 }

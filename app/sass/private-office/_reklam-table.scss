@@ -157,8 +157,6 @@
         width: 100%;
 
         @media (max-width: $laptop) {
-            flex-direction: column;
-            align-items: flex-start;
             font-size: 14px;
         }
 

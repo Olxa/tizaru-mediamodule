@@ -28,7 +28,9 @@ function browsersync() {
             baseDir: 'app/',
             middleware: bssi({ baseDir: 'app/', ext: '.html' })
         },
-        tunnel: 'yousutename', // Attempt to use the URL https://yousutename.loca.lt
+       // tunnel: 'yousutename', // Attempt to use the URL https://yousutename.loca.lt
+        host: 'localhost', //добавила
+        port: 3000, //добавила
         notify: false,
         online: true
     })
