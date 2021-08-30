@@ -1,0 +1,67 @@
+.press-service {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 40px 20px;
+
+    @media (max-width: $tablet) {
+        display: block;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    &__info {
+
+        @media (max-width: $tablet) {
+            margin-bottom: 60px;
+            padding: 20px 10px;
+            border-radius: $border-radius;
+            box-shadow: $shadow1;
+        }
+    }
+
+    &__title {
+        display: block;
+        margin-bottom: 15px;
+        font-family: $userfont-sbold;
+        font-weight: 600;
+        font-size: 20px;
+
+        @media (max-width: $mobile) {
+            text-align: center;
+            font-size: 18px;
+        }
+    }
+
+    &__mail {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+
+        @media (max-width: $mobile) {
+            justify-content: center;
+        }
+
+        &::before {
+            color: $accent;
+            margin-right: 10px;
+        }
+    }
+
+    &__sub {
+        margin: 0;
+        font-size: 16px;
+    }
+
+    &__sub-mail {
+        margin: 0;
+        color: $color-second;
+    }
+
+    &__visual {
+        max-width: 370px;
+        padding-left: 20px;
+    }
+}
