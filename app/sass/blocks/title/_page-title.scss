@@ -74,6 +74,13 @@
     }
 }
 
+.company-page__header {
+
+    &--m-bottom {
+        margin-bottom: 60px;
+    }
+}
+
 .alert-wrap {
     display: flex;
     align-items: center;
