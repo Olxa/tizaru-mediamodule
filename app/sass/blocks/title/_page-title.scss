@@ -78,6 +78,10 @@
 
     &--m-bottom {
         margin-bottom: 60px;
+
+        @media (max-width: $tablet) {
+            margin-bottom: 30px;
+        }
     }
 }
 
