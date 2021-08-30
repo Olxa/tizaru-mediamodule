@@ -1,0 +1,101 @@
+.agency {
+    position: relative;
+    padding-top: 60px;
+
+    @media (max-width: $tablet) {
+        padding-top: 30px;
+    }
+
+    &__btn-mob {
+        display: none;
+        margin: 20px auto 0;
+
+        @media (max-width: $tablet) {
+            display: block;
+        }
+    }
+
+    .filter-panel__btn-open {
+        @media (max-width: $tablet) {
+            position: absolute;
+            right: 15px;
+            top: -30px;
+        }
+    }
+
+    .search-filter__panel {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    &__group {
+        margin-bottom: 100px;
+    }
+
+    &__group-title {
+        margin-bottom: 30px;
+    }
+
+    &__flag {
+        display: inline-block;
+        margin-right: 10px;
+        width: 22px;
+        min-width: 22px;
+        height: 15px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    &__country-val {
+        font-size: 20px;
+        color: $textcolor;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+        grid-gap: 1rem;
+        grid-column-gap: 15px;
+        grid-row-gap: 20px;
+
+        @media (max-width: $tablet) {
+            grid-template-columns: repeat(auto-fit,minmax(290px,1fr));
+        }
+
+        @media (max-width: $mobile) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__card {
+        display: inline-block;
+        padding: 40px;
+        cursor: default;
+
+        @media (max-width: $tablet) {
+            padding: 20px;
+        }
+    }
+
+    &__city {
+        display: block;
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-family: $userfont-bold;
+        font-weight: 700;
+
+        @media (max-width: $tablet) {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+
+    &__mail {
+        font-size: 18px;
+        color: $gray;
+
+        &:hover {
+            color: $accent;
+        }
+    }
+}
