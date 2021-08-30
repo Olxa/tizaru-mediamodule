@@ -1,0 +1,127 @@
+.banner-request {
+    position: relative;
+
+    .tools-popup__btn {
+        display: none;
+
+        @media (max-width: $tablet) {
+            display: block;
+        }
+    }
+
+    &__page-title {
+
+        @media (max-width: 470px) {
+           max-width: 300px;
+        }
+    }
+
+    &__descr {
+        max-width: 690px;
+
+        .table {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__descr-block {
+        margin-bottom: 60px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__descr-title {
+        display: inline-block;
+        margin-bottom: 20px;
+        font-family: $userfont-sbold;
+        font-weight: 600;
+        font-size: 30px;
+
+        @media (max-width: $tablet) {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+    }
+
+    &__descr-txt {
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 30px;
+
+        @media (max-width: $tablet) {
+            font-size: 16px;
+        }
+    }
+
+    &__sidebar {
+        position: relative;
+
+        @media (max-width: $tablet) {
+            position: absolute;
+            right: 15px;
+            top: -60px;
+        }
+
+        @media (max-width: 470px) {
+            top: -80px;
+        }
+
+        .tools-popup__btn {
+
+            @media (max-width: $tablet) {
+                margin-left: auto;
+            }
+        }
+    }
+
+    &__panel {
+        display: block;
+        position: sticky;
+        top: 20px;
+        width: 100%;
+        max-width: 350px;
+        padding: 30px 40px;
+
+        @media (max-width: $tablet) {
+            display: none;
+            position: initial;
+            margin-left: auto;
+        }
+    }
+
+    &__nav-header {
+        display: inline-block;
+        margin-bottom: 30px;
+        font-family: $userfont-bold;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    &__nav-group {
+        margin-bottom: 30px;
+    }
+
+    &__nav-title {
+        display: inline-block;
+        margin-bottom: 20px;
+        font-family: $userfont-bold;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    &__nav {
+        margin-bottom: 30px;
+    }
+
+    &__nav-item {
+    }
+
+    &__nav-link {
+        display: inline-block;
+        margin-bottom: 15px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
