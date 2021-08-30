@@ -1,0 +1,75 @@
+<!--#set var="title" value="Вакансии | Tizaru" -->
+<!--#include virtual="/parts/header-company.html" -->
+<div class="company-page">
+    <div class="container">
+        <nav aria-label="breadcrumb company-page__breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Главная</a></li>
+                <li class="breadcrumb__item active" aria-current="page">Вакансии</li>
+            </ol>
+        </nav>
+        <h1 class="page-title">Вакансии Tizaru</h1>
+        <div class="row vacansy">
+            <aside class="col-xl-3 search-filter">
+                <button class="filter-panel__btn-open i-filter js-open-filter"></button>
+                <div class="search-filter__panel filter-panel__inner">
+                    <div class="search-filter__title">Фильтр вакансий</div>
+                    <form class="form">
+                        <div class="input-wrap">
+                            <div class="input-search">
+                                <input class="input input-search__val" type="text" placeholder="Поиск">
+                                <button class="input-search__btn i-search" type="submit">Поиск</button>
+                            </div>
+                        </div>
+                        <div class="input-wrap">
+                            <label class="input-wrap__label">Специальность</label>
+                            <div class="dropdown dropdown--input js-dropdown-toogle">
+                                <button class="dropdown__value" type="button"><span class="dropdown__value-inner"></span></button>
+                                <div class="dropdown__list scroll-gray">
+                                    <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Backend</a></div>
+                                    <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Frontend</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-wrap">
+                            <label class="input-wrap__label">Страна</label>
+                            <div class="dropdown dropdown--input js-dropdown-toogle">
+                                <button class="dropdown__value" type="button"><span class="dropdown__value-inner"></span></button>
+                                <div class="dropdown__list scroll-gray">
+                                    <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Россия</a></div>
+                                    <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Франция</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-wrap">
+                            <label class="input-wrap__label">Город</label>
+                            <div class="dropdown dropdown--input js-dropdown-toogle">
+                                <button class="dropdown__value" type="button"><span class="dropdown__value-inner"></span></button>
+                                <div class="dropdown__list scroll-gray">
+                                    <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Москва</a></div>
+                                    <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Калининград</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-wrap">
+                            <div class="checkbox">
+                                <input class="checkbox__field" id="remote" type="checkbox">
+                                <label class="checkbox__value" for="remote">Удаленная работа</label>
+                            </div>
+                        </div>
+                        <div class="vacansy__filter-btn">
+                            <button class="link link-accent link--border" type="reset">Сбросить фильтр</button>
+                            <button class="vacansy__btn-mob btn btn-accent btn--md" type="submit">Применить</button>
+                        </div>                      
+                    </form>
+                </div>
+            </aside>
+            <main class="col-xl-9">
+                <p class="no-resilt">
+                    Вакансий не найдено
+                </p>
+            </main>
+        </div>
+    </div>
+</div>
+<!--#include virtual="/parts/footer.html" -->
