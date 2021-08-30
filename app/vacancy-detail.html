@@ -1,0 +1,108 @@
+<!--#set var="title" value="Вакансия | Tizaru" -->
+<!--#include virtual="/parts/header-company.html" -->
+<div class="company-page">
+    <div class="container">
+        <nav aria-label="breadcrumb company-page__breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Главная</a></li>
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Вакансии</a></li>
+                <li class="breadcrumb__item active" aria-current="page">Вакансия</li>
+            </ol>
+        </nav>
+        <div class="vacansy__detail-header">
+            <div class="vacansy__detail-title">
+                <h1 class="page-title">Модератор в отдел продаж</h1>
+                <div class="vacansy__detail-meta-wrap">
+                    <div class="vacansy__country">
+                        <img class="vacansy__flag" src="images/dist/flag/ru-reg.svg" alt="Россия" />
+                        <span class="vacansy__country-val">Россия, Москва</span>
+                    </div>
+                    <span class="vacansy__detail-meta i-mark">Удаленная работа</span>
+                    <span class="vacansy__detail-meta i-portfolio">Модератор</span>
+                </div>
+            </div>
+            <a class="btn btn-accent popup-link" href="#respond">Откликнуться</a>
+        </div>
+
+        <div class="vacansy__detail">
+            <div class="vacansy__detail-block">
+                <h2 class="vacansy__detail-block-title">Задачи</h2>
+                <p class="vacansy__detail-txt">
+                    Laccumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+                </p>
+            </div>
+            <div class="vacansy__detail-block">
+                <h2 class="vacansy__detail-block-title">Требования</h2>
+                <ul class="list-mark vacansy__detail-txt">
+                    <li class="list-mark__item">
+                        Опыт работы с СУБД PostgreSQL и написания SQL-запросов
+                    </li>
+                    <li class="list-mark__item">
+                        Понимание общего устройства БД, логических уровней организации (хранения) данных
+                    </li>
+                    <li class="list-mark__item">
+                        Понимание модели зависимостей между объектами в БД
+                    </li>
+                    <li class="list-mark__item">
+                        Знание принципов механизма разграничения прав доступа в БД
+                    </li>
+                    <li class="list-mark__item">
+                        Опыт работы с операционными системами Linux (серверные платформы
+                    </li>
+                </ul>
+            </div>
+            <div class="vacansy__detail-block">
+                <h2 class="vacansy__detail-block-title">Будет плюсом</h2>
+                <p class="vacansy__detail-txt">
+                    Laccumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+                </p>
+            </div>
+            <div class="vacansy__detail-block">
+                <h2 class="vacansy__detail-block-title">Требования</h2>
+                <ul class="list-mark vacansy__detail-txt">
+                    <li class="list-mark__item">
+                        Работа на общественных началах с возможностью перехода в штат компании после истечении 12 месяцев
+                    </li>
+                    <li class="list-mark__item">
+                        Гибкий график
+                    </li>
+                    <li class="list-mark__item">
+                        Дружный коллектив
+                    </li>
+                </ul>
+            </div>
+            <div class="vacansy__detail-btn">
+                <a class="btn btn-accent popup-link" href="#respond">Откликнуться</a>
+            </div>            
+        </div>
+    </div>
+</div>
+<div id="respond" class="popup popup--padding-sm mfp-hide">
+    <div class="popup__title">Отклик на вакансию</div>
+    <form class="form">
+        <div class="input-wrap">
+            <label class="input-wrap__label">Имя<input class="input" type="text"></label>
+        </div>
+        <div class="input-wrap">
+            <label class="input-wrap__label">E-mail<input class="input" type="email"></label>
+        </div>
+        <div class="input-wrap">
+            <label class="input-wrap__label">Описание<textarea class="textarea"></textarea></label>
+        </div>
+        <div class="input-wrap">
+            <label class="upload-btn">
+                <input name="file" type="file" class="upload-btn__file" multiple="">
+                <span class="upload-btn__label i-upload">Выберите файл</span>
+            </label>
+        </div>
+        <div class="checkbox vacansy__form-agree">
+            <input class="checkbox__field" id="agree" type="checkbox">
+            <label class="checkbox__value" for="agree">Согласен(-на) на обработку данных и с <a href="terms-of-use.html">пользовательским соглашением</a></label>
+        </div>
+        <div class="vacansy__form-btn">
+            <button class="btn btn-accent btn--md" type="button">Отправить</button>
+        </div>
+    </form>
+</div>
+
+<!--#include virtual="/parts/footer.html" -->

@@ -34,10 +34,14 @@
 
     &__list {
         display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(290px,1fr));
+        grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
         grid-gap: 1rem;
         grid-column-gap: 15px;
         grid-row-gap: 20px;
+
+        @media (max-width: $tablet) {
+            grid-template-columns: repeat(auto-fit,minmax(290px,1fr));
+        }
 
         @media (max-width: $mobile) {
             margin-bottom: 30px;
@@ -86,5 +90,114 @@
     &__country-val {
         font-size: 16px;
         color: $gray;
+    }
+
+    &__detail-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 60px;
+
+        @media (max-width: $tablet) {
+            display: block;
+            padding: 15px;
+            margin-bottom: 30px;
+            text-align: center;
+            background-color: #ffffff;
+            border-radius: $border-radius;
+            box-shadow: $shadow1;
+        }
+
+        .btn {
+            @media (max-width: $tablet) {
+                height: 45px;
+                line-height: 33px;
+            }
+
+            @media (max-width: $mobile) {
+                height: 33px;
+                line-height: 22px;
+                padding: 5px 10px;
+                font-size: 14px;
+            }
+        }
+    }
+
+    &__detail-title {
+        padding-right: 20px;
+        text-align: left;
+    }
+
+    &__detail-meta-wrap {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+
+        @media (max-width: $tablet) {
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: $tablet-sm) {
+            display: block;
+        }
+    }
+
+    &__detail-meta {
+        display: inline-block;
+        margin-left: 30px;
+        font-size: 18px;
+        color: $gray;
+
+        @media (max-width: $tablet-sm) {
+            display: block;
+            margin-left: 5px;
+            margin-bottom: 10px;
+        }
+
+        &::before {
+            margin-right: 10px;
+        }
+    }
+
+    &__detail-block {
+        margin-bottom: 60px;
+    }
+
+    &__detail-block-title {
+        margin-bottom: 20px;
+        font-family: $userfont-sbold;
+        font-weight: 600;
+        font-size: 30px;
+
+        @media (max-width: $tablet) {
+            margin-bottom: 10px;
+            font-size: 20px;
+            line-height: 27px;
+        }
+    }
+
+    &__detail-txt {
+        font-size: 18px;
+        line-height: 30px;
+
+        @media (max-width: $tablet) {
+            font-size: 16px;
+            line-height: 28px;
+        }
+    }
+
+    &__detail-btn {
+        text-align: center;
+    }
+
+    &__form-btn {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    &__form-agree {
+        .checkbox__value {
+            font-size: 12px;
+        }
     }
 }
