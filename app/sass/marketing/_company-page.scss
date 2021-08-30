@@ -79,6 +79,10 @@
         margin: 0 auto;
     }
 
+    &__content--md {
+        max-width: 875px;
+    }
+
     &__content--team {
         padding-top: 75px;
     }
