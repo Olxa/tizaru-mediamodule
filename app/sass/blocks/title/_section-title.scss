@@ -1,0 +1,24 @@
+.section-title {
+    font-family: $userfont-bold;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 38px;
+
+    @media (max-width: $laptop) {
+        font-size: 25px;
+        line-height: 28px;
+    }
+
+    @media (max-width: $tablet) {
+        font-size: 20px;
+    }
+
+    &--thin {
+        font-family: $userfont-sbold;
+        font-weight: 600;
+    }
+
+    &--margin {
+        margin-bottom: 20px;
+    }
+}

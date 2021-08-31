@@ -1,0 +1,33 @@
+.party {
+
+    &__slider {
+        margin-bottom: 100px;
+    }
+
+    &__slider-item {
+        display: flex;
+        align-items: center;
+    }
+
+    &__slider-info {
+        width: 60%;
+        max-width: 650px;
+        padding-right: 20px;
+    }
+
+    &__slider-title {
+        margin-bottom: 60px;
+    }
+
+    &__slider-descr {
+        margin-bottom: 30px;
+    }
+
+    &__slider-btn {
+        max-width: 285px;
+    }
+
+    &__slider-img {
+        width: 40%;
+    }
+}

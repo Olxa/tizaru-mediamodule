@@ -93,6 +93,8 @@
     }
 }
 
+
+//Маленькие стрелки
 .slider--sm {
     .slick-arrow {
         top: calc(50% - 20px);
@@ -113,6 +115,36 @@
         }
     }
 }
+
+
+//Простые стрелки (без окантовки)
+.slider--simple {
+    margin-left: 0;
+    margin-right: 0;
+
+    .slick-arrow {
+        top: calc(50% - 20px);
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        color: $gray;
+        box-shadow: none;
+
+
+        &::before {
+            font-size: 25px;
+        }
+    }
+
+    .slick-prev {
+        left: 0;
+    }
+
+    .slick-next {
+        right: 0;
+    }
+}
+
 
 .slick-dots {
     list-style: none;

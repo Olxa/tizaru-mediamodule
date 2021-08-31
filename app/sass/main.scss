@@ -99,6 +99,7 @@
 // == title ==
 @import "blocks/title/title-block";
 @import "blocks/title/page-title";
+@import "blocks/title/section-title";
 
 // == slider ==
 @import "blocks/slider/slider";
@@ -277,6 +278,8 @@
 @import "marketing/visual";
 @import "marketing/pro-account";
 @import "marketing/users-flip";
+@import "marketing/party";
+@import "marketing/img-author";
 
 // == sections ==
 @import "sections/section";

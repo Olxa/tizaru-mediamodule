@@ -34,6 +34,17 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
     });
 
+    //Простой слайдер (один слайд, простые стрелки)
+    $('.js-simple-slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        cssEase: 'linear',
+        autoplay: true,
+        autoplaySpeed: 10000
+    });
+
 
     //Карусель потфолио на странице организации
     $('.content-carusel-3').slick({
