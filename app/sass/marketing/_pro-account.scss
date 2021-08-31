@@ -1,0 +1,202 @@
+.pro-account {
+    &__header {
+        padding: 70px 0 60px;
+        margin: 0 auto;
+        max-width: 600px;
+        text-align: center;
+
+        @media (max-width: $mobile) {
+            padding-top: 30px;
+        }
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    &__label {
+        padding: 3px 17px;
+        font-family: $userfont-sbold;
+        font-weight: 600;
+        color: $accent;
+        font-size: 12px;
+        text-transform: uppercase;
+        border: 1px solid $accent;
+        border-radius: $border-radius;
+    }
+
+    &__page-title {
+        margin: 0 0 0 20px;
+    }
+
+    &__descr {
+        font-size: 18px;
+
+        @media (max-width: $mobile) {
+            font-size: 16px;
+        }
+    }
+
+    &__panel {
+        padding: 60px 20px;
+
+        @media (max-width: $mobile) {
+            padding: 20px 10px;
+        }
+    }
+
+    &__profit-list {
+        max-width: 580px;
+        margin: 0 auto;
+    }
+
+    &__profit-item {
+        position: relative;
+        padding-left: 70px;
+        margin-bottom: 30px;
+
+        @media (max-width: $mobile) {
+            padding-left: 40px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background: url(/images/dist/icon/tiz-list-item.svg) no-repeat center;
+            background-size: contain;
+
+            @media (max-width: $mobile) {
+                width: 30px;
+                height: 30px;
+                top: calc(50% - 15px);
+            }
+        }
+    }
+
+    &__profit-title {
+        display: inline-block;
+        margin-bottom: 5px;
+        font-family: $userfont-sbold;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 27px;
+
+        @media (max-width: $mobile) {
+            font-size: 16px;
+        }
+    }
+
+    &__profit-descr {
+        font-size: 16px;
+        margin: 0;
+
+        @media (max-width: $mobile) {
+            font-size: 14px;
+        }
+    }
+
+    &__pay-btns {
+        max-width: 400px;
+        margin: 60px auto 100px;
+        text-align: center;
+
+        .btn {
+            margin-bottom: 30px;
+        }
+
+        .link {
+            font-size: 16px;
+        }
+    }
+
+    &__pay-form {
+        max-width: 300px;
+        margin: 0 auto;
+
+        @media (max-width: $mobile-sm) {
+            max-width: 100%;
+        }
+    }
+
+    &__user-info {
+        display: flex;
+        align-items: center;
+        margin: 5px 0 0;
+    }
+
+    &__logo {
+        width: 50px;
+        min-width: 50px;
+        height: 50px;
+        margin-right: 20px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    &__user-name {
+        font-size: 20px;
+    }
+
+    &__switch {
+        margin-top: 6px;
+        margin-bottom: 30px;
+    }
+
+    &__agree {
+        display: inline-block;
+        margin-bottom: 20px;
+        font-size: 12px;
+        color: $gray;
+    }
+
+    &__pay-link {
+        display: block;
+        margin: 0 0 30px;
+        font-size: 16px;
+        text-decoration: underline;
+        text-align: center;
+    }
+
+    &__users {
+    }
+
+    &__users-title {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    &__users-descr {
+        display: inline-block;
+        margin-bottom: 60px;
+    }
+
+    &__users-panel {
+        padding: 15px;
+    }
+
+    &__users-subtitle {
+        display: inline-block;
+        margin-bottom: 10px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    &__users-list {
+    }
+
+    &__more-btn {
+        padding: 30px 0 20px;
+        text-align: center;
+    }
+}

@@ -504,47 +504,15 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    //$('#bottom-static').on('click', function () {
-    //    if ($(this).prop('checked') === true) {
-    //        $(".reklam-banner").removeClass('active');
-    //        $(".js-banner-bottom-static").addClass('active');
-    //    }
-    //})
+    //карточки перевертыши   
+    var max = $('.users-flip__card').length;
+    setInterval(function () {
+        var min = 1;
+        randomLi = Math.floor(Math.random() * (max - min + 1)) + min;
+        $('.users-flip__card.active').removeClass('active');
+        $('.users-flip__card').eq(randomLi - 1).addClass('active');
+    }, 1000);
 
-    //$('#bottom-media').on('click', function () {
-    //    if ($(this).prop('checked') === true) {
-    //        $(".reklam-banner").removeClass('active');
-    //        $(".js-banner-bottom-media").addClass('active');
-    //    }
-    //})
-
-    //$('input[type=radio]').change(function () {
-    //    if ($('#right-static').is(':checked') && $('#right-big').is(':checked')) {
-    //        $(".reklam-banner").removeClass('active');
-    //        $(".js-banner-right-static-big").addClass('active');
-    //    }
-    //});
-
-    //$('input[type=radio]').change(function () {
-    //    if ($('#right-static').is(':checked') && $('#right-sm').is(':checked')) {
-    //        $(".reklam-banner").removeClass('active');
-    //        $(".js-banner-right-static-sm").addClass('active');
-    //    }
-    //});
-
-    //$('input[type=radio]').change(function () {
-    //    if ($('#right-media').is(':checked') && $('#right-big').is(':checked')) {
-    //        $(".reklam-banner").removeClass('active');
-    //        $(".js-banner-right-media-big").addClass('active');
-    //    }
-    //});
-
-    //$('input[type=radio]').change(function () {
-    //    if ($('#right-media').is(':checked') && $('#right-sm').is(':checked')) {
-    //        $(".reklam-banner").removeClass('active');
-    //        $(".js-banner-right-media-sm").addClass('active');
-    //    }
-    //});
 
     //Mobil filter
 

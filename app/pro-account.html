@@ -1,0 +1,121 @@
+<!--#set var="title" value="Pro аккаунт | Tizaru" -->
+<!--#include virtual="/parts/header-company.html" -->
+<div class="company-page">
+    <div class="container pro-account">
+        <div class="pro-account__header">
+            <div class="pro-account__title">
+                <span class="pro-account__label">pro</span>
+                <h1 class="page-title pro-account__page-title">Pro аккаунт</h1>
+            </div>
+            <div class="pro-account__descr">Дает доступ к дополнительным функциям сайта. Покупая этот аккаунт, вы лично инвестируете в развитие TIZARU </div>
+        </div>
+        <div class="pro-account__panel panel">
+            <ul class="pro-account__profit-list list-unstylling">
+                <li class="pro-account__profit-item">
+                    <h2 class="pro-account__profit-title">Никакой рекламы</h2>
+                    <p class="pro-account__profit-descr">
+                        Обладатели Pro аккаунта не видят рекламу на сайте
+                    </p>
+                </li>
+                <li class="pro-account__profit-item">
+                    <h2 class="pro-account__profit-title">Скидки на размещение рекламы</h2>
+                    <p class="pro-account__profit-descr">
+                        Размещайте рекламу вашей компании на выгодных условиях
+                    </p>
+                </li>
+                <li class="pro-account__profit-item">
+                    <h2 class="pro-account__profit-title">Оформление профиля</h2>
+                    <p class="pro-account__profit-descr">
+                        Дополнительные возможности по выделению вашего профиля
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="pro-account__pay-btns">
+            <a class="btn btn-accent btn--full popup-link" href="#pay">Присоедениться за 75 ₽ в месяц  </a>
+            <a class="link link-accent link--border" href="accrual-point.html">Нет денег? Зарабатывайте баллы! </a>
+        </div>
+        <div class="pro-account__users">
+            <div class="pro-account__users-title page-title">Участники TIZARU с PRO аккаунтом</div>
+            <div class="pro-account__users-descr">
+                Уже 1200 человек оформили PRO аккаунт. <br />
+                Спасибо, мы постараемся оправдать доверие.
+            </div>
+        </div>
+        <div class="pro-account__users-panel panel">
+            <div class="pro-account__users-subtitle text-accent">Участники с PRO аккаунтом</div>
+            <div class="pro-account__users-list users-flip">
+                <!--#include virtual="/parts/marketing/users-flip-card.html" -->
+                <!--#include virtual="/parts/marketing/users-flip-card.html" -->
+                <!--#set var="размер" value="users-flip__card--sm" -->
+            </div>
+        </div> 
+        <div class="pro-account__more-btn">
+            <button class="link link-accent link--border" type="button">Еще участники</button>
+        </div>
+    </div>
+</div>
+
+<div id="pay" class="popup popup--padding-sm mfp-hide">
+    <div class="popup__title">Pro аккаунт</div>
+    <form class="form pro-account__pay-form">
+        <div class="input-wrap">
+            <label class="input-wrap__label">Срок действия</label>
+            <div class="dropdown dropdown--input js-dropdown-toogle">
+                <button class="dropdown__value" type="button">Ежемесячная подписка - 75 ₽</button>
+                <div class="dropdown__list scroll-gray">
+                    <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">1 месяц - 99 ₽</a></div>
+                    <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">3  месяца - 229 ₽</a></div>
+                    <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">1 год - 759 ₽</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="input-wrap">
+            <label class="input-wrap__label">Аккаунт</label>
+            <div class="pro-account__user-info">
+                <div class="pro-account__logo">
+                    <img class="image-logo" src="images/dist/person.jpg" alt="Сидорчук Иван" />
+                </div>
+                <div class="pro-account__user-name">Сидорчук Иван</div>
+            </div>
+        </div>
+        <div class="input-wrap">
+            <label class="input-wrap__label">Оплата</label>
+            <div class="switch__item pro-account__switch">
+                <span class="switch__txt-before">Баллами</span>
+                <label class="switch">
+                    <input class="switch__input" type="checkbox">
+                    <span class="switch__slider"></span>
+                </label>
+                <span class="switch__txt-after">Деньгами</span>
+            </div>
+            <!--<span class="input-wrap__message input-wrap__message--warning">У вас недостаточно баллов</span>-->
+        </div>
+        <label class="pro-account__agree">Нажимая кнопку "Оплатить", вы соглашаетесь на обработку данных и с<a href="#">пользовательским соглашением</a></label>
+        <a class="btn btn-accent btn--full" href="#pay-money">Оплатить</a>
+    </form>
+</div>
+
+<div id="pay-money" class="popup popup--padding-sm mfp-hide">
+    <div class="popup__title">
+        С баланса будет списано 75 ₽.  Оплатить?
+    </div>
+    <a class="pro-account__pay-link" href="pay-card.html">Оплатить с карты</a>
+    <div class="popup__btns-horiz">
+        <button class="btn btn-conture btn--md mfp-close close" type="button">Отмена</button>
+        <button class="btn btn-accent btn--md" type="button">Оплатить</button>
+    </div>
+</div>
+
+<div id="pay-point" class="popup popup--padding-sm mfp-hide">
+    <div class="popup__title">
+        С баланса будет списано 75 баллов.  Оплатить?
+    </div>
+
+    <div class="popup__btns-horiz">
+        <button class="btn btn-conture btn--md mfp-close close" type="button">Отмена</button>
+        <button class="btn btn-accent btn--md" type="button">Оплатить</button>
+    </div>
+</div>
+
+<!--#include virtual="/parts/footer.html" -->
