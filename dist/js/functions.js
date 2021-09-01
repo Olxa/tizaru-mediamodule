@@ -45,6 +45,42 @@ document.addEventListener("DOMContentLoaded", function () {
         autoplaySpeed: 10000
     });
 
+    //Простой слайдер (один слайд, простые стрелки, точки на мобильном)
+    $('.js-simple-slider-dotted').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        cssEase: 'linear',
+        autoplay: true,
+        autoplaySpeed: 10000
+    });
+
+    //Простая карусель на 4 слайда 
+    $('.js-simple-carousel-dotted').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        dots: true,
+        cssEase: 'linear',
+        autoplay: true,
+        autoplaySpeed: 10000,
+
+          responsive: [
+              {
+                  breakpoint: 1200,
+                  settings: {
+                      slidesToShow: 2,
+                  }
+              },
+              {
+                  breakpoint: 768,
+                  settings: {
+                      slidesToShow: 1,
+                  }
+              }
+        ]
+    });
 
     //Карусель потфолио на странице организации
     $('.content-carusel-3').slick({
@@ -576,6 +612,20 @@ document.addEventListener("DOMContentLoaded", function () {
         $(target).show();
 
     })
+
+    //аккордеон
+    $(".js-accordion-item > .accordion__title").on("click", function () {
+        if ($(this).hasClass('active')) {
+            $(this).removeClass("active");
+            $(this).siblings('.accordion__content').slideUp(200);
+        } else {
+            $(".accordion__title > .accordion__title").removeClass("active");
+            $(this).addClass("active");
+            $('.accordion__content').slideUp(200);
+            $(this).siblings('.accordion__content').slideDown(200);
+        }
+    });
+
 });
 
 $(document).on('mouseup', function (e) {
