@@ -56,6 +56,31 @@ document.addEventListener("DOMContentLoaded", function () {
         autoplaySpeed: 10000
     });
 
+    //Простая карусель на 4 слайда 
+    $('.js-simple-carousel-dotted').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        dots: true,
+        cssEase: 'linear',
+        autoplay: true,
+        autoplaySpeed: 10000,
+
+          responsive: [
+              {
+                  breakpoint: 1200,
+                  settings: {
+                      slidesToShow: 2,
+                  }
+              },
+              {
+                  breakpoint: 768,
+                  settings: {
+                      slidesToShow: 1,
+                  }
+              }
+        ]
+    });
 
     //Карусель потфолио на странице организации
     $('.content-carusel-3').slick({
