@@ -1,0 +1,64 @@
+<!--#set var="title" value="Истории | Tizaru" -->
+<!--#include virtual="/parts/header-company.html" -->
+
+<div class="company-page">
+    <div class="container">
+        <div class="company-page__header company-page__header--m-bottom">
+            <nav aria-label="breadcrumb company-page__breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Главная</a></li>
+                    <li class="breadcrumb__item active" aria-current="page">Истории</li>
+                </ol>
+            </nav>
+            <h1 class="page-title">Истории наших пользователей</h1>
+            <p class="company-page__desc story__page-descr">
+                Лучшая награда для изобретателя – видеть, как созданная тобой технология приносит пользу людям.
+            </p>
+        </div>
+
+        <div class="story__list">
+            <a class="story__card" href="story-detail.html">
+                <img class="story__image" src="images/dist/story1.jpg" alt="Название истории" />
+                <h2 class="story__title">История продавца книг, который сделал свою IT империю</h2>
+            </a>
+            <a class="story__card" href="story-detail.html">
+                <img class="story__image" src="images/dist/story2.jpg" alt="Название истории" />
+                <h2 class="story__title">Цветочница из Северного Чертаново</h2>
+            </a>
+            <a class="story__card" href="story-detail.html">
+                <img class="story__image" src="images/dist/story3.jpg" alt="Название истории" />
+                <h2 class="story__title">Я фотограф и работаю сама на себя</h2>
+            </a>
+            <a class="story__card" href="story-detail.html">
+                <img class="story__image" src="images/dist/story4.jpg" alt="Название истории" />
+                <h2 class="story__title">Tizaru делает жизнь людей интересней</h2>
+            </a>
+        </div>
+
+        <div class="story__more">
+            <button class="btn btn-conture" type="button">Больше историй</button>
+        </div>
+
+        <div class="story__video-wrap">
+            <h3 class="page-title">Открывайте новое</h3>
+            <video class="story__video" controls="controls" poster="images/dist/video.jpg">
+                <source src="file.mp4" type="video/mp4" />
+            </video>
+        </div>
+
+        <div class="share-block share-block--company-page">
+            <div class="share-block__title">Вам нравится? Расскажите другим!</div>
+            <div class="share-block__content">
+                <p class="share-block__text">Делиться понравившейся информацией не только приятно, но и выгодно! Делитесь постами Tizaru, зарабатывайте баллы, получайте приятные бонусы и скидки.</p>
+                <div class="share-block__action">
+                    <a class="btn btn-conture i-share share-block__action-btn js-share-btn" href="#">Поделиться</a>
+                    <span class="share-block__action-count">1868 поделилось</span>
+                    <!--#include virtual="/parts/share-block.html" -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--#include virtual="/parts/footer.html" -->
