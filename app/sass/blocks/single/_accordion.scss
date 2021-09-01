@@ -1,0 +1,69 @@
+.accordion {
+    position: relative;
+    height: auto;
+
+    &__item {
+        position: relative;
+        width: 100%;
+        height: auto;
+        background-color: transparent;
+    }
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        text-decoration: none;
+        font-family: $userfont-bold;
+        font-weight: 700;
+        border-bottom: 1px solid $border-color;
+        -webkit-transition: all 0.2s linear;
+        -moz-transition: all 0.2s linear;
+        transition: all 0.2s linear;
+        cursor: pointer;
+
+        &::after {
+            font-family: "If";
+            content: "\e907";
+            color: $accent;
+        }
+
+        &:hover {
+            color: $accent;
+        }
+
+        &.active {
+            border-bottom: none;
+
+            .accordion__icon {
+                color: $textcolor;
+            }
+
+            &::after {
+                font-family: "If";
+                content: "\e967";
+                color: $textcolor;
+            }
+        }
+    }
+
+    &__icon {
+        position: relative;
+        float: right;
+        margin-top: 4px;
+        color: $accent;
+    }
+
+    &__content {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 30px 15px 15px;
+        background-color: #fff;
+        border-bottom: 1px solid $border-color;
+        font-size: 18px;
+        color: $gray;
+        display: none;
+    }
+}
