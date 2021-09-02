@@ -501,21 +501,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-    //переключение баннеров   
-
-    //$('input[type=radio]').change(function () {
-    //    if ($('#bottom-static').is(':checked')) {
-    //        $(".reklam-banner").removeClass('active');
-    //        $(".js-banner-bottom-static").addClass('active');
-    //    }
-    //});
-
-    //$('input[type=radio]').change(function () {
-    //    if ($('#bottom-media').is(':checked')) {
-    //        $(".reklam-banner").removeClass('active');
-    //        $(".js-banner-bottom-media").addClass('active');
-    //    }
-    //});
+    //переключение баннеров  
 
     $('.js-banner-bottom').click(function () {
         $('input[type=radio]').change(function () {
@@ -598,8 +584,23 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     //Табы
-    $('.tabgroup > .tabgroup__item').hide();
-    $('.tabgroup > .tabgroup__item:first-of-type').show();
+    //$('.tabgroup > .tabgroup__item').hide();
+    //$('.tabgroup > .tabgroup__item:first-of-type').show();
+    //$('.tabs .tabs__nav-link').click(function (e) {
+    //    e.preventDefault();
+    //    var $this = $(this),
+    //        tabgroup = '#' + $this.parents('.tabs').data('tabgroup'),
+    //        others = $this.closest('.tabs__nav').siblings().children('.tabs__nav-link'),
+    //        target = $this.attr('href');
+    //    others.removeClass('active');
+    //    $this.addClass('active');
+    //    $(tabgroup).children('.tabgroup__item').hide();
+    //    $(target).show();
+
+    //})
+
+    $('.tabgroup > .tabgroup__item').removeClass('active');
+    $('.tabgroup > .tabgroup__item:first-of-type').addClass('active');
     $('.tabs .tabs__nav-link').click(function (e) {
         e.preventDefault();
         var $this = $(this),
@@ -608,8 +609,8 @@ document.addEventListener("DOMContentLoaded", function () {
             target = $this.attr('href');
         others.removeClass('active');
         $this.addClass('active');
-        $(tabgroup).children('.tabgroup__item').hide();
-        $(target).show();
+        $(tabgroup).children('.tabgroup__item').removeClass('active');
+        $(target).addClass('active');
 
     })
 
