@@ -1,0 +1,39 @@
+.accordion-mob {
+    &__title {
+        display: none;
+        position: relative;
+        padding: 0 0 15px 0;
+        margin-bottom: 10px;
+        border-bottom: 1px solid $border-color;
+        transition: .2s;
+
+        @media (max-width: $tablet-sm) {
+            display: block;
+        }
+
+
+        &::before {
+            content: "\e90f";
+            font-family: if;
+            font-size: 16px;
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            display: block;
+            line-height: 1;
+            margin-top: -8px;
+            transform: rotate( 180deg );
+        }
+
+        &.active::before {
+            transform: rotate(0);
+        }
+    }
+
+    &__content {
+     
+        @media (max-width: 991px) {
+            display: none;
+        }
+    }
+}

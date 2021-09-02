@@ -546,6 +546,12 @@ document.addEventListener("DOMContentLoaded", function () {
         $('.users-flip__card').eq(randomLi - 1).addClass('active');
     }, 1000);
 
+    //Аккордеон только на мобильном
+    $(".accordion-mob__title").click(function () {
+        $(this).toggleClass('active').siblings('.accordion-mob__content').slideToggle();
+        return false;
+    });
+
 
     //Mobil filter
 
