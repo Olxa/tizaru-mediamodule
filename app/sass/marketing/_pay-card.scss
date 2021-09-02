@@ -1,0 +1,186 @@
+.pay-card {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px;
+
+    @media (max-width: $mobile-sm) {
+        padding: 0;
+        box-shadow: none;
+        background-color: transparent;
+    }
+
+    &__back-link {
+        margin-bottom: 0;
+    }
+
+    &__page {
+        padding-bottom: 60px;
+    }
+
+    &__inner {
+        max-width: 660px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        margin-bottom: 60px;
+        text-align: center;
+
+        @media (max-width: $mobile) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__total {
+        cursor: default;
+    }
+
+    &__total-label {
+        display: inline-block;
+        margin-bottom: 10px;
+        font-size: 18px;
+        color: $gray;
+    }
+
+    &__total-price {
+        display: block;
+        margin-bottom: 30px;
+        font-family: $userfont-bold;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    &__card-wrap {
+        position: relative;
+        display: flex;
+        margin-bottom: 60px;
+
+        @media (max-width: $mobile) {
+            flex-direction: column;
+        }
+    }
+
+    &__side {
+        width: 100%;
+        max-width: 450px;
+        min-height: 250px;
+
+        @media (max-width: $mobile) {
+            max-width: 100%;
+            min-height: 200px;
+        }
+    }
+
+    &__front {
+        padding: 60px 25px 25px;
+        z-index: 2;
+
+        @media (max-width: $mobile) {
+            padding: 25px 15px;
+        }
+    }
+
+    &__back {
+        position: absolute;
+        right: 0;
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 20px;
+        border-radius: $border-radius;
+        background-color: $white;
+        z-index: 1;
+
+        @media (max-width: $mobile) {
+            position: initial;
+            display: block;
+            right: initial;
+            left: 0;
+            min-height: 100px;
+            bottom: -100px;
+        }
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 40px;
+            background: $gray;
+
+            @media (max-width: $mobile) {
+                display: none;
+            }
+        }
+    }
+
+    &__back-inner {
+        padding: 70px 30px 0 30px;
+
+        @media (max-width: $mobile) {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 0 14px 14px;
+        }
+    }
+
+    &__label {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 5px;
+        font-size: 14px;
+        color: $gray;
+    }
+
+    &__number {
+        margin-bottom: 20px;
+    }
+
+    &__valid-group {
+        display: flex;
+        align-items: center;
+    }
+
+    &__valid {
+        width: 45px;
+        padding-left: 5px;
+        padding-right: 5px;
+        text-align: center;
+    }
+
+    &__valid-delimiter {
+        display: inline-block;
+        font-size: 25px;
+        margin: 0 5px;
+        color: $gray;
+    }
+
+    &__cvc {
+        width: 60px;
+        text-align: center;
+        background-color: transparent;
+    }
+
+    &__meta {
+        display: block;
+        padding-top: 5px;
+        font-size: 12px;
+        line-height: 16px;
+        max-width: 100px;
+        color: $gray;
+
+        @media (max-width: $mobile) {
+            max-width: 100%;
+            margin-left: 10px;
+        }
+    }
+
+    &__btn {
+        text-align: center;
+
+        .btn {
+            min-width: 300px;
+        }
+    }
+}

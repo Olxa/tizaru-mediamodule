@@ -1,0 +1,48 @@
+<!--#set var="title" value="Личный кабинет | Оплатить" -->
+<!--#include virtual="/parts/header-login.html" -->
+
+<div class="container">
+    <div class="company-page__header company-page__header--m-bottom">
+        <a href="pro-account.html" class="pay-card__back-link link link-accent link--border back-link i-arrow">Назад</a>
+    </div>
+
+    <div class="pay-card__page">
+        <div class="pay-card panel">
+            <div class="pay-card__inner">
+
+                <h1 class="pay-card__title page-title">Оплата банковской картой</h1>
+                <div class="pay-card__total">
+                    <span class="pay-card__total-label">К оплате</span>
+                    <div class="pay-card__total-price">9 800 ₽</div>
+                </div>
+
+                <div class="pay-card__card-wrap">
+                    <div class="pay-card__side pay-card__front panel">
+                        <label class="pay-card__label">Номер карты</label>
+                        <input class="input pay-card__number" type="text">
+
+                        <label class="pay-card__label">Действует до</label>
+                        <div class="pay-card__valid-group">
+                            <input class="input pay-card__valid" placeholder="мм" type="text">
+                            <span class="pay-card__valid-delimiter">/</span>
+                            <input class="input input pay-card__valid" placeholder="гг" type="text">
+                        </div>
+                    </div>
+                    <div class="pay-card__side pay-card__back">
+                        <div class="pay-card__back-inner">
+                            <label class="pay-card__label">CVV/CVC</label>
+                            <input class="input pay-card__cvc" placeholder="000" type="text">
+                            <span class="pay-card__meta">Три цифры с обратной стороны карты</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="pay-card__btn">
+                    <a class="btn btn-accent" href="#">Оплатить 9 800 ₽ </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--#include virtual="/parts/footer-sm.html" -->
