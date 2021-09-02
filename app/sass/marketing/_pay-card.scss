@@ -73,6 +73,7 @@
     }
 
     &__front {
+        position: relative;
         padding: 60px 25px 25px;
         z-index: 2;
 
@@ -181,6 +182,21 @@
 
         .btn {
             min-width: 300px;
+        }
+    }
+
+    &__sistem-logo {
+        position: absolute;
+        right: 25px;
+        top: 25px;
+        width: 80px;
+        height: 23px;
+        object-fit: contain;
+        object-position: center;
+
+        @media (max-width: $mobile) {
+            top: initial;
+            bottom: 25px;
         }
     }
 }
