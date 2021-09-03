@@ -10,9 +10,13 @@
         &:last-child {
             margin-bottom: 100px;
         }
+
+        .share-block {
+            width: 100%;
+        }
     }
 
-    &__row--padding-big  {
+    &__row--padding-big {
         padding: 40px 0;
     }
 
@@ -82,6 +86,14 @@
             font-size: 18px;
             line-height: 22px;
         }
+    }
+
+    &__title-block {
+        margin-bottom: 20px;
+        font-family: $userfont-bold;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 27px;
     }
 
     &__txt {

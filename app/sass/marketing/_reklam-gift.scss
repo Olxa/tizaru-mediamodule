@@ -28,4 +28,149 @@
             }
         }
     }
+
+    &__section {
+        padding: 0 0 200px;
+
+        @media (max-width: $tablet) {
+            padding: 0 0 100px;
+        }
+
+        .section__content {
+            @media (max-width: $mobile) {
+                text-align: left;
+            }
+        }
+
+        .section__txt {
+            @media (max-width: $tablet) {
+                max-width: 500px;
+                margin: 0 auto;
+            }
+
+            @media (max-width: $mobile) {
+                max-width: 320px;
+            }
+
+            @media (max-width: $mobile) {
+                text-align: left;
+                margin:0 0 10px;
+            }
+        }
+    }
+
+    &__panel {
+        max-width: 900px;
+        margin: 70px auto 150px;
+        padding: 60px 130px;
+        text-align: center;
+
+        @media (max-width: $mobile) {
+            padding: 35px 15px;
+            margin-bottom: 100px;
+        }
+    }
+
+    &__blok-title {
+        text-align: center;
+        margin-bottom: 100px;
+
+        @media (max-width: $tablet) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__img {
+        position: relative;
+        width: 100%;
+        max-width: 600px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+
+        @media (max-width: $tablet) {
+            margin: 0 auto 30px;
+        }
+
+
+
+        &::before {
+            content: '';
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            @media (max-width: $tablet) {
+                display: none;
+            }
+        }
+    }
+
+    &__world-img {
+        height: 350px;
+        background-image: url(/images/dist/marketing/world-present.png);
+
+        @media (max-width: $mobile) {
+            height: 180px;
+        }
+
+        &::before {
+            left: -400px;
+            bottom: -167px;
+            width: 400px;
+            height: 210px;
+            background-image: url(../images/dist/join-ar2.svg);
+        }
+    }
+
+    &__company-img {
+        height: 230px;
+        background-image: url(/images/dist/marketing/company-list-present.png);
+
+        @media (max-width: $mobile) {
+            height: 120px;
+        }
+
+        &::before {
+            right: -300px;
+            bottom: -192px;
+            width: 290px;
+            height: 235px;
+            background-image: url(../images/dist/dashed-ar1.svg);
+        }
+    }
+
+    &__pro-img {
+        height: 190px;
+        background-image: url(/images/dist/marketing/pro-presrnt.png);
+
+        @media (max-width: $mobile) {
+            height: 100px;
+        }
+    }
+
+    &__form-wrap {
+        max-width: 900px;
+        margin: 0 auto 150px;
+        padding: 80px 200px;
+        text-align: center;
+
+        @media (max-width: $tablet) {
+            margin-bottom: 100px;
+        }
+
+        @media (max-width: $mobile) {
+            padding: 50px 15px;
+        }
+
+        .soc-login {
+            justify-content: center;
+        }
+    }
+
+    &__form {
+        max-width: 380px;
+        margin: 0 auto 60px;
+        text-align: left;
+    }
 }

@@ -207,6 +207,9 @@
 @import "blocks/team/team";
 @import "blocks/team/team-card";
 
+// == sections ==
+@import "sections/section";
+
 // == private-office ==
 @import "private-office/private-office";
 @import "private-office/user-nav";
@@ -288,10 +291,6 @@
 @import "marketing/pay-card";
 @import "marketing/tech";
 @import "marketing/reklam-gift";
-
-
-// == sections ==
-@import "sections/section";
 
 // == article ==
 @import "articles/articles-page";

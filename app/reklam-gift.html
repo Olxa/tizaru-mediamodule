@@ -1,6 +1,7 @@
 <!--#set var="title" value="Реклама в подарок | Tizaru" -->
 <!--#include virtual="/parts/header-company.html" -->
 <div class="container">
+
     <section class="row section__row section__row--alight-center">
         <div class="col-md-6 reklam-gift__intro-descr">
             <h1 class="reklam-gift__page-title page-title">Пусть о вас узнают!</h1>
@@ -13,9 +14,101 @@
         <div class="col-md-6 reklam-gift__intro-img">
             <div class="img-author">
                 <img class="img-author__img" src="images/dist/marketing/piggy-bank.svg" alt="Регистрируйтесь!">
-                <a class="img-author__link" href="https://ru.freepik.com/home" tabindex="0"></a>
+                <a class="img-author__link" href="https://ru.freepik.com/home" target="_blank"></a>
             </div>
         </div>
     </section>
+
+    <section class="reklam-gift__panel panel">
+        <h2 class="section-title section-title--margin-b">Tizaru помогает вам и вашему бизнесу!</h2>
+        <p class="section__txt">
+            При регистрации в сервисе Вы получаете бонус в размере 1 000  баллов на счёт в рекламном кабинете.
+        </p>
+    </section>
+
+    <h2 class="section-title reklam-gift__blok-title">Как потратить бонус</h2>
+
+    <section class="row section__row reklam-gift__section section__row--alight-center">
+        <div class="col-xl-5 section__content section__mob-end-col">
+            <h2 class="section__title-block">Рекламируйте себя</h2>
+            <p class="section__txt">
+                На главной странице или странице сообщества Вы можете можете разместить баннер на свой сайт или закрепить свою публикацию
+            </p>
+        </div>
+        <div class="col-xl-7 reklam-gift__world">
+            <div class="reklam-gift__img reklam-gift__world-img"></div>
+        </div>
+    </section>
+
+    <section class="row section__row  reklam-gift__section section__row--alight-center">
+        <div class="col-xl-7 reklam-gift__company">
+            <div class="reklam-gift__img reklam-gift__company-img"></div>
+        </div>
+        <div class="col-xl-5 section__content section__mob-end-col">
+            <h2 class="section__title-block">Рекламируйте компанию</h2>
+            <p class="section__txt">
+                Закрепите карточку компании в поисковой выдаче по релевантному запросу
+            </p>
+        </div>
+    </section>
+
+    <section class="row section__row reklam-gift__section section__row--alight-center">
+        <div class="col-xl-5 section__content section__mob-end-col">
+            <h2 class="section__title-block">Становитесь PRO участником</h2>
+            <p class="section__txt">
+                Присоединяйтесь к PRO участникам и получайте дополнительные возможности, скидки и бонусы!
+            </p>
+            <a class="link link-second link--border" href="pro-account.html">Подробнее</a>
+        </div>
+        <div class="col-xl-7 reklam-gift__pro">
+            <div class="reklam-gift__img reklam-gift__pro-img"></div>
+        </div>
+    </section>
+
+    <div class="reklam-gift__form-wrap panel">
+        <h2 class="section-title section-title--margin-b">Зарегистрируйтесь на Tizaru</h2>
+        <form class="form reklam-gift__form">
+            <div class="input-wrap">
+                <label class="input-wrap__label">
+                    E-mail
+                    <input class="input" type="email">
+                </label>
+            </div>
+            <div class="input-wrap">
+                <label class="input-wrap__label" for="password1">Пароль</label>
+                <div class="input-password">
+                    <input class="input input-password__val" id="password1" type="password">
+                    <button class="input-password__eye icon i-eye"></button>
+                </div>
+            </div>
+            <div class="login-reg__row">
+                <div class="checkbox">
+                    <input class="checkbox__field" id="consent" type="checkbox">
+                    <label class="checkbox__value login-reg__checkbox-accept" for="consent">Согласен(-на) на обработку данных и с <a href="terms-of-use.html">пользовательским соглашением</a></label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-accent btn--full">Зарегистрироваться</button>
+        </form>
+        <div class="soc-login">
+            <a class="soc-login__link gg" href="#"></a>
+            <a class="soc-login__link mail" href="#"></a>
+            <a class="soc-login__link yandex" href="#"></a>
+        </div>
+    </div>
+
+    <div class="section__row">
+        <div class="share-block share-block--company-page">
+            <div class="share-block__title">Поделитесь страницей с друзьями!</div>
+            <div class="share-block__content">
+                <p class="share-block__text">Делитесь постами Tizaru в соц сетях и зарабатывай еще больше баллов.</p>
+                <div class="share-block__action">
+                    <a class="btn btn-accent i-share share-block__action-btn js-share-btn" href="#">Поделиться</a>
+                    <span class="share-block__action-count">1868 поделилось</span>
+                    <!--#include virtual="/parts/share-block.html" -->
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
 <!--#include virtual="/parts/footer.html" -->
