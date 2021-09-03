@@ -831,3 +831,193 @@ document.addEventListener("DOMContentLoaded", function () {
         type: 'image'
     });
 });
+
+
+
+//Интерактивная карта
+
+mapPaths = document.querySelectorAll('#map-container path');
+mapContainer = document.getElementById('map-container')
+countryName = document.getElementById('country-name');
+flag = document.getElementById('country-flag');
+flagContainer = document.getElementsByClassName('flag-container')[0];
+markers = document.querySelectorAll('.marker');
+markersContainer = document.getElementsByClassName('markers')[0];
+
+mapPaths.forEach(item => {
+    item.addEventListener('mousemove', e => {
+        //console.log('x: ' + e.offsetX + ' y: ' + e.offsetY)
+        countryName.innerHTML = item.getAttribute("title");
+        //console.log(item.getAttribute("title"));
+        //countryName.setAttribute("style","top:" + (e.offsetY) + "px; left: "+ (e.offsetX) + "px;");
+        countryName.style.display = "block";
+        flag.innerHTML = ` <img src="images/dist/map/country-flags/` + item.id.toLowerCase() + `.svg" alt="flag">`
+        flagContainer.style.display = 'flex';
+        //console.log(item.clientLeft+"  "+item.clientTop);
+        //console.log(item.getAttribute("title"));
+    })
+    item.addEventListener('mouseout', e => {
+        countryName.innerHTML = "";
+        flag.innerHTML = "";
+        flagContainer.style.display = 'none'
+        //countryName.setAttribute("style","border:none;");
+    })
+})
+const markersPosition = (marker) => {
+    let x = Math.floor(Math.random() * 808);
+    let y = Math.floor(Math.random() * 490);
+    marker.setAttribute("style", "top:" + (y) + "px; left:" + (x) + "px;");
+    marker.style.opacity = Math.random();
+}
+const getRandomInt = (min, max) => {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
+}
+//MARKERS ZONES
+const firstZone = (marker) => {
+    let x = 500 + Math.floor(Math.random() * 150);
+    let y = 100 + Math.floor(Math.random() * 200);
+    marker.setAttribute("style", "top:" + (y) + "px; left:" + (x) + "px;");
+}
+const secondZone = (marker) => {
+    let x = 130 + Math.floor(Math.random() * 50);
+    let y = 150 + Math.floor(Math.random() * 150);
+    marker.setAttribute("style", "top:" + (y) + "px; left:" + (x) + "px;");
+}
+const thirdZone = (marker) => {
+    let x = 380 + Math.floor(Math.random() * 90);
+    let y = 200 + Math.floor(Math.random() * 40);
+    marker.setAttribute("style", "top:" + (y) + "px; left:" + (x) + "px;");
+}
+const fourthZone = (marker) => {
+    let x = 400 + Math.floor(Math.random() * 50);
+    let y = 300 + Math.floor(Math.random() * 100);
+    marker.setAttribute("style", "top:" + (y) + "px; left:" + (x) + "px;");
+}
+const fifthZone = (marker) => {
+    let x = 220 + Math.floor(Math.random() * 50);
+    let y = 340 + Math.floor(Math.random() * 80);
+    marker.setAttribute("style", "top:" + (y) + "px; left:" + (x) + "px;");
+}
+const sixthZone = (marker) => {
+    let x = 640 + Math.floor(Math.random() * 70);
+    let y = 390 + Math.floor(Math.random() * 40);
+    marker.setAttribute("style", "top:" + (y) + "px; left:" + (x) + "px;");
+}
+const changeMarkerStyle = (marker, style, delay) => {
+    setInterval(() => marker.classList.add(style), delay)
+}
+/*
+const setMarkersPosition = () => {
+    //let i = 0;
+    let j =0;
+    while (j !== markers.length){
+    if (j <= 10){
+            let marker = markers[j];
+            let delay = getRandomInt(1000,3000);
+            changeMarkerStyle(marker,'marker--enter',delay);
+            setTimeout(()=>{
+                firstZone(marker);
+            },500)
+    }if ((j > 10) && (j <= 15)){
+            let marker = markers[j];
+            let delay = getRandomInt(1000,3000);
+            changeMarkerStyle(marker,'marker--enter',delay);
+            setTimeout(()=>{
+                secondZone(marker);
+            },1000)
+    }if (j>15 && j <=20){
+            let marker = markers[j];
+            let delay = getRandomInt(1000,3000);
+            changeMarkerStyle(marker,'marker--enter',delay);
+            setTimeout(()=>{
+                thirdZone(marker);
+            },800)
+    }if (j>20 && j <=23){
+            let marker = markers[j];
+            let delay = getRandomInt(1000,3000);
+            changeMarkerStyle(marker,'marker--enter',delay);
+            setTimeout(()=>{
+                fourthZone(marker);
+            },400)
+    }if (j>23 && j <=26){
+            let marker = markers[j];
+            let delay = getRandomInt(1000,3000);
+            changeMarkerStyle(marker,'marker--enter',delay);
+            setTimeout(()=>{
+                fifthZone(marker);
+            },1100)
+        }
+    j++;
+    }
+}
+ */
+const setMarkersPosition = () => {
+    //let i = 0;
+    let j = 0;
+    while (j !== markers.length) {
+        if (j <= 15) {
+            let marker = markers[j];
+            let delay = getRandomInt(1000, 3000);
+            changeMarkerStyle(marker, 'marker--enter', delay);
+            setTimeout(() => {
+                firstZone(marker);
+            }, 300)
+        } if ((j > 15) && (j <= 20)) {
+            let marker = markers[j];
+            let delay = getRandomInt(1000, 3000);
+            changeMarkerStyle(marker, 'marker--enter', delay);
+            setTimeout(() => {
+                secondZone(marker);
+            }, 200)
+        }
+        if (j > 20 && j <= 25) {
+            let marker = markers[j];
+            let delay = getRandomInt(1000, 3000);
+            changeMarkerStyle(marker, 'marker--enter', delay);
+            setTimeout(() => {
+                fourthZone(marker);
+            }, 100)
+        } if (j > 25 && j <= 30) {
+            let marker = markers[j];
+            let delay = getRandomInt(1000, 3000);
+            changeMarkerStyle(marker, 'marker--enter', delay);
+            setTimeout(() => {
+                fifthZone(marker);
+            }, 150)
+        }
+        if (j > 30 && j <= 35) {
+            let marker = markers[j];
+            let delay = getRandomInt(1000, 3000);
+            changeMarkerStyle(marker, 'marker--enter', delay);
+            setTimeout(() => {
+                thirdZone(marker);
+            }, 80)
+        }
+        if (j > 35 && j <= 40) {
+            let marker = markers[j];
+            let delay = getRandomInt(1000, 3000);
+            changeMarkerStyle(marker, 'marker--enter', delay);
+            setTimeout(() => {
+                sixthZone(marker);
+            }, 120)
+        }
+        j++;
+    }
+}
+const disappearance = () => {
+    let i = 0;
+    //const markers = document.querySelectorAll('.marker--enter');
+    while (i < markers.length) {
+        let delay = getRandomInt(2500, 3000);
+        let j = getRandomInt(0, markers.length)
+        let marker = markers[j];
+        setTimeout(() => { marker.classList.remove('marker--enter') }, delay);
+        i++;
+    }
+}
+setInterval(() => {
+    setMarkersPosition();
+    setTimeout(disappearance, 2000);
+}, 2000)

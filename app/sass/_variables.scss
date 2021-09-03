@@ -5,6 +5,8 @@
 $accent:                                #FF1E1E;
 $accent-dark:                           #D70000;
 $accent-dark2:                          #AD0000;
+$accent-lighter:                        lighten($accent, 20%);
+
 $gray:                                  #ACA9A9;
 $gray2:                                 #6B6B6B;
 $gray3:                                 #828282;

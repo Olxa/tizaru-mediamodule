@@ -1,0 +1,257 @@
+
+:root {
+    --primary: rgb(113, 224, 101);
+    --secondary: rgb(224, 101, 101);
+    --primary-logo: rgb(255, 0, 0);
+    --secondary-logo: rgb(24, 255, 0);
+    --primary-opacity: rgba(224, 101, 101, 0.4);
+    --secondary-opacity: rgba(113, 224, 101, 0.4);
+}
+
+.interactive-map {
+    &__wrapper {
+        max-width: 1260px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__container {
+        position: relative;
+
+        @media (max-width:$tablet) {
+            max-width: 100%;
+        }
+    }
+
+    &__statistics-panel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 25px;
+        border-radius: $border-radius;
+        box-shadow: $shadow1;
+
+        img {
+            width: 30px;
+            min-width: 30px;
+            height: 30px;
+            object-fit: contain;
+            object-position: center;
+            margin-right: 2rem;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    &__map-container {
+        position: relative;       
+    }
+}
+
+.flag-container {
+    position: absolute;
+    left: 80%;
+    z-index: 7;
+    background: white;
+    box-shadow: $shadow1;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 110px;
+    padding: 5px;
+    transition: 1s;
+}
+
+#country-flag img {
+    width: 80px;
+    border-radius: $border-radius;
+    transition: 1s;
+}
+
+#country-name {
+    display: none;
+    padding: 5px;
+    color: $gray;
+    font-size: 14px;
+    text-align: center;
+    pointer-events: none;
+    transition: 1s;
+}
+
+.markers {
+    z-index: 5;
+    width: 808px;
+    height: 536px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    overflow: hidden;
+    pointer-events: none;
+
+    @media (max-width:1024px) {
+        width: 773px;
+    }
+
+    @media (max-width: 992px) {
+        // width: 773px;
+    }
+
+    @media (max-width: 767px) {
+        width: 410px;
+        height: 268px;
+    }
+}
+
+.block-areas {
+    fill: white;
+    z-index: 6;
+    width: 808px;
+    height: 536px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    pointer-events: none;
+
+    @media (max-width:$tablet) {
+        transform: scale(0.6);
+    }
+
+    @media (max-width:1024px) {
+        width: 773px;
+    }
+
+   
+}
+
+.marker {
+    position: absolute;
+    display: none;
+    width: 50px;
+    height: 50px;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: 1s;
+
+    @media (max-width: 992px) {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.marker--enter {
+    display: block;
+    transition: 2s;
+    animation: entering 2s forwards;
+}
+
+@keyframes entering {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.title h2 {
+    font-size: 50px;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.logo img {
+    height: 300px;
+    width: 300px;
+}
+
+.map-slogan {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.map-slogan h3:first-letter {
+    color: var(--primary-logo);
+    font-size: 1.2em;
+}
+
+#map-container path {
+    fill: $gray;
+    stroke: rgb(247, 247, 247);
+    stroke-width: 1px;
+    transition: 5ms;
+    cursor: pointer;
+}
+
+#map-container path:hover {
+    fill: $accent-lighter;
+    stroke: rgb(247, 247, 247);
+    stroke-width: 1px;
+    transition: 5ms;
+}
+
+.map-container--active {
+    fill: $accent-lighter;
+    stroke: rgb(247, 247, 247);
+    stroke-width: 100px;
+    transition: 5ms;
+}
+
+#map-container {
+    transform: scale(0.8);
+    transition: 0.2s;
+
+    @media (max-width: 910px) {
+        transform: translate(-10%) scale(.6);
+        // transform: scale(0.6);
+        transition: 0.2s;
+    }
+
+    @media (max-width: 767px) {
+        transform: translate(-10%) scale(.4);
+    }
+
+    @media (max-width: 630px) {
+        transform: scale(0.55);
+        transition: 0.2s;
+    }
+}
+
+#map-container span {
+    z-index: 10;
+}
+
+
+@media (max-width: 910px) {
+
+    .title h2 {
+        font-size: 40px;
+        transition: 0.2s;
+    }
+}
+
+@media (max-width: 630px) {  
+
+    .title h2 {
+        font-size: 30px;
+        transition: 0.2s;
+    }
+}
