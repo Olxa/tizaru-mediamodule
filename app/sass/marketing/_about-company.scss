@@ -1,0 +1,146 @@
+.about-company {
+    &__logo {
+        display: inline-block;
+        width: 100%;
+        height: 60px;
+        margin-bottom: 20px;
+        text-align: center;
+
+        .image-logo {
+            width: 60px;
+        }
+    }
+
+    &__action {
+        padding: 200px 0;
+        text-align: center;
+
+        @media (max-width: $tablet) {
+            padding: 100px 0;
+        }
+    }
+
+    &__action-title {
+        display: inline-block;
+        max-width: 480px;
+        margin: 0 auto 60px;
+        font-family: $userfont-sbold;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 41px;
+        text-transform: uppercase;
+
+        @media (max-width: $mobile) {
+            font-size: 20px;
+            line-height: 27px;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__action-btns {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto 80px;
+        max-width: 890px;
+
+        @media (max-width: $tablet) {
+            justify-content: center;
+        }
+
+        @media (max-width: $mobile) {
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .btn {
+            min-width: 380px;
+            margin: 0 20px;
+
+            @media (max-width: $tablet) {
+                min-width: initial;
+            }
+
+            @media (max-width: $mobile) {
+                width: 100%;
+                margin: 0 0 20px;
+            }
+        }
+    }
+
+    &__section-title {
+        margin-bottom: 30px;
+    }
+
+    &__section-txt {
+        font-size: 20px;
+        line-height: 27px;
+
+        @media (max-width: $tablet) {
+            font-size: 16px;
+        }
+    }
+
+    &__section-link {
+        display: inline-block;
+        font-size: 18px;
+        text-decoration: underline;
+
+        @media (max-width: $tablet) {
+            font-size: 16px;
+        }
+    }
+
+    &__share-title {
+        text-align: center;
+    }
+
+    &__share-wrap {
+        @media (max-width: $tablet) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__img-wrap {
+        @media (max-width: $tablet) {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+    }
+
+    &__img {
+        position: relative;
+        width: 100%;
+        max-width: 600px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+
+        @media (max-width: $tablet) {
+            margin: 0 auto;
+        }
+    }
+
+    &__company-img {
+        height: 230px;
+        background-image: url(/images/dist/marketing/company-list-present.png);
+
+        @media (max-width: $mobile) {
+            height: 120px;
+        }
+    }
+
+    &__media-img {
+        max-width: 400px;
+        height: 450px;
+        margin: 0 auto;
+        background-image: url(/images/dist/marketing/post-card.png);
+
+        @media (max-width: $mobile) {
+            height: 340px;
+        }
+    }
+
+    &__share-block {
+        margin-bottom: 100px;
+    }
+}
