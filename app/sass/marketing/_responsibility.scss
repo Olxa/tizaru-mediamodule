@@ -1,14 +1,4 @@
 .responsibility {
-    &__title {
-        text-transform: uppercase;
-    }
-
-    &__img-wrap {
-        @media (max-width: $tablet) {
-            margin-bottom: 20px;
-            text-align: center;
-        }
-    }
 
     &__dots-plus {
         padding-top: 50px;

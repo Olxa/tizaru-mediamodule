@@ -26,8 +26,20 @@
         margin-bottom: 30px;
     }
 
+    &--margin-b50 {
+        margin-bottom: 50px;
+    }
+
     &--center {
         width: 100%;
         text-align: center;
+    }
+
+    &--upper {
+        text-transform: uppercase;
+    }
+
+    &__meta {
+
     }
 }

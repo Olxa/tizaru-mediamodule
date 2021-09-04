@@ -26,10 +26,17 @@
         }
     }
 
-    &__val {
+    &__val-wrap {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    &__val {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         width: 150px;
         height: 150px;
         margin-bottom: 30px;
@@ -37,6 +44,7 @@
         font-family: $userfont-sbold;
         font-weight: 600;
         font-size: 40px;
+        line-height: 1;
         color: $accent;
         text-align: center;
         background: url(/images/dist/circle-dot.svg) no-repeat center;
@@ -45,6 +53,10 @@
         @media (max-width: $mobile-sm) {
             margin: 0 auto 30px;
         }
+    }
+
+    &__val-sm {
+        font-size: 30px;
     }
 
     &__descr {

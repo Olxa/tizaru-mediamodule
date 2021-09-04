@@ -1,0 +1,81 @@
+.bloggers {
+
+    &__card-title {
+        padding-bottom: 0;
+    }
+
+    &__img {
+        position: relative;
+        width: 100%;
+        max-width: 340px;
+        height: 370px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+
+        @media (max-width: $tablet) {
+            margin: 0 auto;
+        }
+
+        @media (max-width: $mobile) {
+            height: 350px;
+        }
+    }
+
+    &__img-txt {
+        background-image: url(/images/dist/marketing/text-card.png);
+    }
+
+    &__img-video {
+        background-image: url(/images/dist/marketing/video-card.png);
+        margin-left: auto;
+    }
+
+    &__img-gallery {
+        background-image: url(/images/dist/marketing/gallery-card.png);
+    }
+
+    &__card-descr {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    &__btn-wrap {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 150px;
+
+        .btn {
+            max-width: 285px;
+        }
+    }
+
+    &__panel-faq {
+        padding: 50px;
+        max-width: 1100px;
+        margin: 0 auto 150px;
+
+        @media (max-width: $mobile) {
+            padding: 0;
+            box-shadow: none;
+            margin-bottom: 80px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 80px;
+
+            @media (max-width: $mobile) {
+                margin-bottom: 20px;
+            }
+        }
+
+        .accordion__title {
+            padding: 20px;
+
+            @media (max-width: $mobile) {
+                padding: 20px 0;
+            }
+        }
+    }
+}
