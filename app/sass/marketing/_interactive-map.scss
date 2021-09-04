@@ -213,20 +213,22 @@
 
     @media (max-width: $tablet-sm) {
         height: 500px;
+        transform: translate(-50%,-50%) scale(.8);
     }
 
     @media (max-width: $mobile) {
         width: 510px;
         height: 300px;
-        top: -50%;
-        left: 0;
-        transform: none;
+        //top: -50%;
+        //left: 0;
+        transform: translate(-59%,-68%) scale(.8);
     }
 
     @media (max-width: 540px) {
-        width: 100%;
+        transform: translate(-61%,-73%) scale(.6);
+        /*width: 100%;
         top: -31%;
-        left: -19%;
+        left: -19%;*/
     }
 }
 
