@@ -1,0 +1,104 @@
+.publications {
+    &__img {
+        position: relative;
+        margin-bottom: 30px;
+
+        @media (max-width: $mobile) {
+            text-align: center;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            @media (max-width: $mobile) {
+                display: none;
+            }
+        }
+    }
+
+    &__img-coverage {
+
+        &::before {
+            right: -370px;
+            bottom: -192px;
+            width: 335px;
+            height: 323px;
+            background-image: url(../images/dist/dashed-ar4.svg);
+
+            @media (max-width: $tablet) {
+                right: -314px;
+                bottom: -111px;
+                width: 293px;
+                height: 261px;
+            }
+        }
+    }
+
+    &__img-save {
+
+        &::before {
+            left: -370px;
+            bottom: -120px;
+            width: 317px;
+            height: 330px;
+            background-image: url(../images/dist/dashed-ar2.svg);
+
+            @media (max-width: $tablet) {
+                left: -286px;
+                bottom: -173px;
+                width: 267px;
+                height: 315px;
+            }
+        }
+    }
+
+    &__img-popularity {
+        &::before {
+            right: -400px;
+            bottom: 0;
+            width: 340px;
+            height: 370px;
+            transform: rotate(2deg);
+            background-image: url(../images/dist/dashed-ar3.svg);
+
+            @media (max-width: $tablet) {
+                right: -315px;
+                bottom: 0;
+                width: 307px;
+                height: 348px;
+            }
+        }
+    }
+
+    &__btn-wrap {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 150px;
+
+        .btn {
+            max-width: 285px;
+        }
+    }
+
+    &__form-title {
+        margin-bottom: 60px;
+        text-align: center;
+    }
+
+    &__form {
+        max-width: 530px;
+        margin: 0 auto;
+    }
+
+    &__section-form {
+        padding: 75px 0;
+        margin-bottom: 150px;
+
+        @media (max-width: $tablet) {
+            margin-bottom: 100px;
+        }
+    }
+}
