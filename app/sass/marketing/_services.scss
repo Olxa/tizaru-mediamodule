@@ -1,0 +1,71 @@
+.services {
+    &__title {
+        @media (max-width: $tablet) {
+            display: none;
+        }
+
+        &--mob {
+            display: none;
+            margin-bottom: 30px;
+
+            @media (max-width: $tablet) {
+                display: block;
+            }
+
+            @media (max-width: $mobile) {
+                text-align: left;
+            }
+        }
+    }
+
+    &__intro-panel-wrap {
+        margin: 100px 0;
+
+        @media (max-width: $mobile) {
+            margin: 60px 0;
+        }
+    }
+
+    &__intro-panel {
+        height: 100%;
+        padding: 30px;
+
+        @media (max-width: $mobile) {
+            height: auto;
+            margin-bottom: 60px;
+        }
+    }
+
+    &__form-panel {
+        padding: 60px 45px;
+
+        @media (max-width: $mobile) {
+            padding: 30px 15px;
+        }
+    }
+
+
+    &__form-title {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    &__form-descr {
+        text-align: center;
+        margin: 0 auto 60px;
+        max-width: 960px;
+
+        @media (max-width: $mobile) {
+            text-align: left;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__form {
+    }
+
+    &__form-btn {
+        text-align: center;
+        padding-top: 60px;
+    }
+}
