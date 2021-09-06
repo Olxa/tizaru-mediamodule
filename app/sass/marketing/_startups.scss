@@ -1,0 +1,32 @@
+.startups {
+    &__page-title {
+        @media (max-width: $mobile) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__tabs {
+        position: relative;
+        top: -40px;
+
+        @media (max-width: $mobile) {
+            top: 0;
+        }
+    }
+
+    &__tab-img {
+        text-align: center;
+    }
+
+    &__tab-content {
+        text-align: right;
+    }
+
+    &__whom-item {
+        margin-bottom: 150px;
+
+        @media (max-width: $tablet) {
+            margin-bottom: 80px;
+        }
+    }
+}

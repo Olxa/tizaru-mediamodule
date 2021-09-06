@@ -1,0 +1,73 @@
+.tabs-vertical {
+    display: flex;
+
+    @media (max-width: $mobile) {
+        flex-direction: column;
+    }
+
+    &--center {
+        align-items: center;
+    }
+
+
+    &__nav {
+        width: 20%;
+        max-width: 200px;
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width: $mobile) {
+            flex-direction: row;
+            max-width: 100%;
+            width: 100%;
+            overflow-y: auto;
+        }
+
+        &--upper {
+
+            .tabs__nav {
+                margin-right: 0;
+                margin-bottom: 25px;
+
+                @media (max-width: $tablet) {
+                    margin-bottom: 15px;
+                }
+
+                @media (max-width: $mobile) {
+                    margin-right: 15px;
+                }
+            }
+
+            .tabs__nav-link {
+                font-family: $userfont-bold;
+                font-weight: 700;
+                font-size: 20px;
+                text-transform: uppercase;
+
+                @media (max-width: $tablet) {
+                    font-family: $userfont-sbold;
+                    font-weight: 600;
+                    font-size: 16px;
+                }
+
+                &.active {
+                    color: $accent;
+                }
+
+                &::before {
+                    bottom: 0;
+                }
+            }
+        }
+    }
+
+    &__content {
+        width: 80%;
+        padding-left: 20px;
+
+        @media (max-width: $mobile) {
+            width: 100%;
+            padding: 0;
+        }
+    }
+}

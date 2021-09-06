@@ -83,6 +83,7 @@
 // == tabs ==
 @import "blocks/tabs/tabs";
 @import "blocks/tabs/group-tab";
+@import "blocks/tabs/tabs-vertical";
 
 // == category-bar ==
 @import "blocks/category-bar/category-bar";
@@ -301,6 +302,7 @@
 @import "marketing/bloggers";
 @import "marketing/publications";
 @import "marketing/services";
+@import "marketing/startups";
 
 // == article ==
 @import "articles/articles-page";

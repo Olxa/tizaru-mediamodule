@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
 
-    @media (max-width: $mobile-sm) {
+    @media (max-width: $mobile) {
         flex-wrap: wrap;
     }
 
@@ -14,7 +14,7 @@
             margin-right: 40px;
         }
 
-        @media (max-width: $mobile-sm) {
+        @media (max-width: $mobile) {
             width: 100%;
             text-align: center;
             margin-bottom: 60px;
@@ -23,6 +23,22 @@
 
         &:last-child {
             margin-right: 0;
+        }
+
+        &--md4 {
+            padding: 0 50px;
+            width: 25%;
+            margin: 0;
+
+            @media (max-width: $tablet) {
+                padding: 0 20px;
+            }
+
+            @media (max-width: $mobile) {
+                width: 100%;
+                padding: 0;
+                margin-bottom: 30px;
+            }
         }
     }
 
@@ -49,6 +65,10 @@
         text-align: center;
         background: url(/images/dist/circle-dot.svg) no-repeat center;
         background-size: contain;
+
+        @media (max-width: $tablet) {
+            font-size: 35px;
+        }
 
         @media (max-width: $mobile-sm) {
             margin: 0 auto 30px;
