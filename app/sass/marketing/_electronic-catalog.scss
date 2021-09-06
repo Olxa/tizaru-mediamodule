@@ -1,0 +1,62 @@
+.electronic-catalog {
+
+    &__intro {
+        margin-bottom: 60px !important;
+    }
+
+    &__intro-image {
+        text-align: center;
+    }
+
+    &__possibil {
+        padding: 200px 0 100px;
+        margin-bottom: 100px;
+
+        @media (max-width: $mobile) {
+            padding-top: 180px;
+        }
+    }
+
+    &__possibil-panel {
+        position: relative;
+        bottom: -150px;
+        width: 90%;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 60px 125px;
+        text-align: center;
+
+        @media (max-width: $mobile) {
+            padding: 35px 15px;
+            bottom: -100px;
+        }
+    }
+
+    &__possibil {
+        .btn {
+            min-width: 220px;
+        }
+    }
+
+    &__list {
+        margin-top: 20px;
+
+
+
+        .list-mark__item {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__list-wrap {
+        @media (max-width: $tablet) {
+            margin-bottom: 100px;
+        }
+
+        &:last-child {
+            @media (max-width: $tablet) {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
