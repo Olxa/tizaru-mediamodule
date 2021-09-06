@@ -23,6 +23,14 @@
             }
         }
 
+          &--mb-100 {
+            padding-bottom: 100px;
+
+            @media (max-width: $tablet) {
+                padding-bottom: 80px;
+            }
+        }
+
         &--bg {
             background-color: $white;
         }

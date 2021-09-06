@@ -1,0 +1,297 @@
+.association {
+    &__page-title {
+        line-height: 40px;
+        margin-bottom: 30px;
+
+        @media (max-width: $tablet) {
+            line-height: 25px;
+        }
+    }
+
+    &__page-descr {
+        margin-bottom: 30px;
+    }
+
+    &__page-img {
+        text-align: right;
+
+        @media (max-width: $tablet) {
+            text-align: center;
+        }
+    }
+
+    &__panel-wrap {
+        display: flex;
+        margin-bottom: 30px;
+
+        @media (max-width: $tablet) {
+            margin-bottom: 60px;
+        }
+
+        @media (max-width: $mobile) {
+            margin-bottom: 30px;
+        }
+
+        &:first-child {
+            order: 1;
+        }
+
+        &:nth-child(2) {
+            order: 2;
+        }
+
+        &:nth-child(3) {
+            order: 3;
+        }
+
+        &:nth-child(4) {
+            order: 4;
+
+            @media (max-width: $tablet) {
+                order: 5;
+            }
+        }
+
+        &:nth-child(5) {
+            order: 5;
+
+            @media (max-width: $tablet) {
+                order: 4;
+            }
+        }
+
+        &:nth-child(6) {
+            order: 6;
+        }
+
+        &:nth-child(7) {
+            order: 7;
+
+            @media (max-width: $tablet) {
+                order: 8;
+            }
+        }
+
+        &:nth-child(8) {
+            order: 8;
+
+            @media (max-width: $tablet) {
+                order: 9;
+            }
+        }
+
+        &:nth-child(9) {
+            order: 9;
+
+            @media (max-width: $tablet) {
+                order: 7;
+            }
+        }
+    }
+
+    &__panel {
+        display: flex;
+        align-items: center;
+        padding: 25px;
+    }
+
+
+    &__panel-img {
+        @media (max-width: $tablet) {
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__party-list {
+        margin-top: 30px;
+    }
+
+    &__party-item {
+        position: relative;
+        margin-bottom: 30px;
+        padding-left: 70px;
+
+        @media (max-width:$mobile) {
+            padding-left: 50px;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: -5px;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: url(/images/dist/icon/tiz-list-item.svg) no-repeat center;
+            background-size: contain;
+
+            @media (max-width:$mobile) {
+                width: 30px;
+                height: 30px;
+                top: 3px;
+            }
+        }
+    }
+
+    &__logo-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 40px;
+
+        @media (max-width:$mobile) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    &__logo-sort {
+        display: flex;
+        align-items: center;
+
+        @media (max-width:$mobile) {
+            width: 100%;
+            justify-content: flex-end;
+            margin-top: 10px;
+        }
+
+        .dropdown {
+            margin-right: 30px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    &__logo-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+        grid-gap: 1rem;
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+        margin-bottom: 50px;
+
+        @media (max-width:$mobile) {
+            grid-template-columns: repeat(auto-fit,minmax(80px,1fr));
+        }
+    }
+
+    &__logo-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 150px;
+        height: 150px;
+        border: 1px solid $border-color;
+        border-radius: $border-radius;
+
+        @media (max-width:$mobile) {
+            width: 80px;
+            height: 80px;
+            border-style: dashed;
+        }
+
+        &--mob-hide {
+            @media (max-width: 439px) {
+                display: none;
+            }
+        }
+    }
+
+    &__logo-img {
+        min-width: 70px;
+
+        @media (max-width:$mobile) {
+            min-width: 50px;
+            width: 50px;
+        }
+    }
+
+    &__logo-link-wrap {
+        text-align: center;
+    }
+
+
+    &__conditions {
+        padding: 70px 0;
+
+        @media (max-width:$mobile) {
+            padding: 50px 0;
+        }
+    }
+
+    &__list-mark {
+        margin-top: 30px;
+
+        @media (max-width:$mobile) {
+            margin-bottom: 60px;
+        }
+
+        .list-mark__item,
+        .list-ol__item {
+            margin-bottom: 30px;
+        }
+
+        &:last-child {
+            @media (max-width:$mobile) {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__form-wrap {
+        margin-top: 100px;
+        padding: 45px;
+
+        @media (max-width:$mobile) {
+            padding: 30px 15px;
+        }
+
+        .textarea {
+            min-height: 270px;
+
+            @media (max-width:$mobile) {
+                min-height: 150px;
+            }
+        }
+    }
+
+    &__form-title {
+        margin-bottom: 60px;
+        text-align: center;
+
+        @media (max-width:$mobile) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__form-subtitle {
+        margin-bottom: 30px;
+        font-family: $userfont-sbold;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 27px;
+
+        @media (max-width:$mobile) {
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        &--check {
+            margin-bottom: 47px;
+
+            @media (max-width:$mobile) {
+                margin-top: 60px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &__form-btn {
+        text-align: center;
+        padding-top: 50px;
+    }
+}
