@@ -1,0 +1,105 @@
+.pre-registration {
+
+    &__intro {
+        @media (max-width: $tablet-sm) {
+            order: 2;
+        }
+    }
+
+    &__img-wrap {
+        @media (max-width: $tablet-sm) {
+            order: 1;
+            text-align: center;
+        }
+    }
+
+    &__logo {
+        display: inline-block;
+        width: 197px;
+        margin-bottom: 30px;
+
+        @media (max-width: $tablet-sm) {
+            display: none;
+        }
+    }
+
+    &__title {
+        @media (max-width: $tablet-sm) {
+            font-family: $userfont-bold;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+    }
+
+
+    &__form-title {
+        display: block;
+        margin-bottom: 30px;
+        font-family: $userfont-sbold;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 27px;
+        color: $accent;
+
+        @media (max-width: $tablet-sm) {
+            text-align: center;
+        }
+
+        @media (max-width: $mobile-sm) {
+            text-align: left;
+        }
+    }
+
+    &__field-wrap {
+        display: flex;
+
+        @media (max-width: $mobile-sm) {
+            flex-direction: column;
+        }
+    }
+
+    &__input {
+        border-radius: $border-radius 0 0 $border-radius;
+
+        @media (max-width: $mobile-sm) {
+            margin-bottom: 20px;
+            border-radius: $border-radius;
+        }
+    }
+
+    &__btn {
+        border-radius: 0 $border-radius $border-radius 0;
+
+        @media (max-width: $mobile-sm) {
+            border-radius: $border-radius;
+        }
+    }
+
+    &__card {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &__card-item {
+        padding: 35px 25px;
+        width: 31%;
+        margin: 0 1% 30px;
+        min-height: 260px;
+
+        @media (max-width: $tablet) {
+            width: 48%;
+        }
+
+        @media (max-width: $mobile) {
+            width: 100%;
+            margin: 0 0 30px;
+        }
+    }
+
+    &__card-title {
+        text-align: center;
+        min-height: 55px;
+    }
+}
