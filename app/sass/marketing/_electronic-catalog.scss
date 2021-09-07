@@ -59,4 +59,30 @@
             }
         }
     }
+
+    &__regist-panel {
+        max-width: 900px;
+        margin: 0 auto 150px;
+        padding: 80px 20px;
+
+        @media (max-width: $tablet) {
+            margin-bottom: 80px;
+            padding: 30px 15px;
+        }
+    }
+
+    &__regist-form {
+        max-width: 380px;
+        margin: 0 auto 60px;
+
+        @media (max-width: $tablet) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__regist-social {
+        .soc-login {
+            justify-content: center;
+        }
+    }
 }

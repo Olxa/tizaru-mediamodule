@@ -23,7 +23,7 @@
             }
         }
 
-          &--mb-100 {
+        &--mb-100 {
             padding-bottom: 100px;
 
             @media (max-width: $tablet) {
@@ -252,6 +252,10 @@
 
     &__card {
         padding: 50px 20px;
+
+        &--empty {
+            padding: 0;
+        }
     }
 
     &__card-icon {
@@ -297,7 +301,6 @@
         @media (max-width: 1199px) {
             text-align: center;
             bottom: -5px;
-
         }
     }
 }
