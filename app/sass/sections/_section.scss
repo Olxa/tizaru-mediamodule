@@ -23,11 +23,29 @@
             }
         }
 
+        &--mb-150 {
+            padding-bottom: 150px;
+
+            @media (max-width: $tablet) {
+                padding-bottom: 80px;
+            }
+        }
+
         &--mb-100 {
             padding-bottom: 100px;
 
             @media (max-width: $tablet) {
                 padding-bottom: 80px;
+            }
+        }
+
+        &--margin-t-b150 {
+            margin-top: 150px;
+            margin-bottom: 150px;
+
+            @media (max-width: $tablet) {
+                margin-top: 100px;
+                margin-bottom: 100px;
             }
         }
 

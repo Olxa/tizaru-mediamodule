@@ -9,9 +9,15 @@
 
     &__item {
         &::before {
-            content: '\2022';
-            color: $accent;
+            content: '';
+            display: inline-block;
+            width: 7px;
+            min-width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: $accent;
             margin-right: 10px;
+            margin-bottom: 3.5px;
         }
     }
 
