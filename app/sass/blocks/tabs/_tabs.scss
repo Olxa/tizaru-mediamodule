@@ -43,6 +43,7 @@
             background-color: $accent;
             transition: all .3s linear;
         }
+
         &--simple {
             font-family: $userfont;
             font-weight: 400;
@@ -54,6 +55,25 @@
                 color: $accent;
             }
         }
+
+        &--bold {
+            display: inline-block;
+            margin-bottom: 20px;
+            font-family: $userfont-sbold;
+            font-weight: 600;
+            text-transform: initial;
+            letter-spacing: initial;
+            font-size: 20px;
+
+            &::before {
+                display: none;
+            }
+
+            &.active {
+                color: $accent;
+            }
+        }
+
         &.active {
             &::before {
                 width: 100%

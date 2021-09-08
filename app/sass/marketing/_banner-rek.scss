@@ -1,0 +1,229 @@
+.banner-rek {
+
+    &__view-title {
+        margin-bottom: 60px;
+
+        @media (max-width: $tablet) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__view-descr {
+        margin-bottom: 100px;
+
+        @media (max-width: $tablet) {
+            margin-bottom: 60px;
+        }
+    }
+
+    &__view-ex {
+        text-align: center;
+        width: fit-content;
+
+        @media (max-width: $tablet) {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+
+        .section__title-block {
+            @media (max-width: $tablet) {
+                order: 2;
+                padding-left: 15px;
+            }
+        }
+    }
+
+    &__view-size {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    &__view-lent-wrap {
+        position: relative;
+        text-align: right;
+
+        @media (max-width: $tablet) {
+            text-align: center;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: -40px;
+            top: 61px;
+            display: block;
+            width: 202px;
+            height: 284px;
+            background-image: url(/images/dist/dashed-ar11.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+
+            @media (max-width: $tablet) {
+                display: none;
+            }
+        }
+    }
+
+    &__detail-ex {
+        @media (max-width: $tablet) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__detail-descr {
+        @media (max-width: $tablet) {
+            order: 2;
+        }
+    }
+
+    &__view-lent {
+        margin-top: 60px;
+        max-height: 700px;
+
+        @media (max-width: $tablet) {
+            order: 1;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__preview-col {
+        max-width: 655px;
+        margin-left: auto;
+
+        @media (max-width: $tablet) {
+            max-width: 100%;
+            padding-top: 60px;
+        }
+    }
+
+    &__preview-wrap {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 30px;
+
+        @media (max-width: $tablet) {
+            justify-content: center;
+        }
+
+        @media (max-width: $mobile-md) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__preview {
+        padding: 0 7px;
+
+        @media (max-width: $mobile-md) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__preview-item {
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__plan-title {
+        @media (max-width: $tablet) {
+            margin-bottom: 100px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 60px;
+        text-align: center;
+
+        @media (max-width: $tablet) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__plan-panel {
+        position: relative;
+        max-width: 350px;
+        margin: 0 auto;
+        padding: 70px 40px;
+        border-radius: $border-radius;
+        border: 1px solid $gray;
+        text-align: center;
+
+        @media (max-width: $tablet) {
+            margin-bottom: 30px;
+            padding: 50px 35px;
+        }
+
+        @media (max-width: $mobile-sm) {
+            max-width: 310px;
+        }
+
+        &::before {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        &--static {
+            &::before {
+                width: 130px;
+                height: 250px;
+                top: -155px;
+                left: -39px;
+                background-image: url(/images/dist/marketing/men-sit.svg);
+
+                @media (max-width: $tablet) {
+                    width: 100px;
+                    height: 200px;
+                    top: -120px;
+                }
+
+                @media (max-width: $mobile-sm) {
+                    left: -10px;
+                }
+            }
+        }
+
+        &--media {
+
+            @media (max-width: $mobile-sm) {
+                text-align: left;
+                padding-right: 100px;
+            }
+
+            &::before {
+                width: 185px;
+                height: 200px;
+                bottom: -27px;
+                right: -103px;
+                background-image: url(/images/dist/marketing/woomen-sit.svg);
+
+                @media (max-width: $tablet) {
+                    width: 138px;
+                    height: 150px;
+                    right: -69px;
+                }
+
+                @media (max-width: $mobile-sm) {
+                    right: 0;
+                }
+            }
+        }
+    }
+
+    &__tabs {
+        width: 100%;
+    }
+
+    &__panel {
+        padding: 45px 60px;
+    }
+}

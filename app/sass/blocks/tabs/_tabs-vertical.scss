@@ -23,6 +23,11 @@
             overflow-y: auto;
         }
 
+        &--long {
+            width: 100%;
+            max-width: 100%;
+        }
+
         &--upper {
 
             .tabs__nav {

@@ -30,6 +30,10 @@
             left: 0;
             right: 0;
         }
+
+        &--width-content {
+            width: auto;
+        }
     }
 
     &__popup-txt-title {
