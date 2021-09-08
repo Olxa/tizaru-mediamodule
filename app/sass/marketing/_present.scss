@@ -1,0 +1,227 @@
+.present {
+    &__bg-section {
+        padding: 50px 0;
+        margin-bottom: 150px;
+    }
+
+    &__img {
+        position: relative;
+        margin-bottom: 20px;
+
+        @media (max-width: $tablet-sm) {
+            text-align: center;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+
+            @media (max-width: $tablet-sm) {
+                display: none;
+            }
+        }
+
+        &--one::before,
+        &--three::before {
+            background-image: url(/images/dist/dashed-ar12.svg);
+            width: 323px;
+            height: 370px;
+            right: -299px;
+            bottom: -206px;
+        }
+
+        &--two::before {
+            background-image: url(/images/dist/dashed-ar13.svg);
+            width: 356px;
+            height: 302px;
+            left: -378px;
+            bottom: -117px;
+        }
+
+        &--five::before {
+            background-image: url(/images/dist/dashed-ar2.svg);
+            width: 283px;
+            height: 320px;
+            right: -229px;
+        }
+    }
+
+    &__list-content {
+        position: relative;
+        padding-left: 110px;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+        @media (max-width: $tablet) {
+            padding-left: 60px;
+        }
+
+        @media (max-width: $tablet-sm) {
+            padding-left: 0;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__list-descr-wrap {
+        margin-top: auto;
+    }
+
+    &__list-title {
+        font-size: 50px;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+
+        @media (max-width: $tablet) {
+            font-size: 30px;
+        }
+
+        @media (max-width: $tablet-sm) {
+            padding-left: 70px;
+            font-size: 20px;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 80px;
+            height: 80px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            @media (max-width: $tablet) {
+                width: 40px;
+                height: 40px;
+            }
+
+            @media (max-width: $tablet-sm) {
+                top: -12px;
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+        &--one::before {
+            background-image: url(/images/dist/num1.svg);
+        }
+
+        &--two::before {
+            background-image: url(/images/dist/num2.svg);
+        }
+
+        &--three::before {
+            background-image: url(/images/dist/num3.svg);
+        }
+
+        &--four::before {
+            background-image: url(/images/dist/num4.svg);
+        }
+    }
+
+    &__list-subtitles {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    &__list-subtitle {
+        font-family: $userfont-bold;
+        font-weight: 700;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: $gray;
+
+        @media (max-width: $tablet) {
+            font-size: 16px;
+        }
+
+        @media (max-width: $tablet-sm) {
+            font-size: 14px;
+        }
+
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: $accent;
+            margin: 0 10px 2px;
+
+            @media (max-width: $tablet-sm) {
+                width: 6px;
+                height: 6px;
+            }
+        }
+
+        &:first-child::before {
+            display: none;
+        }
+    }
+
+    &__list-descr {
+        font-size: 20px;
+        color: $gray3;
+        margin: 0;
+
+        @media (max-width: $tablet) {
+            font-size: 16px;
+        }
+
+        @media (max-width: $tablet-sm) {
+            font-size: 14px;
+        }
+    }
+
+    &__panel {
+        padding: 30px 40px;
+        max-width: 380px;
+        margin-left: auto;
+
+        @media (max-width: $tablet-sm) {
+            margin: 30px auto 0;
+            padding: 25px 15px;
+        }
+    }
+
+    &__panel-title {
+        max-width: 250px;
+        margin: 0 auto 20px;
+        font-family: $userfont-sbold;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 22px;
+        text-align: center;
+    }
+
+    &__media-list {
+        max-height: 210px;
+        overflow-x: auto;
+    }
+
+    &__media-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    &__media-logo {
+        width: 50px;
+        min-width: 50px;
+        height: 50px;
+        object-fit: cover;
+        object-position: top center;
+        border-radius: 50%;
+        margin-right: 20px;
+    }
+
+    &__media-name {
+        font-size: 18px;
+    }
+}
