@@ -144,6 +144,11 @@
         font-size: 18px;
         line-height: 25px;
 
+        &--bold {
+            font-family: $userfont-sbold;
+            font-weight: 600;
+        }
+
         @media (max-width: 1199px) {
             font-size: 16px;
             line-height: 20px;

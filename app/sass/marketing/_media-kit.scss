@@ -1,0 +1,46 @@
+.media-kit {
+
+    &__diagram-wrap {
+        text-align: center;
+        margin-bottom: 0 !important;
+    }
+
+    &__diagram {
+        margin: 60px auto 0;
+        max-height: 620px;
+    }
+
+    &__dots-wrap {
+        padding: 85px 0;
+    }
+
+    &__progress-list {
+        margin-bottom: 20px;
+    }
+
+    &__adm-img {
+        max-height: 640px;
+
+        @media (max-width: $tablet-sm) {
+            max-height: 350px;
+        }
+
+        &--right {
+            text-align: right;
+
+            @media (max-width: $tablet-sm) {
+                text-align: center;
+            }
+        }
+    }
+
+    &__section-dscr {
+        .section__mob-end-col {
+            order: initial;
+
+            @media (max-width: $tablet-sm) {
+                order: 99;
+            }
+        }
+    }
+}

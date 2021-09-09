@@ -1,0 +1,67 @@
+.progress {
+    &__list {
+
+        &--margin-mob {
+            @media (max-width: $mobile) {
+                margin-bottom: 60px;
+            }
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__item-title {
+        margin-right: 30px;
+        min-width: 55px;
+        font-size: 20px;
+
+        &--icon {
+            font-size: 30px;
+            text-align: center;
+
+            &.i-mobile-phone {
+                font-size: 30px;
+            }
+
+            &.i-monitor {
+                font-size: 25px;
+            }
+
+            &.i-male,
+            &.i-female {
+                font-size: 33px;
+            }
+        }
+    }
+
+    &__line {
+        position: relative;
+        width: 100%;
+        height: 36px;
+        border-radius: $border-radius;
+        overflow: hidden;
+        background: $white;
+    }
+
+    &__val {
+        background-color: $accent;
+        height: 100%;
+    }
+
+    &__val-txt {
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        font-family: $userfont-sbold;
+        font-weight: 600;
+        color: $accent;
+    }
+}
