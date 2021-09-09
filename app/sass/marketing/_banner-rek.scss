@@ -219,11 +219,126 @@
         }
     }
 
+    &__section-calc {
+        @media (max-width: $mobile) {
+            padding: 35px 30px;
+            border-radius: $border-radius;
+            box-shadow: $shadow1;
+        }
+
+        @media (max-width: $mobile-sm) {
+            margin: 0 10px;
+            padding: 35px 0;
+        }
+    }
+
     &__tabs {
         width: 100%;
+
+        .tooltip__popup {
+            min-width: 120px;
+            padding: 0;
+            object-fit: contain;
+            box-shadow: none;
+            right: initial;
+            left: 0;
+        }
+
+        .tabs__nav-list {
+            @media (max-width: $mobile) {
+                flex-direction: column;
+                border-radius: $border-radius;
+                border: 1px solid $border-color;
+                padding: 10px;
+            }
+
+            @media (max-width: $mobile-sm) {
+                padding: 10px 5px;
+            }
+        }
+
+        .tabs__nav-link {
+            @media (max-width: $mobile) {
+                margin-bottom: 10px;
+            }
+
+            @media (max-width: $mobile-sm) {
+                font-size: 14px;
+            }
+        }
+
+        .tabs__nav {
+            @media (max-width: $mobile) {
+                margin-right: 0;
+            }
+        }
+
+        .tooltip {
+            @media (max-width: $mobile) {
+                display: none;
+            }
+        }
     }
 
     &__panel {
         padding: 45px 60px;
+
+        @media (max-width: $mobile) {
+            padding: 0;
+            box-shadow: none;
+        }
+
+
+        .input-wrap__label {
+            margin-bottom: 6px;
+        }
+    }
+
+    &__calc-meta {
+        margin-bottom: 20px;
+    }
+
+    &__calc-total {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    &__price-pro {
+        margin-left: 20px;
+    }
+
+    &__btn {
+        margin-top: 30px;
+        text-align: center
+    }
+
+    &__panel-faq {
+        padding: 50px;
+        max-width: 1100px;
+        margin: 0 auto;
+
+        @media (max-width: $mobile) {
+            padding: 0;
+            box-shadow: none;
+            margin-bottom: 80px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 80px;
+
+            @media (max-width: $mobile) {
+                margin-bottom: 20px;
+            }
+        }
+
+        .accordion__title {
+            padding: 20px;
+
+            @media (max-width: $mobile) {
+                padding: 20px 0;
+            }
+        }
     }
 }

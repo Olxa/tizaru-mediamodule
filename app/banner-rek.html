@@ -107,13 +107,14 @@
                 </div>
             </div>
         </section>
-        <section class="row section__row section__row--mb-200">
+        <section class="row section__row section__row--mb-200 banner-rek__section-calc">
             <div class="col-12">
-                <h2 class="section-title section-title--margin-b text-center">Рассчитать стоимость</h2>
+                <h2 class="section-title section-title--margin-b60 text-center">Рассчитать стоимость</h2>
             </div>
             <div class="col-12">
-                <div class="row tabs-vertical tabs-vertical--center banner-rek__tabs">
+                <div class="row tabs-vertical banner-rek__tabs">
                     <div class="col-xl-6">
+                        <span class="text-meta banner-rek__calc-meta">Расположение баннера</span>
                         <ul class="tabs tabs__nav-list tabs-vertical__nav tabs-vertical__nav--long tabs--feed" data-tabgroup="feed-content">
                             <li class="tabs__nav">
                                 <a class="tabs__nav-link tabs__nav-link--bold active" href="#lent">В ленте</a>
@@ -124,25 +125,224 @@
                                     <img class="tooltip__popup tooltip__popup--width-content" src="images/dist/marketing/preview-lent-sm.svg" alt="Пример расположения банера в ленте" />
                                 </div>
                             </li>
-                            <li class="tabs__nav"><a class="tabs__nav-link tabs__nav-link--bold" href="#bottom">В публикациях, каталоге (снизу) </a></li>
-                            <li class="tabs__nav"><a class="tabs__nav-link tabs__nav-link--bold" href="#right">В публикациях, каталоге (сбоку) </a></li>
+                            <li class="tabs__nav">
+                                <a class="tabs__nav-link tabs__nav-link--bold" href="#bottom">В публикациях, каталоге (снизу)</a>
+                                <div class="tooltip">
+                                    <div class="tooltip__btn">
+                                        <span class="tooltip__icon i-info"></span>
+                                    </div>
+                                    <img class="tooltip__popup tooltip__popup--width-content" src="images/dist/marketing/preview-bottom-sm.svg" alt="Пример расположения банера внизу публикации" />
+                                </div>
+                            </li>
+                            <li class="tabs__nav">
+                                <a class="tabs__nav-link tabs__nav-link--bold" href="#right">В публикациях, каталоге (сбоку)</a>
+                                <div class="tooltip">
+                                    <div class="tooltip__btn">
+                                        <span class="tooltip__icon i-info"></span>
+                                    </div>
+                                    <img class="tooltip__popup tooltip__popup--width-content" src="images/dist/marketing/preview-right-sm.svg" alt="Пример расположения банера справа от публикации" />
+                                </div>
+                            </li>
                         </ul>
                     </div>
                     <div class="col-xl-6">
-                        <div id="feed-content" class="tabgroup tabs-vertical__content">
-                            <div id="lent" class="tabgroup__item media-feed__content startups__tab-content active">
-                                <div class="banner-rek__panel panel">
-                                    1
+                        <div id="feed-content" class="tabgroup">
+                            <div id="lent" class="tabgroup__item media-feed__content active">
+                                <div class="banner-rek__panel panel row">
+                                    <div class="col-12 reklam-add__panel-row reklam-add__panel-row--magrin">
+                                        <a class="reklam-add__select-reg btn btn-conture btn--full btn--md popup-link" href="#region-select">Выбрать регионы показа</a>
+                                        <div class="reklam-add__select-reg--mob">
+                                            <div class="reklam-add__select-title">Регион показа</div>
+                                            <!--#include virtual="/parts/city-mobil.html" -->
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-7 reklam-add__panel-row">
+                                        <label class="input-wrap__label">Страница</label>
+                                        <div class="dropdown dropdown--input js-dropdown-toogle">
+                                            <button class="dropdown__value" type="button"><span class="dropdown__value-inner">В сообществе</span></button>
+                                            <div class="dropdown__list scroll-gray">
+                                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">На главной</a></div>
+                                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">В общей ленте</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-5 reklam-add__panel-row">
+                                        <label class="input-wrap__label">Ряд показа</label>
+                                        <div class="dropdown dropdown--input js-dropdown-toogle">
+                                            <button class="dropdown__value" type="button"><span class="dropdown__value-inner">2</span></button>
+                                            <div class="dropdown__list scroll-gray">
+                                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">4</a></div>
+                                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">6</a></div>
+                                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">8</a></div>
+                                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">10</a></div>
+                                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">12</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 reklam-add__panel-row">
+                                        <label class="input-wrap__label">Показывать</label>
+                                        <div class="input-date__wrap">
+                                            <label class="input-date__label">с</label>
+                                            <input class="input input-date" type="date">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 reklam-add__panel-row reklam-add__panel-row--magrin">
+                                        <div class="input-date__wrap">
+                                            <label class="input-date__label">по</label>
+                                            <input class="input input-date" type="date">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="banner-rek__calc-total">
+                                            <span class="reklam-add__price-val">Итого: 5 000 &#8381;</span>
+                                            <a class="reklam-add__price-pro banner-rek__price-pro" href="pro-account.html">4 500 &#8381; с <span class="text-accent">PRO</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 banner-rek__btn">
+                                        <a class="btn btn-accent btn--md" href="reklam3.html">Заказать</a>
+                                    </div>
                                 </div>
                             </div>
-                            <div id="bottom" class="tabgroup__item media-feed__content startups__tab-content">
-                                <div class="banner-rek__panel panel">
-                                    2
+                            <div id="bottom" class="tabgroup__item media-feed__content">
+                                <div class="banner-rek__panel panel row">
+                                    <div class="col-12 reklam-add__panel-row">
+                                        <div class="reklam-add__title-group">Тип баннера</div>
+                                        <div class="row reklam-add__radio-group">
+                                            <div class="col-md-6">
+                                                <div class="radio">
+                                                    <input class="radio__field" id="bottom-static" type="radio" name="type-banner-bottom" checked>
+                                                    <label class="radio__value" for="bottom-static">Статичный</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="radio">
+                                                    <input class="radio__field" id="bottom-media" type="radio" name="type-banner-bottom">
+                                                    <label class="radio__value" for="bottom-media">Медийный</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 reklam-add__panel-row reklam-add__panel-row--magrin">
+                                        <a class="reklam-add__select-reg btn btn-conture btn--full btn--md popup-link" href="#region-select">Выбрать регионы показа</a>
+                                        <div class="reklam-add__select-reg--mob">
+                                            <div class="reklam-add__select-title">Регион показа</div>
+                                            <!--#include virtual="/parts/city-mobil.html" -->
+                                        </div>
+                                    </div>
+                                    <div class="col-12 reklam-add__panel-row">
+                                        <label class="input-wrap__label">Сообщество</label>
+                                        <div class="dropdown dropdown--input js-dropdown-toogle">
+                                            <button class="dropdown__value" type="button"><span class="dropdown__value-inner"></span></button>
+                                            <div class="dropdown__list scroll-gray">
+                                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Название сообщества</a></div>
+                                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Название сообщества</a></div>
+                                            </div>
+                                        </div>
+                                        <div class="reklam-add__label-wrap">
+                                            <button class="tag tag--del" type="button">IT</button>
+                                            <button class="tag tag--del" type="button">Программирование</button>
+                                            <button class="tag tag--del" type="button">Спорт</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 reklam-add__panel-row">
+                                        <label class="input-wrap__label">Показывать</label>
+                                        <div class="input-date__wrap">
+                                            <label class="input-date__label">с</label>
+                                            <input class="input input-date" type="date">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 reklam-add__panel-row reklam-add__panel-row--magrin">
+                                        <div class="input-date__wrap">
+                                            <label class="input-date__label">по</label>
+                                            <input class="input input-date" type="date">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="banner-rek__calc-total">
+                                            <span class="reklam-add__price-val">Итого: 5 000 &#8381;</span>
+                                            <a class="reklam-add__price-pro banner-rek__price-pro" href="pro-account.html">4 500 &#8381; с <span class="text-accent">PRO</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 banner-rek__btn">
+                                        <a class="btn btn-accent btn--md" href="reklam3.html">Заказать</a>
+                                    </div>
                                 </div>
                             </div>
-                            <div id="right" class="tabgroup__item media-feed__content startups__tab-content">
-                                <div class="banner-rek__panel panel">
-                                    3
+                            <div id="right" class="tabgroup__item media-feed__content">
+                                <div class="banner-rek__panel panel row">
+                                    <div class="col-12 reklam-add__panel-row">
+                                        <div class="reklam-add__title-group">Тип баннера</div>
+                                        <div class="row reklam-add__radio-group">
+                                            <div class="col-md-6">
+                                                <div class="radio">
+                                                    <input class="radio__field" id="bottom-static2" type="radio" name="type-banner-right" checked>
+                                                    <label class="radio__value" for="bottom-static2">Статичный</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="radio">
+                                                    <input class="radio__field" id="bottom-media2" type="radio" name="type-banner-right">
+                                                    <label class="radio__value" for="bottom-media2">Медийный</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 reklam-add__panel-row reklam-add__panel-row--magrin">
+                                        <a class="reklam-add__select-reg btn btn-conture btn--full btn--md popup-link" href="#region-select">Выбрать регионы показа</a>
+                                        <div class="reklam-add__select-reg--mob">
+                                            <div class="reklam-add__select-title">Регион показа</div>
+                                            <!--#include virtual="/parts/city-mobil.html" -->
+                                        </div>
+                                    </div>
+                                    <div class="col-12 reklam-add__panel-row">
+                                        <label class="input-wrap__label">Сообщество</label>
+                                        <div class="dropdown dropdown--input js-dropdown-toogle">
+                                            <button class="dropdown__value" type="button"><span class="dropdown__value-inner"></span></button>
+                                            <div class="dropdown__list scroll-gray">
+                                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Название сообщества</a></div>
+                                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Название сообщества</a></div>
+                                            </div>
+                                        </div>
+                                        <div class="reklam-add__label-wrap">
+                                            <button class="tag tag--del" type="button">IT</button>
+                                            <button class="tag tag--del" type="button">Программирование</button>
+                                            <button class="tag tag--del" type="button">Спорт</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 reklam-add__panel-row">
+                                        <label class="input-wrap__label">Показывать</label>
+                                        <div class="input-date__wrap">
+                                            <label class="input-date__label">с</label>
+                                            <input class="input input-date" type="date">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 reklam-add__panel-row reklam-add__panel-row--magrin">
+                                        <div class="input-date__wrap">
+                                            <label class="input-date__label">по</label>
+                                            <input class="input input-date" type="date">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="banner-rek__calc-total">
+                                            <span class="reklam-add__price-val">Итого: 5 000 &#8381;</span>
+                                            <a class="reklam-add__price-pro banner-rek__price-pro" href="pro-account.html">4 500 &#8381; с <span class="text-accent">PRO</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="reklam-add__radio-group reklam-add__radio-group--vtrtical">
+                                            <div class="radio">
+                                                <input class="radio__field" id="right-big" type="radio" name="size-banner" checked>
+                                                <label class="radio__value" for="right-big">Большой (занимает 2 места)</label>
+                                            </div>
+                                            <div class="radio">
+                                                <input class="radio__field" id="right-sm" type="radio" name="size-banner">
+                                                <label class="radio__value" for="right-sm">Маленький (занимает 1 место)</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 banner-rek__btn">
+                                        <a class="btn btn-accent btn--md" href="reklam3.html">Заказать</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -150,6 +350,77 @@
                 </div>
             </div>
         </section>
+        <section class="banner-rek__panel-faq panel">
+            <h3 class="section-title">FAQ</h3>
+            <div class="accordion">
+                <div class="accordion__item js-accordion-item">
+                    <div class="accordion__title" href="#">Как расчитывается цена на рекламу?</div>
+                    <div class="accordion__content">
+                        <p>
+                            Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion__item js-accordion-item">
+                    <div class="accordion__title" href="#">А сколько просмотров?</div>
+                    <div class="accordion__content">
+                        <p>
+                            Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion__item js-accordion-item">
+                    <div class="accordion__title" href="#">А какие есть места?</div>
+                    <div class="accordion__content">
+                        <p>
+                            Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion__item js-accordion-item">
+                    <div class="accordion__title" href="#">Карточку в ленте я же могу оформить?</div>
+                    <div class="accordion__content">
+                        <p>
+                            Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion__item js-accordion-item">
+                    <div class="accordion__title" href="#">Как работает реклама? </div>
+                    <div class="accordion__content">
+                        <p>
+                            Напишите на почту tizaru@info.ru
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion__item js-accordion-item">
+                    <div class="accordion__title" href="#">На какие страны распространяется реклама?</div>
+                    <div class="accordion__content">
+                        <p>
+                            Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div id="region-select" class="popup region-select-popup popup--padding-sm mfp-hide">
+    <div class="popup__title">Регионы показа</div>
+    <div class="chanel-setting__city city-s-modal">
+        <div class="input-search">
+            <input class="input input-search__val" type="text" placeholder="Поиск">
+            <button class="input-search__btn i-search" type="submit">Поиск</button>
+        </div>
+        <div class="search-tags">
+            <a class="tag tag--link" href="#">Москва</a>
+            <a class="tag tag--link" href="#">Санкт-Петербург</a>
+            <a class="tag tag--link" href="#">Новосибирск</a>
+            <a class="tag tag--link" href="#">Екатеринбург</a>
+            <a class="tag tag--link" href="#">Нижний Новгород</a>
+        </div>
+        <!--#include virtual="/parts/city-slroller.html" -->
     </div>
 </div>
 <!--#include virtual="/parts/footer.html" -->
