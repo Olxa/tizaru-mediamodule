@@ -93,6 +93,29 @@
     }
 }
 
+//красные стрелки в квадратах
+.slider--sq-arrow {
+    .slick-arrow {
+        top: initial;
+        bottom: 0;
+        width: 45px;
+        height: 45px;
+        color: $accent;
+        border: 1px solid $accent;
+        border-radius: $border-radius;
+        opacity: 1;
+        box-shadow: none;
+        transform: none;
+    }
+
+    .slick-prev {
+        left: 0;
+    }
+
+    .slick-next {
+        right: 0;
+    }
+}
 
 //Маленькие стрелки
 .slider--sm {

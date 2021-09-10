@@ -105,6 +105,18 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
     });
 
+    //Слайдер с дорожной картой
+    $('.js-slider-roadmap').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        autoplay: false,
+        swipe: false
+    });
+
+
+    //Слайдер статистики в опрасах франчайзи
     $('.statistic-slider').slick({
         infinite: false,
         slidesToShow: 1,
