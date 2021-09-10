@@ -190,6 +190,10 @@
         padding: 30px 65px;
         font-size: 20px;
         color: $gray;
+
+        @media (max-width: $mobile) {
+            font-size: 16px;
+        }
     }
 
     &__now {
@@ -200,6 +204,10 @@
 
     &__slider {
         position: relative;
+
+        @media (max-width: $mobile) {
+            margin: 0 5px;
+        }
 
         &::before {
             content: '';
@@ -222,6 +230,10 @@
 
         .slick-arrow {
             bottom: 25px;
+
+            @media (max-width: $mobile) {
+                bottom: 20px;
+            }
         }
     }
 }
