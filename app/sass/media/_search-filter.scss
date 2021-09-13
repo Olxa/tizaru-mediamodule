@@ -6,6 +6,11 @@
         box-shadow: $shadow1;
         background: #ffffff;
         text-align: left;
+
+        @media (max-width: $laptop) {
+            max-width: 300px;
+            width: 100%;
+        }
     }
 
     &__title {

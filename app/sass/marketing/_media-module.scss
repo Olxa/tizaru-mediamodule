@@ -46,10 +46,12 @@
     &__community-section {
         position: relative;
         top: -250px;
+        margin-bottom: -150px;
 
         @media (max-width: $tablet-sm) {
             position: initial;
             top: 0;
+            margin-bottom: 100px;
         }
     }
 

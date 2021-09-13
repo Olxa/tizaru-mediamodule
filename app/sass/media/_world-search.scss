@@ -35,6 +35,12 @@
             top: 55px
         }
 
+        &.active {
+            width: 100%;
+            padding: 20px 12px;
+            left: 0;
+        }
+
         &--empty {
             top: 0;
 
@@ -67,6 +73,10 @@
         line-height: 19px;
         letter-spacing: .15em;
         text-align: center;
+
+        &.hide {
+            display: none;
+        }
     }
 
     &__fields {
@@ -75,6 +85,10 @@
         width: 100%;
         padding-right: 50px;
         transition-delay: .3s;
+
+        &.active {
+            display: flex;
+        }
     }
 
     &__field {
@@ -86,7 +100,6 @@
     }
 
     &__field-search {
-
 
         .input {
             padding-left: 0;

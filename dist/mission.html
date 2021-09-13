@@ -1,34 +1,34 @@
 
 <!DOCTYPE html>
 <html lang="ru">
- 
+
 <head>
     <meta charset="utf-8">
     <title>Наша миссия</title>
-    <meta name="description" content="<!--#echo var='title' -->">
+    <meta name="description" content="<!--#echo var=' title' -->">
     <meta name="viewport" content="width=device-width">
     <link rel="icon" href="images/favicon.png">
     <link rel="stylesheet" href="css/app.min.css">
 </head>
 
 <body>
-    <header class="site-header">
-        <div class="full-container">
-            <div class="site-header__inner">
-                <button type="button" class="burger__btn-menu">
-                    <span class="burger-btn">
-                        <span class="burger-btn__item"></span>
-                        <span class="burger-btn__item"></span>
-                        <span class="burger-btn__item"></span>
-                    </span>
-                    Меню
-                </button>                
-                <a class="site-header__logo site-header__logo--tablet" href="/"></a>
-                <div class="container site-header__container mobil-header-wrapper">
-                    <button class="site-header__btn-menu-close i-close"></button>
-                    <div class="site-header__info">
-                        <a class="site-header__logo site-header__logo--desk" href="/"></a>
-                        <div class="site-header__city">
+    <header class="header-company">
+        <div class="full-container header-company__wrap">
+            <a class="header-company__logo" href="/"></a>
+
+            <button class="burger__btn-menu header-company__burger" type="button">
+                <span class="burger-btn">
+                    <span class="burger-btn__item"></span>
+                    <span class="burger-btn__item"></span>
+                    <span class="burger-btn__item"></span>
+                </span>
+                Меню
+            </button>
+            <div class="header-company__mobil-vis mobil-header-wrapper">
+                <button class="site-header__btn-menu-close i-close"></button>
+                <div class="site-header__info">
+                    <a class="site-header__logo site-header__logo--desk" href="/"></a>
+                    <div class="site-header__city">
     <button class="site-header__city-btn" type="button">Москва</button>
     <div class="city-wrapper tabs">
         <button class="city-wrapper__back mobil-vis i-arrow"></button>
@@ -110,7 +110,7 @@
         </div>
     </div>
 </div>
-                        <div class="main-menu">
+                    <div class="main-menu">
     <div class="full-container">
         <div class="row">
             <div class="col-xl-7 offset-xl-5 main-menu__search input-search">
@@ -315,7 +315,110 @@
         </nav>
     </div>
 </div>
-                    </div>
+                </div>
+                <div class="site-header__actions-btns actions-btns">
+    <a class="actions-btns__btn i-user-p" href="b-party.html">Стать участником</a>
+    <div class="actions-btns__btn actions-btns__btn--border js-action-btn">
+        <span class="actions-btns__value i-plus">Добавить</span>
+        <ul class="actions-btns__list">
+            <li class="actions-btns__item"><a class="actions-btns__link" href="#">организацию</a></li>
+            <li class="actions-btns__item"><a class="actions-btns__link" href="#">публикацию</a></li>
+        </ul>
+    </div>
+</div>
+                <div class="header-mobil mobil-vis">
+    <div class="header-mobil__contact icon i-wt-fl">Cвязаться по <a class="link link-accent link--border" href="https://wa.me/71111111111" target="_blank">WhatsApp</a></div>
+    <a class="header-mobil__contact  icon i-phone" href="tel:+74993401044">+7 (499) 340-10-44</a>
+    <a class="header-mobil__link link link-default" href="#" target="_blank">Политика конфиденциальности</a> <br>
+    <a class="header-mobil__link link link-default" href="#" target="_blank">Соглашение на обработку <br>персональных данных</a>
+    <div class="header-mobil__logo"><img src="images/dist/logo-m-f.png" alt="Tizaru"></div>
+</div>
+            </div>
+            <a class="site-header__logo site-header__logo--tablet" href="/"></a>
+            <div class="container header-company__content">
+                <div class="header-company__content-top">
+                    <div class="site-header__city">
+    <button class="site-header__city-btn" type="button">Москва</button>
+    <div class="city-wrapper tabs">
+        <button class="city-wrapper__back mobil-vis i-arrow"></button>
+        <div class="city__tasd-nav tabs-nav">
+            <button class="city__babs-btn tabs-btn" type="button">Карта</button>
+            <button class="city__babs-btn tabs-btn active" type="button">Город</button>
+        </div>
+        <div class="city-wrapper__search input-search">
+            <input class="input input-search__val" type="text" placeholder="Поиск">
+            <button class="input-search__btn i-search" type="submit">Поиск</button>
+        </div>
+        <div class="tabs-content">
+            <div class="city-wrapper__map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8981.372711912045!2d37.61291999827557!3d55.75254050046795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a50b315e573%3A0xa886bf5a3d9b2e68!2z0JzQvtGB0LrQvtCy0YHQutC40Lkg0JrRgNC10LzQu9GM!5e0!3m2!1sru!2sru!4v1618339743898!5m2!1sru!2sru" height="485" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="city-wrapper__map-info map-bar">
+                <div class="map-bar__text">Вам будут показаны объявления, а также новости для выбранного населенного пункта.</div>
+                <div class="map-bar__btns">
+                    <span class="map-bar__label">Радиус</span>
+                    <button class="map-bar__btn map-bar__btn-first" type="button">1 км</button>
+                    <button class="map-bar__btn" type="button">5 км</button>
+                    <button class="map-bar__btn" type="button">10 км</button>
+                    <button class="map-bar__btn" type="button">25 км</button>
+                    <button class="map-bar__btn" type="button">50 км</button>
+                    <button class="map-bar__btn map-bar__btn-last" type="button">Более 50 км</button>
+                </div>
+            </div>
+
+            <div class="city-wrapper__btns">
+                <button class="btn btn-conture btn--full city-close" type="button">Отмена</button>
+                <button class="btn btn-accent btn--full" type="button">Сохранить</button>
+            </div>
+        </div>
+        <div class="tabs-content active">
+
+            <div class="city__auto">
+                Москва
+                <small class="city__small">Определен автоматически</small>
+            </div>
+            <div class="city-wrapper__lists">
+                <ul class="city-wrapper__list">
+                    <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Москва</a></li>
+                    <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Санкт-Петербург</a></li>
+                    <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Краснодар</a></li>
+                    <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Новосибирск</a></li>
+                    <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Красноярск</a></li>
+                    <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Челябинск</a></li>
+                    <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Тюмень</a></li>
+                    <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Ростов-на-Дону</a></li>
+                    <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Уфа</a></li>
+                </ul>
+                <ul class="city-wrapper__list">
+                    <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Казань</a></li>
+                    <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Пермь</a></li>
+                    <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Нижний Новгород</a></li>
+                    <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Самара</a></li>
+                    <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Омск</a></li>
+                    <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Саратов</a></li>
+                    <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Хабаровск</a></li>
+                    <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Томск</a></li>
+                    <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Воронеж</a></li>
+                </ul>
+                <ul class="city-wrapper__list">
+                    <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Балашиха</a></li>
+                    <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Иркутск</a></li>
+                    <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Сочи</a></li>
+                    <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Ярославль</a></li>
+                    <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Сургур</a></li>
+                    <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Подольск</a></li>
+                    <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Мытыщи</a></li>
+                    <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Владивосток</a></li>
+                    <li class="city-wrapper__li"><a class="city-wrapper__li-link" href="#">Пятигорск</a></li>
+                </ul>
+            </div>
+            <div class="city-wrapper__btns">
+                <button class="btn btn-conture btn--full city-close" type="button">Отмена</button>
+                <button class="btn btn-accent btn--full" type="button">Сохранить</button>
+            </div>
+        </div>
+    </div>
+</div>
                     <div class="site-header__actions-btns actions-btns">
     <a class="actions-btns__btn i-user-p" href="b-party.html">Стать участником</a>
     <div class="actions-btns__btn actions-btns__btn--border js-action-btn">
@@ -326,16 +429,167 @@
         </ul>
     </div>
 </div>
-                    <div class="header-mobil mobil-vis">
-    <div class="header-mobil__contact icon i-wt-fl">Cвязаться по <a class="link link-accent link--border" href="https://wa.me/71111111111" target="_blank">WhatsApp</a></div>
-    <a class="header-mobil__contact  icon i-phone" href="tel:+74993401044">+7 (499) 340-10-44</a>
-    <a class="header-mobil__link link link-default" href="#" target="_blank">Политика конфиденциальности</a> <br>
-    <a class="header-mobil__link link link-default" href="#" target="_blank">Соглашение на обработку <br>персональных данных</a>
-    <div class="header-mobil__logo"><img src="images/dist/logo-m-f.png" alt="Tizaru"></div>
-</div>
                 </div>
-                <div class="site-header__user-info">
-                    <div class="login-wrapper">
+                <div class="header-company__content-bottom">
+                    <nav class="header-company__nav">
+    <ul class="header-company__nav-list">
+        <li class="header-company__nav-item">
+            <div class="header-company__nav-title">Компания</div>
+            <ul class="header-company__nav-sublist">
+                <li class="ul header-company__nav-subitem">
+                    <a class="ul header-company__nav-link" href="about-company.html">О компании</a>
+                </li>
+                <li class="ul header-company__nav-subitem">
+                    <a class="ul header-company__nav-link" href="strategy.html">Стратегия</a>
+                </li>
+                <li class="ul header-company__nav-subitem">
+                    <a class="ul header-company__nav-link" href="team.html">Команда</a>
+                </li>
+                <li class="ul header-company__nav-subitem">
+                    <a class="ul header-company__nav-link" href="present.html">Презентация</a>
+                </li>
+                <li class="ul header-company__nav-subitem">
+                    <a class="ul header-company__nav-link" href="story.html">Истории</a>
+                </li>
+                <li class="ul header-company__nav-subitem">
+                    <a class="ul header-company__nav-link" href="blog.html">Блог</a>
+                </li>
+                <li class="ul header-company__nav-subitem">
+                    <a class="ul header-company__nav-link" href="responsibility.html">Социальная ответственность</a>
+                </li>
+                <!--<li class="ul header-company__nav-subitem">
+                    <a class="ul header-company__nav-link" href="contacts.html">Контакты</a>
+                </li>-->
+            </ul>
+        </li>
+        <li class="header-company__nav-item">
+            <div class="header-company__nav-title">О проекте</div>
+            <ul class="header-company__nav-sublist">
+                <li class="ul header-company__nav-subitem">
+                    <a class="ul header-company__nav-link" href="about.html">О Tizaru</a>
+                </li>
+                <li class="ul header-company__nav-subitem">
+                    <a class="ul header-company__nav-link" href="road-map.html">Дорожная карта</a>
+                </li>
+                <li class="ul header-company__nav-subitem">
+                    <a class="ul header-company__nav-link" href="general-register.html">Общий реестр</a>
+                </li>
+                <li class="ul header-company__nav-subitem">
+                    <a class="ul header-company__nav-link" href="part-progect2.html">Становитесь частью команды</a>
+                </li>
+                <li class="ul header-company__nav-subitem">
+                    <a class="ul header-company__nav-link" href="accrual-point.html">Получение баллов</a>
+                </li>
+                <li class="ul header-company__nav-subitem">
+                    <a class="ul header-company__nav-link" href="help-project.html">Помощь проекту</a>
+                </li>
+                <li class="ul header-company__nav-subitem">
+                    <a class="ul header-company__nav-link" href="join-team.html">Присоединяйтесь к команде</a>
+                </li>
+                <li class="ul header-company__nav-subitem">
+                    <a class="ul header-company__nav-link" href="terms-of-use.html">Пользовательское соглашение</a>
+                </li>
+            </ul>
+        </li>
+        <li class="header-company__nav-item">
+            <div class="header-company__nav-title">Продукты</div>
+            <ul class="header-company__nav-sublist">
+                <li class="ul header-company__nav-subitem">
+                    <a class="ul header-company__nav-link" href="electronic-catalog.html">Международный электронный каталог</a>
+                </li>
+                <li class="ul header-company__nav-subitem">
+                    <a class="ul header-company__nav-link" href="media-module.html">Медиа модуль Tizaru World</a>
+                </li>
+                <li class="ul header-company__nav-subitem">
+                    <a class="ul header-company__nav-link" href="technology.html">Технологии</a>
+                </li>
+            </ul>
+        </li>
+        <li class="header-company__nav-item">
+            <div class="header-company__nav-title">Рекламодателям</div>
+            <ul class="header-company__nav-sublist">
+                <li class="ul header-company__nav-subitem">
+                    <a class="ul header-company__nav-link" href="contextual-ad.html">Контекстная реклама</a>
+                </li>
+                <li class="ul header-company__nav-subitem">
+                    <a class="ul header-company__nav-link" href="native-ad.html">Нативная реклама и статьи на правах рекламы</a>
+                </li>
+                <li class="ul header-company__nav-subitem">
+                    <a class="ul header-company__nav-link" href="banner-rek.html">Банерная реклама</a>
+                </li>
+                <li class="ul header-company__nav-subitem">
+                    <a class="ul header-company__nav-link" href="agency.html">Представительства</a>
+                </li>
+                <li class="ul header-company__nav-subitem">
+                    <a class="ul header-company__nav-link" href="reklam-gift.html">Реклама в подарок!</a>
+                </li>
+            </ul>
+        </li>
+        <li class="header-company__nav-item">
+            <div class="header-company__nav-title">Франшиза</div>
+            <ul class="header-company__nav-sublist">
+                <li class="ul header-company__nav-subitem">
+                    <a class="ul header-company__nav-link" href="franchise-new.html">О франшизе</a>
+                </li>
+                <li class="ul header-company__nav-subitem">
+                    <a class="ul header-company__nav-link" href="franchise-list.html">Список франшиз</a>
+                </li>
+                <!--<li class="ul header-company__nav-subitem">
+                    <a class="ul header-company__nav-link" href="#">Открытие франшизы</a>
+                </li>-->
+            </ul>
+        </li>
+        <li class="header-company__nav-item">
+            <div class="header-company__nav-title">Для прессы</div>
+            <ul class="header-company__nav-sublist">
+                <li class="ul header-company__nav-subitem">
+                    <a class="ul header-company__nav-link" href="news-company.html">Новости</a>
+                </li>
+                <li class="ul header-company__nav-subitem">
+                    <a class="ul header-company__nav-link" href="study.html">Исследования</a>
+                </li>
+                <li class="ul header-company__nav-subitem">
+                    <a class="ul header-company__nav-link" href="visual-style.html">Визуальный стиль</a>
+                </li>
+                <li class="ul header-company__nav-subitem">
+                    <a class="ul header-company__nav-link" href="press-service.html">Контакты пресс-службы</a>
+                </li>
+            </ul>
+        </li>
+        <li class="header-company__nav-item">
+            <div class="header-company__nav-title">Партнерам</div>
+            <ul class="header-company__nav-sublist">
+                <li class="ul header-company__nav-subitem">
+                    <a class="ul header-company__nav-link" href="association.html">Ассоциация совместного развития </a>
+                </li>
+                <li class="ul header-company__nav-subitem">
+                    <a class="ul header-company__nav-link" href="startups.html">Стартапам</a>
+                </li>
+                <li class="ul header-company__nav-subitem">
+                    <a class="ul header-company__nav-link" href="services.html">Работающим интернет сервисам</a>
+                </li>
+                <li class="ul header-company__nav-subitem">
+                    <a class="ul header-company__nav-link" href="publications.html">Интернет изданиям</a>
+                </li>
+                <li class="ul header-company__nav-subitem">
+                    <a class="ul header-company__nav-link" href="bloggers.html">Блогерам</a>
+                </li>
+            </ul>
+        </li>
+        <li class="header-company__nav-item">
+            <div class="header-company__nav-title">Карьера</div>
+            <ul class="header-company__nav-sublist">
+                <li class="ul header-company__nav-subitem">
+                    <a class="ul header-company__nav-link" href="vacancy.html">Вакансии</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+                </div>
+            </div>
+            <div class="header-company__user-info">
+                <div class="login-wrapper">
     <button class="site-header__reg-btn" type="button"><span class="site-header__regis-link">Регистрация /</span> Вход</button>
     <div class="login-reg">
         <button class="login-reg__close mobil-vis i-min-close" type="button"></button>
@@ -535,7 +789,6 @@
 
     </div>
 </div>
-                </div>
             </div>
         </div>
     </header>
@@ -759,6 +1012,7 @@
                                 <li class="footer-submenu__item"><a class="footer-submenu__link" href="story.html">Истории</a></li>
                                 <li class="footer-submenu__item"><a class="footer-submenu__link" href="blog.html">Блог</a></li>
                                 <li class="footer-submenu__item"><a class="footer-submenu__link" href="responsibility.html">Социальная ответстенность</a></li>
+                                <!--<li class="footer-submenu__item"><a class="footer-submenu__link" href="contacts.html">Контакты</a></li>-->
                             </ul>
                         </div>
                     </div>

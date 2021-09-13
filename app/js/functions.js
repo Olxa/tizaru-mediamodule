@@ -833,8 +833,11 @@ $(function () {
 
         //панель с поиском в World (каналы/сообщества)
         $(".js-world-search").on('click', function () {
-            $(this).toggleClass('active');
-            $(".world-seach").toggleClass('active');
+            $(this).toggleClass('active')
+           // $(".world-seach").toggleClass('active');
+            $(".world-search__logo-txt").toggleClass('hide')
+            $(".world-search__fields").toggleClass('active')
+            $(".world-search__panel").toggleClass('active');
         });
 
     }

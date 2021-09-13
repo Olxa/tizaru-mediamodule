@@ -15,6 +15,7 @@
         @media (max-width: $tablet) {
             display: block;
             margin-bottom: 30px;
+            margin-left: auto;
         }
     }
 
@@ -40,7 +41,7 @@
         &.active {
             @media (max-width: $tablet) {
                 display: block;
-                right: 0;
+                right: 15px;
             }
         }
     }
